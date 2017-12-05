@@ -5,6 +5,7 @@
  */
 package ModuleWorker;
 
+import NCLPM.LOG;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -22,6 +23,9 @@ import javax.swing.JOptionPane;
 
 public class SYSCON 
 {
+    //puentes
+    LOG lc = new LOG(); //puente apuntando a la clase LOG
+    
     //variables de conexion
     JFrame form;
     protected Connection cn;
@@ -43,7 +47,8 @@ public class SYSCON
            }
         } catch (SQLException SQLe) 
           {
-              JOptionPane.showMessageDialog(form, "No se ha podido obtener la version del sistema.\nError de comunicación con la base\nERROR: "+SQLe);
+              String des = "No se ha podido obtener la version del sistema. Error de comunicación con la base";
+              lc.write(des,"SYSCON", SQLe.getMessage());
           }
         return null;
     }
@@ -73,7 +78,8 @@ public class SYSCON
 			
 	}catch (Exception e)
          {
-           JOptionPane.showMessageDialog(form,"Error en el cargado\nEsto es para el programador ERROR??"+e);
+           String des = "Error en el cargado de la versión de texto";
+           lc.write(des,"SYSCON", e.getMessage());
          }	
         return null;
     }

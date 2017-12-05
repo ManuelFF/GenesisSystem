@@ -5,6 +5,7 @@
  */
 package ModuleWorker;
 
+import NCLPM.LOG;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -19,12 +20,15 @@ import javax.swing.JOptionPane;
  */
 public class DBCON 
 {
+    //puentes
+    LOG lc = new LOG(); //puente apuntando a la clase LOG
+
+    
     //variables de conexion
     JFrame form;
     protected Connection cn;
     protected ResultSet rs;
     protected PreparedStatement st;
-    
     //Variables de configuracion de base
     
     //Lineas de Conexion
@@ -88,8 +92,18 @@ public class DBCON
             String UN = UserName(); //UN = USERNAME
             String PSW = Password(); //PSW = USERPASSWORD
             cn = DriverManager.getConnection(url,UN,PSW); //IMPLEMENTACION DE LA CONEXIOn 
-        } catch (ClassNotFoundException e) {JOptionPane.showMessageDialog(form, "El driver no retorno conexion! "+e.getMessage());}
-        catch(SQLException sqle) {JOptionPane.showMessageDialog(form,"La base de datos no retorno conexion "+sqle);}
+        } catch (ClassNotFoundException e) 
+            {
+                JOptionPane.showMessageDialog(form, "El driver no retorno conexion! "+e.getMessage());
+                String des = "El driver no retorno conexion!";
+                lc.write( des,"DBCON", e.getMessage());
+            }
+        catch(SQLException sqle) 
+        {
+            JOptionPane.showMessageDialog(form,"La base de datos no retorno conexion "+sqle);
+            String des = "La base de datos no retorno conexion!";
+            lc.write( des,"DBCON", sqle.getMessage());
+        }
     }
     
        

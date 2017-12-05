@@ -11,8 +11,12 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -21,17 +25,46 @@ import javax.swing.JOptionPane;
 public class LOG 
 {
     /*
-    Log : en esta clase se menejara el log de errores del sistema , el cual recopilara
+    Log : en esta clase se manejara el log de errores del sistema , el cual recopilara
     todos los errores con hora y fecha;
     */
     
     JFrame form;
     
-    public void write(String path,String descripcion,String error,String time)
+    public String date()
+    {
+        Date date = new Date();
+        
+        DateFormat año_current = new SimpleDateFormat("yy");
+        DateFormat dia_current = new SimpleDateFormat("dd");
+        DateFormat mes_current = new SimpleDateFormat("MM");
+
+        String dia_C = ""+dia_current.format(date);
+        String mes_C = ""+mes_current.format(date);
+        String año_C = ""+año_current.format(date);
+        
+        String fecha = dia_C+"-"+mes_C+"-"+año_C;
+        return fecha;
+    }
+    
+    public String hour()
+    {
+        Calendar calendario = new GregorianCalendar();
+        int hora, minutos, segundos;
+
+        hora =calendario.get(Calendar.HOUR_OF_DAY);
+        minutos = calendario.get(Calendar.MINUTE);
+        segundos = calendario.get(Calendar.SECOND);
+        
+        return hora + ":" + minutos + ":" + segundos;
+    }
+    
+    
+    public void write(String descripcion,String clase,String error)
     {
         try 
         {
-            String archivo = path;
+            String archivo = "log_"+date()+".txt";
             // Creamos un objeto f, que representa al archivo Usuarios.txt en formato binario
             File f = new File(archivo);
             // Permite abrir el archivo para ESCRITURA (Permite grabar datos)
@@ -40,8 +73,9 @@ public class LOG
             PrintWriter pw = new PrintWriter(fw);
            
             pw.println("DESCRIPCIÓN : "+descripcion);
+            pw.println("CLASE : "+clase);
             pw.println("ERROR : "+error);
-            pw.println("TIME : "+time);
+            pw.println("TIME : "+hour());
             pw.println("----------------------------------------------------");
             pw.println(" ");
             pw.close();

@@ -66,12 +66,10 @@ public class JFRLogin extends javax.swing.JFrame {
 
     private void btniniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btniniciarActionPerformed
 
-          String p = "log_"+"2017.txt";
           String d = "No se pudo obtener el estado de la base";
           String e = "SQLEX.Error10023.Base_not_found.";
-          String t = "03:053PM";
           
-          lc.write(p, d, e, t);
+          lc.write( d,"LOGIN", e);
 
 
     }//GEN-LAST:event_btniniciarActionPerformed
