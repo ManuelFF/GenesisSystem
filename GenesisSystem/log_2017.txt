@@ -1,0 +1,25 @@
+DESCRIPCIÓN : No se pudo obtener el estado de la base
+ERROR : SQLEX.Error10023.Base_not_found.
+TIME : 03:053PM
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se pudo obtener el estado de la base
+ERROR : SQLEX.Error10023.Base_not_found.
+TIME : 03:053PM
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se pudo obtener el estado de la base
+ERROR : SQLEX.Error10023.Base_not_found.
+TIME : 03:053PM
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se pudo obtener el estado de la base
+ERROR : SQLEX.Error10023.Base_not_found.
+TIME : 03:053PM
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se pudo obtener el estado de la base
+ERROR : SQLEX.Error10023.Base_not_found.
+TIME : 03:053PM
+----------------------------------------------------
+ 

@@ -5,6 +5,8 @@
  */
 package ModuleWorker.View;
 
+import NCLPM.LOG;
+
 /**
  *
  * @author USUARIO
@@ -14,7 +16,11 @@ public class JFRLogin extends javax.swing.JFrame {
     /**
      * Creates new form JFRLogin
      */
-    public JFRLogin() {
+    
+    LOG lc = new LOG();
+    
+    public JFRLogin() 
+    {
         initComponents();
     }
 
@@ -27,21 +33,48 @@ public class JFRLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btniniciar = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        btniniciar.setText("Iniciar");
+        btniniciar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btniniciarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(222, 222, 222)
+                .addComponent(btniniciar)
+                .addContainerGap(248, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(220, Short.MAX_VALUE)
+                .addComponent(btniniciar)
+                .addGap(149, 149, 149))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btniniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btniniciarActionPerformed
+
+          String p = "log_"+"2017.txt";
+          String d = "No se pudo obtener el estado de la base";
+          String e = "SQLEX.Error10023.Base_not_found.";
+          String t = "03:053PM";
+          
+          lc.write(p, d, e, t);
+
+
+    }//GEN-LAST:event_btniniciarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +112,6 @@ public class JFRLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btniniciar;
     // End of variables declaration//GEN-END:variables
 }
