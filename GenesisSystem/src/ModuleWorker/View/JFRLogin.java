@@ -5,7 +5,9 @@
  */
 package ModuleWorker.View;
 
+import ModuleWorker.SYSFRMCON;
 import NCLPM.LOG;
+import NCLPM.EVENTS;
 
 /**
  *
@@ -18,10 +20,14 @@ public class JFRLogin extends javax.swing.JFrame {
      */
     
     LOG lc = new LOG();
+    EVENTS evn = new EVENTS();
+    SYSFRMCON sysfrm = new SYSFRMCON();
+    
     
     public JFRLogin() 
     {
         initComponents();
+        this.setTitle(sysfrm.T_login());
     }
 
     /**
@@ -70,7 +76,7 @@ public class JFRLogin extends javax.swing.JFrame {
           String e = "SQLEX.Error10023.Base_not_found.";
           
           lc.write( d,"LOGIN", e);
-
+          evn.write("Manuel","hizo uso del boton Iniciar", "LOGIN", "Boton INICIAR Presionado");
 
     }//GEN-LAST:event_btniniciarActionPerformed
 

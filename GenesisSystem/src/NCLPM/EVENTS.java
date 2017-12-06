@@ -117,7 +117,7 @@ public class EVENTS
     
     public void clear()
     {
-        //connection protocol testing
+        
     }
     
 }

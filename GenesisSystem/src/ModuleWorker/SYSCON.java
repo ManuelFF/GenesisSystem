@@ -9,6 +9,7 @@ import NCLPM.LOG;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -76,7 +77,7 @@ public class SYSCON
             return ver;
            }
 			
-	}catch (Exception e)
+	}catch (IOException e)
          {
            String des = "Error en el cargado de la versión de texto";
            lc.write(des,"SYSCON", e.getMessage());

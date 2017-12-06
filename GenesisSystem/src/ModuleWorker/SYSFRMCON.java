@@ -67,12 +67,16 @@ public class SYSFRMCON
     */
     
     //Titulo Inicio Sesion
-    
+    public String T_login()
+    {
+        String t = STABLE()+" Iniciar Sesión en Génesis System";
+        return t;
+    }
     
     //Titulo Frame Principal
-    public String principal()
+    public String T_principal()
     {
-        String t = STABLE();
+        String t = STABLE()+ "Génesis System";
         return t;
     }
     

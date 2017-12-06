@@ -9,6 +9,8 @@ import NCLPM.LOG;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -37,6 +39,35 @@ public class MWCON
         abrir_archivo("Update.jar");
     }
     
+    public void clear_table(DefaultTableModel modelo, JTable jt)
+    {
+        for(int i=0;i<jt.getRowCount();i++)
+        {
+            modelo.removeRow(i);
+            i-=1;
+        }
+        modelo.setRowCount(0);
+        jt.setModel(new DefaultTableModel());
+        modelo.setColumnCount(0);
+    }
+    
+    //MARCAR ENTRADA
+    //MARCAR SALIDA
+    //MARCAR SALIDA_ESTADO
+    //ELIMINAR ASISTENCIA
+    //INSERTAR ASISTENCIA
+    //OBTENER ESTADO ASISTENCIA
+    //OBTENER ESTADO SALIDA
+    //OBTENER APELLIDO
+    //OBTENER TIPO DE USUARIO
+    //ELIMINAR USUARIO
+    //INSERTAR USUARIO
+    //MODIFICAR USUARIO
+    //---SACADOS DE CONECTORDeBASE---
+    //CARGAR ASISTENCIA PERSONALIZADA
+    //CARGAR PERSONAL
+    //CARGAR USUARIO
+    //CARGAR CATEGORIA
     
     
 }

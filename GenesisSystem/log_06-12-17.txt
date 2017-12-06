@@ -1,0 +1,6 @@
+DESCRIPCIÓN : No se pudo obtener el estado de la base
+CLASE : LOGIN
+ERROR : SQLEX.Error10023.Base_not_found.
+TIME : 13:6:19
+----------------------------------------------------
+ 
