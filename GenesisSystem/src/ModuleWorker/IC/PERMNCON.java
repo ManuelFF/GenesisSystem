@@ -9,6 +9,27 @@ package ModuleWorker.IC;
  *
  * @author USUARIO
  */
-public class PERMNCON {
+
+/*
+En esta clase se desarrollaran los permisos que Génesis usara para habilitar o desahabilitar determinadas áreas del sistema
+Los permisos en esta leccion seran distintos a los permisos usados en crystal; Génesis manejara estos permisos:
+
+    Permisos : 
+
+        READ
+        WRITE
+        GEN
+        OPEN
+        EXEC
+        INSERT
+        UPDATE
+        CREATE
+        MODIFY
+        DELETE
+        VIEW
+*/
+
+public class PERMNCON 
+{
     
 }

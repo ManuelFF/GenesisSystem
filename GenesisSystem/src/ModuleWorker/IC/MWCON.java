@@ -34,11 +34,14 @@ public class MWCON
             }
     }
     
+    //Metodo que sera usado para abrir el actualizado de GenesisSystem 
+    //el cual comprobara versiones para bajar y actualizar el sistema
     public void abrir_actualizador()
     {
         abrir_archivo("Update.jar");
     }
     
+   //Funcion que limpia un Jtable quitando los elemtos.
     public void clear_table(DefaultTableModel modelo, JTable jt)
     {
         for(int i=0;i<jt.getRowCount();i++)
@@ -50,6 +53,7 @@ public class MWCON
         jt.setModel(new DefaultTableModel());
         modelo.setColumnCount(0);
     }
+   
     
     //MARCAR ENTRADA
     //MARCAR SALIDA
