@@ -28,6 +28,7 @@ public class JFRLogin extends javax.swing.JFrame {
     {
         initComponents();
         this.setTitle(sysfrm.T_login());
+        this.setAlwaysOnTop(true);
     }
 
     /**
