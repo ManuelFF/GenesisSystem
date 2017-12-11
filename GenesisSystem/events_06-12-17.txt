@@ -1,7 +1,0 @@
-USUARIO : Manuel
-DESCRIPCIÓN : hizo uso del boton Iniciar
-FORMULARIO : LOGIN
-ACCIÓN : Boton INICIAR Presionado
-TIME : 13:6:19
-----------------------------------------------------
- 

@@ -1,0 +1,66 @@
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 11:51:53
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 11:53:20
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 12:9:47
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 12:9:50
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 12:10:13
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado una contraseña valido
+CLASE : JFRInicioSesion
+ERROR : La contraseña es invalida
+TIME : 12:10:43
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado una contraseña valido
+CLASE : JFRInicioSesion
+ERROR : La contraseña es invalida
+TIME : 12:10:44
+----------------------------------------------------
+ 
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 12:16:50
+----------------------------------------------------
+ 
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 12:17:29
+----------------------------------------------------
+ 
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 12:17:38
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Intentos para inicio de sesión superados
+CLASE : JFRInicioSesion
+ERROR : No tiene más intentos
+TIME : 12:17:41
+----------------------------------------------------
+ 

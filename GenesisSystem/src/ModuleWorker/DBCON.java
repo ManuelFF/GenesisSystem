@@ -78,7 +78,7 @@ public class DBCON
     }
     
     //PROGRAMACION DEL CONECTOR
-    final public void DB_ORC_CON()
+     private void DB_ORC_CON()
     {
         cn = null;
         try 
@@ -95,15 +95,41 @@ public class DBCON
         } catch (ClassNotFoundException e) 
             {
                 JOptionPane.showMessageDialog(form, "El driver no retorno conexion! "+e.getMessage());
-                String des = "El driver no retorno conexion!";
-                lc.write( des,"DBCON", e.getMessage());
+                lc.write( "El driver no retorno conexion!","DBCON", e.getMessage());
             }
         catch(SQLException sqle) 
         {
             JOptionPane.showMessageDialog(form,"La base de datos no retorno conexion "+sqle);
-            String des = "La base de datos no retorno conexion!";
-            lc.write( des,"DBCON", sqle.getMessage());
+            lc.write( "La base de datos no retorno conexion!","DBCON", sqle.getMessage());
         }
+    }
+    
+    final public Connection CN()
+    {
+        cn = null;
+        try 
+        {
+            String driverName = "oracle.jdbc.driver.OracleDriver"; //DRIVER QUE SE USARA
+            Class.forName(driverName); // Implementacion de DriverName 
+            String SN = ServerName(); //SN = SERVER NAME 
+            String SP = ServerPort(); // SP = SERVERPORT
+            String SID = Sid(); // SID = sid
+            String url ="jdbc:oracle:thin:@"+SN+":"+SP+":"+SID; //Url de conexion de base
+            String UN = UserName(); //UN = USERNAME
+            String PSW = Password(); //PSW = USERPASSWORD
+            cn = DriverManager.getConnection(url,UN,PSW); //IMPLEMENTACION DE LA CONEXIOn 
+            return cn;
+        } catch (ClassNotFoundException e) 
+            {
+                JOptionPane.showMessageDialog(form, "El driver no retorno conexion! "+e.getMessage());
+                lc.write( "El driver no retorno conexion!","DBCON", e.getMessage());
+            }
+        catch(SQLException sqle) 
+        {
+            JOptionPane.showMessageDialog(form,"La base de datos no retorno conexion "+sqle);
+            lc.write( "La base de datos no retorno conexion!","DBCON", sqle.getMessage());
+        }
+        return cn;
     }
     
        
