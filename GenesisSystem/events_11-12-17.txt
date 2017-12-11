@@ -194,3 +194,213 @@ ACCIÓN : Botón 'INGRESAR' Presionado
 TIME : 12:34:4
 ----------------------------------------------------
  
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 13:10:38
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 13:18:16
+----------------------------------------------------
+ 
+USUARIO : Aún no definido
+DESCRIPCIÓN : Intento entrar al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 13:18:44
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 13:18:47
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 13:24:44
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 13:51:17
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 13:58:10
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:9:29
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:10:31
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:11:23
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:11:40
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:13:3
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:13:44
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:14:46
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:18:43
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:19:25
+----------------------------------------------------
+ 
+USUARIO : Aún no definido
+DESCRIPCIÓN : Intento entrar al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:22:43
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:22:45
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:24:44
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:44:9
+----------------------------------------------------
+ 
+USUARIO : Aún no definido
+DESCRIPCIÓN : Intento entrar al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:44:36
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:44:38
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:44:50
+----------------------------------------------------
+ 
+USUARIO : Aún no definido
+DESCRIPCIÓN : Salio del sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'SALIR' Presionado
+TIME : 14:45:47
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:46:1
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:50:9
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:53:44
+----------------------------------------------------
+ 
+USUARIO : Aún no definido
+DESCRIPCIÓN : Intento entrar al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:26:40
+----------------------------------------------------
+ 
+USUARIO : Aún no definido
+DESCRIPCIÓN : Intento entrar al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:26:49
+----------------------------------------------------
+ 
+USUARIO : El usuario : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:26:52
+----------------------------------------------------
+ 

@@ -5,6 +5,9 @@
  */
 package ModuleWorker;
 
+import java.awt.Color;
+import java.awt.Container;
+
 /**
  *
  * @author USUARIO
@@ -73,11 +76,28 @@ public class SYSFRMCON
         return t;
     }
     
+    public void B_login(Container p)
+    {
+      p.setBackground(Color.WHITE);
+    }
+    
+    
     //Titulo Frame Principal
     public String T_principal()
     {
-        String t = DEV()+ "Génesis System";
+        String t = DEV()+ " Génesis System";
         return t;
+    }
+    
+    public String T_mantenerUsuario()
+    {
+        String t = DEV()+ " Mantener Usuario";
+        return t;
+    }
+    
+    public void B_mantenerUsuario(Container p)
+    {
+      p.setBackground(Color.GRAY.brighter());
     }
     
     

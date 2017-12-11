@@ -33,8 +33,8 @@ public class JFRInicioSesion extends javax.swing.JFrame
     public JFRInicioSesion() 
     {
         initComponents();
-        this.getContentPane().setBackground(Color.WHITE);
         this.setTitle(sysfrm.T_login());
+        sysfrm.B_login(this.getContentPane());
         this.setAlwaysOnTop(true);
         this.setLocationRelativeTo(null);
     }
