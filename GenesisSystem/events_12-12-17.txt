@@ -243,3 +243,10 @@ ACCIÓN : Botón 'INGRESAR' Presionado
 TIME : 13:19:19
 ----------------------------------------------------
  
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 13:41:58
+----------------------------------------------------
+ 

@@ -72,7 +72,7 @@ public class SYSFRMCON
     //Titulo Inicio Sesion
     public String T_login()
     {
-        String t = DEV()+" Iniciar Sesión en Génesis System";
+        String t = DEV()+" Iniciar Sesión en Crystal Génesis System";
         return t;
     }
     
