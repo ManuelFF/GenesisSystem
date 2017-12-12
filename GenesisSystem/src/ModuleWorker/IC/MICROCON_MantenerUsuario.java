@@ -13,7 +13,9 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
@@ -55,13 +57,41 @@ public class MICROCON_MantenerUsuario
             }JTasistencia.setModel(modelo);
         }catch(SQLException sqlex)
             {
-                lc.write("Problema al Cargar Datos", "MICROCON_MantenerUsuario", sqlex.getMessage());
+                lc.write("Problema al Cargar Datos en el metodo 'CargarUsuario'", "MICROCON_MantenerUsuario", sqlex.getMessage());
             }
         try {
         } catch (Exception ex)
             {
                 lc.write("Error no controlado en el metodo cargar usuario", "MICROCON_MantenerUsuario", ex.getMessage());
             }
+    }
+    
+    public void CargarBoxTipo(JComboBox<String> Cbcats)
+    {
+        try
+        {   
+            DBCON db = new DBCON();
+            cn=db.CN();
+            
+            st=cn.prepareStatement("SELECT DESC_TIPO FROM tipo");
+            rs=st.executeQuery();
+
+            while (rs.next())
+            {            
+
+            String DESC_TIPO = rs.getString("DESC_TIPO");
+            Cbcats.addItem(DESC_TIPO);
+            }
+
+        }
+        catch (SQLException sqlex) 
+            {
+                lc.write("Problema al Cargar Datos en el metodo 'CargarBoxTipo'", "MICROCON_MantenerUsuario", sqlex.getMessage());
+            }
+        catch (Exception ex)
+        {
+                lc.write("Error no controlado en el metodo 'cargarBoxTipo'", "MICROCON_MantenerUsuario", ex.getMessage());
+        }
     }
 
     

@@ -81,6 +81,15 @@ public class SYSFRMCON
       p.setBackground(Color.WHITE);
     }
     
+    //*****CONDICION ESPECIAL*****//
+   
+    public void B_JMSesion(Container p)
+    {
+      p.setBackground(Color.BLUE.brighter());
+      p.setForeground(Color.CYAN.darker().darker());
+    }
+    
+    //*****FIN CONDICION ESPECIAL******//
     
     //Titulo Frame Principal
     public String T_principal()

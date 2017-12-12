@@ -9,7 +9,9 @@ import ModuleWorker.SYSCON;
 import ModuleWorker.SYSWALLPCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
+import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.io.File;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -38,7 +40,6 @@ public class JFRPrincipal extends javax.swing.JFrame
         this.setLocationRelativeTo(null);
         this.setExtendedState(MAXIMIZED_BOTH);
         this.setTitle(sys.nombre_sistema()+" - "+sys.nombre_compañia()+" - Versión V"+sys.version());
-        
     }
     
     private void image()
@@ -64,10 +65,24 @@ public class JFRPrincipal extends javax.swing.JFrame
     private void initComponents() {
 
         JDEscritorio = new javax.swing.JDesktopPane();
-        jMenuBar1 = new javax.swing.JMenuBar();
+        JTBHerramientas = new javax.swing.JToolBar();
+        btnAgregarCliente = new javax.swing.JButton();
+        btnAgregarPersonal = new javax.swing.JButton();
+        btnGenerarOrden = new javax.swing.JButton();
+        btnAdministrarCertificado = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        JMPrincipal = new javax.swing.JMenuBar();
         JMSesion = new javax.swing.JMenu();
         JSMMantenimientoUsuarios = new javax.swing.JMenuItem();
+        JSMCerrarSesion = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
+        jMenu5 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -75,15 +90,80 @@ public class JFRPrincipal extends javax.swing.JFrame
         JDEscritorio.setLayout(JDEscritorioLayout);
         JDEscritorioLayout.setHorizontalGroup(
             JDEscritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1243, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         JDEscritorioLayout.setVerticalGroup(
             JDEscritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 651, Short.MAX_VALUE)
+            .addGap(0, 612, Short.MAX_VALUE)
         );
 
-        JMSesion.setText("Sesion");
+        JTBHerramientas.setBackground(new java.awt.Color(204, 204, 204));
+        JTBHerramientas.setFloatable(false);
+        JTBHerramientas.setBorderPainted(false);
+        JTBHerramientas.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        JTBHerramientas.setOpaque(false);
 
+        btnAgregarCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Client1_add32.png"))); // NOI18N
+        btnAgregarCliente.setToolTipText("Agregar Cliente");
+        btnAgregarCliente.setFocusable(false);
+        btnAgregarCliente.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnAgregarCliente.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        JTBHerramientas.add(btnAgregarCliente);
+
+        btnAgregarPersonal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Male_User_add32.png"))); // NOI18N
+        btnAgregarPersonal.setToolTipText("Agregar Personal");
+        btnAgregarPersonal.setFocusable(false);
+        btnAgregarPersonal.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnAgregarPersonal.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        JTBHerramientas.add(btnAgregarPersonal);
+
+        btnGenerarOrden.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/OrdenV2 32.png"))); // NOI18N
+        btnGenerarOrden.setToolTipText("Generar Orden de Servicio");
+        btnGenerarOrden.setFocusable(false);
+        btnGenerarOrden.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnGenerarOrden.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        JTBHerramientas.add(btnGenerarOrden);
+
+        btnAdministrarCertificado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Certificado32.png"))); // NOI18N
+        btnAdministrarCertificado.setToolTipText("Administrar Certificados");
+        btnAdministrarCertificado.setFocusable(false);
+        btnAdministrarCertificado.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnAdministrarCertificado.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        JTBHerramientas.add(btnAdministrarCertificado);
+
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/codigo-pin32.png"))); // NOI18N
+        jButton4.setToolTipText("Generar Codigos");
+        jButton4.setFocusable(false);
+        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        JTBHerramientas.add(jButton4);
+
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/ConsultarOrdenV2 32.png"))); // NOI18N
+        jButton5.setToolTipText("Consulta de Ordenes de Servicio");
+        jButton5.setFocusable(false);
+        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        JTBHerramientas.add(jButton5);
+
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/ConsultaCert 32.png"))); // NOI18N
+        jButton2.setToolTipText("Consulta de Certificados");
+        jButton2.setFocusable(false);
+        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        JTBHerramientas.add(jButton2);
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/logout-icon32.png"))); // NOI18N
+        jButton1.setToolTipText("Cerrar Sesión");
+        jButton1.setFocusable(false);
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        JTBHerramientas.add(jButton1);
+
+        JMSesion.setText("Sesion");
+        JMSesion.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+
+        JSMMantenimientoUsuarios.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        JSMMantenimientoUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/personal.png"))); // NOI18N
         JSMMantenimientoUsuarios.setText("Mantenimiento de Usuarios");
         JSMMantenimientoUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,49 +172,74 @@ public class JFRPrincipal extends javax.swing.JFrame
         });
         JMSesion.add(JSMMantenimientoUsuarios);
 
-        jMenuBar1.add(JMSesion);
+        JSMCerrarSesion.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        JSMCerrarSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/logout-icon24.png"))); // NOI18N
+        JSMCerrarSesion.setText("Cerrar Sesión");
+        JMSesion.add(JSMCerrarSesion);
 
-        jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
+        JMPrincipal.add(JMSesion);
 
-        setJMenuBar(jMenuBar1);
+        jMenu2.setText("Mantenimientos");
+        jMenu2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        JMPrincipal.add(jMenu2);
+
+        jMenu1.setText("Generar");
+        jMenu1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        JMPrincipal.add(jMenu1);
+
+        jMenu3.setText("Consultar");
+        jMenu3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        JMPrincipal.add(jMenu3);
+
+        jMenu4.setText("Administración");
+        jMenu4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        JMPrincipal.add(jMenu4);
+
+        jMenu5.setText("Ventas");
+        jMenu5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        JMPrincipal.add(jMenu5);
+
+        setJMenuBar(JMPrincipal);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(JDEscritorio)
+            .addComponent(JTBHerramientas, javax.swing.GroupLayout.PREFERRED_SIZE, 1243, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(JDEscritorio)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(JTBHerramientas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(JDEscritorio))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void JSMMantenimientoUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMMantenimientoUsuariosActionPerformed
-   
-    try 
-    {
-        JIFMatenerUsuario usuarios = new JIFMatenerUsuario();
-        if(JSMMantenimientoUsuarios.getActionCommand().equals("Abierto")){JOptionPane.showMessageDialog(this,"Ya esta abierto");}
-        else
+
+        try
         {
-            JSMMantenimientoUsuarios.setActionCommand("Abierto");
-            JDEscritorio.add(usuarios);
-            Dimension desktopSize = JDEscritorio.getSize();
-            Dimension FrameSize = usuarios.getSize();
-            usuarios.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
-            usuarios.show();
-        }    
-    } 
-    catch (Exception e) 
-     {
-         lc.write("Error intentando abrir 'Mantenimiento Usuarios'", "JFRPrincipal", e.getMessage());
-     }
-       
-    
+            JIFMatenerUsuario usuarios = new JIFMatenerUsuario();
+            if(JSMMantenimientoUsuarios.getActionCommand().equals("Abierto")){JOptionPane.showMessageDialog(this,"Ya esta abierto");}
+            else
+            {
+                JSMMantenimientoUsuarios.setActionCommand("Abierto");
+                JDEscritorio.add(usuarios);
+                Dimension desktopSize = JDEscritorio.getSize();
+                Dimension FrameSize = usuarios.getSize();
+                usuarios.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
+                evn.write(JMSesion.getText(), "Abrio el formulario 'Mantener Usuario'", "JFPrincipal", "Menu 'Mantener Usuario' Presionado");
+                usuarios.show();
+            }
+        }
+        catch (Exception e)
+        {
+            lc.write("Error intentando abrir 'Mantenimiento Usuarios'", "JFRPrincipal", e.getMessage());
+        }
 
     }//GEN-LAST:event_JSMMantenimientoUsuariosActionPerformed
 
@@ -178,9 +283,23 @@ public class JFRPrincipal extends javax.swing.JFrame
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane JDEscritorio;
-    private javax.swing.JMenu JMSesion;
-    private javax.swing.JMenuItem JSMMantenimientoUsuarios;
+    private javax.swing.JMenuBar JMPrincipal;
+    public static javax.swing.JMenu JMSesion;
+    private javax.swing.JMenuItem JSMCerrarSesion;
+    public static javax.swing.JMenuItem JSMMantenimientoUsuarios;
+    private javax.swing.JToolBar JTBHerramientas;
+    private javax.swing.JButton btnAdministrarCertificado;
+    private javax.swing.JButton btnAgregarCliente;
+    private javax.swing.JButton btnAgregarPersonal;
+    private javax.swing.JButton btnGenerarOrden;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
     // End of variables declaration//GEN-END:variables
 }

@@ -64,7 +64,7 @@ public class MICROCON_InicioSesion
         {
             DBCON db = new DBCON();
             cn = db.CN();
-            CallableStatement cst = cn.prepareCall("{?=call F_Nombre_Personal(?,?)}");
+            CallableStatement cst = cn.prepareCall("{?=call F_Nombre_Personal(?)}");
             cst.setString(2, usr);
             cst.registerOutParameter(1, Types.VARCHAR);
             cst.execute();
