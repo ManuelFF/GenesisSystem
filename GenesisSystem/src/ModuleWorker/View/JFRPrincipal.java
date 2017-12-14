@@ -5,6 +5,7 @@
  */
 package ModuleWorker.View;
 
+import ModuleWorker.DBCON;
 import ModuleWorker.SYSCON;
 import ModuleWorker.SYSWALLPCON;
 import NCLPM.EVENTS;
@@ -13,6 +14,9 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.io.File;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -175,6 +179,11 @@ public class JFRPrincipal extends javax.swing.JFrame
         JSMCerrarSesion.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         JSMCerrarSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/logout-icon24.png"))); // NOI18N
         JSMCerrarSesion.setText("Cerrar Sesión");
+        JSMCerrarSesion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JSMCerrarSesionActionPerformed(evt);
+            }
+        });
         JMSesion.add(JSMCerrarSesion);
 
         JMPrincipal.add(JMSesion);
@@ -242,6 +251,19 @@ public class JFRPrincipal extends javax.swing.JFrame
         }
 
     }//GEN-LAST:event_JSMMantenimientoUsuariosActionPerformed
+
+    private void JSMCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMCerrarSesionActionPerformed
+        try 
+        {
+  
+          System.exit(0);
+            
+        } catch (Exception sqle) 
+            {
+               lc.write( "Ha ocurrido algun error al intentar cerrar el sistema!","JFPrincipal metodo JSMCerrar Sesión Linea 255", sqle.getMessage());
+            }
+
+    }//GEN-LAST:event_JSMCerrarSesionActionPerformed
 
     /**
      * @param args the command line arguments

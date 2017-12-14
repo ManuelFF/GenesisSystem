@@ -72,7 +72,7 @@ public class SYSFRMCON
     //Titulo Inicio Sesion
     public String T_login()
     {
-        String t = DEV()+" Iniciar Sesión en Crystal Génesis System";
+        String t = DEV()+" Iniciar Sesión en Crystal Génesis.";
         return t;
     }
     
@@ -105,6 +105,17 @@ public class SYSFRMCON
     }
     
     public void B_mantenerUsuario(Container p)
+    {
+      p.setBackground(Color.GRAY.brighter());
+    }
+    
+    public String T_JDESseleccionarPersonal()
+    {
+        String t = DEV()+ " Seleccionar Personal";
+        return t;
+    }
+    
+    public void B_JDESseleccionarPersonal(Container p)
     {
       p.setBackground(Color.GRAY.brighter());
     }

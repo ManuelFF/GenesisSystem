@@ -5,17 +5,16 @@
  */
 package ModuleWorker.IC;
 
+import ModuleWorker.Core.NOB_usuario;
 import ModuleWorker.DBCON;
 import NCLPM.LOG;
-import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import javax.swing.JComboBox;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
@@ -25,11 +24,17 @@ import javax.swing.table.DefaultTableModel;
  */
 public class MICROCON_MantenerUsuario 
 {
-    JFrame form;
     private ResultSet rs;
     private PreparedStatement st;
-    Connection cn;
     LOG lc = new LOG(); //puente apuntando a la clase LOG
+    
+    public MICROCON_MantenerUsuario()
+    {
+          //inicializacion
+         L_USRID = new ArrayList<>();
+         llenarIDS_USR();
+    }
+    
     
     //INSERTAR USUARIO
     //MODIFICAR USUARIO 
@@ -38,10 +43,9 @@ public class MICROCON_MantenerUsuario
     public void Cargarusuario(DefaultTableModel modelo, JTable JTasistencia)         
     {
         try{
-            DBCON db = new DBCON();
-            cn=db.CN();
+            DBCON RCN = new DBCON();
             
-            Statement smt=cn.createStatement();
+            Statement smt=RCN.DB_ORC_CON().createStatement();
             ResultSet rs= smt.executeQuery("SELECT * from V_usuario");
             ResultSetMetaData md=rs.getMetaData();
             int columnas= md.getColumnCount();
@@ -70,10 +74,9 @@ public class MICROCON_MantenerUsuario
     {
         try
         {   
-            DBCON db = new DBCON();
-            cn=db.CN();
+            DBCON RCN = new DBCON();
             
-            st=cn.prepareStatement("SELECT DESC_TIPO FROM tipo");
+            st=RCN.DB_ORC_CON().prepareStatement("SELECT DESC_TIPO FROM tipo");
             rs=st.executeQuery();
 
             while (rs.next())
@@ -94,5 +97,65 @@ public class MICROCON_MantenerUsuario
         }
     }
 
+    //Array List Controlador
+    private ArrayList<NOB_usuario> L_USRID;
+    
+    //GET ARRAYLISt
+    public ArrayList<NOB_usuario> getL_USRID() 
+    {
+        return L_USRID;
+    }
+
+    //SET ARRAYLIST
+    public void setL_USRID(ArrayList<NOB_usuario> L_USRID) 
+    {
+        this.L_USRID = L_USRID;
+    }
+    
+     public void A_objeto(NOB_usuario p)
+    {
+        L_USRID.add(p);
+    }
+
+    //retorna tamaño array
+    public int tamaño()
+    {
+        return L_USRID.size();
+    }
+
+    //recibe pos y retorna obj
+    public NOB_usuario obtener(int pos)
+    {
+        return L_USRID.get(pos);
+    }
+    
+    protected final void llenarIDS_USR()
+    {
+        try
+        {   
+            DBCON RCN = new DBCON();
+            
+            st=RCN.DB_ORC_CON().prepareStatement("SELECT ID_USER FROM usuario order by ID_USER");
+            rs=st.executeQuery();
+
+            while (rs.next())
+            {            
+                String ID_USER = rs.getString("ID_USER");
+                NOB_usuario nu = new NOB_usuario(ID_USER);
+                A_objeto(nu);
+            }
+            RCN.DB_ORC_CON().close();
+
+        }
+        catch (SQLException sqle) 
+            {
+               lc.write( "La base de datos no retorno conexion!","MICROCON_MantenerUsuario", sqle.getMessage());
+            }
+        catch (Exception e)
+            {
+               lc.write( "ha ocurrido algun error no controlado","MICROCON_MantenerUsuario", e.getMessage());
+            }
+    }
+   
     
 }

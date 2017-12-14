@@ -5,18 +5,19 @@
  */
 package ModuleWorker.View;
 
+import ModuleWorker.Core.NOB_usuario;
 import ModuleWorker.IC.MICROCON_MantenerUsuario;
 import ModuleWorker.SYSFRMCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
-import java.awt.Color;
 import javax.swing.table.DefaultTableModel;
 
 /**
  *
  * @author USUARIO
  */
-public class JIFMatenerUsuario extends javax.swing.JInternalFrame {
+public class JIFMatenerUsuario extends javax.swing.JInternalFrame 
+{
 
     /**
      * Creates new form JIFRegistroUsuarios
@@ -34,7 +35,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame {
              return false;
         }
     };
-    
+       
     public JIFMatenerUsuario() 
     {
         initComponents();
@@ -44,6 +45,28 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame {
         mcmuser.Cargarusuario(modelo_usuarios, JTusrs);
         mcmuser.CargarBoxTipo(CBTipo);
     }
+    
+    private void NuevoCodigoUSR()
+    {
+        String codigo  = String.format("%03d", 1);
+	int cod ; 
+	NOB_usuario ultObjeto = null;
+				
+	if( mcmuser.tamaño()==0 ) // Array vacío
+		codigo = "USR-"+codigo;
+	else {
+		// La posición del último objeto se obtiene con tamaño()-1
+		// Obtenemos el último objeto del ArrayList
+		ultObjeto = mcmuser.obtener( mcmuser.tamaño()-1 );
+		// Obtenemos los caracteres desde la posicion dos hasta el final ("003"); 
+		codigo = ultObjeto.getId_user().substring(4);
+		//Agregamos una unidad al codigo extraido en el paso anterior
+		cod = Integer.parseInt(codigo)+1;
+		codigo = "USR-"+String.format("%03d",cod);
+              }
+	txtcod.setText(codigo);
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -95,13 +118,31 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame {
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel6.setText("CONTRASEÑA:");
 
+        pswPassword.setEditable(false);
+        pswPassword.setBackground(new java.awt.Color(204, 204, 204));
+
+        txtusuarios.setEditable(false);
+        txtusuarios.setBackground(new java.awt.Color(204, 204, 204));
+
+        txtnombres.setEditable(false);
+        txtnombres.setBackground(new java.awt.Color(204, 204, 204));
+
+        txtidPer.setEditable(false);
+        txtidPer.setBackground(new java.awt.Color(204, 255, 204));
+
+        txtcod.setEditable(false);
+        txtcod.setBackground(new java.awt.Color(204, 255, 204));
+
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel7.setText("TIPO:");
+
+        CBTipo.setEnabled(false);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel8.setText("ESTADO:");
 
         CBEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ACTIVO", "INACTIVO" }));
+        CBEstado.setEnabled(false);
 
         JTusrs.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -114,6 +155,11 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        JTusrs.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JTusrsMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(JTusrs);
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -254,7 +300,10 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
-        // TODO add your handling code here:
+
+        NuevoCodigoUSR();
+
+
     }//GEN-LAST:event_btnNuevoActionPerformed
 
     private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
@@ -262,7 +311,15 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnModificarActionPerformed
 
     private void btnBuscarPersonalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarPersonalActionPerformed
-        // TODO add your handling code here:
+
+        try 
+        {
+            
+        } catch (Exception e) 
+           {
+               
+           }
+
     }//GEN-LAST:event_btnBuscarPersonalActionPerformed
 
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
@@ -280,6 +337,29 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame {
 
 
     }//GEN-LAST:event_btnsalirActionPerformed
+
+    private void JTusrsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JTusrsMouseClicked
+
+        try 
+        {
+            int row = JTusrs.rowAtPoint(evt.getPoint());
+            //JIFOrdenesDeServicio.
+            
+            txtcod.setText(""+JTusrs.getValueAt(row, 0));
+            txtnombres.setText(""+JTusrs.getValueAt(row, 1));
+            txtusuarios.setText(""+JTusrs.getValueAt(row, 2));
+            CBTipo.setSelectedItem(""+JTusrs.getValueAt(row, 3));
+            CBEstado.setSelectedItem(""+JTusrs.getValueAt(row, 4));
+            String nom = ""+JTusrs.getValueAt(row, 1);
+            
+            evn.write(JFRPrincipal.JMSesion.getText(), "Se ha seleccionado un usuario", "JIFMantenerUsuario", "El usuario "+nom+" ha sido seleccionado");
+            
+        } catch (Exception e) 
+            {
+                lc.write("Ha ocurrido algun error al intentar seleccionar un usuario", "JIFMantenerUsuario + Metodo MouseClicked Linea 304", e.getMessage());
+            }
+
+    }//GEN-LAST:event_JTusrsMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

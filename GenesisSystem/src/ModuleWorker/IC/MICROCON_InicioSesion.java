@@ -13,7 +13,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
-import javax.swing.JFrame;
 
 /**
  *
@@ -21,7 +20,6 @@ import javax.swing.JFrame;
  */
 public class MICROCON_InicioSesion 
 {
-    JFrame form;
     private ResultSet rs;
     private PreparedStatement st;
     Connection cn;
@@ -32,7 +30,8 @@ public class MICROCON_InicioSesion
         try 
         {
             DBCON db = new DBCON();
-            cn = db.CN();
+            cn = db.DB_ORC_CON();
+                        
             CallableStatement cst = cn.prepareCall("{?=call F_inicio_sesion(?,?)}");
             cst.setString(2, usr);
             cst.setString(3, pass);
@@ -44,6 +43,7 @@ public class MICROCON_InicioSesion
         } catch (SQLException sqle) 
         {
             lc.write( "La base de datos no retorno conexion!","MICROCON_InicioSesion", sqle.getMessage());
+            return "ERROR";
         } finally 
            {
              try 
@@ -54,8 +54,6 @@ public class MICROCON_InicioSesion
             lc.write( "Error no controlado en el bloque del Finally del metodo ValidarUsuario","MICROCON_InicioSesion", sqlex.getMessage());
                }
             }
-        
-        return "0";
     }
     
     public String obtenerNombreUSR(String usr)
@@ -63,7 +61,7 @@ public class MICROCON_InicioSesion
         try 
         {
             DBCON db = new DBCON();
-            cn = db.CN();
+            cn = db.DB_ORC_CON();
             CallableStatement cst = cn.prepareCall("{?=call F_Nombre_Personal(?)}");
             cst.setString(2, usr);
             cst.registerOutParameter(1, Types.VARCHAR);

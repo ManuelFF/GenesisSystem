@@ -11,6 +11,7 @@ import NCLPM.LOG;
 import NCLPM.EVENTS;
 import java.awt.Color;
 import java.util.Arrays;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import org.apache.commons.codec.digest.DigestUtils;
 
@@ -156,7 +157,13 @@ public class JFRInicioSesion extends javax.swing.JFrame
 
     private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
         
+  try 
+    {
+       
         MICROCON_InicioSesion Minse = new MICROCON_InicioSesion();
+       
+        JFrame jf=new JFrame();
+        jf.setAlwaysOnTop(true);
         
         String usr = txtusuario.getText();
         //char[] psw = pswPassword.getPassword();       
@@ -164,7 +171,7 @@ public class JFRInicioSesion extends javax.swing.JFrame
                     
        if(intentos<=0)
        {
-           JOptionPane.showMessageDialog(this, "Se quedo sin intentos\nEL SISTEMA SE CERRARA!");
+           JOptionPane.showMessageDialog(jf, "Se quedo sin intentos\nEL SISTEMA SE CERRARA!", "Sobrepaso limite de intentos", JOptionPane.ERROR_MESSAGE);
            evn.write("Aún no definido", "Intento entrar al sistema", "JFRInicioSesion", "FUE EXPULSADO");
            lc.write("Intentos para inicio de sesión superados", "JFRInicioSesion", "No tiene más intentos");
            System.exit(0);
@@ -174,13 +181,13 @@ public class JFRInicioSesion extends javax.swing.JFrame
         if(usr.trim().isEmpty())
         {
             intentos--;
-            JOptionPane.showMessageDialog(this, "Ingrese un usuario valido"+"\nINTENTOS RESTANTES : "+intentos);
+            JOptionPane.showMessageDialog(jf, "Ingrese un usuario valido"+"\nINTENTOS RESTANTES : "+intentos, "Error de usuario", JOptionPane.ERROR_MESSAGE);
             evn.write("Aún no definido", "Intento entrar al sistema", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
             lc.write("No se ha ingresado un usuario valido", "JFRInicioSesion", "No existe el usuario");
         }else if(pswPassword.getText().trim().isEmpty())
         {
             intentos--;
-            JOptionPane.showMessageDialog(this, "Ingrese una contraseña valida"+"\nINTENTOS RESTANTES : "+intentos);
+            JOptionPane.showMessageDialog(jf, "Ingrese una contraseña valida"+"\nINTENTOS RESTANTES : "+intentos, "Contraseña invalida", JOptionPane.ERROR_MESSAGE);
             evn.write("Aún no definido", "Intento entrar al sistema", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
             lc.write("No se ha ingresado una contraseña valido", "JFRInicioSesion", "La contraseña es invalida");
         }else
@@ -189,7 +196,7 @@ public class JFRInicioSesion extends javax.swing.JFrame
             if(Minse.validarUsuario(usr, psw).equals("0"))
             {
               intentos--;  
-              JOptionPane.showMessageDialog(this, "El usuario no existe"+"\nINTENTOS RESTANTES : "+intentos);
+              JOptionPane.showMessageDialog(jf, "El usuario no existe"+"\nINTENTOS RESTANTES : "+intentos, "Usuario Inexistente", JOptionPane.ERROR_MESSAGE);
               lc.write("El usuario no existe en la base de datos", "JFRInicioSesion", "Usuario inexistente en base");
               evn.write("Aún no definido", "Intento entrar al sistema", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
             }else
@@ -208,10 +215,15 @@ public class JFRInicioSesion extends javax.swing.JFrame
                         //ComprobarAsistencia
                     }
                 }
-            
                         
         }//FIN ELSE GENERAL
        }//ELSE INTENTOS
+       
+  } catch (Exception e) 
+     {
+         lc.write("No se ha podido ingresar al sistema debido a un error", "JFRInicioSesion metodo ingresar linea 157", e.getMessage());
+     }
+     
         
     }//GEN-LAST:event_btnIngresarActionPerformed
 

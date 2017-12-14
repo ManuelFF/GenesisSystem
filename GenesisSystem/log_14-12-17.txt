@@ -1,0 +1,204 @@
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON
+ERROR : Error de E/S: The Network Adapter could not establish the connection
+TIME : 11:58:38
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error no controlado en el bloque del Finally del metodo ValidarUsuario
+CLASE : MICROCON_InicioSesion
+ERROR : null
+TIME : 11:58:38
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido ingresar al sistema debido a un error
+CLASE : JFRInicioSesion metodo ingresar linea 157
+ERROR : null
+TIME : 11:58:38
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON
+ERROR : Error de E/S: The Network Adapter could not establish the connection
+TIME : 11:59:2
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error no controlado en el bloque del Finally del metodo ValidarUsuario
+CLASE : MICROCON_InicioSesion
+ERROR : null
+TIME : 11:59:2
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido ingresar al sistema debido a un error
+CLASE : JFRInicioSesion metodo ingresar linea 157
+ERROR : null
+TIME : 11:59:2
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON
+ERROR : Error de E/S: The Network Adapter could not establish the connection
+TIME : 12:0:25
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error no controlado en el bloque del Finally del metodo ValidarUsuario
+CLASE : MICROCON_InicioSesion
+ERROR : null
+TIME : 12:0:25
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido ingresar al sistema debido a un error
+CLASE : JFRInicioSesion metodo ingresar linea 157
+ERROR : null
+TIME : 12:0:25
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON
+ERROR : Error de E/S: The Network Adapter could not establish the connection
+TIME : 12:2:34
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error no controlado en el bloque del Finally del metodo ValidarUsuario
+CLASE : MICROCON_InicioSesion
+ERROR : null
+TIME : 12:2:34
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido ingresar al sistema debido a un error
+CLASE : JFRInicioSesion metodo ingresar linea 157
+ERROR : null
+TIME : 12:2:34
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON
+ERROR : Error de E/S: The Network Adapter could not establish the connection
+TIME : 12:3:45
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error no controlado en el bloque del Finally del metodo ValidarUsuario
+CLASE : MICROCON_InicioSesion
+ERROR : null
+TIME : 12:3:45
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido ingresar al sistema debido a un error
+CLASE : JFRInicioSesion metodo ingresar linea 157
+ERROR : null
+TIME : 12:3:45
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON
+ERROR : Error de E/S: The Network Adapter could not establish the connection
+TIME : 12:5:25
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error no controlado en el bloque del Finally del metodo ValidarUsuario
+CLASE : MICROCON_InicioSesion
+ERROR : null
+TIME : 12:5:25
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido ingresar al sistema debido a un error
+CLASE : JFRInicioSesion metodo ingresar linea 157
+ERROR : null
+TIME : 12:5:25
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON
+ERROR : Error de E/S: The Network Adapter could not establish the connection
+TIME : 12:6:20
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error no controlado en el bloque del Finally del metodo ValidarUsuario
+CLASE : MICROCON_InicioSesion
+ERROR : null
+TIME : 12:6:20
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido ingresar al sistema debido a un error
+CLASE : JFRInicioSesion metodo ingresar linea 157
+ERROR : null
+TIME : 12:6:20
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON metodo DB_ORC_CON
+ERROR : Error de E/S: The Network Adapter could not establish the connection
+TIME : 12:12:13
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error no controlado en el bloque del Finally del metodo ValidarUsuario
+CLASE : MICROCON_InicioSesion
+ERROR : null
+TIME : 12:12:13
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido ingresar al sistema debido a un error
+CLASE : JFRInicioSesion metodo ingresar linea 157
+ERROR : null
+TIME : 12:12:13
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON metodo DB_ORC_CON
+ERROR : Error de E/S: The Network Adapter could not establish the connection
+TIME : 12:16:56
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error no controlado en el bloque del Finally del metodo ValidarUsuario
+CLASE : MICROCON_InicioSesion
+ERROR : null
+TIME : 12:16:56
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido ingresar al sistema debido a un error
+CLASE : JFRInicioSesion metodo ingresar linea 157
+ERROR : null
+TIME : 12:16:56
+----------------------------------------------------
+ 
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 12:17:7
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado una contraseña valido
+CLASE : JFRInicioSesion
+ERROR : La contraseña es invalida
+TIME : 12:17:14
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON metodo DB_ORC_CON
+ERROR : Error de E/S: The Network Adapter could not establish the connection
+TIME : 12:17:56
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON metodo DB_ORC_CON
+ERROR : Error de E/S: The Network Adapter could not establish the connection
+TIME : 12:19:4
+----------------------------------------------------
+ 
+DESCRIPCIÓN : ha ocurrido algun error no controlado
+CLASE : MICROCON_MantenerUsuario
+ERROR : null
+TIME : 12:19:4
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON metodo DB_ORC_CON
+ERROR : Error de E/S: The Network Adapter could not establish the connection
+TIME : 12:19:56
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON metodo DB_ORC_CON
+ERROR : Error de E/S: The Network Adapter could not establish the connection
+TIME : 12:20:22
+----------------------------------------------------
+ 
