@@ -30,7 +30,7 @@ public class MICROCON_InicioSesion
         try 
         {
             DBCON db = new DBCON();
-            cn = db.DB_ORC_CON();
+            cn = db.conector();
                         
             CallableStatement cst = cn.prepareCall("{?=call F_inicio_sesion(?,?)}");
             cst.setString(2, usr);
@@ -61,7 +61,7 @@ public class MICROCON_InicioSesion
         try 
         {
             DBCON db = new DBCON();
-            cn = db.DB_ORC_CON();
+            cn = db.conector();
             CallableStatement cst = cn.prepareCall("{?=call F_Nombre_Personal(?)}");
             cst.setString(2, usr);
             cst.registerOutParameter(1, Types.VARCHAR);

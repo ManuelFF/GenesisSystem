@@ -70,7 +70,7 @@ public class DBCON
         return sid;
     }
         
-    final public Connection DB_ORC_CON()
+    protected Connection DB_ORC_CON()
     {
         cn = null;
         JFrame jf=new JFrame();
@@ -103,8 +103,10 @@ public class DBCON
         return cn;
     }
     
-       
-    
+    final public Connection conector()
+    {
+        return DB_ORC_CON();
+    }
     
     
 }

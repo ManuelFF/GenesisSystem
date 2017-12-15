@@ -45,7 +45,7 @@ public class MICROCON_MantenerUsuario
         try{
             DBCON RCN = new DBCON();
             
-            Statement smt=RCN.DB_ORC_CON().createStatement();
+            Statement smt=RCN.conector().createStatement();
             ResultSet rs= smt.executeQuery("SELECT * from V_usuario");
             ResultSetMetaData md=rs.getMetaData();
             int columnas= md.getColumnCount();
@@ -76,7 +76,7 @@ public class MICROCON_MantenerUsuario
         {   
             DBCON RCN = new DBCON();
             
-            st=RCN.DB_ORC_CON().prepareStatement("SELECT DESC_TIPO FROM tipo");
+            st=RCN.conector().prepareStatement("SELECT DESC_TIPO FROM tipo");
             rs=st.executeQuery();
 
             while (rs.next())
@@ -135,7 +135,7 @@ public class MICROCON_MantenerUsuario
         {   
             DBCON RCN = new DBCON();
             
-            st=RCN.DB_ORC_CON().prepareStatement("SELECT ID_USER FROM usuario order by ID_USER");
+            st=RCN.conector().prepareStatement("SELECT ID_USER FROM usuario order by ID_USER");
             rs=st.executeQuery();
 
             while (rs.next())
@@ -144,7 +144,7 @@ public class MICROCON_MantenerUsuario
                 NOB_usuario nu = new NOB_usuario(ID_USER);
                 A_objeto(nu);
             }
-            RCN.DB_ORC_CON().close();
+            RCN.conector().close();
 
         }
         catch (SQLException sqle) 
