@@ -6,6 +6,7 @@
 package ModuleWorker.View;
 
 import ModuleWorker.DBCON;
+import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSCON;
 import ModuleWorker.SYSWALLPCON;
 import NCLPM.EVENTS;
@@ -255,7 +256,9 @@ public class JFRPrincipal extends javax.swing.JFrame
     private void JSMCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMCerrarSesionActionPerformed
         try 
         {
-  
+          SYSAUDIOCON sysau = new SYSAUDIOCON();
+          sysau.E_CERRAR_SESION();
+          Thread.sleep(800);
           System.exit(0);
             
         } catch (Exception sqle) 

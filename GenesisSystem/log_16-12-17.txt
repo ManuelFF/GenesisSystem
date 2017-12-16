@@ -1,0 +1,138 @@
+﻿DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 15:25:58
+----------------------------------------------------
+ 
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 15:31:17
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 41
+ERROR : Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian and frame lengh of 47576
+TIME : 15:57:2
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 41
+ERROR : Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian and frame lengh of 47576
+TIME : 15:57:4
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 41
+ERROR : Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian and frame lengh of 47576
+TIME : 15:57:5
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 41
+ERROR : Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian and frame lengh of 47576
+TIME : 15:57:6
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 41
+ERROR : Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian and frame lengh of 47576
+TIME : 15:57:44
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 41
+ERROR : Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian and frame lengh of 47576
+TIME : 15:57:46
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 41
+ERROR : Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian and frame lengh of 47576
+TIME : 15:57:47
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error intentando abrir 'Mantenimiento Usuarios'
+CLASE : JFRPrincipal
+ERROR : null
+TIME : 15:58:12
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error intentando abrir 'Mantenimiento Usuarios'
+CLASE : JFRPrincipal
+ERROR : null
+TIME : 15:58:14
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error intentando abrir 'Mantenimiento Usuarios'
+CLASE : JFRPrincipal
+ERROR : null
+TIME : 15:58:22
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 41
+ERROR : Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian and frame lengh of 47576
+TIME : 15:58:38
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 41
+ERROR : Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian and frame lengh of 47576
+TIME : 15:58:39
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 41
+ERROR : Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian and frame lengh of 47576
+TIME : 15:58:39
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 41
+ERROR : Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian and frame lengh of 47576
+TIME : 15:58:40
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 41
+ERROR : Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian and frame lengh of 47576
+TIME : 15:58:41
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 41
+ERROR : Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian and frame lengh of 47576
+TIME : 15:59:2
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 41
+ERROR : Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian and frame lengh of 47576
+TIME : 15:59:4
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Ha ocurrido algun error al intentar cerrar el sistema!
+CLASE : JFPrincipal metodo JSMCerrar Sesión Linea 255
+ERROR : null
+TIME : 16:5:15
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Ha ocurrido algun error al intentar cerrar el sistema!
+CLASE : JFPrincipal metodo JSMCerrar Sesión Linea 255
+ERROR : null
+TIME : 16:5:25
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Ha ocurrido algun error al intentar cerrar el sistema!
+CLASE : JFPrincipal metodo JSMCerrar Sesión Linea 255
+ERROR : null
+TIME : 16:5:36
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Ha ocurrido algun error al intentar cerrar el sistema!
+CLASE : JFPrincipal metodo JSMCerrar Sesión Linea 255
+ERROR : null
+TIME : 16:5:56
+----------------------------------------------------
+ 

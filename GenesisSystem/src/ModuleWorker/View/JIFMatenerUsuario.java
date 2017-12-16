@@ -7,9 +7,15 @@ package ModuleWorker.View;
 
 import ModuleWorker.Core.NOB_usuario;
 import ModuleWorker.IC.MICROCON_MantenerUsuario;
+import ModuleWorker.IC.ShakingComponent;
+import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSFRMCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
+import java.io.File;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.swing.JFrame;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -26,6 +32,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
     LOG lc = new LOG();
     EVENTS evn = new EVENTS();
     SYSFRMCON sysfrm = new SYSFRMCON();
+    JFrame form;
     
     DefaultTableModel modelo_usuarios = new DefaultTableModel()
     {
@@ -67,6 +74,16 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
 	txtcod.setText(codigo);
     }
     
+    protected void clearFRM()
+    {
+        txtcod.setText("");
+        txtidPer.setText("");
+        txtnombres.setText("");
+        txtusuarios.setText("");
+        pswPassword.setText("");
+        CBEstado.setSelectedIndex(0);
+        CBTipo.setSelectedIndex(0);
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -125,7 +142,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
         txtusuarios.setBackground(new java.awt.Color(204, 204, 204));
 
         txtnombres.setEditable(false);
-        txtnombres.setBackground(new java.awt.Color(204, 204, 204));
+        txtnombres.setBackground(new java.awt.Color(204, 255, 255));
 
         txtidPer.setEditable(false);
         txtidPer.setBackground(new java.awt.Color(204, 255, 204));
@@ -144,6 +161,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
         CBEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ACTIVO", "INACTIVO" }));
         CBEstado.setEnabled(false);
 
+        JTusrs.setBackground(new java.awt.Color(204, 204, 204));
         JTusrs.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -155,6 +173,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        JTusrs.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         JTusrs.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JTusrsMouseClicked(evt);
@@ -167,6 +186,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
 
         btnModificar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/EDIT.png"))); // NOI18N
         btnModificar.setText("Modificar");
+        btnModificar.setEnabled(false);
         btnModificar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnModificarActionPerformed(evt);
@@ -183,6 +203,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
 
         btnNuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Files-New-File-icon.png"))); // NOI18N
         btnNuevo.setText("Nuevo");
+        btnNuevo.setEnabled(false);
         btnNuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNuevoActionPerformed(evt);
@@ -307,17 +328,30 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
     }//GEN-LAST:event_btnNuevoActionPerformed
 
     private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
-        // TODO add your handling code here:
+
+        ShakingComponent ss = new ShakingComponent(txtcod);
+        ss.startShake();
+        
+        SYSAUDIOCON sysau = new SYSAUDIOCON();
+        sysau.E_CERRAR_SESION();
+        
+        
+        
     }//GEN-LAST:event_btnModificarActionPerformed
 
     private void btnBuscarPersonalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarPersonalActionPerformed
 
+        evn.write(JFRPrincipal.JMSesion.getText(), "Abrio el formulario de selección de personal", "JIFMantenerUsuario", "Botón 'Buscar Personal' Presionado");
         try 
         {
+            clearFRM();
+            JDES_seleccionarPersonal bp = new JDES_seleccionarPersonal(form, true);
+            bp.setAlwaysOnTop(true);
+            bp.setVisible(true);
             
         } catch (Exception e) 
            {
-               
+               lc.write("Ha ocurrido un error al intentar abrir el formulario de selección de personal", "JIFMantenerUsuario linea 313", e.getMessage());
            }
 
     }//GEN-LAST:event_btnBuscarPersonalActionPerformed
@@ -367,8 +401,8 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
     private javax.swing.JComboBox<String> CBTipo;
     private javax.swing.JTable JTusrs;
     private javax.swing.JButton btnBuscarPersonal;
-    private javax.swing.JButton btnModificar;
-    private javax.swing.JButton btnNuevo;
+    public static javax.swing.JButton btnModificar;
+    public static javax.swing.JButton btnNuevo;
     private javax.swing.JButton btnsalir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -382,8 +416,8 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPasswordField pswPassword;
     private javax.swing.JTextField txtcod;
-    private javax.swing.JTextField txtidPer;
-    private javax.swing.JTextField txtnombres;
+    public static javax.swing.JTextField txtidPer;
+    public static javax.swing.JTextField txtnombres;
     private javax.swing.JTextField txtusuarios;
     // End of variables declaration//GEN-END:variables
 }

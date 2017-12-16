@@ -5,9 +5,16 @@
  */
 package ModuleWorker.View;
 
+import ModuleWorker.IC.MICROCON_MantenerUsuario;
 import ModuleWorker.SYSFRMCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import javax.swing.RowFilter;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
 
 /**
  *
@@ -19,11 +26,22 @@ public class JDES_seleccionarPersonal extends javax.swing.JDialog
     /**
      * Creates new form JDES_seleccionarPersonal
      */
-    
+    MICROCON_MantenerUsuario mcmuser = new MICROCON_MantenerUsuario();
     LOG lc = new LOG();
     EVENTS evn = new EVENTS();
     SYSFRMCON sysfrm = new SYSFRMCON();
     
+     DefaultTableModel modelo = new DefaultTableModel()
+    {
+        @Override
+        public boolean isCellEditable(int row , int col)
+        {
+             return false;
+        }
+    };
+
+    private TableRowSorter trsFiltro;
+     
     public JDES_seleccionarPersonal(java.awt.Frame parent, boolean modal)
     {
         super(parent, modal);
@@ -31,7 +49,34 @@ public class JDES_seleccionarPersonal extends javax.swing.JDialog
         this.setLocationRelativeTo(null);
         this.setTitle(sysfrm.T_JDESseleccionarPersonal());
         sysfrm.B_JDESseleccionarPersonal(this.getContentPane());
+        mcmuser.CargarSeleccionPersonal(modelo, JTbuscarPersonal);
+        
+        JTbuscarPersonal.setModel(modelo);
+        JTbuscarPersonal.addMouseListener(new MouseAdapter(){});
+        JTbuscarPersonal.getTableHeader().setReorderingAllowed(false) ;
+        trsFiltro = new TableRowSorter(JTbuscarPersonal.getModel());
+        JTbuscarPersonal.setRowSorter(trsFiltro);
+        
+        
     }
+    
+    public void filtro() 
+    {
+          int columnaABuscar = 0;
+          
+          if(cbfiltro.getSelectedItem().toString().equals("Nombres"))
+          {
+              columnaABuscar = 1;
+          }
+          if (cbfiltro.getSelectedItem().toString().equals("ID")) 
+          {
+              columnaABuscar = 0;
+          }
+          
+          
+          trsFiltro.setRowFilter(RowFilter.regexFilter(txtfiltro.getText(), columnaABuscar));
+     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -47,15 +92,17 @@ public class JDES_seleccionarPersonal extends javax.swing.JDialog
         JTbuscarPersonal = new javax.swing.JTable();
         btnsalir = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jTextField1 = new javax.swing.JTextField();
+        cbfiltro = new javax.swing.JComboBox<>();
+        txtfiltro = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setText("SELECCIONAR PERSONAL");
 
+        JTbuscarPersonal.setBackground(new java.awt.Color(204, 204, 204));
         JTbuscarPersonal.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -67,6 +114,12 @@ public class JDES_seleccionarPersonal extends javax.swing.JDialog
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        JTbuscarPersonal.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        JTbuscarPersonal.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JTbuscarPersonalMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(JTbuscarPersonal);
 
         btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/logout-icon24.png"))); // NOI18N
@@ -80,9 +133,15 @@ public class JDES_seleccionarPersonal extends javax.swing.JDialog
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Buscar");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nombres", "ID" }));
+        cbfiltro.setBackground(new java.awt.Color(204, 204, 204));
+        cbfiltro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nombres", "ID" }));
 
-        jTextField1.setBackground(new java.awt.Color(204, 204, 204));
+        txtfiltro.setBackground(new java.awt.Color(204, 204, 204));
+        txtfiltro.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtfiltroKeyTyped(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel3.setText("Resultados de la busqueda:");
@@ -94,28 +153,29 @@ public class JDES_seleccionarPersonal extends javax.swing.JDialog
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(btnsalir))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(73, 73, 73)
-                        .addComponent(jLabel1)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(73, 73, 73)
+                                .addComponent(jLabel1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cbfiltro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtfiltro, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(btnsalir)))))
                 .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -125,13 +185,13 @@ public class JDES_seleccionarPersonal extends javax.swing.JDialog
                 .addGap(14, 14, 14)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cbfiltro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtfiltro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 243, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnsalir)
                 .addContainerGap())
         );
@@ -145,6 +205,8 @@ public class JDES_seleccionarPersonal extends javax.swing.JDialog
         {
             evn.write(JFRPrincipal.JMSesion.getText(), "Ha salido del formulario 'Mantener Usuario'", "JIFMantenerUsuario", "Presiono Botón 'Salir'");
             JFRPrincipal.JSMMantenimientoUsuarios.setActionCommand("CERRADO");
+            JIFMatenerUsuario.btnNuevo.setEnabled(false);
+            JIFMatenerUsuario.btnModificar.setEnabled(false);
             this.dispose();
         } catch (Exception e)
         {
@@ -152,6 +214,49 @@ public class JDES_seleccionarPersonal extends javax.swing.JDialog
         }
 
     }//GEN-LAST:event_btnsalirActionPerformed
+
+    private void txtfiltroKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtfiltroKeyTyped
+
+        txtfiltro.addKeyListener(new KeyAdapter() 
+        {
+            public void keyReleased(final KeyEvent e) 
+            {
+                String cadena = (txtfiltro.getText().toUpperCase());
+                txtfiltro.setText(cadena);
+                repaint();
+                filtro();
+            }
+        });
+
+    }//GEN-LAST:event_txtfiltroKeyTyped
+
+    private void JTbuscarPersonalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JTbuscarPersonalMouseClicked
+
+        
+        try {
+            
+            int row = JTbuscarPersonal.rowAtPoint(evt.getPoint());
+            
+            JIFMatenerUsuario.txtidPer.setText(""+JTbuscarPersonal.getValueAt(row, 0));
+            JIFMatenerUsuario.txtnombres.setText(""+JTbuscarPersonal.getValueAt(row, 1));
+            
+            String select = ""+JTbuscarPersonal.getValueAt(row, 1);
+
+            
+            evn.write(JFRPrincipal.JMSesion.getText(),"Ha seleccionado al personal "+select,"JDES_seleccionarPersonal", "Tabla de personal presionado");
+            
+            JIFMatenerUsuario.btnNuevo.setEnabled(true);
+            JIFMatenerUsuario.btnModificar.setEnabled(true);
+            
+            this.dispose();
+
+        } catch (Exception e) 
+            {
+               lc.write("Error al seleccionar personal", "JDES_seleccionarPersonal", e.getMessage());
+            }
+
+
+    }//GEN-LAST:event_JTbuscarPersonalMouseClicked
 
     /**
      * @param args the command line arguments
@@ -198,11 +303,11 @@ public class JDES_seleccionarPersonal extends javax.swing.JDialog
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable JTbuscarPersonal;
     private javax.swing.JButton btnsalir;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> cbfiltro;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField txtfiltro;
     // End of variables declaration//GEN-END:variables
 }

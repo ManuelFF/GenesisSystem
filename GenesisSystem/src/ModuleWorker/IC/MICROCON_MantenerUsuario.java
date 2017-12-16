@@ -40,7 +40,7 @@ public class MICROCON_MantenerUsuario
     //MODIFICAR USUARIO 
     
     //CARGAR USUARIO
-    public void Cargarusuario(DefaultTableModel modelo, JTable JTasistencia)         
+    public void Cargarusuario(DefaultTableModel modelo, JTable Jta)         
     {
         try{
             DBCON RCN = new DBCON();
@@ -58,7 +58,7 @@ public class MICROCON_MantenerUsuario
                 Object[] fila = new Object[columnas];
                 for (int i = 0; i < columnas; i++) {fila[i]=rs.getObject(i+1);}
                 modelo.addRow(fila);
-            }JTasistencia.setModel(modelo);
+            }Jta.setModel(modelo);
         }catch(SQLException sqlex)
             {
                 lc.write("Problema al Cargar Datos en el metodo 'CargarUsuario'", "MICROCON_MantenerUsuario", sqlex.getMessage());
@@ -66,7 +66,37 @@ public class MICROCON_MantenerUsuario
         try {
         } catch (Exception ex)
             {
-                lc.write("Error no controlado en el metodo cargar usuario", "MICROCON_MantenerUsuario", ex.getMessage());
+                lc.write("Error no controlado en el metodo 'cargarUsuario'", "MICROCON_MantenerUsuario", ex.getMessage());
+            }
+    }
+    
+    public void CargarSeleccionPersonal(DefaultTableModel modelo, JTable Jta)         
+    {
+        try{
+            DBCON RCN = new DBCON();
+            
+            Statement smt=RCN.conector().createStatement();
+            ResultSet rs= smt.executeQuery("SELECT * from V_SeleccionPersonal");
+            ResultSetMetaData md=rs.getMetaData();
+            int columnas= md.getColumnCount();
+            for (int i = 1; i <= columnas; i++)
+             {
+               modelo.addColumn(md.getColumnLabel(i));
+             }
+            while(rs.next())
+            {
+                Object[] fila = new Object[columnas];
+                for (int i = 0; i < columnas; i++) {fila[i]=rs.getObject(i+1);}
+                modelo.addRow(fila);
+            }Jta.setModel(modelo);
+        }catch(SQLException sqlex)
+            {
+                lc.write("Problema al Cargar Datos en el metodo 'CargarSeleccionPersonal'", "MICROCON_MantenerUsuario", sqlex.getMessage());
+            }
+        try {
+        } catch (Exception ex)
+            {
+                lc.write("Error no controlado en el metodo 'CargarSeleccionPersonal'", "MICROCON_MantenerUsuario", ex.getMessage());
             }
     }
     
