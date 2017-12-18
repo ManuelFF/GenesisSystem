@@ -7,6 +7,7 @@ package ModuleWorker.View;
 
 import ModuleWorker.IC.MICROCON_InicioSesion;
 import ModuleWorker.IC.ShakingFrame;
+import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSFRMCON;
 import NCLPM.LOG;
 import NCLPM.EVENTS;
@@ -31,7 +32,8 @@ public class JFRInicioSesion extends javax.swing.JFrame
     EVENTS evn = new EVENTS();
     SYSFRMCON sysfrm = new SYSFRMCON();
     ShakingFrame s = new ShakingFrame(this); //SHAKING
-    
+    SYSAUDIOCON sysau = new SYSAUDIOCON(); //EFECTOS
+
     public JFRInicioSesion() 
     {
         initComponents();
@@ -162,7 +164,7 @@ public class JFRInicioSesion extends javax.swing.JFrame
     {
        
         MICROCON_InicioSesion Minse = new MICROCON_InicioSesion();
-       
+
         JFrame jf=new JFrame();
         jf.setAlwaysOnTop(true);
         
@@ -208,6 +210,7 @@ public class JFRInicioSesion extends javax.swing.JFrame
                 {
                     if(Minse.validarUsuario(usr, psw).equals("1"))
                     {
+                        sysau.E_INICIAR_SESION();
                         evn.write(usr, "Ingreso al sistema", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
                         JFRPrincipal principal = new JFRPrincipal();
                         JFRPrincipal.JMSesion.setText(Minse.obtenerNombreUSR(usr));

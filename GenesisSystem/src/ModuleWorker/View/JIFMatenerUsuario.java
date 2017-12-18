@@ -7,16 +7,20 @@ package ModuleWorker.View;
 
 import ModuleWorker.Core.NOB_usuario;
 import ModuleWorker.IC.MICROCON_MantenerUsuario;
+import ModuleWorker.IC.MWCON;
 import ModuleWorker.IC.ShakingComponent;
 import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSFRMCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
+import java.awt.Color;
 import java.io.File;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import org.apache.commons.codec.digest.DigestUtils;
 
 /**
  *
@@ -49,6 +53,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
         this.setTitle(sysfrm.T_mantenerUsuario());
         sysfrm.B_mantenerUsuario(this.getContentPane());
         JTusrs.setModel(modelo_usuarios);
+        JTusrs.getTableHeader().setReorderingAllowed(false);
         mcmuser.Cargarusuario(modelo_usuarios, JTusrs);
         mcmuser.CargarBoxTipo(CBTipo);
     }
@@ -79,12 +84,28 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
         txtcod.setText("");
         txtidPer.setText("");
         txtnombres.setText("");
-        txtusuarios.setText("");
+        txtusuario.setText("");
         pswPassword.setText("");
         CBEstado.setSelectedIndex(0);
         CBTipo.setSelectedIndex(0);
     }
 
+    protected void enabledFRM()
+    {
+        txtusuario.setEnabled(true);txtusuario.setEditable(true);
+        pswPassword.setEnabled(true);pswPassword.setEditable(true);
+        CBEstado.setEnabled(true);
+        CBTipo.setEnabled(true);
+    }
+    
+    protected void disabledFRM()
+    {
+        txtusuario.setEnabled(false);txtusuario.setEditable(false);
+        pswPassword.setEnabled(false);pswPassword.setEditable(false);
+        CBEstado.setEnabled(false);
+        CBTipo.setEnabled(false);
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -101,7 +122,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         pswPassword = new javax.swing.JPasswordField();
-        txtusuarios = new javax.swing.JTextField();
+        txtusuario = new javax.swing.JTextField();
         txtnombres = new javax.swing.JTextField();
         txtidPer = new javax.swing.JTextField();
         txtcod = new javax.swing.JTextField();
@@ -138,8 +159,8 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
         pswPassword.setEditable(false);
         pswPassword.setBackground(new java.awt.Color(204, 204, 204));
 
-        txtusuarios.setEditable(false);
-        txtusuarios.setBackground(new java.awt.Color(204, 204, 204));
+        txtusuario.setEditable(false);
+        txtusuario.setBackground(new java.awt.Color(204, 204, 204));
 
         txtnombres.setEditable(false);
         txtnombres.setBackground(new java.awt.Color(204, 255, 255));
@@ -258,7 +279,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(pswPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtusuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtusuario, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtnombres, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtidPer, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(CBTipo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -289,7 +310,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
                     .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtusuarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtusuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -322,18 +343,97 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
 
     private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
 
-        NuevoCodigoUSR();
+    try 
+    {
+      JFrame jf=new JFrame();
+      jf.setAlwaysOnTop(true);
+      MWCON mw = new MWCON();
+      
+      evn.write(JFRPrincipal.JMSesion.getText(), "hizo click en el boton nuevo", "JIFMantenerUsuario linea 327", "Botón 'Nuevo presionado'");
+      
+      if(txtidPer.getText().trim().equals(""))
+      {
+        evn.write(JFRPrincipal.JMSesion.getText(), "Intento ingresar un nuevo usuario sin seleccionar primero un personal", "JIFMantenerUsuario linea 334", "Botón 'Nuevo presionado'");
+        SYSAUDIOCON sysau = new SYSAUDIOCON();
+        sysau.E_ERROR();
+        JOptionPane.showMessageDialog(jf, "Seleccione un personal", "Personal no seleccionado", JOptionPane.ERROR_MESSAGE);
+      }else
+        {
+            String comp = ""+JTusrs.getValueAt(0, 1);
+            if(comp.toUpperCase().trim().equals(txtnombres.getText().toUpperCase().trim()))
+            {
+                 evn.write(JFRPrincipal.JMSesion.getText(), "Intento crear un usuario a un personal que ya posee un usuario", "JIFMantenerUsuario linea 344", "Botón 'Nuevo presionado'");
+                 SYSAUDIOCON sysau = new SYSAUDIOCON();
+                 sysau.E_EXCLAMATION();
+                 ShakingComponent sc = new ShakingComponent(JTusrs);
+                 sc.startShake();
+                 JOptionPane.showMessageDialog(jf, "El personal ya tiene un usuario existente", "Usuario Existente", JOptionPane.INFORMATION_MESSAGE);
+                 
+            }else
+                {
+                    if(btnNuevo.getText().equals("Nuevo"))
+                    {
+                        NuevoCodigoUSR();
+                        btnNuevo.setText("Insertar");
+                        enabledFRM();
+                    }else
+                        {
+                            if(txtusuario.getText().trim().equals(""))
+                            {
+                                ShakingComponent sc = new ShakingComponent(txtusuario);
+                                SYSAUDIOCON sysau = new SYSAUDIOCON();
+                                sysau.E_ERROR();
+                                txtusuario.setBackground(Color.RED);
+                                sc.startShake();
 
+                            }else
+                                if(pswPassword.getText().trim().equals(""))
+                                {
+                                    ShakingComponent sc = new ShakingComponent(pswPassword);
+                                    SYSAUDIOCON sysau = new SYSAUDIOCON();
+                                    sysau.E_ERROR();
+                                    pswPassword.setBackground(Color.RED);
+                                    sc.startShake();    
+                                }
+                                else
+                                    {
+                                        String ID_USER = txtcod.getText();
+                                        String ID_PER = txtidPer.getText();
+                                        String USERNAME = txtusuario.getText();
+                                        String psw = DigestUtils.md5Hex(pswPassword.getText());
+                                        String ID_TIPO = mcmuser.Buscar_ID_Tipo(CBTipo.getSelectedItem().toString());
+                                        String ESTADO = CBEstado.getSelectedItem().toString();
+
+                                        mcmuser.InsertarUsuario(ID_USER, ID_PER, USERNAME, psw, ID_TIPO, ESTADO);
+
+                                        SYSAUDIOCON sysau = new SYSAUDIOCON();
+                                        sysau.E_INFORMATION();
+                                        JOptionPane.showMessageDialog(jf, "Usuario Insertado con exito!", "Usuario Insertado", JOptionPane.INFORMATION_MESSAGE);
+                                        clearFRM();
+                                        disabledFRM();
+                                        btnNuevo.setText("Nuevo");
+                                        mw.clear_table(modelo_usuarios, JTusrs);
+                                        mcmuser.Cargarusuario(modelo_usuarios, JTusrs);
+                                    }
+                           
+                        }
+                }
+        }
+      
+    } catch (Exception e) 
+        {
+            lc.write("Error al intentar ingresar un nuevo usuario", "JIFMantenerUsuario linea 326", e.getMessage());
+        }
 
     }//GEN-LAST:event_btnNuevoActionPerformed
 
     private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
 
-        ShakingComponent ss = new ShakingComponent(txtcod);
-        ss.startShake();
-        
+        ShakingComponent sc = new ShakingComponent(txtcod);
+        sc.startShake();
+
         SYSAUDIOCON sysau = new SYSAUDIOCON();
-        sysau.E_CERRAR_SESION();
+        sysau.E_ERROR();
         
         
         
@@ -344,6 +444,9 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
         evn.write(JFRPrincipal.JMSesion.getText(), "Abrio el formulario de selección de personal", "JIFMantenerUsuario", "Botón 'Buscar Personal' Presionado");
         try 
         {
+            btnNuevo.setText("Nuevo");
+            btnModificar.setEnabled(false);
+            disabledFRM();
             clearFRM();
             JDES_seleccionarPersonal bp = new JDES_seleccionarPersonal(form, true);
             bp.setAlwaysOnTop(true);
@@ -359,9 +462,9 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
 
           try 
-          {
+          {           
             evn.write(JFRPrincipal.JMSesion.getText(), "Ha salido del formulario 'Mantener Usuario'", "JIFMantenerUsuario", "Presiono Botón 'Salir'");
-              JFRPrincipal.JSMMantenimientoUsuarios.setActionCommand("CERRADO");
+            JFRPrincipal.JSMMantenimientoUsuarios.setActionCommand("CERRADO");
             this.dispose();
           } catch (Exception e) 
           {
@@ -378,13 +481,17 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
         {
             int row = JTusrs.rowAtPoint(evt.getPoint());
             //JIFOrdenesDeServicio.
-            
+            clearFRM();
             txtcod.setText(""+JTusrs.getValueAt(row, 0));
             txtnombres.setText(""+JTusrs.getValueAt(row, 1));
-            txtusuarios.setText(""+JTusrs.getValueAt(row, 2));
+            txtusuario.setText(""+JTusrs.getValueAt(row, 2));
             CBTipo.setSelectedItem(""+JTusrs.getValueAt(row, 3));
             CBEstado.setSelectedItem(""+JTusrs.getValueAt(row, 4));
             String nom = ""+JTusrs.getValueAt(row, 1);
+            
+            btnNuevo.setEnabled(false);
+            btnModificar.setEnabled(true);
+            enabledFRM();
             
             evn.write(JFRPrincipal.JMSesion.getText(), "Se ha seleccionado un usuario", "JIFMantenerUsuario", "El usuario "+nom+" ha sido seleccionado");
             
@@ -418,6 +525,6 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
     private javax.swing.JTextField txtcod;
     public static javax.swing.JTextField txtidPer;
     public static javax.swing.JTextField txtnombres;
-    private javax.swing.JTextField txtusuarios;
+    private javax.swing.JTextField txtusuario;
     // End of variables declaration//GEN-END:variables
 }

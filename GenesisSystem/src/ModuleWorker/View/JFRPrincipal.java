@@ -6,6 +6,7 @@
 package ModuleWorker.View;
 
 import ModuleWorker.DBCON;
+import ModuleWorker.IC.ShakingComponent;
 import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSCON;
 import ModuleWorker.SYSWALLPCON;
@@ -231,12 +232,21 @@ public class JFRPrincipal extends javax.swing.JFrame
 
     private void JSMMantenimientoUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMMantenimientoUsuariosActionPerformed
 
+       
         try
         {
             JIFMatenerUsuario usuarios = new JIFMatenerUsuario();
-            if(JSMMantenimientoUsuarios.getActionCommand().equals("Abierto")){JOptionPane.showMessageDialog(this,"Ya esta abierto");}
+            JFrame jf=new JFrame();
+            jf.setAlwaysOnTop(true);
+
+            if(JSMMantenimientoUsuarios.getActionCommand().equals("Abierto"))
+                {
+                    SYSAUDIOCON sysau = new SYSAUDIOCON();
+                    sysau.E_ERROR();
+                    JOptionPane.showMessageDialog(jf,"Ya esta abierto", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+                }
             else
-            {
+            {                
                 JSMMantenimientoUsuarios.setActionCommand("Abierto");
                 JDEscritorio.add(usuarios);
                 Dimension desktopSize = JDEscritorio.getSize();
@@ -248,6 +258,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         }
         catch (Exception e)
         {
+            
             lc.write("Error intentando abrir 'Mantenimiento Usuarios'", "JFRPrincipal", e.getMessage());
         }
 
@@ -258,7 +269,8 @@ public class JFRPrincipal extends javax.swing.JFrame
         {
           SYSAUDIOCON sysau = new SYSAUDIOCON();
           sysau.E_CERRAR_SESION();
-          Thread.sleep(800);
+          
+          Thread.sleep(420);
           System.exit(0);
             
         } catch (Exception sqle) 

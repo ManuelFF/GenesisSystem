@@ -31,7 +31,10 @@ public class SYSAUDIOCON
     {
         try
         {
+            
             sonido = AudioSystem.getClip();
+            sonido.close();
+            
         } catch (LineUnavailableException ex) 
             {
                 lc.write("Error al intentar inicializar el constructor de sonidos", "SYSAUDIOCON linea 28", ex.getMessage());
@@ -42,27 +45,117 @@ public class SYSAUDIOCON
     {
         try 
         {
-            sonido.open(AudioSystem.getAudioInputStream(new File("ERROR.wav")));
+            sonido.open(AudioSystem.getAudioInputStream(new File("./WA_EF/ERROR.wav")));
             sonido.start();
           
         } catch (Exception e) 
             {
-                lc.write("Error al intentar reproducir el efecto 'ERROR.wav'", "SYSAUDIOCON linea 41", e.getMessage());
+                lc.write("Error al intentar reproducir el efecto 'ERROR.wav'", "SYSAUDIOCON linea 44", e.getMessage());
             }       
     }
+    
+    public void E_CRITICAL_ERROR()
+    {
+        try 
+        {
+            sonido.open(AudioSystem.getAudioInputStream(new File("./WA_EF/CRITICAL_ERROR.wav")));
+            sonido.start();
+            
+        } catch (Exception e) 
+            {
+               lc.write("Error al intentar reproducir el efecto 'CRITICAL_ERROR.wav'", "SYSAUDIOCON linea 57", e.getMessage());
+            }
+    }
+    
     
     public void E_CERRAR_SESION()
     {
         try 
         {
-            sonido.open(AudioSystem.getAudioInputStream(new File("CERRAR_SESION.wav")));
+            sonido.open(AudioSystem.getAudioInputStream(new File("./WA_EF/CERRAR_SESION.wav")));
             sonido.start();
           
         } catch (Exception e) 
             {
-                lc.write("Error al intentar reproducir el efecto 'ERROR.wav'", "SYSAUDIOCON linea 41", e.getMessage());
+                lc.write("Error al intentar reproducir el efecto 'CERRAR_SESION.wav'", "SYSAUDIOCON linea 71", e.getMessage());
             }
     }
     
-
+    public void E_INICIAR_SESION()
+    {
+        try 
+        {
+            sonido.open(AudioSystem.getAudioInputStream(new File("./WA_EF/INICIAR_SESION.wav")));
+            sonido.start();
+          
+        } catch (Exception e) 
+            {
+                lc.write("Error al intentar reproducir el efecto 'INICIAR_SESION.wav'", "SYSAUDIOCON linea 84", e.getMessage());
+            }
+    }
+    
+    public void E_CLICK()
+    {
+        try 
+        {
+            sonido.open(AudioSystem.getAudioInputStream(new File("./WA_EF/CLICK.wav")));
+            sonido.start();
+          
+        } catch (Exception e) 
+            {
+                lc.write("Error al intentar reproducir el efecto 'CLICK.wav'", "SYSAUDIOCON linea 97", e.getMessage());
+            }
+    }    
+    
+    public void E_PUSH()
+    {
+        try 
+        {
+            sonido.open(AudioSystem.getAudioInputStream(new File("./WA_EF/PUSH.wav")));
+            sonido.start();
+          
+        } catch (Exception e) 
+            {
+                lc.write("Error al intentar reproducir el efecto 'PUSH.wav'", "SYSAUDIOCON linea 110", e.getMessage());
+            }
+    }    
+    
+    public void E_INFORMATION()
+    {
+        try 
+        {
+            sonido.open(AudioSystem.getAudioInputStream(new File("./WA_EF/INFORMATION.wav")));
+            sonido.start();
+          
+        } catch (Exception e) 
+            {
+                lc.write("Error al intentar reproducir el efecto 'INFORMATION.wav'", "SYSAUDIOCON linea 123", e.getMessage());
+            }
+    } 
+    
+    public void E_NOTIFY()
+    {
+        try 
+        {
+            sonido.open(AudioSystem.getAudioInputStream(new File("./WA_EF/NOTIFY.wav")));
+            sonido.start();
+          
+        } catch (Exception e) 
+            {
+                lc.write("Error al intentar reproducir el efecto 'NOTIFY.wav'", "SYSAUDIOCON linea 136", e.getMessage());
+            }
+    } 
+    
+    public void E_EXCLAMATION()
+    {
+        try 
+        {
+            sonido.open(AudioSystem.getAudioInputStream(new File("./WA_EF/EXCLAMATION.wav")));
+            sonido.start();
+          
+        } catch (Exception e) 
+            {
+                lc.write("Error al intentar reproducir el efecto 'EXCLAMATION.wav'", "SYSAUDIOCON linea 149", e.getMessage());
+            }
+    }
 }

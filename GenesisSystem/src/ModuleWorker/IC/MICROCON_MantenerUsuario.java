@@ -8,6 +8,8 @@ package ModuleWorker.IC;
 import ModuleWorker.Core.NOB_usuario;
 import ModuleWorker.DBCON;
 import NCLPM.LOG;
+import java.sql.CallableStatement;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
@@ -37,6 +39,31 @@ public class MICROCON_MantenerUsuario
     
     
     //INSERTAR USUARIO
+    public void InsertarUsuario(String idUser,String idPer, String user,String pass, String tip, String est)
+    {
+        try {
+                 DBCON RCN = new DBCON();
+
+                // Llamada al procedimiento almacenado
+                CallableStatement cst = RCN.conector().prepareCall("{call usp_insertar_usuario(?,?,?,?,?,?)}");
+                // Parametro del procedimiento almacenado
+                cst.setString(1, idUser);
+                cst.setString(2, idPer);
+                cst.setString(3, user);
+                cst.setString(4, pass);
+                cst.setString(5, tip);
+                cst.setString(6, est);
+                // Ejecuta el procedimiento almacenado
+                cst.execute();
+                cst.close();
+
+            } catch (SQLException ex) 
+                {
+                     lc.write("Problema al intentar insertar un usuario en el metodo 'InsertarUsuario'", "MICROCON_MantenerUsuario linea 42", ex.getMessage());             
+                } 
+    }
+
+    
     //MODIFICAR USUARIO 
     
     //CARGAR USUARIO
@@ -61,12 +88,12 @@ public class MICROCON_MantenerUsuario
             }Jta.setModel(modelo);
         }catch(SQLException sqlex)
             {
-                lc.write("Problema al Cargar Datos en el metodo 'CargarUsuario'", "MICROCON_MantenerUsuario", sqlex.getMessage());
+                lc.write("Problema al Cargar Datos en el metodo 'CargarUsuario'", "MICROCON_MantenerUsuario linea 72", sqlex.getMessage());
             }
         try {
         } catch (Exception ex)
             {
-                lc.write("Error no controlado en el metodo 'cargarUsuario'", "MICROCON_MantenerUsuario", ex.getMessage());
+                lc.write("Error no controlado en el metodo 'cargarUsuario'", "MICROCON_MantenerUsuario linea 98", ex.getMessage());
             }
     }
     
@@ -106,7 +133,7 @@ public class MICROCON_MantenerUsuario
         {   
             DBCON RCN = new DBCON();
             
-            st=RCN.conector().prepareStatement("SELECT DESC_TIPO FROM tipo");
+            st=RCN.conector().prepareStatement("SELECT DESC_TIPO FROM tipo order by id_tipo");
             rs=st.executeQuery();
 
             while (rs.next())
@@ -125,6 +152,33 @@ public class MICROCON_MantenerUsuario
         {
                 lc.write("Error no controlado en el metodo 'cargarBoxTipo'", "MICROCON_MantenerUsuario", ex.getMessage());
         }
+    }
+    
+    public String Buscar_ID_Tipo(String DESC)
+    {
+        try
+        {   
+            DBCON RCN = new DBCON();
+            
+            st=RCN.conector().prepareStatement("SELECT ID_TIPO FROM tipo where DESC_TIPO = '"+DESC+"'");
+            rs=st.executeQuery();
+
+            while (rs.next())
+            {            
+                String DESC_TIPO = rs.getString("ID_TIPO");
+                return DESC_TIPO;
+            }
+
+        }
+        catch (SQLException sqlex) 
+            {
+                lc.write("Problema al buscar Datos en el metodo 'Buscar_ID_Tipo'", "MICROCON_MantenerUsuario", sqlex.getMessage());
+            }
+        catch (Exception ex)
+        {
+                lc.write("Error no controlado en el metodo 'Buscar_ID_Tipo'", "MICROCON_MantenerUsuario", ex.getMessage());
+        }
+        return null;
     }
 
     //Array List Controlador

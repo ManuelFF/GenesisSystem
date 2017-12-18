@@ -53,7 +53,7 @@ public class JDES_seleccionarPersonal extends javax.swing.JDialog
         
         JTbuscarPersonal.setModel(modelo);
         JTbuscarPersonal.addMouseListener(new MouseAdapter(){});
-        JTbuscarPersonal.getTableHeader().setReorderingAllowed(false) ;
+        JTbuscarPersonal.getTableHeader().setReorderingAllowed(false);
         trsFiltro = new TableRowSorter(JTbuscarPersonal.getModel());
         JTbuscarPersonal.setRowSorter(trsFiltro);
         
@@ -96,7 +96,7 @@ public class JDES_seleccionarPersonal extends javax.swing.JDialog
         txtfiltro = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -246,7 +246,6 @@ public class JDES_seleccionarPersonal extends javax.swing.JDialog
             evn.write(JFRPrincipal.JMSesion.getText(),"Ha seleccionado al personal "+select,"JDES_seleccionarPersonal", "Tabla de personal presionado");
             
             JIFMatenerUsuario.btnNuevo.setEnabled(true);
-            JIFMatenerUsuario.btnModificar.setEnabled(true);
             
             this.dispose();
 
