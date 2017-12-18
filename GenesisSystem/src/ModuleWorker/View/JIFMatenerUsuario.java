@@ -37,6 +37,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
     EVENTS evn = new EVENTS();
     SYSFRMCON sysfrm = new SYSFRMCON();
     JFrame form;
+    Color ColorInicial;
     
     DefaultTableModel modelo_usuarios = new DefaultTableModel()
     {
@@ -56,6 +57,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
         JTusrs.getTableHeader().setReorderingAllowed(false);
         mcmuser.Cargarusuario(modelo_usuarios, JTusrs);
         mcmuser.CargarBoxTipo(CBTipo);
+        ColorInicial = txtusuario.getBackground();
     }
     
     private void NuevoCodigoUSR()
@@ -340,7 +342,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+      
     private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
 
     try 
@@ -349,7 +351,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
       jf.setAlwaysOnTop(true);
       MWCON mw = new MWCON();
       
-      evn.write(JFRPrincipal.JMSesion.getText(), "hizo click en el boton nuevo", "JIFMantenerUsuario linea 327", "Botón 'Nuevo presionado'");
+      evn.write(JFRPrincipal.JMSesion.getText(), "hizo click en el boton nuevo", "JIFMantenerUsuario linea 327", "Botón 'Nuevo' presionado");
       
       if(txtidPer.getText().trim().equals(""))
       {
@@ -359,8 +361,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
         JOptionPane.showMessageDialog(jf, "Seleccione un personal", "Personal no seleccionado", JOptionPane.ERROR_MESSAGE);
       }else
         {
-            String comp = ""+JTusrs.getValueAt(0, 1);
-            if(comp.toUpperCase().trim().equals(txtnombres.getText().toUpperCase().trim()))
+            if(mcmuser.Valida_Usuario_Existe(txtidPer.getText()).equals("1"))
             {
                  evn.write(JFRPrincipal.JMSesion.getText(), "Intento crear un usuario a un personal que ya posee un usuario", "JIFMantenerUsuario linea 344", "Botón 'Nuevo presionado'");
                  SYSAUDIOCON sysau = new SYSAUDIOCON();
@@ -406,12 +407,16 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
 
                                         mcmuser.InsertarUsuario(ID_USER, ID_PER, USERNAME, psw, ID_TIPO, ESTADO);
 
+                                        evn.write(JFRPrincipal.JMSesion.getText(), "Inserto un nuevo usuario", "JIFMantenerUsuario", "Botón 'Insertar' presionado");
                                         SYSAUDIOCON sysau = new SYSAUDIOCON();
                                         sysau.E_INFORMATION();
                                         JOptionPane.showMessageDialog(jf, "Usuario Insertado con exito!", "Usuario Insertado", JOptionPane.INFORMATION_MESSAGE);
                                         clearFRM();
                                         disabledFRM();
                                         btnNuevo.setText("Nuevo");
+                                        btnNuevo.setEnabled(false);
+                                        txtusuario.setBackground(ColorInicial);
+                                        pswPassword.setBackground(ColorInicial);
                                         mw.clear_table(modelo_usuarios, JTusrs);
                                         mcmuser.Cargarusuario(modelo_usuarios, JTusrs);
                                     }
@@ -422,20 +427,64 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
       
     } catch (Exception e) 
         {
-            lc.write("Error al intentar ingresar un nuevo usuario", "JIFMantenerUsuario linea 326", e.getMessage());
+            lc.write("Error al intentar ingresar un nuevo usuario", "JIFMantenerUsuario linea 344", e.getMessage());
         }
 
     }//GEN-LAST:event_btnNuevoActionPerformed
 
     private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
 
-        ShakingComponent sc = new ShakingComponent(txtcod);
-        sc.startShake();
+        try 
+        {
+          JFrame jf=new JFrame();
+          jf.setAlwaysOnTop(true);
+          MWCON mw = new MWCON();
+          
+          evn.write(JFRPrincipal.JMSesion.getText(), "hizo click en el boton modificar", "JIFMantenerUsuario linea 432", "Botón 'Modificar' presionado");
+          
+          if(txtusuario.getText().trim().equals(""))
+            {
+                ShakingComponent sc = new ShakingComponent(txtusuario);
+                SYSAUDIOCON sysau = new SYSAUDIOCON();
+                sysau.E_ERROR();
+                txtusuario.setBackground(Color.RED);
+                sc.startShake();
 
-        SYSAUDIOCON sysau = new SYSAUDIOCON();
-        sysau.E_ERROR();
-        
-        
+            }else
+                if(pswPassword.getText().trim().equals(""))
+                {
+                    ShakingComponent sc = new ShakingComponent(pswPassword);
+                    SYSAUDIOCON sysau = new SYSAUDIOCON();
+                    sysau.E_ERROR();
+                    pswPassword.setBackground(Color.RED);
+                    sc.startShake();    
+                }
+                else
+                    {
+                        String idUser = txtcod.getText();
+                        String USERNAME = txtusuario.getText();
+                        String psw = DigestUtils.md5Hex(pswPassword.getText());
+                        String ID_TIPO = mcmuser.Buscar_ID_Tipo(CBTipo.getSelectedItem().toString());
+                        String ESTADO = CBEstado.getSelectedItem().toString();
+
+                        mcmuser.ModificarUsuario(idUser, USERNAME, psw, ID_TIPO, ESTADO);
+
+                        evn.write(JFRPrincipal.JMSesion.getText(), "Modifico un nuevo usuario", "JIFMantenerUsuario", "Botón 'Modificar' presionado");
+                        SYSAUDIOCON sysau = new SYSAUDIOCON();
+                        sysau.E_INFORMATION();
+                        JOptionPane.showMessageDialog(jf, "Usuario Modificado con exito!", "Usuario Modificado", JOptionPane.INFORMATION_MESSAGE);
+                        clearFRM();
+                        disabledFRM();
+                        btnModificar.setEnabled(false);
+                        txtusuario.setBackground(ColorInicial);
+                        pswPassword.setBackground(ColorInicial);
+                        mw.clear_table(modelo_usuarios, JTusrs);
+                        mcmuser.Cargarusuario(modelo_usuarios, JTusrs);
+                    }
+        } catch (Exception e) 
+            {
+                lc.write("Error al intentar modificar un usuario", "JIFMantenerUsuario linea 330", e.getMessage());
+            }       
         
     }//GEN-LAST:event_btnModificarActionPerformed
 

@@ -15,6 +15,7 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.Types;
 import java.util.ArrayList;
 import javax.swing.JComboBox;
 import javax.swing.JTable;
@@ -62,9 +63,51 @@ public class MICROCON_MantenerUsuario
                      lc.write("Problema al intentar insertar un usuario en el metodo 'InsertarUsuario'", "MICROCON_MantenerUsuario linea 42", ex.getMessage());             
                 } 
     }
-
     
     //MODIFICAR USUARIO 
+    public void ModificarUsuario(String idUser,String user,String pass, String tip, String est)
+    {
+        try {
+                 DBCON RCN = new DBCON();
+
+                // Llamada al procedimiento almacenado
+                CallableStatement cst = RCN.conector().prepareCall("{call usp_modificar_usuario(?,?,?,?,?)}");
+                // Parametro del procedimiento almacenado
+                cst.setString(1, idUser);
+                cst.setString(2, user);
+                cst.setString(3, pass);
+                cst.setString(4, tip);
+                cst.setString(5, est);
+                // Ejecuta el procedimiento almacenado
+                cst.execute();
+                cst.close();
+
+            } catch (SQLException ex) 
+                {
+                     lc.write("Problema al intentar insertar un usuario en el metodo 'InsertarUsuario'", "MICROCON_MantenerUsuario linea 42", ex.getMessage());             
+                } 
+    }
+    
+    //VALIDAR USUARIO (SI EXISTE O NO )
+    public String Valida_Usuario_Existe(String idper)
+    {
+        try 
+        {
+            DBCON db = new DBCON();
+                                    
+            CallableStatement cst = db.conector().prepareCall("{?=call F_validaExisteUsuario(?)}");
+            cst.setString(2, idper);
+            cst.registerOutParameter(1, Types.VARCHAR);
+            cst.execute();
+            String resultado = cst.getString(1);
+            
+            return resultado;
+        } catch (SQLException sqle) 
+        {
+            lc.write( "La base de datos retorno error en la conexion!","Valida_Usuario_Existe", sqle.getMessage());
+            return "ERROR";
+        } 
+    }
     
     //CARGAR USUARIO
     public void Cargarusuario(DefaultTableModel modelo, JTable Jta)         

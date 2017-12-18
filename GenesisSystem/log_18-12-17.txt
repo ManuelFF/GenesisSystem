@@ -1,0 +1,96 @@
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 12:55:2
+----------------------------------------------------
+ 
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 12:58:36
+----------------------------------------------------
+ 
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 12:58:40
+----------------------------------------------------
+ 
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 12:58:48
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : MICROCON_InicioSesion
+ERROR : Falta el parámetro IN o OUT en el índice:: 2
+TIME : 13:17:18
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : MICROCON_InicioSesion
+ERROR : Falta el parámetro IN o OUT en el índice:: 2
+TIME : 13:17:48
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : MICROCON_InicioSesion
+ERROR : Falta el parámetro IN o OUT en el índice:: 2
+TIME : 13:18:28
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : MICROCON_InicioSesion
+ERROR : Falta el parámetro IN o OUT en el índice:: 2
+TIME : 13:19:5
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : MICROCON_InicioSesion
+ERROR : Falta el parámetro IN o OUT en el índice:: 2
+TIME : 13:20:4
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : MICROCON_InicioSesion
+ERROR : Falta el parámetro IN o OUT en el índice:: 2
+TIME : 13:20:4
+----------------------------------------------------
+ 
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 13:23:20
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error intentando abrir 'Mantenimiento Usuarios'
+CLASE : JFRPrincipal
+ERROR : null
+TIME : 13:47:24
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error intentando abrir 'Mantenimiento Clientes'
+CLASE : JFRPrincipal
+ERROR : null
+TIME : 13:49:30
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error intentando abrir 'Mantenimiento Clientes'
+CLASE : JFRPrincipal
+ERROR : null
+TIME : 13:49:31
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error intentando abrir 'Mantenimiento Clientes'
+CLASE : JFRPrincipal
+ERROR : null
+TIME : 13:49:46
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error intentando abrir 'Mantenimiento Clientes'
+CLASE : JFRPrincipal
+ERROR : null
+TIME : 13:50:0
+----------------------------------------------------
+ 

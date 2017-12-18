@@ -12,6 +12,7 @@ import ModuleWorker.SYSCON;
 import ModuleWorker.SYSWALLPCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
+import NMOC.MD_Mantenimientos.View.JIFMantenerClientes;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -84,7 +85,8 @@ public class JFRPrincipal extends javax.swing.JFrame
         JMSesion = new javax.swing.JMenu();
         JSMMantenimientoUsuarios = new javax.swing.JMenuItem();
         JSMCerrarSesion = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        JMMantenimientos = new javax.swing.JMenu();
+        JSMMantenerClientes = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
@@ -190,9 +192,20 @@ public class JFRPrincipal extends javax.swing.JFrame
 
         JMPrincipal.add(JMSesion);
 
-        jMenu2.setText("Mantenimientos");
-        jMenu2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        JMPrincipal.add(jMenu2);
+        JMMantenimientos.setText("Mantenimientos");
+        JMMantenimientos.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+
+        JSMMantenerClientes.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        JSMMantenerClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Client1_add24.png"))); // NOI18N
+        JSMMantenerClientes.setText("Mantener Clientes");
+        JSMMantenerClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JSMMantenerClientesActionPerformed(evt);
+            }
+        });
+        JMMantenimientos.add(JSMMantenerClientes);
+
+        JMPrincipal.add(JMMantenimientos);
 
         jMenu1.setText("Generar");
         jMenu1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -231,7 +244,6 @@ public class JFRPrincipal extends javax.swing.JFrame
     }// </editor-fold>//GEN-END:initComponents
 
     private void JSMMantenimientoUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMMantenimientoUsuariosActionPerformed
-
        
         try
         {
@@ -280,6 +292,39 @@ public class JFRPrincipal extends javax.swing.JFrame
 
     }//GEN-LAST:event_JSMCerrarSesionActionPerformed
 
+    private void JSMMantenerClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMMantenerClientesActionPerformed
+        
+        try
+        {
+            JIFMantenerClientes clientes = new JIFMantenerClientes();
+            JFrame jf=new JFrame();
+            jf.setAlwaysOnTop(true);
+
+            if(JSMMantenerClientes.getActionCommand().equals("Abierto"))
+                {
+                    SYSAUDIOCON sysau = new SYSAUDIOCON();
+                    sysau.E_ERROR();
+                    JOptionPane.showMessageDialog(jf,"Ya esta abierto", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+                }
+            else
+            {                
+                JSMMantenerClientes.setActionCommand("Abierto");
+                JDEscritorio.add(clientes);
+                Dimension desktopSize = JDEscritorio.getSize();
+                Dimension FrameSize = clientes.getSize();
+                clientes.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
+                evn.write(JMSesion.getText(), "Abrio el formulario 'Mantener Clientes'", "JFPrincipal", "Menu 'Mantener Clientes' Presionado");
+                clientes.show();
+            }
+        }
+        catch (Exception e)
+        {
+            
+            lc.write("Error intentando abrir 'Mantenimiento Clientes'", "JFRPrincipal", e.getMessage());
+        }
+        
+    }//GEN-LAST:event_JSMMantenerClientesActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -320,9 +365,11 @@ public class JFRPrincipal extends javax.swing.JFrame
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane JDEscritorio;
+    private javax.swing.JMenu JMMantenimientos;
     private javax.swing.JMenuBar JMPrincipal;
     public static javax.swing.JMenu JMSesion;
     private javax.swing.JMenuItem JSMCerrarSesion;
+    public static javax.swing.JMenuItem JSMMantenerClientes;
     public static javax.swing.JMenuItem JSMMantenimientoUsuarios;
     private javax.swing.JToolBar JTBHerramientas;
     private javax.swing.JButton btnAdministrarCertificado;
@@ -334,7 +381,6 @@ public class JFRPrincipal extends javax.swing.JFrame
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
