@@ -3113,3 +3113,59 @@ ACCIÓN : Menu 'Mantener Clientes' Presionado
 TIME : 14:46:25
 ----------------------------------------------------
  
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:15:59
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 15:16:2
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:16:18
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Usuario'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Usuario' Presionado
+TIME : 15:16:21
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario MANUEL FERNANDO SAAVEDRA BENITES ha sido seleccionado
+TIME : 15:16:24
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el boton modificar
+FORMULARIO : JIFMantenerUsuario linea 432
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 15:16:33
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Modifico un nuevo usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 15:16:33
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 15:20:18
+----------------------------------------------------
+ 
