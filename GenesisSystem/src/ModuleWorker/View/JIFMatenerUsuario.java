@@ -108,6 +108,14 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
         CBTipo.setEnabled(false);
     }
     
+    protected void clearCacheDB()
+    {
+        MWCON mw = new MWCON();
+        mw.clear_table(modelo_usuarios, JTusrs);
+        mcmuser.Cargarusuario(modelo_usuarios, JTusrs);
+        mcmuser.llenarIDS_USR();
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -349,8 +357,8 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
     {
       JFrame jf=new JFrame();
       jf.setAlwaysOnTop(true);
-      MWCON mw = new MWCON();
-      
+      clearCacheDB();
+        
       evn.write(JFRPrincipal.JMSesion.getText(), "hizo click en el boton nuevo", "JIFMantenerUsuario linea 327", "Botón 'Nuevo' presionado");
       
       if(txtidPer.getText().trim().equals(""))
@@ -417,8 +425,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
                                         btnNuevo.setEnabled(false);
                                         txtusuario.setBackground(ColorInicial);
                                         pswPassword.setBackground(ColorInicial);
-                                        mw.clear_table(modelo_usuarios, JTusrs);
-                                        mcmuser.Cargarusuario(modelo_usuarios, JTusrs);
+                                        clearCacheDB();
                                     }
                            
                         }
@@ -438,7 +445,6 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
         {
           JFrame jf=new JFrame();
           jf.setAlwaysOnTop(true);
-          MWCON mw = new MWCON();
           
           evn.write(JFRPrincipal.JMSesion.getText(), "hizo click en el boton modificar", "JIFMantenerUsuario linea 432", "Botón 'Modificar' presionado");
           
@@ -478,8 +484,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
                         btnModificar.setEnabled(false);
                         txtusuario.setBackground(ColorInicial);
                         pswPassword.setBackground(ColorInicial);
-                        mw.clear_table(modelo_usuarios, JTusrs);
-                        mcmuser.Cargarusuario(modelo_usuarios, JTusrs);
+                        clearCacheDB();
                     }
         } catch (Exception e) 
             {

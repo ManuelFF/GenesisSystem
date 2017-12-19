@@ -84,6 +84,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         JMPrincipal = new javax.swing.JMenuBar();
         JMSesion = new javax.swing.JMenu();
         JSMMantenimientoUsuarios = new javax.swing.JMenuItem();
+        JSMPermisosUsuarios = new javax.swing.JMenuItem();
         JSMCerrarSesion = new javax.swing.JMenuItem();
         JMMantenimientos = new javax.swing.JMenu();
         JSMMantenerClientes = new javax.swing.JMenuItem();
@@ -179,6 +180,16 @@ public class JFRPrincipal extends javax.swing.JFrame
             }
         });
         JMSesion.add(JSMMantenimientoUsuarios);
+
+        JSMPermisosUsuarios.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        JSMPermisosUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Lock-Unlock-icon.png"))); // NOI18N
+        JSMPermisosUsuarios.setText("Permisos de Usuarios");
+        JSMPermisosUsuarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JSMPermisosUsuariosActionPerformed(evt);
+            }
+        });
+        JMSesion.add(JSMPermisosUsuarios);
 
         JSMCerrarSesion.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         JSMCerrarSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/logout-icon24.png"))); // NOI18N
@@ -325,6 +336,39 @@ public class JFRPrincipal extends javax.swing.JFrame
         
     }//GEN-LAST:event_JSMMantenerClientesActionPerformed
 
+    private void JSMPermisosUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMPermisosUsuariosActionPerformed
+
+    try
+    {
+       JIFPermisos permisos = new JIFPermisos();
+       JFrame jf=new JFrame();
+       jf.setAlwaysOnTop(true);
+
+       if(JSMPermisosUsuarios.getActionCommand().equals("Abierto"))
+           {
+               SYSAUDIOCON sysau = new SYSAUDIOCON();
+               sysau.E_ERROR();
+               JOptionPane.showMessageDialog(jf,"Ya esta abierto", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+           }
+       else
+       {                
+           JSMPermisosUsuarios.setActionCommand("Abierto");
+           JDEscritorio.add(permisos);
+           Dimension desktopSize = JDEscritorio.getSize();
+           Dimension FrameSize = permisos.getSize();
+           permisos.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
+           evn.write(JMSesion.getText(), "Abrio el formulario 'Permisos'", "JFPrincipal", "Menu 'Permisos' Presionado");
+           permisos.show();
+       }
+    }
+   catch (Exception e)
+   {
+
+       lc.write("Error intentando abrir 'Permisos'", "JFRPrincipal", e.getMessage());
+   }
+
+    }//GEN-LAST:event_JSMPermisosUsuariosActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -371,6 +415,7 @@ public class JFRPrincipal extends javax.swing.JFrame
     private javax.swing.JMenuItem JSMCerrarSesion;
     public static javax.swing.JMenuItem JSMMantenerClientes;
     public static javax.swing.JMenuItem JSMMantenimientoUsuarios;
+    public static javax.swing.JMenuItem JSMPermisosUsuarios;
     private javax.swing.JToolBar JTBHerramientas;
     private javax.swing.JButton btnAdministrarCertificado;
     private javax.swing.JButton btnAgregarCliente;

@@ -101,7 +101,7 @@ public class SYSFRMCON
     //MANTENER USUARIO
     public String T_mantenerUsuario()
     {
-        String t = CANARY()+ " Mantener Usuario";
+        String t = ALFA()+ " Mantener Usuario";
         return t;
     }
     
@@ -134,5 +134,16 @@ public class SYSFRMCON
         p.setBackground(Color.GRAY.brighter());
     }
     
+    //PERMISOS
+    public String T_Permisos()
+    {
+        String t = DEV()+" Permisos de Usuarios";
+        return t;
+    }
+    
+    public void B_permisos(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
     
 }

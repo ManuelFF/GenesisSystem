@@ -256,7 +256,7 @@ public class MICROCON_MantenerUsuario
         return L_USRID.get(pos);
     }
     
-    protected final void llenarIDS_USR()
+    public final void llenarIDS_USR()
     {
         try
         {   

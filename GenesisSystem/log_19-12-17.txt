@@ -1,0 +1,36 @@
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 10:17:44
+----------------------------------------------------
+ 
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 10:17:50
+----------------------------------------------------
+ 
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 10:17:54
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Intentos para inicio de sesión superados
+CLASE : JFRInicioSesion
+ERROR : No tiene más intentos
+TIME : 10:18:28
+----------------------------------------------------
+ 
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 10:26:15
+----------------------------------------------------
+ 
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 11:50:24
+----------------------------------------------------
+ 
