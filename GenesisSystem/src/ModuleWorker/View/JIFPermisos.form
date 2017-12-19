@@ -49,6 +49,8 @@
                                       <Component id="CBXVIEW" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="CBXPRINT" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="CBXSystem" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -157,6 +159,7 @@
                           <Component id="CBXEXEC" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="CBXVIEW" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="CBXPRINT" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="CBXSystem" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
@@ -431,6 +434,12 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAceptarActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="CBXSystem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SYSTEM"/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>

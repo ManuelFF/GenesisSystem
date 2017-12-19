@@ -107,6 +107,8 @@ public class JIFPermisos extends javax.swing.JInternalFrame {
         CBXDELETE.setEnabled(t);
         //FIND
         CBXFIND.setEnabled(t);
+        //SYSTEM
+        CBXSystem.setEnabled(t);
     }
     
     
@@ -183,7 +185,11 @@ public class JIFPermisos extends javax.swing.JInternalFrame {
             {
                 CBXFIND.setSelected(true);
             }else{if(prm.Comprueba_Permiso_Usuario(usr,"FIND").equals("NO")){CBXFIND.setSelected(false);}}
-        
+        //SYSTEM
+        if(prm.Comprueba_Permiso_Usuario(usr,"SYSTEM").equals("SI"))
+            {
+                CBXSystem.setSelected(true);
+            }else{if(prm.Comprueba_Permiso_Usuario(usr,"SYSTEM").equals("NO")){CBXSystem.setSelected(false);}}
     }
     
     protected void update_permisos(String usr)
@@ -259,6 +265,11 @@ public class JIFPermisos extends javax.swing.JInternalFrame {
             {
                 prm.UpdateaPermisos(usr, "PRM-014", "SI");
             }else{if(CBXFIND.isSelected()==false){prm.UpdateaPermisos(usr, "PRM-014", "NO");}}
+        //SYSTEM
+        if(CBXSystem.isSelected()==true)
+            {
+                prm.UpdateaPermisos(usr, "PRM-015", "SI");
+            }else{if(CBXSystem.isSelected()==false){prm.UpdateaPermisos(usr, "PRM-015", "NO");}}
     }
     
     /**
@@ -301,6 +312,7 @@ public class JIFPermisos extends javax.swing.JInternalFrame {
         CBXFIND = new javax.swing.JCheckBox();
         btnSalir = new javax.swing.JButton();
         btnAceptar = new javax.swing.JButton();
+        CBXSystem = new javax.swing.JCheckBox();
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setText("PERMISOS");
@@ -421,6 +433,9 @@ public class JIFPermisos extends javax.swing.JInternalFrame {
             }
         });
 
+        CBXSystem.setText("SYSTEM");
+        CBXSystem.setEnabled(false);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -453,7 +468,9 @@ public class JIFPermisos extends javax.swing.JInternalFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(CBXVIEW)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(CBXPRINT)))))
+                                        .addComponent(CBXPRINT)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(CBXSystem)))))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
@@ -538,7 +555,8 @@ public class JIFPermisos extends javax.swing.JInternalFrame {
                             .addComponent(CBXOPEN)
                             .addComponent(CBXEXEC)
                             .addComponent(CBXVIEW)
-                            .addComponent(CBXPRINT))
+                            .addComponent(CBXPRINT)
+                            .addComponent(CBXSystem))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -655,6 +673,7 @@ public class JIFPermisos extends javax.swing.JInternalFrame {
     private javax.swing.JCheckBox CBXPRINT;
     private javax.swing.JCheckBox CBXREAD;
     private javax.swing.JCheckBox CBXREADONLY;
+    private javax.swing.JCheckBox CBXSystem;
     private javax.swing.JCheckBox CBXUPDATE;
     private javax.swing.JCheckBox CBXVIEW;
     private javax.swing.JCheckBox CBXWRITE;

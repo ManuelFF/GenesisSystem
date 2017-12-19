@@ -25,6 +25,7 @@ Los permisos en esta leccion seran distintos a los permisos usados en crystal; G
     -EXEC -> puede abrir un formulario
     -View -> puede abrir una vista
     -Print -> puede imprimir
+    System -> Permiso asignado para que el usuario se convierta en sistema
 
     permisos de formulario
     Create -> crear a un formulario
