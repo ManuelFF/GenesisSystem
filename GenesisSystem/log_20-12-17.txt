@@ -328,3 +328,15 @@ ERROR : No tiene más intentos
 TIME : 10:13:50
 ----------------------------------------------------
  
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 11:7:0
+----------------------------------------------------
+ 
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 13:17:1
+----------------------------------------------------
+ 

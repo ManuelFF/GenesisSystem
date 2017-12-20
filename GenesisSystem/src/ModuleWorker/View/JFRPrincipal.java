@@ -80,8 +80,8 @@ public class JFRPrincipal extends javax.swing.JFrame
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         JMPrincipal = new javax.swing.JMenuBar();
         JMSesion = new javax.swing.JMenu();
         JSMMantenimientoUsuarios = new javax.swing.JMenuItem();
@@ -162,6 +162,13 @@ public class JFRPrincipal extends javax.swing.JFrame
         jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         JTBHerramientas.add(jButton2);
 
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/logout-icon32.png"))); // NOI18N
+        jButton1.setToolTipText("Cerrar Sesión");
+        jButton1.setFocusable(false);
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        JTBHerramientas.add(jButton1);
+
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 26)); // NOI18N
         jButton3.setForeground(new java.awt.Color(0, 51, 255));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Notification_32.png"))); // NOI18N
@@ -170,13 +177,6 @@ public class JFRPrincipal extends javax.swing.JFrame
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         JTBHerramientas.add(jButton3);
-
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/logout-icon32.png"))); // NOI18N
-        jButton1.setToolTipText("Cerrar Sesión");
-        jButton1.setFocusable(false);
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        JTBHerramientas.add(jButton1);
 
         JMSesion.setText("Sesion");
         JMSesion.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N

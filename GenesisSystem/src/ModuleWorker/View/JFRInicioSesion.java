@@ -171,9 +171,7 @@ public class JFRInicioSesion extends javax.swing.JFrame
         String usr = txtusuario.getText();
         //char[] psw = pswPassword.getPassword();       
         String psw = DigestUtils.md5Hex(pswPassword.getText());
-        
-        System.out.println(intentos);
-        
+                
        if(intentos<=0)
        {
            s.startShake();
