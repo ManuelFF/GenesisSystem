@@ -72,7 +72,7 @@ public class SYSFRMCON
     //Titulo Inicio Sesion
     public String T_login()
     {
-        String t = BETA()+" Iniciar Sesión en Crystal Génesis.";
+        String t = PRE_STABLE()+" Iniciar Sesión en Crystal Génesis.";
         return t;
     }
     
@@ -101,7 +101,7 @@ public class SYSFRMCON
     //MANTENER USUARIO
     public String T_mantenerUsuario()
     {
-        String t = ALFA()+ " Mantener Usuario";
+        String t = BETA()+ " Mantener Usuario";
         return t;
     }
     
@@ -113,7 +113,7 @@ public class SYSFRMCON
     //JDES SELECCIONAR PERSONAL
     public String T_JDESseleccionarPersonal()
     {
-        String t = DEV()+ " Seleccionar Personal";
+        String t = ALFA()+ " Seleccionar Personal";
         return t;
     }
     
@@ -137,7 +137,7 @@ public class SYSFRMCON
     //PERMISOS
     public String T_Permisos()
     {
-        String t = DEV()+" Permisos de Usuarios";
+        String t = CANARY()+" Permisos de Usuarios";
         return t;
     }
     
@@ -145,5 +145,18 @@ public class SYSFRMCON
     {
         p.setBackground(Color.GRAY.brighter());
     }
+    
+    //CENTRO DE NOTIFICACIONES
+    public String T_Centro_Notificaciones()
+    {
+        String t = DEV()+" Centro de Notificaciones";
+        return t;
+    }
+    
+    public void B_Centro_Notificaciones(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+    
     
 }

@@ -171,10 +171,14 @@ public class JFRInicioSesion extends javax.swing.JFrame
         String usr = txtusuario.getText();
         //char[] psw = pswPassword.getPassword();       
         String psw = DigestUtils.md5Hex(pswPassword.getText());
-                    
+        
+        System.out.println(intentos);
+        
        if(intentos<=0)
        {
            s.startShake();
+           SYSAUDIOCON sysau = new SYSAUDIOCON();
+           sysau.E_CRITICAL_ERROR();
            JOptionPane.showMessageDialog(jf, "Se quedo sin intentos\nEL SISTEMA SE CERRARA!", "Sobrepaso limite de intentos", JOptionPane.ERROR_MESSAGE);
            evn.write("Aún no definido", "Intento entrar al sistema", "JFRInicioSesion", "FUE EXPULSADO");
            lc.write("Intentos para inicio de sesión superados", "JFRInicioSesion", "No tiene más intentos");
@@ -186,6 +190,8 @@ public class JFRInicioSesion extends javax.swing.JFrame
         {
             s.startShake();
             intentos--;
+            SYSAUDIOCON sysau = new SYSAUDIOCON();
+            sysau.E_ERROR();
             JOptionPane.showMessageDialog(jf, "Ingrese un usuario valido"+"\nINTENTOS RESTANTES : "+intentos, "Error de usuario", JOptionPane.ERROR_MESSAGE);
             evn.write("Aún no definido", "Intento entrar al sistema", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
             lc.write("No se ha ingresado un usuario valido", "JFRInicioSesion", "No existe el usuario");
@@ -193,6 +199,8 @@ public class JFRInicioSesion extends javax.swing.JFrame
         {
             s.startShake();
             intentos--;
+            SYSAUDIOCON sysau = new SYSAUDIOCON();
+            sysau.E_ERROR();
             JOptionPane.showMessageDialog(jf, "Ingrese una contraseña valida"+"\nINTENTOS RESTANTES : "+intentos, "Contraseña invalida", JOptionPane.ERROR_MESSAGE);
             evn.write("Aún no definido", "Intento entrar al sistema", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
             lc.write("No se ha ingresado una contraseña valido", "JFRInicioSesion", "La contraseña es invalida");
@@ -203,6 +211,8 @@ public class JFRInicioSesion extends javax.swing.JFrame
             {
               s.startShake();
               intentos--;  
+              SYSAUDIOCON sysau = new SYSAUDIOCON();
+              sysau.E_ERROR();
               JOptionPane.showMessageDialog(jf, "El usuario no existe"+"\nINTENTOS RESTANTES : "+intentos, "Usuario Inexistente", JOptionPane.ERROR_MESSAGE);
               lc.write("El usuario no existe en la base de datos", "JFRInicioSesion", "Usuario inexistente en base");
               evn.write("Aún no definido", "Intento entrar al sistema", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
@@ -211,6 +221,7 @@ public class JFRInicioSesion extends javax.swing.JFrame
                     if(Minse.validarUsuario(usr, psw).equals("1"))
                     {
                         sysau.E_INICIAR_SESION();
+                        Thread.sleep(220);
                         evn.write(usr, "Ingreso al sistema", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
                         JFRPrincipal principal = new JFRPrincipal();
                         JFRPrincipal.JMSesion.setText(Minse.obtenerNombreUSR(usr));

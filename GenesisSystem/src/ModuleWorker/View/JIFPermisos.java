@@ -32,7 +32,7 @@ public class JIFPermisos extends javax.swing.JInternalFrame {
     LOG lc = new LOG();
     EVENTS evn = new EVENTS();
     SYSFRMCON sysfrm = new SYSFRMCON();
-    
+        
     DefaultTableModel modelo = new DefaultTableModel()
     {
         @Override
@@ -652,6 +652,7 @@ public class JIFPermisos extends javax.swing.JInternalFrame {
       {           
         evn.write(JFRPrincipal.JMSesion.getText(), "Ha salido del formulario 'Permisos'", "JIFPermisos", "Presiono Botón 'Salir'");
         JFRPrincipal.JSMPermisosUsuarios.setActionCommand("CERRADO");
+   
         this.dispose();
       } catch (Exception e) 
       {

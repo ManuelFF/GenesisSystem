@@ -80,6 +80,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         JMPrincipal = new javax.swing.JMenuBar();
         JMSesion = new javax.swing.JMenu();
@@ -99,7 +100,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         JDEscritorio.setLayout(JDEscritorioLayout);
         JDEscritorioLayout.setHorizontalGroup(
             JDEscritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 1243, Short.MAX_VALUE)
         );
         JDEscritorioLayout.setVerticalGroup(
             JDEscritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -160,6 +161,15 @@ public class JFRPrincipal extends javax.swing.JFrame
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         JTBHerramientas.add(jButton2);
+
+        jButton3.setFont(new java.awt.Font("Tahoma", 1, 26)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(0, 51, 255));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Notification_32.png"))); // NOI18N
+        jButton3.setText("0");
+        jButton3.setFocusable(false);
+        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        JTBHerramientas.add(jButton3);
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/logout-icon32.png"))); // NOI18N
         jButton1.setToolTipText("Cerrar Sesión");
@@ -241,7 +251,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(JDEscritorio)
-            .addComponent(JTBHerramientas, javax.swing.GroupLayout.PREFERRED_SIZE, 1243, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(JTBHerramientas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -423,6 +433,7 @@ public class JFRPrincipal extends javax.swing.JFrame
     private javax.swing.JButton btnGenerarOrden;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JMenu jMenu1;

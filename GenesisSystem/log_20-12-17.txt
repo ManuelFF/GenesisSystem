@@ -1,0 +1,330 @@
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 10:4:47
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:6:15
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado una contraseña valido
+CLASE : JFRInicioSesion
+ERROR : La contraseña es invalida
+TIME : 10:6:18
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:6:27
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:6:29
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:6:30
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Intentos para inicio de sesión superados
+CLASE : JFRInicioSesion
+ERROR : No tiene más intentos
+TIME : 10:6:32
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:6:53
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado una contraseña valido
+CLASE : JFRInicioSesion
+ERROR : La contraseña es invalida
+TIME : 10:6:56
+----------------------------------------------------
+ 
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 10:6:58
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Intentos para inicio de sesión superados
+CLASE : JFRInicioSesion
+ERROR : No tiene más intentos
+TIME : 10:7:8
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado una contraseña valido
+CLASE : JFRInicioSesion
+ERROR : La contraseña es invalida
+TIME : 10:7:23
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado una contraseña valido
+CLASE : JFRInicioSesion
+ERROR : La contraseña es invalida
+TIME : 10:7:25
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Intentos para inicio de sesión superados
+CLASE : JFRInicioSesion
+ERROR : No tiene más intentos
+TIME : 10:7:29
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:7:40
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:7:41
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Intentos para inicio de sesión superados
+CLASE : JFRInicioSesion
+ERROR : No tiene más intentos
+TIME : 10:7:46
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:8:7
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:8:8
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:8:10
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Intentos para inicio de sesión superados
+CLASE : JFRInicioSesion
+ERROR : No tiene más intentos
+TIME : 10:8:16
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado una contraseña valido
+CLASE : JFRInicioSesion
+ERROR : La contraseña es invalida
+TIME : 10:8:31
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:8:49
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:8:54
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:8:57
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Intentos para inicio de sesión superados
+CLASE : JFRInicioSesion
+ERROR : No tiene más intentos
+TIME : 10:9:8
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado una contraseña valido
+CLASE : JFRInicioSesion
+ERROR : La contraseña es invalida
+TIME : 10:9:26
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado una contraseña valido
+CLASE : JFRInicioSesion
+ERROR : La contraseña es invalida
+TIME : 10:9:28
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado una contraseña valido
+CLASE : JFRInicioSesion
+ERROR : La contraseña es invalida
+TIME : 10:9:29
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Intentos para inicio de sesión superados
+CLASE : JFRInicioSesion
+ERROR : No tiene más intentos
+TIME : 10:9:37
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado una contraseña valido
+CLASE : JFRInicioSesion
+ERROR : La contraseña es invalida
+TIME : 10:10:5
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:10:29
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:10:31
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:10:42
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:10:51
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Intentos para inicio de sesión superados
+CLASE : JFRInicioSesion
+ERROR : No tiene más intentos
+TIME : 10:10:55
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:11:32
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:11:34
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:11:36
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Intentos para inicio de sesión superados
+CLASE : JFRInicioSesion
+ERROR : No tiene más intentos
+TIME : 10:11:39
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado una contraseña valido
+CLASE : JFRInicioSesion
+ERROR : La contraseña es invalida
+TIME : 10:12:0
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:12:3
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado una contraseña valido
+CLASE : JFRInicioSesion
+ERROR : La contraseña es invalida
+TIME : 10:12:24
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado una contraseña valido
+CLASE : JFRInicioSesion
+ERROR : La contraseña es invalida
+TIME : 10:12:27
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado una contraseña valido
+CLASE : JFRInicioSesion
+ERROR : La contraseña es invalida
+TIME : 10:12:29
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Intentos para inicio de sesión superados
+CLASE : JFRInicioSesion
+ERROR : No tiene más intentos
+TIME : 10:12:32
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:12:38
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:12:48
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:12:50
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:12:55
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Intentos para inicio de sesión superados
+CLASE : JFRInicioSesion
+ERROR : No tiene más intentos
+TIME : 10:12:59
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:13:37
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:13:41
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha ingresado un usuario valido
+CLASE : JFRInicioSesion
+ERROR : No existe el usuario
+TIME : 10:13:46
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Intentos para inicio de sesión superados
+CLASE : JFRInicioSesion
+ERROR : No tiene más intentos
+TIME : 10:13:50
+----------------------------------------------------
+ 
