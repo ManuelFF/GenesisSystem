@@ -303,7 +303,7 @@ public class JFRPrincipal extends javax.swing.JFrame
           SYSAUDIOCON sysau = new SYSAUDIOCON();
           sysau.E_CERRAR_SESION();
           
-          Thread.sleep(420);
+          Thread.sleep(450);
           System.exit(0);
             
         } catch (Exception sqle) 

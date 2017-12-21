@@ -1,0 +1,576 @@
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON metodo DB_ORC_CON
+ERROR : Error de E/S: The Network Adapter could not establish the connection
+TIME : 12:36:0
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error no controlado en el bloque del Finally del metodo ValidarUsuario
+CLASE : MICROCON_InicioSesion
+ERROR : null
+TIME : 12:36:0
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido ingresar al sistema debido a un error
+CLASE : JFRInicioSesion metodo ingresar linea 157
+ERROR : null
+TIME : 12:36:0
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:44:42
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:44:43
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:44:43
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:44:43
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:44:46
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:44:46
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:44:47
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:44:47
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:44:47
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:44:47
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:44:47
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:44:51
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:44:51
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:44:59
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:44:59
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:44:59
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:0
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:1
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:1
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:3
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:4
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:5
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:9
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:10
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:10
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:10
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:10
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:10
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:11
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:16
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:17
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:17
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:18
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:18
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:19
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:19
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:20
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:20
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:20
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:45:21
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:48:46
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:48:54
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:48:54
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:48:55
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:48:57
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:48:57
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:48:58
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:48:58
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:49:1
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:49:1
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:49:2
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:49:4
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:49:4
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:49:48
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:49:49
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:49:50
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:49:51
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:49:51
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:49:51
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:49:51
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:49:53
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:49:56
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:49:56
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:49:57
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:49:57
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:49:57
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:50:12
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:50:12
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:50:41
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:50:41
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:50:41
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:51:13
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:51:17
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:51:23
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:55:34
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:55:34
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:55:41
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:55:42
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:55:42
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:55:46
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:55:46
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:55:46
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:55:51
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:55:54
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:56:44
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:56:44
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:56:51
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:56:54
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:56:57
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:56:57
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:57:52
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:58:4
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JDES_seleccionarPersonal
+ERROR : 2
+TIME : 14:58:4
+----------------------------------------------------
+ 

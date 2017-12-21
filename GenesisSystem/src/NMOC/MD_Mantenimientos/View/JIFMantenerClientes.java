@@ -9,10 +9,17 @@ import ModuleWorker.SYSFRMCON;
 import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
+import NMOC.MD_Mantenimientos.IC.MICROCON_MantenerClientes;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JFrame;
+import javax.swing.RowFilter;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
 
 /**
  *
@@ -25,10 +32,24 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
      * Creates new form JIFGestionarCliente
      */
     
+    MICROCON_MantenerClientes CliNCon = new MICROCON_MantenerClientes();
     LOG lc = new LOG();
     EVENTS evn = new EVENTS();
     SYSFRMCON sysfrm = new SYSFRMCON();
     JFrame form;
+    
+    DefaultTableModel modelo_Cli_NATU = new DefaultTableModel()
+    {
+        @Override
+        public boolean isCellEditable(int row , int col)
+        {
+             return false;
+        }
+    };
+    
+    private TableRowSorter trsFiltro;
+    protected String IDCLI;
+    
     
     public JIFMantenerClientes() 
     {
@@ -36,15 +57,36 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         this.setTitle(sysfrm.T_MantenerClientes());
         sysfrm.B_MantenerClientes(this.getContentPane());
         lblusuario.setText(JFRPrincipal.JMSesion.getText());
+        lblusuario1.setText(JFRPrincipal.JMSesion.getText());
         fecha_actual();
                
-        //JTusrs.setModel(modelo_usuarios);
-        //JTusrs.getTableHeader().setReorderingAllowed(false);
-        //mcmuser.Cargarusuario(modelo_usuarios, JTusrs);
-        //mcmuser.CargarBoxTipo(CBTipo);
+        JTNatural.setModel(modelo_Cli_NATU);
+        JTNatural.addMouseListener(new MouseAdapter(){});
+        JTNatural.getTableHeader().setReorderingAllowed(false);
+        trsFiltro = new TableRowSorter(JTNatural.getModel());
+        CliNCon.CargarCliNatu(modelo_Cli_NATU, JTNatural);
+        JTNatural.setRowSorter(trsFiltro);
         
+        JTAdireccion.setLineWrap(true);
     }
 
+    public void filtro() 
+    {
+          int columnaABuscar = 0;
+          
+          if(cbfiltro.getSelectedItem().toString().equals("Nombres"))
+          {
+              columnaABuscar = 1;
+          }
+          if (cbfiltro.getSelectedItem().toString().equals("ID")) 
+          {
+              columnaABuscar = 0;
+          }
+          
+          
+          trsFiltro.setRowFilter(RowFilter.regexFilter(txtfiltro.getText(), columnaABuscar));
+     }    
+    
     protected final void fecha_actual()
     {
         Date date = new Date();
@@ -67,6 +109,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         
         String compl = dia_I+"/"+mes_I+"/"+(año_I);
         lbldate.setText(compl);
+        lbldate1.setText(compl);
   }
     
     
@@ -107,13 +150,13 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         jLabel15 = new javax.swing.JLabel();
         cbfiltro = new javax.swing.JComboBox<>();
         txtfiltro = new javax.swing.JTextField();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        JTPDireccion = new javax.swing.JTextPane();
         btnnuevo_N = new javax.swing.JButton();
         btnmodificar_N = new javax.swing.JButton();
         btneliminar_N = new javax.swing.JButton();
         btncancelar_N = new javax.swing.JButton();
         btnsalir_N = new javax.swing.JButton();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        JTAdireccion = new javax.swing.JTextArea();
         JPJuridico = new javax.swing.JPanel();
         jLabel16 = new javax.swing.JLabel();
         txtcorreo1 = new javax.swing.JTextField();
@@ -160,6 +203,12 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        JTNatural.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        JTNatural.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JTNaturalMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(JTNatural);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -183,13 +232,16 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel7.setText("Nombres");
 
+        txtnombres.setEditable(false);
         txtnombres.setBackground(new java.awt.Color(204, 204, 204));
 
+        txtApellidoP.setEditable(false);
         txtApellidoP.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel8.setText("Apellido Paterno:");
 
+        txtApellidoM.setEditable(false);
         txtApellidoM.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -198,8 +250,10 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel10.setText("DNI:");
 
+        txtDNI.setEditable(false);
         txtDNI.setBackground(new java.awt.Color(204, 204, 204));
 
+        txtcelular.setEditable(false);
         txtcelular.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -208,11 +262,13 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel12.setText("Correo:");
 
+        txtcorreo.setEditable(false);
         txtcorreo.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel13.setText("Telefono:");
 
+        txttelefono.setEditable(false);
         txttelefono.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -222,12 +278,14 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         jLabel15.setText("Buscar:");
 
         cbfiltro.setBackground(new java.awt.Color(204, 204, 204));
-        cbfiltro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbfiltro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nombres", "ID" }));
 
         txtfiltro.setBackground(new java.awt.Color(204, 204, 204));
-
-        JTPDireccion.setBackground(new java.awt.Color(204, 204, 204));
-        jScrollPane2.setViewportView(JTPDireccion);
+        txtfiltro.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtfiltroKeyTyped(evt);
+            }
+        });
 
         btnnuevo_N.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Files-New-File-icon.png"))); // NOI18N
         btnnuevo_N.setText("Nuevo");
@@ -268,6 +326,12 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
                 btnsalir_NActionPerformed(evt);
             }
         });
+
+        JTAdireccion.setEditable(false);
+        JTAdireccion.setBackground(new java.awt.Color(204, 204, 204));
+        JTAdireccion.setColumns(20);
+        JTAdireccion.setRows(5);
+        jScrollPane5.setViewportView(JTAdireccion);
 
         javax.swing.GroupLayout JPNaturalLayout = new javax.swing.GroupLayout(JPNatural);
         JPNatural.setLayout(JPNaturalLayout);
@@ -315,7 +379,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
                                     .addGroup(JPNaturalLayout.createSequentialGroup()
                                         .addComponent(txttelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(0, 0, Short.MAX_VALUE))
-                                    .addComponent(jScrollPane2)))))
+                                    .addComponent(jScrollPane5)))))
                     .addGroup(JPNaturalLayout.createSequentialGroup()
                         .addComponent(btnnuevo_N)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -386,15 +450,15 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
                         .addGroup(JPNaturalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel12)
                             .addComponent(txtcorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(JPNaturalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnnuevo_N)
                     .addComponent(btnmodificar_N)
                     .addComponent(btneliminar_N)
                     .addComponent(btncancelar_N)
                     .addComponent(btnsalir_N))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(7, 7, 7)
                 .addGroup(JPNaturalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JPNaturalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -741,14 +805,71 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         // TODO add your handling code here:
     }//GEN-LAST:event_btnsalir_JActionPerformed
 
+    private void txtfiltroKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtfiltroKeyTyped
+
+       txtfiltro.addKeyListener(new KeyAdapter() 
+        {
+            @Override
+            public void keyReleased(final KeyEvent e) 
+            {
+                String cadena = (txtfiltro.getText().toUpperCase());
+                txtfiltro.setText(cadena);
+                repaint();
+                filtro();
+            }
+        });
+
+    }//GEN-LAST:event_txtfiltroKeyTyped
+ 
+    String ArrayTemp[];
+    String buff;        
+    
+    private void JTNaturalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JTNaturalMouseClicked
+
+           try 
+           {
+            
+            int row = JTNatural.rowAtPoint(evt.getPoint());
+            
+            IDCLI = ""+JTNatural.getValueAt(row, 0);
+            System.out.println(IDCLI+"\n");
+            
+             txtDNI.setText(""+JTNatural.getValueAt(row, 2));
+            txttelefono.setText(""+JTNatural.getValueAt(row, 3));
+            txtcelular.setText(""+JTNatural.getValueAt(row, 4));
+            JTAdireccion.setText("");
+            JTAdireccion.setText(""+JTNatural.getValueAt(row, 5));
+            txtcorreo.setText(""+JTNatural.getValueAt(row, 6));
+            
+            
+            buff =""+JTNatural.getValueAt(row, 1);
+            
+            ArrayTemp = buff.split("-");
+                       
+            txtnombres.setText(ArrayTemp[0]);
+            txtApellidoP.setText(ArrayTemp[1]);
+            txtApellidoM.setText(ArrayTemp[2]);
+            
+            String select = ArrayTemp[0]+" "+ArrayTemp[1]+" "+ArrayTemp[2];
+            
+            evn.write(JFRPrincipal.JMSesion.getText(),"Ha seleccionado al cliente natural "+select,"JIFMantenerClientes", "Tabla de Clientes Naturales presionado");
+
+        } catch (Exception e) 
+            {
+               lc.write("Error al seleccionar cliente natural", "JIFMantenerClientes", e.getMessage());
+            }
+
+
+    }//GEN-LAST:event_JTNaturalMouseClicked
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel JPJuridico;
     private javax.swing.JPanel JPNatural;
     private javax.swing.JTabbedPane JTABPrincipal;
+    private javax.swing.JTextArea JTAdireccion;
     private javax.swing.JTable JTJuridico;
     private javax.swing.JTable JTNatural;
-    private javax.swing.JTextPane JTPDireccion;
     private javax.swing.JTextPane JTPDireccion1;
     private javax.swing.JButton btncancelar_J;
     private javax.swing.JButton btncancelar_N;
@@ -789,9 +910,9 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JLabel lbldate;
     private javax.swing.JLabel lbldate1;
     private javax.swing.JLabel lblusuario;
