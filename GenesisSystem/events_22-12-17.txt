@@ -481,3 +481,73 @@ ACCIÓN : Presiono Botón 'Salir'
 TIME : 11:17:17
 ----------------------------------------------------
  
+USUARIO : Aún no definido
+DESCRIPCIÓN : Intento entrar al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 12:23:39
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 12:23:59
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Permisos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Permisos' Presionado
+TIME : 12:24:5
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Usuario EDSON ROJAS PEÑA
+FORMULARIO : JIFPermisos
+ACCIÓN : Tabla de Permisos presionado
+TIME : 12:24:9
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Usuario EDSON ROJAS PEÑA
+FORMULARIO : JIFPermisos
+ACCIÓN : Tabla de Permisos presionado
+TIME : 12:24:11
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Usuario EDSON ROJAS PEÑA
+FORMULARIO : JIFPermisos
+ACCIÓN : Tabla de Permisos presionado
+TIME : 12:24:11
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Usuario EDSON ROJAS PEÑA
+FORMULARIO : JIFPermisos
+ACCIÓN : Tabla de Permisos presionado
+TIME : 12:24:12
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Presiono el botón 'Aceptar' y updateo permisos
+FORMULARIO : JIFPermisos
+ACCIÓN : Botón 'Aceptar' Presionado
+TIME : 12:24:19
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Permisos'
+FORMULARIO : JIFPermisos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 12:24:20
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 12:24:22
+----------------------------------------------------
+ 

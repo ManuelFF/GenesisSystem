@@ -185,3 +185,9 @@ ERROR : Invalid range
 TIME : 11:16:19
 ----------------------------------------------------
  
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 12:23:39
+----------------------------------------------------
+ 

@@ -72,7 +72,7 @@ public class SYSFRMCON
     //Titulo Inicio Sesion
     public String T_login()
     {
-        String t = PRE_STABLE()+" Iniciar Sesión en Crystal Génesis.";
+        String t = STABLE()+" Iniciar Sesión en Crystal Génesis.";
         return t;
     }
     
