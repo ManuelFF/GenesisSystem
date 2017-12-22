@@ -1,0 +1,6 @@
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 8:46:29
+----------------------------------------------------
+ 

@@ -224,6 +224,8 @@ public class MICROCON_MantenerUsuario
         return null;
     }
 
+    //###################################### ESPACIO ARRAYLIST Y OTROS METODOS QUE INTERACTUAN DIRECTAMENTE CON LA BASE ###############################################
+    
     //Array List Controlador
     private ArrayList<NOB_usuario> L_USRID;
     

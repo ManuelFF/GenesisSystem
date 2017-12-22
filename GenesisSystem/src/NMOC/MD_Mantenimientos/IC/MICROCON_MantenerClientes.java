@@ -7,11 +7,13 @@ package NMOC.MD_Mantenimientos.IC;
 
 import ModuleWorker.DBCON;
 import NCLPM.LOG;
+import NMOC.MD_Mantenimientos.Core.NOB_cliente;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
@@ -29,7 +31,8 @@ public class MICROCON_MantenerClientes
     public MICROCON_MantenerClientes()
     {
         //inicializadores
-        
+        L_CLIENTE = new ArrayList<>();
+        llenarIDS_CLI();     
     }
     
     //CARGAR CLIENTE NATURAL
@@ -62,5 +65,74 @@ public class MICROCON_MantenerClientes
                 lc.write("Error no controlado en el metodo 'CargarCliNatu'", "MICROCON_MantenerClientes linea 98", ex.getMessage());
             }
     }
+    
+  //###################################### ESPACIO ARRAYLIST Y OTROS METODOS QUE INTERACTUAN DIRECTAMENTE CON LA BASE ###############################################
+    
+    //ArrayList controlador
+    private ArrayList<NOB_cliente> L_CLIENTE;
+    
+    //GET ARRAYLIST
+    public ArrayList<NOB_cliente> getL_CLIENTE() 
+    {
+        return L_CLIENTE;
+    }
+    
+    //SET ARRAYLIST
+    public void setL_CLIENTE(ArrayList<NOB_cliente> L_CLIENTE) 
+    {
+        this.L_CLIENTE = L_CLIENTE;
+    }
+    
+    //ADD OBJECT
+    public void A_Objeto(NOB_cliente p)
+    {
+        L_CLIENTE.add(p);
+    }
+    
+    //RETURN SIZE
+    public int tamaño()
+    {
+        return L_CLIENTE.size();
+    }
+    
+    //recibe pos y retorna obj 
+    public NOB_cliente obtener(int pos)
+    {
+        return L_CLIENTE.get(pos);
+    }
+    
+    public final void llenarIDS_CLI()
+    {
+        try
+        {   
+            DBCON RCN = new DBCON();
+            
+            st=RCN.conector().prepareStatement("SELECT ID_CLI FROM CLIENTES order by ID_CLI");
+            rs=st.executeQuery();
+
+            while (rs.next())
+            {            
+                String ID_USER = rs.getString("ID_USER");
+                NOB_cliente nu = new NOB_cliente(ID_USER);
+                A_Objeto(nu);
+            }
+            RCN.conector().close();
+
+        }
+        catch (SQLException sqle) 
+            {
+               lc.write( "La base de datos no retorno conexion!","MICROCON_MantenerUsuario", sqle.getMessage());
+            }
+        catch (Exception e)
+            {
+               lc.write( "ha ocurrido algun error no controlado","MICROCON_MantenerUsuario", e.getMessage());
+            }
+    }
+    
+    
+    
+    
+    
+    
     
 }

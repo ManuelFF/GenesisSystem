@@ -23,8 +23,7 @@ import javax.swing.table.DefaultTableModel;
  */
 public class NANOCON_Permisos 
 {
-    private ResultSet rs;
-    private PreparedStatement st;
+
     LOG lc = new LOG(); //puente apuntando a la clase LOG
     
     

@@ -5,6 +5,7 @@
  */
 package NMOC.MD_Mantenimientos.View;
 
+import ModuleWorker.IC.MWCON;
 import ModuleWorker.SYSFRMCON;
 import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
@@ -56,8 +57,11 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         initComponents();
         this.setTitle(sysfrm.T_MantenerClientes());
         sysfrm.B_MantenerClientes(this.getContentPane());
+        sysfrm.B_MantenerClientes(JPNatural);
+        sysfrm.B_MantenerClientes(JPJuridico);
+
         lblusuario.setText(JFRPrincipal.JMSesion.getText());
-        lblusuario1.setText(JFRPrincipal.JMSesion.getText());
+        //lblusuario1.setText(JFRPrincipal.JMSesion.getText());
         fecha_actual();
                
         JTNatural.setModel(modelo_Cli_NATU);
@@ -109,8 +113,16 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         
         String compl = dia_I+"/"+mes_I+"/"+(año_I);
         lbldate.setText(compl);
-        lbldate1.setText(compl);
-  }
+        //lbldate1.setText(compl);
+    }
+    
+    protected void clearCacheDB()
+    {
+        MWCON mw = new MWCON();
+        mw.clear_table(modelo_Cli_NATU, JTNatural);
+        CliNCon.CargarCliNatu(modelo_Cli_NATU, JTNatural);
+        CliNCon.llenarIDS_CLI();
+    }
     
     
     /**
@@ -158,39 +170,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         jScrollPane5 = new javax.swing.JScrollPane();
         JTAdireccion = new javax.swing.JTextArea();
         JPJuridico = new javax.swing.JPanel();
-        jLabel16 = new javax.swing.JLabel();
-        txtcorreo1 = new javax.swing.JTextField();
-        jLabel17 = new javax.swing.JLabel();
-        txttelefono1 = new javax.swing.JTextField();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        cbfiltro1 = new javax.swing.JComboBox<>();
-        txtfiltro1 = new javax.swing.JTextField();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        JTPDireccion1 = new javax.swing.JTextPane();
-        jLabel6 = new javax.swing.JLabel();
-        btnnuevo_J = new javax.swing.JButton();
-        lbldate1 = new javax.swing.JLabel();
-        btnmodificar_J = new javax.swing.JButton();
-        jLabel20 = new javax.swing.JLabel();
-        btneliminar_J = new javax.swing.JButton();
-        txtnombres1 = new javax.swing.JTextField();
-        btncancelar_J = new javax.swing.JButton();
-        txtApellidoP1 = new javax.swing.JTextField();
-        btnsalir_J = new javax.swing.JButton();
-        jLabel21 = new javax.swing.JLabel();
-        txtApellidoM1 = new javax.swing.JTextField();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        txtDNI1 = new javax.swing.JTextField();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        JTJuridico = new javax.swing.JTable();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        lblusuario1 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        txtcelular1 = new javax.swing.JTextField();
-        jLabel26 = new javax.swing.JLabel();
 
         JTNatural.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -473,262 +452,15 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
 
         JTABPrincipal.addTab("Naturales", JPNatural);
 
-        jLabel16.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel16.setText("Correo:");
-
-        txtcorreo1.setBackground(new java.awt.Color(204, 204, 204));
-
-        jLabel17.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel17.setText("Telefono:");
-
-        txttelefono1.setBackground(new java.awt.Color(204, 204, 204));
-
-        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel18.setText("Dirección:");
-
-        jLabel19.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        jLabel19.setText("Buscar:");
-
-        cbfiltro1.setBackground(new java.awt.Color(204, 204, 204));
-        cbfiltro1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        txtfiltro1.setBackground(new java.awt.Color(204, 204, 204));
-
-        JTPDireccion1.setBackground(new java.awt.Color(204, 204, 204));
-        jScrollPane3.setViewportView(JTPDireccion1);
-
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel6.setText("Fecha Sistema:");
-
-        btnnuevo_J.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Files-New-File-icon.png"))); // NOI18N
-        btnnuevo_J.setText("Nuevo");
-        btnnuevo_J.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnnuevo_JActionPerformed(evt);
-            }
-        });
-
-        lbldate1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lbldate1.setText("18/12/2017");
-
-        btnmodificar_J.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/EDIT.png"))); // NOI18N
-        btnmodificar_J.setText("Modificar");
-        btnmodificar_J.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnmodificar_JActionPerformed(evt);
-            }
-        });
-
-        jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel20.setText("Nombres");
-
-        btneliminar_J.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/delete-file-icon.png"))); // NOI18N
-        btneliminar_J.setText("Eliminar");
-        btneliminar_J.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btneliminar_JActionPerformed(evt);
-            }
-        });
-
-        txtnombres1.setBackground(new java.awt.Color(204, 204, 204));
-
-        btncancelar_J.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Windows-Close-Program-icon.png"))); // NOI18N
-        btncancelar_J.setText("Cancelar");
-        btncancelar_J.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btncancelar_JActionPerformed(evt);
-            }
-        });
-
-        txtApellidoP1.setBackground(new java.awt.Color(204, 204, 204));
-
-        btnsalir_J.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/logout-icon24.png"))); // NOI18N
-        btnsalir_J.setText("Salir");
-        btnsalir_J.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnsalir_JActionPerformed(evt);
-            }
-        });
-
-        jLabel21.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel21.setText("Apellido Paterno:");
-
-        txtApellidoM1.setBackground(new java.awt.Color(204, 204, 204));
-
-        jLabel22.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel22.setText("Apellido Materno:");
-
-        jLabel23.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel23.setText("DNI:");
-
-        txtDNI1.setBackground(new java.awt.Color(204, 204, 204));
-
-        JTJuridico.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane4.setViewportView(JTJuridico);
-
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel3.setText("Resultado busqueda:");
-
-        jLabel24.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel24.setText("usuario:");
-
-        lblusuario1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lblusuario1.setText("jLabel3");
-
-        jLabel25.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel25.setText("CLIENTES NATURALES");
-
-        txtcelular1.setBackground(new java.awt.Color(204, 204, 204));
-
-        jLabel26.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel26.setText("Celular:");
-
         javax.swing.GroupLayout JPJuridicoLayout = new javax.swing.GroupLayout(JPJuridico);
         JPJuridico.setLayout(JPJuridicoLayout);
         JPJuridicoLayout.setHorizontalGroup(
             JPJuridicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(JPJuridicoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(JPJuridicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(JPJuridicoLayout.createSequentialGroup()
-                        .addGroup(JPJuridicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(JPJuridicoLayout.createSequentialGroup()
-                                .addComponent(jLabel21)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtApellidoP1, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(JPJuridicoLayout.createSequentialGroup()
-                                .addComponent(jLabel20)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtnombres1, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(JPJuridicoLayout.createSequentialGroup()
-                                .addComponent(jLabel23)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtDNI1, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(JPJuridicoLayout.createSequentialGroup()
-                                .addComponent(jLabel26)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtcelular1, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(JPJuridicoLayout.createSequentialGroup()
-                                .addComponent(jLabel16)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtcorreo1, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18)
-                        .addGroup(JPJuridicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(JPJuridicoLayout.createSequentialGroup()
-                                .addComponent(jLabel22)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtApellidoM1, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(JPJuridicoLayout.createSequentialGroup()
-                                .addGap(51, 51, 51)
-                                .addGroup(JPJuridicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel18)
-                                    .addComponent(jLabel17))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(JPJuridicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(JPJuridicoLayout.createSequentialGroup()
-                                        .addComponent(txttelefono1, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE))
-                                    .addComponent(jScrollPane3)))))
-                    .addGroup(JPJuridicoLayout.createSequentialGroup()
-                        .addComponent(btnnuevo_J)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnmodificar_J)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btneliminar_J)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btncancelar_J)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnsalir_J)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jScrollPane4)
-                    .addGroup(JPJuridicoLayout.createSequentialGroup()
-                        .addGroup(JPJuridicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addGroup(JPJuridicoLayout.createSequentialGroup()
-                                .addComponent(jLabel24)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblusuario1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel25)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
-                                .addComponent(jLabel6)))
-                        .addGap(10, 10, 10)
-                        .addComponent(lbldate1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(JPJuridicoLayout.createSequentialGroup()
-                        .addComponent(jLabel19)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cbfiltro1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtfiltro1)))
-                .addContainerGap())
+            .addGap(0, 782, Short.MAX_VALUE)
         );
         JPJuridicoLayout.setVerticalGroup(
             JPJuridicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JPJuridicoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(JPJuridicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel24)
-                    .addComponent(lblusuario1)
-                    .addComponent(jLabel25)
-                    .addComponent(jLabel6)
-                    .addComponent(lbldate1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(JPJuridicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel20)
-                    .addComponent(txtnombres1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(JPJuridicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel21)
-                    .addComponent(txtApellidoP1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel22)
-                    .addComponent(txtApellidoM1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(JPJuridicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel23)
-                    .addComponent(txtDNI1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel17)
-                    .addComponent(txttelefono1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(JPJuridicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(JPJuridicoLayout.createSequentialGroup()
-                        .addGroup(JPJuridicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel26)
-                            .addComponent(txtcelular1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel18))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(JPJuridicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel16)
-                            .addComponent(txtcorreo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(JPJuridicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnnuevo_J)
-                    .addComponent(btnmodificar_J)
-                    .addComponent(btneliminar_J)
-                    .addComponent(btncancelar_J)
-                    .addComponent(btnsalir_J))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(JPJuridicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JPJuridicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(cbfiltro1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(txtfiltro1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addGap(0, 540, Short.MAX_VALUE)
         );
 
         JTABPrincipal.addTab("Juridicos", JPJuridico);
@@ -784,26 +516,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     }
         
     }//GEN-LAST:event_btnsalir_NActionPerformed
-
-    private void btnnuevo_JActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnuevo_JActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnnuevo_JActionPerformed
-
-    private void btnmodificar_JActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmodificar_JActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnmodificar_JActionPerformed
-
-    private void btneliminar_JActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneliminar_JActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btneliminar_JActionPerformed
-
-    private void btncancelar_JActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelar_JActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btncancelar_JActionPerformed
-
-    private void btnsalir_JActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalir_JActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnsalir_JActionPerformed
 
     private void txtfiltroKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtfiltroKeyTyped
 
@@ -868,21 +580,13 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     private javax.swing.JPanel JPNatural;
     private javax.swing.JTabbedPane JTABPrincipal;
     private javax.swing.JTextArea JTAdireccion;
-    private javax.swing.JTable JTJuridico;
     private javax.swing.JTable JTNatural;
-    private javax.swing.JTextPane JTPDireccion1;
-    private javax.swing.JButton btncancelar_J;
     private javax.swing.JButton btncancelar_N;
-    private javax.swing.JButton btneliminar_J;
     private javax.swing.JButton btneliminar_N;
-    private javax.swing.JButton btnmodificar_J;
     private javax.swing.JButton btnmodificar_N;
-    private javax.swing.JButton btnnuevo_J;
     private javax.swing.JButton btnnuevo_N;
-    private javax.swing.JButton btnsalir_J;
     private javax.swing.JButton btnsalir_N;
     private javax.swing.JComboBox<String> cbfiltro;
-    private javax.swing.JComboBox<String> cbfiltro1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -890,48 +594,23 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JLabel lbldate;
-    private javax.swing.JLabel lbldate1;
     private javax.swing.JLabel lblusuario;
-    private javax.swing.JLabel lblusuario1;
     private javax.swing.JTextField txtApellidoM;
-    private javax.swing.JTextField txtApellidoM1;
     private javax.swing.JTextField txtApellidoP;
-    private javax.swing.JTextField txtApellidoP1;
     private javax.swing.JTextField txtDNI;
-    private javax.swing.JTextField txtDNI1;
     private javax.swing.JTextField txtcelular;
-    private javax.swing.JTextField txtcelular1;
     private javax.swing.JTextField txtcorreo;
-    private javax.swing.JTextField txtcorreo1;
     private javax.swing.JTextField txtfiltro;
-    private javax.swing.JTextField txtfiltro1;
     private javax.swing.JTextField txtnombres;
-    private javax.swing.JTextField txtnombres1;
     private javax.swing.JTextField txttelefono;
-    private javax.swing.JTextField txttelefono1;
     // End of variables declaration//GEN-END:variables
 }
