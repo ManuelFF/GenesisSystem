@@ -107,13 +107,13 @@ public class MICROCON_MantenerClientes
         {   
             DBCON RCN = new DBCON();
             
-            st=RCN.conector().prepareStatement("SELECT ID_CLI FROM CLIENTES order by ID_CLI");
+            st=RCN.conector().prepareStatement("SELECT ID_CLI FROM CLIENTE order by ID_CLI");
             rs=st.executeQuery();
 
             while (rs.next())
             {            
-                String ID_USER = rs.getString("ID_USER");
-                NOB_cliente nu = new NOB_cliente(ID_USER);
+                String ID_CLI = rs.getString("ID_CLI");
+                NOB_cliente nu = new NOB_cliente(ID_CLI);
                 A_Objeto(nu);
             }
             RCN.conector().close();
@@ -121,11 +121,11 @@ public class MICROCON_MantenerClientes
         }
         catch (SQLException sqle) 
             {
-               lc.write( "La base de datos no retorno conexion!","MICROCON_MantenerUsuario", sqle.getMessage());
+               lc.write( "La base de datos no retorno conexion!","MICROCON_MantenerClientes", sqle.getMessage());
             }
         catch (Exception e)
             {
-               lc.write( "ha ocurrido algun error no controlado","MICROCON_MantenerUsuario", e.getMessage());
+               lc.write( "ha ocurrido algun error no controlado","MICROCON_MantenerClientes", e.getMessage());
             }
     }
     

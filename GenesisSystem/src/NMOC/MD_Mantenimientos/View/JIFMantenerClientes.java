@@ -10,7 +10,9 @@ import ModuleWorker.SYSFRMCON;
 import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
+import NMOC.MD_Mantenimientos.Core.NOB_cliente;
 import NMOC.MD_Mantenimientos.IC.MICROCON_MantenerClientes;
+import java.awt.Color;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
@@ -38,7 +40,8 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     EVENTS evn = new EVENTS();
     SYSFRMCON sysfrm = new SYSFRMCON();
     JFrame form;
-    
+    Color ColorInicial;
+
     DefaultTableModel modelo_Cli_NATU = new DefaultTableModel()
     {
         @Override
@@ -70,11 +73,12 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         trsFiltro = new TableRowSorter(JTNatural.getModel());
         CliNCon.CargarCliNatu(modelo_Cli_NATU, JTNatural);
         JTNatural.setRowSorter(trsFiltro);
-        
         JTAdireccion.setLineWrap(true);
+        ColorInicial = txtnombres.getBackground();
+
     }
 
-    public void filtro() 
+    protected void filtro() 
     {
           int columnaABuscar = 0;
           
@@ -115,13 +119,70 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         lbldate.setText(compl);
         //lbldate1.setText(compl);
     }
+
+    private void NuevoCodigoCLI()
+    {
+        String codigo  = String.format("%08d", 1);
+	int cod ; 
+        NOB_cliente ultObjeto = null;
+				
+	if( CliNCon.tamaño()==0 ) // Array vacío
+		codigo = "CLI-"+codigo;
+	else {
+		// La posición del último objeto se obtiene con tamaño()-1
+		// Obtenemos el último objeto del ArrayList
+		ultObjeto = CliNCon.obtener( CliNCon.tamaño()-1 );
+		// Obtenemos los caracteres desde la posicion dos hasta el final ("003"); 
+		codigo = ultObjeto.getId_cli().substring(4);
+		//Agregamos una unidad al codigo extraido en el paso anterior
+		cod = Integer.parseInt(codigo)+1;
+		codigo = "CLI-"+String.format("%08d",cod);
+              }
+	IDCLI = codigo;
+    }
     
-    protected void clearCacheDB()
+    
+    //Borra y limpia el texto
+    private void clearFRM()
+    {
+        IDCLI = "";
+        txtnombres.setText("");
+        txtApellidoP.setText("");
+        txtApellidoM.setText("");
+        txtDNI.setText("");
+        txttelefono.setText("");
+        txtcelular.setText("");
+        txtcorreo.setText("");
+        JTAdireccion.setText("");
+    }
+    
+    //Habilita los campos de texto
+    private void ena_disaFRM(boolean cond)
+    {
+        txtnombres.setEnabled(cond);
+        txtApellidoP.setEnabled(cond);
+        txtApellidoM.setEnabled(cond);
+        txtDNI.setEnabled(cond);
+        txttelefono.setEnabled(cond);
+        txtcelular.setEnabled(cond);
+        txtcorreo.setEnabled(cond);
+        JTAdireccion.setEnabled(cond);
+    }
+       
+    private void clearCacheDB()
     {
         MWCON mw = new MWCON();
         mw.clear_table(modelo_Cli_NATU, JTNatural);
         CliNCon.CargarCliNatu(modelo_Cli_NATU, JTNatural);
         CliNCon.llenarIDS_CLI();
+    }
+    
+    private void ena_disaButtons(boolean nuevo, boolean modificar, boolean cancelar, boolean salir)
+    {
+        btnnuevo_N.setEnabled(nuevo);
+        btnmodificar_N.setEnabled(modificar);
+        btncancelar_N.setEnabled(cancelar);
+        btnsalir_N.setEnabled(salir);
     }
     
     
@@ -164,7 +225,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         txtfiltro = new javax.swing.JTextField();
         btnnuevo_N = new javax.swing.JButton();
         btnmodificar_N = new javax.swing.JButton();
-        btneliminar_N = new javax.swing.JButton();
         btncancelar_N = new javax.swing.JButton();
         btnsalir_N = new javax.swing.JButton();
         jScrollPane5 = new javax.swing.JScrollPane();
@@ -282,14 +342,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
             }
         });
 
-        btneliminar_N.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/delete-file-icon.png"))); // NOI18N
-        btneliminar_N.setText("Eliminar");
-        btneliminar_N.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btneliminar_NActionPerformed(evt);
-            }
-        });
-
         btncancelar_N.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Windows-Close-Program-icon.png"))); // NOI18N
         btncancelar_N.setText("Cancelar");
         btncancelar_N.addActionListener(new java.awt.event.ActionListener() {
@@ -364,8 +416,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnmodificar_N)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btneliminar_N)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btncancelar_N)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnsalir_N)
@@ -434,7 +484,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
                 .addGroup(JPNaturalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnnuevo_N)
                     .addComponent(btnmodificar_N)
-                    .addComponent(btneliminar_N)
                     .addComponent(btncancelar_N)
                     .addComponent(btnsalir_N))
                 .addGap(7, 7, 7)
@@ -488,16 +537,41 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         if(index == 0 ){System.out.println("\nNATURAL\n");}
         else if(index == 1){System.out.println("\nJURIDICO\n");}
         
+        NuevoCodigoCLI();
+        
+        System.out.println(""+IDCLI);
+
+        try 
+        {   
+          
+          JFrame jf=new JFrame();
+          jf.setAlwaysOnTop(true);
+          clearCacheDB();
+          
+          evn.write(JFRPrincipal.JMSesion.getText(), "hizo click en el botón nuevo cliente natural ", "JIFMantenerCliente linea 344", "Botón 'Nuevo_Natural' presionado");
+          
+          if(btnnuevo_N.getText().equals("Nuevo"))
+          {
+              clearFRM();
+              NuevoCodigoCLI();
+              ena_disaFRM(true);
+              ena_disaButtons(true, false, true, false);
+              btnnuevo_N.setText("Insertar");
+              
+              
+          }
+          
+        } catch (Exception e) 
+            {
+               lc.write("Error al intentar ingresar un nuevo Cliente Natural", "JIFMantenerCliente linea 344", e.getMessage());
+            }
+        
 
     }//GEN-LAST:event_btnnuevo_NActionPerformed
 
     private void btnmodificar_NActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmodificar_NActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnmodificar_NActionPerformed
-
-    private void btneliminar_NActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneliminar_NActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btneliminar_NActionPerformed
 
     private void btncancelar_NActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelar_NActionPerformed
         // TODO add your handling code here:
@@ -582,7 +656,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     private javax.swing.JTextArea JTAdireccion;
     private javax.swing.JTable JTNatural;
     private javax.swing.JButton btncancelar_N;
-    private javax.swing.JButton btneliminar_N;
     private javax.swing.JButton btnmodificar_N;
     private javax.swing.JButton btnnuevo_N;
     private javax.swing.JButton btnsalir_N;

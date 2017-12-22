@@ -4,3 +4,184 @@ ERROR : Usuario inexistente en base
 TIME : 8:46:29
 ----------------------------------------------------
  
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : MICROCON_MantenerUsuario
+ERROR : ORA-00942: table or view does not exist
+
+TIME : 10:13:32
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : MICROCON_MantenerUsuario
+ERROR : ORA-00942: table or view does not exist
+
+TIME : 10:16:54
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : MICROCON_MantenerUsuario
+ERROR : ORA-00942: table or view does not exist
+
+TIME : 10:17:16
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : MICROCON_MantenerUsuario
+ERROR : ORA-00942: table or view does not exist
+
+TIME : 10:18:12
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : MICROCON_MantenerUsuario
+ERROR : ORA-00942: table or view does not exist
+
+TIME : 10:20:15
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : MICROCON_MantenerUsuario
+ERROR : ORA-00942: table or view does not exist
+
+TIME : 10:20:24
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : MICROCON_MantenerClientes
+ERROR : ORA-00942: table or view does not exist
+
+TIME : 10:23:31
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : MICROCON_MantenerClientes
+ERROR : Nombre de columna no válido
+TIME : 10:24:7
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:2
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:2
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:3
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:3
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:4
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:4
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:6
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:7
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:7
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:7
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:7
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:7
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:9
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:9
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:9
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:9
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:9
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:10
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:10
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : 2
+TIME : 10:31:28
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar ingresar un nuevo Cliente Natural
+CLASE : JIFMantenerCliente linea 344
+ERROR : Invalid range
+TIME : 11:16:19
+----------------------------------------------------
+ 

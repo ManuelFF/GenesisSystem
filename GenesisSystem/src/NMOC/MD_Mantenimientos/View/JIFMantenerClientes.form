@@ -106,8 +106,6 @@
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="btnmodificar_N" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="btneliminar_N" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="btncancelar_N" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="btnsalir_N" min="-2" max="-2" attributes="0"/>
@@ -192,7 +190,6 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="btnnuevo_N" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btnmodificar_N" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="btneliminar_N" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btncancelar_N" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btnsalir_N" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -463,17 +460,6 @@
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnmodificar_NActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JButton" name="btneliminar_N">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/NIMG/delete-file-icon.png"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Eliminar"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btneliminar_NActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="btncancelar_N">
