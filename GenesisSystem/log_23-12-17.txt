@@ -928,3 +928,261 @@ ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SI
 TIME : 14:7:13
 ----------------------------------------------------
  
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:12:0
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:12:9
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:17:34
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:17:41
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:17:53
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:18:26
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:18:26
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 14:18:30
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 14:18:30
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 14:18:31
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 14:18:31
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:20:45
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:20:48
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 14:20:51
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 14:20:51
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 14:20:51
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 14:20:51
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:37:12
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:37:15
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 14:37:19
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 14:37:19
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 14:37:19
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:37:46
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:38:43
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:38:55
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:39:51
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:39:56
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:39:58
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:40:0
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:40:2
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:40:5
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 24472
+TIME : 14:40:5
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:40:44
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:40:50
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:40:55
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:40:58
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:41:3
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:41:10
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:41:12
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:41:25
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 14:41:26
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'NOTIFY.wav'
+CLASE : SYSAUDIOCON linea 136
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 24472
+TIME : 14:41:34
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'NOTIFY.wav'
+CLASE : SYSAUDIOCON linea 136
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 24472
+TIME : 14:41:34
+----------------------------------------------------
+ 

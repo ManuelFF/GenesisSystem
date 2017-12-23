@@ -607,7 +607,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
               ShakingComponent sh_nombre = new ShakingComponent(txtnombres);
               sh_nombre.startShake();
               JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Nombre' para el cliente", "Usuario Insertado", JOptionPane.ERROR_MESSAGE);
-              
+              sysau.S_STOP();
            }
            //APELLIDO PATERNO
            if(txtApellidoP.getText().equals(""))
@@ -617,7 +617,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
               ShakingComponent sh_ApePat = new ShakingComponent(txtApellidoP);
               sh_ApePat.startShake();
               JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Apellido Paterno' para el cliente", "Usuario Insertado", JOptionPane.ERROR_MESSAGE);
-
+              sysau.S_STOP();
            }
            //DIRECCION
            if(JTAdireccion.getText().equals(""))
@@ -627,54 +627,50 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
                ShakingComponent sh_Direccion = new ShakingComponent(JTAdireccion);
                sh_Direccion.startShake();
                JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Dirección' para el cliente", "Usuario Insertado", JOptionPane.ERROR_MESSAGE);
+               sysau.S_STOP();
+           }
+           
+           //ONE BY ONE OBLIGATORIOS
+           //TELEFONO - CELULAR
+           if(txttelefono.getText().equals("") && txtcelular.getText().equals(""))
+           {
+              sysau.E_ERROR();
+              txttelefono.setBackground(Color.RED);
+              txtcelular.setBackground(Color.RED);
+              ShakingComponent sh_Telefono = new ShakingComponent(txttelefono);
+              ShakingComponent sh_Celular = new ShakingComponent(txtcelular);
+              sh_Telefono.startShake();  
+              sh_Celular.startShake();
+              JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de algun 'Telefono' o 'Celular' para el cliente", "Usuario Insertado", JOptionPane.ERROR_MESSAGE);
+              sysau.S_STOP();
            }
            
            //WARNINGS
            //APELLIDO MATERNO
            if(txtApellidoM.getText().equals(""))
            {
-               sysau.E_ERROR();
-               txtApellidoM.setBackground(Color.RED);
+               sysau.E_NOTIFY();
+               txtApellidoM.setBackground(Color.YELLOW);
                ShakingComponent sh_ApeMat = new ShakingComponent(txtApellidoM);
                sh_ApeMat.startShake();
            }
            //DNI
            if(txtDNI.getText().equals(""))
            {
-               sysau.E_ERROR();
-               txtDNI.setBackground(Color.RED);
+               sysau.E_NOTIFY();
+               txtDNI.setBackground(Color.YELLOW);
                ShakingComponent sh_DNI = new ShakingComponent(txtDNI);
                sh_DNI.startShake();
            }
            //CORREO
            if(txtcorreo.getText().equals(""))
            {
-               sysau.E_ERROR();
-               txtcorreo.setBackground(Color.RED);
+               sysau.E_NOTIFY();
+               txtcorreo.setBackground(Color.YELLOW);
                ShakingComponent sh_Correo = new ShakingComponent(txtcorreo); 
                sh_Correo.startShake();
            }
-           
-           //ONE BY ONE OBLIGATORIOS
-           //TELEFONO
-           if(txttelefono.getText().equals(""))
-           {
-               sysau.E_ERROR();
-               txttelefono.setBackground(Color.RED);
-               ShakingComponent sh_Telefono = new ShakingComponent(txttelefono);
-               sh_Telefono.startShake();
-           }
-           //CELULAR
-           if(txtcelular.getText().equals(""))
-           {
-               sysau.E_ERROR();
-               txtcelular.setBackground(Color.RED);
-               ShakingComponent sh_Celular = new ShakingComponent(txtcelular);
-               sh_Celular.startShake();
-           }
            //FIN DE LOGICA DE VERIFICACION
-           
-           
            
 
             
