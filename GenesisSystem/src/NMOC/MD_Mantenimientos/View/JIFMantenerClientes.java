@@ -22,6 +22,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumnModel;
@@ -605,6 +606,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
               txtnombres.setBackground(Color.RED);
               ShakingComponent sh_nombre = new ShakingComponent(txtnombres);
               sh_nombre.startShake();
+              JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Nombre' para el cliente", "Usuario Insertado", JOptionPane.ERROR_MESSAGE);
               
            }
            //APELLIDO PATERNO
@@ -614,6 +616,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
               txtApellidoP.setBackground(Color.RED);
               ShakingComponent sh_ApePat = new ShakingComponent(txtApellidoP);
               sh_ApePat.startShake();
+              JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Apellido Paterno' para el cliente", "Usuario Insertado", JOptionPane.ERROR_MESSAGE);
 
            }
            //DIRECCION
@@ -623,6 +626,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
                JTAdireccion.setBackground(Color.RED);
                ShakingComponent sh_Direccion = new ShakingComponent(JTAdireccion);
                sh_Direccion.startShake();
+               JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Dirección' para el cliente", "Usuario Insertado", JOptionPane.ERROR_MESSAGE);
            }
            
            //WARNINGS
