@@ -551,7 +551,10 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     private void btnnuevo_NActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnuevo_NActionPerformed
    
     try 
-    {   
+    {  
+       //EJECUTADO ANTES DE TODO
+      SYSAUDIOCON sysau = new SYSAUDIOCON();
+
       //EJECUTADO ANTES DE TODA CONDICIONAL
       JFrame jf=new JFrame();
       jf.setAlwaysOnTop(true);
@@ -598,7 +601,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
            //NOMBRES
            if(txtnombres.getText().equals(""))
            {
-              SYSAUDIOCON sysau = new SYSAUDIOCON();
               sysau.E_ERROR();
               txtnombres.setBackground(Color.RED);
               ShakingComponent sh_nombre = new ShakingComponent(txtnombres);
@@ -608,6 +610,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
            //APELLIDO PATERNO
            if(txtApellidoP.getText().equals(""))
            {
+              sysau.E_ERROR();
               txtApellidoP.setBackground(Color.RED);
               ShakingComponent sh_ApePat = new ShakingComponent(txtApellidoP);
               sh_ApePat.startShake();
@@ -616,6 +619,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
            //DIRECCION
            if(JTAdireccion.getText().equals(""))
            {
+               sysau.E_ERROR();
                JTAdireccion.setBackground(Color.RED);
                ShakingComponent sh_Direccion = new ShakingComponent(JTAdireccion);
                sh_Direccion.startShake();
@@ -625,6 +629,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
            //APELLIDO MATERNO
            if(txtApellidoM.getText().equals(""))
            {
+               sysau.E_ERROR();
                txtApellidoM.setBackground(Color.RED);
                ShakingComponent sh_ApeMat = new ShakingComponent(txtApellidoM);
                sh_ApeMat.startShake();
@@ -632,6 +637,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
            //DNI
            if(txtDNI.getText().equals(""))
            {
+               sysau.E_ERROR();
                txtDNI.setBackground(Color.RED);
                ShakingComponent sh_DNI = new ShakingComponent(txtDNI);
                sh_DNI.startShake();
@@ -639,6 +645,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
            //CORREO
            if(txtcorreo.getText().equals(""))
            {
+               sysau.E_ERROR();
                txtcorreo.setBackground(Color.RED);
                ShakingComponent sh_Correo = new ShakingComponent(txtcorreo); 
                sh_Correo.startShake();
@@ -648,6 +655,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
            //TELEFONO
            if(txttelefono.getText().equals(""))
            {
+               sysau.E_ERROR();
                txttelefono.setBackground(Color.RED);
                ShakingComponent sh_Telefono = new ShakingComponent(txttelefono);
                sh_Telefono.startShake();
@@ -655,6 +663,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
            //CELULAR
            if(txtcelular.getText().equals(""))
            {
+               sysau.E_ERROR();
                txtcelular.setBackground(Color.RED);
                ShakingComponent sh_Celular = new ShakingComponent(txtcelular);
                sh_Celular.startShake();
