@@ -81,7 +81,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     private void tamaño_cabecera()
     {
         TableColumnModel columnModel = JTNatural.getColumnModel();
-        columnModel.getColumn(0).setPreferredWidth(50);
+        columnModel.getColumn(0).setPreferredWidth(80);
         columnModel.getColumn(1).setPreferredWidth(200);
         columnModel.getColumn(2).setPreferredWidth(50);
         columnModel.getColumn(3).setPreferredWidth(50);
@@ -169,16 +169,16 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     }
     
     //Habilita los campos de texto
-    private void ena_disaFRM(boolean cond)
+    private void editFRM(boolean cond)
     {
-        txtnombres.setEnabled(cond);
-        txtApellidoP.setEnabled(cond);
-        txtApellidoM.setEnabled(cond);
-        txtDNI.setEnabled(cond);
-        txttelefono.setEnabled(cond);
-        txtcelular.setEnabled(cond);
-        txtcorreo.setEnabled(cond);
-        JTAdireccion.setEnabled(cond);
+        txtnombres.setEditable(cond);
+        txtApellidoP.setEditable(cond);
+        txtApellidoM.setEditable(cond);
+        txtDNI.setEditable(cond);
+        txttelefono.setEditable(cond);
+        txtcelular.setEditable(cond);
+        txtcorreo.setEditable(cond);
+        JTAdireccion.setEditable(cond);
     }
        
     private void clearCacheDB()
@@ -548,35 +548,33 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
 
     private void btnnuevo_NActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnuevo_NActionPerformed
    
-        try 
-        {   
-          //EJECUTADO ANTES DE TODA CONDICIONAL
-          JFrame jf=new JFrame();
-          jf.setAlwaysOnTop(true);
-          clearCacheDB();
-          
-          JTABPrincipal.setEnabled(false);
+    try 
+    {   
+      //EJECUTADO ANTES DE TODA CONDICIONAL
+      JFrame jf=new JFrame();
+      jf.setAlwaysOnTop(true);
+      clearCacheDB();
+
+      JTABPrincipal.setEnabled(false);
+
+      evn.write(JFRPrincipal.JMSesion.getText(), "hizo click en el botón nuevo cliente natural ", "JIFMantenerCliente linea 344", "Botón 'Nuevo_Natural' presionado");
+
+      if(btnnuevo_N.getText().equals("Nuevo"))
+      {
+          clearFRM();
+          NuevoCodigoCLI();
+          editFRM(true);
+          ena_disaButtons(true, false, true, false);
+          btnnuevo_N.setText("Insertar");
+          txtfiltro.setEnabled(false);cbfiltro.setEnabled(false);
           condicion_datos = true;
 
-          NuevoCodigoCLI();
-          
-          evn.write(JFRPrincipal.JMSesion.getText(), "hizo click en el botón nuevo cliente natural ", "JIFMantenerCliente linea 344", "Botón 'Nuevo_Natural' presionado");
-          
-          if(btnnuevo_N.getText().equals("Nuevo"))
-          {
-              clearFRM();
-              NuevoCodigoCLI();
-              ena_disaFRM(true);
-              ena_disaButtons(true, false, true, false);
-              btnnuevo_N.setText("Insertar");
-              
-              
-          }
-          
-        } catch (Exception e) 
-            {
-               lc.write("Error al intentar ingresar un nuevo Cliente Natural", "JIFMantenerCliente linea 344", e);
-            }
+      }
+
+    } catch (Exception e) 
+        {
+           lc.write("Error al intentar ingresar un nuevo Cliente Natural", "JIFMantenerCliente linea 344", e);
+        }
         
 
     }//GEN-LAST:event_btnnuevo_NActionPerformed
