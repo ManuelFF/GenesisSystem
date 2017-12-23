@@ -859,3 +859,332 @@ ACCIÓN : Botón 'Nuevo_Natural' presionado
 TIME : 10:41:18
 ----------------------------------------------------
  
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 11:13:39
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 11:13:41
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:13:42
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:13:43
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:13:47
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 11:14:12
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 11:14:14
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:14:16
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:14:17
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:14:18
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:14:19
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 11:19:20
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 11:19:27
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:19:47
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:20:10
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:20:14
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:20:16
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:20:27
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:20:28
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 11:21:25
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 11:22:7
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 11:22:8
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:9
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:12
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:14
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:15
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:16
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:17
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:17
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:18
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:18
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:19
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:19
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:19
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:20
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:20
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:20
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:20
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:20
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:20
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:20
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:21
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:21
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:21
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:21
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:21
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón nuevo cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 11:22:21
+----------------------------------------------------
+ 

@@ -6,6 +6,8 @@
 package NMOC.MD_Mantenimientos.View;
 
 import ModuleWorker.IC.MWCON;
+import ModuleWorker.IC.ShakingComponent;
+import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSFRMCON;
 import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
@@ -570,12 +572,103 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
           condicion_datos = true;
 
       }
+      else
+        {
+           //OBTENER DATOS
+           String ID_CLI = IDCLI;
+           String nombre = txtnombres.getText().toUpperCase();
+           String ape_pat = txtApellidoP.getText().toUpperCase();
+           String ape_mat = txtApellidoM.getText().toUpperCase();
+           String dni = txtDNI.getText().toUpperCase();
+           String telefono = txttelefono.getText().toUpperCase();
+           String celular = txtcelular.getText().toUpperCase();
+           String direccion = JTAdireccion.getText().toUpperCase();
+           String correo = txtcorreo.getText().toUpperCase();                         
+            
+           //FIN  DE OBTENCION DE DATOS 
+           
+           //LOGICA DE VERIFICACION
+           
+           /*
+                la logica de verificacion usada sera LS.
+                la cual significa loica separativa; brevemente lo que hace es
+                verificar cada bloque a la vez en ves de verificar bloque por bloque
+           */
+           
+                      
+                      
+           
+           //FIN DE LOGICA DE VERIFICACION          
+           
+           if(txtnombres.getText().equals(""))
+           {
+               
+           }
+           if(txtApellidoP.getText().equals(""))
+           {
+               
+           }
+           if(txtApellidoM.getText().equals(""))
+           {
+               
+           }
+           if(txtDNI.getText().equals(""))
+           {
+               
+           }
+           if(txttelefono.getText().equals(""))
+           {
+               
+           }
+           if(txtcelular.getText().equals(""))
+           {
+               
+           }
+           if(txtcorreo.getText().equals(""))
+           {
+               
+           }
+           if(JTAdireccion.getText().equals(""))
+           {
+               
+           }
+           
+           
+           
+           SYSAUDIOCON sysau = new SYSAUDIOCON();
+           sysau.E_ERROR();
+                                    
+           //SHAKING COMPONENTS
+           ShakingComponent sh_nombre = new ShakingComponent(txtnombres);
+           ShakingComponent sh_ApePat = new ShakingComponent(txtApellidoP);
+           ShakingComponent sh_ApeMat = new ShakingComponent(txtApellidoM);
+           ShakingComponent sh_DNI = new ShakingComponent(txtDNI);
+           ShakingComponent sh_Telefono = new ShakingComponent(txttelefono);
+           ShakingComponent sh_Celular = new ShakingComponent(txtcelular);
+           ShakingComponent sh_Direccion = new ShakingComponent(JTAdireccion);
+           ShakingComponent sh_Correo = new ShakingComponent(txtcorreo);
+           
+           //FIN SHAKING COMPONENTS
+           
+           txtnombres.setBackground(Color.RED);
+           
+           sh_nombre.startShake();
+           sh_ApePat.startShake();
+           sh_ApeMat.startShake();           
+           sh_DNI.startShake();
+           sh_Telefono.startShake();
+           sh_Celular.startShake();
+           sh_Direccion.startShake();
+           sh_Correo.startShake();
+
+           //
+            
+        }
 
     } catch (Exception e) 
         {
            lc.write("Error al intentar ingresar un nuevo Cliente Natural", "JIFMantenerCliente linea 344", e);
         }
-        
 
     }//GEN-LAST:event_btnnuevo_NActionPerformed
 
