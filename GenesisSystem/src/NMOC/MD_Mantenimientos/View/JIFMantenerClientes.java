@@ -22,6 +22,7 @@ import java.util.Date;
 import javax.swing.JFrame;
 import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableRowSorter;
 
 /**
@@ -30,7 +31,6 @@ import javax.swing.table.TableRowSorter;
  */
 public class JIFMantenerClientes extends javax.swing.JInternalFrame 
 {
-
     /**
      * Creates new form JIFGestionarCliente
      */
@@ -41,6 +41,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     SYSFRMCON sysfrm = new SYSFRMCON();
     JFrame form;
     Color ColorInicial;
+    boolean condicion_datos = false;
 
     DefaultTableModel modelo_Cli_NATU = new DefaultTableModel()
     {
@@ -53,7 +54,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     
     private TableRowSorter trsFiltro;
     protected String IDCLI;
-    
     
     public JIFMantenerClientes() 
     {
@@ -75,8 +75,21 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         JTNatural.setRowSorter(trsFiltro);
         JTAdireccion.setLineWrap(true);
         ColorInicial = txtnombres.getBackground();
-
+        tamaño_cabecera();
     }
+    
+    private void tamaño_cabecera()
+    {
+        TableColumnModel columnModel = JTNatural.getColumnModel();
+        columnModel.getColumn(0).setPreferredWidth(50);
+        columnModel.getColumn(1).setPreferredWidth(200);
+        columnModel.getColumn(2).setPreferredWidth(50);
+        columnModel.getColumn(3).setPreferredWidth(50);
+        columnModel.getColumn(4).setPreferredWidth(50);
+        columnModel.getColumn(5).setPreferredWidth(100);
+        columnModel.getColumn(6).setPreferredWidth(90);
+    }
+    
 
     protected void filtro() 
     {
@@ -141,7 +154,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
 	IDCLI = codigo;
     }
     
-    
     //Borra y limpia el texto
     private void clearFRM()
     {
@@ -171,10 +183,16 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
        
     private void clearCacheDB()
     {
-        MWCON mw = new MWCON();
-        mw.clear_table(modelo_Cli_NATU, JTNatural);
-        CliNCon.CargarCliNatu(modelo_Cli_NATU, JTNatural);
-        CliNCon.llenarIDS_CLI();
+        try 
+        {
+            MWCON mw = new MWCON();
+            mw.clear_table(modelo_Cli_NATU, JTNatural);
+            CliNCon.CargarCliNatu(modelo_Cli_NATU, JTNatural);
+            CliNCon.llenarIDS_CLI();
+        } catch (Exception e) 
+            {
+                lc.write("Error al intentar borrar la cache de la DB", "JIFMantenerClientes metodo clearcacheDB linea 172", e);
+            }
     }
     
     private void ena_disaButtons(boolean nuevo, boolean modificar, boolean cancelar, boolean salir)
@@ -529,26 +547,18 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnnuevo_NActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnuevo_NActionPerformed
-        
-
-
+   
         try 
         {   
           //EJECUTADO ANTES DE TODA CONDICIONAL
           JFrame jf=new JFrame();
           jf.setAlwaysOnTop(true);
           clearCacheDB();
-          JPJuridico.setEnabled(false);
-       
-          int index = JTABPrincipal.getSelectedIndex();
-        
-
-          if(index == 0 ){System.out.println("\nNATURAL\n");}
-          else if(index == 1){System.out.println("\nJURIDICO\n");}
+          
+          JTABPrincipal.setEnabled(false);
+          condicion_datos = true;
 
           NuevoCodigoCLI();
-
-          System.out.println(""+IDCLI);
           
           evn.write(JFRPrincipal.JMSesion.getText(), "hizo click en el botón nuevo cliente natural ", "JIFMantenerCliente linea 344", "Botón 'Nuevo_Natural' presionado");
           
@@ -614,38 +624,39 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     
     private void JTNaturalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JTNaturalMouseClicked
 
-           try 
-           {
-            
+    try 
+    {
+        if(condicion_datos == false)
+        {
             int row = JTNatural.rowAtPoint(evt.getPoint());
-            
+
             IDCLI = ""+JTNatural.getValueAt(row, 0);
             System.out.println(IDCLI+"\n");
-            
+
              txtDNI.setText(""+JTNatural.getValueAt(row, 2));
             txttelefono.setText(""+JTNatural.getValueAt(row, 3));
             txtcelular.setText(""+JTNatural.getValueAt(row, 4));
             JTAdireccion.setText("");
             JTAdireccion.setText(""+JTNatural.getValueAt(row, 5));
             txtcorreo.setText(""+JTNatural.getValueAt(row, 6));
-            
-            
+
+
             buff =""+JTNatural.getValueAt(row, 1);
-            
+
             ArrayTemp = buff.split("/");
-                       
+
             txtnombres.setText(ArrayTemp[0]);
             txtApellidoP.setText(ArrayTemp[1]);
             txtApellidoM.setText(ArrayTemp[2]);
-            
-            String select = ArrayTemp[0]+" "+ArrayTemp[1]+" "+ArrayTemp[2];
-            
-            evn.write(JFRPrincipal.JMSesion.getText(),"Ha seleccionado al cliente natural "+select,"JIFMantenerClientes", "Tabla de Clientes Naturales presionado");
 
-        } catch (Exception e) 
-            {
-               lc.write("Error al seleccionar cliente natural", "JIFMantenerClientes", e);
-            }
+            String select = ArrayTemp[0]+" "+ArrayTemp[1]+" "+ArrayTemp[2];
+
+            evn.write(JFRPrincipal.JMSesion.getText(),"Ha seleccionado al cliente natural "+select,"JIFMantenerClientes", "Tabla de Clientes Naturales presionado");
+        }
+ } catch (Exception e) 
+     {
+        lc.write("Error al seleccionar cliente natural", "JIFMantenerClientes", e);
+     }
 
 
     }//GEN-LAST:event_JTNaturalMouseClicked
