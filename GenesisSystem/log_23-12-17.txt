@@ -484,3 +484,33 @@ ERROR : java.lang.IndexOutOfBoundsException: Invalid range
 TIME : 11:22:21
 ----------------------------------------------------
  
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:57:18
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:57:19
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:57:22
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:59:51
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:59:52
+----------------------------------------------------
+ 

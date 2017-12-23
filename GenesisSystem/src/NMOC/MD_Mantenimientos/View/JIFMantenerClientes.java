@@ -570,7 +570,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
           btnnuevo_N.setText("Insertar");
           txtfiltro.setEnabled(false);cbfiltro.setEnabled(false);
           condicion_datos = true;
-
       }
       else
         {
@@ -595,73 +594,76 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
                 verificar cada bloque a la vez en ves de verificar bloque por bloque
            */
            
-                      
-                      
-           
-           //FIN DE LOGICA DE VERIFICACION          
-           
+           //OBLIGATORIO
+           //NOMBRES
            if(txtnombres.getText().equals(""))
            {
-               
+              SYSAUDIOCON sysau = new SYSAUDIOCON();
+              sysau.E_ERROR();
+              txtnombres.setBackground(Color.RED);
+              ShakingComponent sh_nombre = new ShakingComponent(txtnombres);
+              sh_nombre.startShake();
+              
            }
+           //APELLIDO PATERNO
            if(txtApellidoP.getText().equals(""))
            {
-               
+              txtApellidoP.setBackground(Color.RED);
+              ShakingComponent sh_ApePat = new ShakingComponent(txtApellidoP);
+              sh_ApePat.startShake();
+
            }
-           if(txtApellidoM.getText().equals(""))
-           {
-               
-           }
-           if(txtDNI.getText().equals(""))
-           {
-               
-           }
-           if(txttelefono.getText().equals(""))
-           {
-               
-           }
-           if(txtcelular.getText().equals(""))
-           {
-               
-           }
-           if(txtcorreo.getText().equals(""))
-           {
-               
-           }
+           //DIRECCION
            if(JTAdireccion.getText().equals(""))
            {
-               
+               JTAdireccion.setBackground(Color.RED);
+               ShakingComponent sh_Direccion = new ShakingComponent(JTAdireccion);
+               sh_Direccion.startShake();
            }
            
+           //WARNINGS
+           //APELLIDO MATERNO
+           if(txtApellidoM.getText().equals(""))
+           {
+               txtApellidoM.setBackground(Color.RED);
+               ShakingComponent sh_ApeMat = new ShakingComponent(txtApellidoM);
+               sh_ApeMat.startShake();
+           }
+           //DNI
+           if(txtDNI.getText().equals(""))
+           {
+               txtDNI.setBackground(Color.RED);
+               ShakingComponent sh_DNI = new ShakingComponent(txtDNI);
+               sh_DNI.startShake();
+           }
+           //CORREO
+           if(txtcorreo.getText().equals(""))
+           {
+               txtcorreo.setBackground(Color.RED);
+               ShakingComponent sh_Correo = new ShakingComponent(txtcorreo); 
+               sh_Correo.startShake();
+           }
+           
+           //ONE BY ONE OBLIGATORIOS
+           //TELEFONO
+           if(txttelefono.getText().equals(""))
+           {
+               txttelefono.setBackground(Color.RED);
+               ShakingComponent sh_Telefono = new ShakingComponent(txttelefono);
+               sh_Telefono.startShake();
+           }
+           //CELULAR
+           if(txtcelular.getText().equals(""))
+           {
+               txtcelular.setBackground(Color.RED);
+               ShakingComponent sh_Celular = new ShakingComponent(txtcelular);
+               sh_Celular.startShake();
+           }
+           //FIN DE LOGICA DE VERIFICACION
            
            
-           SYSAUDIOCON sysau = new SYSAUDIOCON();
-           sysau.E_ERROR();
-                                    
-           //SHAKING COMPONENTS
-           ShakingComponent sh_nombre = new ShakingComponent(txtnombres);
-           ShakingComponent sh_ApePat = new ShakingComponent(txtApellidoP);
-           ShakingComponent sh_ApeMat = new ShakingComponent(txtApellidoM);
-           ShakingComponent sh_DNI = new ShakingComponent(txtDNI);
-           ShakingComponent sh_Telefono = new ShakingComponent(txttelefono);
-           ShakingComponent sh_Celular = new ShakingComponent(txtcelular);
-           ShakingComponent sh_Direccion = new ShakingComponent(JTAdireccion);
-           ShakingComponent sh_Correo = new ShakingComponent(txtcorreo);
            
-           //FIN SHAKING COMPONENTS
-           
-           txtnombres.setBackground(Color.RED);
-           
-           sh_nombre.startShake();
-           sh_ApePat.startShake();
-           sh_ApeMat.startShake();           
-           sh_DNI.startShake();
-           sh_Telefono.startShake();
-           sh_Celular.startShake();
-           sh_Direccion.startShake();
-           sh_Correo.startShake();
 
-           //
             
         }
 
