@@ -1,0 +1,364 @@
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 9:20:54
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 9:20:56
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural VERONICA VERONICA VERONICA
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:22:17
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural VERONICA VERONICA VERONICA
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:22:46
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural VERONICA VERONICA VERONICA
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:22:46
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural SINDY LOPEZ LOPEZ
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:22:52
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural SAN  PEDRO CARABAYLLO
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:22:54
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural SAN  PEDRO CARABAYLLO
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:22:54
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural SAN  PEDRO CARABAYLLO
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:22:55
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural CRISTINA  POMA ATACHAGUA
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:22:57
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural CRISTINA  POMA ATACHAGUA
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:22:57
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural SAN  PEDRO CARABAYLLO
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:23:0
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural SAN  PEDRO CARABAYLLO
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:23:0
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural SAN  PEDRO CARABAYLLO
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:23:0
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Clientes'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 9:23:10
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 9:23:12
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural CARLOS  GOYCOCHEA GOYCOCHEA
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:24:14
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural CARLOS  GOYCOCHEA GOYCOCHEA
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:24:14
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Clientes'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 9:26:57
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 9:26:58
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 9:27:45
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 9:28:0
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural BERNA QUINTANA -
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:28:9
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural JHON BERROCAL -
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:28:11
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural CRISTINA  POMA ATACHAGUA
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:28:13
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural CRISTINA  POMA ATACHAGUA
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:28:13
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural ANGGY    
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:28:14
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural ANGGY    
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:28:15
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural ANGGY    
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:28:15
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural JHON BERROCAL -
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:28:15
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural JHON BERROCAL -
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:28:15
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural JHON BERROCAL -
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:28:15
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural ANGGY    
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:28:22
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural ANGGY    
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:28:22
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural ANGGY    
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:28:35
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural ANGGY    
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:28:35
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural BERNA QUINTANA -
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:28:36
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural ANGGY    
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:28:39
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural ANGGY    
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:28:39
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Clientes'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 9:36:39
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 9:36:41
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural NELLY VIVIANA ALCANTARA CORDOVA
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:36:58
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural BERNA QUINTANA -
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:37:9
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural ANGGY    
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:37:12
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural CESAR  TAMASHIRO -
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:37:20
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural CESAR  TAMASHIRO -
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:37:21
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural CESAR  TAMASHIRO -
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:37:21
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural GRACIELA TARABOTTO N.V.
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:37:25
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural CESAR  TAMASHIRO -
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:37:28
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural GRACIELA TARABOTTO N.V.
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:37:30
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural LORENA ROCA GIRALDO
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:37:56
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural LORENA ROCA GIRALDO
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 9:38:1
+----------------------------------------------------
+ 

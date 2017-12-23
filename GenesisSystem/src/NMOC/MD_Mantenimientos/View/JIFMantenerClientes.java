@@ -543,10 +543,12 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
 
         try 
         {   
-          
+          //EJECUTADO ANTES DE TODA CONDICIONAL
           JFrame jf=new JFrame();
           jf.setAlwaysOnTop(true);
           clearCacheDB();
+          JPJuridico.setEnabled(false);
+          
           
           evn.write(JFRPrincipal.JMSesion.getText(), "hizo click en el botón nuevo cliente natural ", "JIFMantenerCliente linea 344", "Botón 'Nuevo_Natural' presionado");
           
@@ -630,7 +632,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
             
             buff =""+JTNatural.getValueAt(row, 1);
             
-            ArrayTemp = buff.split("-");
+            ArrayTemp = buff.split("/");
                        
             txtnombres.setText(ArrayTemp[0]);
             txtApellidoP.setText(ArrayTemp[1]);
