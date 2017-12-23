@@ -42,7 +42,7 @@ public class MICROCON_InicioSesion
             
         } catch (SQLException sqle) 
         {
-            lc.write( "La base de datos no retorno conexion!","MICROCON_InicioSesion", sqle.getMessage());
+            lc.write( "La base de datos no retorno conexion!","MICROCON_InicioSesion", sqle);
             return "ERROR";
         } finally 
            {
@@ -51,7 +51,7 @@ public class MICROCON_InicioSesion
                cn.close();
              }catch (Exception sqlex) 
                {
-            lc.write( "Error no controlado en el bloque del Finally del metodo ValidarUsuario","MICROCON_InicioSesion", sqlex.getMessage());
+            lc.write( "Error no controlado en el bloque del Finally del metodo ValidarUsuario","MICROCON_InicioSesion", sqlex);
                }
             }
     }
@@ -71,7 +71,7 @@ public class MICROCON_InicioSesion
             
         } catch (SQLException sqle) 
         {
-            lc.write( "La base de datos no retorno conexion!","MICROCON_InicioSesion", sqle.getMessage());
+            lc.write( "La base de datos no retorno conexion!","MICROCON_InicioSesion", sqle);
         } finally 
            {
              try 
@@ -79,7 +79,7 @@ public class MICROCON_InicioSesion
                cn.close();
              }catch (Exception sqlex) 
                {
-            lc.write( "Error no controlado en el bloque del Finally del metodo ObtenerNombreUSR","MICROCON_InicioSesion", sqlex.getMessage());
+            lc.write( "Error no controlado en el bloque del Finally del metodo ObtenerNombreUSR","MICROCON_InicioSesion", sqlex);
                }
             }
         

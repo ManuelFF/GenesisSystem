@@ -91,14 +91,14 @@ public class DBCON
         } catch (ClassNotFoundException e) 
             {
                 JOptionPane.showMessageDialog(jf, "El driver no retorno conexion! ");
-                lc.write( "El driver no retorno conexion!","DBCON metodo DB_ORC_CON", e.getMessage());
+                lc.write( "El driver no retorno conexion!","DBCON metodo DB_ORC_CON", e);
             }
         catch(SQLException sqle) 
         {       
            
             JOptionPane.showMessageDialog(jf,"No se puede conectar a la base de datos", "Base de datos no conectada", JOptionPane.ERROR_MESSAGE);
              
-            lc.write( "La base de datos no retorno conexion!","DBCON metodo DB_ORC_CON", sqle.getMessage());
+            lc.write( "La base de datos no retorno conexion!","DBCON metodo DB_ORC_CON", sqle);
         }
         return cn;
     }

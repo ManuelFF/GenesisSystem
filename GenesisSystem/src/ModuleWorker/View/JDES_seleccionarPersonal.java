@@ -210,7 +210,7 @@ public class JDES_seleccionarPersonal extends javax.swing.JDialog
             this.dispose();
         } catch (Exception e)
         {
-            lc.write("No se ha podido cerrar el formulario 'Mantener Usuario' debido a un error inesperado", "JIFMantenerUsuario", e.getMessage());
+            lc.write("No se ha podido cerrar el formulario 'Mantener Usuario' debido a un error inesperado", "JIFMantenerUsuario", e);
         }
 
     }//GEN-LAST:event_btnsalirActionPerformed
@@ -251,7 +251,7 @@ public class JDES_seleccionarPersonal extends javax.swing.JDialog
 
         } catch (Exception e) 
             {
-               lc.write("Error al seleccionar personal", "JDES_seleccionarPersonal", e.getMessage());
+               lc.write("Error al seleccionar personal", "JDES_seleccionarPersonal", e);
             }
 
 

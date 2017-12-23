@@ -11,8 +11,6 @@ import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSFRMCON;
 import NCLPM.LOG;
 import NCLPM.EVENTS;
-import java.awt.Color;
-import java.util.Arrays;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import org.apache.commons.codec.digest.DigestUtils;
@@ -178,8 +176,7 @@ public class JFRInicioSesion extends javax.swing.JFrame
            SYSAUDIOCON sysau = new SYSAUDIOCON();
            sysau.E_CRITICAL_ERROR();
            JOptionPane.showMessageDialog(jf, "Se quedo sin intentos\nEL SISTEMA SE CERRARA!", "Sobrepaso limite de intentos", JOptionPane.ERROR_MESSAGE);
-           evn.write("Aún no definido", "Intento entrar al sistema", "JFRInicioSesion", "FUE EXPULSADO");
-           lc.write("Intentos para inicio de sesión superados", "JFRInicioSesion", "No tiene más intentos");
+           evn.write("Aún no definido", "Intento entrar al sistema pero ya no tenia intentos", "JFRInicioSesion", "FUE EXPULSADO");
            System.exit(0);
        }
        else
@@ -191,8 +188,7 @@ public class JFRInicioSesion extends javax.swing.JFrame
             SYSAUDIOCON sysau = new SYSAUDIOCON();
             sysau.E_ERROR();
             JOptionPane.showMessageDialog(jf, "Ingrese un usuario valido"+"\nINTENTOS RESTANTES : "+intentos, "Error de usuario", JOptionPane.ERROR_MESSAGE);
-            evn.write("Aún no definido", "Intento entrar al sistema", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
-            lc.write("No se ha ingresado un usuario valido", "JFRInicioSesion", "No existe el usuario");
+            evn.write("Aún no definido", "Intento entrar al sistema con un usuario inexistente", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
         }else if(pswPassword.getText().trim().isEmpty())
         {
             s.startShake();
@@ -200,8 +196,7 @@ public class JFRInicioSesion extends javax.swing.JFrame
             SYSAUDIOCON sysau = new SYSAUDIOCON();
             sysau.E_ERROR();
             JOptionPane.showMessageDialog(jf, "Ingrese una contraseña valida"+"\nINTENTOS RESTANTES : "+intentos, "Contraseña invalida", JOptionPane.ERROR_MESSAGE);
-            evn.write("Aún no definido", "Intento entrar al sistema", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
-            lc.write("No se ha ingresado una contraseña valido", "JFRInicioSesion", "La contraseña es invalida");
+            evn.write("Aún no definido", "Intento entrar al sistema con una contraseña no valida", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
         }else
         {//INICIO ELSE GENERAL
             
@@ -212,8 +207,7 @@ public class JFRInicioSesion extends javax.swing.JFrame
               SYSAUDIOCON sysau = new SYSAUDIOCON();
               sysau.E_ERROR();
               JOptionPane.showMessageDialog(jf, "El usuario no existe"+"\nINTENTOS RESTANTES : "+intentos, "Usuario Inexistente", JOptionPane.ERROR_MESSAGE);
-              lc.write("El usuario no existe en la base de datos", "JFRInicioSesion", "Usuario inexistente en base");
-              evn.write("Aún no definido", "Intento entrar al sistema", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
+              evn.write("Aún no definido", "Intento entrar al sistema con un usuario que no existe", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
             }else
                 {
                     if(Minse.validarUsuario(usr, psw).equals("1"))
@@ -238,7 +232,7 @@ public class JFRInicioSesion extends javax.swing.JFrame
        
   } catch (Exception e) 
      {
-         lc.write("No se ha podido ingresar al sistema debido a un error", "JFRInicioSesion metodo ingresar linea 157", e.getMessage());
+         lc.write("No se ha podido ingresar al sistema debido a un error", "JFRInicioSesion metodo ingresar linea 157", e);
      }
      
     }//GEN-LAST:event_btnIngresarActionPerformed
@@ -251,7 +245,7 @@ public class JFRInicioSesion extends javax.swing.JFrame
             System.exit(0);
         } catch (Exception e) 
             {
-               lc.write("No se pudo salir del sistema", "JFRInicioSesion", e.getMessage());
+               lc.write("No se pudo salir del sistema", "JFRInicioSesion", e);
             }
         
     }//GEN-LAST:event_btnSalirActionPerformed

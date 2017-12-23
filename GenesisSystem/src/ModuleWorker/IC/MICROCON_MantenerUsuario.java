@@ -60,7 +60,7 @@ public class MICROCON_MantenerUsuario
 
             } catch (SQLException ex) 
                 {
-                     lc.write("Problema al intentar insertar un usuario en el metodo 'InsertarUsuario'", "MICROCON_MantenerUsuario linea 42", ex.getMessage());             
+                     lc.write("Problema al intentar insertar un usuario en el metodo 'InsertarUsuario'", "MICROCON_MantenerUsuario linea 42", ex);             
                 } 
     }
     
@@ -84,7 +84,7 @@ public class MICROCON_MantenerUsuario
 
             } catch (SQLException ex) 
                 {
-                     lc.write("Problema al intentar insertar un usuario en el metodo 'InsertarUsuario'", "MICROCON_MantenerUsuario linea 42", ex.getMessage());             
+                     lc.write("Problema al intentar insertar un usuario en el metodo 'InsertarUsuario'", "MICROCON_MantenerUsuario linea 42", ex);             
                 } 
     }
     
@@ -104,7 +104,7 @@ public class MICROCON_MantenerUsuario
             return resultado;
         } catch (SQLException sqle) 
         {
-            lc.write( "La base de datos retorno error en la conexion!","Valida_Usuario_Existe", sqle.getMessage());
+            lc.write( "La base de datos retorno error en la conexion!","Valida_Usuario_Existe", sqle);
             return "ERROR";
         } 
     }
@@ -131,12 +131,12 @@ public class MICROCON_MantenerUsuario
             }Jta.setModel(modelo);
         }catch(SQLException sqlex)
             {
-                lc.write("Problema al Cargar Datos en el metodo 'CargarUsuario'", "MICROCON_MantenerUsuario linea 72", sqlex.getMessage());
+                lc.write("Problema al Cargar Datos en el metodo 'CargarUsuario'", "MICROCON_MantenerUsuario linea 72", sqlex);
             }
         try {
         } catch (Exception ex)
             {
-                lc.write("Error no controlado en el metodo 'cargarUsuario'", "MICROCON_MantenerUsuario linea 98", ex.getMessage());
+                lc.write("Error no controlado en el metodo 'cargarUsuario'", "MICROCON_MantenerUsuario linea 98", ex);
             }
     }
     
@@ -161,12 +161,12 @@ public class MICROCON_MantenerUsuario
             }Jta.setModel(modelo);
         }catch(SQLException sqlex)
             {
-                lc.write("Problema al Cargar Datos en el metodo 'CargarSeleccionPersonal'", "MICROCON_MantenerUsuario", sqlex.getMessage());
+                lc.write("Problema al Cargar Datos en el metodo 'CargarSeleccionPersonal'", "MICROCON_MantenerUsuario", sqlex);
             }
         try {
         } catch (Exception ex)
             {
-                lc.write("Error no controlado en el metodo 'CargarSeleccionPersonal'", "MICROCON_MantenerUsuario", ex.getMessage());
+                lc.write("Error no controlado en el metodo 'CargarSeleccionPersonal'", "MICROCON_MantenerUsuario", ex);
             }
     }
     
@@ -189,11 +189,11 @@ public class MICROCON_MantenerUsuario
         }
         catch (SQLException sqlex) 
             {
-                lc.write("Problema al Cargar Datos en el metodo 'CargarBoxTipo'", "MICROCON_MantenerUsuario", sqlex.getMessage());
+                lc.write("Problema al Cargar Datos en el metodo 'CargarBoxTipo'", "MICROCON_MantenerUsuario", sqlex);
             }
         catch (Exception ex)
         {
-                lc.write("Error no controlado en el metodo 'cargarBoxTipo'", "MICROCON_MantenerUsuario", ex.getMessage());
+                lc.write("Error no controlado en el metodo 'cargarBoxTipo'", "MICROCON_MantenerUsuario", ex);
         }
     }
     
@@ -215,11 +215,11 @@ public class MICROCON_MantenerUsuario
         }
         catch (SQLException sqlex) 
             {
-                lc.write("Problema al buscar Datos en el metodo 'Buscar_ID_Tipo'", "MICROCON_MantenerUsuario", sqlex.getMessage());
+                lc.write("Problema al buscar Datos en el metodo 'Buscar_ID_Tipo'", "MICROCON_MantenerUsuario", sqlex);
             }
         catch (Exception ex)
         {
-                lc.write("Error no controlado en el metodo 'Buscar_ID_Tipo'", "MICROCON_MantenerUsuario", ex.getMessage());
+                lc.write("Error no controlado en el metodo 'Buscar_ID_Tipo'", "MICROCON_MantenerUsuario", ex);
         }
         return null;
     }
@@ -278,11 +278,11 @@ public class MICROCON_MantenerUsuario
         }
         catch (SQLException sqle) 
             {
-               lc.write( "La base de datos no retorno conexion!","MICROCON_MantenerUsuario", sqle.getMessage());
+               lc.write( "La base de datos no retorno conexion!","MICROCON_MantenerUsuario", sqle);
             }
         catch (Exception e)
             {
-               lc.write( "ha ocurrido algun error no controlado","MICROCON_MantenerUsuario", e.getMessage());
+               lc.write( "ha ocurrido algun error no controlado","MICROCON_MantenerUsuario", e);
             }
     }
    

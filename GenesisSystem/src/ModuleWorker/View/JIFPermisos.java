@@ -617,7 +617,7 @@ public class JIFPermisos extends javax.swing.JInternalFrame {
             
         } catch (Exception e) 
             {
-               lc.write("Error al seleccionar usuario", "JIFPermisos", e.getMessage());
+               lc.write("Error al seleccionar usuario", "JIFPermisos", e);
             }
 
 
@@ -641,7 +641,7 @@ public class JIFPermisos extends javax.swing.JInternalFrame {
                     
         } catch (Exception e) 
             {
-                lc.write("Error al intentar updatear un permiso", "JIFPermisos linea 486", e.getMessage());
+                lc.write("Error al intentar updatear un permiso", "JIFPermisos linea 486", e);
             }
 
     }//GEN-LAST:event_btnAceptarActionPerformed
@@ -656,7 +656,7 @@ public class JIFPermisos extends javax.swing.JInternalFrame {
         this.dispose();
       } catch (Exception e) 
       {
-          lc.write("No se ha podido cerrar el formulario 'Permisos' debido a un error inesperado", "JIFPermisos", e.getMessage());
+          lc.write("No se ha podido cerrar el formulario 'Permisos' debido a un error inesperado", "JIFPermisos", e);
       }
 
     }//GEN-LAST:event_btnSalirActionPerformed

@@ -588,7 +588,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
       this.dispose();
     } catch (Exception e) 
     {
-        lc.write("No se ha podido cerrar el formulario 'Mantener Clientes' debido a un error inesperado", "JIFMantenerClientes", e.getMessage());
+        lc.write("No se ha podido cerrar el formulario 'Mantener Clientes' debido a un error inesperado", "JIFMantenerClientes", e);
     }
         
     }//GEN-LAST:event_btnsalir_NActionPerformed
@@ -644,7 +644,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
 
         } catch (Exception e) 
             {
-               lc.write("Error al seleccionar cliente natural", "JIFMantenerClientes", e.getMessage());
+               lc.write("Error al seleccionar cliente natural", "JIFMantenerClientes", e);
             }
 
 

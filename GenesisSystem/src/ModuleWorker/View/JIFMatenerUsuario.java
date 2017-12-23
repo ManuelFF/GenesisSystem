@@ -434,7 +434,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
       
     } catch (Exception e) 
         {
-            lc.write("Error al intentar ingresar un nuevo usuario", "JIFMantenerUsuario linea 344", e.getMessage());
+            lc.write("Error al intentar ingresar un nuevo usuario", "JIFMantenerUsuario linea 344", e);
         }
 
     }//GEN-LAST:event_btnNuevoActionPerformed
@@ -488,7 +488,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
                     }
         } catch (Exception e) 
             {
-                lc.write("Error al intentar modificar un usuario", "JIFMantenerUsuario linea 330", e.getMessage());
+                lc.write("Error al intentar modificar un usuario", "JIFMantenerUsuario linea 330", e);
             }       
         
     }//GEN-LAST:event_btnModificarActionPerformed
@@ -508,7 +508,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
             
         } catch (Exception e) 
            {
-               lc.write("Ha ocurrido un error al intentar abrir el formulario de selección de personal", "JIFMantenerUsuario linea 313", e.getMessage());
+               lc.write("Ha ocurrido un error al intentar abrir el formulario de selección de personal", "JIFMantenerUsuario linea 313", e);
            }
 
     }//GEN-LAST:event_btnBuscarPersonalActionPerformed
@@ -522,7 +522,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
             this.dispose();
           } catch (Exception e) 
           {
-              lc.write("No se ha podido cerrar el formulario 'Mantener Usuario' debido a un error inesperado", "JIFMantenerUsuario", e.getMessage());
+              lc.write("No se ha podido cerrar el formulario 'Mantener Usuario' debido a un error inesperado", "JIFMantenerUsuario", e);
           }
           
 
@@ -551,7 +551,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
             
         } catch (Exception e) 
             {
-                lc.write("Ha ocurrido algun error al intentar seleccionar un usuario", "JIFMantenerUsuario + Metodo MouseClicked Linea 304", e.getMessage());
+                lc.write("Ha ocurrido algun error al intentar seleccionar un usuario", "JIFMantenerUsuario + Metodo MouseClicked Linea 304", e);
             }
 
     }//GEN-LAST:event_JTusrsMouseClicked

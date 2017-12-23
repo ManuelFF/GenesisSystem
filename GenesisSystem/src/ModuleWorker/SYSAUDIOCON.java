@@ -8,10 +8,6 @@ package ModuleWorker;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import java.io.File;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import javax.sound.sampled.AudioFileFormat;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineUnavailableException;
@@ -37,7 +33,7 @@ public class SYSAUDIOCON
             
         } catch (LineUnavailableException ex) 
             {
-                lc.write("Error al intentar inicializar el constructor de sonidos", "SYSAUDIOCON linea 28", ex.getMessage());
+                lc.write("Error al intentar inicializar el constructor de sonidos", "SYSAUDIOCON linea 28", ex);
             }
     }
     
@@ -50,7 +46,7 @@ public class SYSAUDIOCON
           
         } catch (Exception e) 
             {
-                lc.write("Error al intentar reproducir el efecto 'ERROR.wav'", "SYSAUDIOCON linea 44", e.getMessage());
+                lc.write("Error al intentar reproducir el efecto 'ERROR.wav'", "SYSAUDIOCON linea 44", e);
             }       
     }
     
@@ -63,7 +59,7 @@ public class SYSAUDIOCON
             
         } catch (Exception e) 
             {
-               lc.write("Error al intentar reproducir el efecto 'CRITICAL_ERROR.wav'", "SYSAUDIOCON linea 57", e.getMessage());
+               lc.write("Error al intentar reproducir el efecto 'CRITICAL_ERROR.wav'", "SYSAUDIOCON linea 57", e);
             }
     }
     
@@ -77,7 +73,7 @@ public class SYSAUDIOCON
           
         } catch (Exception e) 
             {
-                lc.write("Error al intentar reproducir el efecto 'CERRAR_SESION.wav'", "SYSAUDIOCON linea 71", e.getMessage());
+                lc.write("Error al intentar reproducir el efecto 'CERRAR_SESION.wav'", "SYSAUDIOCON linea 71", e);
             }
     }
     
@@ -90,7 +86,7 @@ public class SYSAUDIOCON
           
         } catch (Exception e) 
             {
-                lc.write("Error al intentar reproducir el efecto 'INICIAR_SESION.wav'", "SYSAUDIOCON linea 84", e.getMessage());
+                lc.write("Error al intentar reproducir el efecto 'INICIAR_SESION.wav'", "SYSAUDIOCON linea 84", e);
             }
     }
     
@@ -103,7 +99,7 @@ public class SYSAUDIOCON
           
         } catch (Exception e) 
             {
-                lc.write("Error al intentar reproducir el efecto 'CLICK.wav'", "SYSAUDIOCON linea 97", e.getMessage());
+                lc.write("Error al intentar reproducir el efecto 'CLICK.wav'", "SYSAUDIOCON linea 97", e);
             }
     }    
     
@@ -116,7 +112,7 @@ public class SYSAUDIOCON
           
         } catch (Exception e) 
             {
-                lc.write("Error al intentar reproducir el efecto 'PUSH.wav'", "SYSAUDIOCON linea 110", e.getMessage());
+                lc.write("Error al intentar reproducir el efecto 'PUSH.wav'", "SYSAUDIOCON linea 110", e);
             }
     }    
     
@@ -129,7 +125,7 @@ public class SYSAUDIOCON
           
         } catch (Exception e) 
             {
-                lc.write("Error al intentar reproducir el efecto 'INFORMATION.wav'", "SYSAUDIOCON linea 123", e.getMessage());
+                lc.write("Error al intentar reproducir el efecto 'INFORMATION.wav'", "SYSAUDIOCON linea 123", e);
             }
     } 
     
@@ -142,7 +138,7 @@ public class SYSAUDIOCON
           
         } catch (Exception e) 
             {
-                lc.write("Error al intentar reproducir el efecto 'NOTIFY.wav'", "SYSAUDIOCON linea 136", e.getMessage());
+                lc.write("Error al intentar reproducir el efecto 'NOTIFY.wav'", "SYSAUDIOCON linea 136", e);
             }
     } 
     
@@ -155,7 +151,7 @@ public class SYSAUDIOCON
           
         } catch (Exception e) 
             {
-                lc.write("Error al intentar reproducir el efecto 'EXCLAMATION.wav'", "SYSAUDIOCON linea 149", e.getMessage());
+                lc.write("Error al intentar reproducir el efecto 'EXCLAMATION.wav'", "SYSAUDIOCON linea 149", e);
             }
     }
 }

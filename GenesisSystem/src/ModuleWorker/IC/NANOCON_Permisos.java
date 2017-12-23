@@ -48,12 +48,12 @@ public class NANOCON_Permisos
             }Jta.setModel(modelo);
         }catch(SQLException sqlex)
             {
-                lc.write("Problema al Cargar Datos en el metodo 'CargarSeleccionPersonal'", "MICROCON_MantenerUsuario", sqlex.getMessage());
+                lc.write("Problema al Cargar Datos en el metodo 'CargarSeleccionPersonal'", "MICROCON_MantenerUsuario", sqlex);
             }
         try {
         } catch (Exception ex)
             {
-                lc.write("Error no controlado en el metodo 'CargarSeleccionPersonal'", "MICROCON_MantenerUsuario", ex.getMessage());
+                lc.write("Error no controlado en el metodo 'CargarSeleccionPersonal'", "MICROCON_MantenerUsuario", ex);
             }
     }
     
@@ -75,7 +75,7 @@ public class NANOCON_Permisos
             return resultado;
         } catch (SQLException sqle) 
         {
-            lc.write( "La base de datos retorno error en la conexion!","Comprueba_Permiso_Usuario", sqle.getMessage());
+            lc.write( "La base de datos retorno error en la conexion!","Comprueba_Permiso_Usuario", sqle);
             return "ERROR";
         } 
     }
@@ -98,7 +98,7 @@ public class NANOCON_Permisos
 
             } catch (SQLException ex) 
                 {
-                     lc.write("Problema al intentar insertar un usuario en el metodo 'InsertarUsuario'", "MICROCON_MantenerUsuario linea 42", ex.getMessage());             
+                     lc.write("Problema al intentar insertar un usuario en el metodo 'InsertarUsuario'", "MICROCON_MantenerUsuario linea 42", ex);             
                 } 
     }
     

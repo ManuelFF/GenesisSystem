@@ -5,21 +5,14 @@
  */
 package ModuleWorker.View;
 
-import ModuleWorker.DBCON;
-import ModuleWorker.IC.ShakingComponent;
 import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSCON;
 import ModuleWorker.SYSWALLPCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NMOC.MD_Mantenimientos.View.JIFMantenerClientes;
-import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Toolkit;
 import java.io.File;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -292,7 +285,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         catch (Exception e)
         {
             
-            lc.write("Error intentando abrir 'Mantenimiento Usuarios'", "JFRPrincipal", e.getMessage());
+            lc.write("Error intentando abrir 'Mantenimiento Usuarios'", "JFRPrincipal", e);
         }
 
     }//GEN-LAST:event_JSMMantenimientoUsuariosActionPerformed
@@ -308,7 +301,7 @@ public class JFRPrincipal extends javax.swing.JFrame
             
         } catch (Exception sqle) 
             {
-               lc.write( "Ha ocurrido algun error al intentar cerrar el sistema!","JFPrincipal metodo JSMCerrar Sesión Linea 255", sqle.getMessage());
+               lc.write( "Ha ocurrido algun error al intentar cerrar el sistema!","JFPrincipal metodo JSMCerrar Sesión Linea 255", sqle);
             }
 
     }//GEN-LAST:event_JSMCerrarSesionActionPerformed
@@ -341,7 +334,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         catch (Exception e)
         {
             
-            lc.write("Error intentando abrir 'Mantenimiento Clientes'", "JFRPrincipal", e.getMessage());
+            lc.write("Error intentando abrir 'Mantenimiento Clientes'", "JFRPrincipal", e);
         }
         
     }//GEN-LAST:event_JSMMantenerClientesActionPerformed
@@ -374,7 +367,7 @@ public class JFRPrincipal extends javax.swing.JFrame
    catch (Exception e)
    {
 
-       lc.write("Error intentando abrir 'Permisos'", "JFRPrincipal", e.getMessage());
+       lc.write("Error intentando abrir 'Permisos'", "JFRPrincipal", e);
    }
 
     }//GEN-LAST:event_JSMPermisosUsuariosActionPerformed

@@ -57,12 +57,12 @@ public class MICROCON_MantenerClientes
             }Jta.setModel(modelo);
         }catch(SQLException sqlex)
             {
-                lc.write("Problema al Cargar Datos en el metodo 'CargarCliNatu'", "MICROCON_MantenerClientes linea 36", sqlex.getMessage());
+                lc.write("Problema al Cargar Datos en el metodo 'CargarCliNatu'", "MICROCON_MantenerClientes linea 36", sqlex);
             }
         try {
         } catch (Exception ex)
             {
-                lc.write("Error no controlado en el metodo 'CargarCliNatu'", "MICROCON_MantenerClientes linea 98", ex.getMessage());
+                lc.write("Error no controlado en el metodo 'CargarCliNatu'", "MICROCON_MantenerClientes linea 98", ex);
             }
     }
     
@@ -121,11 +121,11 @@ public class MICROCON_MantenerClientes
         }
         catch (SQLException sqle) 
             {
-               lc.write( "La base de datos no retorno conexion!","MICROCON_MantenerClientes", sqle.getMessage());
+               lc.write( "La base de datos no retorno conexion!","MICROCON_MantenerClientes", sqle);
             }
         catch (Exception e)
             {
-               lc.write( "ha ocurrido algun error no controlado","MICROCON_MantenerClientes", e.getMessage());
+               lc.write( "ha ocurrido algun error no controlado","MICROCON_MantenerClientes", e);
             }
     }
     

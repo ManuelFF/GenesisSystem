@@ -48,7 +48,7 @@ public class SYSCON
         } catch (SQLException SQLe) 
           {
               String des = "No se ha podido obtener la version del sistema. Error de comunicación con la base";
-              lc.write(des,"SYSCON", SQLe.getMessage());
+              lc.write(des,"SYSCON", SQLe);
           }
         return null;
     }
@@ -79,7 +79,7 @@ public class SYSCON
 	}catch (IOException e)
          {
            String des = "Error en el cargado de la versión de texto";
-           lc.write(des,"SYSCON", e.getMessage());
+           lc.write(des,"SYSCON", e);
          }	
         return null;
     }

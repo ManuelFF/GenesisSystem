@@ -30,7 +30,7 @@ public class MWCON
             Desktop.getDesktop().open(ObjectoFile);
         } catch (IOException ioex) 
             {
-                lc.write("Error al intentar abrir el archivo "+archivo, "MWCON", ioex.getMessage());
+                lc.write("Error al intentar abrir el archivo "+archivo, "MWCON", ioex);
             }
     }
     
