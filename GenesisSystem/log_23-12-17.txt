@@ -154,3 +154,39 @@ ERROR : 1
 TIME : 9:27:8
 ----------------------------------------------------
  
+DESCRIPCIÓN : Error al intentar ingresar un nuevo Cliente Natural
+CLASE : JIFMantenerCliente linea 344
+ERROR : Invalid range
+TIME : 9:39:5
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar ingresar un nuevo Cliente Natural
+CLASE : JIFMantenerCliente linea 344
+ERROR : Invalid range
+TIME : 9:40:16
+----------------------------------------------------
+ 
+DESCRIPCIÓN : El usuario no existe en la base de datos
+CLASE : JFRInicioSesion
+ERROR : Usuario inexistente en base
+TIME : 9:41:13
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar ingresar un nuevo Cliente Natural
+CLASE : JIFMantenerCliente linea 344
+ERROR : Invalid range
+TIME : 9:41:18
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar ingresar un nuevo Cliente Natural
+CLASE : JIFMantenerCliente linea 344
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 9:43:53
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar ingresar un nuevo Cliente Natural
+CLASE : JIFMantenerCliente linea 344
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 9:45:17
+----------------------------------------------------
+ 

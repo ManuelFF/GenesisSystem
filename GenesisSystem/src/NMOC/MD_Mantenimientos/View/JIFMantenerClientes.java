@@ -530,16 +530,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
 
     private void btnnuevo_NActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnuevo_NActionPerformed
         
-        int index = JTABPrincipal.getSelectedIndex();
-        
-        String ComponentName = "";
-        
-        if(index == 0 ){System.out.println("\nNATURAL\n");}
-        else if(index == 1){System.out.println("\nJURIDICO\n");}
-        
-        NuevoCodigoCLI();
-        
-        System.out.println(""+IDCLI);
+
 
         try 
         {   
@@ -548,7 +539,16 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
           jf.setAlwaysOnTop(true);
           clearCacheDB();
           JPJuridico.setEnabled(false);
-          
+       
+          int index = JTABPrincipal.getSelectedIndex();
+        
+
+          if(index == 0 ){System.out.println("\nNATURAL\n");}
+          else if(index == 1){System.out.println("\nJURIDICO\n");}
+
+          NuevoCodigoCLI();
+
+          System.out.println(""+IDCLI);
           
           evn.write(JFRPrincipal.JMSesion.getText(), "hizo click en el botón nuevo cliente natural ", "JIFMantenerCliente linea 344", "Botón 'Nuevo_Natural' presionado");
           
@@ -565,7 +565,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
           
         } catch (Exception e) 
             {
-               lc.write("Error al intentar ingresar un nuevo Cliente Natural", "JIFMantenerCliente linea 344", e.getMessage());
+               lc.write("Error al intentar ingresar un nuevo Cliente Natural", "JIFMantenerCliente linea 344", e);
             }
         
 

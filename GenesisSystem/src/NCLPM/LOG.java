@@ -60,7 +60,7 @@ public class LOG
     }
     
     
-    public void write(String descripcion,String clase,String error)
+    public void write(String descripcion,String clase,Exception error)
     {
         try 
         {
