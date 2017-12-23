@@ -514,3 +514,321 @@ ERROR : java.lang.IndexOutOfBoundsException: Invalid range
 TIME : 12:59:52
 ----------------------------------------------------
  
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:10:5
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:10:19
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:10:32
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:10:34
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:15:28
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:15:29
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:15:31
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:16:25
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:16:26
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:16:26
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:16:26
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:16:26
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:16:28
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:16:28
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:16:28
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:16:28
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:16:29
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:16:29
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:16:29
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:16:29
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:33:18
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:33:21
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:21
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:21
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:21
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:21
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:21
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:21
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:21
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:33:23
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:23
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:23
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:23
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:23
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:23
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:23
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:23
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:33:24
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:24
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:24
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:25
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:25
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:25
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:25
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:25
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:33:26
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:26
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:26
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:26
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:26
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:26
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:26
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'ERROR.wav'
+CLASE : SYSAUDIOCON linea 44
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 22046
+TIME : 13:33:26
+----------------------------------------------------
+ 
