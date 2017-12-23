@@ -37,6 +37,11 @@ public class SYSAUDIOCON
             }
     }
     
+    public void S_STOP()
+    {
+        sonido.close();
+    }
+    
     public void E_ERROR()
     {
         try 
