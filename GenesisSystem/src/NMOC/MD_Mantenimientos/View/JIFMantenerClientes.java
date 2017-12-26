@@ -578,7 +578,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
 
       JTABPrincipal.setEnabled(false);
 
-      evn.write(JFRPrincipal.JMSesion.getText(), "hizo click en el botón nuevo cliente natural ", "JIFMantenerCliente linea 344", "Botón 'Nuevo_Natural' presionado");
+      evn.write(JFRPrincipal.JMSesion.getText(), "hizo click en el botón 'Nuevo' cliente natural ", "JIFMantenerCliente linea 344", "Botón 'Nuevo_Natural' presionado");
 
       if(btnnuevo_N.getText().equals("Nuevo"))
       {
@@ -588,12 +588,10 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
           ena_disaButtons(true, false, true, false);
           btnnuevo_N.setText("Insertar");
           txtfiltro.setEnabled(false);cbfiltro.setEnabled(false);
-          System.out.println(IDCLI);
           condicion_datos = true;
       }
       else
         {
-       
            //LOGICA DE VERIFICACION
            
            /*
@@ -610,7 +608,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
               txtnombres.setBackground(Color.RED);
               ShakingComponent sh_nombre = new ShakingComponent(txtnombres);
               sh_nombre.startShake();
-              JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Nombre' para el cliente", "Usuario Insertado", JOptionPane.ERROR_MESSAGE);
+              JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Nombre' para el cliente", "Falta Nombre del Cliente", JOptionPane.ERROR_MESSAGE);
               sysau.S_STOP();
            }else
            //APELLIDO PATERNO
@@ -620,7 +618,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
               txtApellidoP.setBackground(Color.RED);
               ShakingComponent sh_ApePat = new ShakingComponent(txtApellidoP);
               sh_ApePat.startShake();
-              JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Apellido Paterno' para el cliente", "Usuario Insertado", JOptionPane.ERROR_MESSAGE);
+              JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Apellido Paterno' para el cliente", "Falta Apellido Paterno del cliente", JOptionPane.ERROR_MESSAGE);
               sysau.S_STOP();
            }else
            //DIRECCION
@@ -630,7 +628,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
                JTAdireccion.setBackground(Color.RED);
                ShakingComponent sh_Direccion = new ShakingComponent(JTAdireccion);
                sh_Direccion.startShake();
-               JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Dirección' para el cliente", "Usuario Insertado", JOptionPane.ERROR_MESSAGE);
+               JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Dirección' para el cliente", "Falta Dirección del cliente", JOptionPane.ERROR_MESSAGE);
                sysau.S_STOP();
            }else
            //ONE BY ONE OBLIGATORIOS
@@ -644,7 +642,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
               ShakingComponent sh_Celular = new ShakingComponent(txtcelular);
               sh_Telefono.startShake();  
               sh_Celular.startShake();
-              JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de algun 'Telefono' o 'Celular' para el cliente", "Usuario Insertado", JOptionPane.ERROR_MESSAGE);
+              JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de algun 'Telefono' o 'Celular' para el cliente", "Falta información de comunicación", JOptionPane.ERROR_MESSAGE);
               sysau.S_STOP();
            }else
            {   
@@ -719,11 +717,9 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
             condicion_datos = false;
             reiniciarColors();
             clearCacheDB();
-
+            JTABPrincipal.setEnabled(true);
            }
-            
         }
-
     } catch (Exception e) 
         {
            lc.write("Error al intentar ingresar un nuevo Cliente Natural", "JIFMantenerCliente linea 344", e);
@@ -732,11 +728,187 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     }//GEN-LAST:event_btnnuevo_NActionPerformed
 
     private void btnmodificar_NActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmodificar_NActionPerformed
-        // TODO add your handling code here:
+   
+    try 
+    {  
+       //EJECUTADO ANTES DE TODO
+      SYSAUDIOCON sysau = new SYSAUDIOCON();
+
+      //EJECUTADO ANTES DE TODA CONDICIONAL
+      JFrame jf=new JFrame();
+      jf.setAlwaysOnTop(true);
+      clearCacheDB();
+
+      JTABPrincipal.setEnabled(false);
+
+      evn.write(JFRPrincipal.JMSesion.getText(), "hizo click en el botón 'Modificar' cliente natural ", "JIFMantenerCliente linea 730", "Botón 'Modificar_Natural' presionado");
+
+      if(btnmodificar_N.getText().equals("Modificar"))
+      {
+          editFRM(true);
+          ena_disaButtons(false, true, true, false);
+          btnmodificar_N.setText("Actualizar");
+          txtfiltro.setEnabled(false);cbfiltro.setEnabled(false);
+          condicion_datos = true;
+      }
+      else
+        {
+           //LOGICA DE VERIFICACION
+           
+           /*
+                la logica de verificacion usada sera LS.
+                la cual significa loica separativa; brevemente lo que hace es
+                verificar cada bloque a la vez en ves de verificar bloque por bloque
+           */
+           
+           //OBLIGATORIO
+           //NOMBRES
+           if(txtnombres.getText().equals(""))
+           {
+              sysau.E_ERROR();
+              txtnombres.setBackground(Color.RED);
+              ShakingComponent sh_nombre = new ShakingComponent(txtnombres);
+              sh_nombre.startShake();
+              JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Nombre' para el cliente", "Falta Nombre del Cliente", JOptionPane.ERROR_MESSAGE);
+              sysau.S_STOP();
+           }else
+           //APELLIDO PATERNO
+           if(txtApellidoP.getText().equals(""))
+           {
+              sysau.E_ERROR();
+              txtApellidoP.setBackground(Color.RED);
+              ShakingComponent sh_ApePat = new ShakingComponent(txtApellidoP);
+              sh_ApePat.startShake();
+              JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Apellido Paterno' para el cliente", "Falta Apellido Paterno del cliente", JOptionPane.ERROR_MESSAGE);
+              sysau.S_STOP();
+           }else
+           //DIRECCION
+           if(JTAdireccion.getText().equals(""))
+           {
+               sysau.E_ERROR();
+               JTAdireccion.setBackground(Color.RED);
+               ShakingComponent sh_Direccion = new ShakingComponent(JTAdireccion);
+               sh_Direccion.startShake();
+               JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Dirección' para el cliente", "Falta Dirección del cliente", JOptionPane.ERROR_MESSAGE);
+               sysau.S_STOP();
+           }else
+           //ONE BY ONE OBLIGATORIOS
+           //TELEFONO - CELULAR
+           if(txttelefono.getText().equals("") && txtcelular.getText().equals(""))
+           {
+              sysau.E_ERROR();
+              txttelefono.setBackground(Color.RED);
+              txtcelular.setBackground(Color.RED);
+              ShakingComponent sh_Telefono = new ShakingComponent(txttelefono);
+              ShakingComponent sh_Celular = new ShakingComponent(txtcelular);
+              sh_Telefono.startShake();  
+              sh_Celular.startShake();
+              JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de algun 'Telefono' o 'Celular' para el cliente", "Falta información de comunicación", JOptionPane.ERROR_MESSAGE);
+              sysau.S_STOP();
+           }else
+           {   
+
+            //WARNINGS
+            //APELLIDO MATERNO
+            if(txtApellidoM.getText().trim().equals(""))
+            {
+                sysau.E_NOTIFY();
+                txtApellidoM.setBackground(Color.YELLOW);
+                txtApellidoM.setText("-");
+                ShakingComponent sh_ApeMat = new ShakingComponent(txtApellidoM);
+                sh_ApeMat.startShake();
+            }
+            //DNI
+            if(txtDNI.getText().trim().equals(""))
+            {
+                sysau.E_NOTIFY();
+                txtDNI.setBackground(Color.YELLOW);
+                txtDNI.setText("-");
+                ShakingComponent sh_DNI = new ShakingComponent(txtDNI);
+                sh_DNI.startShake();
+            }
+            //CORREO
+            if(txtcorreo.getText().trim().equals(""))
+            {
+                sysau.E_NOTIFY();
+                txtcorreo.setBackground(Color.YELLOW);
+                txtcorreo.setText("-");
+                ShakingComponent sh_Correo = new ShakingComponent(txtcorreo); 
+                sh_Correo.startShake();
+            }
+            //COMPROBAR SI TELEFONO ESTA VACIO
+            if(txttelefono.getText().trim().equals(""))
+            {
+                txttelefono.setText("-");
+            }
+            //COMPROBAR SI CELULAR ESTA VACIO
+            if(txtcelular.getText().trim().equals(""))
+            {
+                txtcelular.setText("-");
+            }
+            
+            //FIN DE LOGICA DE VERIFICACION
+            
+            //INICIO PROGRAMACION DE INGRESO
+            
+            //OBTENER DATOS
+            String ID_CLI = IDCLI;
+            String nombre = txtnombres.getText().toUpperCase();
+            String ape_pat = txtApellidoP.getText().toUpperCase();
+            String ape_mat = txtApellidoM.getText().toUpperCase();
+            String dni = txtDNI.getText().toUpperCase();
+            String telefono = txttelefono.getText().toUpperCase();
+            String celular = txtcelular.getText().toUpperCase();
+            String direccion = JTAdireccion.getText().toUpperCase();
+            String correo = txtcorreo.getText().toUpperCase();                         
+            //FIN  DE OBTENCION DE DATOS 
+            
+            //INICIO CONTROLADOR QUE INSERTA
+            CliNCon.ModificarCliente_Natural(ID_CLI, nombre, ape_pat, ape_mat, dni, telefono, celular, direccion, correo);
+            //FINAL CONTROLADOR QUE INSERTA
+            
+            evn.write(JFRPrincipal.JMSesion.getText(), "Modifico un cliente natural", "JIFMantenerClientes -> Naturales", "Botón 'Actualizar' Presionado");
+            sysau.E_INFORMATION();
+            JOptionPane.showMessageDialog(jf, "Cliente Modificado con exito!", "Cliente Modificado", JOptionPane.INFORMATION_MESSAGE);
+            clearFRM();
+            editFRM(false);
+            ena_disaButtons(true, false, false, true);
+            btnmodificar_N.setText("Modificar");
+            txtfiltro.setEnabled(true);cbfiltro.setEnabled(true);
+            condicion_datos = false;
+            reiniciarColors();
+            clearCacheDB();
+            JTABPrincipal.setEnabled(true);
+           }
+        }
+    } catch (Exception e) 
+        {
+           lc.write("Error al intentar modificar un nuevo Cliente Natural", "JIFMantenerCliente linea 344", e);
+        }
+
     }//GEN-LAST:event_btnmodificar_NActionPerformed
 
     private void btncancelar_NActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelar_NActionPerformed
-        // TODO add your handling code here:
+
+    try 
+    {
+        clearFRM();
+        IDCLI="";
+        btnnuevo_N.setText("Nuevo");
+        btnmodificar_N.setText("Modificar");
+        clearCacheDB();
+        JTABPrincipal.setEnabled(true);
+        reiniciarColors();
+        editFRM(false);
+        txtfiltro.setEnabled(true);cbfiltro.setEnabled(true);
+        condicion_datos = false;
+        ena_disaButtons(true, false, false, true);
+
+    } catch (Exception e) 
+       {
+           lc.write("Ha ocurrido algun error al intentar cancelar una inserción", "JIFMantenerClientes -> naturales", e);
+       }
+
     }//GEN-LAST:event_btncancelar_NActionPerformed
 
     private void btnsalir_NActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalir_NActionPerformed
@@ -781,12 +953,14 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     {
         if(condicion_datos == false)
         {
+            btnmodificar_N.setEnabled(true);
+            
             int row = JTNatural.rowAtPoint(evt.getPoint());
 
             IDCLI = ""+JTNatural.getValueAt(row, 0);
             System.out.println(IDCLI+"\n");
 
-             txtDNI.setText(""+JTNatural.getValueAt(row, 2));
+            txtDNI.setText(""+JTNatural.getValueAt(row, 2));
             txttelefono.setText(""+JTNatural.getValueAt(row, 3));
             txtcelular.setText(""+JTNatural.getValueAt(row, 4));
             JTAdireccion.setText("");

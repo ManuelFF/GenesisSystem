@@ -496,3 +496,21 @@ ERROR : java.lang.ArrayIndexOutOfBoundsException: 0 >= 0
 TIME : 13:39:49
 ----------------------------------------------------
  
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'NOTIFY.wav'
+CLASE : SYSAUDIOCON linea 136
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 24472
+TIME : 13:53:42
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'INFORMATION.wav'
+CLASE : SYSAUDIOCON linea 123
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 24472
+TIME : 13:53:42
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'INFORMATION.wav'
+CLASE : SYSAUDIOCON linea 123
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 24472
+TIME : 14:22:9
+----------------------------------------------------
+ 

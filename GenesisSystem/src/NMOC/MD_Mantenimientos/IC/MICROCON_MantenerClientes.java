@@ -95,6 +95,34 @@ public class MICROCON_MantenerClientes
             } 
     }
     
+    //MODIFICAR CLIENTE
+    public void ModificarCliente_Natural(String cod, String nombre,String apePat,String apeMat,String DNI,String telefono,String celular,String direccion,String correo)
+    {
+      try{
+             DBCON RCN = new DBCON();
+
+            // Llamada al procedimiento almacenado
+            CallableStatement cst = RCN.conector().prepareCall("{call usp_modificar_cliente_natural(?,?,?,?,?,?,?,?,?)}");
+            // Parametro del procedimiento almacenado
+            cst.setString(1, cod);
+            cst.setString(2, nombre);
+            cst.setString(3, apePat);
+            cst.setString(4, apeMat);
+            cst.setString(5, DNI);
+            cst.setString(6, telefono);
+            cst.setString(7, celular);
+            cst.setString(8, direccion);
+            cst.setString(9, correo);
+            // Ejecuta el procedimiento almacenado
+            cst.execute();
+            cst.close();
+
+         }catch (SQLException ex) 
+            {
+                 lc.write("Problema al intentar insertar un usuario en el metodo 'InsertarUsuario'", "MICROCON_MantenerUsuario linea 42", ex);             
+            } 
+    }
+    
   //###################################### ESPACIO ARRAYLIST Y OTROS METODOS QUE INTERACTUAN DIRECTAMENTE CON LA BASE ###############################################
     
     //ArrayList controlador
