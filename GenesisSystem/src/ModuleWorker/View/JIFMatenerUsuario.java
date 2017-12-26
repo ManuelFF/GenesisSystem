@@ -13,10 +13,8 @@ import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSFRMCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
+import NCLPM.RESULTS;
 import java.awt.Color;
-import java.io.File;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -35,6 +33,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
     MICROCON_MantenerUsuario mcmuser = new MICROCON_MantenerUsuario();
     LOG lc = new LOG();
     EVENTS evn = new EVENTS();
+    RESULTS rslt = new RESULTS();
     SYSFRMCON sysfrm = new SYSFRMCON();
     JFrame form;
     Color ColorInicial;
@@ -414,7 +413,8 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
                                         String ESTADO = CBEstado.getSelectedItem().toString();
 
                                         mcmuser.InsertarUsuario(ID_USER, ID_PER, USERNAME, psw, ID_TIPO, ESTADO);
-
+                                        rslt.write(JFRPrincipal.JMSesion.getText(), "JIFMantenerUsuario", "INSERCIÓN", 
+                                                    "Se ha insertado el usuario con ID: "+ID_USER+"\n CON USUARIO: "+USERNAME+"\n CON ESTADO: "+ESTADO);
                                         evn.write(JFRPrincipal.JMSesion.getText(), "Inserto un nuevo usuario", "JIFMantenerUsuario", "Botón 'Insertar' presionado");
                                         SYSAUDIOCON sysau = new SYSAUDIOCON();
                                         sysau.E_INFORMATION();
@@ -474,7 +474,9 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
                         String ESTADO = CBEstado.getSelectedItem().toString();
 
                         mcmuser.ModificarUsuario(idUser, USERNAME, psw, ID_TIPO, ESTADO);
-
+                        rslt.write(JFRPrincipal.JMSesion.getText(), "JIFMantenerUsuario", "MODIFICACIÓN", 
+                                                    "Se ha modificado al usuario con ID: "+idUser+"\n Se listarán los datos.\n USUARIO: "+USERNAME+"\n ESTADO: "+ESTADO
+                                                        +"\n TIPO: "+CBTipo.getSelectedItem());
                         evn.write(JFRPrincipal.JMSesion.getText(), "Modifico un nuevo usuario", "JIFMantenerUsuario", "Botón 'Modificar' presionado");
                         SYSAUDIOCON sysau = new SYSAUDIOCON();
                         sysau.E_INFORMATION();

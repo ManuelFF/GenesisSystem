@@ -1965,3 +1965,479 @@ ACCIÓN : Presiono Botón 'Salir'
 TIME : 14:23:30
 ----------------------------------------------------
  
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:47:3
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 14:47:28
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Permisos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Permisos' Presionado
+TIME : 14:47:33
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Permisos'
+FORMULARIO : JIFPermisos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 14:47:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Clientes'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 14:47:35
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Usuario'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Usuario' Presionado
+TIME : 14:47:36
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario de selección de personal
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Buscar Personal' Presionado
+TIME : 14:47:39
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Usuario'
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 14:47:40
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Usuario'
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 14:47:41
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 14:47:43
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Clientes'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 14:47:45
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Permisos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Permisos' Presionado
+TIME : 14:47:46
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Permisos'
+FORMULARIO : JIFPermisos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 14:47:48
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Usuario'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Usuario' Presionado
+TIME : 14:47:50
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Usuario'
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 14:47:52
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 14:47:54
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Usuario'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Usuario' Presionado
+TIME : 14:47:56
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Clientes'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 14:47:59
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario de selección de personal
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Buscar Personal' Presionado
+TIME : 14:48:8
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Usuario'
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 14:48:9
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario MANUEL FERNANDO SAAVEDRA BENITES ha sido seleccionado
+TIME : 14:49:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario MANUEL FERNANDO SAAVEDRA BENITES ha sido seleccionado
+TIME : 14:49:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario de selección de personal
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Buscar Personal' Presionado
+TIME : 14:49:41
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Usuario'
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 14:49:43
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario MANUEL FERNANDO SAAVEDRA BENITES ha sido seleccionado
+TIME : 14:49:44
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario MANUEL FERNANDO SAAVEDRA BENITES ha sido seleccionado
+TIME : 14:49:48
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario MANUEL FERNANDO SAAVEDRA BENITES ha sido seleccionado
+TIME : 14:49:48
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario EDSON ROJAS PEÑA ha sido seleccionado
+TIME : 14:49:49
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario LUIS MANUEL CALDERON REVOLO ha sido seleccionado
+TIME : 14:49:49
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario LUIS MANUEL CALDERON REVOLO ha sido seleccionado
+TIME : 14:49:49
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario LUIS MANUEL CALDERON REVOLO ha sido seleccionado
+TIME : 14:49:50
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario EDSON ROJAS PEÑA ha sido seleccionado
+TIME : 14:49:50
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario EDSON ROJAS PEÑA ha sido seleccionado
+TIME : 14:49:50
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario EDSON ROJAS PEÑA ha sido seleccionado
+TIME : 14:49:51
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario EDSON ROJAS PEÑA ha sido seleccionado
+TIME : 14:49:51
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario HAMILTON  PINEDO VASQUEZ  ha sido seleccionado
+TIME : 14:49:51
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario HAMILTON  PINEDO VASQUEZ  ha sido seleccionado
+TIME : 14:49:52
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario de selección de personal
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Buscar Personal' Presionado
+TIME : 14:49:52
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al personal MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JDES_seleccionarPersonal
+ACCIÓN : Tabla de personal presionado
+TIME : 14:49:53
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Usuario'
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 14:49:55
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Usuario'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Usuario' Presionado
+TIME : 14:49:57
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario EDSON ROJAS PEÑA ha sido seleccionado
+TIME : 14:49:58
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario MANUEL FERNANDO SAAVEDRA BENITES ha sido seleccionado
+TIME : 14:49:59
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario MANUEL FERNANDO SAAVEDRA BENITES ha sido seleccionado
+TIME : 14:49:59
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el boton modificar
+FORMULARIO : JIFMantenerUsuario linea 432
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 14:50:1
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario MANUEL FERNANDO SAAVEDRA BENITES ha sido seleccionado
+TIME : 14:50:3
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario de selección de personal
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Buscar Personal' Presionado
+TIME : 14:50:3
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Usuario'
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 14:50:4
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario EDSON ROJAS PEÑA ha sido seleccionado
+TIME : 14:50:5
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario MANUEL FERNANDO SAAVEDRA BENITES ha sido seleccionado
+TIME : 14:50:5
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario MANUEL FERNANDO SAAVEDRA BENITES ha sido seleccionado
+TIME : 14:50:5
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario MANUEL FERNANDO SAAVEDRA BENITES ha sido seleccionado
+TIME : 14:50:5
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario EDSON ROJAS PEÑA ha sido seleccionado
+TIME : 14:50:6
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario MANUEL FERNANDO SAAVEDRA BENITES ha sido seleccionado
+TIME : 14:50:6
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario MANUEL FERNANDO SAAVEDRA BENITES ha sido seleccionado
+TIME : 14:50:7
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario MANUEL FERNANDO SAAVEDRA BENITES ha sido seleccionado
+TIME : 14:50:8
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario MANUEL FERNANDO SAAVEDRA BENITES ha sido seleccionado
+TIME : 14:50:8
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el boton modificar
+FORMULARIO : JIFMantenerUsuario linea 432
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 14:50:12
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Modifico un nuevo usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 14:50:12
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Usuario'
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 14:50:14
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:55:42
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Usuario'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Usuario' Presionado
+TIME : 14:55:44
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario de selección de personal
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Buscar Personal' Presionado
+TIME : 14:55:46
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al personal RICHARD AGUINAGA
+FORMULARIO : JDES_seleccionarPersonal
+ACCIÓN : Tabla de personal presionado
+TIME : 14:55:50
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el boton nuevo
+FORMULARIO : JIFMantenerUsuario linea 327
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 14:55:52
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el boton nuevo
+FORMULARIO : JIFMantenerUsuario linea 327
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 14:55:54
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Inserto un nuevo usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Insertar' presionado
+TIME : 14:55:55
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario RICHARD AGUINAGA ha sido seleccionado
+TIME : 14:55:58
+----------------------------------------------------
+ 
