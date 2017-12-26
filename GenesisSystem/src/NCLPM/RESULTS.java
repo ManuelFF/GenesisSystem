@@ -22,7 +22,7 @@ import javax.swing.JFrame;
  *
  * @author USUARIO
  */
-public class EVENTS 
+public class RESULTS 
 {
     /*
     EVENTS : en esta clase se manejara los eventos del usuario (seguimiento); cada acción
@@ -60,11 +60,11 @@ public class EVENTS
     }
     
     
-    public void write(String usuario,String descripcion,String formulario,String accion)
+    public void write(String usuario,String formulario ,String tipo,String descripcion)
     {
         try 
         {
-            String archivo = "events_"+date()+".txt";
+            String archivo = "results_"+date()+".txt";
             // Creamos un objeto f, que representa al archivo Usuarios.txt en formato binario
             File f = new File(archivo);
             // Permite abrir el archivo para ESCRITURA (Permite grabar datos)
@@ -73,17 +73,17 @@ public class EVENTS
             PrintWriter pw = new PrintWriter(fw);
            
             pw.println("USUARIO : "+usuario);
-            pw.println("DESCRIPCIÓN : "+descripcion);
             pw.println("FORMULARIO : "+formulario);
-            pw.println("ACCIÓN : "+accion);
-            pw.println("TIME : "+hour());
+            pw.println("HORA : "+hour());
+            pw.println("TIPO : "+tipo);
+            pw.println("DESCRIPCIÓN : "+descripcion);
             pw.println("----------------------------------------------------");
             pw.println(" ");
             pw.close();
 
         }catch (IOException e) 
           {
-              System.out.println("ERROR AL ESCRIBIR EN EL EVENTS "+e);
+              System.out.println("ERROR AL ESCRIBIR EN EL RESULTS "+e);
           }
     }
     
