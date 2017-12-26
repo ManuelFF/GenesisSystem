@@ -135,7 +135,7 @@ public class MICROCON_MantenerClientes
         try
         {   
             DBCON RCN = new DBCON();
-            
+            L_CLIENTE.clear();
             st=RCN.conector().prepareStatement("SELECT ID_CLI FROM CLIENTE order by ID_CLI");
             rs=st.executeQuery();
 

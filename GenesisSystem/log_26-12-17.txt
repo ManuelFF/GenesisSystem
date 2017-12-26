@@ -148,3 +148,351 @@ ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SI
 TIME : 12:6:22
 ----------------------------------------------------
  
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:20:37
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:21:7
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:21:17
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'INFORMATION.wav'
+CLASE : SYSAUDIOCON linea 123
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 24472
+TIME : 12:21:17
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:21:21
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : java.lang.IndexOutOfBoundsException: Invalid index
+TIME : 12:21:34
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : java.lang.IndexOutOfBoundsException: Invalid index
+TIME : 12:21:34
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : java.lang.IndexOutOfBoundsException: Invalid index
+TIME : 12:21:36
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : java.lang.IndexOutOfBoundsException: Invalid index
+TIME : 12:21:37
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : java.lang.IndexOutOfBoundsException: Invalid index
+TIME : 12:21:37
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : java.lang.IndexOutOfBoundsException: Invalid index
+TIME : 12:21:38
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : java.lang.IndexOutOfBoundsException: Invalid index
+TIME : 12:21:39
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : java.lang.IndexOutOfBoundsException: Invalid index
+TIME : 12:21:40
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : java.lang.IndexOutOfBoundsException: Invalid index
+TIME : 12:21:42
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:22:48
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:22:49
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:27:24
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:27:45
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'NOTIFY.wav'
+CLASE : SYSAUDIOCON linea 136
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 24472
+TIME : 12:27:45
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'INFORMATION.wav'
+CLASE : SYSAUDIOCON linea 123
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 24472
+TIME : 12:27:45
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:27:48
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:31:4
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:33:23
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:33:49
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'INFORMATION.wav'
+CLASE : SYSAUDIOCON linea 123
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 24472
+TIME : 12:33:49
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:33:52
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:37:6
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:38:25
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:38:46
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 12:38:47
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:2:42
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:6:47
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:11:12
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:12:42
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:13:55
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:13:56
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:17:14
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:18:5
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error intentando abrir 'Mantenimiento Clientes'
+CLASE : JFRPrincipal
+ERROR : java.lang.ArrayIndexOutOfBoundsException: 0 >= 0
+TIME : 13:18:53
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error intentando abrir 'Mantenimiento Clientes'
+CLASE : JFRPrincipal
+ERROR : java.lang.ArrayIndexOutOfBoundsException: 0 >= 0
+TIME : 13:18:56
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:19:25
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:24:16
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:25:5
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error intentando abrir 'Mantenimiento Clientes'
+CLASE : JFRPrincipal
+ERROR : java.lang.ArrayIndexOutOfBoundsException: 0 >= 0
+TIME : 13:25:35
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error intentando abrir 'Mantenimiento Clientes'
+CLASE : JFRPrincipal
+ERROR : java.lang.ArrayIndexOutOfBoundsException: 0 >= 0
+TIME : 13:28:26
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:31:40
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.IndexOutOfBoundsException: Invalid range
+TIME : 13:32:51
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : java.lang.ArrayIndexOutOfBoundsException: 4 >= 4
+TIME : 13:33:39
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : java.lang.ArrayIndexOutOfBoundsException: 4 >= 4
+TIME : 13:33:41
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : java.lang.ArrayIndexOutOfBoundsException: 4 >= 4
+TIME : 13:33:42
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : java.lang.ArrayIndexOutOfBoundsException: 4 >= 4
+TIME : 13:33:42
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : java.lang.ArrayIndexOutOfBoundsException: 4 >= 4
+TIME : 13:33:44
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : java.lang.ArrayIndexOutOfBoundsException: 4 >= 4
+TIME : 13:33:45
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar cliente natural
+CLASE : JIFMantenerClientes
+ERROR : java.lang.ArrayIndexOutOfBoundsException: 4 >= 4
+TIME : 13:33:45
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar borrar la cache de la DB
+CLASE : JIFMantenerClientes metodo clearcacheDB linea 172
+ERROR : java.lang.ArrayIndexOutOfBoundsException: 0 >= 0
+TIME : 13:34:13
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error intentando abrir 'Mantenimiento Clientes'
+CLASE : JFRPrincipal
+ERROR : java.lang.ArrayIndexOutOfBoundsException: 0 >= 0
+TIME : 13:39:0
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error intentando abrir 'Mantenimiento Clientes'
+CLASE : JFRPrincipal
+ERROR : java.lang.ArrayIndexOutOfBoundsException: 0 >= 0
+TIME : 13:39:16
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error intentando abrir 'Mantenimiento Clientes'
+CLASE : JFRPrincipal
+ERROR : java.lang.ArrayIndexOutOfBoundsException: 0 >= 0
+TIME : 13:39:49
+----------------------------------------------------
+ 

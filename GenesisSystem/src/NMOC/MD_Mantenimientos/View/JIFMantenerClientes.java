@@ -46,7 +46,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     Color ColorInicial;
     boolean condicion_datos = false;
 
-    DefaultTableModel modelo_Cli_NATU = new DefaultTableModel()
+    DefaultTableModel modelo_NATU = new DefaultTableModel()
     {
         @Override
         public boolean isCellEditable(int row , int col)
@@ -70,22 +70,22 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         //lblusuario1.setText(JFRPrincipal.JMSesion.getText());
         fecha_actual();
                
-        JTNatural.setModel(modelo_Cli_NATU);
-        JTNatural.addMouseListener(new MouseAdapter(){});
+        JTNatural.setModel(modelo_NATU);
         JTNatural.getTableHeader().setReorderingAllowed(false);
         trsFiltro = new TableRowSorter(JTNatural.getModel());
-        CliNCon.CargarCliNatu(modelo_Cli_NATU, JTNatural);
         JTNatural.setRowSorter(trsFiltro);
+        
+        CliNCon.CargarCliNatu(modelo_NATU, JTNatural);
         JTAdireccion.setLineWrap(true);
         ColorInicial = txtnombres.getBackground();
-        tamaño_cabecera();
+        tamaño_cabecera_natu();
     }
     
-    private void tamaño_cabecera()
+    private void tamaño_cabecera_natu()
     {
         TableColumnModel columnModel = JTNatural.getColumnModel();
         columnModel.getColumn(0).setPreferredWidth(80);
-        columnModel.getColumn(1).setPreferredWidth(200);
+        columnModel.getColumn(1).setPreferredWidth(240);
         columnModel.getColumn(2).setPreferredWidth(50);
         columnModel.getColumn(3).setPreferredWidth(50);
         columnModel.getColumn(4).setPreferredWidth(50);
@@ -183,15 +183,16 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         txtcorreo.setEditable(cond);
         JTAdireccion.setEditable(cond);
     }
-       
+        
     private void clearCacheDB()
     {
         try 
         {
             MWCON mw = new MWCON();
-            mw.clear_table(modelo_Cli_NATU, JTNatural);
-            CliNCon.CargarCliNatu(modelo_Cli_NATU, JTNatural);
+            mw.clear_table(modelo_NATU, JTNatural);
             CliNCon.llenarIDS_CLI();
+            CliNCon.CargarCliNatu(modelo_NATU, JTNatural);
+            tamaño_cabecera_natu();
         } catch (Exception e) 
             {
                 lc.write("Error al intentar borrar la cache de la DB", "JIFMantenerClientes metodo clearcacheDB linea 172", e);
@@ -263,6 +264,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         JTAdireccion = new javax.swing.JTextArea();
         JPJuridico = new javax.swing.JPanel();
 
+        JTNatural.setBackground(new java.awt.Color(204, 204, 204));
         JTNatural.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -368,6 +370,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
 
         btnmodificar_N.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/EDIT.png"))); // NOI18N
         btnmodificar_N.setText("Modificar");
+        btnmodificar_N.setEnabled(false);
         btnmodificar_N.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnmodificar_NActionPerformed(evt);
@@ -376,6 +379,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
 
         btncancelar_N.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Windows-Close-Program-icon.png"))); // NOI18N
         btncancelar_N.setText("Cancelar");
+        btncancelar_N.setEnabled(false);
         btncancelar_N.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btncancelar_NActionPerformed(evt);
@@ -589,19 +593,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
       }
       else
         {
-           //OBTENER DATOS
-           String ID_CLI = IDCLI;
-           String nombre = txtnombres.getText().toUpperCase();
-           String ape_pat = txtApellidoP.getText().toUpperCase();
-           String ape_mat = txtApellidoM.getText().toUpperCase();
-           String dni = txtDNI.getText().toUpperCase();
-           String telefono = txttelefono.getText().toUpperCase();
-           String celular = txtcelular.getText().toUpperCase();
-           String direccion = JTAdireccion.getText().toUpperCase();
-           String correo = txtcorreo.getText().toUpperCase();                         
-            
-           //FIN  DE OBTENCION DE DATOS 
-           
+       
            //LOGICA DE VERIFICACION
            
            /*
@@ -659,33 +651,74 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
 
             //WARNINGS
             //APELLIDO MATERNO
-            if(txtApellidoM.getText().equals(""))
+            if(txtApellidoM.getText().trim().equals(""))
             {
                 sysau.E_NOTIFY();
                 txtApellidoM.setBackground(Color.YELLOW);
+                txtApellidoM.setText("-");
                 ShakingComponent sh_ApeMat = new ShakingComponent(txtApellidoM);
                 sh_ApeMat.startShake();
             }
             //DNI
-            if(txtDNI.getText().equals(""))
+            if(txtDNI.getText().trim().equals(""))
             {
                 sysau.E_NOTIFY();
                 txtDNI.setBackground(Color.YELLOW);
+                txtDNI.setText("-");
                 ShakingComponent sh_DNI = new ShakingComponent(txtDNI);
                 sh_DNI.startShake();
             }
             //CORREO
-            if(txtcorreo.getText().equals(""))
+            if(txtcorreo.getText().trim().equals(""))
             {
                 sysau.E_NOTIFY();
                 txtcorreo.setBackground(Color.YELLOW);
+                txtcorreo.setText("-");
                 ShakingComponent sh_Correo = new ShakingComponent(txtcorreo); 
                 sh_Correo.startShake();
             }
+            //COMPROBAR SI TELEFONO ESTA VACIO
+            if(txttelefono.getText().trim().equals(""))
+            {
+                txttelefono.setText("-");
+            }
+            //COMPROBAR SI CELULAR ESTA VACIO
+            if(txtcelular.getText().trim().equals(""))
+            {
+                txtcelular.setText("-");
+            }
+            
             //FIN DE LOGICA DE VERIFICACION
             
             //INICIO PROGRAMACION DE INGRESO
             
+            //OBTENER DATOS
+            String ID_CLI = IDCLI;
+            String nombre = txtnombres.getText().toUpperCase();
+            String ape_pat = txtApellidoP.getText().toUpperCase();
+            String ape_mat = txtApellidoM.getText().toUpperCase();
+            String dni = txtDNI.getText().toUpperCase();
+            String telefono = txttelefono.getText().toUpperCase();
+            String celular = txtcelular.getText().toUpperCase();
+            String direccion = JTAdireccion.getText().toUpperCase();
+            String correo = txtcorreo.getText().toUpperCase();                         
+            //FIN  DE OBTENCION DE DATOS 
+            
+            //INICIO CONTROLADOR QUE INSERTA
+            CliNCon.InsertarCliente_Natural(ID_CLI, nombre, ape_pat, ape_mat, dni, telefono, celular, direccion, correo);
+            //FINAL CONTROLADOR QUE INSERTA
+            
+            evn.write(JFRPrincipal.JMSesion.getText(), "Inserto un cliente natural", "JIFMantenerClientes -> Naturales", "Botón 'Insertar' Presionado");
+            sysau.E_INFORMATION();
+            JOptionPane.showMessageDialog(jf, "Cliente Insertado con exito!", "Cliente Insertado", JOptionPane.INFORMATION_MESSAGE);
+            clearFRM();
+            editFRM(false);
+            ena_disaButtons(true, false, false, true);
+            btnnuevo_N.setText("Nuevo");
+            txtfiltro.setEnabled(true);cbfiltro.setEnabled(true);
+            condicion_datos = false;
+            reiniciarColors();
+            clearCacheDB();
 
            }
             

@@ -44,14 +44,15 @@ public class MWCON
    //Funcion que limpia un Jtable quitando los elemtos.
     public void clear_table(DefaultTableModel modelo, JTable jt)
     {
+        System.out.println(jt.getRowCount());
         for(int i=0;i<jt.getRowCount();i++)
         {
             modelo.removeRow(i);
             i-=1;
         }
         modelo.setRowCount(0);
-        jt.setModel(new DefaultTableModel());
         modelo.setColumnCount(0);
+        //jt.setModel(modelo);
     }
    
     
