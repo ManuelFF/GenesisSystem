@@ -2,6 +2,174 @@ USUARIO : adm
 DESCRIPCIÓN : Ingreso al sistema
 FORMULARIO : JFRInicioSesion
 ACCIÓN : Botón 'INGRESAR' Presionado
-TIME : 10:17:11
+TIME : 10:26:15
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Usuario'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Usuario' Presionado
+TIME : 10:26:29
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario RICHARD AGUINAGA ha sido seleccionado
+TIME : 10:26:35
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario de selección de personal
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Buscar Personal' Presionado
+TIME : 10:26:36
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al personal LUIS MANUEL CALDERON REVOLO
+FORMULARIO : JDES_seleccionarPersonal
+ACCIÓN : Tabla de personal presionado
+TIME : 10:26:40
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el boton nuevo
+FORMULARIO : JIFMantenerUsuario linea 327
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 10:26:41
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Intento crear un usuario a un personal que ya posee un usuario
+FORMULARIO : JIFMantenerUsuario linea 344
+ACCIÓN : Botón 'Nuevo presionado'
+TIME : 10:26:41
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario de selección de personal
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Buscar Personal' Presionado
+TIME : 10:26:59
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al personal MARCO ANTONIO BAUTISTA VILLANUEVA
+FORMULARIO : JDES_seleccionarPersonal
+ACCIÓN : Tabla de personal presionado
+TIME : 10:27:1
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el boton nuevo
+FORMULARIO : JIFMantenerUsuario linea 327
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 10:27:2
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el boton nuevo
+FORMULARIO : JIFMantenerUsuario linea 327
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 10:27:11
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Inserto un nuevo usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Insertar' presionado
+TIME : 10:27:12
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Usuario'
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:28:12
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 10:28:14
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón 'Nuevo' cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 10:28:24
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón 'Nuevo' cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 10:29:18
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Inserto un cliente natural
+FORMULARIO : JIFMantenerClientes -> Naturales
+ACCIÓN : Botón 'Insertar' Presionado
+TIME : 10:29:18
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 10:30:24
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 10:30:24
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón 'Modificar' cliente natural 
+FORMULARIO : JIFMantenerCliente linea 730
+ACCIÓN : Botón 'Modificar_Natural' presionado
+TIME : 10:30:30
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón 'Modificar' cliente natural 
+FORMULARIO : JIFMantenerCliente linea 730
+ACCIÓN : Botón 'Modificar_Natural' presionado
+TIME : 10:31:36
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Modifico un cliente natural
+FORMULARIO : JIFMantenerClientes -> Naturales
+ACCIÓN : Botón 'Actualizar' Presionado
+TIME : 10:31:36
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón 'Nuevo' cliente natural 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Natural' presionado
+TIME : 10:32:5
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de un cliente natural
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 10:32:9
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Clientes'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:32:25
 ----------------------------------------------------
  

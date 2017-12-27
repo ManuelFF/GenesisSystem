@@ -1,0 +1,27 @@
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerUsuario
+HORA : 10:27:12
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el usuario con ID: USR-008
+ CON USUARIO: marco
+ CON ESTADO: ACTIVO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerClientes -> Natural
+HORA : 10:29:18
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el cliente con ID  CLI-00000206
+ NOMBRE: MANUEL FERNANDO 
+ APELLIDOS: SAAVEDRA BENITES DNI: 71004147
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerClientes -> Natural
+HORA : 10:31:36
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el cliente con ID  CLI-00000206
+ NOMBRE: MANUEL FERNANDO 
+ APELLIDOS: SAAVEDRA BENITES DNI: 71004147
+----------------------------------------------------
+ 

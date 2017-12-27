@@ -707,7 +707,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
             
             evn.write(JFRPrincipal.JMSesion.getText(), "Inserto un cliente natural", "JIFMantenerClientes -> Naturales", "Botón 'Insertar' Presionado");
             rslt.write(JFRPrincipal.JMSesion.getText(), "JIFMantenerClientes -> Natural", "INSERCIÓN", "Se ha insertado el cliente con ID  "+ID_CLI+
-                                                        "\n NOMBRE: "+nombre+" \n APELLIDOS: "+ape_pat+" "+ape_mat+" DNI: "+dni);
+                                                        "\n NOMBRE: "+nombre+" \n APELLIDOS: "+ape_pat+" "+ape_mat+" \n DNI: "+dni);
             sysau.E_INFORMATION();
             JOptionPane.showMessageDialog(jf, "Cliente Insertado con exito!", "Cliente Insertado", JOptionPane.INFORMATION_MESSAGE);
             clearFRM();
@@ -867,7 +867,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
             
             evn.write(JFRPrincipal.JMSesion.getText(), "Modifico un cliente natural", "JIFMantenerClientes -> Naturales", "Botón 'Actualizar' Presionado");
             rslt.write(JFRPrincipal.JMSesion.getText(), "JIFMantenerClientes -> Natural", "MODIFICACIÓN", "Se ha modificado el cliente con ID  "+ID_CLI+
-                                                        "\n NOMBRE: "+nombre+" \n APELLIDOS: "+ape_pat+" "+ape_mat+" DNI: "+dni);
+                                                        "\n NOMBRE: "+nombre+" \n APELLIDOS: "+ape_pat+" "+ape_mat+" \n DNI: "+dni);
             sysau.E_INFORMATION();
             JOptionPane.showMessageDialog(jf, "Cliente Modificado con exito!", "Cliente Modificado", JOptionPane.INFORMATION_MESSAGE);
             clearFRM();
@@ -892,6 +892,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
 
     try 
     {
+        evn.write(JFRPrincipal.JMSesion.getText(), "Ha cancelado la inserción o modificación de un cliente natural", "JIFMantenerClientes -> Natural", "Botón 'Cancelar' Presionado");
         clearFRM();
         IDCLI="";
         btnnuevo_N.setText("Nuevo");
