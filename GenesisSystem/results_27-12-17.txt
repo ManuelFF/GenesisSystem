@@ -92,3 +92,21 @@ DESCRIPCIÓN : Se ha insertado el cliente con ID  CLI-00000211
  RUC: 1111111
 ----------------------------------------------------
  
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerClientes -> Juridicos
+HORA : 13:51:43
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el cliente con ID  CLI-00000206
+ Razón Social: SANEAMIENTO ROEDJTO S.A.C 
+ RUC: 20600
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerClientes -> Juridico
+HORA : 13:52:7
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el cliente con ID  CLI-00000206
+ Razón Social: SANEAMIENTO ROEDJOT S.A.C 
+ RUC: 20600
+----------------------------------------------------
+ 

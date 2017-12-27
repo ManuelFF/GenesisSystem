@@ -1371,7 +1371,9 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         if(condicion_datos == false)
         {
             btnmodificar_N.setEnabled(true);
-            btncancelar_J.setEnabled(true);
+            JTABPrincipal.setEnabled(false);
+            btncancelar_N.setEnabled(true);
+            
             
             int row = JTNatural.rowAtPoint(evt.getPoint());
 
@@ -1414,6 +1416,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         {
             btnmodificar_J.setEnabled(true);
             btncancelar_J.setEnabled(true);
+            JTABPrincipal.setEnabled(false);
             
             int row = JTJuridico.rowAtPoint(evt.getPoint());
 
@@ -1618,7 +1621,161 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     }//GEN-LAST:event_btnnuevo_JActionPerformed
 
     private void btnmodificar_JActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmodificar_JActionPerformed
-        // TODO add your handling code here:
+   
+    try 
+    {  
+       //EJECUTADO ANTES DE TODO
+      SYSAUDIOCON sysau = new SYSAUDIOCON();
+
+      //EJECUTADO ANTES DE TODA CONDICIONAL
+      JFrame jf=new JFrame();
+      jf.setAlwaysOnTop(true);
+      clearCacheDB_natu();
+
+      JTABPrincipal.setEnabled(false);
+
+      evn.write(JFRPrincipal.JMSesion.getText(), "hizo click en el botón 'Modificar' cliente juridico ", "JIFMantenerCliente linea 730", "Botón 'Modificar_Juridico' presionado");
+
+      if(btnmodificar_J.getText().equals("Modificar"))
+      {
+          editFRM_juri(true);
+          ena_disaButtons_juri(false, true, true, false);
+          btnmodificar_J.setText("Actualizar");
+          txtfiltro_J.setEnabled(false);cbfiltro_J.setEnabled(false);
+          condicion_datos = true;
+      }
+      else
+        {
+           //LOGICA DE VERIFICACION
+           
+           /*
+                la logica de verificacion usada sera LS.
+                la cual significa loica separativa; brevemente lo que hace es
+                verificar cada bloque a la vez en ves de verificar bloque por bloque
+           */
+           
+           //OBLIGATORIO
+           //RAZON SOCIAL
+           if(txtRazonSocial.getText().trim().equals(""))
+           {
+              sysau.E_ERROR();
+              txtRazonSocial.setBackground(Color.RED);
+              ShakingComponent sh_raz = new ShakingComponent(txtRazonSocial);
+              sh_raz.startShake();
+              JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Razónn Social' para el cliente", "Falta Razón Social del Cliente", JOptionPane.ERROR_MESSAGE);
+              sysau.S_STOP();
+           }else
+           //DIRECCION
+           if(JTAdireccion_J.getText().trim().equals(""))
+           {
+               sysau.E_ERROR();
+               JTAdireccion_J.setBackground(Color.RED);
+               ShakingComponent sh_Direccion = new ShakingComponent(JTAdireccion_J);
+               sh_Direccion.startShake();
+               JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Dirección' para el cliente", "Falta Dirección del cliente", JOptionPane.ERROR_MESSAGE);
+               sysau.S_STOP();
+           }else
+           //ONE BY ONE OBLIGATORIOS
+           //TELEFONO - CELULAR
+           if(txttelefono_J.getText().trim().equals("") && txtcelular_J.getText().trim().equals(""))
+           {
+              sysau.E_ERROR();
+              txttelefono_J.setBackground(Color.RED);
+              txtcelular_J.setBackground(Color.RED);
+              ShakingComponent sh_Telefono = new ShakingComponent(txttelefono_J);
+              ShakingComponent sh_Celular = new ShakingComponent(txtcelular_J);
+              sh_Telefono.startShake();  
+              sh_Celular.startShake();
+              JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de algun 'Telefono' o 'Celular' para el cliente", "Falta información de comunicación", JOptionPane.ERROR_MESSAGE);
+              sysau.S_STOP();
+           }else
+           {   
+            //WARNINGS
+            //RUC
+            if(txtRUC.getText().trim().equals(""))
+            {
+                txtRUC.setBackground(Color.YELLOW);
+                txtRUC.setText("-");
+                ShakingComponent sh_RUC = new ShakingComponent(txtRUC);
+                sh_RUC.startShake();
+            }
+            //NOM ENCARG
+            if(txtNombreEncargado.getText().trim().equals(""))
+            {
+                txtNombreEncargado.setBackground(Color.YELLOW);
+                txtNombreEncargado.setText("-");
+                ShakingComponent sh_nom = new ShakingComponent(txtNombreEncargado);
+                sh_nom.startShake();
+            }
+            //DNI ENCARG
+            if(txtDNI_encarg.getText().trim().equals(""))
+            {
+                txtDNI_encarg.setBackground(Color.YELLOW);
+                txtDNI_encarg.setText("-");
+                ShakingComponent sh_DNI = new ShakingComponent(txtDNI_encarg);
+                sh_DNI.startShake();
+            }
+            //CORREO
+            if(txtcorreo_J.getText().trim().equals(""))
+            {
+                txtcorreo_J.setBackground(Color.YELLOW);
+                txtcorreo_J.setText("-");
+                ShakingComponent sh_Correo = new ShakingComponent(txtcorreo_J); 
+                sh_Correo.startShake();
+            }
+            //COMPROBAR SI TELEFONO ESTA VACIO
+            if(txttelefono_J.getText().trim().equals(""))
+            {
+                txttelefono_J.setText("-");
+            }
+            //COMPROBAR SI CELULAR ESTA VACIO
+            if(txtcelular_J.getText().trim().equals(""))
+            {
+                txtcelular_J.setText("-");
+            }
+            
+            //FIN DE LOGICA DE VERIFICACION
+            
+            //INICIO PROGRAMACION DE INGRESO
+            
+            //OBTENER DATOS
+            String ID_CLI = IDCLI;
+            String razon_social = txtRazonSocial.getText().toUpperCase();
+            String RUC = txtRUC.getText().toUpperCase();
+            String nom_encarg = txtNombreEncargado.getText().toUpperCase();;
+            String DNI_encarg = txtDNI_encarg.getText().toUpperCase();;
+            String telefono = txttelefono_J.getText().toUpperCase();
+            String celular = txtcelular_J.getText().toUpperCase();
+            String direccion = JTAdireccion_J.getText().toUpperCase();
+            String correo = txtcorreo_J.getText().toUpperCase();                         
+            //FIN  DE OBTENCION DE DATOS 
+            
+            
+            //INICIO CONTROLADOR QUE INSERTA
+            CliNCon.ModificarCliente_Juridico(ID_CLI, razon_social,nom_encarg,RUC,direccion,telefono,celular,correo,DNI_encarg);
+            //FINAL CONTROLADOR QUE INSERTA
+            
+            evn.write(JFRPrincipal.JMSesion.getText(), "Modifico un cliente juridico", "JIFMantenerClientes -> Juridicos", "Botón 'Actualizar' Presionado");
+            rslt.write(JFRPrincipal.JMSesion.getText(), "JIFMantenerClientes -> Juridico", "MODIFICACIÓN", "Se ha modificado el cliente con ID  "+ID_CLI+
+                                                        "\n Razón Social: "+razon_social+" \n RUC: "+RUC);
+            sysau.E_INFORMATION();
+            JOptionPane.showMessageDialog(jf, "Cliente Modificado con exito!", "Cliente Modificado", JOptionPane.INFORMATION_MESSAGE);
+            clearFRM_juri();
+            editFRM_juri(false);
+            ena_disaButtons_juri(true, false, false, true);
+            btnnuevo_J.setText("Nuevo");
+            txtfiltro_J.setEnabled(true);cbfiltro_J.setEnabled(true);
+            condicion_datos = false;
+            reiniciarColors_juri();
+            clearCacheDB_juri();
+            JTABPrincipal.setEnabled(true);
+           }
+        }
+    } catch (Exception e) 
+        {
+           lc.write("Error al intentar modificar un nuevo Cliente Natural", "JIFMantenerCliente linea 344", e);
+        }
+        
     }//GEN-LAST:event_btnmodificar_JActionPerformed
 
     private void btncancelar_JActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelar_JActionPerformed

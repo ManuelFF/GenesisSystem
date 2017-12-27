@@ -859,3 +859,339 @@ ACCIÓN : Tabla de Clientes Naturales presionado
 TIME : 12:18:25
 ----------------------------------------------------
  
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 12:27:48
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 12:27:51
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural NELLY VIVIANA ALCANTARA CORDOVA
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 12:28:3
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural CONNY RAMIREZ -
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 12:28:5
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural CONNY RAMIREZ -
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 12:28:5
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural CONNY RAMIREZ -
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 12:28:5
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural EDA FLORES -
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 12:28:7
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural EDA FLORES -
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 12:28:7
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural EDA FLORES -
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 12:28:7
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente juridico ECOVISION MEDICAL S.A.C
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Tabla de Clientes Juridicos presionado
+TIME : 12:28:10
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente juridico POLIENVASES GROUP .S.A.C
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Tabla de Clientes Juridicos presionado
+TIME : 12:28:10
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente juridico POLIENVASES GROUP .S.A.C
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Tabla de Clientes Juridicos presionado
+TIME : 12:28:11
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente juridico LEX LUX S.A.C
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Tabla de Clientes Juridicos presionado
+TIME : 12:28:11
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente juridico POLIENVASES GROUP .S.A.C
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Tabla de Clientes Juridicos presionado
+TIME : 12:28:12
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente juridico POLIENVASES GROUP .S.A.C
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Tabla de Clientes Juridicos presionado
+TIME : 12:28:12
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente juridico MERCADO 3 DE OCTUBRE
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Tabla de Clientes Juridicos presionado
+TIME : 12:28:13
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente juridico MERCADO 3 DE OCTUBRE
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Tabla de Clientes Juridicos presionado
+TIME : 12:28:13
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 12:28:40
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 12:28:45
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 12:28:49
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural VICTOR MORALES -
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 12:28:51
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural DANIS GUTIERREZ -
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 12:28:53
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural CLAUDIA - -
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 12:28:54
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 12:29:29
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 12:29:31
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural DAVID - -
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 12:29:44
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural CARLOS BARRENA -
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 12:29:45
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de un cliente natural
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 12:29:46
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente juridico MERCADO 3 DE OCTUBRE
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Tabla de Clientes Juridicos presionado
+TIME : 12:29:48
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente juridico POLIENVASES GROUP .S.A.C
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Tabla de Clientes Juridicos presionado
+TIME : 12:29:48
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente juridico SERVICIOS ANALITICOS GENERALES S.A.C
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Tabla de Clientes Juridicos presionado
+TIME : 12:29:48
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente juridico ECOVISION MEDICAL S.A.C
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Tabla de Clientes Juridicos presionado
+TIME : 12:29:49
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente juridico PROMAFA S.A.C.
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Tabla de Clientes Juridicos presionado
+TIME : 12:29:52
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente juridico UNION DE FRANQUICIAS S.A.C. - UFRASAC
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Tabla de Clientes Juridicos presionado
+TIME : 12:29:52
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente juridico UNION DE FRANQUICIAS S.A.C. - UFRASAC
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Tabla de Clientes Juridicos presionado
+TIME : 12:29:53
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 12:30:58
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 12:30:59
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 13:50:53
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 13:50:54
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente juridico UNION DE FRANQUICIAS S.A.C. - UFRASAC
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Tabla de Clientes Juridicos presionado
+TIME : 13:51:1
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón 'Nuevo' cliente juridico 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Juridico' presionado
+TIME : 13:51:4
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón 'Nuevo' cliente juridico 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Juridico' presionado
+TIME : 13:51:43
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Inserto un cliente juridico
+FORMULARIO : JIFMantenerClientes -> Juridicos
+ACCIÓN : Botón 'Insertar' Presionado
+TIME : 13:51:43
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente juridico SANEAMIENTO ROEDJTO S.A.C
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Tabla de Clientes Juridicos presionado
+TIME : 13:51:58
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón 'Modificar' cliente juridico 
+FORMULARIO : JIFMantenerCliente linea 730
+ACCIÓN : Botón 'Modificar_Juridico' presionado
+TIME : 13:52:1
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón 'Modificar' cliente juridico 
+FORMULARIO : JIFMantenerCliente linea 730
+ACCIÓN : Botón 'Modificar_Juridico' presionado
+TIME : 13:52:7
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Modifico un cliente juridico
+FORMULARIO : JIFMantenerClientes -> Juridicos
+ACCIÓN : Botón 'Actualizar' Presionado
+TIME : 13:52:7
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 13:53:55
+----------------------------------------------------
+ 

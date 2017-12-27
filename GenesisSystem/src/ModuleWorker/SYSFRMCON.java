@@ -101,7 +101,7 @@ public class SYSFRMCON
     //MANTENER USUARIO
     public String T_mantenerUsuario()
     {
-        String t = BETA()+ " Mantener Usuario";
+        String t = PRE_STABLE()+ " Mantener Usuario";
         return t;
     }
     
@@ -125,7 +125,7 @@ public class SYSFRMCON
     //MANTENER CLIENTEs
     public String T_MantenerClientes()
     {
-        String t = DEV()+" Mantener Clientes";
+        String t = ALFA()+" Mantener Clientes";
         return t;
     }
     
