@@ -12,6 +12,7 @@ import ModuleWorker.SYSFRMCON;
 import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
+import NCLPM.RESULTS;
 import NMOC.MD_Mantenimientos.Core.NOB_cliente;
 import NMOC.MD_Mantenimientos.IC.MICROCON_MantenerClientes;
 import java.awt.Color;
@@ -41,6 +42,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     MICROCON_MantenerClientes CliNCon = new MICROCON_MantenerClientes();
     LOG lc = new LOG();
     EVENTS evn = new EVENTS();
+    RESULTS rslt = new RESULTS();
     SYSFRMCON sysfrm = new SYSFRMCON();
     JFrame form;
     Color ColorInicial;
@@ -651,7 +653,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
             //APELLIDO MATERNO
             if(txtApellidoM.getText().trim().equals(""))
             {
-                sysau.E_NOTIFY();
                 txtApellidoM.setBackground(Color.YELLOW);
                 txtApellidoM.setText("-");
                 ShakingComponent sh_ApeMat = new ShakingComponent(txtApellidoM);
@@ -660,7 +661,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
             //DNI
             if(txtDNI.getText().trim().equals(""))
             {
-                sysau.E_NOTIFY();
                 txtDNI.setBackground(Color.YELLOW);
                 txtDNI.setText("-");
                 ShakingComponent sh_DNI = new ShakingComponent(txtDNI);
@@ -669,7 +669,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
             //CORREO
             if(txtcorreo.getText().trim().equals(""))
             {
-                sysau.E_NOTIFY();
                 txtcorreo.setBackground(Color.YELLOW);
                 txtcorreo.setText("-");
                 ShakingComponent sh_Correo = new ShakingComponent(txtcorreo); 
@@ -707,6 +706,8 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
             //FINAL CONTROLADOR QUE INSERTA
             
             evn.write(JFRPrincipal.JMSesion.getText(), "Inserto un cliente natural", "JIFMantenerClientes -> Naturales", "Botón 'Insertar' Presionado");
+            rslt.write(JFRPrincipal.JMSesion.getText(), "JIFMantenerClientes -> Natural", "INSERCIÓN", "Se ha insertado el cliente con ID  "+ID_CLI+
+                                                        "\n NOMBRE: "+nombre+" \n APELLIDOS: "+ape_pat+" "+ape_mat+" DNI: "+dni);
             sysau.E_INFORMATION();
             JOptionPane.showMessageDialog(jf, "Cliente Insertado con exito!", "Cliente Insertado", JOptionPane.INFORMATION_MESSAGE);
             clearFRM();
@@ -812,7 +813,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
             //APELLIDO MATERNO
             if(txtApellidoM.getText().trim().equals(""))
             {
-                sysau.E_NOTIFY();
                 txtApellidoM.setBackground(Color.YELLOW);
                 txtApellidoM.setText("-");
                 ShakingComponent sh_ApeMat = new ShakingComponent(txtApellidoM);
@@ -821,7 +821,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
             //DNI
             if(txtDNI.getText().trim().equals(""))
             {
-                sysau.E_NOTIFY();
                 txtDNI.setBackground(Color.YELLOW);
                 txtDNI.setText("-");
                 ShakingComponent sh_DNI = new ShakingComponent(txtDNI);
@@ -830,7 +829,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
             //CORREO
             if(txtcorreo.getText().trim().equals(""))
             {
-                sysau.E_NOTIFY();
                 txtcorreo.setBackground(Color.YELLOW);
                 txtcorreo.setText("-");
                 ShakingComponent sh_Correo = new ShakingComponent(txtcorreo); 
@@ -868,6 +866,8 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
             //FINAL CONTROLADOR QUE INSERTA
             
             evn.write(JFRPrincipal.JMSesion.getText(), "Modifico un cliente natural", "JIFMantenerClientes -> Naturales", "Botón 'Actualizar' Presionado");
+            rslt.write(JFRPrincipal.JMSesion.getText(), "JIFMantenerClientes -> Natural", "MODIFICACIÓN", "Se ha modificado el cliente con ID  "+ID_CLI+
+                                                        "\n NOMBRE: "+nombre+" \n APELLIDOS: "+ape_pat+" "+ape_mat+" DNI: "+dni);
             sysau.E_INFORMATION();
             JOptionPane.showMessageDialog(jf, "Cliente Modificado con exito!", "Cliente Modificado", JOptionPane.INFORMATION_MESSAGE);
             clearFRM();

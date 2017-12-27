@@ -295,7 +295,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         {
           SYSAUDIOCON sysau = new SYSAUDIOCON();
           sysau.E_CERRAR_SESION();
-          
+          evn.write(JMSesion.getText(), "Ha cerrado sesión y salio del sistema", "JFRPrincipal", "Botón 'Cerrar Sesión' Presionado");
           Thread.sleep(450);
           System.exit(0);
             

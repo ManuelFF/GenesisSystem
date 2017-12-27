@@ -2,6 +2,6 @@ USUARIO : adm
 DESCRIPCIÓN : Ingreso al sistema
 FORMULARIO : JFRInicioSesion
 ACCIÓN : Botón 'INGRESAR' Presionado
-TIME : 15:4:8
+TIME : 10:17:11
 ----------------------------------------------------
  
