@@ -25,3 +25,70 @@ DESCRIPCIÓN : Se ha modificado el cliente con ID  CLI-00000206
  APELLIDOS: SAAVEDRA BENITES DNI: 71004147
 ----------------------------------------------------
  
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerClientes -> Natural
+HORA : 11:6:50
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el cliente con ID  CLI-00000178
+ NOMBRE: ANGGY 
+ APELLIDOS:   - 
+ DNI: -
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerClientes -> Natural
+HORA : 11:7:2
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el cliente con ID  CLI-00000178
+ NOMBRE: ANGGY 
+ APELLIDOS:   - 
+ DNI: -
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerClientes -> Juridicos
+HORA : 12:14:41
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el cliente con ID  CLI-00000207
+ Razón Social: SANEAMIENTO ROEDJOT S.A.C 
+ RUC: -
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerClientes -> Natural
+HORA : 12:16:18
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el cliente con ID  CLI-00000208
+ NOMBRE: SDF 
+ APELLIDOS: SDFSDF SDF 
+ DNI: SDF
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerClientes -> Juridicos
+HORA : 12:16:32
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el cliente con ID  CLI-00000209
+ Razón Social: SDF 
+ RUC: SDF
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerClientes -> Natural
+HORA : 12:17:53
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el cliente con ID  CLI-00000210
+ NOMBRE: 1111111 
+ APELLIDOS: 11111111111 11111111111111 
+ DNI: 1111111111111111111
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerClientes -> Juridicos
+HORA : 12:18:6
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el cliente con ID  CLI-00000211
+ Razón Social: 1111 
+ RUC: 1111111
+----------------------------------------------------
+ 
