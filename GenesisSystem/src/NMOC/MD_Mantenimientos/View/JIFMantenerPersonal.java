@@ -6,6 +6,8 @@
 package NMOC.MD_Mantenimientos.View;
 
 import ModuleWorker.IC.MWCON;
+import ModuleWorker.IC.ShakingComponent;
+import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSFRMCON;
 import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
@@ -20,6 +22,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumnModel;
@@ -185,7 +188,6 @@ public class JIFMantenerPersonal extends javax.swing.JInternalFrame
       txtcelular.setText("");
       txtcorreo.setText("");
       JTAdireccion.setText("");
-      JTAcat.setText("");
       CBestado.setSelectedIndex(0);
     }
     
@@ -344,6 +346,7 @@ public class JIFMantenerPersonal extends javax.swing.JInternalFrame
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        JTpersonal.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         JTpersonal.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JTpersonalMouseClicked(evt);
@@ -602,8 +605,156 @@ public class JIFMantenerPersonal extends javax.swing.JInternalFrame
 
     private void btnnuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnuevoActionPerformed
 
-        NuevoCodigoPER();
-        ena_disaCAT(true);
+        try 
+        {
+            //EJECUTADO ANTES DE TODO
+            SYSAUDIOCON sysau = new SYSAUDIOCON();
+            
+            //EJECUTADO ANTES DE TODA CONDICIONAL
+            JFrame jf=new JFrame();
+            jf.setAlwaysOnTop(true);
+            clearCacheDB();
+            
+            evn.write(lblusuario.getText(), "Hizo click en el botón 'Nuevo' Personal", "JIFMantenerPersonal", "Botón 'Nuevo' Presionado");
+            
+            if(btnnuevo.getText().equals("Nuevo"))
+            {
+                clearFRM();
+                NuevoCodigoPER();
+                editFRM(true);
+                ena_disaButtons(true, false, true, false);
+                btnnuevo.setText("Insertar");
+                txtfiltro.setEnabled(false);cbfiltro.setEnabled(false);
+                condicion_datos = true;
+                ena_disaCAT(false);
+            }
+             else
+                {
+                    //LOGICA DE VERIFICACION
+                    /*
+                         la logica de verificacion usada sera LS.
+                         la cual significa loica separativa; brevemente lo que hace es
+                         verificar cada bloque a la vez en ves de verificar bloque por bloque
+                    */
+
+                    //OBLIGATORIO
+                    //NOMBRES
+                    if(txtnombres.getText().trim().equals(""))
+                    {
+                       sysau.E_ERROR();
+                       txtnombres.setBackground(Color.RED);
+                       ShakingComponent sh_nombre = new ShakingComponent(txtnombres);
+                       sh_nombre.startShake();
+                       JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Nombre' para el personal", "Falta Nombre del Personal", JOptionPane.ERROR_MESSAGE);
+                       sysau.S_STOP();
+                    }else
+                    //APELLIDOS
+                    if(txtapellidos.getText().trim().equals(""))
+                    {
+                       sysau.E_ERROR();
+                       txtapellidos.setBackground(Color.RED);
+                       ShakingComponent sh_ApePat = new ShakingComponent(txtapellidos);
+                       sh_ApePat.startShake();
+                       JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Apellidos' para el Personal", "Falta Apellidos del Personal", JOptionPane.ERROR_MESSAGE);
+                       sysau.S_STOP();
+                    }else
+                    //DNI
+                    if(txtdni.getText().trim().equals("") || txtdni.getText().length()<8)
+                    {
+                        sysau.E_ERROR();
+                        txtdni.setBackground(Color.RED);
+                        ShakingComponent sh_dni = new ShakingComponent(txtdni);
+                        sh_dni.startShake();
+                        JOptionPane.showMessageDialog(jf, "DNI faltante o incorrecto", "DNI incorrecto", JOptionPane.ERROR_MESSAGE);
+                        sysau.S_STOP();
+                    }else
+                    {   
+                     //WARNINGS
+                     //TELEFONO
+                     if(txttelefono.getText().trim().equals(""))
+                     {
+                         txttelefono.setBackground(Color.YELLOW);
+                         txttelefono.setText("-");
+                         ShakingComponent sh_telf = new ShakingComponent(txttelefono);
+                         sh_telf.startShake();
+                     }
+                     //CELULAR
+                     if(txtcelular.getText().trim().equals(""))
+                     {
+                         txtcelular.setBackground(Color.YELLOW);
+                         txtcelular.setText("-");
+                         ShakingComponent sh_cel = new ShakingComponent(txtcelular);
+                         sh_cel.startShake();
+                     }
+                     //CORREO
+                     if(txtcorreo.getText().trim().equals(""))
+                     {
+                         txtcorreo.setBackground(Color.YELLOW);
+                         txtcorreo.setText("-");
+                         ShakingComponent sh_Correo = new ShakingComponent(txtcorreo); 
+                         sh_Correo.startShake();
+                     }
+                     //DIRECCION
+                     if(JTAdireccion.getText().trim().equals(""))
+                     {
+                         JTAdireccion.setBackground(Color.YELLOW);
+                         JTAdireccion.setText("-");
+                         ShakingComponent sh_dir = new ShakingComponent(JTAdireccion); 
+                         sh_dir.startShake();
+                     }
+                     //COMPROBAR SI TELEFONO ESTA VACIO
+                     if(txttelefono.getText().trim().equals(""))
+                     {
+                         txttelefono.setText("-");
+                     }
+                     //COMPROBAR SI CELULAR ESTA VACIO
+                     if(txtcelular.getText().trim().equals(""))
+                     {
+                         txtcelular.setText("-");
+                     }
+                     //FIN DE LOGICA DE VERIFICACION
+                     //INICIO PROGRAMACION DE INGRESO
+                     
+                    //OBTENER DATOS                     
+                    String id_per = txtcod.getText();
+                    String nombre =txtnombres.getText();
+                    String apellido = txtapellidos.getText();
+                    String DNI = txtdni.getText();
+                    String telefono = txttelefono.getText();
+                    String celular = txtcelular.getText();
+                    String correo = txtcorreo.getText();
+                    String direccion = JTAdireccion.getText();
+                    String estado = CBestado.getSelectedItem().toString();
+                    //FIN OBTENER DATOS
+                    
+                    //INICIO CONTROLADOR QUE INSERTA
+                    
+                    //FIN CONTROLADOR QUE INSERTA
+                    
+                    evn.write(lblusuario.getText(), "Inserto un nuevo Personal", "JIFMantenerPersonal", "Botón 'Insertar' Presionado");
+                    rslt.write(lblusuario.getText(), "JIFMantenerPersonal", "INSERCIÓN", "Se ha insertado el personal con ID  "+id_per+
+                                                        "\n NOMBRE: "+nombre+" \n APELLIDOS: "+apellido+" \n DNI: "+DNI);
+            
+                    ena_disaButtons(false, false, false, false);
+                    sysau.E_INFORMATION();
+                    JOptionPane.showMessageDialog(jf, "Personal Insertado con exito!", "Personal Insertado", JOptionPane.INFORMATION_MESSAGE);                    
+                    editFRM(false);
+                    btnnuevo.setText("Nuevo");
+                    reiniciarColors();
+                    clearCacheDB();
+                    ena_disaCAT(true);
+                    JOptionPane.showMessageDialog(jf, "Ahora seleccione la categoria del personal", "Seleccionar Categoria", JOptionPane.INFORMATION_MESSAGE);
+                    sysau.S_STOP();
+                    sysau.E_EXCLAMATION();
+                    ShakingComponent sh_cat = new ShakingComponent(CBcat);
+                    sh_cat.startShake();
+                    }
+                }
+        } catch (Exception e) 
+            {
+                
+            }
+        
 
     }//GEN-LAST:event_btnnuevoActionPerformed
 

@@ -8,6 +8,7 @@ package NMOC.MD_Mantenimientos.IC;
 import ModuleWorker.DBCON;
 import NCLPM.LOG;
 import NMOC.MD_Mantenimientos.Core.NOB_personal;
+import java.sql.CallableStatement;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
@@ -93,6 +94,35 @@ public class MICROCON_MantenerPersonal
                 lc.write("Error no controlado en el metodo 'cargarBoxTipo'", "MICROCON_MantenerUsuario", ex);
         }
     }
+    
+    //INSERTAR PERSONAL
+    public void InsertarPersonal(String codPER, String nom,String ape,String dni, String dir,String numtelf,String numcel,String corre,String estado)
+    {
+      try{
+             DBCON RCN = new DBCON();
+
+            // Llamada al procedimiento almacenado
+            CallableStatement cst = RCN.conector().prepareCall("{call usp_insertar_personal (?,?,?,?,?,?,?,?,?)}");
+            // Parametro del procedimiento almacenado
+            cst.setString(1, codPER);
+            cst.setString(2, nom);
+            cst.setString(3, ape);
+            cst.setString(4, dni);
+            cst.setString(5, dir);
+            cst.setString(6, numtelf);
+            cst.setString(7, numcel);
+            cst.setString(8, corre);
+            cst.setString(9, estado);
+            // Ejecuta el procedimiento almacenado
+            cst.execute();
+            cst.close();
+
+         }catch (SQLException ex) 
+            {
+                 lc.write("Problema al intentar insertar un Personal en el metodo 'InsertarPersonal'", "MICROCON_MantenerPersonal linea 42", ex);             
+            } 
+    }
+    
     
     
     //##########################################################################

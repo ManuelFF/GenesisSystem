@@ -996,7 +996,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
 
       JTABPrincipal.setEnabled(false);
 
-      evn.write(JFRPrincipal.JMSesion.getText(), "hizo click en el botón 'Nuevo' cliente natural ", "JIFMantenerCliente linea 344", "Botón 'Nuevo_Natural' presionado");
+      evn.write(JFRPrincipal.JMSesion.getText(), "Hizo click en el botón 'Nuevo' cliente natural ", "JIFMantenerCliente linea 344", "Botón 'Nuevo_Natural' presionado");
 
       if(btnnuevo_N.getText().equals("Nuevo"))
       {
