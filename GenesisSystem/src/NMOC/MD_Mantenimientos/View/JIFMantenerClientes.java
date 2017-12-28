@@ -511,7 +511,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         cbfiltro.setBackground(new java.awt.Color(204, 204, 204));
         cbfiltro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nombres", "ID" }));
 
-        txtfiltro.setBackground(new java.awt.Color(204, 204, 204));
+        txtfiltro.setBackground(new java.awt.Color(204, 204, 255));
         txtfiltro.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtfiltroKeyTyped(evt);
