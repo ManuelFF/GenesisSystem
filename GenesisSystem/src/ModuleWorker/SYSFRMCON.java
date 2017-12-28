@@ -62,7 +62,8 @@ public class SYSFRMCON
         String St ="[STABLE]";
         return St;
     }
-    
+
+//##############################################################################################################    
     //TITLES
     /*
         los Titles son los titulos que cada formulario poseera y que seran
@@ -121,19 +122,7 @@ public class SYSFRMCON
     {
       p.setBackground(Color.GRAY.brighter());
     }
-    
-    //MANTENER CLIENTEs
-    public String T_MantenerClientes()
-    {
-        String t = ALFA()+" Mantener Clientes";
-        return t;
-    }
-    
-    public void B_MantenerClientes(Container p)
-    {
-        p.setBackground(Color.GRAY.brighter());
-    }
-    
+       
     //PERMISOS
     public String T_Permisos()
     {
@@ -158,5 +147,33 @@ public class SYSFRMCON
         p.setBackground(Color.GRAY.brighter());
     }
     
+    //#########################################################################
+    //FORMULARIOS DE MANTENIMIENTO
+    
+    //MANTENER CLIENTES
+    public String T_MantenerClientes()
+    {
+        String t = ALFA()+" Mantener Clientes";
+        return t;
+    }
+    
+    public void B_MantenerClientes(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+
+    //MANTENER PERSONAL
+    public String T_MantenerPersonal()
+    {
+        String t = DEV()+" Mantener Personal";
+        return t;
+    }
+    
+    public void B_MantenerPersonal(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+    
+    //#########################################################################
     
 }

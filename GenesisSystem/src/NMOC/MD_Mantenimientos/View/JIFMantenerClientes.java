@@ -784,7 +784,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
         cbfiltro_J.setBackground(new java.awt.Color(204, 204, 204));
         cbfiltro_J.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Razón Social", "RUC", "ID" }));
 
-        txtfiltro_J.setBackground(new java.awt.Color(204, 204, 204));
+        txtfiltro_J.setBackground(new java.awt.Color(204, 204, 255));
         txtfiltro_J.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtfiltro_JKeyTyped(evt);

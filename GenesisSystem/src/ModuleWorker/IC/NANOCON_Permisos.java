@@ -8,7 +8,6 @@ package ModuleWorker.IC;
 import ModuleWorker.DBCON;
 import NCLPM.LOG;
 import java.sql.CallableStatement;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;

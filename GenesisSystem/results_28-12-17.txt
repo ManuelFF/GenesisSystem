@@ -1,0 +1,9 @@
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerUsuario
+HORA : 12:16:56
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el usuario con ID: USR-009
+ CON USUARIO: d
+ CON ESTADO: ACTIVO
+----------------------------------------------------
+ 

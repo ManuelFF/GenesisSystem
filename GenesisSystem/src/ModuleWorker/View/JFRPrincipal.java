@@ -11,6 +11,7 @@ import ModuleWorker.SYSWALLPCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NMOC.MD_Mantenimientos.View.JIFMantenerClientes;
+import NMOC.MD_Mantenimientos.View.JIFMantenerPersonal;
 import java.awt.Dimension;
 import java.io.File;
 import javax.swing.JFrame;
@@ -82,6 +83,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         JSMCerrarSesion = new javax.swing.JMenuItem();
         JMMantenimientos = new javax.swing.JMenu();
         JSMMantenerClientes = new javax.swing.JMenuItem();
+        JSMMantenerPersonal = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
@@ -218,6 +220,16 @@ public class JFRPrincipal extends javax.swing.JFrame
             }
         });
         JMMantenimientos.add(JSMMantenerClientes);
+
+        JSMMantenerPersonal.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        JSMMantenerPersonal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Male_User_add24.png"))); // NOI18N
+        JSMMantenerPersonal.setText("Mantener Personal");
+        JSMMantenerPersonal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JSMMantenerPersonalActionPerformed(evt);
+            }
+        });
+        JMMantenimientos.add(JSMMantenerPersonal);
 
         JMPrincipal.add(JMMantenimientos);
 
@@ -372,6 +384,39 @@ public class JFRPrincipal extends javax.swing.JFrame
 
     }//GEN-LAST:event_JSMPermisosUsuariosActionPerformed
 
+    private void JSMMantenerPersonalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMMantenerPersonalActionPerformed
+        
+        try
+        {
+            JIFMantenerPersonal personal = new JIFMantenerPersonal();
+            JFrame jf=new JFrame();
+            jf.setAlwaysOnTop(true);
+
+            if(JSMMantenerPersonal.getActionCommand().equals("Abierto"))
+                {
+                    SYSAUDIOCON sysau = new SYSAUDIOCON();
+                    sysau.E_ERROR();
+                    JOptionPane.showMessageDialog(jf,"Ya esta abierto", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+                }
+            else
+            {                
+                JSMMantenerPersonal.setActionCommand("Abierto");
+                JDEscritorio.add(personal);
+                Dimension desktopSize = JDEscritorio.getSize();
+                Dimension FrameSize = personal.getSize();
+                personal.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
+                evn.write(JMSesion.getText(), "Abrio el formulario 'Mantener Personal'", "JFPrincipal", "Menu 'Mantener Personal' Presionado");
+                personal.show();
+            }
+        }
+        catch (Exception e)
+        {
+            
+            lc.write("Error intentando abrir 'Mantenimiento Personal'", "JFRPrincipal", e);
+        }
+        
+    }//GEN-LAST:event_JSMMantenerPersonalActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -417,6 +462,7 @@ public class JFRPrincipal extends javax.swing.JFrame
     public static javax.swing.JMenu JMSesion;
     private javax.swing.JMenuItem JSMCerrarSesion;
     public static javax.swing.JMenuItem JSMMantenerClientes;
+    public static javax.swing.JMenuItem JSMMantenerPersonal;
     public static javax.swing.JMenuItem JSMMantenimientoUsuarios;
     public static javax.swing.JMenuItem JSMPermisosUsuarios;
     private javax.swing.JToolBar JTBHerramientas;

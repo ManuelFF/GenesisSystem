@@ -9,7 +9,6 @@ import ModuleWorker.Core.NOB_usuario;
 import ModuleWorker.DBCON;
 import NCLPM.LOG;
 import java.sql.CallableStatement;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
