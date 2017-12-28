@@ -33,3 +33,45 @@ ACCIÓN : Menu 'Mantener Clientes' Presionado
 TIME : 8:40:21
 ----------------------------------------------------
  
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 8:48:4
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Permisos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Permisos' Presionado
+TIME : 8:48:7
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 8:48:18
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario de selección de personal
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Buscar Personal' Presionado
+TIME : 8:54:50
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al personal JUAN JOSE ROJAS PEÑA
+FORMULARIO : JDES_seleccionarPersonal
+ACCIÓN : Tabla de personal presionado
+TIME : 8:54:50
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 8:57:10
+----------------------------------------------------
+ 
