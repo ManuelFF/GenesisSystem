@@ -188,6 +188,7 @@ public class JIFMatenerUsuario extends javax.swing.JInternalFrame
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel8.setText("ESTADO:");
 
+        CBEstado.setBackground(new java.awt.Color(204, 204, 204));
         CBEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ACTIVO", "INACTIVO" }));
         CBEstado.setEnabled(false);
 

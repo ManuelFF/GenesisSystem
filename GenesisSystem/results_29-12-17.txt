@@ -148,3 +148,21 @@ DESCRIPCIÓN : Se ha modificado el personal con ID  PER-013
  DNI: 71004147
 ----------------------------------------------------
  
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerPersonal
+HORA : 12:57:26
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el personal con ID  PER-014
+ NOMBRE: SANTOS LEON 
+ APELLIDOS: PILLIHUAMAN PICHO 
+ DNI: 10461965
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerPersonal
+HORA : 12:57:45
+TIPO : INSERCIÓN
+DESCRIPCIÓN :  Inserto la categoria OPERARIO 
+Al personal con ID PER-014 y nombre santos leon
+----------------------------------------------------
+ 

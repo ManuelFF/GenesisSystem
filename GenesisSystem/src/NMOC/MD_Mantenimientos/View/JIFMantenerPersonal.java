@@ -451,6 +451,7 @@ public class JIFMantenerPersonal extends javax.swing.JInternalFrame
         txtcelular.setBackground(new java.awt.Color(204, 204, 204));
         getContentPane().add(txtcelular, new org.netbeans.lib.awtextra.AbsoluteConstraints(113, 147, 207, -1));
 
+        CBestado.setBackground(new java.awt.Color(204, 204, 204));
         CBestado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ACTIVO", "INACTIVO" }));
         CBestado.setEnabled(false);
         getContentPane().add(CBestado, new org.netbeans.lib.awtextra.AbsoluteConstraints(113, 245, 111, -1));
@@ -495,6 +496,7 @@ public class JIFMantenerPersonal extends javax.swing.JInternalFrame
         jLabel17.setText("Apellidos:");
         getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 87, -1, -1));
 
+        CBcat.setBackground(new java.awt.Color(204, 204, 204));
         CBcat.setEnabled(false);
         getContentPane().add(CBcat, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 110, 210, -1));
 
@@ -686,13 +688,13 @@ public class JIFMantenerPersonal extends javax.swing.JInternalFrame
                      
                     //OBTENER DATOS                     
                     String id_per = txtcod.getText();
-                    String nombre =txtnombres.getText();
-                    String apellido = txtapellidos.getText();
-                    String DNI = txtdni.getText();
-                    String telefono = txttelefono.getText();
-                    String celular = txtcelular.getText();
-                    String correo = txtcorreo.getText();
-                    String direccion = JTAdireccion.getText();
+                    String nombre =txtnombres.getText().toUpperCase();
+                    String apellido = txtapellidos.getText().toUpperCase();
+                    String DNI = txtdni.getText().toUpperCase();
+                    String telefono = txttelefono.getText().toUpperCase();
+                    String celular = txtcelular.getText().toUpperCase();
+                    String correo = txtcorreo.getText().toUpperCase();
+                    String direccion = JTAdireccion.getText().toUpperCase();
                     String estado = CBestado.getSelectedItem().toString();
                     //FIN OBTENER DATOS
                     
@@ -874,13 +876,13 @@ public class JIFMantenerPersonal extends javax.swing.JInternalFrame
                      
                     //OBTENER DATOS                     
                     String id_per = txtcod.getText();
-                    String nombre =txtnombres.getText();
-                    String apellido = txtapellidos.getText();
-                    String DNI = txtdni.getText();
-                    String telefono = txttelefono.getText();
-                    String celular = txtcelular.getText();
-                    String correo = txtcorreo.getText();
-                    String direccion = JTAdireccion.getText();
+                    String nombre =txtnombres.getText().toUpperCase();
+                    String apellido = txtapellidos.getText().toUpperCase();
+                    String DNI = txtdni.getText().toUpperCase();
+                    String telefono = txttelefono.getText().toUpperCase();
+                    String celular = txtcelular.getText().toUpperCase();
+                    String correo = txtcorreo.getText().toUpperCase();
+                    String direccion = JTAdireccion.getText().toUpperCase();
                     String estado = CBestado.getSelectedItem().toString();
                     //FIN OBTENER DATOS
                     
