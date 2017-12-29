@@ -618,7 +618,7 @@
             </Property>
             <Property name="columns" type="int" value="20"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monospaced" size="11" style="1"/>
+              <Font name="Monospaced" size="10" style="1"/>
             </Property>
             <Property name="rows" type="int" value="2"/>
             <Property name="tabSize" type="int" value="2"/>

@@ -8,15 +8,19 @@ package NMOC.MD_Mantenimientos.IC;
 import ModuleWorker.DBCON;
 import NCLPM.LOG;
 import NMOC.MD_Mantenimientos.Core.NOB_personal;
+import java.awt.Color;
 import java.sql.CallableStatement;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.Types;
 import java.util.ArrayList;
 import javax.swing.JComboBox;
+import javax.swing.JOptionPane;
 import javax.swing.JTable;
+import javax.swing.JTextArea;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -102,7 +106,7 @@ public class MICROCON_MantenerPersonal
              DBCON RCN = new DBCON();
 
             // Llamada al procedimiento almacenado
-            CallableStatement cst = RCN.conector().prepareCall("{call usp_insertar_personal (?,?,?,?,?,?,?,?,?)}");
+            CallableStatement cst = RCN.conector().prepareCall("{call usp_insertar_personal(?,?,?,?,?,?,?,?,?)}");
             // Parametro del procedimiento almacenado
             cst.setString(1, codPER);
             cst.setString(2, nom);
@@ -123,6 +127,129 @@ public class MICROCON_MantenerPersonal
             } 
     }
     
+    //MODIFICAR PERSONAL
+    public void ModificarPersonal(String codPER, String nom,String ape,String dni, String dir,String numtelf,String numcel,String corre,String estado)
+    {
+      try{
+             DBCON RCN = new DBCON();
+
+            // Llamada al procedimiento almacenado
+            CallableStatement cst = RCN.conector().prepareCall("{call usp_modificar_personal(?,?,?,?,?,?,?,?,?)}");
+            // Parametro del procedimiento almacenado
+            cst.setString(1, codPER);
+            cst.setString(2, nom);
+            cst.setString(3, ape);
+            cst.setString(4, dni);
+            cst.setString(5, dir);
+            cst.setString(6, numtelf);
+            cst.setString(7, numcel);
+            cst.setString(8, corre);
+            cst.setString(9, estado);
+            // Ejecuta el procedimiento almacenado
+            cst.execute();
+            cst.close();
+
+         }catch (SQLException ex) 
+            {
+                 lc.write("Problema al intentar insertar un Personal en el metodo 'InsertarPersonal'", "MICROCON_MantenerPersonal linea 42", ex);             
+            } 
+    }
+    
+    //OBTIENE EL COD DE UNA CAT ENVIANDO UN DESC_CAT
+    public String ObtenerIDCAT( String DESC_CAT)
+    { 
+        try {     
+              DBCON RCN = new DBCON();
+              CallableStatement cst =null;
+              cst = RCN.conector().prepareCall("{?=call F_retorno_IDCAT(?)}");
+              cst.setString(2, DESC_CAT);
+              cst.registerOutParameter(1, Types.VARCHAR);
+              cst.execute();
+              String resultado = cst.getString(1);
+              return resultado;
+            }
+              catch (SQLException ex) 
+               {
+                    lc.write("Error en el metodo ObtenerIDCAT", "MICROCON_MantenerPersonal", ex);
+               } finally 
+                {
+                  try 
+                  {
+                      
+                  } 
+                    catch (Exception ex) 
+                    {
+                      lc.write("Error en el metodo ObtenerIDCAT", "MICROCON_MantenerPersonal", ex);
+                    }
+                }    
+        return "NULL";
+    }
+    
+    //INSERTA UN DETALLE DE CATEGORIA AL PERSONAL
+    public void insertarDETPER(String codPER, String IDCAT)
+    {
+                    
+       try {
+            DBCON RCN = new DBCON();
+            CallableStatement cst = RCN.conector().prepareCall("{call usp_insertar_det_per(?,?)}");
+            cst.setString(1, codPER);
+            cst.setString(2, IDCAT);
+            cst.execute();
+            cst.close();
+        } catch (SQLException ex)
+            {
+               lc.write("Error en el metodo insertarDETPER", "MICROCON_MantenerPersonal", ex);
+            } finally 
+                {
+                }    
+    }   
+    
+    //QUITA UN DETALLE DE CATEGORIA AL PERSONAL
+    public void QuitarDETPER(String codPER, String IDCAT)
+    {
+                    
+       try {
+            DBCON RCN = new DBCON();
+            CallableStatement cst = RCN.conector().prepareCall("{call usp_eliminar_det_per(?,?)}");
+            cst.setString(1, codPER);
+            cst.setString(2, IDCAT);
+            cst.execute();
+            cst.close();
+        } catch (SQLException ex)
+            {
+               lc.write("Error en el metodo QuitarDETPER", "MICROCON_MantenerPersonal", ex);
+            } finally 
+               {
+               }    
+    }   
+    
+    //CONSULTA UN DETALLE DE CATEGORIA
+    public void ConsultarDetCat(String cod, JTextArea jta)
+    {
+        try
+        {   
+            DBCON RCN = new DBCON();
+            st=RCN.conector().prepareStatement("SELECT * from V_cat_IDPER where ID_PER = "+"'"+cod+"'");
+            rs=st.executeQuery();
+            jta.setText("");jta.setForeground(Color.BLUE);
+            while (rs.next())
+            {            
+
+            String IDPER = rs.getString("ID_PER");
+            String ID_CAT = rs.getString("ID_CAT");
+            String desc = rs.getString("DESC_CAT");            
+            jta.append("ID_PER : "+IDPER+"\n"+"ID_CAT : "+ID_CAT+"\n"+"DESCRIPCIÓN : "+desc+"\n\n");
+            }
+        }
+        catch (SQLException e) 
+            {
+               lc.write("Error en el metodo ConsultarDetCat", "MICROCON_MantenerPersonal", e);
+            }
+        catch (Exception ex)
+            {
+               lc.write("Error en el metodo ConsultarDetCat", "MICROCON_MantenerPersonal", ex);
+            }
+    }
     
     
     //##########################################################################
