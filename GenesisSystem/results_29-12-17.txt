@@ -166,3 +166,34 @@ DESCRIPCIÓN :  Inserto la categoria OPERARIO
 Al personal con ID PER-014 y nombre santos leon
 ----------------------------------------------------
  
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerPersonal
+HORA : 13:7:18
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el personal con ID  PER-014
+ NOMBRE: SANTOS LEON 
+ APELLIDOS: PILLIHUAMAN PICHO 
+ DNI: 10461965
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerPersonal
+HORA : 13:7:22
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el personal con ID  PER-014
+ NOMBRE: SANTOS LEON 
+ APELLIDOS: PILLIHUAMAN PICHO 
+ DNI: 10461965
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerUsuario
+HORA : 13:20:43
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado al usuario con ID: USR-009
+ Se listarán los datos.
+ USUARIO: d
+ ESTADO: INACTIVO
+ TIPO: SUPER USUARIO
+----------------------------------------------------
+ 

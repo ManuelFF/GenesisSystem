@@ -1783,3 +1783,612 @@ ACCIÓN : Tabla de Personal presionado
 TIME : 12:58:43
 ----------------------------------------------------
  
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 12:59:45
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Personal'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Personal' Presionado
+TIME : 12:59:47
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal SANTOS LEON PILLIHUAMAN PICHO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 12:59:55
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal SANTOS LEON PILLIHUAMAN PICHO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:0:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal SANTOS LEON PILLIHUAMAN PICHO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:0:35
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Consultar' Categoria
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Consultar' Presionado
+TIME : 13:0:49
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal SANTOS LEON PILLIHUAMAN PICHO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:0:50
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Consultar' Categoria
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Consultar' Presionado
+TIME : 13:0:52
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Consultar' Categoria
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Consultar' Presionado
+TIME : 13:1:9
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal SANTOS LEON PILLIHUAMAN PICHO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:1:10
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal SANTOS LEON PILLIHUAMAN PICHO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:1:10
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal SANTOS LEON PILLIHUAMAN PICHO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:1:22
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal SANTOS LEON PILLIHUAMAN PICHO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:2:7
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Consultar' Categoria
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Consultar' Presionado
+TIME : 13:2:8
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Consultar' Categoria
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Consultar' Presionado
+TIME : 13:2:9
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Consultar' Categoria
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Consultar' Presionado
+TIME : 13:2:10
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Consultar' Categoria
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Consultar' Presionado
+TIME : 13:2:11
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Consultar' Categoria
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Consultar' Presionado
+TIME : 13:2:11
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Consultar' Categoria
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Consultar' Presionado
+TIME : 13:2:11
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Consultar' Categoria
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Consultar' Presionado
+TIME : 13:2:11
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Consultar' Categoria
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Consultar' Presionado
+TIME : 13:6:57
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal SANTOS LEON PILLIHUAMAN PICHO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:7:4
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal SANTOS LEON PILLIHUAMAN PICHO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:7:4
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Personal
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Modificar' Presionado
+TIME : 13:7:5
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Personal
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Modificar' Presionado
+TIME : 13:7:18
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Modifico un Personal
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Actualizar' Presionado
+TIME : 13:7:18
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal SANTOS LEON PILLIHUAMAN PICHO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:7:21
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal SANTOS LEON PILLIHUAMAN PICHO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:7:21
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Personal
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Modificar' Presionado
+TIME : 13:7:22
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Personal
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Modificar' Presionado
+TIME : 13:7:22
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Modifico un Personal
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Actualizar' Presionado
+TIME : 13:7:22
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal SANTOS LEON PILLIHUAMAN PICHO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:7:24
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal SANTOS LEON PILLIHUAMAN PICHO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:7:24
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal SANTOS LEON PILLIHUAMAN PICHO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:7:24
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal SANTOS LEON PILLIHUAMAN PICHO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:10:27
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal SANTOS LEON PILLIHUAMAN PICHO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:10:27
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:10:53
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Consultar' Categoria
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Consultar' Presionado
+TIME : 13:10:59
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal Tyrone Gonzales
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:12:18
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal Tyrone Gonzales
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 13:12:18
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de un cliente natural
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 13:12:19
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Personal'
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 13:12:21
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 13:12:23
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente natural BERNA QUINTANA -
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Tabla de Clientes Naturales presionado
+TIME : 13:12:27
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de un cliente natural
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 13:12:29
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el botón 'Nuevo' cliente juridico 
+FORMULARIO : JIFMantenerCliente linea 344
+ACCIÓN : Botón 'Nuevo_Juridico' presionado
+TIME : 13:12:35
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de un cliente juridico
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 13:12:37
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Clientes'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 13:12:38
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 13:12:39
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 13:20:7
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Usuario'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Usuario' Presionado
+TIME : 13:20:10
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Usuario'
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 13:20:13
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Permisos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Permisos' Presionado
+TIME : 13:20:15
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Usuario'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Usuario' Presionado
+TIME : 13:20:26
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Permisos'
+FORMULARIO : JIFPermisos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 13:20:26
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario Ronald Poma Matheus ha sido seleccionado
+TIME : 13:20:28
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario Ronald Poma Matheus ha sido seleccionado
+TIME : 13:20:28
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el boton modificar
+FORMULARIO : JIFMantenerUsuario linea 432
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 13:20:31
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : hizo click en el boton modificar
+FORMULARIO : JIFMantenerUsuario linea 432
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 13:20:42
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Modifico un nuevo usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 13:20:43
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Usuario'
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 13:20:44
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Permisos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Permisos' Presionado
+TIME : 13:20:46
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Permisos'
+FORMULARIO : JIFPermisos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 13:20:53
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Permisos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Permisos' Presionado
+TIME : 13:20:56
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Permisos'
+FORMULARIO : JIFPermisos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 13:20:57
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Personal'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Personal' Presionado
+TIME : 13:21:0
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 13:21:18
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Clientes'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 13:21:25
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Usuario'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Usuario' Presionado
+TIME : 13:21:52
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario de selección de personal
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Buscar Personal' Presionado
+TIME : 13:21:54
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Usuario'
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 13:21:56
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Usuario'
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 13:21:56
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 13:36:46
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Clientes'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 13:36:48
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Usuario'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Usuario' Presionado
+TIME : 13:36:52
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Usuario'
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 13:36:54
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 16:1:2
+----------------------------------------------------
+ 
+USUARIO : Aún no definido
+DESCRIPCIÓN : Salio del sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'SALIR' Presionado
+TIME : 16:4:5
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 16:4:16
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 16:4:18
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 16:5:57
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 16:6:1
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Personal'
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 16:6:33
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Personal'
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 16:23:2
+----------------------------------------------------
+ 
+USUARIO : Aún no definido
+DESCRIPCIÓN : Salio del sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'SALIR' Presionado
+TIME : 16:23:30
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 16:23:35
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 16:23:36
+----------------------------------------------------
+ 

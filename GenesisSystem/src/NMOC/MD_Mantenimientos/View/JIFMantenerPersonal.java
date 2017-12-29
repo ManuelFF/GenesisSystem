@@ -44,7 +44,6 @@ public class JIFMantenerPersonal extends javax.swing.JInternalFrame
     EVENTS evn = new EVENTS();
     RESULTS rslt = new RESULTS();
     SYSFRMCON sysfrm = new SYSFRMCON();
-    JFrame form;
     Color ColorInicial;
     boolean condicion_datos = false;
     
@@ -163,7 +162,7 @@ public class JIFMantenerPersonal extends javax.swing.JInternalFrame
         NOB_personal ultObjeto = null;
 				
 	if( PERcon.tamaño()==0 ) // Array vacío
-		codigo = "CLI-"+codigo;
+		codigo = "PER-"+codigo;
 	else {
 		// La posición del último objeto se obtiene con tamaño()-1
 		// Obtenemos el último objeto del ArrayList

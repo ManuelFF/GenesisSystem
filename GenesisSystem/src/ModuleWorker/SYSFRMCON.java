@@ -174,6 +174,20 @@ public class SYSFRMCON
         p.setBackground(Color.GRAY.brighter());
     }
     
+    //MANTENER PRODUCTO
+    public String T_MantenerProducto()
+    {
+        String t = DEV()+" Mantener Producto";
+        return t;
+    }
+    
+    public void B_MantenerProducto(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+       
+            
+    
     //#########################################################################
     
 }
