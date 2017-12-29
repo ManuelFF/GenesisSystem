@@ -1763,7 +1763,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
             clearFRM_juri();
             editFRM_juri(false);
             ena_disaButtons_juri(true, false, false, true);
-            btnnuevo_J.setText("Nuevo");
+            btnmodificar_J.setText("Modificar");
             txtfiltro_J.setEnabled(true);cbfiltro_J.setEnabled(true);
             condicion_datos = false;
             reiniciarColors_juri();
