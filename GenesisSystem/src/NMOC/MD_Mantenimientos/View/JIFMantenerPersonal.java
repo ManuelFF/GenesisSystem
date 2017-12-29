@@ -64,8 +64,8 @@ public class JIFMantenerPersonal extends javax.swing.JInternalFrame
     public JIFMantenerPersonal() 
     {
         initComponents();
-        this.setTitle(sysfrm.T_MantenerClientes());
-        sysfrm.B_MantenerClientes(this.getContentPane());
+        this.setTitle(sysfrm.T_MantenerPersonal());
+        sysfrm.B_MantenerPersonal(this.getContentPane());
         lblusuario.setText(JFRPrincipal.JMSesion.getText());
         fecha();
         
