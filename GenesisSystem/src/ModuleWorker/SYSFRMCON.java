@@ -153,7 +153,7 @@ public class SYSFRMCON
     //MANTENER CLIENTES
     public String T_MantenerClientes()
     {
-        String t = ALFA()+" Mantener Clientes";
+        String t = BETA()+" Mantener Clientes";
         return t;
     }
     
@@ -165,7 +165,7 @@ public class SYSFRMCON
     //MANTENER PERSONAL
     public String T_MantenerPersonal()
     {
-        String t = DEV()+" Mantener Personal";
+        String t = ALFA()+" Mantener Personal";
         return t;
     }
     
