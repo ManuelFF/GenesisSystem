@@ -170,7 +170,6 @@ public class JIFMantenerProductos extends javax.swing.JInternalFrame
     //Habilita los campos de texto
     private void editFRM(boolean cond)
     {
-        txtcod.setEditable(cond);
         txtnombres.setEditable(cond);
         CBestado.setEnabled(cond);
     }
