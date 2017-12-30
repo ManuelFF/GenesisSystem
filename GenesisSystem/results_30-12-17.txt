@@ -25,3 +25,30 @@ DESCRIPCIÓN : Se ha modificado el producto con ID  PRO-012
  ESTADO: ACTIVO
 ----------------------------------------------------
  
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerImplementos
+HORA : 10:32:54
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el Implemento con ID  MAQ-010
+ NOMBRE: MAQUINA 2  
+ ESTADO: ACTIVO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerImplementos
+HORA : 10:33:1
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el Implemento con ID  MAQ-010
+ NOMBRE: MAQUINA 1 
+ ESTADO: ACTIVO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerImplementos
+HORA : 10:34:24
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el Implemento con ID  MAQ-010
+ NOMBRE: MAQUINA 1 
+ ESTADO: INACTIVO
+----------------------------------------------------
+ 

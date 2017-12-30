@@ -11,6 +11,7 @@ import ModuleWorker.SYSWALLPCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NMOC.MD_Mantenimientos.View.JIFMantenerClientes;
+import NMOC.MD_Mantenimientos.View.JIFMantenerImplementos;
 import NMOC.MD_Mantenimientos.View.JIFMantenerPersonal;
 import NMOC.MD_Mantenimientos.View.JIFMantenerProductos;
 import java.awt.Dimension;
@@ -86,6 +87,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         JSMMantenerClientes = new javax.swing.JMenuItem();
         JSMMantenerPersonal = new javax.swing.JMenuItem();
         JSMMantenerProducto = new javax.swing.JMenuItem();
+        JSMMantenerImplementos = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
@@ -242,6 +244,16 @@ public class JFRPrincipal extends javax.swing.JFrame
             }
         });
         JMMantenimientos.add(JSMMantenerProducto);
+
+        JSMMantenerImplementos.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        JSMMantenerImplementos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/machinesV1.png"))); // NOI18N
+        JSMMantenerImplementos.setText("Mantener Implementos");
+        JSMMantenerImplementos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JSMMantenerImplementosActionPerformed(evt);
+            }
+        });
+        JMMantenimientos.add(JSMMantenerImplementos);
 
         JMPrincipal.add(JMMantenimientos);
 
@@ -463,6 +475,39 @@ public class JFRPrincipal extends javax.swing.JFrame
         
     }//GEN-LAST:event_JSMMantenerProductoActionPerformed
 
+    private void JSMMantenerImplementosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMMantenerImplementosActionPerformed
+
+    try
+    {
+        JIFMantenerImplementos producto = new JIFMantenerImplementos();
+        JFrame jf=new JFrame();
+        jf.setAlwaysOnTop(true);
+
+        if(JSMMantenerImplementos.getActionCommand().equals("Abierto"))
+            {
+                SYSAUDIOCON sysau = new SYSAUDIOCON();
+                sysau.E_ERROR();
+                JOptionPane.showMessageDialog(jf,"Ya esta abierto", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+            }
+        else
+        {                
+            JSMMantenerImplementos.setActionCommand("Abierto");
+            JDEscritorio.add(producto);
+            Dimension desktopSize = JDEscritorio.getSize();
+            Dimension FrameSize = producto.getSize();
+            producto.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
+            evn.write(JMSesion.getText(), "Abrio el formulario 'Mantener Implementos'", "JFPrincipal", "Menu 'Mantener Implementos' Presionado");
+            producto.show();
+        }
+    }
+    catch (Exception e)
+    {
+
+        lc.write("Error intentando abrir 'Mantenimiento Implementos'", "JFRPrincipal", e);
+    }
+
+    }//GEN-LAST:event_JSMMantenerImplementosActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -508,6 +553,7 @@ public class JFRPrincipal extends javax.swing.JFrame
     public static javax.swing.JMenu JMSesion;
     private javax.swing.JMenuItem JSMCerrarSesion;
     public static javax.swing.JMenuItem JSMMantenerClientes;
+    public static javax.swing.JMenuItem JSMMantenerImplementos;
     public static javax.swing.JMenuItem JSMMantenerPersonal;
     public static javax.swing.JMenuItem JSMMantenerProducto;
     public static javax.swing.JMenuItem JSMMantenimientoUsuarios;

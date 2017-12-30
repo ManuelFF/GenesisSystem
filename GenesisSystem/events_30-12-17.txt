@@ -621,3 +621,129 @@ ACCIÓN : Presiono Botón 'Salir'
 TIME : 10:9:57
 ----------------------------------------------------
  
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:31:12
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Implementos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Implementos' Presionado
+TIME : 10:31:16
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Implemento'
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:32:22
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Implementos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Implementos' Presionado
+TIME : 10:32:24
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Impemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Implemento' presionado
+TIME : 10:32:44
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Impemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Implemento' presionado
+TIME : 10:32:44
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Impemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Implemento' presionado
+TIME : 10:32:53
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Inserto un nuevo Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Insertar' Presionado
+TIME : 10:32:54
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 2 
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 10:32:56
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 10:32:57
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 10:33:1
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Modifico un Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Actualizar' Presionado
+TIME : 10:33:1
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Implemento'
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:34:2
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Implementos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Implementos' Presionado
+TIME : 10:34:3
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 1
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 10:34:14
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 10:34:17
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 10:34:24
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Modifico un Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Actualizar' Presionado
+TIME : 10:34:24
+----------------------------------------------------
+ 

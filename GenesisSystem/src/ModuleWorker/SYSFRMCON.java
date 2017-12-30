@@ -186,7 +186,19 @@ public class SYSFRMCON
         p.setBackground(Color.GRAY.brighter());
     }
        
-            
+    //MANTENER IMPLEMENTO
+    public String T_MantenerImplemento()
+    {
+        String t = DEV()+" Mantener Implemento";
+        return t;
+    }
+    
+    public void B_MantenerImplemento(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+       
+               
     
     //#########################################################################
     
