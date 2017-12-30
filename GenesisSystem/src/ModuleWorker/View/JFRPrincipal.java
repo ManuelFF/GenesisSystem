@@ -234,7 +234,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         JMMantenimientos.add(JSMMantenerPersonal);
 
         JSMMantenerProducto.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        JSMMantenerProducto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Male_User_add24.png"))); // NOI18N
+        JSMMantenerProducto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/ProductsV2_24.png"))); // NOI18N
         JSMMantenerProducto.setText("Mantener Producto");
         JSMMantenerProducto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
