@@ -1090,3 +1090,10 @@ ACCIÓN : Presiono Botón 'Salir'
 TIME : 12:12:32
 ----------------------------------------------------
  
+USUARIO : Aún no definido
+DESCRIPCIÓN : Salio del sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'SALIR' Presionado
+TIME : 15:7:5
+----------------------------------------------------
+ 
