@@ -747,3 +747,248 @@ ACCIÓN : Botón 'Actualizar' Presionado
 TIME : 10:34:24
 ----------------------------------------------------
  
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:36:35
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Implementos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Implementos' Presionado
+TIME : 10:36:40
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Impemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Implemento' presionado
+TIME : 10:38:48
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Impemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Implemento' presionado
+TIME : 10:38:48
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de un Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 10:38:51
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Implemento'
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:38:53
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 10:38:54
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Producto
+FORMULARIO : JIFMantenerProductos
+ACCIÓN : Botón 'Producto' presionado
+TIME : 10:38:56
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Producto
+FORMULARIO : JIFMantenerProductos
+ACCIÓN : Botón 'Producto' presionado
+TIME : 10:38:56
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de un Producto
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 10:38:58
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Producto'
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:38:59
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Personal'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Personal' Presionado
+TIME : 10:40:51
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Personal
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Nuevo' Presionado
+TIME : 10:41:12
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Personal
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Nuevo' Presionado
+TIME : 10:41:12
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de un cliente natural
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 10:41:14
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Implementos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Implementos' Presionado
+TIME : 10:41:21
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 1
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 10:41:35
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Implemento'
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:41:46
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Personal'
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:42:13
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 10:42:15
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Clientes'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:42:35
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:43:0
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Implementos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Implementos' Presionado
+TIME : 10:43:2
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Implemento'
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:43:3
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento PUESTO DE CEBADERO
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 10:43:5
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento PUESTO DE CEBADERO
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 10:43:5
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento PUESTO DE CEBADERO
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 10:43:6
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Implemento'
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:43:6
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Implemento'
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:43:6
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Implemento'
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:43:6
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:44:52
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 10:44:53
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Clientes'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:44:55
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 10:44:58
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Clientes'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:44:58
+----------------------------------------------------
+ 

@@ -88,7 +88,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         JSMMantenerPersonal = new javax.swing.JMenuItem();
         JSMMantenerProducto = new javax.swing.JMenuItem();
         JSMMantenerImplementos = new javax.swing.JMenuItem();
-        jMenu1 = new javax.swing.JMenu();
+        JMGenerar = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
@@ -215,6 +215,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         JMMantenimientos.setText("Mantenimientos");
         JMMantenimientos.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
+        JSMMantenerClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
         JSMMantenerClientes.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         JSMMantenerClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Client1_add24.png"))); // NOI18N
         JSMMantenerClientes.setText("Mantener Clientes");
@@ -257,9 +258,9 @@ public class JFRPrincipal extends javax.swing.JFrame
 
         JMPrincipal.add(JMMantenimientos);
 
-        jMenu1.setText("Generar");
-        jMenu1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        JMPrincipal.add(jMenu1);
+        JMGenerar.setText("Generar");
+        JMGenerar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        JMPrincipal.add(JMGenerar);
 
         jMenu3.setText("Consultar");
         jMenu3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -548,6 +549,7 @@ public class JFRPrincipal extends javax.swing.JFrame
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane JDEscritorio;
+    private javax.swing.JMenu JMGenerar;
     private javax.swing.JMenu JMMantenimientos;
     private javax.swing.JMenuBar JMPrincipal;
     public static javax.swing.JMenu JMSesion;
@@ -568,7 +570,6 @@ public class JFRPrincipal extends javax.swing.JFrame
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;

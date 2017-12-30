@@ -4,3 +4,27 @@ ERROR : java.lang.ArrayIndexOutOfBoundsException: 3 >= 3
 TIME : 9:19:58
 ----------------------------------------------------
  
+DESCRIPCIÓN : No se ha podido cerrar el formulario 'Mantener Implemento' debido a un error inesperado
+CLASE : JIFMantenerImplementos
+ERROR : java.lang.IllegalMonitorStateException
+TIME : 10:43:3
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido cerrar el formulario 'Mantener Implemento' debido a un error inesperado
+CLASE : JIFMantenerImplementos
+ERROR : java.lang.IllegalMonitorStateException
+TIME : 10:43:6
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido cerrar el formulario 'Mantener Implemento' debido a un error inesperado
+CLASE : JIFMantenerImplementos
+ERROR : java.lang.IllegalMonitorStateException
+TIME : 10:43:6
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido cerrar el formulario 'Mantener Implemento' debido a un error inesperado
+CLASE : JIFMantenerImplementos
+ERROR : java.lang.IllegalMonitorStateException
+TIME : 10:43:6
+----------------------------------------------------
+ 

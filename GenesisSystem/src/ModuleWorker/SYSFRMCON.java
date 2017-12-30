@@ -196,10 +196,11 @@ public class SYSFRMCON
     public void B_MantenerImplemento(Container p)
     {
         p.setBackground(Color.GRAY.brighter());
-    }
-       
-               
+    }            
     
     //#########################################################################
+    //FORMULARIOS GENERAR
+    
+    
     
 }
