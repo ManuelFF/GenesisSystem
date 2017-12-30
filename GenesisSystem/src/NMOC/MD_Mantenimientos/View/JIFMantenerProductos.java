@@ -6,6 +6,8 @@
 package NMOC.MD_Mantenimientos.View;
 
 import ModuleWorker.IC.MWCON;
+import ModuleWorker.IC.ShakingComponent;
+import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSFRMCON;
 import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
@@ -19,6 +21,8 @@ import java.awt.event.KeyEvent;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumnModel;
@@ -187,7 +191,21 @@ public class JIFMantenerProductos extends javax.swing.JInternalFrame
             }
     }
     
+    //ENABLE BOTONES
+    private void ena_disaButtons(boolean nuevo, boolean modificar, boolean cancelar, boolean salir)
+    {
+        btnnuevo.setEnabled(nuevo);
+        btnmodificar.setEnabled(modificar);
+        btncancelar.setEnabled(cancelar);
+        btnsalir.setEnabled(salir);
+    } 
     
+    //REINICIAR COLOREs
+    private void reiniciarColors()
+    {
+        txtnombres.setBackground(ColorInicial);
+        CBestado.setBackground(ColorInicial);
+    }
     
     
     
@@ -425,51 +443,190 @@ public class JIFMantenerProductos extends javax.swing.JInternalFrame
 
     private void btnnuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnuevoActionPerformed
 
-        NuevoCodigoPRO();
-        
-        
+        try 
+        {
+            //EJECUTADO ANTES DE TODO
+            SYSAUDIOCON sysau = new SYSAUDIOCON();
+            
+            //EJECUTADO ANTES DE TODA CONDICIONAL
+            JFrame jf = new JFrame();
+            jf.setAlwaysOnTop(true);
+            clearCacheDB();
+            
+            evn.write(lblusuario.getText(),"Hizo click en el botón 'Nuevo' Producto"  , "JIFMantenerProductos", "Botón 'Producto' presionado");
+            
+            if(btnnuevo.getText().equals("Nuevo"))
+            {
+                ClearFRM();
+                NuevoCodigoPRO();
+                editFRM(true);
+                ena_disaButtons(true, false, true, false);
+                btnnuevo.setText("Insertar");
+                txtfiltro.setEnabled(false);cbfiltro.setEnabled(false);
+                condicion_datos = true;
+            }
+             else
+                {
+                    //LOGICA DE VERIFICACION
+                   /*
+                        la logica de verificacion usada sera LS.
+                        la cual significa loica separativa; brevemente lo que hace es
+                        verificar cada bloque a la vez en ves de verificar bloque por bloque
+                   */
+                    if(txtnombres.getText().trim().equals(""))
+                    {
+                       sysau.E_ERROR();
+                       txtnombres.setBackground(Color.RED);
+                       ShakingComponent sh_nombre = new ShakingComponent(txtnombres);
+                       sh_nombre.startShake();
+                       JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Nombre' para el Producto", "Falta Nombre del Producto", JOptionPane.ERROR_MESSAGE);
+                       sysau.S_STOP();
+                    }else
+                        {
+                            //FIN LOGICA DE VERIFICACIOn
+                            //INICIO PROGRAMACION DE INGRESO
+                            
+                            //OBTENER DATOS
+                            String cod = txtcod.getText();
+                            String nombre = txtnombres.getText().toUpperCase();
+                            String estado = CBestado.getSelectedItem().toString();
+                            //FIN OBTENER DATOS
+                            
+                            //INICIO CONTROLADOR QUE INSERTA
+                            PROcon.InsertarProducto(cod, nombre, estado);
+                            //FIN CONTROLADOR QUE INSERTA
+                            
+                            evn.write(lblusuario.getText(), "Inserto un nuevo Producto", "JIFMantenerProducto", "Botón 'Insertar' Presionado");
+                            rslt.write(lblusuario.getText(), "JIFMantenerProducto", "INSERCIÓN", "Se ha insertado el producto con ID  "+cod+
+                                                        "\n NOMBRE: "+nombre+" \n ESTADO: "+estado);
+                        
+                            sysau.E_INFORMATION();
+                            JOptionPane.showMessageDialog(jf, "Producto Insertado con exito!", "Producto Insertado", JOptionPane.INFORMATION_MESSAGE);
+                            ClearFRM();
+                            editFRM(false);
+                            ena_disaButtons(true, false, false, true);
+                            btnnuevo.setText("Nuevo");
+                            txtfiltro.setEnabled(true);cbfiltro.setEnabled(true);
+                            condicion_datos = false;
+                            reiniciarColors();
+                            clearCacheDB();
+                        }
+                }
+        } catch (Exception e) 
+            {
+                lc.write("Ha ocurrido un error al intentar insertar un nuevo producto", "JIFMantenerProducto", e);
+            }
         
     }//GEN-LAST:event_btnnuevoActionPerformed
 
     private void btnmodificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmodificarActionPerformed
 
+    try 
+    {
+        //EJECUTADO ANTES DE TODO
+        SYSAUDIOCON sysau = new SYSAUDIOCON();
+
+        //EJECUTADO ANTES DE TODA CONDICIONAL
+        JFrame jf = new JFrame();
+        jf.setAlwaysOnTop(true);
+        clearCacheDB();
+
+        evn.write(lblusuario.getText(),"Hizo click en el botón 'Modificar' Producto"  , "JIFMantenerProductos", "Botón 'Modificar' presionado");
+
+        if(btnmodificar.getText().equals("Modificar"))
+        {
+            editFRM(true);
+            ena_disaButtons(false, true, true, false);
+            btnmodificar.setText("Actualizar");
+            txtfiltro.setEnabled(false);cbfiltro.setEnabled(false);
+            condicion_datos = true;
+        }
+         else
+            {
+                //LOGICA DE VERIFICACION
+               /*
+                    la logica de verificacion usada sera LS.
+                    la cual significa loica separativa; brevemente lo que hace es
+                    verificar cada bloque a la vez en ves de verificar bloque por bloque
+               */
+                if(txtnombres.getText().trim().equals(""))
+                {
+                   sysau.E_ERROR();
+                   txtnombres.setBackground(Color.RED);
+                   ShakingComponent sh_nombre = new ShakingComponent(txtnombres);
+                   sh_nombre.startShake();
+                   JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Nombre' para el Producto", "Falta Nombre del Producto", JOptionPane.ERROR_MESSAGE);
+                   sysau.S_STOP();
+                }else
+                    {
+                        //FIN LOGICA DE VERIFICACIOn
+                        //INICIO PROGRAMACION DE INGRESO
+
+                        //OBTENER DATOS
+                        String cod = txtcod.getText();
+                        String nombre = txtnombres.getText().toUpperCase();
+                        String estado = CBestado.getSelectedItem().toString();
+                        //FIN OBTENER DATOS
+
+                        //INICIO CONTROLADOR QUE INSERTA
+                        PROcon.ModificarProducto(cod, nombre, estado);
+                        //FIN CONTROLADOR QUE INSERTA
+
+                        evn.write(lblusuario.getText(), "Modifico un Producto", "JIFMantenerProducto", "Botón 'Actualizar' Presionado");
+                        rslt.write(lblusuario.getText(), "JIFMantenerProducto", "MODIFICACIÓN", "Se ha modificado el producto con ID  "+cod+
+                                                    "\n NOMBRE: "+nombre+" \n ESTADO: "+estado);
+
+                        sysau.E_INFORMATION();
+                        JOptionPane.showMessageDialog(jf, "Producto Modificado con exito!", "Producto Modificado", JOptionPane.INFORMATION_MESSAGE);
+                        ClearFRM();
+                        editFRM(false);
+                        ena_disaButtons(true, false, false, true);
+                        btnnuevo.setText("Nuevo");
+                        txtfiltro.setEnabled(true);cbfiltro.setEnabled(true);
+                        condicion_datos = false;
+                        reiniciarColors();
+                        clearCacheDB();
+                    }
+            }
+    } catch (Exception e) 
+        {
+            lc.write("Ha ocurrido un error al intentar insertar un nuevo producto", "JIFMantenerProducto", e);
+        }
        
     }//GEN-LAST:event_btnmodificarActionPerformed
 
     private void btncancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelarActionPerformed
-/*
-        try
-        {
-            evn.write(lblusuario.getText(), "Ha cancelado la inserción o modificación de un cliente natural", "JIFMantenerClientes -> Natural", "Botón 'Cancelar' Presionado");
-            clearFRM();
-            JTAcat.setText("");
-            btnnuevo.setText("Nuevo");
-            btnmodificar.setText("Modificar");
-            clearCacheDB();
-            reiniciarColors();
-            editFRM(false);
-            txtfiltro.setEnabled(true);cbfiltro.setEnabled(true);
-            condicion_datos = false;
-            ena_disaButtons(true, false, false, true);
-            ena_disaCAT(false);
 
-        } catch (Exception e)
-        {
-            lc.write("Ha ocurrido algun error al intentar cancelar una inserción o modificacion", "JIFMantenerClientes -> naturales", e);
-        }
-*/
+    try
+    {
+        evn.write(lblusuario.getText(), "Ha cancelado la inserción o modificación de un Producto", "JIFMantenerProducto", "Botón 'Cancelar' Presionado");
+        ClearFRM();
+        btnnuevo.setText("Nuevo");
+        btnmodificar.setText("Modificar");
+        clearCacheDB();
+        reiniciarColors();
+        editFRM(false);
+        txtfiltro.setEnabled(true);cbfiltro.setEnabled(true);
+        condicion_datos = false;
+        ena_disaButtons(true, false, false, true);
+
+    } catch (Exception e)
+    {
+        lc.write("Ha ocurrido algun error al intentar cancelar una inserción o modificacion", "JIFMantenerProducto", e);
+    }
+
     }//GEN-LAST:event_btncancelarActionPerformed
 
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
 
     try
     {
-        evn.write(lblusuario.getText(), "Ha salido del formulario 'Mantener Personal'", "JIFMantenerPersonal", "Presiono Botón 'Salir'");
+        evn.write(lblusuario.getText(), "Ha salido del formulario 'Mantener Producto'", "JIFMantenerProducto", "Presiono Botón 'Salir'");
         JFRPrincipal.JSMMantenerProducto.setActionCommand("CERRADO");
         this.dispose();
     } catch (Exception e)
     {
-        lc.write("No se ha podido cerrar el formulario 'Mantener Personal' debido a un error inesperado", "JIFMantenerPersonal", e);
+        lc.write("No se ha podido cerrar el formulario 'Mantener Producto' debido a un error inesperado", "JIFMantenerProducto", e);
     }
     
     }//GEN-LAST:event_btnsalirActionPerformed
@@ -486,16 +643,16 @@ public class JIFMantenerProductos extends javax.swing.JInternalFrame
             int row = JTProducto.rowAtPoint(evt.getPoint());
 
             txtcod.setText(""+JTProducto.getValueAt(row, 0));
-            txtnombres.setText(""+JTProducto.getValueAt(row, 2));
-            CBestado.setSelectedItem(""+JTProducto.getValueAt(row, 3));
+            txtnombres.setText(""+JTProducto.getValueAt(row, 1));
+            CBestado.setSelectedItem(""+JTProducto.getValueAt(row, 2));
 
-            String select = ""+JTProducto.getValueAt(row, 2);
+            String select = ""+JTProducto.getValueAt(row, 1);
 
-            evn.write(lblusuario.getText(),"Ha seleccionado al Personal "+select,"JIFMantenerPersonal", "Tabla de Personal presionado");
+            evn.write(lblusuario.getText(),"Ha seleccionado al Producto "+select,"JIFMantenerProducto", "Tabla de Producto presionado");
         }
     } catch (Exception e) 
      {
-        lc.write("Error al seleccionar personal", "JIFMantenerPersonal", e);
+        lc.write("Error al seleccionar Producto", "JIFMantenerProducto", e);
      }
         
     }//GEN-LAST:event_JTProductoMouseClicked

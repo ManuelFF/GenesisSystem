@@ -8,6 +8,7 @@ package NMOC.MD_Mantenimientos.IC;
 import ModuleWorker.DBCON;
 import NCLPM.LOG;
 import NMOC.MD_Mantenimientos.Core.NOB_producto;
+import java.sql.CallableStatement;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
@@ -63,6 +64,50 @@ public class MICROCON_MantenerProductos
             {
                 lc.write("Error no controlado en el metodo 'CargarPRO'", "MICROCON_MantenerProductos linea 98", ex);
             }
+    }
+    
+    //INSERTAR PERSONAL
+    public void InsertarProducto(String cod, String nom,String estado)
+    {
+      try{
+            DBCON RCN = new DBCON();
+
+            // Llamada al procedimiento almacenado
+            CallableStatement cst = RCN.conector().prepareCall("{call usp_insertar_producto(?,?,?)}");
+            // Parametro del procedimiento almacenado
+            cst.setString(1, cod);
+            cst.setString(2, nom);
+            cst.setString(3, estado);
+            // Ejecuta el procedimiento almacenado
+            cst.execute();
+            cst.close();
+
+         }catch (SQLException ex) 
+            {
+                 lc.write("Problema al intentar insertar un Producto en el metodo 'InsertarProducto'", "MICROCON_MantenerProducto linea 42", ex);             
+            } 
+    }
+    
+    //INSERTAR PERSONAL
+    public void ModificarProducto(String cod, String nom,String estado)
+    {
+      try{
+            DBCON RCN = new DBCON();
+
+            // Llamada al procedimiento almacenado
+            CallableStatement cst = RCN.conector().prepareCall("{call usp_modificar_producto(?,?,?)}");
+            // Parametro del procedimiento almacenado
+            cst.setString(1, cod);
+            cst.setString(2, nom);
+            cst.setString(3, estado);
+            // Ejecuta el procedimiento almacenado
+            cst.execute();
+            cst.close();
+
+         }catch (SQLException ex) 
+            {
+                 lc.write("Problema al intentar insertar un Producto en el metodo 'InsertarProducto'", "MICROCON_MantenerProducto linea 42", ex);             
+            } 
     }
   
     

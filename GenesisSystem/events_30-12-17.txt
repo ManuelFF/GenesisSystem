@@ -1,35 +1,623 @@
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 9:19:34
+----------------------------------------------------
+ 
+USUARIO : Aún no definido
+DESCRIPCIÓN : Salio del sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'SALIR' Presionado
+TIME : 9:20:28
+----------------------------------------------------
+ 
 USUARIO : adm
 DESCRIPCIÓN : Ingreso al sistema
 FORMULARIO : JFRInicioSesion
 ACCIÓN : Botón 'INGRESAR' Presionado
-TIME : 9:8:46
+TIME : 9:20:33
 ----------------------------------------------------
  
 USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
 DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
 FORMULARIO : JFPrincipal
 ACCIÓN : Menu 'Mantener Producto' Presionado
-TIME : 9:8:48
+TIME : 9:20:38
 ----------------------------------------------------
  
-USUARIO : adm
-DESCRIPCIÓN : Ingreso al sistema
-FORMULARIO : JFRInicioSesion
-ACCIÓN : Botón 'INGRESAR' Presionado
-TIME : 9:10:45
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal CIPERMETRINA AL 20%
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:21:0
 ----------------------------------------------------
  
-USUARIO : adm
-DESCRIPCIÓN : Ingreso al sistema
-FORMULARIO : JFRInicioSesion
-ACCIÓN : Botón 'INGRESAR' Presionado
-TIME : 9:18:30
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal KYROKAN
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:21:32
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal ATOMIL EN POLVO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:21:32
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal CIPERMETRINA AL 20%
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:21:33
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal CIPERMETRINA AL 20%
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:21:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal ATOMIL EN POLVO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:21:38
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal CIPERMETRINA AL 20%
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:21:38
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal CIPERMETRINA AL 20%
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:21:39
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal CIPERMETRINA AL 20%
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:21:41
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal CIPERMETRINA AL 20%
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:21:41
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Personal'
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 9:34:11
 ----------------------------------------------------
  
 USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
 DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
 FORMULARIO : JFPrincipal
 ACCIÓN : Menu 'Mantener Producto' Presionado
-TIME : 9:18:31
+TIME : 9:34:13
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal ROE MAT - BRODIFACOUM 0.005%
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:34:18
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal KYROKAN
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:34:19
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal COMPACT HEALTH - CIPERMETRINA 20 % EC
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:34:19
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal COMPACT HEALTH - CIPERMETRINA 20 % EC
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:34:19
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Personal'
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 9:34:43
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 9:36:24
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal GEL CUCARACHICIDA 
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:36:32
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal CIPERMETRINA AL 20%
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:36:33
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal CIPERMETRINA AL 20%
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:36:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal ATOMIL EN POLVO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:36:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal ATOMIL EN POLVO
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:36:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal KYROKAN
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:36:35
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal COMPACT HEALTH - CIPERMETRINA 20 % EC
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:36:36
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal GEL CUCARACHICIDA 
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:36:37
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal GEL CUCARACHICIDA 
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:36:37
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal GEL CUCARACHICIDA 
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:36:38
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal GEL CUCARACHICIDA
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:36:39
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal GEL CUCARACHICIDA
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:36:39
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal GEL CUCARACHICIDA
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:36:40
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal GEL CUCARACHICIDA
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:36:40
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal GEL CUCARACHICIDA
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:36:40
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Personal GEL CUCARACHICIDA
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Tabla de Personal presionado
+TIME : 9:36:41
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 9:40:10
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Personal'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Personal' Presionado
+TIME : 9:40:22
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Personal'
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 9:40:24
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Personal'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Personal' Presionado
+TIME : 9:40:28
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Personal'
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 9:40:31
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Personal'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Personal' Presionado
+TIME : 9:40:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Personal'
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 9:40:35
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 9:40:42
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Producto'
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 9:40:46
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 9:40:52
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 9:40:58
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 9:41:4
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 9:41:6
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Producto'
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 9:41:12
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 9:41:18
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Producto'
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 9:41:22
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 9:41:27
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Producto'
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 9:41:30
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 9:41:33
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 9:41:36
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 9:41:50
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 9:41:51
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Producto'
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 9:41:52
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 9:56:51
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 9:56:53
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Producto
+FORMULARIO : JIFMantenerProductos
+ACCIÓN : Botón 'Producto' presionado
+TIME : 9:56:54
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Producto
+FORMULARIO : JIFMantenerProductos
+ACCIÓN : Botón 'Producto' presionado
+TIME : 9:56:55
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 9:57:33
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 9:57:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Producto
+FORMULARIO : JIFMantenerProductos
+ACCIÓN : Botón 'Producto' presionado
+TIME : 9:57:36
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Producto
+FORMULARIO : JIFMantenerProductos
+ACCIÓN : Botón 'Producto' presionado
+TIME : 9:57:36
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Producto
+FORMULARIO : JIFMantenerProductos
+ACCIÓN : Botón 'Producto' presionado
+TIME : 9:57:51
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Inserto un nuevo Producto
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Botón 'Insertar' Presionado
+TIME : 9:57:51
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:3:15
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 10:3:16
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Producto
+FORMULARIO : JIFMantenerProductos
+ACCIÓN : Botón 'Producto' presionado
+TIME : 10:3:20
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Producto
+FORMULARIO : JIFMantenerProductos
+ACCIÓN : Botón 'Producto' presionado
+TIME : 10:3:31
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Inserto un nuevo Producto
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Botón 'Insertar' Presionado
+TIME : 10:3:31
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto CIPER AND MATA
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Tabla de Producto presionado
+TIME : 10:3:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Producto
+FORMULARIO : JIFMantenerProductos
+ACCIÓN : Botón 'Producto' presionado
+TIME : 10:3:44
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Producto
+FORMULARIO : JIFMantenerProductos
+ACCIÓN : Botón 'Producto' presionado
+TIME : 10:4:14
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:9:10
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 10:9:12
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto CIPER AND MATA
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Tabla de Producto presionado
+TIME : 10:9:13
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto CIPER AND MATA
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Tabla de Producto presionado
+TIME : 10:9:14
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto CIPER AND MATA
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Tabla de Producto presionado
+TIME : 10:9:24
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto CIPER AND MATA
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Tabla de Producto presionado
+TIME : 10:9:24
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Producto
+FORMULARIO : JIFMantenerProductos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 10:9:26
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Producto
+FORMULARIO : JIFMantenerProductos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 10:9:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Modifico un Producto
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Botón 'Actualizar' Presionado
+TIME : 10:9:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Producto'
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:9:57
 ----------------------------------------------------
  

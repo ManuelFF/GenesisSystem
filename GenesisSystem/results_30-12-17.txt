@@ -1,0 +1,27 @@
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerProducto
+HORA : 9:57:51
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el producto con ID  PRO-012
+ NOMBRE: ATOMIL MATANOX X2 
+ ESTADO: ACTIVO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerProducto
+HORA : 10:3:31
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el producto con ID  PRO-012
+ NOMBRE: CIPER AND MATA 
+ ESTADO: ACTIVO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerProducto
+HORA : 10:9:34
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el producto con ID  PRO-012
+ NOMBRE: CIPERMATATINA 
+ ESTADO: ACTIVO
+----------------------------------------------------
+ 

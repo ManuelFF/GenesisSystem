@@ -1,0 +1,6 @@
+DESCRIPCIÓN : Error al seleccionar personal
+CLASE : JIFMantenerPersonal
+ERROR : java.lang.ArrayIndexOutOfBoundsException: 3 >= 3
+TIME : 9:19:58
+----------------------------------------------------
+ 
