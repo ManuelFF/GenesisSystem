@@ -1,0 +1,63 @@
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerImplementos
+HORA : 13:29:34
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el Implemento con ID  MAQ-010
+ NOMBRE: MAQUINA 1 
+ ESTADO: ACTIVO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerImplementos
+HORA : 13:29:37
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el Implemento con ID  MAQ-010
+ NOMBRE: MAQUINA 1 
+ ESTADO: ACTIVO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerProducto
+HORA : 13:29:50
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el producto con ID  PRO-012
+ NOMBRE: CIPERMATATINA 
+ ESTADO: ACTIVO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerImplementos
+HORA : 13:30:29
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el Implemento con ID  MAQ-010
+ NOMBRE: MAQUINA 1 
+ ESTADO: ACTIVO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerImplementos
+HORA : 13:30:36
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el Implemento con ID  MAQ-010
+ NOMBRE: MAQUINA 1 
+ ESTADO: ACTIVO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerImplementos
+HORA : 13:30:42
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el Implemento con ID  MAQ-010
+ NOMBRE: MAQUINA 12 
+ ESTADO: ACTIVO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerImplementos
+HORA : 13:30:46
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el Implemento con ID  MAQ-010
+ NOMBRE: MAQUINA 1 
+ ESTADO: ACTIVO
+----------------------------------------------------
+ 

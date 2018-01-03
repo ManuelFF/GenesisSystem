@@ -180,3 +180,381 @@ ACCIÓN : Botón 'Nuevo_Juridico' presionado
 TIME : 13:28:1
 ----------------------------------------------------
  
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 13:29:18
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Implementos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Implementos' Presionado
+TIME : 13:29:23
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento SOLO 457 - LONCHERITA
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:29:28
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento SOLO 427
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:29:29
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 1
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:29:30
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 1
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:29:30
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 1
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:29:31
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 13:29:32
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 13:29:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Modifico un Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Actualizar' Presionado
+TIME : 13:29:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 1
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:29:36
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 13:29:37
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Modifico un Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Actualizar' Presionado
+TIME : 13:29:37
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento SOLO 427
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:29:39
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento SOLO 427
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:29:39
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 1
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:29:39
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 1
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:29:39
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 1
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:29:39
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 1
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:29:40
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 13:29:43
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto CIPERMATATINA
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Tabla de Producto presionado
+TIME : 13:29:45
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto CIPERMATATINA
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Tabla de Producto presionado
+TIME : 13:29:46
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Producto
+FORMULARIO : JIFMantenerProductos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 13:29:49
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Producto
+FORMULARIO : JIFMantenerProductos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 13:29:50
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Modifico un Producto
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Botón 'Actualizar' Presionado
+TIME : 13:29:50
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto CIPERMATATINA
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Tabla de Producto presionado
+TIME : 13:29:52
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto CIPERMATATINA
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Tabla de Producto presionado
+TIME : 13:29:52
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 13:30:25
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Implementos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Implementos' Presionado
+TIME : 13:30:27
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento SOLO 427
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:30:28
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 1
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:30:28
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 1
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:30:28
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 13:30:29
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 13:30:29
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Modifico un Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Actualizar' Presionado
+TIME : 13:30:29
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Impemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Implemento' presionado
+TIME : 13:30:31
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de un Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 13:30:32
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 1
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:30:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 1
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:30:35
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 13:30:35
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 13:30:36
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Modifico un Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Actualizar' Presionado
+TIME : 13:30:36
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 1
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:30:38
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 1
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:30:38
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 13:30:41
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 13:30:42
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Modifico un Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Actualizar' Presionado
+TIME : 13:30:42
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 12
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:30:43
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 12
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:30:43
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 12
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:30:44
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 13:30:44
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 13:30:46
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Modifico un Implemento
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Botón 'Actualizar' Presionado
+TIME : 13:30:46
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Implemento'
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 13:30:48
+----------------------------------------------------
+ 
