@@ -10,6 +10,7 @@ import ModuleWorker.SYSCON;
 import ModuleWorker.SYSWALLPCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
+import NMOC.MD_Generar.View.JIFGenerarCotizacion;
 import NMOC.MD_Mantenimientos.View.JIFMantenerClientes;
 import NMOC.MD_Mantenimientos.View.JIFMantenerImplementos;
 import NMOC.MD_Mantenimientos.View.JIFMantenerPersonal;
@@ -89,6 +90,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         JSMMantenerProducto = new javax.swing.JMenuItem();
         JSMMantenerImplementos = new javax.swing.JMenuItem();
         JMGenerar = new javax.swing.JMenu();
+        JSMGenerarCotizacion = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
@@ -260,6 +262,18 @@ public class JFRPrincipal extends javax.swing.JFrame
 
         JMGenerar.setText("Generar");
         JMGenerar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+
+        JSMGenerarCotizacion.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
+        JSMGenerarCotizacion.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        JSMGenerarCotizacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Files-New-File-icon.png"))); // NOI18N
+        JSMGenerarCotizacion.setText("Generar Cotización");
+        JSMGenerarCotizacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JSMGenerarCotizacionActionPerformed(evt);
+            }
+        });
+        JMGenerar.add(JSMGenerarCotizacion);
+
         JMPrincipal.add(JMGenerar);
 
         jMenu3.setText("Consultar");
@@ -509,6 +523,39 @@ public class JFRPrincipal extends javax.swing.JFrame
 
     }//GEN-LAST:event_JSMMantenerImplementosActionPerformed
 
+    private void JSMGenerarCotizacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMGenerarCotizacionActionPerformed
+        
+    try
+    {
+        JIFGenerarCotizacion generar_coti = new JIFGenerarCotizacion();
+        JFrame jf=new JFrame();
+        jf.setAlwaysOnTop(true);
+
+        if(JSMGenerarCotizacion.getActionCommand().equals("Abierto"))
+            {
+                SYSAUDIOCON sysau = new SYSAUDIOCON();
+                sysau.E_ERROR();
+                JOptionPane.showMessageDialog(jf,"Ya esta abierto", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+            }
+        else
+        {                
+            JSMGenerarCotizacion.setActionCommand("Abierto");
+            JDEscritorio.add(generar_coti);
+            Dimension desktopSize = JDEscritorio.getSize();
+            Dimension FrameSize = generar_coti.getSize();
+            generar_coti.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
+            evn.write(JMSesion.getText(), "Abrio el formulario 'Generar Cotización'", "JFPrincipal", "Menu 'Generar Cotización' Presionado");
+            generar_coti.show();
+        }
+    }
+    catch (Exception e)
+    {
+
+        lc.write("Error intentando abrir 'Generar Cotización'", "JFRPrincipal", e);
+    }     
+
+    }//GEN-LAST:event_JSMGenerarCotizacionActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -554,6 +601,7 @@ public class JFRPrincipal extends javax.swing.JFrame
     private javax.swing.JMenuBar JMPrincipal;
     public static javax.swing.JMenu JMSesion;
     private javax.swing.JMenuItem JSMCerrarSesion;
+    public static javax.swing.JMenuItem JSMGenerarCotizacion;
     public static javax.swing.JMenuItem JSMMantenerClientes;
     public static javax.swing.JMenuItem JSMMantenerImplementos;
     public static javax.swing.JMenuItem JSMMantenerPersonal;

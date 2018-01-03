@@ -165,7 +165,7 @@ public class SYSFRMCON
     //MANTENER PERSONAL
     public String T_MantenerPersonal()
     {
-        String t = ALFA()+" Mantener Personal";
+        String t = BETA()+" Mantener Personal";
         return t;
     }
     
@@ -177,7 +177,7 @@ public class SYSFRMCON
     //MANTENER PRODUCTO
     public String T_MantenerProducto()
     {
-        String t = DEV()+" Mantener Producto";
+        String t = ALFA()+" Mantener Producto";
         return t;
     }
     
@@ -189,7 +189,7 @@ public class SYSFRMCON
     //MANTENER IMPLEMENTO
     public String T_MantenerImplemento()
     {
-        String t = DEV()+" Mantener Implemento";
+        String t = ALFA()+" Mantener Implemento";
         return t;
     }
     
@@ -201,6 +201,17 @@ public class SYSFRMCON
     //#########################################################################
     //FORMULARIOS GENERAR
     
+    //GENERAR COTIZACIÓN
+    public String T_GenerarCotización()
+    {
+        String t = DEV()+" Generar Cotización";
+        return t;
+    }
+    
+    public void B_GenerarCotización(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
     
     
 }
