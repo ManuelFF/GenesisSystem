@@ -558,3 +558,101 @@ ACCIÓN : Presiono Botón 'Salir'
 TIME : 13:30:48
 ----------------------------------------------------
  
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 13:31:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Implementos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Implementos' Presionado
+TIME : 13:31:36
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento SOLO 427
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:31:37
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 1
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:31:37
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento MAQUINA 1
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Tabla de Implemento presionado
+TIME : 13:31:37
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Implemento'
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 13:31:38
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Producto'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Producto' Presionado
+TIME : 13:31:39
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto CIPERMATATINA
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Tabla de Producto presionado
+TIME : 13:31:42
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto CIPERMATATINA
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Tabla de Producto presionado
+TIME : 13:31:42
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Producto
+FORMULARIO : JIFMantenerProductos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 13:31:44
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Producto
+FORMULARIO : JIFMantenerProductos
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 13:31:46
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Modifico un Producto
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Botón 'Actualizar' Presionado
+TIME : 13:31:46
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto GEL CUCARACHICIDA 
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Tabla de Producto presionado
+TIME : 13:31:48
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto GEL CUCARACHICIDA 
+FORMULARIO : JIFMantenerProducto
+ACCIÓN : Tabla de Producto presionado
+TIME : 13:31:48
+----------------------------------------------------
+ 

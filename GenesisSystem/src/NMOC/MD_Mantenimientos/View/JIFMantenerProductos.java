@@ -580,7 +580,7 @@ public class JIFMantenerProductos extends javax.swing.JInternalFrame
                         ClearFRM();
                         editFRM(false);
                         ena_disaButtons(true, false, false, true);
-                        btnnuevo.setText("Nuevo");
+                        btnmodificar.setText("Modificar");
                         txtfiltro.setEnabled(true);cbfiltro.setEnabled(true);
                         condicion_datos = false;
                         reiniciarColors();
