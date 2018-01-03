@@ -263,7 +263,6 @@ public class JFRPrincipal extends javax.swing.JFrame
         JMGenerar.setText("Generar");
         JMGenerar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
-        JSMGenerarCotizacion.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
         JSMGenerarCotizacion.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         JSMGenerarCotizacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Files-New-File-icon.png"))); // NOI18N
         JSMGenerarCotizacion.setText("Generar Cotización");

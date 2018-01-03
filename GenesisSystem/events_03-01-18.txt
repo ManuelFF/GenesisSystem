@@ -656,3 +656,31 @@ ACCIÓN : Tabla de Producto presionado
 TIME : 13:31:48
 ----------------------------------------------------
  
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 14:3:9
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Implementos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Implementos' Presionado
+TIME : 14:3:12
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Implemento'
+FORMULARIO : JIFMantenerImplementos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 14:3:13
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Cotización'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Cotización' Presionado
+TIME : 14:3:16
+----------------------------------------------------
+ 
