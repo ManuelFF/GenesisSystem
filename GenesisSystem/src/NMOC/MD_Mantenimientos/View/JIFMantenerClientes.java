@@ -1505,7 +1505,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
               txtRazonSocial.setBackground(Color.RED);
               ShakingComponent sh_raz = new ShakingComponent(txtRazonSocial);
               sh_raz.startShake();
-              JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Razónn Social' para el cliente", "Falta Razón Social del Cliente", JOptionPane.ERROR_MESSAGE);
+              JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Razón Social' para el cliente", "Falta Razón Social del Cliente", JOptionPane.ERROR_MESSAGE);
               sysau.S_STOP();
            }else
            //DIRECCION
@@ -1662,7 +1662,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
               txtRazonSocial.setBackground(Color.RED);
               ShakingComponent sh_raz = new ShakingComponent(txtRazonSocial);
               sh_raz.startShake();
-              JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Razónn Social' para el cliente", "Falta Razón Social del Cliente", JOptionPane.ERROR_MESSAGE);
+              JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Razón Social' para el cliente", "Falta Razón Social del Cliente", JOptionPane.ERROR_MESSAGE);
               sysau.S_STOP();
            }else
            //DIRECCION
