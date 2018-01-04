@@ -397,3 +397,24 @@ ACCIÓN : Menu 'Generar Orden Servicio' Presionado
 TIME : 13:32:13
 ----------------------------------------------------
  
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 13:41:45
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Cotización'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Cotización' Presionado
+TIME : 13:41:49
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 13:44:52
+----------------------------------------------------
+ 
