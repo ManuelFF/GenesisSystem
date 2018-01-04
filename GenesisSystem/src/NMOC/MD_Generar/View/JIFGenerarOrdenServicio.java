@@ -156,16 +156,20 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         cbfiltro.setBackground(new java.awt.Color(204, 204, 204));
         cbfiltro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ACTIVO", "INACTIVO" }));
         cbfiltro.setSelectedItem("EN ESPERA");
+        cbfiltro.setEnabled(false);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel10.setText("Tipo Orden:");
 
         jRadioButton1.setText("Natural");
+        jRadioButton1.setEnabled(false);
 
         jRadioButton2.setText("Juridica");
+        jRadioButton2.setEnabled(false);
 
         btnnuevo_N.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Files-New-File-icon.png"))); // NOI18N
         btnnuevo_N.setText("Nuevo");
+        btnnuevo_N.setEnabled(false);
         btnnuevo_N.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnnuevo_NActionPerformed(evt);
@@ -192,6 +196,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
 
         btnsalir_N.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/logout-icon24.png"))); // NOI18N
         btnsalir_N.setText("Salir");
+        btnsalir_N.setEnabled(false);
         btnsalir_N.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsalir_NActionPerformed(evt);
@@ -200,6 +205,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
 
         btnnuevo_N1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/search-icon.png"))); // NOI18N
         btnnuevo_N1.setText("Buscar");
+        btnnuevo_N1.setEnabled(false);
         btnnuevo_N1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnnuevo_N1ActionPerformed(evt);
@@ -208,6 +214,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
 
         btnsalir_N1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Copy-iconV2.png"))); // NOI18N
         btnsalir_N1.setText("Copiar");
+        btnsalir_N1.setEnabled(false);
         btnsalir_N1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsalir_N1ActionPerformed(evt);
@@ -216,6 +223,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
 
         btnsalir_N2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Adobe-PDF-Document-icon.png"))); // NOI18N
         btnsalir_N2.setText("PDF");
+        btnsalir_N2.setEnabled(false);
         btnsalir_N2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsalir_N2ActionPerformed(evt);
@@ -224,6 +232,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
 
         btnsalir_N3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/print-icon.png"))); // NOI18N
         btnsalir_N3.setText("Imprimir");
+        btnsalir_N3.setEnabled(false);
         btnsalir_N3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsalir_N3ActionPerformed(evt);
@@ -262,6 +271,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         btnnuevo_N3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/event-search-icon.png"))); // NOI18N
         btnnuevo_N3.setText("Fecha");
         btnnuevo_N3.setContentAreaFilled(false);
+        btnnuevo_N3.setEnabled(false);
         btnnuevo_N3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnnuevo_N3ActionPerformed(evt);
@@ -271,6 +281,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         btnnuevo_N4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Time.png"))); // NOI18N
         btnnuevo_N4.setText("Hora");
         btnnuevo_N4.setContentAreaFilled(false);
+        btnnuevo_N4.setEnabled(false);
         btnnuevo_N4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnnuevo_N4ActionPerformed(evt);
@@ -299,6 +310,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         jLabel17.setForeground(new java.awt.Color(0, 0, 255));
         jLabel17.setText("Costo Final:");
 
+        jTextField4.setEditable(false);
         jTextField4.setBackground(new java.awt.Color(204, 204, 255));
         jTextField4.setText("0");
 
@@ -318,6 +330,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         btnnuevo_N2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/search-icon.png"))); // NOI18N
         btnnuevo_N2.setText("Consultar");
         btnnuevo_N2.setContentAreaFilled(false);
+        btnnuevo_N2.setEnabled(false);
         btnnuevo_N2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnnuevo_N2ActionPerformed(evt);
@@ -327,6 +340,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         btnnuevo_N5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/delete-icon.png"))); // NOI18N
         btnnuevo_N5.setText("Quitar");
         btnnuevo_N5.setContentAreaFilled(false);
+        btnnuevo_N5.setEnabled(false);
         btnnuevo_N5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnnuevo_N5ActionPerformed(evt);
@@ -345,6 +359,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         btnnuevo_N6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/search-icon.png"))); // NOI18N
         btnnuevo_N6.setText("Consultar");
         btnnuevo_N6.setContentAreaFilled(false);
+        btnnuevo_N6.setEnabled(false);
         btnnuevo_N6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnnuevo_N6ActionPerformed(evt);
@@ -354,6 +369,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         btnnuevo_N7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/delete-icon.png"))); // NOI18N
         btnnuevo_N7.setText("Quitar");
         btnnuevo_N7.setContentAreaFilled(false);
+        btnnuevo_N7.setEnabled(false);
         btnnuevo_N7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnnuevo_N7ActionPerformed(evt);
@@ -372,6 +388,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         btnnuevo_N8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/search-icon.png"))); // NOI18N
         btnnuevo_N8.setText("Consultar");
         btnnuevo_N8.setContentAreaFilled(false);
+        btnnuevo_N8.setEnabled(false);
         btnnuevo_N8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnnuevo_N8ActionPerformed(evt);
@@ -381,6 +398,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         btnnuevo_N9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/delete-icon.png"))); // NOI18N
         btnnuevo_N9.setText("Quitar");
         btnnuevo_N9.setContentAreaFilled(false);
+        btnnuevo_N9.setEnabled(false);
         btnnuevo_N9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnnuevo_N9ActionPerformed(evt);
@@ -423,6 +441,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         btnnuevo_N10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/search-icon.png"))); // NOI18N
         btnnuevo_N10.setText("Buscar");
         btnnuevo_N10.setContentAreaFilled(false);
+        btnnuevo_N10.setEnabled(false);
         btnnuevo_N10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnnuevo_N10ActionPerformed(evt);
@@ -438,6 +457,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         btnnuevo_N11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/home.png"))); // NOI18N
         btnnuevo_N11.setText("Áreas");
         btnnuevo_N11.setContentAreaFilled(false);
+        btnnuevo_N11.setEnabled(false);
         btnnuevo_N11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnnuevo_N11ActionPerformed(evt);
@@ -447,6 +467,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         btnnuevo_N12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/jobs.png"))); // NOI18N
         btnnuevo_N12.setText("Servicios");
         btnnuevo_N12.setContentAreaFilled(false);
+        btnnuevo_N12.setEnabled(false);
         btnnuevo_N12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnnuevo_N12ActionPerformed(evt);
@@ -456,6 +477,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         btnnuevo_N13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/ProductsV2_24.png"))); // NOI18N
         btnnuevo_N13.setText("Productos");
         btnnuevo_N13.setContentAreaFilled(false);
+        btnnuevo_N13.setEnabled(false);
         btnnuevo_N13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnnuevo_N13ActionPerformed(evt);
@@ -465,6 +487,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         btnnuevo_N14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/jobs.png"))); // NOI18N
         btnnuevo_N14.setText("Operarios");
         btnnuevo_N14.setContentAreaFilled(false);
+        btnnuevo_N14.setEnabled(false);
         btnnuevo_N14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnnuevo_N14ActionPerformed(evt);
@@ -474,6 +497,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         btnnuevo_N15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/machinesV1.png"))); // NOI18N
         btnnuevo_N15.setText("Implementos");
         btnnuevo_N15.setContentAreaFilled(false);
+        btnnuevo_N15.setEnabled(false);
         btnnuevo_N15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnnuevo_N15ActionPerformed(evt);
@@ -483,9 +507,11 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         cbfiltro1.setBackground(new java.awt.Color(204, 204, 204));
         cbfiltro1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "GENERAL", "AREAS", "SERVICIOS", "OPERARIOS", "PRODUCTOS", "IMPLEMENTOS" }));
         cbfiltro1.setSelectedItem("EN ESPERA");
+        cbfiltro1.setEnabled(false);
 
         btnnuevo_N16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/search-icon.png"))); // NOI18N
         btnnuevo_N16.setText("Consultar");
+        btnnuevo_N16.setEnabled(false);
         btnnuevo_N16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnnuevo_N16ActionPerformed(evt);
