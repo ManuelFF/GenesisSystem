@@ -19,7 +19,9 @@ public class JIFGenerarCotizacion extends javax.swing.JInternalFrame
     {
         initComponents();
     }
-
+    
+    //waiting for meta description
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -160,10 +162,8 @@ public class JIFGenerarCotizacion extends javax.swing.JInternalFrame
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel7.setText("Codigo Cotización:");
 
-        txtnombres.setEditable(false);
         txtnombres.setBackground(new java.awt.Color(204, 204, 204));
         txtnombres.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        txtnombres.setText("Manuel Fernando");
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel8.setText("Estado:");
@@ -174,6 +174,7 @@ public class JIFGenerarCotizacion extends javax.swing.JInternalFrame
 
         cbfiltro.setBackground(new java.awt.Color(204, 204, 204));
         cbfiltro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ACEPTADO", "EN ESPERA", "NO ACEPTADO" }));
+        cbfiltro.setSelectedItem("EN ESPERA");
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel9.setText("Tipo de Cotización:");
@@ -198,31 +199,23 @@ public class JIFGenerarCotizacion extends javax.swing.JInternalFrame
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel12.setText("Apellido P.");
 
-        txtnombres1.setEditable(false);
         txtnombres1.setBackground(new java.awt.Color(204, 204, 204));
         txtnombres1.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        txtnombres1.setText("Saavedra");
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel13.setText("Apellido M.");
 
-        txtnombres3.setEditable(false);
         txtnombres3.setBackground(new java.awt.Color(204, 204, 204));
         txtnombres3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        txtnombres3.setText("Benites");
 
-        txtnombres4.setEditable(false);
         txtnombres4.setBackground(new java.awt.Color(204, 204, 204));
         txtnombres4.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        txtnombres4.setText("71004147");
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel14.setText("DNI:");
 
-        txtnombres5.setEditable(false);
         txtnombres5.setBackground(new java.awt.Color(204, 204, 204));
         txtnombres5.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        txtnombres5.setText("6218079");
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel15.setText("Telefono:");
@@ -230,24 +223,18 @@ public class JIFGenerarCotizacion extends javax.swing.JInternalFrame
         jLabel16.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel16.setText("Celular:");
 
-        txtnombres6.setEditable(false);
         txtnombres6.setBackground(new java.awt.Color(204, 204, 204));
         txtnombres6.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        txtnombres6.setText("947241740");
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel17.setText("Correo:");
 
-        txtnombres7.setEditable(false);
         txtnombres7.setBackground(new java.awt.Color(204, 204, 204));
         txtnombres7.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        txtnombres7.setText("manuel10_11@outlook.com");
 
-        JTAdireccion.setEditable(false);
         JTAdireccion.setBackground(new java.awt.Color(204, 204, 204));
         JTAdireccion.setColumns(20);
         JTAdireccion.setRows(5);
-        JTAdireccion.setText("Jr. Jose Pezet #505 Chacra Cerro \nComas - Lima");
         jScrollPane5.setViewportView(JTAdireccion);
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -535,7 +522,6 @@ public class JIFGenerarCotizacion extends javax.swing.JInternalFrame
                                     .addComponent(jLabel9)
                                     .addComponent(jRadioButton1)
                                     .addComponent(jRadioButton2))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(3, 3, 3)
@@ -604,7 +590,7 @@ public class JIFGenerarCotizacion extends javax.swing.JInternalFrame
                                     .addComponent(txtnombres10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(btnnuevo_N4)))
                             .addComponent(jSeparator1))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnnuevo_N)
                             .addComponent(btnmodificar_N)
@@ -612,12 +598,13 @@ public class JIFGenerarCotizacion extends javax.swing.JInternalFrame
                             .addComponent(btnsalir_N))
                         .addGap(21, 21, 21))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel25)
-                            .addComponent(txtnombres11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(jLabel28)
-                                .addComponent(cbfiltro1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(cbfiltro1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel25)
+                                .addComponent(txtnombres11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel26)

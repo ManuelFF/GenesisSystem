@@ -11,6 +11,7 @@ import ModuleWorker.SYSWALLPCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NMOC.MD_Generar.View.JIFGenerarCotizacion;
+import NMOC.MD_Generar.View.JIFGenerarOrdenServicio;
 import NMOC.MD_Mantenimientos.View.JIFMantenerClientes;
 import NMOC.MD_Mantenimientos.View.JIFMantenerImplementos;
 import NMOC.MD_Mantenimientos.View.JIFMantenerPersonal;
@@ -91,6 +92,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         JSMMantenerImplementos = new javax.swing.JMenuItem();
         JMGenerar = new javax.swing.JMenu();
         JSMGenerarCotizacion = new javax.swing.JMenuItem();
+        JSMGenerarOrden = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
@@ -217,7 +219,6 @@ public class JFRPrincipal extends javax.swing.JFrame
         JMMantenimientos.setText("Mantenimientos");
         JMMantenimientos.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
-        JSMMantenerClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
         JSMMantenerClientes.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         JSMMantenerClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Client1_add24.png"))); // NOI18N
         JSMMantenerClientes.setText("Mantener Clientes");
@@ -263,6 +264,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         JMGenerar.setText("Generar");
         JMGenerar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
+        JSMGenerarCotizacion.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
         JSMGenerarCotizacion.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         JSMGenerarCotizacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Files-New-File-icon.png"))); // NOI18N
         JSMGenerarCotizacion.setText("Generar Cotización");
@@ -272,6 +274,17 @@ public class JFRPrincipal extends javax.swing.JFrame
             }
         });
         JMGenerar.add(JSMGenerarCotizacion);
+
+        JSMGenerarOrden.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_MASK));
+        JSMGenerarOrden.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        JSMGenerarOrden.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Files-New-File-icon.png"))); // NOI18N
+        JSMGenerarOrden.setText("Generar Orden Servicio");
+        JSMGenerarOrden.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JSMGenerarOrdenActionPerformed(evt);
+            }
+        });
+        JMGenerar.add(JSMGenerarOrden);
 
         JMPrincipal.add(JMGenerar);
 
@@ -555,6 +568,39 @@ public class JFRPrincipal extends javax.swing.JFrame
 
     }//GEN-LAST:event_JSMGenerarCotizacionActionPerformed
 
+    private void JSMGenerarOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMGenerarOrdenActionPerformed
+
+    try
+    {
+        JIFGenerarOrdenServicio orden = new JIFGenerarOrdenServicio();
+        JFrame jf=new JFrame();
+        jf.setAlwaysOnTop(true);
+
+        if(JSMGenerarOrden.getActionCommand().equals("Abierto"))
+            {
+                SYSAUDIOCON sysau = new SYSAUDIOCON();
+                sysau.E_ERROR();
+                JOptionPane.showMessageDialog(jf,"Ya esta abierto", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+            }
+        else
+        {                
+            JSMGenerarOrden.setActionCommand("Abierto");
+            JDEscritorio.add(orden);
+            Dimension desktopSize = JDEscritorio.getSize();
+            Dimension FrameSize = orden.getSize();
+            orden.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
+            evn.write(JMSesion.getText(), "Abrio el formulario 'Generar Orden Servicio'", "JFPrincipal", "Menu 'Generar Orden Servicio' Presionado");
+            orden.show();
+        }
+    }
+    catch (Exception e)
+    {
+
+        lc.write("Error intentando abrir 'Generar Orden Servicio'", "JFRPrincipal", e);
+    }     
+
+    }//GEN-LAST:event_JSMGenerarOrdenActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -601,6 +647,7 @@ public class JFRPrincipal extends javax.swing.JFrame
     public static javax.swing.JMenu JMSesion;
     private javax.swing.JMenuItem JSMCerrarSesion;
     public static javax.swing.JMenuItem JSMGenerarCotizacion;
+    public static javax.swing.JMenuItem JSMGenerarOrden;
     public static javax.swing.JMenuItem JSMMantenerClientes;
     public static javax.swing.JMenuItem JSMMantenerImplementos;
     public static javax.swing.JMenuItem JSMMantenerPersonal;

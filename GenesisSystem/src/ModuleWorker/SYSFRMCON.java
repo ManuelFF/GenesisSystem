@@ -213,5 +213,17 @@ public class SYSFRMCON
         p.setBackground(Color.GRAY.brighter());
     }
     
+    //GENERAR ORDEN SERVICIO
+    public String T_GenerarOrden()
+    {
+        String t = DEV()+" Generar Orden Servicio";
+        return t;
+    }
+    
+    public void B_GenerarOrden(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+    
     
 }
