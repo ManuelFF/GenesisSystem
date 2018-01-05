@@ -9,6 +9,9 @@ import NCLPM.LOG;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
@@ -53,6 +56,19 @@ public class MWCON
         modelo.setColumnCount(0);
         //jt.setModel(modelo);
     }
+    
+    public String fecha_actual()
+    {
+        Date date = new Date();
+        
+        DateFormat año_current = new SimpleDateFormat("yyyy");
+        DateFormat dia_current = new SimpleDateFormat("dd");
+        DateFormat mes_current = new SimpleDateFormat("MM");
+        
+        String compl = ""+dia_current.format(date)+"/"+""+mes_current.format(date)+"/"+""+año_current.format(date);
+        return compl;
+    }
+            
    
     
     //MARCAR ENTRADA
