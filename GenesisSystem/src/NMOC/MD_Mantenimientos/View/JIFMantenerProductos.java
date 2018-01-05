@@ -153,7 +153,6 @@ public class JIFMantenerProductos extends javax.swing.JInternalFrame
     {
         try 
         {
-            MWCON mw = new MWCON();
             mw.clear_table(modelo_productos, JTProducto);
             PROcon.llenarIDS_PRO();
             PROcon.CargarPRO(modelo_productos, JTProducto);

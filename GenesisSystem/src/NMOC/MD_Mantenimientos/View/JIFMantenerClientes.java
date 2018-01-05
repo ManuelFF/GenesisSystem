@@ -252,7 +252,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     {
         try 
         {
-            MWCON mw = new MWCON();
             mw.clear_table(modelo_NATU, JTNatural);
             CliNCon.llenarIDS_CLI();
             CliNCon.CargarCliNatu(modelo_NATU, JTNatural);
@@ -267,7 +266,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     {
         try 
         {
-            MWCON mw = new MWCON();
             mw.clear_table(modelo_JURI, JTJuridico);
             CliNCon.llenarIDS_CLI();
             CliNCon.CargarCliJuri(modelo_JURI, JTJuridico);

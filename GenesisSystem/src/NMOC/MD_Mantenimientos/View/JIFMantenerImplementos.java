@@ -153,7 +153,6 @@ public class JIFMantenerImplementos extends javax.swing.JInternalFrame
     {
         try 
         {
-            MWCON mw = new MWCON();
             mw.clear_table(modelo_implementos, JTImplemento);
             MAQcon.llenarIDS_PRO();
             MAQcon.CargarIMPL(modelo_implementos, JTImplemento);

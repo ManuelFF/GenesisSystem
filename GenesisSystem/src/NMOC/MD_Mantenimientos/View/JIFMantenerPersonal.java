@@ -183,7 +183,6 @@ public class JIFMantenerPersonal extends javax.swing.JInternalFrame
     {
         try 
         {
-            MWCON mw = new MWCON();
             mw.clear_table(modelo_personal, JTpersonal);
             PERcon.llenarIDS_PER();
             PERcon.CargarPER(modelo_personal, JTpersonal);
