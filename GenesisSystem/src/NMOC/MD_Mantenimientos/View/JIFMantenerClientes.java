@@ -18,9 +18,6 @@ import NMOC.MD_Mantenimientos.IC.MICROCON_MantenerClientes;
 import java.awt.Color;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.RowFilter;
@@ -43,6 +40,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
     EVENTS evn = new EVENTS();
     RESULTS rslt = new RESULTS();
     SYSFRMCON sysfrm = new SYSFRMCON();
+    MWCON mw = new MWCON();
     JFrame form;
     Color ColorInicial;
     boolean condicion_datos = false;
@@ -82,7 +80,7 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
 
         lblusuario.setText(JFRPrincipal.JMSesion.getText());
         lblusuario1.setText(JFRPrincipal.JMSesion.getText());
-        fecha_actual();
+        lbldate.setText(mw.fecha_actual());
 
         //ESTABLECIENDO EL MODELO DEL JTABLE
         JTNatural.setModel(modelo_NATU);
@@ -177,31 +175,6 @@ public class JIFMantenerClientes extends javax.swing.JInternalFrame
           trsFiltro_J.setRowFilter(RowFilter.regexFilter(txtfiltro_J.getText(), columnaABuscar));
      }   
     
-    protected final void fecha_actual()
-    {
-        Date date = new Date();
-        
-        DateFormat año_current = new SimpleDateFormat("yyyy");
-        DateFormat dia_current = new SimpleDateFormat("dd");
-        DateFormat mes_current = new SimpleDateFormat("MM");
-
-        String dia_C = ""+dia_current.format(date);
-        String mes_C = ""+mes_current.format(date);
-        String año_C = ""+año_current.format(date);
-        
-        //cambio de tipo
-        
-        int dia_I=Integer.parseInt(dia_C);
-        int mes_I=Integer.parseInt(mes_C);
-        int año_I=Integer.parseInt(año_C);
-        
-        //fin cambio de tipo
-        
-        String compl = dia_I+"/"+mes_I+"/"+(año_I);
-        lbldate.setText(compl);
-        lbldate1.setText(compl);
-    }
-
     private void NuevoCodigoCLI()
     {
         String codigo  = String.format("%08d", 1);

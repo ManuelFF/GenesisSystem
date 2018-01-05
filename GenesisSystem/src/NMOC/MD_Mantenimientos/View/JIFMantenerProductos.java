@@ -18,9 +18,6 @@ import NMOC.MD_Mantenimientos.IC.MICROCON_MantenerProductos;
 import java.awt.Color;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.RowFilter;
@@ -44,6 +41,7 @@ public class JIFMantenerProductos extends javax.swing.JInternalFrame
     EVENTS evn = new EVENTS();
     RESULTS rslt = new RESULTS();
     SYSFRMCON sysfrm = new SYSFRMCON();
+    MWCON mw = new MWCON();
     Color ColorInicial;
     boolean condicion_datos = false;
     
@@ -66,7 +64,7 @@ public class JIFMantenerProductos extends javax.swing.JInternalFrame
         this.setTitle(sysfrm.T_MantenerProducto());
         sysfrm.B_MantenerProducto(this.getContentPane());
         lblusuario.setText(JFRPrincipal.JMSesion.getText());
-        fecha();
+        lbldate.setText(mw.fecha_actual());
         
         //ESTABLECIENDO MODELO DEL JTABLE
         JTProducto.setModel(modelo_productos);
@@ -97,30 +95,6 @@ public class JIFMantenerProductos extends javax.swing.JInternalFrame
         columnModel.getColumn(0).setPreferredWidth(80);
         columnModel.getColumn(1).setPreferredWidth(240);
         columnModel.getColumn(2).setPreferredWidth(80);
-    }
-
-    private final void fecha()
-    {
-        Date date = new Date();
-        
-        DateFormat año_current = new SimpleDateFormat("yyyy");
-        DateFormat dia_current = new SimpleDateFormat("dd");
-        DateFormat mes_current = new SimpleDateFormat("MM");
-
-        String dia_C = ""+dia_current.format(date);
-        String mes_C = ""+mes_current.format(date);
-        String año_C = ""+año_current.format(date);
-        
-        //cambio de tipo
-        
-        int dia_I=Integer.parseInt(dia_C);
-        int mes_I=Integer.parseInt(mes_C);
-        int año_I=Integer.parseInt(año_C);
-        
-        //fin cambio de tipo
-        
-        String compl = dia_I+"/"+mes_I+"/"+(año_I);
-        lbldate.setText(compl);
     }
     
     private void filtro() 

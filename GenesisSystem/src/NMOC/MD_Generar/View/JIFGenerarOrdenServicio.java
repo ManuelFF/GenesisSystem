@@ -12,9 +12,6 @@ import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NCLPM.RESULTS;
 import java.awt.Color;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import javax.swing.JFrame;
 
 /**
