@@ -6,6 +6,7 @@
 package NMOC.MD_Generar.View;
 
 import ModuleWorker.IC.MWCON;
+import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSFRMCON;
 import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
@@ -13,6 +14,7 @@ import NCLPM.LOG;
 import NCLPM.RESULTS;
 import java.awt.Color;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -33,7 +35,6 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     JFrame form;
     Color ColorInicial;
    
-    
     public JIFGenerarOrdenServicio() 
     {
         initComponents();
@@ -47,7 +48,8 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         JTAAnuncio.setLineWrap(true);
         JTAIA.setLineWrap(true);
         JTAdetcliente.setLineWrap(true);
-        
+        ColorInicial = txtfecha.getBackground();
+
     }
     
     //Borra y limpia texto
@@ -91,8 +93,6 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         //BLOQUE SEGMENTADO 1
         JTAAnuncio.setEditable(cond);
         cbestado.setEnabled(cond);
-        JCHAntigua.setEnabled(cond);
-        JCHTicketTrabajo.setEnabled(cond);
         JCHNatural.setEnabled(cond);
         JCHJuridica.setEnabled(cond);
         //BLOQUE SEGMENTADO 2 : Informacion Basica
@@ -118,8 +118,100 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         CBconsultacontOrden.setEnabled(cond);
     }
     
- 
-
+    private void enadisa_bloque1_botones(boolean nuevo,boolean modificar,
+            boolean cancelar,boolean buscar,boolean copiar,boolean pdf,
+            boolean imprimir,boolean salir)
+    {
+        btnnuevo.setEnabled(nuevo);
+        btnmodificar.setEnabled(modificar);
+        btncancelar.setEnabled(cancelar);
+        btnbuscar.setEnabled(buscar);
+        btncopiar.setEnabled(copiar);
+        btnPDF.setEnabled(pdf);
+        btnimprimir.setEnabled(imprimir);
+        btnsalir.setEnabled(salir);
+    }
+    
+    private void enadisa_bloque2_botones(boolean fecha, boolean hora, boolean consultar, boolean quitar)
+    {
+        btnfecha.setEnabled(fecha);
+        btnhora.setEnabled(hora);
+        btnconsultarDescuentocodigo.setEnabled(consultar);
+        btnQuitarDescuentoCodigo.setEnabled(quitar);
+    }
+     
+    private void enadisa_bloque3_botones(boolean consult_clasico, boolean quitar_clasico, 
+            boolean consult_asoc, boolean quitar_asoc)
+    {
+        btnconsultarVendedor.setEnabled(consult_clasico);
+        btnquitarVendedor.setEnabled(quitar_clasico);
+        btnconsultarvendCrystal.setEnabled(consult_asoc);
+        btnquitarvendCrystal.setEnabled(quitar_asoc);
+    }
+      
+    private void enadisa_bloque5_botones(boolean buscar)
+    {
+        btnBuscarcliente.setEnabled(buscar);
+    }
+       
+    private void enadisa_bloque6_botones(boolean areas,boolean servicios, boolean operarios, boolean productos, 
+            boolean implementos, boolean consultar, boolean consult_general)
+    {
+        btnAgregarAreas.setEnabled(areas);
+        btnAgregarServicios.setEnabled(servicios);
+        btnAgregarOperarios.setEnabled(operarios);
+        btnAgregarProductos.setEnabled(productos);
+        btnAgregarImplementos.setEnabled(implementos);
+        btnconsultarcontenidoOrden.setEnabled(consultar);
+        btnconsultageneral.setEnabled(consult_general);
+    }
+    
+    private void reiniciarColors()
+    {
+        //BLOQUE SEGMENTADO 1
+        txtidorden.setBackground(ColorInicial);
+        txtnumeroorden.setBackground(ColorInicial);
+        JTAAnuncio.setBackground(ColorInicial);
+        //BLOQUE SEGMENTADO 2 : Informacion Basica
+        txtfecha.setBackground(ColorInicial);
+        txthora.setBackground(ColorInicial);
+        txtgiro.setBackground(ColorInicial);
+        txtdocumentacion.setBackground(ColorInicial);
+        txtcosto.setBackground(ColorInicial);
+        txtcostofinal.setBackground(ColorInicial);
+        txtdescuentomanual.setBackground(ColorInicial);
+        txtdescuentocodigo.setBackground(ColorInicial);
+        //BLOQUE SEGMENTADO 3 : Informacion Vendedor
+        txtcodvendCrystal.setBackground(ColorInicial);
+        txtidVendedor.setBackground(ColorInicial);
+        txtnombrevendedor.setBackground(ColorInicial);
+        //BLOQUE SEGMENTADO 4 : JTA IA
+        JTAIA.setBackground(ColorInicial);
+        //Bloque Segmentado 5 : Informacion Cliente
+        txtcodCliente.setBackground(ColorInicial);
+        txtnombrecliente.setBackground(ColorInicial);
+        JTAdetcliente.setBackground(ColorInicial);
+    }
+    
+    private void CheckBox_Action(String action)
+    {
+        if(action.equals("ANT"))
+        {
+            clearFRM();
+            JCHNatural.setEnabled(true);
+            JCHJuridica.setEnabled(true);
+            JCHAntigua.setSelected(true);
+        }
+        if(action.equals("TTRB"))
+        {
+            clearFRM();
+            JCHNatural.setEnabled(true);
+            JCHJuridica.setEnabled(true);
+            JCHTicketTrabajo.setSelected(true);
+        }
+    }
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -616,12 +708,21 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         });
 
         JCHAntigua.setText("Antigua");
+        JCHAntigua.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JCHAntiguaActionPerformed(evt);
+            }
+        });
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel11.setText("Tipo Inserción:");
 
         JCHTicketTrabajo.setText("Ticket Trabajo");
-        JCHTicketTrabajo.setEnabled(false);
+        JCHTicketTrabajo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JCHTicketTrabajoActionPerformed(evt);
+            }
+        });
 
         lblusuario8.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         lblusuario8.setText("Información Cliente.");
@@ -993,7 +1094,10 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnnuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnuevoActionPerformed
-
+        
+    
+        
+        
     }//GEN-LAST:event_btnnuevoActionPerformed
 
     private void btnmodificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmodificarActionPerformed
@@ -1006,6 +1110,8 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
 
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
 
+        
+        
     }//GEN-LAST:event_btnsalirActionPerformed
 
     private void btnbuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscarActionPerformed
@@ -1087,6 +1193,64 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     private void btnconsultageneralActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnconsultageneralActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnconsultageneralActionPerformed
+
+    private void JCHAntiguaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JCHAntiguaActionPerformed
+        
+      //EJECUTADO ANTES DE TODO
+      SYSAUDIOCON sysau = new SYSAUDIOCON();
+      //EJECUTADO ANTES DE TODA CONDICIONAL
+      JFrame jf=new JFrame();
+      jf.setAlwaysOnTop(true);
+      
+      if(JCHTicketTrabajo.isSelected())
+      {
+        JCHAntigua.setSelected(false);
+        sysau.E_ERROR();
+        JOptionPane.showMessageDialog(jf, "Primero debe de desactivar la inserción por 'Ticket de Trabajo'", "Otra opción ya esta seleccionada", JOptionPane.ERROR_MESSAGE);
+      }else
+         if(JCHAntigua.isSelected())
+         {
+             CheckBox_Action("ANT");
+         }
+          else 
+            if(JCHAntigua.isSelected()==false)
+            {
+                JCHNatural.setEnabled(false);
+                JCHJuridica.setEnabled(false);
+                clearFRM();
+            }
+             
+
+    }//GEN-LAST:event_JCHAntiguaActionPerformed
+
+    private void JCHTicketTrabajoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JCHTicketTrabajoActionPerformed
+
+      
+      //EJECUTADO ANTES DE TODO
+      SYSAUDIOCON sysau = new SYSAUDIOCON();
+      //EJECUTADO ANTES DE TODA CONDICIONAL
+      JFrame jf=new JFrame();
+      jf.setAlwaysOnTop(true);
+
+      if(JCHAntigua.isSelected())
+      {
+        JCHTicketTrabajo.setSelected(false);
+        sysau.E_ERROR();
+        JOptionPane.showMessageDialog(jf, "Primero debe de desactivar la inserción 'Antigua'", "Otra opción ya esta seleccionada", JOptionPane.ERROR_MESSAGE);
+      }else
+         if(JCHTicketTrabajo.isSelected())
+         {
+             CheckBox_Action("TTRB");
+         }
+         else 
+            if(JCHTicketTrabajo.isSelected()==false)
+            {
+                JCHNatural.setEnabled(false);
+                JCHJuridica.setEnabled(false);
+                clearFRM();
+            }
+
+    }//GEN-LAST:event_JCHTicketTrabajoActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

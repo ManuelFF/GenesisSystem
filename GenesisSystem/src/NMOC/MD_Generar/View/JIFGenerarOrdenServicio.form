@@ -1248,6 +1248,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Antigua"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JCHAntiguaActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel11">
       <Properties>
@@ -1260,8 +1263,10 @@
     <Component class="javax.swing.JCheckBox" name="JCHTicketTrabajo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ticket Trabajo"/>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JCHTicketTrabajoActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblusuario8">
       <Properties>
