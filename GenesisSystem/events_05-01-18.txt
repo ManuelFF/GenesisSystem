@@ -124,3 +124,24 @@ ACCIÓN : Menu 'Permisos' Presionado
 TIME : 9:48:10
 ----------------------------------------------------
  
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 9:57:11
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Usuario'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Usuario' Presionado
+TIME : 9:57:14
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario MANUEL FERNANDO SAAVEDRA BENITES ha sido seleccionado
+TIME : 9:57:18
+----------------------------------------------------
+ 

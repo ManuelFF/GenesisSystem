@@ -49,6 +49,8 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         JTAdetcliente.setLineWrap(true);
         
     }
+    
+    
 
 
     /**
@@ -170,10 +172,10 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         jLabel7.setText("ID Orden:");
 
         txtidorden.setEditable(false);
-        txtidorden.setBackground(new java.awt.Color(204, 204, 204));
+        txtidorden.setBackground(new java.awt.Color(204, 255, 204));
 
         txtnumeroorden.setEditable(false);
-        txtnumeroorden.setBackground(new java.awt.Color(204, 204, 204));
+        txtnumeroorden.setBackground(new java.awt.Color(204, 255, 255));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel8.setText("Número de Orden:");
@@ -437,7 +439,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         jLabel22.setText("ID:");
 
         txtidVendedor.setEditable(false);
-        txtidVendedor.setBackground(new java.awt.Color(204, 204, 204));
+        txtidVendedor.setBackground(new java.awt.Color(204, 255, 204));
 
         jLabel23.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel23.setText("Nombre:");
@@ -449,7 +451,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         jLabel24.setText("COD:");
 
         txtcodCliente.setEditable(false);
-        txtcodCliente.setBackground(new java.awt.Color(204, 204, 204));
+        txtcodCliente.setBackground(new java.awt.Color(204, 255, 204));
 
         txtnombrecliente.setEditable(false);
         txtnombrecliente.setBackground(new java.awt.Color(204, 204, 204));
