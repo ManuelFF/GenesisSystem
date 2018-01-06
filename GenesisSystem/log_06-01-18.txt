@@ -1,0 +1,12 @@
+DESCRIPCIÓN : No se pudo abrir el selector de fechas debido a un error inesperado
+CLASE : JIFGenerarOrdenServicio -> boton fecha
+ERROR : java.lang.NullPointerException
+TIME : 15:4:24
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se pudo abrir el selector de fechas debido a un error inesperado
+CLASE : JIFGenerarOrdenServicio -> boton fecha
+ERROR : java.lang.NullPointerException
+TIME : 15:4:25
+----------------------------------------------------
+ 

@@ -2,265 +2,755 @@ USUARIO : adm
 DESCRIPCIÓN : Ingreso al sistema
 FORMULARIO : JFRInicioSesion
 ACCIÓN : Botón 'INGRESAR' Presionado
-TIME : 8:49:40
+TIME : 11:55:31
 ----------------------------------------------------
  
 USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
 DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
 FORMULARIO : JFPrincipal
 ACCIÓN : Menu 'Generar Orden Servicio' Presionado
-TIME : 8:49:59
+TIME : 11:55:35
 ----------------------------------------------------
  
 USUARIO : adm
 DESCRIPCIÓN : Ingreso al sistema
 FORMULARIO : JFRInicioSesion
 ACCIÓN : Botón 'INGRESAR' Presionado
-TIME : 8:59:11
+TIME : 11:56:39
 ----------------------------------------------------
  
 USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
 DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
 FORMULARIO : JFPrincipal
 ACCIÓN : Menu 'Generar Orden Servicio' Presionado
-TIME : 8:59:15
-----------------------------------------------------
- 
-USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
-DESCRIPCIÓN : Abrio el formulario 'Generar Cotización'
-FORMULARIO : JFPrincipal
-ACCIÓN : Menu 'Generar Cotización' Presionado
-TIME : 9:1:46
+TIME : 11:56:40
 ----------------------------------------------------
  
 USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
 DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
 FORMULARIO : JFRPrincipal
 ACCIÓN : Botón 'Cerrar Sesión' Presionado
-TIME : 9:1:54
+TIME : 11:57:6
 ----------------------------------------------------
  
 USUARIO : adm
 DESCRIPCIÓN : Ingreso al sistema
 FORMULARIO : JFRInicioSesion
 ACCIÓN : Botón 'INGRESAR' Presionado
-TIME : 9:3:46
+TIME : 11:57:12
 ----------------------------------------------------
  
 USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
 DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
 FORMULARIO : JFPrincipal
 ACCIÓN : Menu 'Generar Orden Servicio' Presionado
-TIME : 9:3:50
+TIME : 11:57:14
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 11:58:42
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 11:58:44
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 11:59:45
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 11:59:46
 ----------------------------------------------------
  
 USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
 DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
 FORMULARIO : JFRPrincipal
 ACCIÓN : Botón 'Cerrar Sesión' Presionado
-TIME : 9:4:50
+TIME : 11:59:53
 ----------------------------------------------------
  
 USUARIO : adm
 DESCRIPCIÓN : Ingreso al sistema
 FORMULARIO : JFRInicioSesion
 ACCIÓN : Botón 'INGRESAR' Presionado
-TIME : 9:5:21
-----------------------------------------------------
- 
-USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
-DESCRIPCIÓN : Abrio el formulario 'Generar Cotización'
-FORMULARIO : JFPrincipal
-ACCIÓN : Menu 'Generar Cotización' Presionado
-TIME : 9:5:24
+TIME : 12:12:5
 ----------------------------------------------------
  
 USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
 DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
 FORMULARIO : JFPrincipal
 ACCIÓN : Menu 'Generar Orden Servicio' Presionado
-TIME : 9:5:24
+TIME : 12:12:6
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 12:12:14
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Juridica
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 12:12:15
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 12:13:25
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Juridica
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 12:13:27
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 12:13:29
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 12:13:45
 ----------------------------------------------------
  
 USUARIO : adm
 DESCRIPCIÓN : Ingreso al sistema
 FORMULARIO : JFRInicioSesion
 ACCIÓN : Botón 'INGRESAR' Presionado
-TIME : 9:9:26
+TIME : 12:15:41
 ----------------------------------------------------
  
 USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
 DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
 FORMULARIO : JFPrincipal
 ACCIÓN : Menu 'Generar Orden Servicio' Presionado
-TIME : 9:9:30
+TIME : 12:15:42
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Juridica
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 12:15:48
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Juridica
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 12:19:29
 ----------------------------------------------------
  
 USUARIO : adm
 DESCRIPCIÓN : Ingreso al sistema
 FORMULARIO : JFRInicioSesion
 ACCIÓN : Botón 'INGRESAR' Presionado
-TIME : 9:11:27
+TIME : 12:24:47
 ----------------------------------------------------
  
 USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
 DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
 FORMULARIO : JFPrincipal
 ACCIÓN : Menu 'Generar Orden Servicio' Presionado
-TIME : 9:11:30
+TIME : 12:24:48
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 12:24:50
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 12:26:14
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 12:26:14
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 12:26:17
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 12:26:55
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 12:26:57
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 12:26:59
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 12:27:17
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 12:27:18
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 12:27:21
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 12:28:21
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 12:28:23
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 12:28:25
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:1:2
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:1:5
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:1:9
 ----------------------------------------------------
  
 USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
 DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
 FORMULARIO : JFRPrincipal
 ACCIÓN : Botón 'Cerrar Sesión' Presionado
-TIME : 9:11:53
-----------------------------------------------------
- 
-USUARIO : adm
-DESCRIPCIÓN : Ingreso al sistema
-FORMULARIO : JFRInicioSesion
-ACCIÓN : Botón 'INGRESAR' Presionado
-TIME : 9:12:39
-----------------------------------------------------
- 
-USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
-DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
-FORMULARIO : JFPrincipal
-ACCIÓN : Menu 'Generar Orden Servicio' Presionado
-TIME : 9:12:56
-----------------------------------------------------
- 
-USUARIO : adm
-DESCRIPCIÓN : Ingreso al sistema
-FORMULARIO : JFRInicioSesion
-ACCIÓN : Botón 'INGRESAR' Presionado
-TIME : 9:17:10
-----------------------------------------------------
- 
-USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
-DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
-FORMULARIO : JFPrincipal
-ACCIÓN : Menu 'Generar Orden Servicio' Presionado
-TIME : 9:17:11
-----------------------------------------------------
- 
-USUARIO : adm
-DESCRIPCIÓN : Ingreso al sistema
-FORMULARIO : JFRInicioSesion
-ACCIÓN : Botón 'INGRESAR' Presionado
-TIME : 9:19:6
-----------------------------------------------------
- 
-USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
-DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
-FORMULARIO : JFPrincipal
-ACCIÓN : Menu 'Generar Orden Servicio' Presionado
-TIME : 9:19:9
-----------------------------------------------------
- 
-USUARIO : adm
-DESCRIPCIÓN : Ingreso al sistema
-FORMULARIO : JFRInicioSesion
-ACCIÓN : Botón 'INGRESAR' Presionado
-TIME : 9:19:48
-----------------------------------------------------
- 
-USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
-DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
-FORMULARIO : JFPrincipal
-ACCIÓN : Menu 'Generar Orden Servicio' Presionado
-TIME : 9:19:51
-----------------------------------------------------
- 
-USUARIO : adm
-DESCRIPCIÓN : Ingreso al sistema
-FORMULARIO : JFRInicioSesion
-ACCIÓN : Botón 'INGRESAR' Presionado
-TIME : 9:22:50
-----------------------------------------------------
- 
-USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
-DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
-FORMULARIO : JFPrincipal
-ACCIÓN : Menu 'Generar Orden Servicio' Presionado
-TIME : 9:22:52
-----------------------------------------------------
- 
-USUARIO : adm
-DESCRIPCIÓN : Ingreso al sistema
-FORMULARIO : JFRInicioSesion
-ACCIÓN : Botón 'INGRESAR' Presionado
-TIME : 9:25:57
-----------------------------------------------------
- 
-USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
-DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
-FORMULARIO : JFPrincipal
-ACCIÓN : Menu 'Generar Orden Servicio' Presionado
-TIME : 9:25:59
-----------------------------------------------------
- 
-USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
-DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
-FORMULARIO : JFPrincipal
-ACCIÓN : Menu 'Mantener Clientes' Presionado
-TIME : 9:44:32
-----------------------------------------------------
- 
-USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
-DESCRIPCIÓN : Hizo click en el botón 'Nuevo' cliente natural 
-FORMULARIO : JIFMantenerCliente linea 344
-ACCIÓN : Botón 'Nuevo_Natural' presionado
-TIME : 9:44:34
-----------------------------------------------------
- 
-USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
-DESCRIPCIÓN : Hizo click en el botón 'Nuevo' cliente natural 
-FORMULARIO : JIFMantenerCliente linea 344
-ACCIÓN : Botón 'Nuevo_Natural' presionado
-TIME : 9:44:35
-----------------------------------------------------
- 
-USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
-DESCRIPCIÓN : Hizo click en el botón 'Nuevo' cliente natural 
-FORMULARIO : JIFMantenerCliente linea 344
-ACCIÓN : Botón 'Nuevo_Natural' presionado
-TIME : 9:44:44
-----------------------------------------------------
- 
-USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
-DESCRIPCIÓN : Hizo click en el botón 'Nuevo' cliente natural 
-FORMULARIO : JIFMantenerCliente linea 344
-ACCIÓN : Botón 'Nuevo_Natural' presionado
-TIME : 9:44:47
-----------------------------------------------------
- 
-USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
-DESCRIPCIÓN : Inserto un cliente natural
-FORMULARIO : JIFMantenerClientes -> Naturales
-ACCIÓN : Botón 'Insertar' Presionado
-TIME : 9:44:47
-----------------------------------------------------
- 
-USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
-DESCRIPCIÓN : Ha salido del formulario 'Mantener Clientes'
-FORMULARIO : JIFMantenerClientes
-ACCIÓN : Presiono Botón 'Salir'
-TIME : 9:44:49
+TIME : 15:1:18
 ----------------------------------------------------
  
 USUARIO : Aún no definido
 DESCRIPCIÓN : Salio del sistema
 FORMULARIO : JFRInicioSesion
 ACCIÓN : Botón 'SALIR' Presionado
-TIME : 10:21:52
+TIME : 15:2:25
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:3:15
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:3:48
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:3:51
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:4:17
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:4:20
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:4:23
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:5:25
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:5:27
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:5:30
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:5:56
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:5:57
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:6:8
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:7:19
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:7:21
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:7:24
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:7:58
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:8:1
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:8:3
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:8:37
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:8:39
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:8:49
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:9:4
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:9:6
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:9:8
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:10:58
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:11:2
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:11:6
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:12:25
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:12:26
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:12:28
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:13:5
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:13:6
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:13:8
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:21:42
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:21:43
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:21:45
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:28:18
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:28:19
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:28:21
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:28:44
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:28:47
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:28:50
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:30:38
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:30:38
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:30:40
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:31:15
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:31:17
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:31:19
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:32:0
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:32:2
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:32:3
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:33:1
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:33:2
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:33:4
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:33:18
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:33:19
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:33:21
 ----------------------------------------------------
  
 USUARIO : Aún no definido
 DESCRIPCIÓN : Salio del sistema
 FORMULARIO : JFRInicioSesion
 ACCIÓN : Botón 'SALIR' Presionado
-TIME : 11:23:41
+TIME : 15:34:46
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:34:51
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:34:54
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:34:56
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:40:6
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:40:7
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 15:40:10
 ----------------------------------------------------
  

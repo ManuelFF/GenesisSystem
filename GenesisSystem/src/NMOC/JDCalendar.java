@@ -9,6 +9,7 @@ import ModuleWorker.IC.MWCON;
 import ModuleWorker.SYSFRMCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
+import NMOC.MD_Generar.View.JIFGenerarOrdenServicio;
 
 /**
  *
@@ -25,31 +26,33 @@ public class JDCalendar extends javax.swing.JDialog
     EVENTS evn = new EVENTS();
     SYSFRMCON sysfrm = new SYSFRMCON();
     MWCON mw = new MWCON();
+    private String tipo;
+
     
-    
-    public JDCalendar(java.awt.Frame parent, boolean modal) 
+    public JDCalendar(java.awt.Frame parent, boolean modal,String capsule) 
     {
         super(parent, modal);
         initComponents();
         this.setTitle(sysfrm.T_Date());
         sysfrm.B_Date(this.getContentPane());
         this.setLocation(900, 300);
-        H_T_DATE();
+        H_T_DATE(capsule);
+        tipo=capsule;
     }
     
-    public String tipo = "D";
     public String formulario = "";
     
-    public final void H_T_DATE()
+    private void H_T_DATE(String tip)
     {
-        if(tipo.equals("D"))
+        if(tip.equals("D"))
         {
             SEM_IA();
             lbl1.setText("Día");
             lbl2.setText("Mes");
             lbl3.setText("Año");
+            
         }
-        if(tipo.equals("T"))
+        if(tip.equals("T"))
         {
             lbl1.setText("Hora");
             lbl2.setText("Minutos");
@@ -62,7 +65,7 @@ public class JDCalendar extends javax.swing.JDialog
     }
     
     //SEMI IA: este establecera las fechas a las fechas actuales cuando el tipo sea D
-    public void SEM_IA()
+    private void SEM_IA()
     {
         String ArrayTem[] = mw.fecha_actual().split("/");
         
@@ -216,7 +219,7 @@ public class JDCalendar extends javax.swing.JDialog
             
             if(formulario.equals("ORDEN_SERV"))
             {
-                
+                JIFGenerarOrdenServicio.txtfecha.setText(dia+"/"+mes+"/"+año);
             }
             
             System.out.println("DIA : "+dia+"\nMES: "+mes+"\nAÑO: "+año);
@@ -272,7 +275,7 @@ public class JDCalendar extends javax.swing.JDialog
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                JDCalendar dialog = new JDCalendar(new javax.swing.JFrame(), true);
+                JDCalendar dialog = new JDCalendar(new javax.swing.JFrame(), true,"");
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

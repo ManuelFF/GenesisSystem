@@ -12,6 +12,7 @@ import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NCLPM.RESULTS;
+import NMOC.JDCalendar;
 import java.awt.Color;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -214,6 +215,19 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         }
     }
     
+    private void clearCacheDB()
+    {
+        try 
+        {
+            //CARGARDATOS
+            
+        } catch (Exception e) 
+            {
+                lc.write("Error al intentar borrar la cache de la DB", "JIFGenerarOrdenServicio metodo clearcacheDB linea 172", e);
+            }
+    }
+    
+    public String modo_orden = "";
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -294,7 +308,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         jLabel24 = new javax.swing.JLabel();
         txtcodCliente = new javax.swing.JTextField();
         txtnombrecliente = new javax.swing.JTextField();
-        jLabel25 = new javax.swing.JLabel();
+        lblnomcli = new javax.swing.JLabel();
         lblusuario5 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         JTAdetcliente = new javax.swing.JTextArea();
@@ -622,8 +636,8 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         txtnombrecliente.setEditable(false);
         txtnombrecliente.setBackground(new java.awt.Color(204, 204, 204));
 
-        jLabel25.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel25.setText("Nombres:");
+        lblnomcli.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lblnomcli.setText("Nombres:");
 
         lblusuario5.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         lblusuario5.setText("Detalle.");
@@ -787,37 +801,41 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                                             .addComponent(txtdescuentomanual, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(jLabel20))
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jLabel16)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(txtcosto, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jLabel17)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(txtcostofinal, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(jLabel13)
-                                                    .addComponent(jLabel12))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                    .addComponent(txthora, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE)
-                                                    .addComponent(txtfecha))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                    .addGroup(layout.createSequentialGroup()
-                                                        .addComponent(btnfecha)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(jLabel14)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(txtgiro, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                    .addGroup(layout.createSequentialGroup()
-                                                        .addComponent(btnhora, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(jLabel15)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(txtdocumentacion, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                        .addComponent(jLabel13)
+                                                        .addComponent(jLabel12))
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                                                .addGroup(layout.createSequentialGroup()
+                                                    .addComponent(jLabel16)
+                                                    .addGap(2, 2, 2)))
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                                .addGroup(layout.createSequentialGroup()
+                                                    .addComponent(txtcosto)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                    .addComponent(jLabel17)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                    .addComponent(txtcostofinal, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGroup(layout.createSequentialGroup()
+                                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                        .addComponent(txtfecha, javax.swing.GroupLayout.DEFAULT_SIZE, 76, Short.MAX_VALUE)
+                                                        .addComponent(txthora))
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                        .addGroup(layout.createSequentialGroup()
+                                                            .addComponent(btnfecha)
+                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                            .addComponent(jLabel14)
+                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                            .addComponent(txtgiro, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                            .addComponent(btnhora, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                            .addComponent(jLabel15)
+                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                            .addComponent(txtdocumentacion, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(jLabel19)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -909,7 +927,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(txtcodCliente)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel25)
+                                        .addComponent(lblnomcli)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(txtnombrecliente, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(jSeparator5)
@@ -1064,7 +1082,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel24)
                                     .addComponent(txtcodCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel25)
+                                    .addComponent(lblnomcli)
                                     .addComponent(txtnombrecliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1099,10 +1117,53 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnnuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnuevoActionPerformed
-        
-    
-        
-        
+
+    String Tipo_orden = mw.getSelectedButtonText(TipoOrden);
+    try 
+       {
+           //INICIO CABECERAS IMPORTANTES
+           //Ejecutado al inicio de todo
+           SYSAUDIOCON sysau = new SYSAUDIOCON();
+           JFrame jf=new JFrame();
+           jf.setAlwaysOnTop(true);
+           clearCacheDB();
+           
+           if(Tipo_orden.equals("Natural"))
+           {
+               lblnomcli.setText("Nombres:");
+               modo_orden = "Natural";
+           }
+           if(Tipo_orden.equals("Juridica"))
+           {
+               lblnomcli.setText("Razón S.:");
+               modo_orden = "Juridica";
+           }
+           
+           //BLOQUE 2:
+           enadisa_bloque2_botones(true, true, true, true);
+           //BLOQUE 3:
+           enadisa_bloque3_botones(true, true, true, true);
+           //BLOQUE 5:
+           enadisa_bloque5_botones(true);
+           //BLOQUE 6:
+           enadisa_bloque6_botones(true, true, true, true, true, true, true);
+           
+           evn.write(lblusuario.getText(), "Hizo click en el botón 'Nuevo' Orden de Servicio "+modo_orden, "JIFGenerarOrdenServicio", "Botón 'Nuevo' presionado");
+           
+           //FIN INICIO CABECERAS IMPORTANTES
+           
+           
+           
+           
+           
+           
+           
+
+       } catch (Exception e) 
+           {
+              lc.write("Ha ocurrido un error al intentar insertar una nueva orden","JIFGenerarOrdenServicio", e);
+           }
+
     }//GEN-LAST:event_btnnuevoActionPerformed
 
     private void btnmodificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmodificarActionPerformed
@@ -1137,11 +1198,32 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     }//GEN-LAST:event_btnimprimirActionPerformed
 
     private void btnfechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnfechaActionPerformed
-        // TODO add your handling code here:
+
+    try 
+    {
+        JDCalendar ca = new JDCalendar(form, true,"D");
+        ca.formulario="ORDEN_SERV";
+        ca.setVisible(true);
+        
+    } catch (Exception e) 
+        {
+            lc.write("No se pudo abrir el selector de fechas debido a un error inesperado", "JIFGenerarOrdenServicio -> boton fecha", e);
+        }
+
     }//GEN-LAST:event_btnfechaActionPerformed
 
     private void btnhoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnhoraActionPerformed
-        // TODO add your handling code here:
+
+    try 
+    {
+        JDCalendar ca = new JDCalendar(form, true,"T");
+        ca.formulario="ORDEN_SERV";
+        ca.setVisible(true);
+        
+    } catch (Exception e) 
+        {
+            lc.write("No se pudo abrir el selector de fechas debido a un error inesperado", "JIFGenerarOrdenServicio -> boton hora", e);
+        }
     }//GEN-LAST:event_btnhoraActionPerformed
 
     private void btnconsultarDescuentocodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnconsultarDescuentocodigoActionPerformed
@@ -1330,7 +1412,6 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
@@ -1346,6 +1427,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JLabel lbldate;
+    private javax.swing.JLabel lblnomcli;
     private javax.swing.JLabel lblusuario;
     private javax.swing.JLabel lblusuario1;
     private javax.swing.JLabel lblusuario2;
@@ -1362,9 +1444,9 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     private javax.swing.JTextField txtdescuentocodigo;
     private javax.swing.JTextField txtdescuentomanual;
     private javax.swing.JTextField txtdocumentacion;
-    private javax.swing.JTextField txtfecha;
+    public static javax.swing.JTextField txtfecha;
     private javax.swing.JTextField txtgiro;
-    private javax.swing.JTextField txthora;
+    public static javax.swing.JTextField txthora;
     private javax.swing.JTextField txtidVendedor;
     private javax.swing.JTextField txtidorden;
     private javax.swing.JTextField txtnombrecliente;
