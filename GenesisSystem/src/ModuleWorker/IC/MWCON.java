@@ -12,6 +12,9 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Enumeration;
+import javax.swing.AbstractButton;
+import javax.swing.ButtonGroup;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
@@ -57,6 +60,7 @@ public class MWCON
         //jt.setModel(modelo);
     }
     
+    //Metodo que devuelve la fecha actual con el formato dd/MM/yyyy
     public String fecha_actual()
     {
         Date date = new Date();
@@ -67,6 +71,21 @@ public class MWCON
         
         String compl = ""+dia_current.format(date)+"/"+""+mes_current.format(date)+"/"+""+año_current.format(date);
         return compl;
+    }
+    
+    //Metodo que devuelve el boton que esta siendo presionado dentro de un 
+    //ButtonGroup
+    public String getSelectedButtonText(ButtonGroup buttonGroup) 
+    {
+      for (Enumeration<AbstractButton> buttons = buttonGroup.getElements(); buttons.hasMoreElements();) 
+      {
+          AbstractButton button = buttons.nextElement();
+            if (button.isSelected()) 
+            {
+                return button.getText();
+            }
+      }
+        return null;
     }
             
    

@@ -62,8 +62,8 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         cbestado.setSelectedIndex(0);
         JCHAntigua.setSelected(false);
         JCHTicketTrabajo.setSelected(false);
-        JCHNatural.setSelected(false);
-        JCHJuridica.setSelected(false);
+        RDBNatural.setSelected(false);
+        RDBJuridica.setSelected(false);
         //BLOQUE SEGMENTADO 2 : Informacion Basica
         txtfecha.setText("");
         txthora.setText("");
@@ -93,8 +93,8 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         //BLOQUE SEGMENTADO 1
         JTAAnuncio.setEditable(cond);
         cbestado.setEnabled(cond);
-        JCHNatural.setEnabled(cond);
-        JCHJuridica.setEnabled(cond);
+        RDBNatural.setEnabled(cond);
+        RDBJuridica.setEnabled(cond);
         //BLOQUE SEGMENTADO 2 : Informacion Basica
         txtfecha.setEditable(cond);
         txthora.setEditable(cond);
@@ -198,16 +198,19 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         if(action.equals("ANT"))
         {
             clearFRM();
-            JCHNatural.setEnabled(true);
-            JCHJuridica.setEnabled(true);
+            RDBNatural.setEnabled(true);
+            RDBJuridica.setEnabled(true);
             JCHAntigua.setSelected(true);
+            enadisa_bloque1_botones(true, false, true, true, false, false, false, true);
         }
         if(action.equals("TTRB"))
         {
             clearFRM();
-            JCHNatural.setEnabled(true);
-            JCHJuridica.setEnabled(true);
+            RDBNatural.setEnabled(true);
+            RDBJuridica.setEnabled(true);
             JCHTicketTrabajo.setSelected(true);
+            enadisa_bloque1_botones(true, false, true, true, false, false, false, true);
+            
         }
     }
     
@@ -222,6 +225,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        TipoOrden = new javax.swing.ButtonGroup();
         jLabel2 = new javax.swing.JLabel();
         lblusuario = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -234,8 +238,8 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         jLabel9 = new javax.swing.JLabel();
         cbestado = new javax.swing.JComboBox<>();
         jLabel10 = new javax.swing.JLabel();
-        JCHNatural = new javax.swing.JRadioButton();
-        JCHJuridica = new javax.swing.JRadioButton();
+        RDBNatural = new javax.swing.JRadioButton();
+        RDBJuridica = new javax.swing.JRadioButton();
         btnnuevo = new javax.swing.JButton();
         btnmodificar = new javax.swing.JButton();
         btncancelar = new javax.swing.JButton();
@@ -351,11 +355,14 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel10.setText("Tipo Orden:");
 
-        JCHNatural.setText("Natural");
-        JCHNatural.setEnabled(false);
+        TipoOrden.add(RDBNatural);
+        RDBNatural.setSelected(true);
+        RDBNatural.setText("Natural");
+        RDBNatural.setEnabled(false);
 
-        JCHJuridica.setText("Juridica");
-        JCHJuridica.setEnabled(false);
+        TipoOrden.add(RDBJuridica);
+        RDBJuridica.setText("Juridica");
+        RDBJuridica.setEnabled(false);
 
         btnnuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Files-New-File-icon.png"))); // NOI18N
         btnnuevo.setText("Nuevo");
@@ -874,7 +881,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                                             .addGroup(layout.createSequentialGroup()
                                                 .addComponent(jLabel10)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(JCHNatural))
+                                                .addComponent(RDBNatural))
                                             .addGroup(layout.createSequentialGroup()
                                                 .addComponent(jLabel11)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -882,19 +889,16 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(JCHTicketTrabajo)
-                                            .addComponent(JCHJuridica))))
+                                            .addComponent(RDBJuridica))))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(lblusuario8, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(55, 55, 55)
-                                        .addComponent(btnAgregarImplementos)))
-                                .addGap(0, 0, 0))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblusuario8, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(55, 55, 55)
+                                .addComponent(btnAgregarImplementos))
                             .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -974,8 +978,8 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel10)
-                                    .addComponent(JCHNatural)
-                                    .addComponent(JCHJuridica))
+                                    .addComponent(RDBNatural)
+                                    .addComponent(RDBJuridica))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(btnnuevo)
@@ -983,11 +987,12 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                                     .addComponent(btncancelar)
                                     .addComponent(btnbuscar))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(btnPDF)
-                                    .addComponent(btnimprimir)
-                                    .addComponent(btnsalir)
-                                    .addComponent(btncopiar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btncopiar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(btnPDF)
+                                        .addComponent(btnimprimir)
+                                        .addComponent(btnsalir)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1110,6 +1115,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
 
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
 
+        System.out.println(mw.getSelectedButtonText(TipoOrden));
         
         
     }//GEN-LAST:event_btnsalirActionPerformed
@@ -1215,9 +1221,19 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
           else 
             if(JCHAntigua.isSelected()==false)
             {
-                JCHNatural.setEnabled(false);
-                JCHJuridica.setEnabled(false);
+                RDBNatural.setEnabled(false);
+                RDBJuridica.setEnabled(false);
                 clearFRM();
+                //BLOQUE 1:
+                enadisa_bloque1_botones(false, false, false, false, false, false, false, true);
+                //BLOQUE 2:
+                enadisa_bloque2_botones(false, false, false, false);
+                //BLOQUE 3:
+                enadisa_bloque3_botones(false, false, false, false);
+                //BLOQUE 5:
+                enadisa_bloque5_botones(false);
+                //BLOQUE 6:
+                enadisa_bloque6_botones(false, false, false, false, false, false, false);         
             }
              
 
@@ -1245,9 +1261,19 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
          else 
             if(JCHTicketTrabajo.isSelected()==false)
             {
-                JCHNatural.setEnabled(false);
-                JCHJuridica.setEnabled(false);
+                RDBNatural.setEnabled(false);
+                RDBJuridica.setEnabled(false);
                 clearFRM();
+                //BLOQUE 1:
+                enadisa_bloque1_botones(false, false, false, false, false, false, false, true);
+                //BLOQUE 2:
+                enadisa_bloque2_botones(false, false, false, false);
+                //BLOQUE 3:
+                enadisa_bloque3_botones(false, false, false, false);
+                //BLOQUE 5:
+                enadisa_bloque5_botones(false);
+                //BLOQUE 6:
+                enadisa_bloque6_botones(false, false, false, false, false, false, false);
             }
 
     }//GEN-LAST:event_JCHTicketTrabajoActionPerformed
@@ -1256,12 +1282,13 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> CBconsultacontOrden;
     private javax.swing.JCheckBox JCHAntigua;
-    private javax.swing.JRadioButton JCHJuridica;
-    private javax.swing.JRadioButton JCHNatural;
     private javax.swing.JCheckBox JCHTicketTrabajo;
     private javax.swing.JTextArea JTAAnuncio;
     private javax.swing.JTextArea JTAIA;
     private javax.swing.JTextArea JTAdetcliente;
+    private javax.swing.JRadioButton RDBJuridica;
+    private javax.swing.JRadioButton RDBNatural;
+    private javax.swing.ButtonGroup TipoOrden;
     private javax.swing.JButton btnAgregarAreas;
     private javax.swing.JButton btnAgregarImplementos;
     private javax.swing.JButton btnAgregarOperarios;

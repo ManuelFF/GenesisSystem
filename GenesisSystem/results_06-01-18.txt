@@ -1,0 +1,10 @@
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerClientes -> Natural
+HORA : 9:44:47
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el cliente con ID  CLI-00000208
+ NOMBRE: SDFSDF 
+ APELLIDOS: SDFSDF SDFSDF 
+ DNI: -
+----------------------------------------------------
+ 

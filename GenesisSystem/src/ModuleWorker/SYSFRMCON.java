@@ -148,6 +148,19 @@ public class SYSFRMCON
     }
     
     //#########################################################################
+    //FORMULARIOS GLOBALES
+    public String T_Date()
+    {
+        String t = DEV()+" Selector de Fecha y Hora";
+        return t;
+    }
+    
+    public void B_Date(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+    
+    //#########################################################################
     //FORMULARIOS DE MANTENIMIENTO
     
     //MANTENER CLIENTES
