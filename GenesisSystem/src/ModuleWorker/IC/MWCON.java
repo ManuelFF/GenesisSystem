@@ -11,8 +11,10 @@ import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Enumeration;
+import java.util.GregorianCalendar;
 import javax.swing.AbstractButton;
 import javax.swing.ButtonGroup;
 import javax.swing.JTable;
@@ -71,6 +73,21 @@ public class MWCON
         
         String compl = ""+dia_current.format(date)+"/"+""+mes_current.format(date)+"/"+""+año_current.format(date);
         return compl;
+    }
+    
+    public String hour_actual()
+    {
+        Calendar calendario = new GregorianCalendar();
+        int hora, minutos, segundos;
+        String frt= "";
+
+        hora =calendario.get(Calendar.HOUR_OF_DAY);
+        minutos = calendario.get(Calendar.MINUTE);
+        segundos = calendario.get(Calendar.SECOND);
+        if(calendario.get(Calendar.AM_PM)==0) {frt=frt+" AM";}
+        else {frt=frt+" PM";}
+        
+        return hora + ":" + minutos + ":" + segundos+frt;
     }
     
     //Metodo que devuelve el boton que esta siendo presionado dentro de un 
