@@ -7,6 +7,7 @@ package NMOC;
 
 import ModuleWorker.IC.MWCON;
 import ModuleWorker.SYSFRMCON;
+import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NMOC.MD_Generar.View.JIFGenerarOrdenServicio;
@@ -60,7 +61,6 @@ public class JDCalendar extends javax.swing.JDialog
             CB1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"}));
             CB2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {"00", "05", "10", "15", "20","25","30","35", "40","45", "50","55"}));
             CB3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {"AM", "PM"}));
-
         }
     }
     
@@ -217,23 +217,34 @@ public class JDCalendar extends javax.swing.JDialog
             //MES FIN CONDICIONAL
             año = CB3.getSelectedItem().toString();
             
+            //DESDE AQUI CONDICIONALES DE FORMULARIOS -- ESPECIFICACIONES
             if(formulario.equals("ORDEN_SERV"))
             {
+                evn.write(JFRPrincipal.JMSesion.getText(), "Establecio la fecha "+dia+"/"+mes+"/"+año+"\n en el formulario 'JIFGenerarOrdenServicio'", "JDCalendar", "Botón 'Establecer' presionado");
                 JIFGenerarOrdenServicio.txtfecha.setText(dia+"/"+mes+"/"+año);
             }
-            
-            System.out.println("DIA : "+dia+"\nMES: "+mes+"\nAÑO: "+año);
-            
         }
         
         if(tipo.equals("T"))
         {
-            
+            //OBTENCION DE DATOS
+            String hora,minuto,fort;
+            hora = CB1.getSelectedItem().toString();
+            minuto = CB2.getSelectedItem().toString();
+            fort = CB3.getSelectedItem().toString();
+
+            //DESDE AQUI CONDICIONALES DE FORMULARIOS -- ESPECIFICACIONES            
+            if(formulario.equals("ORDEN_SERV"))
+            {   
+               evn.write(JFRPrincipal.JMSesion.getText(), "Establecio la hora "+hora+":"+minuto+" "+fort+"\n en el formulario 'JIFGenerarOrdenServicio'", "JDCalendar", "Botón 'Establecer' presionado");
+               JIFGenerarOrdenServicio.txthora.setText(hora+":"+minuto+" "+fort);
+            }
         }
         
+        this.dispose();
     } catch (Exception e) 
         {
-            lc.write("No se pudo establecer fecha", "JDCalendar", e);
+            lc.write("No se pudo establecer hora o la hora debido a un error no esperado", "JDCalendar", e);
         }
         
         
@@ -241,6 +252,7 @@ public class JDCalendar extends javax.swing.JDialog
 
     private void btncancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelarActionPerformed
 
+    evn.write(JFRPrincipal.JMSesion.getText(), "Cancelo la seleccion de fechas y cerro el formulario", "JDCalendar", "Botón 'cancelar' presionado");
     dispose();
         
     }//GEN-LAST:event_btncancelarActionPerformed
