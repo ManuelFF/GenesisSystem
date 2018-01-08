@@ -1151,14 +1151,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
            evn.write(lblusuario.getText(), "Hizo click en el botón 'Nuevo' Orden de Servicio "+modo_orden, "JIFGenerarOrdenServicio", "Botón 'Nuevo' presionado");
            
            //FIN INICIO CABECERAS IMPORTANTES
-           
-           
-           
-           
-           
-           
-           
-           
+       
 
        } catch (Exception e) 
            {

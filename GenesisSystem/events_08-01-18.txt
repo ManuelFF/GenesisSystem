@@ -1,0 +1,109 @@
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 9:40:14
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:3:24
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 10:3:27
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 10:3:31
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de fechas
+FORMULARIO : JIFGenerarOrdenServicio -> JDCalendar
+ACCIÓN : Botón 'fecha' presionado
+TIME : 10:3:31
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la fecha 08/01/2018
+ en el formulario 'JIFGenerarOrdenServicio'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 10:3:33
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de horas
+FORMULARIO : JIFGenerarOrdenServicio -> JDCalendar
+ACCIÓN : Botón 'hora' presionado
+TIME : 10:3:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la hora 10:30 AM
+ en el formulario 'JIFGenerarOrdenServicio'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 10:3:51
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:6:31
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 10:6:34
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 10:6:42
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de horas
+FORMULARIO : JIFGenerarOrdenServicio -> JDCalendar
+ACCIÓN : Botón 'hora' presionado
+TIME : 10:6:46
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la hora 10:30 AM
+ en el formulario 'JIFGenerarOrdenServicio'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 10:6:47
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de fechas
+FORMULARIO : JIFGenerarOrdenServicio -> JDCalendar
+ACCIÓN : Botón 'fecha' presionado
+TIME : 10:6:48
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la fecha 08/01/2018
+ en el formulario 'JIFGenerarOrdenServicio'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 10:6:49
+----------------------------------------------------
+ 
