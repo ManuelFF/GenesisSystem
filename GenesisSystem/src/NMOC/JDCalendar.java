@@ -11,6 +11,8 @@ import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NMOC.MD_Generar.View.JIFGenerarOrdenServicio;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 /**
  *
@@ -28,6 +30,7 @@ public class JDCalendar extends javax.swing.JDialog
     SYSFRMCON sysfrm = new SYSFRMCON();
     MWCON mw = new MWCON();
     private String tipo;
+    public String formulario = "";
 
     
     public JDCalendar(java.awt.Frame parent, boolean modal,String capsule) 
@@ -40,14 +43,19 @@ public class JDCalendar extends javax.swing.JDialog
         H_T_DATE(capsule);
         tipo=capsule;
     }
-    
-    public String formulario = "";
-    
+   
     private void H_T_DATE(String tip)
     {
         if(tip.equals("D"))
         {
-            SEM_IA();
+            //SEMI IA: este establecera las fechas a las fechas actuales cuando el tipo sea D
+            String ArrayTem[] = mw.fecha_actual().split("/");
+            int  i = Integer.parseInt(ArrayTem[1])-1;     
+            CB1.setSelectedItem(ArrayTem[0]);
+            CB2.setSelectedIndex(i);
+            CB3.setSelectedItem(ArrayTem[2]);
+            
+            //NOMBRES A LOS LABELS
             lbl1.setText("Día");
             lbl2.setText("Mes");
             lbl3.setText("Año");
@@ -55,26 +63,21 @@ public class JDCalendar extends javax.swing.JDialog
         }
         if(tip.equals("T"))
         {
+            
+            //NOMBRES DE LOS LABELS
             lbl1.setText("Hora");
             lbl2.setText("Minutos");
             lbl3.setText("AM/PM");
+            //NUEVOS MODELOS DE CBOX 
             CB1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"}));
             CB2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {"00", "05", "10", "15", "20","25","30","35", "40","45", "50","55"}));
             CB3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {"AM", "PM"}));
+            //SEMI IA: este establecera las horas actuales cuando el tipo sea T
+            String ArrayTemp[] = mw.hour_actual().split(":");
+            CB1.setSelectedItem(ArrayTemp[0]);
+            CB2.setSelectedIndex(6);
+
         }
-    }
-    
-    //SEMI IA: este establecera las fechas a las fechas actuales cuando el tipo sea D
-    private void SEM_IA()
-    {
-        String ArrayTem[] = mw.fecha_actual().split("/");
-        
-        int  i = Integer.parseInt(ArrayTem[1])-1;
-        
-        CB1.setSelectedItem(ArrayTem[0]);
-        CB2.setSelectedIndex(i);
-        CB3.setSelectedItem(ArrayTem[2]);
-        
     }
     
 
@@ -252,8 +255,9 @@ public class JDCalendar extends javax.swing.JDialog
 
     private void btncancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelarActionPerformed
 
-    evn.write(JFRPrincipal.JMSesion.getText(), "Cancelo la seleccion de fechas y cerro el formulario", "JDCalendar", "Botón 'cancelar' presionado");
-    dispose();
+    //evn.write(JFRPrincipal.JMSesion.getText(), "Cancelo la seleccion de fechas y cerro el formulario", "JDCalendar", "Botón 'cancelar' presionado");
+    System.out.println(mw.hour_actual());
+    //dispose();
         
     }//GEN-LAST:event_btncancelarActionPerformed
 
