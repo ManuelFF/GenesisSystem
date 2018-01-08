@@ -31,7 +31,7 @@ public class RESULTS
     
     JFrame form;
     
-    public String date()
+    private String date()
     {
         Date date = new Date();
         
@@ -47,7 +47,7 @@ public class RESULTS
         return fecha;
     }
     
-    public String hour()
+    private String hour()
     {
         Calendar calendario = new GregorianCalendar();
         int hora, minutos, segundos;
