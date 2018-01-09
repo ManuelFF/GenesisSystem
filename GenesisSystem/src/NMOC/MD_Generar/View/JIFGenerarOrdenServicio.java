@@ -7,6 +7,7 @@ package NMOC.MD_Generar.View;
 
 import IACore.JTACON;
 import ModuleWorker.IC.MWCON;
+import ModuleWorker.IC.ShakingComponent;
 import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSFRMCON;
 import ModuleWorker.View.JFRPrincipal;
@@ -14,7 +15,10 @@ import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NCLPM.RESULTS;
 import NMOC.JDCalendar;
+import NMOC.MD_Generar.IC.CO_GenerarOrdenServicio;
 import java.awt.Color;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -36,6 +40,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     MWCON mw = new MWCON();
     JFrame form;
     JTACON JTC = new JTACON();
+    CO_GenerarOrdenServicio P_orden = new CO_GenerarOrdenServicio();
     Color ColorInicial;
    
     public JIFGenerarOrdenServicio() 
@@ -135,8 +140,6 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     {
         btnfecha.setEnabled(fecha);
         btnhora.setEnabled(hora);
-        btnconsultarDescuentocodigo.setEnabled(consultar);
-        btnQuitarDescuentoCodigo.setEnabled(quitar);
     }
      
     private void enadisa_bloque3_botones(boolean consult_clasico, boolean quitar_clasico, 
@@ -163,6 +166,14 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         btnAgregarImplementos.setEnabled(implementos);
         btnconsultarcontenidoOrden.setEnabled(consultar);
         btnconsultageneral.setEnabled(consult_general);
+    }
+    
+    private void enadisa_bloque_descuento(boolean cond)
+    {
+        txtdescuentomanual.setEnabled(cond);
+        txtdescuentocodigo.setEnabled(cond);
+        btnconsultarDescuentocodigo.setEnabled(cond);
+        btnQuitarDescuentoCodigo.setEnabled(cond);
     }
     
     private void reiniciarColors()
@@ -463,6 +474,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         JTAIA.setEditable(false);
         JTAIA.setBackground(new java.awt.Color(204, 204, 204));
         JTAIA.setColumns(20);
+        JTAIA.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         JTAIA.setRows(5);
         jScrollPane2.setViewportView(JTAIA);
 
@@ -518,6 +530,11 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
 
         txtcosto.setEditable(false);
         txtcosto.setBackground(new java.awt.Color(204, 204, 204));
+        txtcosto.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtcostoKeyTyped(evt);
+            }
+        });
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(0, 0, 255));
@@ -533,13 +550,18 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         jLabel19.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel19.setText("Descuento Codigo:");
 
-        txtdescuentomanual.setEditable(false);
         txtdescuentomanual.setBackground(new java.awt.Color(204, 204, 204));
         txtdescuentomanual.setText("0");
+        txtdescuentomanual.setEnabled(false);
+        txtdescuentomanual.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtdescuentomanualKeyTyped(evt);
+            }
+        });
 
-        txtdescuentocodigo.setEditable(false);
         txtdescuentocodigo.setBackground(new java.awt.Color(204, 204, 204));
         txtdescuentocodigo.setText("-");
+        txtdescuentocodigo.setEnabled(false);
 
         btnconsultarDescuentocodigo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/search-icon.png"))); // NOI18N
         btnconsultarDescuentocodigo.setText("Consultar");
@@ -1146,6 +1168,8 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                    modo_orden = "Juridica";
                }
                editFRM(true);
+               //BLOQUE 1:
+               enadisa_bloque1_botones(true, false, true, false, false, false, false, true);
                //BLOQUE 2:
                enadisa_bloque2_botones(true, true, true, true);
                //BLOQUE 3:
@@ -1161,6 +1185,22 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                
            }else
                 {
+                  //LOGICA DE VERIFICACION
+                  /*
+                        esta logica de verificacion sera LS.
+                        estara centrada a conectar y verificar todas las partes
+                        dentro de este formulario.
+                        la verificacion se hara a cada bloque a la vez
+                  */
+                  //  if()
+                  //  {
+                  //  }else
+                    //
+                  //  if()
+                  //  {
+                  //  }
+                    //
+                    
                     
                 }
 
@@ -1176,12 +1216,44 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     }//GEN-LAST:event_btnmodificarActionPerformed
 
     private void btncancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelarActionPerformed
+         
+    try 
+    {
+        evn.write(lblusuario.getText(), "Ha cancelado la inserción o modificación de una orden "+modo_orden, "JIFGenerarOrdenServicio", "Botón 'Cancelar' Presionado");
+        clearFRM();
+        editFRM(false);
+        //BLOQUE 1:
+        enadisa_bloque1_botones(false, false, false, false, false, false, false, true);
+        //BLOQUE 2:
+        enadisa_bloque2_botones(false, false, false, false);
+        //BLOQUE 3:
+        enadisa_bloque3_botones(false, false, false, false);
+        //BLOQUE 5:
+        enadisa_bloque5_botones(false);
+        //BLOQUE 6:
+        enadisa_bloque6_botones(false, false, false, false, false, false, false);
+        btnnuevo.setText("Nuevo");
+        btnmodificar.setText("Modificar");
+        clearCacheDB();
 
+    } catch (Exception e) 
+       {
+           lc.write("No se pudo cancelar la orden de servicio", "JIFGenerarOrdenServicio", e);
+       }
+        
     }//GEN-LAST:event_btncancelarActionPerformed
 
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
-
-        System.out.println(mw.getSelectedButtonText(TipoOrden));
+                
+    try 
+    {           
+      evn.write(lblusuario.getText(), "Ha salido del formulario 'JIFGenerarOrdenServicio'", "JIFMantenerClientes", "Presiono Botón 'Salir'");
+      JFRPrincipal.JSMGenerarOrden.setActionCommand("CERRADO");
+      this.dispose();
+    } catch (Exception e) 
+    {
+        lc.write("No se ha podido cerrar el formulario 'JIFGenerarOrdenServicio' debido a un error inesperado", "JIFGenerarOrdenServicio", e);
+    }
         
         
     }//GEN-LAST:event_btnsalirActionPerformed
@@ -1234,11 +1306,75 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     }//GEN-LAST:event_btnhoraActionPerformed
 
     private void btnconsultarDescuentocodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnconsultarDescuentocodigoActionPerformed
-        // TODO add your handling code here:
+
+    try 
+    {
+       //EJECUTADO ANTES DE TODO
+       SYSAUDIOCON sysau = new SYSAUDIOCON();
+       //EJECUTADO ANTES DE TODA CONDICIONAL
+       JFrame jf=new JFrame();
+       jf.setAlwaysOnTop(true);
+       
+       String cod = txtdescuentocodigo.getText().trim();
+       txtdescuentomanual.setText("0");
+               
+       if(cod.equals(""))
+       {
+           txtdescuentocodigo.setBackground(Color.red);
+           JTC.clear(JTAIA);
+           JTC.cabecera(JTAIA);
+           sysau.E_ERROR();
+           JTC.msj(JTAIA, "Ingrese primero un codigo de descuento");
+       }
+           else
+           {
+           int porcentaje = P_orden.BuscarPorcentaje(cod);
+
+           if(porcentaje==0)
+           {
+               txtdescuentocodigo.setBackground(Color.red);
+               JTC.clear(JTAIA);
+               JTC.cabecera(JTAIA);
+               sysau.E_ERROR();
+               JTC.msj(JTAIA, "El codigo que ingreso no se encuentra activo o no existe");
+           }
+           else
+           {
+               JTC.clear(JTAIA);
+               JTC.cabecera(JTAIA);
+               
+               JTC.msj(JTAIA,"El codigo '"+cod+"' corresponde a un descuento \ndel "+porcentaje+"%"
+                       +" Sobre el costo");
+               
+               ShakingComponent jtia = new ShakingComponent(JTAIA);
+               jtia.startShake();
+               
+               sysau.E_INFORMATION();
+               
+               ShakingComponent c = new ShakingComponent(txtdescuentocodigo);
+               c.startShake();
+               
+               txtdescuentocodigo.setBackground(Color.GREEN);
+               Double costo = Double.parseDouble(txtcosto.getText());
+               int desc = porcentaje;
+               Double calcTotal = ((costo*desc)/100);
+               Double total = costo-calcTotal;
+               txtcostofinal.setText(""+String.format("%.2f", total));
+           }
+       }
+    } catch (Exception e) 
+        {
+            lc.write("un error ha ocurrido al aplicar el descuento por codigo", "JIFGenerarOrdenServicio -> consultardescuentocodigo", e);
+        }
+
     }//GEN-LAST:event_btnconsultarDescuentocodigoActionPerformed
 
     private void btnQuitarDescuentoCodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuitarDescuentoCodigoActionPerformed
-        // TODO add your handling code here:
+
+        txtdescuentocodigo.setText("-");txtdescuentomanual.setText("0");
+        txtcostofinal.setText(txtcosto.getText());
+        txtdescuentocodigo.setBackground(ColorInicial);
+
     }//GEN-LAST:event_btnQuitarDescuentoCodigoActionPerformed
 
     private void btnconsultarVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnconsultarVendedorActionPerformed
@@ -1306,10 +1442,12 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
          if(JCHAntigua.isSelected())
          {
              CheckBox_Action("ANT");
+             evn.write(lblusuario.getText(), "Selecciono el tipo de inserción antiguo", "JIFGenerarOrdenServicio", "Radio Button 'Antigua' Presionado");
          }
           else 
             if(JCHAntigua.isSelected()==false)
             {
+                evn.write(lblusuario.getText(), "Deselecciono el tipo de inserción antiguo", "JIFGenerarOrdenServicio", "Radio Button 'Antigua' Presionado");
                 RDBNatural.setEnabled(false);
                 RDBJuridica.setEnabled(false);
                 clearFRM();
@@ -1346,10 +1484,12 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
          if(JCHTicketTrabajo.isSelected())
          {
              CheckBox_Action("TTRB");
+             evn.write(lblusuario.getText(), "Selecciono el tipo de inserción Ticket Trabajo", "JIFGenerarOrdenServicio", "Radio Button 'Ticket Trabajo' Presionado");
          }
          else 
             if(JCHTicketTrabajo.isSelected()==false)
             {
+                evn.write(lblusuario.getText(), "Deselecciono el tipo de inserción Ticket Trabajo", "JIFGenerarOrdenServicio", "Radio Button 'Ticket Trabajo' Presionado");
                 RDBNatural.setEnabled(false);
                 RDBJuridica.setEnabled(false);
                 clearFRM();
@@ -1366,6 +1506,66 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
             }
 
     }//GEN-LAST:event_JCHTicketTrabajoActionPerformed
+
+    private void txtcostoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtcostoKeyTyped
+
+    txtcosto.addKeyListener(new KeyAdapter() 
+    {
+    @Override
+    public void keyReleased(final KeyEvent e) 
+    {
+
+            if(txtcosto.getText().contains(",")){txtcosto.setText("0");txtcosto.setBackground(Color.RED);}
+            else
+            { 
+               if(txtcosto.getText().equals(""))
+               {
+                   enadisa_bloque_descuento(false);
+               }
+               else
+                {
+                    enadisa_bloque_descuento(true);
+                }
+               String cadena = (txtcosto.getText());
+               txtdescuentomanual.setText("0");
+               txtdescuentocodigo.setText("-");
+               txtdescuentocodigo.setBackground(ColorInicial);
+               txtcostofinal.setText(cadena);
+               repaint();
+            }
+        
+    }
+    });
+
+    }//GEN-LAST:event_txtcostoKeyTyped
+
+    private void txtdescuentomanualKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtdescuentomanualKeyTyped
+
+        
+        txtdescuentomanual.addKeyListener(new KeyAdapter() 
+        {
+            @Override
+            public void keyReleased(final KeyEvent e) 
+            {
+                txtdescuentocodigo.setText("-");
+                txtdescuentocodigo.setBackground(ColorInicial);
+                if(txtdescuentomanual.getText().equals("")){txtdescuentomanual.setText("0");}
+                if(Double.parseDouble(txtdescuentomanual.getText())>100){txtdescuentomanual.setText("99");}
+                                     
+                String cadena = (txtdescuentomanual.getText());
+                txtdescuentomanual.setText(cadena);
+                Double costo = Double.parseDouble(txtcosto.getText());
+                Double desc = Double.parseDouble(txtdescuentomanual.getText());
+                Double calcTotal = ((costo*desc)/100);
+                Double total = costo-calcTotal;
+                txtcostofinal.setText(""+String.format("%.2f", total));
+                repaint();
+            }
+        });
+           
+        
+        
+    }//GEN-LAST:event_txtdescuentomanualKeyTyped
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
