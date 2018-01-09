@@ -5,6 +5,7 @@
  */
 package NCLPM;
 
+import ModuleWorker.IC.MWCON;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -13,9 +14,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
 import javax.swing.JFrame;
 
 /**
@@ -28,7 +27,7 @@ public class EVENTS
     EVENTS : en esta clase se manejara los eventos del usuario (seguimiento); cada acción
     que genere un evento sera rastreada desde esta clase.
     */
-    
+    MWCON mw = new MWCON();
     JFrame form;
     
     private String date()
@@ -47,24 +46,11 @@ public class EVENTS
         return fecha;
     }
     
-    private String hour()
-    {
-        Calendar calendario = new GregorianCalendar();
-        int hora, minutos, segundos;
-
-        hora =calendario.get(Calendar.HOUR_OF_DAY);
-        minutos = calendario.get(Calendar.MINUTE);
-        segundos = calendario.get(Calendar.SECOND);
-        
-        return hora + ":" + minutos + ":" + segundos;
-    }
-    
-    
     public void write(String usuario,String descripcion,String formulario,String accion)
     {
         try 
         {
-            String archivo = "events_"+date()+".txt";
+            String archivo = "./LGS/events_"+date()+".txt";
             // Creamos un objeto f, que representa al archivo Usuarios.txt en formato binario
             File f = new File(archivo);
             // Permite abrir el archivo para ESCRITURA (Permite grabar datos)
@@ -76,7 +62,7 @@ public class EVENTS
             pw.println("DESCRIPCIÓN : "+descripcion);
             pw.println("FORMULARIO : "+formulario);
             pw.println("ACCIÓN : "+accion);
-            pw.println("TIME : "+hour());
+            pw.println("TIME : "+mw.hour_actual());
             pw.println("----------------------------------------------------");
             pw.println(" ");
             pw.close();

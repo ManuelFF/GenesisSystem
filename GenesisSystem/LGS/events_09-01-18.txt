@@ -1,0 +1,28 @@
+USUARIO : Aún no definido
+DESCRIPCIÓN : Intento entrar al sistema con un usuario que no existe
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 11:18:26 AM
+----------------------------------------------------
+ 
+USUARIO : Aún no definido
+DESCRIPCIÓN : Intento entrar al sistema con un usuario que no existe
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 11:18:29 AM
+----------------------------------------------------
+ 
+USUARIO : Aún no definido
+DESCRIPCIÓN : Intento entrar al sistema con un usuario que no existe
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 11:18:30 AM
+----------------------------------------------------
+ 
+USUARIO : Aún no definido
+DESCRIPCIÓN : Intento entrar al sistema pero ya no tenia intentos
+FORMULARIO : JFRInicioSesion
+ACCIÓN : FUE EXPULSADO
+TIME : 11:18:31 AM
+----------------------------------------------------
+ 

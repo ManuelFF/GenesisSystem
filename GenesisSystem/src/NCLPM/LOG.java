@@ -5,6 +5,7 @@
  */
 package NCLPM;
 
+import ModuleWorker.IC.MWCON;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -64,7 +65,7 @@ public class LOG
     {
         try 
         {
-            String archivo = "log_"+date()+".txt";
+            String archivo = "./LGS/log_"+date()+".txt";
             // Creamos un objeto f, que representa al archivo Usuarios.txt en formato binario
             File f = new File(archivo);
             // Permite abrir el archivo para ESCRITURA (Permite grabar datos)
