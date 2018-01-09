@@ -79,15 +79,20 @@ public class MWCON
     {
         Calendar calendario = new GregorianCalendar();
         int hora, minutos, segundos;
-        String frt= "";
+        String horafor="", frt= "";
 
         hora =calendario.get(Calendar.HOUR_OF_DAY);
         minutos = calendario.get(Calendar.MINUTE);
         segundos = calendario.get(Calendar.SECOND);
         if(calendario.get(Calendar.AM_PM)==0) {frt=frt+" AM";}
         else {frt=frt+" PM";}
+        if(hora<10)
+        {
+            horafor = "0"+hora;
+        }else{horafor = ""+hora;}
         
-        return hora + ":" + minutos + ":" + segundos+frt;
+        
+        return horafor + ":" + minutos + ":" + segundos+frt;
     }
     
     //Metodo que devuelve el boton que esta siendo presionado dentro de un 
