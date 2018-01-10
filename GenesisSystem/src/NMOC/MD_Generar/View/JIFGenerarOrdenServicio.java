@@ -92,22 +92,28 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     }
     
     //RETORNA NUMERO DE ORDEN
-   private String R_NUMERO_ORDEN()
-   {
-     clearCacheDB();
-     int cod;
-     O_OrdenServicio ultObjeto = null;
-     if(P_orden.tamaño()==0)
-        {
-           cod=1;
-        }
-          else
-           {
-           ultObjeto=P_orden.obtener(P_orden.tamaño()-1); //UltimoObjeto
-           cod=Integer.parseInt(ultObjeto.getNumero_orden())+1;
-           }return ""+cod;
-   }
+    private String R_NUMERO_ORDEN()
+    {
+      clearCacheDB();
+      int cod;
+      O_OrdenServicio ultObjeto = null;
+      if(P_orden.tamaño()==0)
+         {
+            cod=1;
+         }
+           else
+            {
+            ultObjeto=P_orden.obtener(P_orden.tamaño()-1); //UltimoObjeto
+            cod=Integer.parseInt(ultObjeto.getNumero_orden())+1;
+            }return ""+cod;
+    }
     
+    private void Nuevo()
+    {
+        txtidorden.setText(R_ID_ORDEN());
+        txtnumeroorden.setText(R_NUMERO_ORDEN());
+        
+    }
     
     //Borra y limpia texto
     private void clearFRM()
@@ -291,7 +297,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
             clearFRM();
             editFRM(false);
             //BLOQUE 1:
-            enadisa_bloque1_botones(false, false, false, false, false, false, false, true);
+            enadisa_bloque1_botones(false, false, false, true, false, false, false, true);
             //BLOQUE 2:
             enadisa_bloque2_botones(false, false, false, false);
             //BLOQUE 3:
@@ -499,7 +505,6 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
 
         btnbuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/search-icon.png"))); // NOI18N
         btnbuscar.setText("Buscar");
-        btnbuscar.setEnabled(false);
         btnbuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnbuscarActionPerformed(evt);
@@ -1239,6 +1244,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                    lblnomcli.setText("Razón S.:");
                    modo_orden = "Juridica";
                }
+               
                editFRM(true);
                //BLOQUE 1:
                enadisa_bloque1_botones(true, false, true, false, false, false, false, true);
@@ -1253,6 +1259,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
 
                evn.write(lblusuario.getText(), "Hizo click en el botón 'Nuevo' Orden de Servicio "+modo_orden, "JIFGenerarOrdenServicio", "Botón 'Nuevo' presionado");
                //FIN INICIO CABECERAS IMPORTANTES
+               Nuevo();
                btnnuevo.setText("Insertar");
                
            }else
@@ -1309,10 +1316,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     }//GEN-LAST:event_btnsalirActionPerformed
 
     private void btnbuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscarActionPerformed
-        
-        System.out.println("ORDEN ID : "+R_ID_ORDEN()+"\nNUMERO DE ORDEN : "+R_NUMERO_ORDEN());
-        
-        
+
         
     }//GEN-LAST:event_btnbuscarActionPerformed
 
@@ -1508,7 +1512,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                 cancelar();
                 clearFRM();
                 //BLOQUE 1:
-                enadisa_bloque1_botones(false, false, false, false, false, false, false, true);
+                enadisa_bloque1_botones(false, false, false, true, false, false, false, true);
                 //BLOQUE 2:
                 enadisa_bloque2_botones(false, false, false, false);
                 //BLOQUE 3:
@@ -1551,7 +1555,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                 cancelar();
                 clearFRM();
                 //BLOQUE 1:
-                enadisa_bloque1_botones(false, false, false, false, false, false, false, true);
+                enadisa_bloque1_botones(false, false, false, true, false, false, false, true);
                 //BLOQUE 2:
                 enadisa_bloque2_botones(false, false, false, false);
                 //BLOQUE 3:

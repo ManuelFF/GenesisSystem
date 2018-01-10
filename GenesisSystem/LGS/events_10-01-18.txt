@@ -789,3 +789,549 @@ ACCIÓN : Botón 'INGRESAR' Presionado
 TIME : 10:44:37 AM
 ----------------------------------------------------
  
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:57:1 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 10:57:3 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:57:5 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 10:57:6 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 10:57:21 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:57:22 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 10:57:24 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 10:57:24 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:57:25 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:57:28 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 10:57:28 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:57:37 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:57:37 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 10:57:37 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:58:0 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 10:58:2 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:58:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:58:5 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden 
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 10:58:5 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:58:6 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:58:7 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden 
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 10:58:7 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:58:38 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 11:1:50 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarOrdenServicio'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 11:1:53 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Usuario'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Usuario' Presionado
+TIME : 11:4:49 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Usuario'
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 11:4:50 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 11:5:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 11:5:5 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:5:7 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 11:5:8 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:5:11 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:5:12 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:5:12 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:5:12 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:5:14 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 11:5:15 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:5:15 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:5:22 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:5:23 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:5:23 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 11:5:57 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 11:5:58 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:5:59 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 11:6:3 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:6:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:6:12 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:6:12 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:6:12 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:6:15 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 11:6:15 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:6:17 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Personal'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Personal' Presionado
+TIME : 11:6:39 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Personal
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Nuevo' Presionado
+TIME : 11:6:42 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de un cliente natural
+FORMULARIO : JIFMantenerClientes -> Natural
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:6:45 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Personal'
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 11:6:46 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 11:7:44 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 11:7:45 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:7:58 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:7:58 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden 
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:7:58 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción Ticket Trabajo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Ticket Trabajo' Presionado
+TIME : 11:7:59 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción Ticket Trabajo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Ticket Trabajo' Presionado
+TIME : 11:8:0 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden 
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:8:0 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:8:0 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:8:0 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden 
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:8:0 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción Ticket Trabajo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Ticket Trabajo' Presionado
+TIME : 11:8:1 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción Ticket Trabajo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Ticket Trabajo' Presionado
+TIME : 11:8:1 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden 
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:8:1 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:8:2 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:8:2 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden 
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:8:2 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción Ticket Trabajo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Ticket Trabajo' Presionado
+TIME : 11:8:3 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción Ticket Trabajo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Ticket Trabajo' Presionado
+TIME : 11:8:3 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden 
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:8:3 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:8:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 11:8:5 AM
+----------------------------------------------------
+ 
