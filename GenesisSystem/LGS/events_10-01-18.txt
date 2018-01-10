@@ -782,3 +782,10 @@ ACCIÓN : Radio Button 'Antigua' Presionado
 TIME : 10:35:40 AM
 ----------------------------------------------------
  
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:44:37 AM
+----------------------------------------------------
+ 

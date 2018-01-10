@@ -28,9 +28,30 @@ public class SYSCON
     
     //variables de conexion
     JFrame form;
-    protected Connection cn;
-    protected ResultSet rs;
-    protected PreparedStatement st;
+    private Connection cn;
+    private ResultSet rs;
+    private PreparedStatement st;
+    
+    //establece version del sistema
+    public String version()
+    {
+        String ver = "19";
+        return ver;
+    }
+    
+    //establece nombre del sistema
+    public String nombre_sistema()
+    {
+        String n = "Génesis";
+        return n;
+    }
+    
+    //establece nombre de la compañia
+    public String nombre_compañia()
+    {
+        String nc = "Saneamiento Roedjot S.A.C";
+        return nc;
+    }
     
     //Cargar versión del sistema en base
     public String cargar_version()
@@ -84,28 +105,7 @@ public class SYSCON
         return null;
     }
     
-    //establece version del sistema
-    public String version()
-    {
-        String ver = "20";
-        return ver;
-    }
-    
-    //establece nombre del sistema
-    public String nombre_sistema()
-    {
-        String n = "Crystal Génesis";
-        return n;
-    }
-    
-    //establece nombre de la compañia
-    public String nombre_compañia()
-    {
-        String nc = "Saneamiento Roedjot S.A.C";
-        return nc;
-    }
-    
-    
+
     
     
 }
