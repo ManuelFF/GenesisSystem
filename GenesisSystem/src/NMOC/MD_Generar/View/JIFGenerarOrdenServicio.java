@@ -15,6 +15,7 @@ import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NCLPM.RESULTS;
 import NMOC.JDCalendar;
+import NMOC.MD_Generar.Core.O_OrdenServicio;
 import NMOC.MD_Generar.IC.CO_GenerarOrdenServicio;
 import java.awt.Color;
 import java.awt.event.KeyAdapter;
@@ -49,6 +50,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         this.setTitle(sysfrm.T_GenerarOrden());
         sysfrm.B_GenerarOrden(this.getContentPane());
         
+        ultima_orden();
         lblusuario.setText(JFRPrincipal.JMSesion.getText());
         
         lbldate.setText(mw.fecha_actual());
@@ -63,9 +65,49 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     //Escribe dentro del anunciador la ultima orden generada en el día
     private void ultima_orden()
     {
-        String cod;
-        
+        JTC.clear(JTAAnuncio);
+        JTC.msj(JTAAnuncio, "La última orden generada fue la:\n\nORDEN DE SERVICIO N° "+P_orden.R_ultimaOrden());
     }
+    
+    //RETORNA EL ID DE ORDEN ACTUAL
+    private String R_ID_ORDEN()
+    {
+     clearCacheDB();
+     String cod = String.format("%03d", 1);
+     int codigo;
+     O_OrdenServicio ultObjeto = null;
+
+     if(P_orden.tamaño()==0)
+     {
+        cod="ORDEN-"+cod;
+     }
+       else
+        {
+        ultObjeto=P_orden.obtener(P_orden.tamaño()-1);
+
+        cod = ultObjeto.getId_orden().substring(6);
+        codigo = Integer.parseInt(cod)+1;
+        cod="ORDEN-"+String.format("%03d",codigo);    
+        }return cod;
+    }
+    
+    //RETORNA NUMERO DE ORDEN
+   private String R_NUMERO_ORDEN()
+   {
+     clearCacheDB();
+     int cod;
+     O_OrdenServicio ultObjeto = null;
+     if(P_orden.tamaño()==0)
+        {
+           cod=1;
+        }
+          else
+           {
+           ultObjeto=P_orden.obtener(P_orden.tamaño()-1); //UltimoObjeto
+           cod=Integer.parseInt(ultObjeto.getNumero_orden())+1;
+           }return ""+cod;
+   }
+    
     
     //Borra y limpia texto
     private void clearFRM()
@@ -73,7 +115,6 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         //BLOQUE SEGMENTADO 1
         txtidorden.setText("");
         txtnumeroorden.setText("");
-        JTAAnuncio.setText("");
         cbestado.setSelectedIndex(0);
         JCHAntigua.setSelected(false);
         JCHTicketTrabajo.setSelected(false);
@@ -211,7 +252,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
             RDBNatural.setEnabled(true);
             RDBJuridica.setEnabled(true);
             JCHAntigua.setSelected(true);
-            enadisa_bloque1_botones(true, false, true, true, false, false, false, true);
+            enadisa_bloque1_botones(true, false, false, true, false, false, false, true);
             txtdescuentomanual.setText("0");
             txtcodvendCrystal.setText("-");
             txtdescuentocodigo.setText("-");
@@ -222,7 +263,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
             RDBNatural.setEnabled(true);
             RDBJuridica.setEnabled(true);
             JCHTicketTrabajo.setSelected(true);
-            enadisa_bloque1_botones(true, false, true, true, false, false, false, true);
+            enadisa_bloque1_botones(true, false, false, true, false, false, false, true);
             txtdescuentomanual.setText("0");
             txtcodvendCrystal.setText("-");
             txtdescuentocodigo.setText("-");
@@ -239,6 +280,35 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
             {
                 lc.write("Error al intentar borrar la cache de la DB", "JIFGenerarOrdenServicio metodo clearcacheDB linea 172", e);
             }
+    }
+    
+    private void cancelar()
+    {
+
+        try 
+        {
+            evn.write(lblusuario.getText(), "Ha cancelado la inserción o modificación de una orden "+modo_orden, "JIFGenerarOrdenServicio", "Botón 'Cancelar' Presionado");
+            clearFRM();
+            editFRM(false);
+            //BLOQUE 1:
+            enadisa_bloque1_botones(false, false, false, false, false, false, false, true);
+            //BLOQUE 2:
+            enadisa_bloque2_botones(false, false, false, false);
+            //BLOQUE 3:
+            enadisa_bloque3_botones(false, false, false, false);
+            //BLOQUE 5:
+            enadisa_bloque5_botones(false);
+            //BLOQUE 6:
+            enadisa_bloque6_botones(false, false, false, false, false, false, false);
+            btnnuevo.setText("Nuevo");
+            btnmodificar.setText("Modificar");
+            clearCacheDB();
+
+        } catch (Exception e) 
+           {
+               lc.write("No se pudo cancelar la orden de servicio", "JIFGenerarOrdenServicio", e);
+           }
+
     }
     
     public String modo_orden = "";
@@ -466,6 +536,8 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         JTAAnuncio.setEditable(false);
         JTAAnuncio.setBackground(new java.awt.Color(204, 204, 204));
         JTAAnuncio.setColumns(15);
+        JTAAnuncio.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        JTAAnuncio.setForeground(new java.awt.Color(0, 102, 153));
         JTAAnuncio.setRows(2);
         jScrollPane1.setViewportView(JTAAnuncio);
 
@@ -1216,30 +1288,8 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     }//GEN-LAST:event_btnmodificarActionPerformed
 
     private void btncancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelarActionPerformed
-         
-    try 
-    {
-        evn.write(lblusuario.getText(), "Ha cancelado la inserción o modificación de una orden "+modo_orden, "JIFGenerarOrdenServicio", "Botón 'Cancelar' Presionado");
-        clearFRM();
-        editFRM(false);
-        //BLOQUE 1:
-        enadisa_bloque1_botones(false, false, false, false, false, false, false, true);
-        //BLOQUE 2:
-        enadisa_bloque2_botones(false, false, false, false);
-        //BLOQUE 3:
-        enadisa_bloque3_botones(false, false, false, false);
-        //BLOQUE 5:
-        enadisa_bloque5_botones(false);
-        //BLOQUE 6:
-        enadisa_bloque6_botones(false, false, false, false, false, false, false);
-        btnnuevo.setText("Nuevo");
-        btnmodificar.setText("Modificar");
-        clearCacheDB();
 
-    } catch (Exception e) 
-       {
-           lc.write("No se pudo cancelar la orden de servicio", "JIFGenerarOrdenServicio", e);
-       }
+    cancelar();
         
     }//GEN-LAST:event_btncancelarActionPerformed
 
@@ -1259,7 +1309,11 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     }//GEN-LAST:event_btnsalirActionPerformed
 
     private void btnbuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscarActionPerformed
-        // TODO add your handling code here:
+        
+        System.out.println("ORDEN ID : "+R_ID_ORDEN()+"\nNUMERO DE ORDEN : "+R_NUMERO_ORDEN());
+        
+        
+        
     }//GEN-LAST:event_btnbuscarActionPerformed
 
     private void btncopiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncopiarActionPerformed
@@ -1374,6 +1428,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         txtdescuentocodigo.setText("-");txtdescuentomanual.setText("0");
         txtcostofinal.setText(txtcosto.getText());
         txtdescuentocodigo.setBackground(ColorInicial);
+        JTC.clear(JTAIA);
 
     }//GEN-LAST:event_btnQuitarDescuentoCodigoActionPerformed
 
@@ -1450,6 +1505,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                 evn.write(lblusuario.getText(), "Deselecciono el tipo de inserción antiguo", "JIFGenerarOrdenServicio", "Radio Button 'Antigua' Presionado");
                 RDBNatural.setEnabled(false);
                 RDBJuridica.setEnabled(false);
+                cancelar();
                 clearFRM();
                 //BLOQUE 1:
                 enadisa_bloque1_botones(false, false, false, false, false, false, false, true);
@@ -1492,6 +1548,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                 evn.write(lblusuario.getText(), "Deselecciono el tipo de inserción Ticket Trabajo", "JIFGenerarOrdenServicio", "Radio Button 'Ticket Trabajo' Presionado");
                 RDBNatural.setEnabled(false);
                 RDBJuridica.setEnabled(false);
+                cancelar();
                 clearFRM();
                 //BLOQUE 1:
                 enadisa_bloque1_botones(false, false, false, false, false, false, false, true);
