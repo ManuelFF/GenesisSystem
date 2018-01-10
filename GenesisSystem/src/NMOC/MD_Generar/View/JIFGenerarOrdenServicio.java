@@ -14,7 +14,7 @@ import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NCLPM.RESULTS;
-import NMOC.JDCalendar;
+import NMOC.GL_JDCalendar;
 import NMOC.MD_Generar.Core.O_OrdenServicio;
 import NMOC.MD_Generar.IC.CO_GenerarOrdenServicio;
 import java.awt.Color;
@@ -1337,7 +1337,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     try 
     {
         evn.write(lblusuario.getText(), "Abrio el selector de fechas", "JIFGenerarOrdenServicio -> JDCalendar", "Botón 'fecha' presionado");
-        JDCalendar ca = new JDCalendar(form, true,"D");
+        GL_JDCalendar ca = new GL_JDCalendar(form, true,"D");
         ca.formulario="ORDEN_SERV";
         ca.setVisible(true);
         
@@ -1353,7 +1353,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     try 
     {
         evn.write(lblusuario.getText(), "Abrio el selector de horas", "JIFGenerarOrdenServicio -> JDCalendar", "Botón 'hora' presionado");
-        JDCalendar ca = new JDCalendar(form, true,"T");
+        GL_JDCalendar ca = new GL_JDCalendar(form, true,"T");
         ca.formulario="ORDEN_SERV";
         ca.setVisible(true);
         

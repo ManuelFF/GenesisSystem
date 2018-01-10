@@ -18,11 +18,11 @@ import java.util.GregorianCalendar;
  *
  * @author USUARIO
  */
-public class JDCalendar extends javax.swing.JDialog
+public class GL_JDCalendar extends javax.swing.JDialog
 {
 
     /**
-     * Creates new form JDCalendar
+     * Creates new form GL_JDCalendar
      */
     
     LOG lc = new LOG();
@@ -33,7 +33,7 @@ public class JDCalendar extends javax.swing.JDialog
     public String formulario = "";
 
     
-    public JDCalendar(java.awt.Frame parent, boolean modal,String capsule) 
+    public GL_JDCalendar(java.awt.Frame parent, boolean modal,String capsule) 
     {
         super(parent, modal);
         initComponents();
@@ -255,7 +255,7 @@ public class JDCalendar extends javax.swing.JDialog
 
     private void btncancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelarActionPerformed
 
-    //evn.write(JFRPrincipal.JMSesion.getText(), "Cancelo la seleccion de fechas y cerro el formulario", "JDCalendar", "Botón 'cancelar' presionado");
+    //evn.write(JFRPrincipal.JMSesion.getText(), "Cancelo la seleccion de fechas y cerro el formulario", "GL_JDCalendar", "Botón 'cancelar' presionado");
     System.out.println(mw.hour_actual());
     //dispose();
         
@@ -278,20 +278,21 @@ public class JDCalendar extends javax.swing.JDialog
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JDCalendar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GL_JDCalendar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JDCalendar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GL_JDCalendar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JDCalendar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GL_JDCalendar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JDCalendar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GL_JDCalendar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                JDCalendar dialog = new JDCalendar(new javax.swing.JFrame(), true,"");
+                GL_JDCalendar dialog = new GL_JDCalendar(new javax.swing.JFrame(), true,"");
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

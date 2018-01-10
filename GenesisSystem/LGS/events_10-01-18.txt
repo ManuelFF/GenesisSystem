@@ -1335,3 +1335,61 @@ ACCIÓN : Botón 'Nuevo' presionado
 TIME : 11:8:5 AM
 ----------------------------------------------------
  
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 12:46:20 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 12:46:25 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 12:46:28 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 12:46:29 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de fechas
+FORMULARIO : JIFGenerarOrdenServicio -> JDCalendar
+ACCIÓN : Botón 'fecha' presionado
+TIME : 12:46:50 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la fecha 10/01/2018
+ en el formulario 'JIFGenerarOrdenServicio'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 12:46:51 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de horas
+FORMULARIO : JIFGenerarOrdenServicio -> JDCalendar
+ACCIÓN : Botón 'hora' presionado
+TIME : 12:46:51 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la hora 12:30 AM
+ en el formulario 'JIFGenerarOrdenServicio'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 12:46:52 PM
+----------------------------------------------------
+ 
