@@ -640,7 +640,7 @@ public class JFRPrincipal extends javax.swing.JFrame
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JDesktopPane JDEscritorio;
+    public static javax.swing.JDesktopPane JDEscritorio;
     private javax.swing.JMenu JMGenerar;
     private javax.swing.JMenu JMMantenimientos;
     private javax.swing.JMenuBar JMPrincipal;
