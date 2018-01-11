@@ -11,13 +11,20 @@ import ModuleWorker.IC.ShakingComponent;
 import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSFRMCON;
 import ModuleWorker.View.JFRPrincipal;
+import static ModuleWorker.View.JFRPrincipal.JMSesion;
+import static ModuleWorker.View.JFRPrincipal.JSMMantenerClientes;
+import static ModuleWorker.View.JFRPrincipal.JDEscritorio;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NCLPM.RESULTS;
+import NMOC.GL_JDBuscarCliente;
+import NMOC.GL_JDBuscarVendedor;
 import NMOC.GL_JDCalendar;
 import NMOC.MD_Generar.Core.O_OrdenServicio;
 import NMOC.MD_Generar.IC.CO_GenerarOrdenServicio;
+import NMOC.MD_Mantenimientos.View.JIFMantenerClientes;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.JFrame;
@@ -160,7 +167,6 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         txtgiro.setEditable(cond);
         txtdocumentacion.setEditable(cond);
         txtcosto.setEditable(cond);
-        txtcostofinal.setEditable(cond);
         txtdescuentomanual.setEditable(cond);
         txtdescuentocodigo.setEditable(cond);
         //BLOQUE SEGMENTADO 3 : Informacion Vendedor
@@ -194,13 +200,13 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     {
         btnconsultarVendedor.setEnabled(consult_clasico);
         btnquitarVendedor.setEnabled(quitar_clasico);
-        btnconsultarvendCrystal.setEnabled(consult_asoc);
-        btnquitarvendCrystal.setEnabled(quitar_asoc);
+        btnconsultarAsociado.setEnabled(consult_asoc);
     }
       
     private void enadisa_bloque5_botones(boolean buscar)
     {
         btnBuscarcliente.setEnabled(buscar);
+        btnAgregarCliente.setEnabled(buscar);
     }
        
     private void enadisa_bloque6_botones(boolean areas,boolean servicios, boolean operarios, boolean productos, 
@@ -389,8 +395,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         jLabel21 = new javax.swing.JLabel();
         txtcodvendCrystal = new javax.swing.JTextField();
         lblusuario4 = new javax.swing.JLabel();
-        btnconsultarvendCrystal = new javax.swing.JButton();
-        btnquitarvendCrystal = new javax.swing.JButton();
+        btnconsultarAsociado = new javax.swing.JButton();
         jLabel22 = new javax.swing.JLabel();
         txtidVendedor = new javax.swing.JTextField();
         jLabel23 = new javax.swing.JLabel();
@@ -419,6 +424,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         JCHTicketTrabajo = new javax.swing.JCheckBox();
         lblusuario8 = new javax.swing.JLabel();
         btnconsultageneral = new javax.swing.JButton();
+        btnAgregarCliente = new javax.swing.JButton();
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setText("usuario:");
@@ -670,7 +676,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         lblusuario3.setText("Clasico.");
 
         btnconsultarVendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/search-icon.png"))); // NOI18N
-        btnconsultarVendedor.setText("Consultar");
+        btnconsultarVendedor.setText("Buscar Cliente");
         btnconsultarVendedor.setContentAreaFilled(false);
         btnconsultarVendedor.setEnabled(false);
         btnconsultarVendedor.addActionListener(new java.awt.event.ActionListener() {
@@ -697,25 +703,15 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         txtcodvendCrystal.setText("-");
 
         lblusuario4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lblusuario4.setText("Asociado:");
+        lblusuario4.setText("Asociado.");
 
-        btnconsultarvendCrystal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/search-icon.png"))); // NOI18N
-        btnconsultarvendCrystal.setText("Consultar");
-        btnconsultarvendCrystal.setContentAreaFilled(false);
-        btnconsultarvendCrystal.setEnabled(false);
-        btnconsultarvendCrystal.addActionListener(new java.awt.event.ActionListener() {
+        btnconsultarAsociado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/search-icon.png"))); // NOI18N
+        btnconsultarAsociado.setText("Consultar Asociado");
+        btnconsultarAsociado.setContentAreaFilled(false);
+        btnconsultarAsociado.setEnabled(false);
+        btnconsultarAsociado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnconsultarvendCrystalActionPerformed(evt);
-            }
-        });
-
-        btnquitarvendCrystal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/delete-icon.png"))); // NOI18N
-        btnquitarvendCrystal.setText("Quitar");
-        btnquitarvendCrystal.setContentAreaFilled(false);
-        btnquitarvendCrystal.setEnabled(false);
-        btnquitarvendCrystal.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnquitarvendCrystalActionPerformed(evt);
+                btnconsultarAsociadoActionPerformed(evt);
             }
         });
 
@@ -736,9 +732,11 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
 
         txtcodCliente.setEditable(false);
         txtcodCliente.setBackground(new java.awt.Color(204, 255, 204));
+        txtcodCliente.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
 
         txtnombrecliente.setEditable(false);
         txtnombrecliente.setBackground(new java.awt.Color(204, 255, 255));
+        txtnombrecliente.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
 
         lblnomcli.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblnomcli.setText("Nombres:");
@@ -749,6 +747,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         JTAdetcliente.setEditable(false);
         JTAdetcliente.setBackground(new java.awt.Color(204, 204, 204));
         JTAdetcliente.setColumns(20);
+        JTAdetcliente.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         JTAdetcliente.setRows(5);
         jScrollPane3.setViewportView(JTAdetcliente);
 
@@ -861,6 +860,16 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
             }
         });
 
+        btnAgregarCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Client1_add24.png"))); // NOI18N
+        btnAgregarCliente.setText("Agregar");
+        btnAgregarCliente.setContentAreaFilled(false);
+        btnAgregarCliente.setEnabled(false);
+        btnAgregarCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAgregarClienteActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -908,17 +917,15 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                                         .addComponent(jSeparator4)
                                         .addComponent(lblusuario2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGroup(layout.createSequentialGroup()
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                                     .addComponent(jLabel21)
                                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(txtcodvendCrystal))
+                                                    .addComponent(txtcodvendCrystal, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                                     .addComponent(lblusuario3)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(btnconsultarVendedor)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(btnquitarVendedor)))
+                                                    .addGap(18, 18, 18)
+                                                    .addComponent(btnconsultarVendedor)))
                                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                 .addGroup(layout.createSequentialGroup()
                                                     .addGap(41, 41, 41)
@@ -933,9 +940,9 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(lblusuario4)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(btnconsultarvendCrystal)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(btnquitarvendCrystal))
+                                            .addComponent(btnconsultarAsociado)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(btnquitarVendedor))
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(jLabel19)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1038,7 +1045,10 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(lblusuario6)
-                                            .addComponent(btnBuscarcliente)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(btnBuscarcliente)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(btnAgregarCliente))
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                                     .addComponent(btnAgregarOperarios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1160,7 +1170,6 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(btnconsultarVendedor)
                                     .addComponent(lblusuario3)
-                                    .addComponent(btnquitarVendedor)
                                     .addComponent(jLabel22)
                                     .addComponent(txtidVendedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1171,9 +1180,9 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                                     .addComponent(txtnombrevendedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(btnconsultarvendCrystal)
+                                    .addComponent(btnconsultarAsociado)
                                     .addComponent(lblusuario4)
-                                    .addComponent(btnquitarvendCrystal))
+                                    .addComponent(btnquitarVendedor))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
@@ -1193,7 +1202,9 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                                     .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(lblusuario5))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnBuscarcliente)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(btnBuscarcliente)
+                                    .addComponent(btnAgregarCliente))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1221,8 +1232,9 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnnuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnuevoActionPerformed
-
+        
     String Tipo_orden = mw.getSelectedButtonText(TipoOrden);
+        
     try 
        {
            //INICIO CABECERAS IMPORTANTES
@@ -1234,6 +1246,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
            
            if(btnnuevo.getText().equals("Nuevo"))
            {
+               
                if(Tipo_orden.equals("Natural"))
                {
                    lblnomcli.setText("Nombres:");
@@ -1262,8 +1275,12 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                Nuevo();
                btnnuevo.setText("Insertar");
                
+               RDBJuridica.setEnabled(false);
+               RDBNatural.setEnabled(false);
+               
            }else
                 {
+
                   //LOGICA DE VERIFICACION
                   /*
                         esta logica de verificacion sera LS.
@@ -1437,23 +1454,44 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     }//GEN-LAST:event_btnQuitarDescuentoCodigoActionPerformed
 
     private void btnconsultarVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnconsultarVendedorActionPerformed
-        // TODO add your handling code here:
+
+    try 
+    {
+        evn.write(lblusuario.getText(), "Abrio el Buscador de Vendedor", "JIFGenerarOrdenServicio -> GL_JDBuscarVendedor", "Botón 'Consultar Vendedor' presionado");
+        GL_JDBuscarVendedor BV = new GL_JDBuscarVendedor(form, true);
+        BV.formulario="ORDEN_SERV";        
+        BV.setVisible(true);
+        
+    } catch (Exception e) 
+        {
+            lc.write("No se pudo abrir el Buscador de Vendedor debido a un error inesperado", "JIFGenerarOrdenServicio -> boton Consultar Vendedor", e);
+        }
+        
     }//GEN-LAST:event_btnconsultarVendedorActionPerformed
 
     private void btnquitarVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnquitarVendedorActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnquitarVendedorActionPerformed
 
-    private void btnconsultarvendCrystalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnconsultarvendCrystalActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnconsultarvendCrystalActionPerformed
+    private void btnconsultarAsociadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnconsultarAsociadoActionPerformed
 
-    private void btnquitarvendCrystalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnquitarvendCrystalActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnquitarvendCrystalActionPerformed
+        
+    }//GEN-LAST:event_btnconsultarAsociadoActionPerformed
 
     private void btnBuscarclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarclienteActionPerformed
-        // TODO add your handling code here:
+
+    try 
+    {
+        evn.write(lblusuario.getText(), "Abrio el Buscador de Cliente", "JIFGenerarOrdenServicio -> GL_JDBuscarCliente", "Botón 'Consultar Cliente' presionado");
+        GL_JDBuscarCliente BC = new GL_JDBuscarCliente(form, true,modo_orden);
+        BC.formulario="ORDEN_SERV";
+        BC.setVisible(true);
+        
+    } catch (Exception e) 
+        {
+            lc.write("No se pudo abrir el buscador de clientes debido a un error inesperado", "JIFGenerarOrdenServicio -> boton Consultar Cliente", e);
+        }
+    
     }//GEN-LAST:event_btnBuscarclienteActionPerformed
 
     private void btnAgregarAreasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarAreasActionPerformed
@@ -1628,6 +1666,43 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         
     }//GEN-LAST:event_txtdescuentomanualKeyTyped
 
+    private void btnAgregarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarClienteActionPerformed
+        
+        try
+        {
+            JIFMantenerClientes clientes = new JIFMantenerClientes();
+            JFrame jf=new JFrame();
+            jf.setAlwaysOnTop(true);
+            
+            txtcodCliente.setText("");
+            txtnombrecliente.setText("");
+            JTAdetcliente.setText("");
+            
+            if(JSMMantenerClientes.getActionCommand().equals("Abierto"))
+                {
+                    SYSAUDIOCON sysau = new SYSAUDIOCON();
+                    sysau.E_ERROR();
+                    JOptionPane.showMessageDialog(jf,"Ya esta abierto", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+                }
+            else
+            {                
+                JSMMantenerClientes.setActionCommand("Abierto");
+                JDEscritorio.add(clientes);
+                Dimension desktopSize = JDEscritorio.getSize();
+                Dimension FrameSize = clientes.getSize();
+                clientes.setLocation((desktopSize.width - FrameSize.width)/64, (desktopSize.height- FrameSize.height)/2);
+                evn.write(JMSesion.getText(), "Abrio el formulario 'Mantener Clientes'", "JFPrincipal", "Menu 'Mantener Clientes' Presionado");
+                clientes.show();
+            }
+        }
+        catch (Exception e)
+        {
+            
+            lc.write("Error intentando abrir 'Mantenimiento Clientes'", "JFRPrincipal", e);
+        }
+        
+    }//GEN-LAST:event_btnAgregarClienteActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> CBconsultacontOrden;
@@ -1635,11 +1710,12 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     private javax.swing.JCheckBox JCHTicketTrabajo;
     private javax.swing.JTextArea JTAAnuncio;
     private javax.swing.JTextArea JTAIA;
-    private javax.swing.JTextArea JTAdetcliente;
+    public static javax.swing.JTextArea JTAdetcliente;
     private javax.swing.JRadioButton RDBJuridica;
     private javax.swing.JRadioButton RDBNatural;
     private javax.swing.ButtonGroup TipoOrden;
     private javax.swing.JButton btnAgregarAreas;
+    private javax.swing.JButton btnAgregarCliente;
     private javax.swing.JButton btnAgregarImplementos;
     private javax.swing.JButton btnAgregarOperarios;
     private javax.swing.JButton btnAgregarProductos;
@@ -1650,10 +1726,10 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     private javax.swing.JButton btnbuscar;
     private javax.swing.JButton btncancelar;
     private javax.swing.JButton btnconsultageneral;
+    private javax.swing.JButton btnconsultarAsociado;
     private javax.swing.JButton btnconsultarDescuentocodigo;
     private javax.swing.JButton btnconsultarVendedor;
     private javax.swing.JButton btnconsultarcontenidoOrden;
-    private javax.swing.JButton btnconsultarvendCrystal;
     private javax.swing.JButton btncopiar;
     private javax.swing.JButton btnfecha;
     private javax.swing.JButton btnhora;
@@ -1661,7 +1737,6 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     private javax.swing.JButton btnmodificar;
     private javax.swing.JButton btnnuevo;
     private javax.swing.JButton btnquitarVendedor;
-    private javax.swing.JButton btnquitarvendCrystal;
     private javax.swing.JButton btnsalir;
     private javax.swing.JComboBox<String> cbestado;
     private javax.swing.JLabel jLabel10;
@@ -1705,7 +1780,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     private javax.swing.JLabel lblusuario6;
     private javax.swing.JLabel lblusuario7;
     private javax.swing.JLabel lblusuario8;
-    private javax.swing.JTextField txtcodCliente;
+    public static javax.swing.JTextField txtcodCliente;
     private javax.swing.JTextField txtcodvendCrystal;
     private javax.swing.JTextField txtcosto;
     private javax.swing.JTextField txtcostofinal;
@@ -1715,10 +1790,10 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     public static javax.swing.JTextField txtfecha;
     private javax.swing.JTextField txtgiro;
     public static javax.swing.JTextField txthora;
-    private javax.swing.JTextField txtidVendedor;
+    public static javax.swing.JTextField txtidVendedor;
     private javax.swing.JTextField txtidorden;
-    private javax.swing.JTextField txtnombrecliente;
-    private javax.swing.JTextField txtnombrevendedor;
+    public static javax.swing.JTextField txtnombrecliente;
+    public static javax.swing.JTextField txtnombrevendedor;
     private javax.swing.JTextField txtnumeroorden;
     // End of variables declaration//GEN-END:variables
 }
