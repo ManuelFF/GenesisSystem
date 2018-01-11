@@ -5,8 +5,18 @@
  */
 package NMOC;
 
+import ModuleWorker.SYSFRMCON;
+import ModuleWorker.View.JFRPrincipal;
+import NCLPM.EVENTS;
+import NCLPM.LOG;
+import NMOC.GLCL.GLVC_JDBuscarVendedor;
+import NMOC.MD_Generar.View.JIFGenerarOrdenServicio;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import javax.swing.RowFilter;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
 
 /**
  *
@@ -19,14 +29,60 @@ public class GL_JDBuscarVendedor extends javax.swing.JDialog
      * Creates new form GL_JDBuscarVendedor
      */
     
+    GLVC_JDBuscarVendedor P_BV = new GLVC_JDBuscarVendedor();
+    LOG lc = new LOG();
+    EVENTS evn = new EVENTS();
+    SYSFRMCON sysfrm = new SYSFRMCON();
+    public String formulario = "";
     
+    DefaultTableModel modelo = new DefaultTableModel()
+    {
+        @Override
+        public boolean isCellEditable(int row , int col)
+        {
+             return false;
+        }
+    };
+    
+    private TableRowSorter trsFiltro;
     
     public GL_JDBuscarVendedor(java.awt.Frame parent, boolean modal) 
     {
         super(parent, modal);
         initComponents();
+        this.setLocation(600, 230);
+        this.setTitle(sysfrm.T_BuscarVendedor());
+        sysfrm.B_BuscarVendedor(this.getContentPane());
+        JTbuscarVendedor.setModel(modelo);
+        P_BV.CargarVendedor(modelo, JTbuscarVendedor);
+        
+        JTbuscarVendedor.addMouseListener(new MouseAdapter(){});
+        JTbuscarVendedor.getTableHeader().setReorderingAllowed(false);
+        trsFiltro = new TableRowSorter(JTbuscarVendedor.getModel());
+        JTbuscarVendedor.setRowSorter(trsFiltro);        
+        
     }
     
+    public void filtro() 
+    {
+          int columnaABuscar = 0;
+          
+          if(cbfiltro.getSelectedItem().toString().equals("Nombres"))
+          {
+              columnaABuscar = 1;
+          }
+          if(cbfiltro.getSelectedItem().toString().equals("DNI"))
+          {
+              columnaABuscar = 2;
+          }
+          if (cbfiltro.getSelectedItem().toString().equals("ID")) 
+          {
+              columnaABuscar = 0;
+          }
+          
+          
+          trsFiltro.setRowFilter(RowFilter.regexFilter(txtfiltro.getText(), columnaABuscar));
+     }
     
 
     /**
@@ -53,7 +109,7 @@ public class GL_JDBuscarVendedor extends javax.swing.JDialog
         jLabel2.setText("Buscar");
 
         cbfiltro.setBackground(new java.awt.Color(204, 204, 204));
-        cbfiltro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nombres", "Apellidos", "ID" }));
+        cbfiltro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nombres", "DNI", "ID" }));
 
         txtfiltro.setBackground(new java.awt.Color(204, 204, 255));
         txtfiltro.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -163,20 +219,22 @@ public class GL_JDBuscarVendedor extends javax.swing.JDialog
 
             int row = JTbuscarVendedor.rowAtPoint(evt.getPoint());
 
-            JIFMatenerUsuario.txtidPer.setText(""+JTbuscarVendedor.getValueAt(row, 0));
-            JIFMatenerUsuario.txtnombres.setText(""+JTbuscarVendedor.getValueAt(row, 1));
+            if(formulario.equals("ORDEN_SERV"))
+            {
+                JIFGenerarOrdenServicio.txtidVendedor.setText(""+JTbuscarVendedor.getValueAt(row, 0));
+                JIFGenerarOrdenServicio.txtnombrevendedor.setText(""+JTbuscarVendedor.getValueAt(row, 1));
+                
+            }
 
             String select = ""+JTbuscarVendedor.getValueAt(row, 1);
 
-            evn.write(JFRPrincipal.JMSesion.getText(),"Ha seleccionado al personal "+select,"JDES_seleccionarPersonal", "Tabla de personal presionado");
-
-            JIFMatenerUsuario.btnNuevo.setEnabled(true);
+            evn.write(JFRPrincipal.JMSesion.getText(),"Ha seleccionado al Vendedor "+select,"GL_JDBuscarVendedor", "Tabla de Vendedor presionado");
 
             this.dispose();
 
         } catch (Exception e)
         {
-            lc.write("Error al seleccionar personal", "JDES_seleccionarPersonal", e);
+            lc.write("Error al seleccionar vendedor", "GL_JDBuscarVendedor", e);
         }
 
     }//GEN-LAST:event_JTbuscarVendedorMouseClicked
@@ -185,15 +243,13 @@ public class GL_JDBuscarVendedor extends javax.swing.JDialog
 
         try
         {
-            evn.write(JFRPrincipal.JMSesion.getText(), "Ha salido del formulario 'Mantener Usuario'", "JIFMantenerUsuario", "Presiono Botón 'Salir'");
-            JFRPrincipal.JSMMantenimientoUsuarios.setActionCommand("CERRADO");
-            JIFMatenerUsuario.btnNuevo.setEnabled(false);
-            JIFMatenerUsuario.btnModificar.setEnabled(false);
+            evn.write(JFRPrincipal.JMSesion.getText(), "Ha salido del formulario 'Buscar Vendedor'", "GL_JDBuscarVendedor", "Presiono Botón 'Salir'");
             this.dispose();
         } catch (Exception e)
         {
-            lc.write("No se ha podido cerrar el formulario 'Mantener Usuario' debido a un error inesperado", "JIFMantenerUsuario", e);
+            lc.write("No se ha podido cerrar el formulario 'Buscar Vendedor' debido a un error inesperado", "GL_JDBuscarVendedor", e);
         }
+        
     }//GEN-LAST:event_btnsalirActionPerformed
 
     /**

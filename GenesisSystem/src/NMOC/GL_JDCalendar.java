@@ -39,7 +39,7 @@ public class GL_JDCalendar extends javax.swing.JDialog
         initComponents();
         this.setTitle(sysfrm.T_Date());
         sysfrm.B_Date(this.getContentPane());
-        this.setLocation(900, 300);
+        this.setLocation(730, 400);
         H_T_DATE(capsule);
         tipo=capsule;
     }
@@ -255,9 +255,8 @@ public class GL_JDCalendar extends javax.swing.JDialog
 
     private void btncancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelarActionPerformed
 
-    //evn.write(JFRPrincipal.JMSesion.getText(), "Cancelo la seleccion de fechas y cerro el formulario", "GL_JDCalendar", "Botón 'cancelar' presionado");
-    System.out.println(mw.hour_actual());
-    //dispose();
+    evn.write(JFRPrincipal.JMSesion.getText(), "Cancelo la seleccion de fechas y cerro el formulario", "GL_JDCalendar", "Botón 'cancelar' presionado");
+    dispose();
         
     }//GEN-LAST:event_btncancelarActionPerformed
 
