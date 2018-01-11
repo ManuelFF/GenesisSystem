@@ -149,6 +149,7 @@ public class SYSFRMCON
     
     //#########################################################################
     //FORMULARIOS GLOBALES
+    //CALENDAR
     public String T_Date()
     {
         String t = DEV()+" Selector de Fecha y Hora";
@@ -156,6 +157,30 @@ public class SYSFRMCON
     }
     
     public void B_Date(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+    
+    //BUSCAR VENDEDOR
+    public String T_BuscarVendedor()
+    {
+        String t = DEV()+" Buscar Vendedor";
+        return t;
+    }
+    
+    public void B_BuscarVendedor(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+    
+    //BUSCAR CLIENTE
+    public String T_BuscarCliente()
+    {
+        String t = DEV()+" Buscar Cliente";
+        return t;
+    }
+    
+    public void B_BuscarCliente(Container p)
     {
         p.setBackground(Color.GRAY.brighter());
     }
