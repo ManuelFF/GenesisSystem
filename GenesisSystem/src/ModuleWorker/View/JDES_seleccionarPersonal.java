@@ -31,7 +31,7 @@ public class JDES_seleccionarPersonal extends javax.swing.JDialog
     EVENTS evn = new EVENTS();
     SYSFRMCON sysfrm = new SYSFRMCON();
     
-     DefaultTableModel modelo = new DefaultTableModel()
+    DefaultTableModel modelo = new DefaultTableModel()
     {
         @Override
         public boolean isCellEditable(int row , int col)
@@ -46,12 +46,13 @@ public class JDES_seleccionarPersonal extends javax.swing.JDialog
     {
         super(parent, modal);
         initComponents();
-        this.setLocationRelativeTo(null);
+        //this.setLocationRelativeTo(null);
+        this.setLocation(900, 300);
         this.setTitle(sysfrm.T_JDESseleccionarPersonal());
         sysfrm.B_JDESseleccionarPersonal(this.getContentPane());
+        JTbuscarPersonal.setModel(modelo);
         mcmuser.CargarSeleccionPersonal(modelo, JTbuscarPersonal);
         
-        JTbuscarPersonal.setModel(modelo);
         JTbuscarPersonal.addMouseListener(new MouseAdapter(){});
         JTbuscarPersonal.getTableHeader().setReorderingAllowed(false);
         trsFiltro = new TableRowSorter(JTbuscarPersonal.getModel());
