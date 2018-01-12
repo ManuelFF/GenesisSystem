@@ -676,7 +676,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         lblusuario3.setText("Clasico.");
 
         btnconsultarVendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/search-icon.png"))); // NOI18N
-        btnconsultarVendedor.setText("Buscar Cliente");
+        btnconsultarVendedor.setText("Buscar Vendedor");
         btnconsultarVendedor.setContentAreaFilled(false);
         btnconsultarVendedor.setEnabled(false);
         btnconsultarVendedor.addActionListener(new java.awt.event.ActionListener() {
