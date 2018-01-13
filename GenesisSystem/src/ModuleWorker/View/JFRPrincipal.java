@@ -278,7 +278,7 @@ public class JFRPrincipal extends javax.swing.JFrame
 
         JSMGenerarOrden.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F2, 0));
         JSMGenerarOrden.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        JSMGenerarOrden.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Files-New-File-icon.png"))); // NOI18N
+        JSMGenerarOrden.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/OrdenV2_1 24.png"))); // NOI18N
         JSMGenerarOrden.setText("Generar Orden Servicio");
         JSMGenerarOrden.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
