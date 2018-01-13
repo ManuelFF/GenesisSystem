@@ -186,6 +186,70 @@ public class SYSFRMCON
     }
     
     //#########################################################################
+    //FORMULARIOS DEL PAQUETE NISPM
+    
+    //AREA TRABAJO
+    public String T_GenerarArea()
+    {
+        String t = DEV()+" Generar Áreas de Trabajo";
+        return t;
+    }
+    
+    public void B_GenerarArea(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+    
+    //SERVICIOS
+    public String T_Servicios()
+    {
+        String t = DEV()+" Importar Servicio";
+        return t;
+    }
+    
+    public void B_Servicios(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+    
+    //OPERARIOS
+    public String T_Operarios()
+    {
+        String t = DEV()+" Importar Operarios";
+        return t;
+    }
+    
+    public void B_Operarios(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+    
+    //PRODUCTOS
+    public String T_Productos()
+    {
+        String t = DEV()+" Importar Productos";
+        return t;
+    }
+    
+    public void B_Productos(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+    
+    //IMPLEMENTOS
+    public String T_Implementos()
+    {
+        String t = DEV()+" Importar Implementos";
+        return t;
+    }
+    
+    public void B_Implementos(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+    
+    
+    //#########################################################################
     //FORMULARIOS DE MANTENIMIENTO
     
     //MANTENER CLIENTES
