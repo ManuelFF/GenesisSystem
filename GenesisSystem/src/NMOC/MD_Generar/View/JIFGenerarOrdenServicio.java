@@ -17,6 +17,21 @@ import static ModuleWorker.View.JFRPrincipal.JDEscritorio;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NCLPM.RESULTS;
+import NISPM.SGL_CL_AreaTrabajo;
+import NISPM.SGL_CL_Implementos;
+import NISPM.SGL_CL_Operarios;
+import NISPM.SGL_CL_Productos;
+import NISPM.SGL_CL_Servicios;
+import NISPM.SGL_CTRL_AreaTrabajo;
+import NISPM.SGL_CTRL_Implementos;
+import NISPM.SGL_CTRL_Operarios;
+import NISPM.SGL_CTRL_Productos;
+import NISPM.SGL_CTRL_Servicios;
+import NISPM.SGL_VIEW_AreaTrabajo;
+import NISPM.SGL_VIEW_Implementos;
+import NISPM.SGL_VIEW_Operarios;
+import NISPM.SGL_VIEW_Productos;
+import NISPM.SGL_VIEW_Servicios;
 import NMOC.GL_JDBuscarCliente;
 import NMOC.GL_JDBuscarVendedor;
 import NMOC.GL_JDCalendar;
@@ -27,6 +42,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -51,6 +67,20 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     CO_GenerarOrdenServicio P_orden = new CO_GenerarOrdenServicio();
     Color ColorInicial;
    
+    double sumaAreaTotalMT2 = 0;
+    double IntegerTotalMT2 = 0;
+    double sumaAreaTotalMT3 = 0;
+    double IntegerTotalMT3 = 0;
+    
+    //SINGLATONES
+    //INVOKE
+    ArrayList<SGL_CL_AreaTrabajo> areas = SGL_CTRL_AreaTrabajo.getInstance().getSgl_area();
+    ArrayList<SGL_CL_Servicios> servicios = SGL_CTRL_Servicios.getInstance().getsgl_servicio();
+    ArrayList<SGL_CL_Operarios> operarios = SGL_CTRL_Operarios.getInstance().getsgl_operario();
+    ArrayList<SGL_CL_Productos> productos = SGL_CTRL_Productos.getInstance().getsgl_producto();
+    ArrayList<SGL_CL_Implementos> implementos = SGL_CTRL_Implementos.getInstance().getsgl_implementos();
+
+    
     public JIFGenerarOrdenServicio() 
     {
         initComponents();
@@ -196,7 +226,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     }
      
     private void enadisa_bloque3_botones(boolean consult_clasico, boolean quitar_clasico, 
-            boolean consult_asoc, boolean quitar_asoc)
+            boolean consult_asoc)
     {
         btnconsultarVendedor.setEnabled(consult_clasico);
         btnquitarVendedor.setEnabled(quitar_clasico);
@@ -218,7 +248,6 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         btnAgregarProductos.setEnabled(productos);
         btnAgregarImplementos.setEnabled(implementos);
         btnconsultarcontenidoOrden.setEnabled(consultar);
-        btnconsultageneral.setEnabled(consult_general);
     }
     
     private void enadisa_bloque_descuento(boolean cond)
@@ -307,7 +336,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
             //BLOQUE 2:
             enadisa_bloque2_botones(false, false, false, false);
             //BLOQUE 3:
-            enadisa_bloque3_botones(false, false, false, false);
+            enadisa_bloque3_botones(false, false, false);
             //BLOQUE 5:
             enadisa_bloque5_botones(false);
             //BLOQUE 6:
@@ -315,13 +344,24 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
             btnnuevo.setText("Nuevo");
             btnmodificar.setText("Modificar");
             clearCacheDB();
+            vaciado_memoria();
 
         } catch (Exception e) 
            {
                lc.write("No se pudo cancelar la orden de servicio", "JIFGenerarOrdenServicio", e);
            }
-
     }
+    
+    private void vaciado_memoria()
+    {
+        areas.clear();
+        servicios.clear();
+        operarios.clear();
+        productos.clear();
+        implementos.clear();
+        
+    }
+    
     
     public String modo_orden = "";
     
@@ -423,7 +463,6 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         jLabel11 = new javax.swing.JLabel();
         JCHTicketTrabajo = new javax.swing.JCheckBox();
         lblusuario8 = new javax.swing.JLabel();
-        btnconsultageneral = new javax.swing.JButton();
         btnAgregarCliente = new javax.swing.JButton();
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -557,7 +596,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         JTAIA.setEditable(false);
         JTAIA.setBackground(new java.awt.Color(204, 204, 204));
         JTAIA.setColumns(20);
-        JTAIA.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        JTAIA.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         JTAIA.setRows(5);
         jScrollPane2.setViewportView(JTAIA);
 
@@ -818,7 +857,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         });
 
         CBconsultacontOrden.setBackground(new java.awt.Color(204, 204, 204));
-        CBconsultacontOrden.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "GENERAL", "AREAS", "SERVICIOS", "OPERARIOS", "PRODUCTOS", "IMPLEMENTOS" }));
+        CBconsultacontOrden.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AREAS", "SERVICIOS", "OPERARIOS", "PRODUCTOS", "IMPLEMENTOS" }));
         CBconsultacontOrden.setSelectedItem("EN ESPERA");
         CBconsultacontOrden.setEnabled(false);
 
@@ -850,15 +889,6 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
 
         lblusuario8.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         lblusuario8.setText("Información Cliente.");
-
-        btnconsultageneral.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/search-icon.png"))); // NOI18N
-        btnconsultageneral.setText("Consult. General");
-        btnconsultageneral.setEnabled(false);
-        btnconsultageneral.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnconsultageneralActionPerformed(evt);
-            }
-        });
 
         btnAgregarCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Client1_add24.png"))); // NOI18N
         btnAgregarCliente.setText("Agregar");
@@ -1064,13 +1094,10 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                                             .addComponent(btnconsultarcontenidoOrden, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                         .addGap(0, 0, Short.MAX_VALUE)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                .addComponent(lblusuario5)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addComponent(btnconsultageneral, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))))))))
-                .addContainerGap())
+                                        .addComponent(lblusuario5)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                .addGap(15, 15, 15))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1084,7 +1111,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                     .addComponent(lbldate))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jSeparator1)
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 548, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -1222,9 +1249,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                                     .addComponent(btnAgregarProductos)
                                     .addComponent(btnconsultarcontenidoOrden))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(btnAgregarImplementos)
-                                    .addComponent(btnconsultageneral))))
+                                .addComponent(btnAgregarImplementos)))
                         .addGap(7, 7, 7))))
         );
 
@@ -1264,7 +1289,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                //BLOQUE 2:
                enadisa_bloque2_botones(true, true, true, true);
                //BLOQUE 3:
-               enadisa_bloque3_botones(true, true, true, true);
+               enadisa_bloque3_botones(true, true, true);
                //BLOQUE 5:
                enadisa_bloque5_botones(true);
                //BLOQUE 6:
@@ -1495,32 +1520,178 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     }//GEN-LAST:event_btnBuscarclienteActionPerformed
 
     private void btnAgregarAreasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarAreasActionPerformed
-        // TODO add your handling code here:
+                
+    try 
+     {
+         SGL_VIEW_AreaTrabajo agregar_areas = new SGL_VIEW_AreaTrabajo(form, true);
+         agregar_areas.setVisible(true);
+
+     } catch (Exception e) 
+        {
+            lc.write("Ha Ocurrido un error al intentar abrir 'Agregar Areas'", "JIFGenerarOrdenServicio -> Agregar Areas", e);
+        }
+        
     }//GEN-LAST:event_btnAgregarAreasActionPerformed
 
     private void btnAgregarServiciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarServiciosActionPerformed
-        // TODO add your handling code here:
+                        
+    try 
+     {
+         SGL_VIEW_Servicios agregar_servicios = new SGL_VIEW_Servicios(form, true);
+         agregar_servicios.setVisible(true);
+
+     } catch (Exception e) 
+        {
+            lc.write("Ha Ocurrido un error al intentar abrir 'Agregar Servicios'", "JIFGenerarOrdenServicio -> Agregar Servicios", e);
+        }
+        
     }//GEN-LAST:event_btnAgregarServiciosActionPerformed
 
     private void btnAgregarProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarProductosActionPerformed
-        // TODO add your handling code here:
+                                
+    try 
+     {
+         SGL_VIEW_Productos agregar_productos = new SGL_VIEW_Productos(form, true);
+         agregar_productos.setVisible(true);
+
+     } catch (Exception e) 
+        {
+            lc.write("Ha Ocurrido un error al intentar abrir 'Agregar Productos'", "JIFGenerarOrdenServicio -> Agregar Productos", e);
+        }
+
     }//GEN-LAST:event_btnAgregarProductosActionPerformed
 
     private void btnAgregarOperariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarOperariosActionPerformed
-        // TODO add your handling code here:
+                                
+    try 
+     {
+         SGL_VIEW_Operarios agregar_operarios = new SGL_VIEW_Operarios(form, true);
+         agregar_operarios.setVisible(true);
+
+     } catch (Exception e) 
+        {
+            lc.write("Ha Ocurrido un error al intentar abrir 'Agregar Operarios'", "JIFGenerarOrdenServicio -> Agregar Operarios", e);
+        }
+        
     }//GEN-LAST:event_btnAgregarOperariosActionPerformed
 
     private void btnAgregarImplementosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarImplementosActionPerformed
-        // TODO add your handling code here:
+                                        
+    try 
+     {
+         SGL_VIEW_Implementos agregar_implementos = new SGL_VIEW_Implementos(form, true);
+         agregar_implementos.setVisible(true);
+
+     } catch (Exception e) 
+        {
+            lc.write("Ha Ocurrido un error al intentar abrir 'Agregar Implementos'", "JIFGenerarOrdenServicio -> Agregar Implementos", e);
+        }
+        
     }//GEN-LAST:event_btnAgregarImplementosActionPerformed
 
     private void btnconsultarcontenidoOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnconsultarcontenidoOrdenActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnconsultarcontenidoOrdenActionPerformed
+    
+    SYSAUDIOCON sysau = new SYSAUDIOCON();
+    sysau.E_NOTIFY();
+                
+    if(CBconsultacontOrden.getSelectedItem().toString().equals("AREAS"))
+    {
+        JTC.clear(JTAIA);
+        JTC.cabecera(JTAIA);
+        JTC.msj(JTAIA,"Consulta de Áreas a Trabajar.\n");    
+        
+        sumaAreaTotalMT2=0;
+        sumaAreaTotalMT3=0;
+        
+        if(areas.isEmpty()){JTC.msj(JTAIA,"Aún no se ha generado ninguna área a trabajar");}
+        else
+            {
+                for( SGL_CL_AreaTrabajo x : areas)
+                {
+                    JTC.msj(JTAIA, "CODIGO : "+x.getIdarea()+"\n"+"DESCRIPCIÓN : "+x.getNombreArea()+"\n"+"NÚM. AMBIENTES : "+x.getNumeroAmbientes()+"\n"+"ÁREA TRABAJAR : "+x.getAreaTrabajar()+" "+x.getFormato()+"\n"+"------------------------------------\n");
+                    
+                    if(x.getFormato().equals("MT2"))
+                    {
+                        IntegerTotalMT2=Double.parseDouble(x.getAreaTrabajar());
+                        sumaAreaTotalMT2= sumaAreaTotalMT2+IntegerTotalMT2;
+                    }
+                    if(x.getFormato().equals("MT3"))
+                    {
+                        IntegerTotalMT3=Double.parseDouble(x.getAreaTrabajar());
+                        sumaAreaTotalMT3= sumaAreaTotalMT3+IntegerTotalMT3;
+                    }
+                }
+                    JTC.msj(JTAIA,"ÁREA TOTAL : "+sumaAreaTotalMT2+" MT2"+"   ----------   "+sumaAreaTotalMT3+" MT3");
+            }
+    }
+    
+    
+    if(CBconsultacontOrden.getSelectedItem().toString().equals("SERVICIOS"))
+    {
+        JTC.clear(JTAIA);
+        JTC.cabecera(JTAIA);
+        JTC.msj(JTAIA,"Consulta de Servicios.\n");    
+        
+        if(servicios.isEmpty()){JTC.msj(JTAIA,"Aún no escoge ningun servicio");}
+        else
+        {
+            for( SGL_CL_Servicios x : servicios)
+            {
+                JTC.msj(JTAIA,"CODIGO : "+x.getIdserv()+"\n"+"NOMBRE DEL SERVICIO : "+x.getNomserv()+"\n"+"NOTA : "+x.getNotaserv()+"\n"+"------------------------------------\n");
+            }
+        }
+    }
+    
+    if(CBconsultacontOrden.getSelectedItem().toString().equals("OPERARIOS"))
+    {
+        JTC.clear(JTAIA);
+        JTC.cabecera(JTAIA);
+        JTC.msj(JTAIA,"Consulta de Personal Operario.\n");    
+            
+        if(operarios.isEmpty()){JTC.msj(JTAIA,"Aún no escoge ningun operario");}
+        else
+        {
+            for( SGL_CL_Operarios x : operarios)
+            {
+                JTC.msj(JTAIA, "CODIGO : "+x.getIdope()+"\n"+"NOMBRE : "+x.getNomope()+"\n"+"------------------------------------\n");
+            }
+        }
+    }
+    
+    if(CBconsultacontOrden.getSelectedItem().toString().equals("PRODUCTOS"))
+    {
+        JTC.clear(JTAIA);
+        JTC.cabecera(JTAIA);
+        JTC.msj(JTAIA,"Consulta de Productos Usados.\n");    
+            
+        if(productos.isEmpty()){JTC.msj(JTAIA,"Aún no escoge ningun producto a usar");}
+        else
+        {
+            for( SGL_CL_Productos x : productos)
+            {
+                JTC.msj(JTAIA, "CODIGO : "+x.getIdPro()+"\n"+"NOMBRE : "+x.getNomPro()+"\n"+"------------------------------------\n");
+            }
+        }
+    }
+    
+    if(CBconsultacontOrden.getSelectedItem().toString().equals("IMPLEMENTOS"))
+    {
+        JTC.clear(JTAIA);
+        JTC.cabecera(JTAIA);
+        JTC.msj(JTAIA,"Consulta de Implementos Usados.\n");    
+        
+        if(implementos.isEmpty()){JTC.msj(JTAIA,"Aún no escoge ningun implemento a usar");}
+        else
+        {
+            for( SGL_CL_Implementos x : implementos)
+            {
+                JTC.msj(JTAIA, "CODIGO : "+x.getIdmaq()+"\n"+"NOMBRE : "+x.getNommaq()+"\n"+"------------------------------------\n");
+            }
+        }
+    }
 
-    private void btnconsultageneralActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnconsultageneralActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnconsultageneralActionPerformed
+    
+    }//GEN-LAST:event_btnconsultarcontenidoOrdenActionPerformed
 
     private void JCHAntiguaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JCHAntiguaActionPerformed
         
@@ -1554,7 +1725,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                 //BLOQUE 2:
                 enadisa_bloque2_botones(false, false, false, false);
                 //BLOQUE 3:
-                enadisa_bloque3_botones(false, false, false, false);
+                enadisa_bloque3_botones(false, false, false);
                 //BLOQUE 5:
                 enadisa_bloque5_botones(false);
                 //BLOQUE 6:
@@ -1597,7 +1768,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                 //BLOQUE 2:
                 enadisa_bloque2_botones(false, false, false, false);
                 //BLOQUE 3:
-                enadisa_bloque3_botones(false, false, false, false);
+                enadisa_bloque3_botones(false, false, false);
                 //BLOQUE 5:
                 enadisa_bloque5_botones(false);
                 //BLOQUE 6:
@@ -1725,7 +1896,6 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     private javax.swing.JButton btnQuitarDescuentoCodigo;
     private javax.swing.JButton btnbuscar;
     private javax.swing.JButton btncancelar;
-    private javax.swing.JButton btnconsultageneral;
     private javax.swing.JButton btnconsultarAsociado;
     private javax.swing.JButton btnconsultarDescuentocodigo;
     private javax.swing.JButton btnconsultarVendedor;
