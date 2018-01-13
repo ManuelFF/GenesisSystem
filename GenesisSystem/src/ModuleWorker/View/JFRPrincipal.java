@@ -219,6 +219,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         JMMantenimientos.setText("Mantenimientos");
         JMMantenimientos.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
+        JSMMantenerClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
         JSMMantenerClientes.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         JSMMantenerClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Client1_add24.png"))); // NOI18N
         JSMMantenerClientes.setText("Mantener Clientes");
@@ -264,7 +265,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         JMGenerar.setText("Generar");
         JMGenerar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
-        JSMGenerarCotizacion.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
+        JSMGenerarCotizacion.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F1, 0));
         JSMGenerarCotizacion.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         JSMGenerarCotizacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Files-New-File-icon.png"))); // NOI18N
         JSMGenerarCotizacion.setText("Generar Cotización");
@@ -275,7 +276,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         });
         JMGenerar.add(JSMGenerarCotizacion);
 
-        JSMGenerarOrden.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_MASK));
+        JSMGenerarOrden.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F2, 0));
         JSMGenerarOrden.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         JSMGenerarOrden.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Files-New-File-icon.png"))); // NOI18N
         JSMGenerarOrden.setText("Generar Orden Servicio");
