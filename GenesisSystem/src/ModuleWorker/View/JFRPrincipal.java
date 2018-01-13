@@ -44,7 +44,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         image();
         this.setLocationRelativeTo(null);
         this.setExtendedState(MAXIMIZED_BOTH);
-        this.setTitle(sys.nombre_sistema()+" - "+sys.nombre_compañia()+" - Versión V"+sys.version());
+        this.setTitle(sys.nombre_sistema()+" - "+sys.nombre_compañia()+" - Versión V"+sys.version()+" VERSIÓN INTERNA DE DESARROLLO");
     }
     
     private void image()
