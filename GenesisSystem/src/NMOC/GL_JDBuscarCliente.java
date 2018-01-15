@@ -217,7 +217,14 @@ public class GL_JDBuscarCliente extends javax.swing.JDialog
                 public void keyReleased(final KeyEvent e)
                 {
                     String cadena = (txtfiltro.getText().toUpperCase());
-                    txtfiltro.setText(cadena.replace(" ", "/"));
+                  
+                    if(buftip.equals("Natural"))
+                    {
+                        txtfiltro.setText(cadena.replace(" ", "/"));
+                    }else
+                        {
+                            txtfiltro.setText(cadena);
+                        }
 
                     repaint();
                     filtro();
