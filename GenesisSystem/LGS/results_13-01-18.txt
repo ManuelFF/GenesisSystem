@@ -1,0 +1,865 @@
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 09:45:8 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 09:45:33 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-012
+ NOMBRE: ROBERTO WONG AREVALO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 09:45:40 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-002
+ NOMBRE: EDSON ROJAS PEÑA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 09:45:49 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-005
+ NOMBRE: PEDRO JESUS ILLA ESPINOZA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_AreaTrabajo
+HORA : 09:46:2 AM
+TIPO : GENERACIÓN
+DESCRIPCIÓN : Se ha generado el Área con ID  1
+ NOMBRE: CASA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 09:59:52 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-002
+ NOMBRE: EDSON ROJAS PEÑA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_AreaTrabajo
+HORA : 10:27:31 AM
+TIPO : GENERACIÓN
+DESCRIPCIÓN : Se ha generado el Área con ID  1
+ NOMBRE: CASA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 10:27:39 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 10:27:53 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-012
+ NOMBRE: ROBERTO WONG AREVALO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 10:28:3 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-002
+ NOMBRE: EDSON ROJAS PEÑA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 10:29:1 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-003
+ NOMBRE: JUAN JOSE ROJAS PEÑA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Productos
+HORA : 10:29:10 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Producto con ID  PRO-012
+ NOMBRE: CIPERMATATINA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Productos
+HORA : 10:35:49 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Producto con ID  PRO-001
+ NOMBRE: CIPERMETRINA AL 20%
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Productos
+HORA : 10:36:1 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Producto con ID  PRO-012
+ NOMBRE: CIPERMATATINA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Implementos
+HORA : 10:48:9 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Implemento con ID  MAQ-010
+ NOMBRE: MAQUINA 1
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_AreaTrabajo
+HORA : 10:59:36 AM
+TIPO : GENERACIÓN
+DESCRIPCIÓN : Se ha generado el Área con ID  1
+ NOMBRE: 123
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 10:59:43 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  
+ NOMBRE: 
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 10:59:48 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-002
+ NOMBRE: EDSON ROJAS PEÑA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Productos
+HORA : 10:59:53 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Producto con ID  PRO-001
+ NOMBRE: CIPERMETRINA AL 20%
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Implementos
+HORA : 11:1:11 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Implemento con ID  MAQ-003
+ NOMBRE: PUESTO DE CEBADERO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 11:2:30 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_AreaTrabajo
+HORA : 11:38:57 AM
+TIPO : GENERACIÓN
+DESCRIPCIÓN : Se ha generado el Área con ID  1
+ NOMBRE: CASA COMPLETA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_AreaTrabajo
+HORA : 11:52:51 AM
+TIPO : GENERACIÓN
+DESCRIPCIÓN : Se ha generado el Área con ID  1
+ NOMBRE: ASD
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 12:54:7 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 12:55:1 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:6:45 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:6:48 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-002
+ NOMBRE: DESRATIZACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:7:3 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-003
+ NOMBRE: DESINFECCIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:8:29 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:8:36 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-003
+ NOMBRE: DESINFECCIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:8:42 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-004
+ NOMBRE: LIMPIEZA Y DESINFECCIÓN DE RESERVORIOS DE AGUA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:9:53 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:12:0 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:12:5 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-002
+ NOMBRE: DESRATIZACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:14:29 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:15:9 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:15:11 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-002
+ NOMBRE: DESRATIZACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:15:14 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-003
+ NOMBRE: DESINFECCIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:15:18 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-004
+ NOMBRE: LIMPIEZA Y DESINFECCIÓN DE RESERVORIOS DE AGUA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:18:11 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:18:14 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-002
+ NOMBRE: DESRATIZACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:18:17 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-003
+ NOMBRE: DESINFECCIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:18:19 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-004
+ NOMBRE: LIMPIEZA Y DESINFECCIÓN DE RESERVORIOS DE AGUA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:18:21 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-005
+ NOMBRE: LIMPIEZA DE AMBIENTES
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:18:34 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-006
+ NOMBRE: LIMPIEZA DE TANQUE SÉPTICO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_AreaTrabajo
+HORA : 13:18:55 PM
+TIPO : GENERACIÓN
+DESCRIPCIÓN : Se ha generado el Área con ID  1
+ NOMBRE: CASA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_AreaTrabajo
+HORA : 13:19:4 PM
+TIPO : GENERACIÓN
+DESCRIPCIÓN : Se ha generado el Área con ID  2
+ NOMBRE: POZO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:20:29 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:20:37 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-002
+ NOMBRE: DESRATIZACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:20:41 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-003
+ NOMBRE: DESINFECCIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:20:45 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-004
+ NOMBRE: LIMPIEZA Y DESINFECCIÓN DE RESERVORIOS DE AGUA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:22:36 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:22:52 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-002
+ NOMBRE: DESRATIZACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:22:56 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-003
+ NOMBRE: DESINFECCIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:27:4 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-002
+ NOMBRE: EDSON ROJAS PEÑA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:27:36 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-004
+ NOMBRE: JUAN ROJAS ZAFRA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:27:44 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-006
+ NOMBRE: MARCO ANTONIO BAUTISTA VILLANUEVA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:28:11 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-002
+ NOMBRE: EDSON ROJAS PEÑA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:28:14 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-003
+ NOMBRE: JUAN JOSE ROJAS PEÑA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:28:16 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-005
+ NOMBRE: PEDRO JESUS ILLA ESPINOZA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:28:18 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-008
+ NOMBRE: HAMILTON  PINEDO VASQUEZ 
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:28:29 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:30:11 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-002
+ NOMBRE: EDSON ROJAS PEÑA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:30:13 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-003
+ NOMBRE: JUAN JOSE ROJAS PEÑA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:30:16 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-004
+ NOMBRE: JUAN ROJAS ZAFRA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:30:17 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-005
+ NOMBRE: PEDRO JESUS ILLA ESPINOZA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:30:22 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-006
+ NOMBRE: MARCO ANTONIO BAUTISTA VILLANUEVA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:30:26 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:30:28 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-002
+ NOMBRE: DESRATIZACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:30:32 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-004
+ NOMBRE: LIMPIEZA Y DESINFECCIÓN DE RESERVORIOS DE AGUA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_AreaTrabajo
+HORA : 13:30:44 PM
+TIPO : GENERACIÓN
+DESCRIPCIÓN : Se ha generado el Área con ID  1
+ NOMBRE: CASA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_AreaTrabajo
+HORA : 13:30:55 PM
+TIPO : GENERACIÓN
+DESCRIPCIÓN : Se ha generado el Área con ID  2
+ NOMBRE: POZO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:32:5 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-005
+ NOMBRE: LIMPIEZA DE AMBIENTES
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:32:9 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-006
+ NOMBRE: MARCO ANTONIO BAUTISTA VILLANUEVA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:32:12 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-002
+ NOMBRE: EDSON ROJAS PEÑA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:32:13 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-005
+ NOMBRE: PEDRO JESUS ILLA ESPINOZA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:32:14 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-008
+ NOMBRE: HAMILTON  PINEDO VASQUEZ 
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:32:16 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-011
+ NOMBRE: LUIS MANUEL CALDERON REVOLO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:32:18 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-014
+ NOMBRE: SANTOS LEON PILLIHUAMAN PICHO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:32:21 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:32:23 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-003
+ NOMBRE: DESINFECCIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 13:32:25 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-004
+ NOMBRE: LIMPIEZA Y DESINFECCIÓN DE RESERVORIOS DE AGUA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_AreaTrabajo
+HORA : 13:32:49 PM
+TIPO : GENERACIÓN
+DESCRIPCIÓN : Se ha generado el Área con ID  1
+ NOMBRE: EDIFICIO DE DEPARTAMENTOS
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_AreaTrabajo
+HORA : 13:32:58 PM
+TIPO : GENERACIÓN
+DESCRIPCIÓN : Se ha generado el Área con ID  2
+ NOMBRE: POZO DEL DEPARTAMENTO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_AreaTrabajo
+HORA : 13:33:8 PM
+TIPO : GENERACIÓN
+DESCRIPCIÓN : Se ha generado el Área con ID  3
+ NOMBRE: SOTANO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Productos
+HORA : 13:35:49 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Producto con ID  PRO-002
+ NOMBRE: ATOMIL EN POLVO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFMantenerImplementos
+HORA : 13:36:41 PM
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el Implemento con ID  MAQ-011
+ NOMBRE: VECTORFOG C150 ULV 
+ ESTADO: ACTIVO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Productos
+HORA : 13:38:42 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Producto con ID  PRO-001
+ NOMBRE: CIPERMETRINA AL 20%
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Productos
+HORA : 13:39:38 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Producto con ID  PRO-001
+ NOMBRE: CIPERMETRINA AL 20%
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Productos
+HORA : 13:40:21 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Producto con ID  PRO-001
+ NOMBRE: CIPERMETRINA AL 20%
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Productos
+HORA : 13:40:22 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Producto con ID  PRO-005
+ NOMBRE: GEL CUCARACHICIDA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Productos
+HORA : 13:41:45 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Producto con ID  PRO-001
+ NOMBRE: CIPERMETRINA AL 20%
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:41:49 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-002
+ NOMBRE: EDSON ROJAS PEÑA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 13:42:1 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-003
+ NOMBRE: JUAN JOSE ROJAS PEÑA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Implementos
+HORA : 13:44:8 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Implemento con ID  MAQ-001
+ NOMBRE: SOLO 457 - LONCHERITA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Implementos
+HORA : 13:44:14 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Implemento con ID  MAQ-004
+ NOMBRE: TERMONEBULIZADORA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Implementos
+HORA : 13:44:20 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Implemento con ID  MAQ-005
+ NOMBRE: SOLO 425
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Productos
+HORA : 13:44:25 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Producto con ID  PRO-005
+ NOMBRE: GEL CUCARACHICIDA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Productos
+HORA : 13:46:59 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Producto con ID  PRO-001
+ NOMBRE: CIPERMETRINA AL 20%
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Productos
+HORA : 14:2:40 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Producto con ID  PRO-002
+ NOMBRE: ATOMIL EN POLVO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Productos
+HORA : 14:3:37 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Producto con ID  PRO-002
+ NOMBRE: ATOMIL EN POLVO
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Productos
+HORA : 14:3:39 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Producto con ID  PRO-004
+ NOMBRE: KYROKAN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Productos
+HORA : 14:3:40 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Producto con ID  PRO-006
+ NOMBRE: EXQUAT 50
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 14:41:24 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Implementos
+HORA : 14:41:30 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Implemento con ID  MAQ-001
+ NOMBRE: SOLO 457 - LONCHERITA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 14:41:33 PM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-003
+ NOMBRE: JUAN JOSE ROJAS PEÑA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_AreaTrabajo
+HORA : 14:41:44 PM
+TIPO : GENERACIÓN
+DESCRIPCIÓN : Se ha generado el Área con ID  1
+ NOMBRE: CASA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_AreaTrabajo
+HORA : 14:41:56 PM
+TIPO : GENERACIÓN
+DESCRIPCIÓN : Se ha generado el Área con ID  2
+ NOMBRE: TANQUE AGUA
+----------------------------------------------------
+ 

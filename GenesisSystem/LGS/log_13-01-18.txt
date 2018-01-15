@@ -1,0 +1,24 @@
+DESCRIPCIÓN : Ha ocurrido un error al intentar quitar una área generada
+CLASE : SGL_VIEW_AreaTrabajo
+ERROR : java.lang.ArrayIndexOutOfBoundsException: -1
+TIME : 11:43:27
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'INFORMATION.wav'
+CLASE : SYSAUDIOCON linea 123
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 21266
+TIME : 13:12:0
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'INFORMATION.wav'
+CLASE : SYSAUDIOCON linea 123
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 21266
+TIME : 13:12:5
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al intentar reproducir el efecto 'INFORMATION.wav'
+CLASE : SYSAUDIOCON linea 123
+ERROR : java.lang.IllegalStateException: Clip is already open with format PCM_SIGNED 22050.0 Hz, 16 bit, mono, 2 bytes/frame, little-endian and frame lengh of 21266
+TIME : 13:14:29
+----------------------------------------------------
+ 

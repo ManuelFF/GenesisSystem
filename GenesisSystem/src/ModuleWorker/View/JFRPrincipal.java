@@ -5,6 +5,7 @@
  */
 package ModuleWorker.View;
 
+import ModuleWorker.Control;
 import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSCON;
 import ModuleWorker.SYSWALLPCON;
@@ -97,7 +98,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         jMenu4 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
 
         javax.swing.GroupLayout JDEscritorioLayout = new javax.swing.GroupLayout(JDEscritorio);
         JDEscritorio.setLayout(JDEscritorioLayout);
@@ -357,10 +358,8 @@ public class JFRPrincipal extends javax.swing.JFrame
     private void JSMCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMCerrarSesionActionPerformed
         try 
         {
-          SYSAUDIOCON sysau = new SYSAUDIOCON();
-          sysau.E_CERRAR_SESION();
           evn.write(JMSesion.getText(), "Ha cerrado sesión y salio del sistema", "JFRPrincipal", "Botón 'Cerrar Sesión' Presionado");
-          Thread.sleep(450);
+          new Control().cerrarApp();
           System.exit(0);
             
         } catch (Exception sqle) 

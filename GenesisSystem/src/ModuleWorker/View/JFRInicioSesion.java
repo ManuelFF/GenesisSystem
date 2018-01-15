@@ -5,6 +5,7 @@
  */
 package ModuleWorker.View;
 
+import ModuleWorker.Control;
 import ModuleWorker.IC.MICROCON_InicioSesion;
 import ModuleWorker.IC.ShakingFrame;
 import ModuleWorker.SYSAUDIOCON;
@@ -39,8 +40,21 @@ public class JFRInicioSesion extends javax.swing.JFrame
         sysfrm.B_login(this.getContentPane());
         this.setAlwaysOnTop(true);
         this.setLocationRelativeTo(null);
+        control_impl();
     }
 
+    private void control_impl()
+    {
+        Control c = new Control();
+        if(c.comprobar())
+        {
+            
+        }else
+        {
+            System.exit(0);
+        }
+    }
+    
     //BUSCAR ACTUALIZACION
     //ACTUALIZACION
     
@@ -63,7 +77,7 @@ public class JFRInicioSesion extends javax.swing.JFrame
         btnSalir = new javax.swing.JButton();
         pswPassword = new javax.swing.JPasswordField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setResizable(false);
 
         btnIngresar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -242,6 +256,7 @@ public class JFRInicioSesion extends javax.swing.JFrame
         try 
         {
             evn.write("Aún no definido", "Salio del sistema", "JFRInicioSesion", "Botón 'SALIR' Presionado");
+            new Control().cerrarApp();
             System.exit(0);
         } catch (Exception e) 
             {
