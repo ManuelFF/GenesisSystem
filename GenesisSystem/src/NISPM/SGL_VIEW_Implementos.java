@@ -211,7 +211,7 @@ public class SGL_VIEW_Implementos extends javax.swing.JDialog
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 51, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Importar Productos");
+        jLabel4.setText("Importar Implementos");
 
         JTImplementosImportar.setBackground(new java.awt.Color(204, 204, 204));
         JTImplementosImportar.setModel(new javax.swing.table.DefaultTableModel(

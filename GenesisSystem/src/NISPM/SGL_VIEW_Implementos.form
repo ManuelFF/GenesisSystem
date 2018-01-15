@@ -158,7 +158,7 @@
           <Color blue="ff" green="33" red="0" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Importar Productos"/>
+        <Property name="text" type="java.lang.String" value="Importar Implementos"/>
       </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
