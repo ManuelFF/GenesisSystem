@@ -262,24 +262,28 @@ public class GL_JDBuscarCliente extends javax.swing.JDialog
                     JIFGenerarOrdenServicio.JTAdetcliente.append(
                                                               "Detalles Adicionales: \n"+
                                                               "RUC : "+JTbuscarCliente.getValueAt(row, 2)+
-                                                              "\nNOMBRE ENC. : "+JTbuscarCliente.getValueAt(row, 3)+
-                                                              "\nDIRECCIÓN : "+JTbuscarCliente.getValueAt(row, 7)
+                                                              "\nNOMBRE ENC. : "+JTbuscarCliente.getValueAt(row, 3)
                                                             );
-                     JIFGenerarOrdenServicio.txtnombrecliente.setText(""+JTbuscarCliente.getValueAt(row, 1));
-                     select = ""+JTbuscarCliente.getValueAt(row, 1);
+                    JIFGenerarOrdenServicio.telefono = ""+JTbuscarCliente.getValueAt(row, 5);
+                    JIFGenerarOrdenServicio.celular = ""+JTbuscarCliente.getValueAt(row, 6);
                     
-                    
+                    JIFGenerarOrdenServicio.txtdireccion.setText(""+JTbuscarCliente.getValueAt(row, 7));
+                    JIFGenerarOrdenServicio.txtnombrecliente.setText(""+JTbuscarCliente.getValueAt(row, 1));
+                    select = ""+JTbuscarCliente.getValueAt(row, 1);
                     
                 }else 
                      if(buftip.equals("Natural"))
                      {
+                         
                         JIFGenerarOrdenServicio.JTAdetcliente.append(
                                                               "Detalles Adicionales: \n"+
                                                               "DNI : "+JTbuscarCliente.getValueAt(row, 2)+
-                                                              "\nCELULAR : "+JTbuscarCliente.getValueAt(row, 4)+
-                                                              "\nDIRECCIÓN : "+JTbuscarCliente.getValueAt(row, 5)
+                                                              "\nCELULAR : "+JTbuscarCliente.getValueAt(row, 4)
                                                             );
-                        
+                        JIFGenerarOrdenServicio.txtdireccion.setText(""+JTbuscarCliente.getValueAt(row, 5));
+                        JIFGenerarOrdenServicio.telefono = ""+JTbuscarCliente.getValueAt(row, 3);
+                        JIFGenerarOrdenServicio.celular = ""+JTbuscarCliente.getValueAt(row, 4);
+                    
                         String buff =""+JTbuscarCliente.getValueAt(row, 1);
                         String ArrayTemp[] = buff.split("/");
                         if(ArrayTemp[2].equals("-")){ArrayTemp[2]="";}

@@ -1,0 +1,192 @@
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON metodo DB_ORC_CON
+ERROR : java.sql.SQLRecoverableException: Error de E/S: The Network Adapter could not establish the connection
+TIME : 13:59:48
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error no controlado en el bloque del Finally del metodo ValidarUsuario
+CLASE : MICROCON_InicioSesion
+ERROR : java.lang.NullPointerException
+TIME : 13:59:48
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido ingresar al sistema debido a un error
+CLASE : JFRInicioSesion metodo ingresar linea 157
+ERROR : java.lang.NullPointerException
+TIME : 13:59:48
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON metodo DB_ORC_CON
+ERROR : java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+TIME : 13:59:53
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error no controlado en el bloque del Finally del metodo ValidarUsuario
+CLASE : MICROCON_InicioSesion
+ERROR : java.lang.NullPointerException
+TIME : 13:59:53
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido ingresar al sistema debido a un error
+CLASE : JFRInicioSesion metodo ingresar linea 157
+ERROR : java.lang.NullPointerException
+TIME : 13:59:53
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON metodo DB_ORC_CON
+ERROR : java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+TIME : 13:59:56
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error no controlado en el bloque del Finally del metodo ValidarUsuario
+CLASE : MICROCON_InicioSesion
+ERROR : java.lang.NullPointerException
+TIME : 13:59:56
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido ingresar al sistema debido a un error
+CLASE : JFRInicioSesion metodo ingresar linea 157
+ERROR : java.lang.NullPointerException
+TIME : 13:59:56
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON metodo DB_ORC_CON
+ERROR : java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+TIME : 13:59:59
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error no controlado en el bloque del Finally del metodo ValidarUsuario
+CLASE : MICROCON_InicioSesion
+ERROR : java.lang.NullPointerException
+TIME : 13:59:59
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido ingresar al sistema debido a un error
+CLASE : JFRInicioSesion metodo ingresar linea 157
+ERROR : java.lang.NullPointerException
+TIME : 13:59:59
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON metodo DB_ORC_CON
+ERROR : java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+TIME : 14:0:9
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error no controlado en el bloque del Finally del metodo ValidarUsuario
+CLASE : MICROCON_InicioSesion
+ERROR : java.lang.NullPointerException
+TIME : 14:0:9
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido ingresar al sistema debido a un error
+CLASE : JFRInicioSesion metodo ingresar linea 157
+ERROR : java.lang.NullPointerException
+TIME : 14:0:9
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON metodo DB_ORC_CON
+ERROR : java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12528, TNS:listener: all appropriate instances are blocking new connections
+ 
+TIME : 14:0:20
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error no controlado en el bloque del Finally del metodo ValidarUsuario
+CLASE : MICROCON_InicioSesion
+ERROR : java.lang.NullPointerException
+TIME : 14:0:20
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido ingresar al sistema debido a un error
+CLASE : JFRInicioSesion metodo ingresar linea 157
+ERROR : java.lang.NullPointerException
+TIME : 14:0:20
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON metodo DB_ORC_CON
+ERROR : java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12528, TNS:listener: all appropriate instances are blocking new connections
+ 
+TIME : 14:0:22
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error no controlado en el bloque del Finally del metodo ValidarUsuario
+CLASE : MICROCON_InicioSesion
+ERROR : java.lang.NullPointerException
+TIME : 14:0:22
+----------------------------------------------------
+ 
+DESCRIPCIÓN : No se ha podido ingresar al sistema debido a un error
+CLASE : JFRInicioSesion metodo ingresar linea 157
+ERROR : java.lang.NullPointerException
+TIME : 14:0:22
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Ha ocurrido un error al intentar insertar una nueva orden
+CLASE : JIFGenerarOrdenServicio
+ERROR : java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+TIME : 16:10:36
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Ha ocurrido un error al intentar insertar una nueva orden
+CLASE : JIFGenerarOrdenServicio
+ERROR : java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+TIME : 16:14:57
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Ha ocurrido un error al intentar insertar una nueva orden
+CLASE : JIFGenerarOrdenServicio
+ERROR : java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+TIME : 16:16:38
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Ha ocurrido un error al intentar insertar una nueva orden
+CLASE : JIFGenerarOrdenServicio
+ERROR : java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+TIME : 16:16:38
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Ha ocurrido un error al intentar insertar una nueva orden
+CLASE : JIFGenerarOrdenServicio
+ERROR : java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+TIME : 16:27:36
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Ha ocurrido un error al intentar insertar una nueva orden
+CLASE : JIFGenerarOrdenServicio
+ERROR : java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+TIME : 16:30:1
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Ha ocurrido un error al intentar insertar una nueva orden
+CLASE : JIFGenerarOrdenServicio
+ERROR : java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+TIME : 16:32:56
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Ha ocurrido un error al intentar insertar una nueva orden
+CLASE : JIFGenerarOrdenServicio
+ERROR : java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+TIME : 16:49:7
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Ha ocurrido un error al intentar insertar una nueva orden
+CLASE : JIFGenerarOrdenServicio
+ERROR : java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+TIME : 16:49:23
+----------------------------------------------------
+ 
