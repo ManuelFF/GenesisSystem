@@ -21,8 +21,6 @@ import javax.swing.table.DefaultTableModel;
  */
 public class NANOCON_ConsultaOrdenesTrabajo 
 {
-    private ResultSet rs;
-    private PreparedStatement st;
     LOG lc = new LOG();
     
     
@@ -38,6 +36,7 @@ public class NANOCON_ConsultaOrdenesTrabajo
                                   "from orden_serv os\n" +
                                   "inner join personal_emp emp on os.ID_PER = emp.ID_PER where os.ID_CLI = "+"'"+ID_CLI+"' order by NUMERO_ORDEN"
                                 );
+            
             ResultSetMetaData md=rs.getMetaData();
             int columnas= md.getColumnCount();
             for (int i = 1; i <= columnas; i++)
