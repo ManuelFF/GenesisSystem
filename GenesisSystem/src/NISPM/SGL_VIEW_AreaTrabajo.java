@@ -13,7 +13,7 @@ import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NCLPM.RESULTS;
-import NMOC.MD_Generar.View.JIFGenerarOrdenServicio;
+import NMOC.MD_Generar.View.JIFGenerarOrdenTrabajo;
 import java.awt.Color;
 import java.util.ArrayList;
 import javax.swing.JFrame;
@@ -604,8 +604,8 @@ public class SGL_VIEW_AreaTrabajo extends javax.swing.JDialog
         try
         {
             evn.write(lblusuario.getText(), "Ha salido de la vista 'SGL_VIEW_AreaTrabajo'", "JIFMantenerClientes", "Presiono Botón 'Salir'");
-            JIFGenerarOrdenServicio.areaM2 = ""+sumaAreaTotalMT2;
-            JIFGenerarOrdenServicio.areaM3 = ""+sumaAreaTotalMT3;
+            JIFGenerarOrdenTrabajo.areaM2 = ""+sumaAreaTotalMT2;
+            JIFGenerarOrdenTrabajo.areaM3 = ""+sumaAreaTotalMT3;
             this.dispose();
         } catch (Exception e)
         {
