@@ -66,46 +66,108 @@ public class CO_GenerarOrdenServicio
                       }    
     }
     
-    //Insertar la forma detallada de la orden de servicio
-        public void InsertarDETOrden(String ID_ORDEN, int det, String idpro,String idmaq, String idop,String idserv,String nota,String ID_AREA ,String nomArea, String areaTrab,String numabi, String areatotM2, String areatotM3, String formato)
+    //Actualiza la forma basica de la orden de servicio
+    public void Actualizar_orden(String ID_ORDEN, String numero_orden, String id_cli,String fecha,String hora,String direccion,String giroLugar,String telefono,String celular,String desc_doc,String id_per,String costo,String estado )
+    {
+        try 
         {
+            
+            DBCON RCN = new DBCON();
+            CallableStatement cst = RCN.conector().prepareCall("{call usp_modificar_orden(?,?,?,?,?,?,?,?,?,?,?,?,?)}");
 
-           try 
-               {
-                DBCON RCN = new DBCON();
-                // Llamada al procedimiento almacenado
-                CallableStatement cst = RCN.conector().prepareCall("{call usp_insertar_det_orden(?,?,?,?,?,?,?,?,?,?,?,?,?,?)}");
-               // do {
+            cst.setString(1, ID_ORDEN);
+            cst.setString(2, numero_orden);
+            cst.setString(3, id_cli);
+            cst.setString(4, fecha);
+            cst.setString(5, hora);
+            cst.setString(6, direccion);
+            cst.setString(7, giroLugar);
+            cst.setString(8, telefono);
+            cst.setString(9, celular);
+            cst.setString(10, desc_doc);
+            cst.setString(11, id_per);
+            cst.setString(12, costo);    
+            cst.setString(13, estado);    
 
-                // Parametro del procedimiento almacenado
-                cst.setString(1, ID_ORDEN);
-                cst.setInt(2, det);
-                cst.setString(3, idpro);
-                cst.setString(4, idmaq);
-                cst.setString(5, idop);
-                cst.setString(6, idserv);
-                cst.setString(7, nota);
-                cst.setString(8, ID_AREA);
-                cst.setString(9, nomArea);
-                cst.setString(10, areaTrab);
-                cst.setString(11, numabi);
-                cst.setString(12, areatotM2);
-                cst.setString(13, areatotM3);
-                cst.setString(14, formato);
+            cst.execute();
+            cst.execute();
 
-                // Ejecuta el procedimiento almacenado
-                cst.execute();
-                cst.close();
-            } 
-             catch (SQLException ex)
-              {
+        } catch (SQLException ex)
+            {
                 System.out.println("Error: " + ex.getMessage());
-              } finally 
-                {
+            } finally {
+            
+                      }    
+    }
 
-                }    
-        }
     
+    
+    //Insertar la forma detallada de la orden de servicio
+    public void InsertarDETOrden(String ID_ORDEN, int det, String idpro,String idmaq, String idop,String idserv,String nota,String ID_AREA ,String nomArea, String areaTrab,String numabi, String areatotM2, String areatotM3, String formato)
+    {
+
+       try 
+           {
+            DBCON RCN = new DBCON();
+            // Llamada al procedimiento almacenado
+            CallableStatement cst = RCN.conector().prepareCall("{call usp_insertar_det_orden(?,?,?,?,?,?,?,?,?,?,?,?,?,?)}");
+           // do {
+
+            // Parametro del procedimiento almacenado
+            cst.setString(1, ID_ORDEN);
+            cst.setInt(2, det);
+            cst.setString(3, idpro);
+            cst.setString(4, idmaq);
+            cst.setString(5, idop);
+            cst.setString(6, idserv);
+            cst.setString(7, nota);
+            cst.setString(8, ID_AREA);
+            cst.setString(9, nomArea);
+            cst.setString(10, areaTrab);
+            cst.setString(11, numabi);
+            cst.setString(12, areatotM2);
+            cst.setString(13, areatotM3);
+            cst.setString(14, formato);
+
+            // Ejecuta el procedimiento almacenado
+            cst.execute();
+            cst.close();
+        } 
+         catch (SQLException ex)
+          {
+            System.out.println("Error: " + ex.getMessage());
+          } finally 
+            {
+
+            }    
+    }
+    
+    //Actualizar la forma detallada de la orden de servicio
+    public void ActualizarDETOrden(String ID_ORDEN)
+    {
+
+       try 
+           {
+            DBCON RCN = new DBCON();
+            // Llamada al procedimiento almacenado
+            CallableStatement cst = RCN.conector().prepareCall("{call usp_modificar_det_orden(?)}");
+           // do {
+
+            // Parametro del procedimiento almacenado
+            cst.setString(1, ID_ORDEN);
+           
+            // Ejecuta el procedimiento almacenado
+            cst.execute();
+            cst.close();
+        } 
+         catch (SQLException ex)
+          {
+            System.out.println("Error: " + ex.getMessage());
+          } finally 
+            {
+
+            }    
+    }
     
     
     
@@ -184,6 +246,12 @@ public class CO_GenerarOrdenServicio
     public O_OrdenServicio obtener(int pos)
     {
         return L_ORDEN.get(pos);
+    }
+    
+    //CLEAR
+    public void Clear()
+    {
+        L_ORDEN.clear();
     }
     
     //LLENA ARRAYLIST
