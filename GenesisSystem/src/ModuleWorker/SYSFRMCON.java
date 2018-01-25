@@ -185,6 +185,18 @@ public class SYSFRMCON
         p.setBackground(Color.GRAY.brighter());
     }
     
+    //BUSCAR ORDENES DE TRABAJO
+    public String T_BuscarOrdenes()
+    {
+        String t = DEV()+" Buscar Ordenes de Trabajo";
+        return t;
+    }
+    
+    public void B_BuscarOrdenes(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+    
     //#########################################################################
     //FORMULARIOS DEL PAQUETE NISPM
     
@@ -323,6 +335,21 @@ public class SYSFRMCON
     }
     
     public void B_GenerarOrden(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+    
+    //#########################################################################
+    //FORMULARIOS CONSULTAR
+    
+    //CONSULTAR ORDEN
+    public String T_ConsultarORden()
+    {
+        String t = DEV()+" Generar Cotización";
+        return t;
+    }
+    
+    public void B_ConsultarORden(Container p)
     {
         p.setBackground(Color.GRAY.brighter());
     }
