@@ -10,7 +10,7 @@ import ModuleWorker.SYSFRMCON;
 import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
-import NMOC.MD_Generar.View.JIFGenerarOrdenServicio;
+import NMOC.MD_Generar.View.JIFGenerarOrdenTrabajo;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
@@ -225,7 +225,7 @@ public class GL_JDCalendar extends javax.swing.JDialog
             if(formulario.equals("ORDEN_SERV"))
             {
                 evn.write(JFRPrincipal.JMSesion.getText(), "Establecio la fecha "+dia+"/"+mes+"/"+año+"\n en el formulario 'JIFGenerarOrdenServicio'", "JDCalendar", "Botón 'Establecer' presionado");
-                JIFGenerarOrdenServicio.txtfecha.setText(dia+"/"+mes+"/"+año);
+                JIFGenerarOrdenTrabajo.txtfecha.setText(dia+"/"+mes+"/"+año);
             }
         }
         
@@ -241,7 +241,7 @@ public class GL_JDCalendar extends javax.swing.JDialog
             if(formulario.equals("ORDEN_SERV"))
             {   
                evn.write(JFRPrincipal.JMSesion.getText(), "Establecio la hora "+hora+":"+minuto+" "+fort+"\n en el formulario 'JIFGenerarOrdenServicio'", "JDCalendar", "Botón 'Establecer' presionado");
-               JIFGenerarOrdenServicio.txthora.setText(hora+":"+minuto+" "+fort);
+               JIFGenerarOrdenTrabajo.txthora.setText(hora+":"+minuto+" "+fort);
             }
         }
         

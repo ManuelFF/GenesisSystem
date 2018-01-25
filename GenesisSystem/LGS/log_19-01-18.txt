@@ -1,6 +1,0 @@
-DESCRIPCIÓN : No se ha podido cerrar el formulario 'Buscar Cliente' debido a un error inesperado
-CLASE : GL_JDBuscarCliente
-ERROR : java.lang.NullPointerException
-TIME : 12:54:57
-----------------------------------------------------
- 

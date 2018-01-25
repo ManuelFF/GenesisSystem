@@ -17,7 +17,7 @@ import NISPM.SGL_CTRL_Implementos;
 import NISPM.SGL_CTRL_Operarios;
 import NISPM.SGL_CTRL_Productos;
 import NISPM.SGL_CTRL_Servicios;
-import NMOC.MD_Generar.View.JIFGenerarOrdenServicio;
+import NMOC.MD_Generar.View.JIFGenerarOrdenTrabajo;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
@@ -285,23 +285,23 @@ public class GLVC_JDBuscarOrdenes
         while (rs.next())
         {
 
-          JIFGenerarOrdenServicio.telefono = ""+rs.getString("TELEFONO");
-          JIFGenerarOrdenServicio.celular = ""+rs.getString("CELULAR");
+          JIFGenerarOrdenTrabajo.telefono = ""+rs.getString("TELEFONO");
+          JIFGenerarOrdenTrabajo.celular = ""+rs.getString("CELULAR");
             
-          JIFGenerarOrdenServicio.txtidorden.setText(rs.getString("ID_ORDEN"));
-          JIFGenerarOrdenServicio.txtnumeroorden.setText(rs.getString("NUMERO_ORDEN"));
-          JIFGenerarOrdenServicio.txtfecha.setText(rs.getString("fecha"));
-          JIFGenerarOrdenServicio.txthora.setText(rs.getString("hora"));
-          JIFGenerarOrdenServicio.txtgiro.setText(rs.getString("giro_lugar"));
-          JIFGenerarOrdenServicio.txtdocumentacion.setText(rs.getString("desc_doc"));
-          JIFGenerarOrdenServicio.txtcosto.setText(rs.getString("costo"));
-          JIFGenerarOrdenServicio.txtcostofinal.setText(rs.getString("costo"));
-          JIFGenerarOrdenServicio.txtidVendedor.setText(rs.getString("ID_PER"));
-          JIFGenerarOrdenServicio.txtnombrevendedor.setText(rs.getString("NOMBRE"));
-          JIFGenerarOrdenServicio.txtcodCliente.setText(rs.getString("ID_CLI"));
+          JIFGenerarOrdenTrabajo.txtidorden.setText(rs.getString("ID_ORDEN"));
+          JIFGenerarOrdenTrabajo.txtnumeroorden.setText(rs.getString("NUMERO_ORDEN"));
+          JIFGenerarOrdenTrabajo.txtfecha.setText(rs.getString("fecha"));
+          JIFGenerarOrdenTrabajo.txthora.setText(rs.getString("hora"));
+          JIFGenerarOrdenTrabajo.txtgiro.setText(rs.getString("giro_lugar"));
+          JIFGenerarOrdenTrabajo.txtdocumentacion.setText(rs.getString("desc_doc"));
+          JIFGenerarOrdenTrabajo.txtcosto.setText(rs.getString("costo"));
+          JIFGenerarOrdenTrabajo.txtcostofinal.setText(rs.getString("costo"));
+          JIFGenerarOrdenTrabajo.txtidVendedor.setText(rs.getString("ID_PER"));
+          JIFGenerarOrdenTrabajo.txtnombrevendedor.setText(rs.getString("NOMBRE"));
+          JIFGenerarOrdenTrabajo.txtcodCliente.setText(rs.getString("ID_CLI"));
           
-          JIFGenerarOrdenServicio.txtnombrecliente.setText(rs.getString("RAZON_SOCIAL"));
-          JIFGenerarOrdenServicio.txtdireccion.setText(rs.getString("DIRECCION"));
+          JIFGenerarOrdenTrabajo.txtnombrecliente.setText(rs.getString("RAZON_SOCIAL"));
+          JIFGenerarOrdenTrabajo.txtdireccion.setText(rs.getString("DIRECCION"));
 
         }
         
@@ -330,20 +330,20 @@ public class GLVC_JDBuscarOrdenes
         while (rs.next())
         {
 
-          JIFGenerarOrdenServicio.txtidorden.setText(rs.getString("ID_ORDEN"));
-          JIFGenerarOrdenServicio.txtnumeroorden.setText(rs.getString("NUMERO_ORDEN"));
-          JIFGenerarOrdenServicio.txtfecha.setText(rs.getString("fecha"));
-          JIFGenerarOrdenServicio.txthora.setText(rs.getString("hora"));
-          JIFGenerarOrdenServicio.txtgiro.setText(rs.getString("giro_lugar"));
-          JIFGenerarOrdenServicio.txtdocumentacion.setText(rs.getString("desc_doc"));
-          JIFGenerarOrdenServicio.txtcosto.setText(rs.getString("costo"));
-          JIFGenerarOrdenServicio.txtcostofinal.setText(rs.getString("costo"));
-          JIFGenerarOrdenServicio.txtidVendedor.setText(rs.getString("ID_PER"));
-          JIFGenerarOrdenServicio.txtnombrevendedor.setText(rs.getString("NOMBRE"));
-          JIFGenerarOrdenServicio.txtcodCliente.setText(rs.getString("ID_CLI"));
+          JIFGenerarOrdenTrabajo.txtidorden.setText(rs.getString("ID_ORDEN"));
+          JIFGenerarOrdenTrabajo.txtnumeroorden.setText(rs.getString("NUMERO_ORDEN"));
+          JIFGenerarOrdenTrabajo.txtfecha.setText(rs.getString("fecha"));
+          JIFGenerarOrdenTrabajo.txthora.setText(rs.getString("hora"));
+          JIFGenerarOrdenTrabajo.txtgiro.setText(rs.getString("giro_lugar"));
+          JIFGenerarOrdenTrabajo.txtdocumentacion.setText(rs.getString("desc_doc"));
+          JIFGenerarOrdenTrabajo.txtcosto.setText(rs.getString("costo"));
+          JIFGenerarOrdenTrabajo.txtcostofinal.setText(rs.getString("costo"));
+          JIFGenerarOrdenTrabajo.txtidVendedor.setText(rs.getString("ID_PER"));
+          JIFGenerarOrdenTrabajo.txtnombrevendedor.setText(rs.getString("NOMBRE"));
+          JIFGenerarOrdenTrabajo.txtcodCliente.setText(rs.getString("ID_CLI"));
           
-          JIFGenerarOrdenServicio.txtnombrecliente.setText(rs.getString("NOM_CLI"));
-          JIFGenerarOrdenServicio.txtdireccion.setText(rs.getString("DIRECCION"));
+          JIFGenerarOrdenTrabajo.txtnombrecliente.setText(rs.getString("NOM_CLI"));
+          JIFGenerarOrdenTrabajo.txtdireccion.setText(rs.getString("DIRECCION"));
 
         }
         

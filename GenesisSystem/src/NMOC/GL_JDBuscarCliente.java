@@ -11,7 +11,7 @@ import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NMOC.GLCL.GLVC_JDBuscarCliente;
 import NMOC.MD_Consultar_View.JIFConsultarOrdenesTrabajo;
-import NMOC.MD_Generar.View.JIFGenerarOrdenServicio;
+import NMOC.MD_Generar.View.JIFGenerarOrdenTrabajo;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
@@ -256,40 +256,40 @@ public class GL_JDBuscarCliente extends javax.swing.JDialog
 
             if(formulario.equals("ORDEN_SERV"))
             {
-                JIFGenerarOrdenServicio.JTAdetcliente.setText("");
-                JIFGenerarOrdenServicio.txtcodCliente.setText(""+JTbuscarCliente.getValueAt(row, 0));
+                JIFGenerarOrdenTrabajo.JTAdetcliente.setText("");
+                JIFGenerarOrdenTrabajo.txtcodCliente.setText(""+JTbuscarCliente.getValueAt(row, 0));
                 
                 if(buftip.equals("Juridica"))
                 {
-                    JIFGenerarOrdenServicio.JTAdetcliente.append(
+                    JIFGenerarOrdenTrabajo.JTAdetcliente.append(
                                                               "Detalles Adicionales: \n"+
                                                               "RUC : "+JTbuscarCliente.getValueAt(row, 2)+
                                                               "\nNOMBRE ENC. : "+JTbuscarCliente.getValueAt(row, 3)
                                                             );
-                    JIFGenerarOrdenServicio.telefono = ""+JTbuscarCliente.getValueAt(row, 5);
-                    JIFGenerarOrdenServicio.celular = ""+JTbuscarCliente.getValueAt(row, 6);
+                    JIFGenerarOrdenTrabajo.telefono = ""+JTbuscarCliente.getValueAt(row, 5);
+                    JIFGenerarOrdenTrabajo.celular = ""+JTbuscarCliente.getValueAt(row, 6);
                     
-                    JIFGenerarOrdenServicio.txtdireccion.setText(""+JTbuscarCliente.getValueAt(row, 7));
-                    JIFGenerarOrdenServicio.txtnombrecliente.setText(""+JTbuscarCliente.getValueAt(row, 1));
+                    JIFGenerarOrdenTrabajo.txtdireccion.setText(""+JTbuscarCliente.getValueAt(row, 7));
+                    JIFGenerarOrdenTrabajo.txtnombrecliente.setText(""+JTbuscarCliente.getValueAt(row, 1));
                     select = ""+JTbuscarCliente.getValueAt(row, 1);
                     
                 }else 
                      if(buftip.equals("Natural"))
                      {
                          
-                        JIFGenerarOrdenServicio.JTAdetcliente.append(
+                        JIFGenerarOrdenTrabajo.JTAdetcliente.append(
                                                               "Detalles Adicionales: \n"+
                                                               "DNI : "+JTbuscarCliente.getValueAt(row, 2)+
                                                               "\nCELULAR : "+JTbuscarCliente.getValueAt(row, 4)
                                                             );
-                        JIFGenerarOrdenServicio.txtdireccion.setText(""+JTbuscarCliente.getValueAt(row, 5));
-                        JIFGenerarOrdenServicio.telefono = ""+JTbuscarCliente.getValueAt(row, 3);
-                        JIFGenerarOrdenServicio.celular = ""+JTbuscarCliente.getValueAt(row, 4);
+                        JIFGenerarOrdenTrabajo.txtdireccion.setText(""+JTbuscarCliente.getValueAt(row, 5));
+                        JIFGenerarOrdenTrabajo.telefono = ""+JTbuscarCliente.getValueAt(row, 3);
+                        JIFGenerarOrdenTrabajo.celular = ""+JTbuscarCliente.getValueAt(row, 4);
                     
                         String buff =""+JTbuscarCliente.getValueAt(row, 1);
                         String ArrayTemp[] = buff.split("/");
                         if(ArrayTemp[2].equals("-")){ArrayTemp[2]="";}
-                        JIFGenerarOrdenServicio.txtnombrecliente.setText(ArrayTemp[0]+" "+ArrayTemp[1]+" "+ArrayTemp[2]);
+                        JIFGenerarOrdenTrabajo.txtnombrecliente.setText(ArrayTemp[0]+" "+ArrayTemp[1]+" "+ArrayTemp[2]);
                         select = ArrayTemp[0]+" "+ArrayTemp[1]+" "+ArrayTemp[2];
                      }
                 evn.write(JFRPrincipal.JMSesion.getText(),"Ha seleccionado al Cliente "+select,"GL_JDBuscarCliente", "Tabla de Cliente presionado");

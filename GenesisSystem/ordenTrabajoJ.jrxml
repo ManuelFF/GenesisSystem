@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TEST" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="62b2e178-d129-4f9a-b090-50cb363b3b38">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="ID_CLI" class="java.lang.String"/>
+	<field name="RUC" class="java.lang.String"/>
+	<field name="RAZON_SOCIAL" class="java.lang.String"/>
+	<field name="TELEFONO" class="java.lang.String"/>
+	<field name="CELULAR" class="java.lang.String"/>
+	<field name="NOM_ENCARGADO" class="java.lang.String"/>
+	<field name="GIRO_LUGAR" class="java.lang.String"/>
+	<field name="DIRECCION" class="java.lang.String"/>
+	<field name="NUMERO_ORDEN" class="java.lang.String"/>
+	<field name="NOMPER" class="java.lang.String"/>
+	<field name="COSTO" class="java.lang.String"/>
+	<field name="FECHA" class="java.lang.String"/>
+	<field name="HORA" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="86" splitType="Stretch">
+			<staticText>
+				<reportElement x="358" y="33" width="156" height="30" forecolor="#54D24E" uuid="9bfbd10d-45ae-4a3f-923e-da02acf762d7"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RUC N° 20600624483]]></text>
+			</staticText>
+			<image>
+				<reportElement x="87" y="9" width="90" height="72" uuid="d788ea59-d7cf-4258-bf18-90ed88a235dd"/>
+				<imageExpression><![CDATA["./logotipo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="-20" y="44" width="595" height="30" forecolor="#0000FF" uuid="bdb37212-0716-462f-84fa-6b0d769d1302"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ORDEN DE TRABAJO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="117" y="15" width="390" height="30" forecolor="#54D24E" uuid="5634fb7e-8f4c-4355-ba7c-60b343ec93d1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SANEAMIENTO ROEDJOT SAC]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="99" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="5" width="233" height="94" uuid="a7ab9403-880d-4fd0-a060-11980ecff6d9"/>
+				<graphicElement>
+					<pen lineWidth="1.75" lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="17" y="8" width="33" height="14" uuid="43e4cee3-10d4-4a25-b0c6-4e4a05fcb7eb"/>
+				<textElement>
+					<font fontName="Calibri" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Código:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="50" y="13" width="74" height="11" forecolor="#0000FE" uuid="9792e030-9a75-41f6-bfa4-2e37757a418d"/>
+				<textElement>
+					<font size="6.5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ID_CLI}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="125" y="9" width="26" height="13" uuid="5bd76f54-c4ef-473c-84da-0f5578a5deeb"/>
+				<textElement>
+					<font fontName="Calibri" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RUC:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="147" y="11" width="70" height="12" forecolor="#0000FE" uuid="360ce099-763f-4617-96f0-850e43e42019"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{RUC}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="9" y="21" width="41" height="14" uuid="a47ccb12-3184-4af1-aec1-d03525d4f3cc"/>
+				<textElement>
+					<font fontName="Calibri" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="52" y="23" width="178" height="12" forecolor="#0000FE" uuid="805e01f2-669b-484a-94d5-5855d716cc75"/>
+				<textElement>
+					<font size="7.6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{RAZON_SOCIAL}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="9" y="33" width="41" height="14" uuid="f5c279ba-ee3c-4d03-8fd2-bb2af2bd85b1"/>
+				<textElement>
+					<font fontName="Calibri" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Teléfono:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="147" y="36" width="70" height="13" forecolor="#0000FE" uuid="8394c496-69c1-4f5f-bf42-3b4d6e945a9c"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CELULAR}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="52" y="35" width="65" height="13" forecolor="#0000FE" uuid="ba679ee8-7591-4b5f-9a1f-4c7bc05ada07"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TELEFONO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="113" y="33" width="32" height="14" uuid="09faec97-c57a-40be-9be6-95eeab37f29e"/>
+				<textElement>
+					<font fontName="Calibri" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Celular:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="52" y="45" width="178" height="13" forecolor="#0000FE" uuid="2a2c0f64-370e-49da-9b94-3f2d682f67de"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NOM_ENCARGADO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="8" y="42" width="42" height="16" uuid="e4c2057f-fa13-4b55-98f6-0070199bec26"/>
+				<textElement>
+					<font fontName="Calibri" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contacto:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="55" width="47" height="14" uuid="031a87a6-0719-467b-aa1c-42100e451974"/>
+				<textElement>
+					<font fontName="Calibri" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Giro Lugar:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="52" y="57" width="178" height="14" forecolor="#0000FE" uuid="76225dd3-8552-4445-9976-286b9a7c08b0"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{GIRO_LUGAR}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="52" y="71" width="178" height="27" forecolor="#0000FE" uuid="aabbef5d-bf4d-4b34-be9b-684b058f23af"/>
+				<textElement>
+					<font size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DIRECCION}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="7" y="69" width="43" height="14" uuid="f52f2808-b673-49fa-b2db-e4ecf7d338d9"/>
+				<textElement>
+					<font fontName="Calibri" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dirección:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="233" y="5" width="117" height="94" uuid="64032ac4-7a9f-4c6b-b02f-bae25e70d6d6"/>
+				<graphicElement>
+					<pen lineWidth="1.75" lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="233" y="9" width="116" height="20" uuid="7ab3c2a9-642e-4e4c-93d2-181c0e2df68e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" isBold="true"/>
+				</textElement>
+				<text><![CDATA[N° de Orden]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="233" y="30" width="116" height="17" uuid="cb849d8e-af69-4d20-910b-22926e656c7f"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NUMERO_ORDEN}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="233" y="47" width="116" height="17" uuid="e2bf69e9-e129-49b3-936f-7e7932344207"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Vendedor]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="235" y="66" width="113" height="31" uuid="4941d59f-21a9-4685-a72f-ccf3b9dc83a0"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NOMPER}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="350" y="5" width="90" height="94" uuid="77297940-863f-4db2-ae31-2ff1a3487ab7"/>
+				<graphicElement>
+					<pen lineWidth="1.75" lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="350" y="10" width="90" height="20" uuid="cd7f8ab1-9ea3-4af6-af17-6d95207396e1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Moneda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="46" width="90" height="20" uuid="01b1d81f-55aa-4926-a93e-14169dfc7667"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" isBold="true"/>
+				</textElement>
+				<text><![CDATA[COSTO]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="350" y="67" width="90" height="15" uuid="5892f62b-6ef5-416b-a28d-acf31ba97ec3"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COSTO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="350" y="26" width="90" height="20" uuid="4c6e3fc8-fbed-4128-9a39-a743908be826"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SOLES]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="440" y="5" width="114" height="94" uuid="a6972c59-7bb2-4cb4-8974-3eb9e44fda81"/>
+				<graphicElement>
+					<pen lineWidth="1.75" lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="440" y="10" width="113" height="20" uuid="1a1fcc82-21f3-416c-9df2-68021a2b6884"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha del Trabajo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="46" width="113" height="20" uuid="f1f2a500-4511-40ed-9223-8a932ab45504"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hora del Trabajo]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="440" y="66" width="113" height="21" uuid="ec31b2f9-bb03-4461-b0cc-5d21a883f384"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{HORA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="30" width="113" height="16" uuid="b46bc1a9-923a-459f-a193-223e1eac9d7b"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FECHA}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+</jasperReport>

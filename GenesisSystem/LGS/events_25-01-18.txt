@@ -1,0 +1,3719 @@
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 09:17:53 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 09:18:14 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 09:18:16 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 09:18:28 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 09:18:45 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 09:18:46 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 09:18:58 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 09:19:7 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 09:19:9 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 09:19:10 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 09:19:16 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 09:19:45 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 09:19:47 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 09:19:56 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 09:20:13 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 09:20:15 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 09:20:26 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 09:24:53 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 09:24:54 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 09:25:49 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 09:25:55 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 09:25:57 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 09:26:14 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 09:26:44 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 09:26:45 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 09:27:24 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 09:27:34 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 09:27:37 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 09:27:55 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 09:33:58 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 09:34:0 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:34:2 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:34:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:34:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Cliente'
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:34:7 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:34:8 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:34:9 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:34:10 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:34:11 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:34:25 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:34:26 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Cliente'
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:34:28 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 09:37:48 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Clientes'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:37:50 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:37:51 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:37:52 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Cliente'
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:37:54 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:37:55 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:37:55 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Cliente'
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:37:58 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:37:59 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:38:0 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Cliente'
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:41:32 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:41:33 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:41:34 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 09:42:6 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 09:42:37 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 09:42:38 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarOrdenServicio'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:42:40 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 09:42:41 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 09:42:42 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:42:44 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:42:45 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente SANEAMIENTO ROEDJOT S.A.C
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:42:48 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 09:43:0 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 09:43:38 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 09:43:39 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:43:41 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:43:42 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente SANEAMIENTO ROEDJOT S.A.C
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:43:45 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:43:51 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:43:52 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Cliente'
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:45:12 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:45:44 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:45:46 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Cliente'
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:46:7 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:46:47 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:46:47 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Cliente'
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:46:52 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 09:47:5 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 09:47:7 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 09:47:7 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFGenerarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:47:8 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente CLIENTE PRUEBA PRUEBA PRUEBA
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:47:13 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarOrdenServicio'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:47:15 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 09:47:39 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 09:47:45 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 09:47:47 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 09:47:49 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:47:49 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:47:50 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente MERCADO 3 DE OCTUBRE
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:47:52 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:47:53 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:47:53 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente CLIENTE PRUEBA PRUEBA PRUEBA
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:47:59 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:48:3 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:48:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente MARIA SILVANA SILVANA
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:48:8 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:48:10 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:48:11 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente CLIENTE PRUEBA PRUEBA PRUEBA
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:48:15 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:48:25 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:48:26 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente FELIX FELIPE CASTILLO TORRES
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:48:33 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 09:48:50 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 09:48:55 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 09:48:57 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:48:58 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:48:59 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente null
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:49:3 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 09:49:45 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 09:51:31 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 09:51:53 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:51:54 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:51:55 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente CLIENTE PRUEBA/PRUEBA/PRUEBA
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:52:0 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:52:11 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:52:12 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente POLLERIA EL CAPORAL
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:52:15 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:52:17 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:52:18 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente VENTURA CORPORACION OPTICAL SAC
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:52:21 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:52:23 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:52:24 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente GRUPO PECUARIO
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:52:27 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:52:28 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:52:29 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente SERVICIOS ANALITICOS GENERALES S.A.C
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:52:39 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:52:40 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:52:41 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente PROMAFA S.A.C.
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:52:46 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:52:48 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:52:49 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente DIRECTO PERU
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:52:51 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:52:52 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:52:53 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente SANEAMIENTO ROEDJOT S.A.C
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:52:57 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:52:59 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:53:0 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente SANEAMIENTO ROEDJOT S.A.C
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:53:12 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:53:14 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:53:16 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente SANEAMIENTO ROEDJOT S.A.C
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:53:20 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:53:21 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:53:22 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente ELEMENT UNDERGROUND SRL
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:53:23 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:53:24 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:53:25 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente SANEAMIENTO ROEDJOT S.A.C
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:53:29 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:53:30 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:53:31 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente EL VERIDICO DE FIDEL
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:53:35 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:53:46 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:53:49 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente CLAUDIA/-/-
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:53:51 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:53:52 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:53:53 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente ANGELICA/-/-
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:53:56 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:53:57 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:53:58 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente MMMMM/MMMMM/-
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:54:0 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:54:1 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:54:2 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente DSADAS/FSFSFS/123123
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:54:5 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:54:6 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:54:7 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente VERONICA/VERONICA/VERONICA
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:54:9 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:54:10 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:54:11 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente MARCO/LUCCHESI/-
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:54:24 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:54:41 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:54:42 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Cliente'
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:54:43 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 09:55:9 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:55:10 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Ordenes de Trabajo'
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:55:12 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 09:55:13 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 09:55:15 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFGenerarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:55:15 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente MMMMM MMMMM 
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:55:23 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Generar Área' 
+FORMULARIO : SGL_VIEW_AreaTrabajo
+ACCIÓN : Botón 'Generar Área' Presionado
+TIME : 09:55:27 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Generar Área' 
+FORMULARIO : SGL_VIEW_AreaTrabajo
+ACCIÓN : Botón 'Generar Área' Presionado
+TIME : 09:55:31 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Genero una nueva área
+FORMULARIO : SGL_VIEW_AreaTrabajo
+ACCIÓN : Botón 'Generar' Presionado
+TIME : 09:55:31 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:55:32 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Servicio DESINSECTACIÓN
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Tabla de Servicios a importar presionado
+TIME : 09:55:33 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Servicio DESINSECTACIÓN
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Tabla de Servicios a importar presionado
+TIME : 09:55:34 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar Servicio' Presionado
+TIME : 09:55:34 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar Servicio' Presionado
+TIME : 09:55:34 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar Servicio' Presionado
+TIME : 09:55:35 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Importo un Servicio
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar' Presionado
+TIME : 09:55:35 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:55:36 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto CIPERMETRINA AL 20%
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Tabla de Productos a importar presionado
+TIME : 09:55:38 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto CIPERMETRINA AL 20%
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Tabla de Productos a importar presionado
+TIME : 09:55:38 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Botón 'Importar Producto' Presionado
+TIME : 09:55:38 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Botón 'Importar Producto' Presionado
+TIME : 09:55:38 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Importo un Producto
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Botón 'Importar' Presionado
+TIME : 09:55:38 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:55:39 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario EDSON ROJAS PEÑA
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 09:55:40 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario EDSON ROJAS PEÑA
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 09:55:41 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Botón 'Importar Operario' Presionado
+TIME : 09:55:41 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Botón 'Importar Operario' Presionado
+TIME : 09:55:41 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Importo un Operario
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Botón 'Importar' Presionado
+TIME : 09:55:41 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:55:42 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:55:44 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento TERMONEBULIZADORA
+FORMULARIO : SGL_VIEW_Implementos
+ACCIÓN : Tabla de Implementos a importar presionado
+TIME : 09:55:45 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Implementos
+ACCIÓN : Botón 'Importar Implemento' Presionado
+TIME : 09:55:46 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Implementos
+ACCIÓN : Botón 'Importar Implemento' Presionado
+TIME : 09:55:46 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Importo un Implemento
+FORMULARIO : SGL_VIEW_Implementos
+ACCIÓN : Botón 'Importar' Presionado
+TIME : 09:55:46 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:55:47 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Vendedor
+FORMULARIO : JIFGenerarOrdenServicio -> GL_JDBuscarVendedor
+ACCIÓN : Botón 'Consultar Vendedor' presionado
+TIME : 09:55:48 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Vendedor MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : GL_JDBuscarVendedor
+ACCIÓN : Tabla de Vendedor presionado
+TIME : 09:55:49 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Vendedor
+FORMULARIO : JIFGenerarOrdenServicio -> GL_JDBuscarVendedor
+ACCIÓN : Botón 'Consultar Vendedor' presionado
+TIME : 09:55:50 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Vendedor PEDRO JESUS ILLA ESPINOZA
+FORMULARIO : GL_JDBuscarVendedor
+ACCIÓN : Tabla de Vendedor presionado
+TIME : 09:55:52 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de fechas
+FORMULARIO : JIFGenerarOrdenServicio -> JDCalendar
+ACCIÓN : Botón 'fecha' presionado
+TIME : 09:55:53 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la fecha 25/01/2018
+ en el formulario 'JIFGenerarOrdenServicio'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 09:55:54 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de horas
+FORMULARIO : JIFGenerarOrdenServicio -> JDCalendar
+ACCIÓN : Botón 'hora' presionado
+TIME : 09:55:54 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la hora 09:30 AM
+ en el formulario 'JIFGenerarOrdenServicio'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 09:55:55 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Vendedor
+FORMULARIO : JIFGenerarOrdenServicio -> GL_JDBuscarVendedor
+ACCIÓN : Botón 'Consultar Vendedor' presionado
+TIME : 09:56:1 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Vendedor AGUIRE FDGDFGFD
+FORMULARIO : GL_JDBuscarVendedor
+ACCIÓN : Tabla de Vendedor presionado
+TIME : 09:56:3 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Vendedor
+FORMULARIO : JIFGenerarOrdenServicio -> GL_JDBuscarVendedor
+ACCIÓN : Botón 'Consultar Vendedor' presionado
+TIME : 09:56:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Vendedor PEDRO JESUS ILLA ESPINOZA
+FORMULARIO : GL_JDBuscarVendedor
+ACCIÓN : Tabla de Vendedor presionado
+TIME : 09:56:5 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:56:13 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:56:14 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente MMMMM/MMMMM/-
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:56:18 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFConsultarOrdenTrabajo'
+FORMULARIO : JIFConsultarOrdenTrabajo
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:56:26 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarOrdenServicio'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:56:27 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 09:56:32 AM
+----------------------------------------------------
+ 
+USUARIO : Aún no definido
+DESCRIPCIÓN : Salio del sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'SALIR' Presionado
+TIME : 10:0:33 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:13:42 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 10:13:46 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:13:47 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 10:13:48 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente SANEAMIENTO ROEDJOT S.A.C
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 10:13:54 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 10:15:36 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:27:38 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 10:27:59 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:28:0 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 10:28:1 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente SANEAMIENTO ROEDJOT S.A.C
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 10:28:5 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha impreso una orden
+FORMULARIO : JIFConsultarOrdenServicio -> Modulo Impresión
+ACCIÓN : Hizo click en el botón 'Imprimir'
+TIME : 10:28:9 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:28:22 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 10:28:23 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente CLIENTE PRUEBA/PRUEBA/PRUEBA
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 10:28:27 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha impreso una orden
+FORMULARIO : JIFConsultarOrdenServicio -> Modulo Impresión
+ACCIÓN : Hizo click en el botón 'Imprimir'
+TIME : 10:28:31 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 10:29:6 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:31:43 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 10:31:47 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:31:48 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 10:31:50 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente INGENIERIA Y SERVICIOS SUCURSAL PERU
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 10:31:54 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha impreso una orden
+FORMULARIO : JIFConsultarOrdenServicio -> Modulo Impresión
+ACCIÓN : Hizo click en el botón 'Imprimir'
+TIME : 10:32:0 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 10:32:6 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:35:32 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 10:35:34 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:35:35 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 10:35:36 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente INGENIERIA Y SERVICIOS SUCURSAL PERU
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 10:35:40 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha impreso una orden
+FORMULARIO : JIFConsultarOrdenServicio -> Modulo Impresión
+ACCIÓN : Hizo click en el botón 'Imprimir'
+TIME : 10:35:43 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 10:37:13 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:37:59 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 10:38:0 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarOrdenServicio'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:38:1 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 10:38:3 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:38:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 10:38:5 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente INGENIERIA Y SERVICIOS SUCURSAL PERU
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 10:38:9 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 10:39:49 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:40:55 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 10:40:56 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:40:57 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 10:40:58 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente INGENIERIA Y SERVICIOS SUCURSAL PERU
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 10:41:2 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 10:41:11 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:41:23 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 10:41:25 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:41:26 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 10:41:27 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente INGENIERIA Y SERVICIOS SUCURSAL PERU
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 10:41:31 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 10:41:40 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:51:39 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 10:51:43 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:53:20 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Ordenes de Trabajo'
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:53:28 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:53:29 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Ordenes de Trabajo'
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:53:40 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:53:41 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Ordenes de Trabajo'
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:53:48 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:54:1 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Ordenes de Trabajo'
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:54:5 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:54:6 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 347
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 10:54:9 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 10:54:11 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Generar Área' 
+FORMULARIO : SGL_VIEW_AreaTrabajo
+ACCIÓN : Botón 'Generar Área' Presionado
+TIME : 10:54:18 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Generar Área' 
+FORMULARIO : SGL_VIEW_AreaTrabajo
+ACCIÓN : Botón 'Generar Área' Presionado
+TIME : 10:54:23 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Genero una nueva área
+FORMULARIO : SGL_VIEW_AreaTrabajo
+ACCIÓN : Botón 'Generar' Presionado
+TIME : 10:54:23 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:54:24 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Servicio DESRATIZACIÓN
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Tabla de Servicios a importar presionado
+TIME : 10:54:26 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Servicio DESRATIZACIÓN
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Tabla de Servicios a importar presionado
+TIME : 10:54:26 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar Servicio' Presionado
+TIME : 10:54:27 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar Servicio' Presionado
+TIME : 10:54:27 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar Servicio' Presionado
+TIME : 10:54:28 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Importo un Servicio
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar' Presionado
+TIME : 10:54:28 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:54:28 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 10:54:30 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 10:54:30 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 10:54:30 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 10:54:30 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Botón 'Importar Operario' Presionado
+TIME : 10:54:31 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Botón 'Importar Operario' Presionado
+TIME : 10:54:31 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Importo un Operario
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Botón 'Importar' Presionado
+TIME : 10:54:31 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario JUAN JOSE ROJAS PEÑA
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 10:54:32 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario JUAN JOSE ROJAS PEÑA
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 10:54:32 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Botón 'Importar Operario' Presionado
+TIME : 10:54:33 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Botón 'Importar Operario' Presionado
+TIME : 10:54:33 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Importo un Operario
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Botón 'Importar' Presionado
+TIME : 10:54:33 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:54:34 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto MALATHION
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Tabla de Productos a importar presionado
+TIME : 10:54:35 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto MALATHION
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Tabla de Productos a importar presionado
+TIME : 10:54:35 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Botón 'Importar Producto' Presionado
+TIME : 10:54:36 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Botón 'Importar Producto' Presionado
+TIME : 10:54:37 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Importo un Producto
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Botón 'Importar' Presionado
+TIME : 10:54:37 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:54:37 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:54:39 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:54:43 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Ordenes de Trabajo'
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:54:46 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:54:47 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 347
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 10:54:49 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:55:9 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 347
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 10:55:11 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 10:55:12 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:55:14 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:55:16 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:55:20 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:55:22 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:55:24 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:55:27 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:55:29 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 10:55:31 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 10:58:45 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 10:58:47 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:58:48 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:58:49 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:58:49 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 347
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 10:58:51 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 10:58:56 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Generar Área' 
+FORMULARIO : SGL_VIEW_AreaTrabajo
+ACCIÓN : Botón 'Generar Área' Presionado
+TIME : 10:58:59 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Generar Área' 
+FORMULARIO : SGL_VIEW_AreaTrabajo
+ACCIÓN : Botón 'Generar Área' Presionado
+TIME : 10:59:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Genero una nueva área
+FORMULARIO : SGL_VIEW_AreaTrabajo
+ACCIÓN : Botón 'Generar' Presionado
+TIME : 10:59:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:59:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Servicio DESINSECTACIÓN
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Tabla de Servicios a importar presionado
+TIME : 10:59:5 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Servicio DESINSECTACIÓN
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Tabla de Servicios a importar presionado
+TIME : 10:59:6 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Servicio DESRATIZACIÓN
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Tabla de Servicios a importar presionado
+TIME : 10:59:6 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Servicio DESRATIZACIÓN
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Tabla de Servicios a importar presionado
+TIME : 10:59:6 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar Servicio' Presionado
+TIME : 10:59:7 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar Servicio' Presionado
+TIME : 10:59:7 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar Servicio' Presionado
+TIME : 10:59:9 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:59:11 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Servicio DESINSECTACIÓN
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Tabla de Servicios a importar presionado
+TIME : 10:59:12 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Servicio DESINSECTACIÓN
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Tabla de Servicios a importar presionado
+TIME : 10:59:12 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar Servicio' Presionado
+TIME : 10:59:13 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar Servicio' Presionado
+TIME : 10:59:13 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar Servicio' Presionado
+TIME : 10:59:14 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Importo un Servicio
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar' Presionado
+TIME : 10:59:14 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:59:14 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario EDSON ROJAS PEÑA
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 10:59:20 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario EDSON ROJAS PEÑA
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 10:59:20 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario EDSON ROJAS PEÑA
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 10:59:20 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Botón 'Importar Operario' Presionado
+TIME : 10:59:20 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Botón 'Importar Operario' Presionado
+TIME : 10:59:21 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Importo un Operario
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Botón 'Importar' Presionado
+TIME : 10:59:21 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario JUAN ROJAS ZAFRA
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 10:59:21 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario JUAN ROJAS ZAFRA
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 10:59:21 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Botón 'Importar Operario' Presionado
+TIME : 10:59:22 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Botón 'Importar Operario' Presionado
+TIME : 10:59:22 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Importo un Operario
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Botón 'Importar' Presionado
+TIME : 10:59:22 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario JUAN JOSE ROJAS PEÑA
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 10:59:23 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario JUAN JOSE ROJAS PEÑA
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 10:59:23 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario JUAN JOSE ROJAS PEÑA
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 10:59:24 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario MARCO ANTONIO BAUTISTA VILLANUEVA
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 10:59:24 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario MARCO ANTONIO BAUTISTA VILLANUEVA
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 10:59:24 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Operario MARCO ANTONIO BAUTISTA VILLANUEVA
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Tabla de Operarios a importar presionado
+TIME : 10:59:25 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Botón 'Importar Operario' Presionado
+TIME : 10:59:25 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Botón 'Importar Operario' Presionado
+TIME : 10:59:25 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Importo un Operario
+FORMULARIO : SGL_VIEW_Operarios
+ACCIÓN : Botón 'Importar' Presionado
+TIME : 10:59:25 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:59:26 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto GEL CUCARACHICIDA
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Tabla de Productos a importar presionado
+TIME : 10:59:27 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto GEL CUCARACHICIDA
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Tabla de Productos a importar presionado
+TIME : 10:59:28 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Botón 'Importar Producto' Presionado
+TIME : 10:59:28 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Botón 'Importar Producto' Presionado
+TIME : 10:59:28 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Importo un Producto
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Botón 'Importar' Presionado
+TIME : 10:59:28 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:59:29 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento PUESTO DE CEBADERO
+FORMULARIO : SGL_VIEW_Implementos
+ACCIÓN : Tabla de Implementos a importar presionado
+TIME : 10:59:31 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento PUESTO DE CEBADERO
+FORMULARIO : SGL_VIEW_Implementos
+ACCIÓN : Tabla de Implementos a importar presionado
+TIME : 10:59:31 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Implementos
+ACCIÓN : Botón 'Importar Implemento' Presionado
+TIME : 10:59:32 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Implementos
+ACCIÓN : Botón 'Importar Implemento' Presionado
+TIME : 10:59:32 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Importo un Implemento
+FORMULARIO : SGL_VIEW_Implementos
+ACCIÓN : Botón 'Importar' Presionado
+TIME : 10:59:32 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:59:32 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:59:36 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:59:37 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 347
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 10:59:39 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 10:59:40 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:59:42 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:59:43 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:59:49 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:59:50 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:59:52 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:1:42 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 11:1:44 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 344
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 11:1:53 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 11:1:57 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Ordenes de Trabajo'
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 11:2:8 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 11:2:14 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Ordenes de Trabajo'
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 11:2:17 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 11:2:34 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Ordenes de Trabajo'
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 11:2:38 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 11:2:44 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 11:12:5 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 11:12:7 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 11:12:8 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Ordenes de Trabajo'
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 11:12:13 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden 
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:12:21 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:12:23 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:12:25 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 11:12:29 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 344
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 11:12:31 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Copiar' Orden de Trabajo Juridica
+FORMULARIO : JIFGenerarOrdenServicio -> Copiar
+ACCIÓN : Botón 'Copiar' presionado
+TIME : 11:12:33 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Generar Área' 
+FORMULARIO : SGL_VIEW_AreaTrabajo
+ACCIÓN : Botón 'Generar Área' Presionado
+TIME : 11:12:52 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Generar Área' 
+FORMULARIO : SGL_VIEW_AreaTrabajo
+ACCIÓN : Botón 'Generar Área' Presionado
+TIME : 11:13:6 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Genero una nueva área
+FORMULARIO : SGL_VIEW_AreaTrabajo
+ACCIÓN : Botón 'Generar' Presionado
+TIME : 11:13:6 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Generar Área' 
+FORMULARIO : SGL_VIEW_AreaTrabajo
+ACCIÓN : Botón 'Generar Área' Presionado
+TIME : 11:13:7 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Generar Área' 
+FORMULARIO : SGL_VIEW_AreaTrabajo
+ACCIÓN : Botón 'Generar Área' Presionado
+TIME : 11:13:18 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Genero una nueva área
+FORMULARIO : SGL_VIEW_AreaTrabajo
+ACCIÓN : Botón 'Generar' Presionado
+TIME : 11:13:18 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 11:13:19 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Servicio LIMPIEZA Y DESINFECCIÓN DE RESERVORIOS DE AGUA
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Tabla de Servicios a importar presionado
+TIME : 11:13:21 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Servicio LIMPIEZA Y DESINFECCIÓN DE RESERVORIOS DE AGUA
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Tabla de Servicios a importar presionado
+TIME : 11:13:22 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Servicio LIMPIEZA DE TANQUE SÉPTICO
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Tabla de Servicios a importar presionado
+TIME : 11:13:24 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Servicio LIMPIEZA DE TANQUE SÉPTICO
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Tabla de Servicios a importar presionado
+TIME : 11:13:25 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar Servicio' Presionado
+TIME : 11:13:25 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar Servicio' Presionado
+TIME : 11:13:26 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar Servicio' Presionado
+TIME : 11:13:27 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Importo un Servicio
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar' Presionado
+TIME : 11:13:27 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 11:13:27 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento TERMONEBULIZADORA
+FORMULARIO : SGL_VIEW_Implementos
+ACCIÓN : Tabla de Implementos a importar presionado
+TIME : 11:13:35 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Implemento TERMONEBULIZADORA
+FORMULARIO : SGL_VIEW_Implementos
+ACCIÓN : Tabla de Implementos a importar presionado
+TIME : 11:13:35 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 11:13:41 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 11:13:43 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto EXQUAT 50
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Tabla de Productos a importar presionado
+TIME : 11:13:46 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Producto EXQUAT 50
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Tabla de Productos a importar presionado
+TIME : 11:13:46 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Botón 'Importar Producto' Presionado
+TIME : 11:13:47 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Botón 'Importar Producto' Presionado
+TIME : 11:13:47 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Importo un Producto
+FORMULARIO : SGL_VIEW_Productos
+ACCIÓN : Botón 'Importar' Presionado
+TIME : 11:13:47 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 11:13:48 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Servicio DESINFECCIÓN
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Tabla de Servicios a importar presionado
+TIME : 11:13:52 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Servicio DESINFECCIÓN
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Tabla de Servicios a importar presionado
+TIME : 11:13:52 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar Servicio' Presionado
+TIME : 11:13:53 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar Servicio' Presionado
+TIME : 11:13:53 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Importar' 
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar Servicio' Presionado
+TIME : 11:13:54 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Importo un Servicio
+FORMULARIO : SGL_VIEW_Servicios
+ACCIÓN : Botón 'Importar' Presionado
+TIME : 11:13:54 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 11:13:54 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:14:7 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Juridica
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 11:14:7 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden Juridica
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:14:10 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 11:14:12 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 348
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 11:14:17 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Copiar' Orden de Trabajo Juridica
+FORMULARIO : JIFGenerarOrdenServicio -> Copiar
+ACCIÓN : Botón 'Copiar' presionado
+TIME : 11:14:19 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden Juridica
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:14:20 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 11:14:21 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 348
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 11:14:25 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden 
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 11:14:52 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 11:14:56 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 11:14:57 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarOrdenServicio'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 11:14:58 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 11:15:1 AM
+----------------------------------------------------
+ 
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 11:51:0 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 11:51:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 11:51:7 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 11:51:8 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente EL VERIDICO DE FIDEL
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 11:51:14 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFConsultarOrdenTrabajo'
+FORMULARIO : JIFConsultarOrdenTrabajo
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 11:54:22 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 11:54:24 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 11:54:46 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 11:54:47 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente EL VERIDICO DE FIDEL
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 11:54:51 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 11:54:57 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 11:54:58 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente SANEAMIENTO ROEDJOT S.A.C
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 11:55:1 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha impreso una orden
+FORMULARIO : JIFConsultarOrdenServicio -> Modulo Impresión
+ACCIÓN : Hizo click en el botón 'Imprimir'
+TIME : 11:55:18 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFConsultarOrdenTrabajo'
+FORMULARIO : JIFConsultarOrdenTrabajo
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 11:55:40 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 11:56:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarOrdenServicio'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 11:56:8 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 13:10:2 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 13:10:9 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 13:10:10 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente SANEAMIENTO ROEDJOT S.A.C
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 13:10:14 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 13:10:15 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 13:10:16 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente CENTRAL PERU
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 13:10:26 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 13:10:28 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 13:10:29 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente CARGO EXPRESS
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 13:10:31 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 13:11:33 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 13:11:34 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente MERCEDES/-/-
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 13:11:37 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 13:11:38 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 13:11:39 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente CLAUDIA/-/-
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 13:11:40 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 13:11:42 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 13:11:42 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente CARLOS /GOYCOCHEA/GOYCOCHEA
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 13:11:50 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 13:11:52 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 13:11:52 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente PERCY/LOBATON/-
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 13:11:54 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 13:11:55 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 13:11:56 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente GRUPO MARANI SAC
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 13:12:2 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFConsultarOrdenTrabajo'
+FORMULARIO : JIFConsultarOrdenTrabajo
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 13:13:0 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 13:13:2 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 13:13:3 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 13:13:4 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente HANSFAST SAC
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 13:13:6 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 13:13:8 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 13:13:9 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente REALIDAD EXPRESS S.A.C
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 13:13:14 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 13:13:15 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 13:13:16 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente HANSFAST SAC
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 13:13:22 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 13:13:24 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 13:13:25 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente EMP. DE TRANSPORTE Y MULTISERV IMPORTADORA Y EXPORTADORA SAN FRANCISCO DE ASIS LOS OLIVOS S.A.
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 13:13:37 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFConsultarOrdenTrabajo'
+FORMULARIO : JIFConsultarOrdenTrabajo
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 13:14:24 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 13:14:31 PM
+----------------------------------------------------
+ 

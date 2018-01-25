@@ -1,0 +1,115 @@
+DESCRIPCIÓN : Problema al Cargar Datos en el metodo 'ConsultarOrden'
+CLASE : MICROCON_ConsultaOrdenesTrabajo
+ERROR : java.sql.SQLSyntaxErrorException: ORA-00904: "ID_CLI": invalid identifier
+
+TIME : 9:20:15
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar Cliente
+CLASE : GL_JDBuscarCliente
+ERROR : java.lang.NullPointerException
+TIME : 9:43:55
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar Cliente
+CLASE : GL_JDBuscarCliente
+ERROR : java.lang.NullPointerException
+TIME : 9:43:56
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar Cliente
+CLASE : GL_JDBuscarCliente
+ERROR : java.lang.NullPointerException
+TIME : 9:43:56
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar Cliente
+CLASE : GL_JDBuscarCliente
+ERROR : java.lang.NullPointerException
+TIME : 9:43:57
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar Cliente
+CLASE : GL_JDBuscarCliente
+ERROR : java.lang.NullPointerException
+TIME : 9:43:57
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar Cliente
+CLASE : GL_JDBuscarCliente
+ERROR : java.lang.NullPointerException
+TIME : 9:43:57
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar Cliente
+CLASE : GL_JDBuscarCliente
+ERROR : java.lang.NullPointerException
+TIME : 9:43:57
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar Cliente
+CLASE : GL_JDBuscarCliente
+ERROR : java.lang.NullPointerException
+TIME : 9:43:57
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar Cliente
+CLASE : GL_JDBuscarCliente
+ERROR : java.lang.NullPointerException
+TIME : 9:45:50
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar Cliente
+CLASE : GL_JDBuscarCliente
+ERROR : java.lang.NullPointerException
+TIME : 9:46:2
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar Cliente
+CLASE : GL_JDBuscarCliente
+ERROR : java.lang.NullPointerException
+TIME : 9:46:2
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar Cliente
+CLASE : GL_JDBuscarCliente
+ERROR : java.lang.NullPointerException
+TIME : 9:46:48
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar Cliente
+CLASE : GL_JDBuscarCliente
+ERROR : java.lang.NullPointerException
+TIME : 9:46:49
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar Cliente
+CLASE : GL_JDBuscarCliente
+ERROR : java.lang.NullPointerException
+TIME : 9:46:49
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar Cliente
+CLASE : GL_JDBuscarCliente
+ERROR : java.lang.NullPointerException
+TIME : 9:46:51
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Error al seleccionar Cliente
+CLASE : GL_JDBuscarCliente
+ERROR : java.lang.NullPointerException
+TIME : 9:46:51
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Ha ocurrido un error al intentar usar la especulacion
+CLASE : JIFConsultarOrdenesTrabajo
+ERROR : java.lang.NullPointerException
+TIME : 10:13:56
+----------------------------------------------------
+ 
+DESCRIPCIÓN : Ha ocurrido un error al intentar usar la especulacion
+CLASE : JIFConsultarOrdenesTrabajo
+ERROR : java.lang.NullPointerException
+TIME : 10:13:57
+----------------------------------------------------
+ 

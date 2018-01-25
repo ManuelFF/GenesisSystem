@@ -13,7 +13,7 @@ import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NMOC.MD_Consultar_View.JIFConsultarOrdenesTrabajo;
 import NMOC.MD_Generar.View.JIFGenerarCotizacion;
-import NMOC.MD_Generar.View.JIFGenerarOrdenServicio;
+import NMOC.MD_Generar.View.JIFGenerarOrdenTrabajo;
 import NMOC.MD_Mantenimientos.View.JIFMantenerClientes;
 import NMOC.MD_Mantenimientos.View.JIFMantenerImplementos;
 import NMOC.MD_Mantenimientos.View.JIFMantenerPersonal;
@@ -585,7 +585,7 @@ public class JFRPrincipal extends javax.swing.JFrame
 
     try
     {
-        JIFGenerarOrdenServicio orden = new JIFGenerarOrdenServicio();
+        JIFGenerarOrdenTrabajo orden = new JIFGenerarOrdenTrabajo();
         JFrame jf=new JFrame();
         jf.setAlwaysOnTop(true);
 

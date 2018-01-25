@@ -10,7 +10,7 @@ import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NMOC.GLCL.GLVC_JDBuscarVendedor;
-import NMOC.MD_Generar.View.JIFGenerarOrdenServicio;
+import NMOC.MD_Generar.View.JIFGenerarOrdenTrabajo;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
@@ -221,8 +221,8 @@ public class GL_JDBuscarVendedor extends javax.swing.JDialog
 
             if(formulario.equals("ORDEN_SERV"))
             {
-                JIFGenerarOrdenServicio.txtidVendedor.setText(""+JTbuscarVendedor.getValueAt(row, 0));
-                JIFGenerarOrdenServicio.txtnombrevendedor.setText(""+JTbuscarVendedor.getValueAt(row, 1));
+                JIFGenerarOrdenTrabajo.txtidVendedor.setText(""+JTbuscarVendedor.getValueAt(row, 0));
+                JIFGenerarOrdenTrabajo.txtnombrevendedor.setText(""+JTbuscarVendedor.getValueAt(row, 1));
                 
             }
 
