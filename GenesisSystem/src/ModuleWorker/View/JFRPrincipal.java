@@ -11,6 +11,7 @@ import ModuleWorker.SYSCON;
 import ModuleWorker.SYSWALLPCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
+import NMOC.MD_Consultar_View.JIFConsultarOrdenesTrabajo;
 import NMOC.MD_Generar.View.JIFGenerarCotizacion;
 import NMOC.MD_Generar.View.JIFGenerarOrdenServicio;
 import NMOC.MD_Mantenimientos.View.JIFMantenerClientes;
@@ -94,7 +95,8 @@ public class JFRPrincipal extends javax.swing.JFrame
         JMGenerar = new javax.swing.JMenu();
         JSMGenerarCotizacion = new javax.swing.JMenuItem();
         JSMGenerarOrden = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
+        JMConsultar = new javax.swing.JMenu();
+        JSMConsultarOrden = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
 
@@ -280,7 +282,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         JSMGenerarOrden.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F2, 0));
         JSMGenerarOrden.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         JSMGenerarOrden.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/OrdenV2_1 24.png"))); // NOI18N
-        JSMGenerarOrden.setText("Generar Orden Servicio");
+        JSMGenerarOrden.setText("Generar Orden Trabajo");
         JSMGenerarOrden.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JSMGenerarOrdenActionPerformed(evt);
@@ -290,9 +292,20 @@ public class JFRPrincipal extends javax.swing.JFrame
 
         JMPrincipal.add(JMGenerar);
 
-        jMenu3.setText("Consultar");
-        jMenu3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        JMPrincipal.add(jMenu3);
+        JMConsultar.setText("Consultar");
+        JMConsultar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+
+        JSMConsultarOrden.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        JSMConsultarOrden.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/ConsultarOrdenV2 24_1.png"))); // NOI18N
+        JSMConsultarOrden.setText("Consultar Orden Trabajo");
+        JSMConsultarOrden.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JSMConsultarOrdenActionPerformed(evt);
+            }
+        });
+        JMConsultar.add(JSMConsultarOrden);
+
+        JMPrincipal.add(JMConsultar);
 
         jMenu4.setText("Administración");
         jMenu4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -601,6 +614,39 @@ public class JFRPrincipal extends javax.swing.JFrame
 
     }//GEN-LAST:event_JSMGenerarOrdenActionPerformed
 
+    private void JSMConsultarOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMConsultarOrdenActionPerformed
+
+    try
+      {
+          JIFConsultarOrdenesTrabajo orden = new JIFConsultarOrdenesTrabajo();
+          JFrame jf=new JFrame();
+          jf.setAlwaysOnTop(true);
+
+          if(JMConsultar.getActionCommand().equals("Abierto"))
+              {
+                  SYSAUDIOCON sysau = new SYSAUDIOCON();
+                  sysau.E_ERROR();
+                  JOptionPane.showMessageDialog(jf,"Ya esta abierto", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+              }
+          else
+          {                
+              JMConsultar.setActionCommand("Abierto");
+              JDEscritorio.add(orden);
+              Dimension desktopSize = JDEscritorio.getSize();
+              Dimension FrameSize = orden.getSize();
+              orden.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
+              evn.write(JMSesion.getText(), "Abrio el formulario 'Consultar Orden Trabajo'", "JFPrincipal", "Menu 'Consultar Orden Trabajo' Presionado");
+              orden.show();
+          }
+      }
+      catch (Exception e)
+      {
+
+          lc.write("Error intentando abrir 'Consultar Orden Trabajo'", "JFRPrincipal", e);
+      }     
+
+    }//GEN-LAST:event_JSMConsultarOrdenActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -641,11 +687,13 @@ public class JFRPrincipal extends javax.swing.JFrame
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static javax.swing.JDesktopPane JDEscritorio;
+    public static javax.swing.JMenu JMConsultar;
     private javax.swing.JMenu JMGenerar;
     private javax.swing.JMenu JMMantenimientos;
     private javax.swing.JMenuBar JMPrincipal;
     public static javax.swing.JMenu JMSesion;
     private javax.swing.JMenuItem JSMCerrarSesion;
+    public static javax.swing.JMenuItem JSMConsultarOrden;
     public static javax.swing.JMenuItem JSMGenerarCotizacion;
     public static javax.swing.JMenuItem JSMGenerarOrden;
     public static javax.swing.JMenuItem JSMMantenerClientes;
@@ -664,7 +712,6 @@ public class JFRPrincipal extends javax.swing.JFrame
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     // End of variables declaration//GEN-END:variables
