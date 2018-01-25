@@ -10,6 +10,7 @@ import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NMOC.GLCL.GLVC_JDBuscarCliente;
+import NMOC.MD_Consultar_View.JIFConsultarOrdenesTrabajo;
 import NMOC.MD_Generar.View.JIFGenerarOrdenServicio;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -157,6 +158,7 @@ public class GL_JDBuscarCliente extends javax.swing.JDialog
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        JTbuscarCliente.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         JTbuscarCliente.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JTbuscarClienteMouseClicked(evt);
@@ -291,6 +293,39 @@ public class GL_JDBuscarCliente extends javax.swing.JDialog
                         select = ArrayTemp[0]+" "+ArrayTemp[1]+" "+ArrayTemp[2];
                      }
                 evn.write(JFRPrincipal.JMSesion.getText(),"Ha seleccionado al Cliente "+select,"GL_JDBuscarCliente", "Tabla de Cliente presionado");
+            }
+            
+            if(formulario.equals("ORDEN_SERV_CON"))
+            {
+                if(buftip.equals("Juridica"))
+                {
+                    JIFConsultarOrdenesTrabajo.txtid_cli.setText(""+JTbuscarCliente.getValueAt(row, 0));
+                    JIFConsultarOrdenesTrabajo.txtnombre.setText(""+JTbuscarCliente.getValueAt(row, 1));
+                    JIFConsultarOrdenesTrabajo.txtdni_ruc.setText(""+JTbuscarCliente.getValueAt(row, 2));
+                    JIFConsultarOrdenesTrabajo.txttelefono.setText(""+JTbuscarCliente.getValueAt(row, 5));
+                    JIFConsultarOrdenesTrabajo.txtcelular.setText(""+JTbuscarCliente.getValueAt(row, 6));
+                    JIFConsultarOrdenesTrabajo.txtcorreo.setText(""+JTbuscarCliente.getValueAt(row, 8));
+                    JIFConsultarOrdenesTrabajo.txtdireccion.setText(""+JTbuscarCliente.getValueAt(row, 7));
+
+                    select = ""+JTbuscarCliente.getValueAt(row, 1);
+                    
+                }else 
+                     if(buftip.equals("Natural"))
+                     {
+                         
+                        JIFConsultarOrdenesTrabajo.txtid_cli.setText(""+JTbuscarCliente.getValueAt(row, 0));
+                        JIFConsultarOrdenesTrabajo.txtnombre.setText(""+JTbuscarCliente.getValueAt(row, 1));
+                        JIFConsultarOrdenesTrabajo.txtdni_ruc.setText(""+JTbuscarCliente.getValueAt(row, 2));
+                        JIFConsultarOrdenesTrabajo.txttelefono.setText(""+JTbuscarCliente.getValueAt(row, 3));
+                        JIFConsultarOrdenesTrabajo.txtcelular.setText(""+JTbuscarCliente.getValueAt(row, 4));
+                        JIFConsultarOrdenesTrabajo.txtcorreo.setText(""+JTbuscarCliente.getValueAt(row, 6));
+                        JIFConsultarOrdenesTrabajo.txtdireccion.setText(""+JTbuscarCliente.getValueAt(row, 5));
+                  
+                        select = ""+JTbuscarCliente.getValueAt(row, 1);
+                     }
+                evn.write(JFRPrincipal.JMSesion.getText(),"Ha seleccionado al Cliente "+select,"GL_JDBuscarCliente", "Tabla de Cliente presionado");
+                
+                
             }
 
             this.dispose();
