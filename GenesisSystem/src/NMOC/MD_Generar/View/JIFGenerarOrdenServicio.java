@@ -14,6 +14,7 @@ import ModuleWorker.View.JFRPrincipal;
 import static ModuleWorker.View.JFRPrincipal.JMSesion;
 import static ModuleWorker.View.JFRPrincipal.JSMMantenerClientes;
 import static ModuleWorker.View.JFRPrincipal.JDEscritorio;
+import NBRPM.RP_ORDEN_SERV;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NCLPM.RESULTS;
@@ -33,6 +34,7 @@ import NISPM.SGL_VIEW_Operarios;
 import NISPM.SGL_VIEW_Productos;
 import NISPM.SGL_VIEW_Servicios;
 import NMOC.GL_JDBuscarCliente;
+import NMOC.GL_JDBuscarOrdenes;
 import NMOC.GL_JDBuscarVendedor;
 import NMOC.GL_JDCalendar;
 import NMOC.MD_Generar.Core.O_OrdenServicio;
@@ -324,7 +326,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
             RDBNatural.setEnabled(true);
             RDBJuridica.setEnabled(true);
             JCHAntigua.setSelected(true);
-            enadisa_bloque1_botones(true, false, false, true, false, false, false, true);
+            enadisa_bloque1_botones(true, false, false, false, false, false, false, true);
             txtdescuentomanual.setText("0");
             txtcodvendCrystal.setText("-");
             txtdescuentocodigo.setText("-");
@@ -346,6 +348,8 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     {
         try 
         {
+            P_orden.Clear();
+            P_orden.llenarDatos();
             //CARGARDATOS
             
         } catch (Exception e) 
@@ -919,6 +923,7 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
         jLabel11.setText("Tipo Inserción:");
 
         JCHTicketTrabajo.setText("Ticket Trabajo");
+        JCHTicketTrabajo.setEnabled(false);
         JCHTicketTrabajo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JCHTicketTrabajoActionPerformed(evt);
@@ -1663,6 +1668,8 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                    //System.out.println("--------------------------\n"+ "DET = "+(j)+"\n"+IDPRO+"\nID MAQ "+ IDMAQ+"\nID PER "+ IDPERO+"\nID SERV "+ IDSERV +"\nNOT "+ NOTASERV+"\nID ARE "+IDARE+"\nNOM AR: "+ NOMARE+"\nID ARE TRAB "+ ARETRAB +"\n NUM AMB "+ NUMAMBI +"\nM2 "+ areaM2+"\nM3 "+areaM3+"\nFORMATO "+FORM);
                }
 
+               rslt.write(lblusuario.getText(), "JIFGenerarOrdenServicio", "INSERSIÓN", "Se ha insertado la orden N° "+numero_orden+"\n del Cliente : "+txtnombrecliente.getText());
+               
                JTC.clear(JTAIA);
                JTC.cabecera(JTAIA);
                JTC.msj(JTAIA, "Se ha ingresado correctamente:\n");
@@ -1677,9 +1684,10 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                JTC.msj(JTAIA,  "\nCOSTO POR EL SERVICIO : "+costo+" SOLES");
                JTC.msj(JTAIA,  "\n\nVENDEDOR : "+txtnombrevendedor.getText().toUpperCase());
 
-               LegacyClearFRM();                                                                                editFRM(false);
+               LegacyClearFRM();                                                                                
+               editFRM(false);
                //BLOQUE 1:
-               enadisa_bloque1_botones(false, false, false, true, false, false, false, true);
+               enadisa_bloque1_botones(false, false, false, true, false, true, true, true);
                //BLOQUE 2:
                enadisa_bloque2_botones(false, false, false, false);
                //BLOQUE 3:
@@ -1689,6 +1697,8 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
                //BLOQUE 6:
                enadisa_bloque6_botones(false, false, false, false, false, false, false);
                btnnuevo.setText("Nuevo");
+               RP_ORDEN_SERV b = new RP_ORDEN_SERV();//natural 342 -- juridico 194
+               b.speculation(Tipo_orden, ID_ORDEN);
                clearCacheDB();
                vaciado_memoria();
                reiniciarColors();
@@ -1704,7 +1714,354 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     }//GEN-LAST:event_btnnuevoActionPerformed
 
     private void btnmodificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmodificarActionPerformed
+        
+   String Tipo_orden = mw.getSelectedButtonText(TipoOrden);
+   
+   try 
+      {
+       //INICIO CABECERAS IMPORTANTES
+       //Ejecutado al inicio de todo
+       SYSAUDIOCON sysau = new SYSAUDIOCON();
+       JFrame jf=new JFrame();
+       jf.setAlwaysOnTop(true);
+       clearCacheDB();
 
+       if(btnmodificar.getText().equals("Modificar"))
+       {
+
+           if(Tipo_orden.equals("Natural"))
+           {
+               lblnomcli.setText("Nombres:");
+               modo_orden = "Natural";
+           }
+           if(Tipo_orden.equals("Juridica"))
+           {
+               lblnomcli.setText("Razón S.:");
+               modo_orden = "Juridica";
+           }
+
+           editFRM(true);
+           //BLOQUE 1:
+           enadisa_bloque1_botones(false, true, true, false, false, false, false, true);
+           //BLOQUE 2:
+           enadisa_bloque2_botones(true, true, true, true);
+           //BLOQUE 3:
+           enadisa_bloque3_botones(true, true, true);
+           //BLOQUE 5:
+           enadisa_bloque5_botones(true);
+           //BLOQUE 6:
+           enadisa_bloque6_botones(true, true, true, true, true, true, true);
+
+           evn.write(lblusuario.getText(), "Hizo click en el botón 'Modificar' Orden de Servicio "+modo_orden, "JIFGenerarOrdenServicio", "Botón 'Modificar' presionado");
+           //FIN INICIO CABECERAS IMPORTANTES
+           btnmodificar.setText("Actualizar");
+
+           RDBJuridica.setEnabled(false);
+           RDBNatural.setEnabled(false);
+           
+       }
+       else
+          {
+           //LOGICA DE VERIFICACION
+           /*
+                 esta logica de verificacion sera LS.
+                 estara centrada a conectar y verificar todas las partes
+                 dentro de este formulario.
+                 la verificacion se hara a cada bloque a la vez
+           */
+
+           if(txtgiro.getText().trim().equals(""))
+           {
+               sysau.E_ERROR();
+               txtgiro.setBackground(Color.RED);
+               JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Giro' para la orden", "Falta giro de la orden", JOptionPane.ERROR_MESSAGE);
+               sysau.S_STOP();
+           }
+           else
+             if(txthora.getText().trim().equals(""))
+             {
+               sysau.E_ERROR();
+               txthora.setBackground(Color.RED);
+               JOptionPane.showMessageDialog(jf, "Establezca una hora", "No se ingreso hora", JOptionPane.ERROR_MESSAGE);
+               sysau.S_STOP();
+             }
+           else
+             if(txtfecha.getText().trim().equals(""))
+             {
+               sysau.E_ERROR();
+               txtfecha.setBackground(Color.RED);
+               JOptionPane.showMessageDialog(jf, "Establezca una fecha", "No se ingreso fecha", JOptionPane.ERROR_MESSAGE);
+               sysau.S_STOP();
+             }
+           else
+             if(txtidVendedor.getText().trim().equals(""))
+             {
+               sysau.E_ERROR();
+               txtidVendedor.setBackground(Color.RED);
+               JOptionPane.showMessageDialog(jf, "Debe seleccionar un vendedor", "Falta Vendedor", JOptionPane.ERROR_MESSAGE);
+               sysau.S_STOP();
+             }
+           else
+             if(txtcodCliente.getText().trim().equals(""))
+             {
+               sysau.E_ERROR();
+               txtcodCliente.setBackground(Color.RED);
+               JOptionPane.showMessageDialog(jf, "Debe seleccionar un Cliente", "Falta Cliente", JOptionPane.ERROR_MESSAGE);
+               sysau.S_STOP();
+             }
+           else
+             if(areas.isEmpty())
+             {
+               sysau.E_ERROR();
+               JTC.clear(JTAIA);
+               JTC.cabecera(JTAIA);
+               JTC.msj(JTAIA, "No se ha encontrado áreas generadas");
+               ShakingComponent ar = new ShakingComponent(JTAIA);
+               ar.startShake();
+             }
+           else
+             if(servicios.isEmpty())
+             {
+               sysau.E_ERROR();
+               JTC.clear(JTAIA);
+               JTC.cabecera(JTAIA);
+               JTC.msj(JTAIA, "No se ha encontrado servicios importados");
+               ShakingComponent ar = new ShakingComponent(JTAIA);
+               ar.startShake();
+             }
+           else
+             if(operarios.isEmpty())
+             {
+               sysau.E_ERROR();
+               JTC.clear(JTAIA);
+               JTC.cabecera(JTAIA);
+               JTC.msj(JTAIA, "No se ha encontrado operarios importados");
+               ShakingComponent ar = new ShakingComponent(JTAIA);
+               ar.startShake();
+             }
+           else
+             if(productos.isEmpty())
+             {
+               sysau.E_ERROR();
+               JTC.clear(JTAIA);
+               JTC.cabecera(JTAIA);
+               JTC.msj(JTAIA, "No se ha encontrado productos importados");
+               ShakingComponent ar = new ShakingComponent(JTAIA);
+               ar.startShake();
+             }
+           else
+             if(implementos.isEmpty())
+             {
+               sysau.E_ERROR();
+               JTC.clear(JTAIA);
+               JTC.cabecera(JTAIA);
+               JTC.msj(JTAIA, "No se ha encontrado implementos importados");
+               ShakingComponent ar = new ShakingComponent(JTAIA);
+               ar.startShake();
+             }
+           else
+             {
+             if(txtcosto.getText().trim().equals(""))
+             {
+               sysau.E_ERROR();
+               txtcosto.setBackground(Color.YELLOW);
+               txtcosto.setText("0");
+               txtcostofinal.setText("0");
+               sysau.S_STOP();
+             }
+             if(txtdocumentacion.getText().trim().equals(""))
+             {
+               txtdocumentacion.setText("-");
+             }
+
+              //OBTENCION DE DATOS
+              String ID_ORDEN = txtidorden.getText();
+              String numero_orden = txtnumeroorden.getText();
+              String id_cli = txtcodCliente.getText();
+              String fecha = txtfecha.getText();
+              String hora = txthora.getText();
+              String direccion = txtdireccion.getText().toUpperCase();
+              String giro = txtgiro.getText().toUpperCase();
+              String desc = txtdocumentacion.getText().toUpperCase();
+              String id_vend = txtidVendedor.getText().toUpperCase();
+              String costo = txtcostofinal.getText();
+              String estado = cbestado.getSelectedItem().toString();
+
+              //INSERTAR ORDEN BASE
+              P_orden.Actualizar_orden(ID_ORDEN, numero_orden, id_cli, fecha, hora, direccion, giro, telefono, celular, desc,id_vend, costo, estado);
+              P_orden.ActualizarDETOrden(ID_ORDEN);
+
+              int menor=9999; 
+              int mayor=0; 
+
+              int[] arreglo=new int[5]; 
+              String IDPRO="",IDMAQ="",IDPERO="",IDSERV="",NOTASERV="",IDARE="",NOMARE="",ARETRAB="",NUMAMBI="",FORM="";
+
+              //CREACION Y ASIGNACION DE ALMACEN DE ARRAYS        
+              {arreglo[0] = implementos.size();}
+              {arreglo[1] = productos.size();}
+              {arreglo[2] = operarios.size();}
+              {arreglo[3] = servicios.size();}
+              {arreglo[4] = areas.size();}
+
+              for(int i=0;i<5;i++)
+              { 
+                if(menor>arreglo[i])
+                 { 
+                   menor=arreglo[i]; 
+                 } 
+                if(mayor<arreglo[i])
+                 { 
+                   mayor=arreglo[i]; 
+                 } 
+              }
+
+              //System.out.println("##########################################\n"+"I = "+i+"\n"+"MAYOR : "+mayor);
+              //System.out.println("ARREGLO IMPLMENTOS : "+arreglo[0]);
+
+              for(int j=1; j<=mayor; j++)
+              {
+                  //IMPLEMENTOS
+                  if(arreglo[0] ==1 )
+                  {
+                       IDMAQ=implementos.get(0).getIdmaq();
+                  }else
+                    {
+                       if(arreglo[0] >j)
+                          {
+                              IDMAQ=implementos.get(j-1).getIdmaq();
+                          }else
+                              {
+                                IDMAQ=implementos.get(implementos.size()-1).getIdmaq();
+                              }
+                   }
+
+                  //PRODUCTOS
+                  if(arreglo[1] == 1)    
+                  {
+                      IDPRO = productos.get(0).getIdPro();
+                  }else
+                      {
+                          if(arreglo[1] > j)
+                          {
+                              IDPRO = productos.get(j-1).getIdPro();
+                          }else
+                              {
+                                  IDPRO = productos.get(productos.size()-1).getIdPro();
+                              }
+                      }
+
+                  //PERSONAL OPERARIO
+                  if(arreglo[2] == 1)
+                  {
+                      IDPERO = operarios.get(0).getIdope();
+                  }else
+                      {
+                          if(arreglo[2] > j)
+                          {
+                              IDPERO = operarios.get(j-1).getIdope();
+                          }else
+                              {
+                                  IDPERO = operarios.get(operarios.size()-1).getIdope();
+                              }
+                      }
+
+                  //SERVICIOS
+                  if(arreglo[3] == 1)
+                  {
+                      IDSERV = servicios.get(0).getIdserv();
+                      NOTASERV = servicios.get(0).getNotaserv();
+                  }else
+                      {
+                          if(arreglo[3] > j)
+                          {
+                              IDSERV = servicios.get(j-1).getIdserv();
+                              NOTASERV = servicios.get(j-1).getNotaserv();
+                          }else
+                              {
+                                  IDSERV = servicios.get(servicios.size()-1).getIdserv();
+                                  NOTASERV = servicios.get(servicios.size()-1).getNotaserv();
+                              }
+                      }
+
+                  //AREAS
+                  if(arreglo[4] == 1)
+                  {
+                      IDARE = areas.get(0).getIdarea();
+                      NOMARE = areas.get(0).getNombreArea();
+                      ARETRAB = areas.get(0).getAreaTrabajar();
+                      NUMAMBI = areas.get(0).getNumeroAmbientes();
+                      FORM = areas.get(0).getFormato();
+                  }else
+                      {
+                          if(arreglo[4] > j)
+                          {
+                              IDARE = areas.get(j-1).getIdarea();
+                              NOMARE = areas.get(j-1).getNombreArea();
+                              ARETRAB = areas.get(j-1).getAreaTrabajar();
+                              NUMAMBI = areas.get(j-1).getNumeroAmbientes();
+                              FORM = areas.get(j-1).getFormato();
+                          }else
+                              {
+                                  IDARE = areas.get(areas.size()-1).getIdarea();
+                                  NOMARE = areas.get(areas.size()-1).getNombreArea();
+                                  ARETRAB = areas.get(areas.size()-1).getAreaTrabajar();
+                                  NUMAMBI = areas.get(areas.size()-1).getNumeroAmbientes();
+                                  FORM = areas.get(areas.size()-1).getFormato();
+                              }
+
+                      }
+
+                   P_orden.InsertarDETOrden(ID_ORDEN, (j), IDPRO, IDMAQ, IDPERO, IDSERV, NOTASERV,IDARE, NOMARE, ARETRAB, NUMAMBI, areaM2,areaM3,FORM);
+                  //AQUI SE AGREGA LA DESCIP
+                  //System.out.println("--------------------------\n"+ "DET = "+(j)+"\n"+IDPRO+"\nID MAQ "+ IDMAQ+"\nID PER "+ IDPERO+"\nID SERV "+ IDSERV +"\nNOT "+ NOTASERV+"\nID ARE "+IDARE+"\nNOM AR: "+ NOMARE+"\nID ARE TRAB "+ ARETRAB +"\n NUM AMB "+ NUMAMBI +"\nM2 "+ areaM2+"\nM3 "+areaM3+"\nFORMATO "+FORM);
+              }
+              
+              rslt.write(lblusuario.getText(), "JIFGenerarOrdenServicio", "MODIFICACIÓN", "Se ha actualizado la orden N° "+numero_orden+"\n del Cliente : "+txtnombrecliente.getText());
+
+
+              JTC.clear(JTAIA);
+              JTC.cabecera(JTAIA);
+              JTC.msj(JTAIA, "Se ha actualizado correctamente:\n");
+              JTC.msj(JTAIA,  "\n"+arreglo[0]+" Maquinas.");
+              JTC.msj(JTAIA,  "\n"+arreglo[1]+" Productos.");
+              JTC.msj(JTAIA,  "\n"+arreglo[2]+" Personas operarias.");
+              JTC.msj(JTAIA,  "\n"+arreglo[4]+" Áreas.");
+              JTC.msj(JTAIA,  "\n"+arreglo[3]+" Trabajos.");
+              JTC.msj(JTAIA,  "\nAREA TOTAL A TRABAJAR : "+areaM2+" M2"+"------------"+areaM3+" M3");
+              JTC.msj(JTAIA,  "\n\nCLIENTE : "+txtnombrecliente.getText().toUpperCase());
+              JTC.msj(JTAIA,  "\nGIRO DEL LUGAR : "+giro);
+              JTC.msj(JTAIA,  "\nCOSTO POR EL SERVICIO : "+costo+" SOLES");
+              JTC.msj(JTAIA,  "\n\nVENDEDOR : "+txtnombrevendedor.getText().toUpperCase());
+
+              LegacyClearFRM();                                                                                
+              editFRM(false);
+              //BLOQUE 1:
+              enadisa_bloque1_botones(false, false, false, true, false, true, true, true);
+              //BLOQUE 2:
+              enadisa_bloque2_botones(false, false, false, false);
+              //BLOQUE 3:
+              enadisa_bloque3_botones(false, false, false);
+              //BLOQUE 5:
+              enadisa_bloque5_botones(false);
+              //BLOQUE 6:
+              enadisa_bloque6_botones(false, false, false, false, false, false, false);
+              btnmodificar.setText("Modificar");
+              RP_ORDEN_SERV b = new RP_ORDEN_SERV();//natural 342 -- juridico 194
+              b.speculation(Tipo_orden, ID_ORDEN);
+              clearCacheDB();
+              vaciado_memoria();
+              reiniciarColors();
+              ultima_orden();
+
+             }
+          }
+      }catch (Exception e) 
+          {
+             lc.write("Ha ocurrido un error al intentar modificar una nueva orden","JIFGenerarOrdenServicio", e);
+          }
+
+        
     }//GEN-LAST:event_btnmodificarActionPerformed
 
     private void btncancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelarActionPerformed
@@ -1724,40 +2081,173 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     } catch (Exception e) 
         {
             lc.write("No se ha podido cerrar el formulario 'JIFGenerarOrdenServicio' debido a un error inesperado", "JIFGenerarOrdenServicio", e);
-         }
-        
+        }    
         
     }//GEN-LAST:event_btnsalirActionPerformed
 
     private void btnbuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscarActionPerformed
-
+  
     //Modulo de busqueda de ordenes de trabajo V0.9 
     try
     {
-        //In develop -> carga de singlatones
+        JFrame jf=new JFrame();
+        jf.setAlwaysOnTop(true); 
         vaciado_memoria();
         clearCacheDB();
-        JOptionPane.showMessageDialog(this, "Módulo de busqueda de ordenes de trabajo");
-        
-        
+        evn.write(lblusuario.getText(), "Ha abierto el formulario de busqueda de ordenes de servicio", "JIFGenerarOrdenServicio", "Hizo click en el botón 'Buscar'");
+
+       // display the showOptionDialog
+        Object[] options = { "JURIDICOS", "NATURALES","CANCELAR"};
+        int choice = JOptionPane.showOptionDialog(jf, 
+            "¿Que tipo de orden desea buscar?", 
+            "Tipo de Orden de Trabajo", 
+            JOptionPane.YES_NO_CANCEL_OPTION, 
+            JOptionPane.QUESTION_MESSAGE, 
+            null, 
+            options, 
+            options[0]);
+
+        // interpret the user's choice
+        if (choice == JOptionPane.NO_OPTION)
+        {
+            //NATURAL
+            GL_JDBuscarOrdenes busca = new GL_JDBuscarOrdenes(form, true, "Natural");
+            busca.formulario="ORDEN_SERV";
+            busca.setVisible(true);
+            CBconsultacontOrden.setEnabled(true);
+            btnconsultarcontenidoOrden.setEnabled(true);
+            enadisa_bloque1_botones(false, true, true, true, true, true, true, true);
+            RP_ORDEN_SERV b = new RP_ORDEN_SERV();//natural 342 -- juridico 194
+            b.speculation("Natural", txtidorden.getText());
+            TipoOrden.setSelected(RDBNatural.getModel(), true);
+        }
+
+        if (choice == JOptionPane.YES_OPTION)
+        {
+            //JURIDICA
+            GL_JDBuscarOrdenes busca = new GL_JDBuscarOrdenes(form, true, "Juridica");
+            busca.formulario="ORDEN_SERV";
+            busca.setVisible(true);
+            CBconsultacontOrden.setEnabled(true);
+            btnconsultarcontenidoOrden.setEnabled(true);
+            enadisa_bloque1_botones(false, true, true, true, true, true, true, true);
+            RP_ORDEN_SERV b = new RP_ORDEN_SERV();//natural 342 -- juridico 194
+            b.speculation("Juridica", txtidorden.getText());
+            TipoOrden.setSelected(RDBJuridica.getModel(), true);
+        }
+        if(choice == JOptionPane.CANCEL_OPTION)
+        {
+            //NOTHING
+        } 
+
+
+//        
     } catch (Exception e) 
         {
-
-
+            lc.write("Problema al intentar abrir el formulario de buscar ordenes", "JIFGenerarOrdenServicio", e);
         }
         
     }//GEN-LAST:event_btnbuscarActionPerformed
 
     private void btncopiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncopiarActionPerformed
-        // TODO add your handling code here:
+  
+        String Tipo_orden = mw.getSelectedButtonText(TipoOrden);
+
+        if(Tipo_orden.equals("Natural"))
+        {
+            lblnomcli.setText("Nombres:");
+            modo_orden = "Natural";
+        }
+        if(Tipo_orden.equals("Juridica"))
+        {
+            lblnomcli.setText("Razón S.:");
+            modo_orden = "Juridica";
+        }
+
+        
+        clearCacheDB();
+        JTC.clear(JTAIA);
+        JTC.cabecera(JTAIA);
+        JTC.msj(JTAIA, "Copia de una Orden de Trabajo ."+modo_orden);
+  
+        editFRM(true);
+        //BLOQUE 1:
+        enadisa_bloque1_botones(true, false, true, false, false, false, false, true);
+        //BLOQUE 2:
+        enadisa_bloque2_botones(true, true, true, true);
+        //BLOQUE 3:
+        enadisa_bloque3_botones(true, true, true);
+        //BLOQUE 5:
+        enadisa_bloque5_botones(true);
+        //BLOQUE 6:
+        enadisa_bloque6_botones(true, true, true, true, true, true, true);
+
+        evn.write(lblusuario.getText(), "Hizo click en el botón 'Copiar' Orden de Trabajo "+modo_orden, "JIFGenerarOrdenServicio -> Copiar", "Botón 'Copiar' presionado");
+        //FIN INICIO CABECERAS IMPORTANTES
+        Nuevo();
+        btnnuevo.setText("Insertar");
+
     }//GEN-LAST:event_btncopiarActionPerformed
 
     private void btnPDFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPDFActionPerformed
-        // TODO add your handling code here:
+
+    try 
+       {
+            RP_ORDEN_SERV b = new RP_ORDEN_SERV();//natural 342 -- juridico 194
+            b.build("SHOW");
+        } catch (Exception e) 
+            {
+               lc.write("Error al generar el visor", "JIFGenerarOrdenes", e);
+            }
+     
     }//GEN-LAST:event_btnPDFActionPerformed
 
     private void btnimprimirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnimprimirActionPerformed
-        // TODO add your handling code here:
+
+          
+    //Modulo de impresión de ordenes de trabajo V0.9 
+    try
+    {
+        JFrame jf=new JFrame();
+        jf.setAlwaysOnTop(true); 
+        RP_ORDEN_SERV b = new RP_ORDEN_SERV();//natural 342 -- juridico 194
+        evn.write(lblusuario.getText(), "Ha impreso una orden", "JIFGenerarOrdenServicio -> Modulo Impresión", "Hizo click en el botón 'Imprimir'");
+
+       // display the showOptionDialog
+        Object[] options = { "RAPIDA", "SELECTIVA","CANCELAR"};
+        int choice = JOptionPane.showOptionDialog(jf, 
+            "¿Como desea imprimir?", 
+            "Tipo de Impresión", 
+            JOptionPane.YES_NO_CANCEL_OPTION, 
+            JOptionPane.QUESTION_MESSAGE, 
+            null, 
+            options, 
+            options[0]);
+
+        // interpret the user's choice
+        if (choice == JOptionPane.NO_OPTION)
+        {
+            //NATURAL 2
+            b.build("PRINT");
+        }
+
+        if (choice == JOptionPane.YES_OPTION)
+        {
+            //JURIDICA 1
+            b.build("FAST_PRINT");
+
+        }
+        if(choice == JOptionPane.CANCEL_OPTION)
+        {
+            //NOTHING
+        } 
+
+    //        
+    } catch (Exception e) 
+        {
+            lc.write("Problema al intentar abrir al intentar imprimir la orden ", "JIFGenerarOrdenServicio -> Modulo Impresión", e);
+        }
+        
     }//GEN-LAST:event_btnimprimirActionPerformed
 
     private void btnfechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnfechaActionPerformed
@@ -2021,9 +2511,14 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     try 
     {
         evn.write(lblusuario.getText(), "Abrio el Buscador de Cliente", "JIFGenerarOrdenServicio -> GL_JDBuscarCliente", "Botón 'Consultar Cliente' presionado");
+        txtcodCliente.setText("");
+        txtnombrecliente.setText("");
+        JTAdetcliente.setText("");
+        txtdireccion.setText("");
         GL_JDBuscarCliente BC = new GL_JDBuscarCliente(form, true,modo_orden);
         BC.formulario="ORDEN_SERV";
         BC.setVisible(true);
+        System.out.println("NUMERO T: "+telefono+"\nNUMERO C: "+celular);
         
     } catch (Exception e) 
         {
@@ -2467,20 +2962,20 @@ public class JIFGenerarOrdenServicio extends javax.swing.JInternalFrame
     private javax.swing.JLabel lblusuario7;
     private javax.swing.JLabel lblusuario8;
     public static javax.swing.JTextField txtcodCliente;
-    private javax.swing.JTextField txtcodvendCrystal;
-    private javax.swing.JTextField txtcosto;
-    private javax.swing.JTextField txtcostofinal;
-    private javax.swing.JTextField txtdescuentocodigo;
-    private javax.swing.JTextField txtdescuentomanual;
+    public static javax.swing.JTextField txtcodvendCrystal;
+    public static javax.swing.JTextField txtcosto;
+    public static javax.swing.JTextField txtcostofinal;
+    public static javax.swing.JTextField txtdescuentocodigo;
+    public static javax.swing.JTextField txtdescuentomanual;
     public static javax.swing.JTextField txtdireccion;
-    private javax.swing.JTextField txtdocumentacion;
+    public static javax.swing.JTextField txtdocumentacion;
     public static javax.swing.JTextField txtfecha;
-    private javax.swing.JTextField txtgiro;
+    public static javax.swing.JTextField txtgiro;
     public static javax.swing.JTextField txthora;
     public static javax.swing.JTextField txtidVendedor;
-    private javax.swing.JTextField txtidorden;
+    public static javax.swing.JTextField txtidorden;
     public static javax.swing.JTextField txtnombrecliente;
     public static javax.swing.JTextField txtnombrevendedor;
-    private javax.swing.JTextField txtnumeroorden;
+    public static javax.swing.JTextField txtnumeroorden;
     // End of variables declaration//GEN-END:variables
 }
