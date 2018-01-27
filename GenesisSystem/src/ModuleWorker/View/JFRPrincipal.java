@@ -6,6 +6,7 @@
 package ModuleWorker.View;
 
 import ModuleWorker.Control;
+import ModuleWorker.IC.MWCON;
 import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSCON;
 import ModuleWorker.SYSWALLPCON;
@@ -47,6 +48,24 @@ public class JFRPrincipal extends javax.swing.JFrame
         this.setLocationRelativeTo(null);
         this.setExtendedState(MAXIMIZED_BOTH);
         this.setTitle(sys.nombre_sistema()+" - "+sys.nombre_compañia()+" - Versión V"+sys.version()+" VERSIÓN INTERNA DE DESARROLLO");
+        
+        detectar();
+    }
+    
+    private static void detectar()
+    {
+        try 
+        {
+            JFrame jf=new JFrame();
+            jf.setAlwaysOnTop(true);
+            JDMarcarAsistencia jd = new JDMarcarAsistencia(jf, true);
+            jd.setVisible(true);
+            
+            
+        } catch (Exception e) 
+            {
+                
+            }
     }
     
     private void image()
@@ -55,6 +74,7 @@ public class JFRPrincipal extends javax.swing.JFrame
     }
 
     //ACTUALIZACION
+    @Deprecated
     public void actualizacion()
     {
         //ARGUMENTOS DE ACTUALIZACION

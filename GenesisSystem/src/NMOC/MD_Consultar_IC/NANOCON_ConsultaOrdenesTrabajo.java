@@ -7,7 +7,6 @@ package NMOC.MD_Consultar_IC;
 
 import ModuleWorker.DBCON;
 import NCLPM.LOG;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;

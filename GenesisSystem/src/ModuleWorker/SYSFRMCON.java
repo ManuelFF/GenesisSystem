@@ -147,6 +147,18 @@ public class SYSFRMCON
         p.setBackground(Color.GRAY.brighter());
     }
     
+    //CENTRO DE NOTIFICACIONES
+    public String T_RegistrarAsistencia()
+    {
+        String t = DEV()+" Registre su entrada";
+        return t;
+    }
+    
+    public void B_RegistrarAsistencia(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+    
     //#########################################################################
     //FORMULARIOS GLOBALES
     //CALENDAR
