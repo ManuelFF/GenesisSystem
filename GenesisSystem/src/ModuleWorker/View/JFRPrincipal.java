@@ -116,6 +116,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         JSMGenerarOrden = new javax.swing.JMenuItem();
         JMConsultar = new javax.swing.JMenu();
         JSMConsultarOrden = new javax.swing.JMenuItem();
+        JSMConsultarCert = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
 
@@ -297,10 +298,10 @@ public class JFRPrincipal extends javax.swing.JFrame
         JMGenerar.setText("Generar");
         JMGenerar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
-        JSMGenerarCotizacion.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F1, 0));
         JSMGenerarCotizacion.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         JSMGenerarCotizacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Files-New-File-icon.png"))); // NOI18N
         JSMGenerarCotizacion.setText("Generar Cotización");
+        JSMGenerarCotizacion.setEnabled(false);
         JSMGenerarCotizacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JSMGenerarCotizacionActionPerformed(evt);
@@ -334,6 +335,15 @@ public class JFRPrincipal extends javax.swing.JFrame
             }
         });
         JMConsultar.add(JSMConsultarOrden);
+
+        JSMConsultarCert.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        JSMConsultarCert.setText("Certificados");
+        JSMConsultarCert.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JSMConsultarCertActionPerformed(evt);
+            }
+        });
+        JMConsultar.add(JSMConsultarCert);
 
         JMPrincipal.add(JMConsultar);
 
@@ -726,6 +736,13 @@ public class JFRPrincipal extends javax.swing.JFrame
         
     }//GEN-LAST:event_JSMRegistrarSalidaActionPerformed
 
+    private void JSMConsultarCertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMConsultarCertActionPerformed
+
+        MWCON mw = new MWCON();
+        mw.abrir_archivo("./CERT/Certificados.jar");
+                
+    }//GEN-LAST:event_JSMConsultarCertActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -772,6 +789,7 @@ public class JFRPrincipal extends javax.swing.JFrame
     private javax.swing.JMenuBar JMPrincipal;
     public static javax.swing.JMenu JMSesion;
     private javax.swing.JMenuItem JSMCerrarSesion;
+    public static javax.swing.JMenuItem JSMConsultarCert;
     public static javax.swing.JMenuItem JSMConsultarOrden;
     public static javax.swing.JMenuItem JSMGenerarCotizacion;
     public static javax.swing.JMenuItem JSMGenerarOrden;

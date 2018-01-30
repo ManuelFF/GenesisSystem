@@ -1416,3 +1416,17 @@ ACCIÓN : Botón 'Cerrar Sesión' Presionado
 TIME : 12:0:34 PM
 ----------------------------------------------------
  
+USUARIO : adm
+DESCRIPCIÓN : Ingreso al sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 15:20:33 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 15:20:42 PM
+----------------------------------------------------
+ 
