@@ -1,0 +1,124 @@
+USUARIO : ROOT ROOT
+FORMULARIO : JIFMantenerUsuario
+HORA : 11:12:45 AM
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el usuario con ID: USR-002
+ CON USUARIO: adm
+ CON ESTADO: ACTIVO
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+FORMULARIO : JIFGenerarOrdenServicio
+HORA : 11:15:58 AM
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha actualizado la orden N° 432
+ del Cliente : PROGRAMA NACIONAL CUNA MAS - PNCM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+FORMULARIO : JIFMantenerUsuario
+HORA : 11:17:51 AM
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado al usuario con ID: USR-001
+ Se listarán los datos.
+ USUARIO: root
+ ESTADO: ACTIVO
+ TIPO: SISTEMA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_AreaTrabajo
+HORA : 11:27:15 AM
+TIPO : GENERACIÓN
+DESCRIPCIÓN : Se ha generado el Área con ID  1
+ NOMBRE: CASA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Productos
+HORA : 11:27:19 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Producto con ID  PRO-001
+ NOMBRE: CIPERMETRINA AL 20%
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 11:27:24 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 11:27:27 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-002
+ NOMBRE: EDSON ROJAS PEÑA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Implementos
+HORA : 11:27:31 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Implemento con ID  MAQ-001
+ NOMBRE: SOLO 457 - LONCHERITA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFGenerarOrdenServicio
+HORA : 11:27:35 AM
+TIPO : INSERSIÓN
+DESCRIPCIÓN : Se ha insertado la orden N° 449
+ del Cliente : SANTOS GONZALES  
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_AreaTrabajo
+HORA : 11:28:41 AM
+TIPO : GENERACIÓN
+DESCRIPCIÓN : Se ha generado el Área con ID  1
+ NOMBRE: COCINA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Servicios
+HORA : 11:28:45 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Servicio con ID  SERV-001
+ NOMBRE: DESINSECTACIÓN
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Operarios
+HORA : 11:28:48 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Operario con ID  PER-003
+ NOMBRE: JUAN JOSE ROJAS PEÑA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Productos
+HORA : 11:28:53 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Producto con ID  PRO-001
+ NOMBRE: CIPERMETRINA AL 20%
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : SGL_VIEW_Implementos
+HORA : 11:28:58 AM
+TIPO : IMPORTACIÓN
+DESCRIPCIÓN : Se ha importado el Implemento con ID  MAQ-004
+ NOMBRE: TERMONEBULIZADORA
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFGenerarOrdenServicio
+HORA : 11:29:7 AM
+TIPO : INSERSIÓN
+DESCRIPCIÓN : Se ha insertado la orden N° 450
+ del Cliente : RENDEZ VOUS S.A.C.
+----------------------------------------------------
+ 

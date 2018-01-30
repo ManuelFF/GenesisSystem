@@ -175,6 +175,7 @@ public class GL_JDBuscarOrdenes extends javax.swing.JDialog
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        JTOrden.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         JTOrden.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JTOrdenMouseClicked(evt);

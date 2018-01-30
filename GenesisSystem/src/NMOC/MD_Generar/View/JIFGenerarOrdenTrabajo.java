@@ -379,7 +379,8 @@ public class JIFGenerarOrdenTrabajo extends javax.swing.JInternalFrame
             btnmodificar.setText("Modificar");
             clearCacheDB();
             vaciado_memoria();
-
+            modi_lock="";
+                    
         } catch (Exception e) 
            {
                lc.write("No se pudo cancelar la orden de servicio", "JIFGenerarOrdenServicio", e);
@@ -1713,6 +1714,8 @@ public class JIFGenerarOrdenTrabajo extends javax.swing.JInternalFrame
     
     }//GEN-LAST:event_btnnuevoActionPerformed
 
+    String modi_lock;
+    
     private void btnmodificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmodificarActionPerformed
         
    String Tipo_orden = mw.getSelectedButtonText(TipoOrden);
@@ -1758,302 +1761,313 @@ public class JIFGenerarOrdenTrabajo extends javax.swing.JInternalFrame
 
            RDBJuridica.setEnabled(false);
            RDBNatural.setEnabled(false);
+           modi_lock = "lock";
            
        }
        else
           {
-           //LOGICA DE VERIFICACION
-           /*
-                 esta logica de verificacion sera LS.
-                 estara centrada a conectar y verificar todas las partes
-                 dentro de este formulario.
-                 la verificacion se hara a cada bloque a la vez
-           */
+             if(modi_lock.equals("lock")) 
+             {
+                 sysau.E_CRITICAL_ERROR();
+                 JOptionPane.showMessageDialog(jf, "Presione el botón 'Área' para proceder con la modificacion", "Presione botón 'Área'", JOptionPane.INFORMATION_MESSAGE);
+                 sysau.S_STOP();
+             }
+             else
+             {
+            //LOGICA DE VERIFICACION
+            /*
+                  esta logica de verificacion sera LS.
+                  estara centrada a conectar y verificar todas las partes
+                  dentro de este formulario.
+                  la verificacion se hara a cada bloque a la vez
+            */
 
-           if(txtgiro.getText().trim().equals(""))
-           {
-               sysau.E_ERROR();
-               txtgiro.setBackground(Color.RED);
-               JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Giro' para la orden", "Falta giro de la orden", JOptionPane.ERROR_MESSAGE);
-               sysau.S_STOP();
-           }
-           else
-             if(txthora.getText().trim().equals(""))
-             {
-               sysau.E_ERROR();
-               txthora.setBackground(Color.RED);
-               JOptionPane.showMessageDialog(jf, "Establezca una hora", "No se ingreso hora", JOptionPane.ERROR_MESSAGE);
-               sysau.S_STOP();
-             }
-           else
-             if(txtfecha.getText().trim().equals(""))
-             {
-               sysau.E_ERROR();
-               txtfecha.setBackground(Color.RED);
-               JOptionPane.showMessageDialog(jf, "Establezca una fecha", "No se ingreso fecha", JOptionPane.ERROR_MESSAGE);
-               sysau.S_STOP();
-             }
-           else
-             if(txtidVendedor.getText().trim().equals(""))
-             {
-               sysau.E_ERROR();
-               txtidVendedor.setBackground(Color.RED);
-               JOptionPane.showMessageDialog(jf, "Debe seleccionar un vendedor", "Falta Vendedor", JOptionPane.ERROR_MESSAGE);
-               sysau.S_STOP();
-             }
-           else
-             if(txtcodCliente.getText().trim().equals(""))
-             {
-               sysau.E_ERROR();
-               txtcodCliente.setBackground(Color.RED);
-               JOptionPane.showMessageDialog(jf, "Debe seleccionar un Cliente", "Falta Cliente", JOptionPane.ERROR_MESSAGE);
-               sysau.S_STOP();
-             }
-           else
-             if(areas.isEmpty())
-             {
-               sysau.E_ERROR();
-               JTC.clear(JTAIA);
-               JTC.cabecera(JTAIA);
-               JTC.msj(JTAIA, "No se ha encontrado áreas generadas");
-               ShakingComponent ar = new ShakingComponent(JTAIA);
-               ar.startShake();
-             }
-           else
-             if(servicios.isEmpty())
-             {
-               sysau.E_ERROR();
-               JTC.clear(JTAIA);
-               JTC.cabecera(JTAIA);
-               JTC.msj(JTAIA, "No se ha encontrado servicios importados");
-               ShakingComponent ar = new ShakingComponent(JTAIA);
-               ar.startShake();
-             }
-           else
-             if(operarios.isEmpty())
-             {
-               sysau.E_ERROR();
-               JTC.clear(JTAIA);
-               JTC.cabecera(JTAIA);
-               JTC.msj(JTAIA, "No se ha encontrado operarios importados");
-               ShakingComponent ar = new ShakingComponent(JTAIA);
-               ar.startShake();
-             }
-           else
-             if(productos.isEmpty())
-             {
-               sysau.E_ERROR();
-               JTC.clear(JTAIA);
-               JTC.cabecera(JTAIA);
-               JTC.msj(JTAIA, "No se ha encontrado productos importados");
-               ShakingComponent ar = new ShakingComponent(JTAIA);
-               ar.startShake();
-             }
-           else
-             if(implementos.isEmpty())
-             {
-               sysau.E_ERROR();
-               JTC.clear(JTAIA);
-               JTC.cabecera(JTAIA);
-               JTC.msj(JTAIA, "No se ha encontrado implementos importados");
-               ShakingComponent ar = new ShakingComponent(JTAIA);
-               ar.startShake();
-             }
-           else
-             {
-             if(txtcosto.getText().trim().equals(""))
-             {
-               sysau.E_ERROR();
-               txtcosto.setBackground(Color.YELLOW);
-               txtcosto.setText("0");
-               txtcostofinal.setText("0");
-               sysau.S_STOP();
-             }
-             if(txtdocumentacion.getText().trim().equals(""))
-             {
-               txtdocumentacion.setText("-");
-             }
-
-              //OBTENCION DE DATOS
-              String ID_ORDEN = txtidorden.getText();
-              String numero_orden = txtnumeroorden.getText();
-              String id_cli = txtcodCliente.getText();
-              String fecha = txtfecha.getText();
-              String hora = txthora.getText();
-              String direccion = txtdireccion.getText().toUpperCase();
-              String giro = txtgiro.getText().toUpperCase();
-              String desc = txtdocumentacion.getText().toUpperCase();
-              String id_vend = txtidVendedor.getText().toUpperCase();
-              String costo = txtcostofinal.getText();
-              String estado = cbestado.getSelectedItem().toString();
-
-              //INSERTAR ORDEN BASE
-              P_orden.Actualizar_orden(ID_ORDEN, numero_orden, id_cli, fecha, hora, direccion, giro, telefono, celular, desc,id_vend, costo, estado);
-              P_orden.ActualizarDETOrden(ID_ORDEN);
-
-              int menor=9999; 
-              int mayor=0; 
-
-              int[] arreglo=new int[5]; 
-              String IDPRO="",IDMAQ="",IDPERO="",IDSERV="",NOTASERV="",IDARE="",NOMARE="",ARETRAB="",NUMAMBI="",FORM="";
-
-              //CREACION Y ASIGNACION DE ALMACEN DE ARRAYS        
-              {arreglo[0] = implementos.size();}
-              {arreglo[1] = productos.size();}
-              {arreglo[2] = operarios.size();}
-              {arreglo[3] = servicios.size();}
-              {arreglo[4] = areas.size();}
-
-              for(int i=0;i<5;i++)
-              { 
-                if(menor>arreglo[i])
-                 { 
-                   menor=arreglo[i]; 
-                 } 
-                if(mayor<arreglo[i])
-                 { 
-                   mayor=arreglo[i]; 
-                 } 
-              }
-
-              //System.out.println("##########################################\n"+"I = "+i+"\n"+"MAYOR : "+mayor);
-              //System.out.println("ARREGLO IMPLMENTOS : "+arreglo[0]);
-
-              for(int j=1; j<=mayor; j++)
+            if(txtgiro.getText().trim().equals(""))
+            {
+                sysau.E_ERROR();
+                txtgiro.setBackground(Color.RED);
+                JOptionPane.showMessageDialog(jf, "Es obligatorio el uso de 'Giro' para la orden", "Falta giro de la orden", JOptionPane.ERROR_MESSAGE);
+                sysau.S_STOP();
+            }
+            else
+              if(txthora.getText().trim().equals(""))
               {
-                  //IMPLEMENTOS
-                  if(arreglo[0] ==1 )
-                  {
-                       IDMAQ=implementos.get(0).getIdmaq();
-                  }else
-                    {
-                       if(arreglo[0] >j)
-                          {
-                              IDMAQ=implementos.get(j-1).getIdmaq();
-                          }else
-                              {
-                                IDMAQ=implementos.get(implementos.size()-1).getIdmaq();
-                              }
-                   }
-
-                  //PRODUCTOS
-                  if(arreglo[1] == 1)    
-                  {
-                      IDPRO = productos.get(0).getIdPro();
-                  }else
-                      {
-                          if(arreglo[1] > j)
-                          {
-                              IDPRO = productos.get(j-1).getIdPro();
-                          }else
-                              {
-                                  IDPRO = productos.get(productos.size()-1).getIdPro();
-                              }
-                      }
-
-                  //PERSONAL OPERARIO
-                  if(arreglo[2] == 1)
-                  {
-                      IDPERO = operarios.get(0).getIdope();
-                  }else
-                      {
-                          if(arreglo[2] > j)
-                          {
-                              IDPERO = operarios.get(j-1).getIdope();
-                          }else
-                              {
-                                  IDPERO = operarios.get(operarios.size()-1).getIdope();
-                              }
-                      }
-
-                  //SERVICIOS
-                  if(arreglo[3] == 1)
-                  {
-                      IDSERV = servicios.get(0).getIdserv();
-                      NOTASERV = servicios.get(0).getNotaserv();
-                  }else
-                      {
-                          if(arreglo[3] > j)
-                          {
-                              IDSERV = servicios.get(j-1).getIdserv();
-                              NOTASERV = servicios.get(j-1).getNotaserv();
-                          }else
-                              {
-                                  IDSERV = servicios.get(servicios.size()-1).getIdserv();
-                                  NOTASERV = servicios.get(servicios.size()-1).getNotaserv();
-                              }
-                      }
-
-                  //AREAS
-                  if(arreglo[4] == 1)
-                  {
-                      IDARE = areas.get(0).getIdarea();
-                      NOMARE = areas.get(0).getNombreArea();
-                      ARETRAB = areas.get(0).getAreaTrabajar();
-                      NUMAMBI = areas.get(0).getNumeroAmbientes();
-                      FORM = areas.get(0).getFormato();
-                  }else
-                      {
-                          if(arreglo[4] > j)
-                          {
-                              IDARE = areas.get(j-1).getIdarea();
-                              NOMARE = areas.get(j-1).getNombreArea();
-                              ARETRAB = areas.get(j-1).getAreaTrabajar();
-                              NUMAMBI = areas.get(j-1).getNumeroAmbientes();
-                              FORM = areas.get(j-1).getFormato();
-                          }else
-                              {
-                                  IDARE = areas.get(areas.size()-1).getIdarea();
-                                  NOMARE = areas.get(areas.size()-1).getNombreArea();
-                                  ARETRAB = areas.get(areas.size()-1).getAreaTrabajar();
-                                  NUMAMBI = areas.get(areas.size()-1).getNumeroAmbientes();
-                                  FORM = areas.get(areas.size()-1).getFormato();
-                              }
-
-                      }
-
-                   P_orden.InsertarDETOrden(ID_ORDEN, (j), IDPRO, IDMAQ, IDPERO, IDSERV, NOTASERV,IDARE, NOMARE, ARETRAB, NUMAMBI, areaM2,areaM3,FORM);
-                  //AQUI SE AGREGA LA DESCIP
-                  //System.out.println("--------------------------\n"+ "DET = "+(j)+"\n"+IDPRO+"\nID MAQ "+ IDMAQ+"\nID PER "+ IDPERO+"\nID SERV "+ IDSERV +"\nNOT "+ NOTASERV+"\nID ARE "+IDARE+"\nNOM AR: "+ NOMARE+"\nID ARE TRAB "+ ARETRAB +"\n NUM AMB "+ NUMAMBI +"\nM2 "+ areaM2+"\nM3 "+areaM3+"\nFORMATO "+FORM);
+                sysau.E_ERROR();
+                txthora.setBackground(Color.RED);
+                JOptionPane.showMessageDialog(jf, "Establezca una hora", "No se ingreso hora", JOptionPane.ERROR_MESSAGE);
+                sysau.S_STOP();
               }
-              
-              rslt.write(lblusuario.getText(), "JIFGenerarOrdenServicio", "MODIFICACIÓN", "Se ha actualizado la orden N° "+numero_orden+"\n del Cliente : "+txtnombrecliente.getText());
+            else
+              if(txtfecha.getText().trim().equals(""))
+              {
+                sysau.E_ERROR();
+                txtfecha.setBackground(Color.RED);
+                JOptionPane.showMessageDialog(jf, "Establezca una fecha", "No se ingreso fecha", JOptionPane.ERROR_MESSAGE);
+                sysau.S_STOP();
+              }
+            else
+              if(txtidVendedor.getText().trim().equals(""))
+              {
+                sysau.E_ERROR();
+                txtidVendedor.setBackground(Color.RED);
+                JOptionPane.showMessageDialog(jf, "Debe seleccionar un vendedor", "Falta Vendedor", JOptionPane.ERROR_MESSAGE);
+                sysau.S_STOP();
+              }
+            else
+              if(txtcodCliente.getText().trim().equals(""))
+              {
+                sysau.E_ERROR();
+                txtcodCliente.setBackground(Color.RED);
+                JOptionPane.showMessageDialog(jf, "Debe seleccionar un Cliente", "Falta Cliente", JOptionPane.ERROR_MESSAGE);
+                sysau.S_STOP();
+              }
+            else
+              if(areas.isEmpty())
+              {
+                sysau.E_ERROR();
+                JTC.clear(JTAIA);
+                JTC.cabecera(JTAIA);
+                JTC.msj(JTAIA, "No se ha encontrado áreas generadas");
+                ShakingComponent ar = new ShakingComponent(JTAIA);
+                ar.startShake();
+              }
+            else
+              if(servicios.isEmpty())
+              {
+                sysau.E_ERROR();
+                JTC.clear(JTAIA);
+                JTC.cabecera(JTAIA);
+                JTC.msj(JTAIA, "No se ha encontrado servicios importados");
+                ShakingComponent ar = new ShakingComponent(JTAIA);
+                ar.startShake();
+              }
+            else
+              if(operarios.isEmpty())
+              {
+                sysau.E_ERROR();
+                JTC.clear(JTAIA);
+                JTC.cabecera(JTAIA);
+                JTC.msj(JTAIA, "No se ha encontrado operarios importados");
+                ShakingComponent ar = new ShakingComponent(JTAIA);
+                ar.startShake();
+              }
+            else
+              if(productos.isEmpty())
+              {
+                sysau.E_ERROR();
+                JTC.clear(JTAIA);
+                JTC.cabecera(JTAIA);
+                JTC.msj(JTAIA, "No se ha encontrado productos importados");
+                ShakingComponent ar = new ShakingComponent(JTAIA);
+                ar.startShake();
+              }
+            else
+              if(implementos.isEmpty())
+              {
+                sysau.E_ERROR();
+                JTC.clear(JTAIA);
+                JTC.cabecera(JTAIA);
+                JTC.msj(JTAIA, "No se ha encontrado implementos importados");
+                ShakingComponent ar = new ShakingComponent(JTAIA);
+                ar.startShake();
+              }
+            else
+              {
+              if(txtcosto.getText().trim().equals(""))
+              {
+                sysau.E_ERROR();
+                txtcosto.setBackground(Color.YELLOW);
+                txtcosto.setText("0");
+                txtcostofinal.setText("0");
+                sysau.S_STOP();
+              }
+              if(txtdocumentacion.getText().trim().equals(""))
+              {
+                txtdocumentacion.setText("-");
+              }
+
+               //OBTENCION DE DATOS
+               String ID_ORDEN = txtidorden.getText();
+               String numero_orden = txtnumeroorden.getText();
+               String id_cli = txtcodCliente.getText();
+               String fecha = txtfecha.getText();
+               String hora = txthora.getText();
+               String direccion = txtdireccion.getText().toUpperCase();
+               String giro = txtgiro.getText().toUpperCase();
+               String desc = txtdocumentacion.getText().toUpperCase();
+               String id_vend = txtidVendedor.getText().toUpperCase();
+               String costo = txtcostofinal.getText();
+               String estado = cbestado.getSelectedItem().toString();
+
+               //INSERTAR ORDEN BASE
+               P_orden.Actualizar_orden(ID_ORDEN, numero_orden, id_cli, fecha, hora, direccion, giro, telefono, celular, desc,id_vend, costo, estado);
+               P_orden.ActualizarDETOrden(ID_ORDEN);
+
+               int menor=9999; 
+               int mayor=0; 
+
+               int[] arreglo=new int[5]; 
+               String IDPRO="",IDMAQ="",IDPERO="",IDSERV="",NOTASERV="",IDARE="",NOMARE="",ARETRAB="",NUMAMBI="",FORM="";
+
+               //CREACION Y ASIGNACION DE ALMACEN DE ARRAYS        
+               {arreglo[0] = implementos.size();}
+               {arreglo[1] = productos.size();}
+               {arreglo[2] = operarios.size();}
+               {arreglo[3] = servicios.size();}
+               {arreglo[4] = areas.size();}
+
+               for(int i=0;i<5;i++)
+               { 
+                 if(menor>arreglo[i])
+                  { 
+                    menor=arreglo[i]; 
+                  } 
+                 if(mayor<arreglo[i])
+                  { 
+                    mayor=arreglo[i]; 
+                  } 
+               }
+
+               //System.out.println("##########################################\n"+"I = "+i+"\n"+"MAYOR : "+mayor);
+               //System.out.println("ARREGLO IMPLMENTOS : "+arreglo[0]);
+
+               for(int j=1; j<=mayor; j++)
+               {
+                   //IMPLEMENTOS
+                   if(arreglo[0] ==1 )
+                   {
+                        IDMAQ=implementos.get(0).getIdmaq();
+                   }else
+                     {
+                        if(arreglo[0] >j)
+                           {
+                               IDMAQ=implementos.get(j-1).getIdmaq();
+                           }else
+                               {
+                                 IDMAQ=implementos.get(implementos.size()-1).getIdmaq();
+                               }
+                    }
+
+                   //PRODUCTOS
+                   if(arreglo[1] == 1)    
+                   {
+                       IDPRO = productos.get(0).getIdPro();
+                   }else
+                       {
+                           if(arreglo[1] > j)
+                           {
+                               IDPRO = productos.get(j-1).getIdPro();
+                           }else
+                               {
+                                   IDPRO = productos.get(productos.size()-1).getIdPro();
+                               }
+                       }
+
+                   //PERSONAL OPERARIO
+                   if(arreglo[2] == 1)
+                   {
+                       IDPERO = operarios.get(0).getIdope();
+                   }else
+                       {
+                           if(arreglo[2] > j)
+                           {
+                               IDPERO = operarios.get(j-1).getIdope();
+                           }else
+                               {
+                                   IDPERO = operarios.get(operarios.size()-1).getIdope();
+                               }
+                       }
+
+                   //SERVICIOS
+                   if(arreglo[3] == 1)
+                   {
+                       IDSERV = servicios.get(0).getIdserv();
+                       NOTASERV = servicios.get(0).getNotaserv();
+                   }else
+                       {
+                           if(arreglo[3] > j)
+                           {
+                               IDSERV = servicios.get(j-1).getIdserv();
+                               NOTASERV = servicios.get(j-1).getNotaserv();
+                           }else
+                               {
+                                   IDSERV = servicios.get(servicios.size()-1).getIdserv();
+                                   NOTASERV = servicios.get(servicios.size()-1).getNotaserv();
+                               }
+                       }
+
+                   //AREAS
+                   if(arreglo[4] == 1)
+                   {
+                       IDARE = areas.get(0).getIdarea();
+                       NOMARE = areas.get(0).getNombreArea();
+                       ARETRAB = areas.get(0).getAreaTrabajar();
+                       NUMAMBI = areas.get(0).getNumeroAmbientes();
+                       FORM = areas.get(0).getFormato();
+                   }else
+                       {
+                           if(arreglo[4] > j)
+                           {
+                               IDARE = areas.get(j-1).getIdarea();
+                               NOMARE = areas.get(j-1).getNombreArea();
+                               ARETRAB = areas.get(j-1).getAreaTrabajar();
+                               NUMAMBI = areas.get(j-1).getNumeroAmbientes();
+                               FORM = areas.get(j-1).getFormato();
+                           }else
+                               {
+                                   IDARE = areas.get(areas.size()-1).getIdarea();
+                                   NOMARE = areas.get(areas.size()-1).getNombreArea();
+                                   ARETRAB = areas.get(areas.size()-1).getAreaTrabajar();
+                                   NUMAMBI = areas.get(areas.size()-1).getNumeroAmbientes();
+                                   FORM = areas.get(areas.size()-1).getFormato();
+                               }
+
+                       }
+
+                    P_orden.InsertarDETOrden(ID_ORDEN, (j), IDPRO, IDMAQ, IDPERO, IDSERV, NOTASERV,IDARE, NOMARE, ARETRAB, NUMAMBI, areaM2,areaM3,FORM);
+                   //AQUI SE AGREGA LA DESCIP
+                   //System.out.println("--------------------------\n"+ "DET = "+(j)+"\n"+IDPRO+"\nID MAQ "+ IDMAQ+"\nID PER "+ IDPERO+"\nID SERV "+ IDSERV +"\nNOT "+ NOTASERV+"\nID ARE "+IDARE+"\nNOM AR: "+ NOMARE+"\nID ARE TRAB "+ ARETRAB +"\n NUM AMB "+ NUMAMBI +"\nM2 "+ areaM2+"\nM3 "+areaM3+"\nFORMATO "+FORM);
+               }
+
+               rslt.write(lblusuario.getText(), "JIFGenerarOrdenServicio", "MODIFICACIÓN", "Se ha actualizado la orden N° "+numero_orden+"\n del Cliente : "+txtnombrecliente.getText());
 
 
-              JTC.clear(JTAIA);
-              JTC.cabecera(JTAIA);
-              JTC.msj(JTAIA, "Se ha actualizado correctamente:\n");
-              JTC.msj(JTAIA,  "\n"+arreglo[0]+" Maquinas.");
-              JTC.msj(JTAIA,  "\n"+arreglo[1]+" Productos.");
-              JTC.msj(JTAIA,  "\n"+arreglo[2]+" Personas operarias.");
-              JTC.msj(JTAIA,  "\n"+arreglo[4]+" Áreas.");
-              JTC.msj(JTAIA,  "\n"+arreglo[3]+" Trabajos.");
-              JTC.msj(JTAIA,  "\nAREA TOTAL A TRABAJAR : "+areaM2+" M2"+"------------"+areaM3+" M3");
-              JTC.msj(JTAIA,  "\n\nCLIENTE : "+txtnombrecliente.getText().toUpperCase());
-              JTC.msj(JTAIA,  "\nGIRO DEL LUGAR : "+giro);
-              JTC.msj(JTAIA,  "\nCOSTO POR EL SERVICIO : "+costo+" SOLES");
-              JTC.msj(JTAIA,  "\n\nVENDEDOR : "+txtnombrevendedor.getText().toUpperCase());
+               JTC.clear(JTAIA);
+               JTC.cabecera(JTAIA);
+               JTC.msj(JTAIA, "Se ha actualizado correctamente:\n");
+               JTC.msj(JTAIA,  "\n"+arreglo[0]+" Maquinas.");
+               JTC.msj(JTAIA,  "\n"+arreglo[1]+" Productos.");
+               JTC.msj(JTAIA,  "\n"+arreglo[2]+" Personas operarias.");
+               JTC.msj(JTAIA,  "\n"+arreglo[4]+" Áreas.");
+               JTC.msj(JTAIA,  "\n"+arreglo[3]+" Trabajos.");
+               JTC.msj(JTAIA,  "\nAREA TOTAL A TRABAJAR : "+areaM2+" M2"+"------------"+areaM3+" M3");
+               JTC.msj(JTAIA,  "\n\nCLIENTE : "+txtnombrecliente.getText().toUpperCase());
+               JTC.msj(JTAIA,  "\nGIRO DEL LUGAR : "+giro);
+               JTC.msj(JTAIA,  "\nCOSTO POR EL SERVICIO : "+costo+" SOLES");
+               JTC.msj(JTAIA,  "\n\nVENDEDOR : "+txtnombrevendedor.getText().toUpperCase());
 
-              LegacyClearFRM();                                                                                
-              editFRM(false);
-              //BLOQUE 1:
-              enadisa_bloque1_botones(false, false, false, true, false, true, true, true);
-              //BLOQUE 2:
-              enadisa_bloque2_botones(false, false, false, false);
-              //BLOQUE 3:
-              enadisa_bloque3_botones(false, false, false);
-              //BLOQUE 5:
-              enadisa_bloque5_botones(false);
-              //BLOQUE 6:
-              enadisa_bloque6_botones(false, false, false, false, false, false, false);
-              btnmodificar.setText("Modificar");
-              RP_ORDEN_SERV b = new RP_ORDEN_SERV();//natural 342 -- juridico 194
-              b.speculation(Tipo_orden, ID_ORDEN);
-              clearCacheDB();
-              vaciado_memoria();
-              reiniciarColors();
-              ultima_orden();
-
+               LegacyClearFRM();                                                                                
+               editFRM(false);
+               //BLOQUE 1:
+               enadisa_bloque1_botones(false, false, false, true, false, true, true, true);
+               //BLOQUE 2:
+               enadisa_bloque2_botones(false, false, false, false);
+               //BLOQUE 3:
+               enadisa_bloque3_botones(false, false, false);
+               //BLOQUE 5:
+               enadisa_bloque5_botones(false);
+               //BLOQUE 6:
+               enadisa_bloque6_botones(false, false, false, false, false, false, false);
+               btnmodificar.setText("Modificar");
+               RP_ORDEN_SERV b = new RP_ORDEN_SERV();//natural 342 -- juridico 194
+               b.speculation(Tipo_orden, ID_ORDEN);
+               clearCacheDB();
+               vaciado_memoria();
+               reiniciarColors();
+               ultima_orden();
+               modi_lock = "";
+               
+              }
              }
           }
       }catch (Exception e) 
@@ -2531,9 +2545,11 @@ public class JIFGenerarOrdenTrabajo extends javax.swing.JInternalFrame
                 
     try 
      {
+         
          SGL_VIEW_AreaTrabajo agregar_areas = new SGL_VIEW_AreaTrabajo(form, true);
          agregar_areas.setVisible(true);
-
+         modi_lock = "unlock";
+         
      } catch (Exception e) 
         {
             lc.write("Ha Ocurrido un error al intentar abrir 'Agregar Areas'", "JIFGenerarOrdenServicio -> Agregar Areas", e);

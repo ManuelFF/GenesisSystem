@@ -5,7 +5,9 @@
  */
 package ModuleWorker.View;
 
+import ModuleWorker.Core.NOB_Asistencia;
 import ModuleWorker.IC.MWCON;
+import ModuleWorker.IC.NANOCON_Asistencia;
 import ModuleWorker.SYSFRMCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
@@ -23,7 +25,8 @@ public class JDMarcarAsistencia extends javax.swing.JDialog
     RESULTS rslt = new RESULTS();
     SYSFRMCON sysfrm = new SYSFRMCON();
     MWCON mw = new MWCON();
-    
+    NANOCON_Asistencia P_asist = new NANOCON_Asistencia();
+
     
     /**
      * Creates new form JDMarcarAsistencia
@@ -31,7 +34,7 @@ public class JDMarcarAsistencia extends javax.swing.JDialog
      * @param modal
      */
     
-    public JDMarcarAsistencia(java.awt.Frame parent, boolean modal) 
+    public JDMarcarAsistencia(java.awt.Frame parent, boolean modal,String nombre) 
     {
         super(parent, modal);
         initComponents();
@@ -40,8 +43,34 @@ public class JDMarcarAsistencia extends javax.swing.JDialog
         this.setLocationRelativeTo(null);
         this.setTitle(sysfrm.T_RegistrarAsistencia());
         sysfrm.B_RegistrarAsistencia(this.getContentPane());
+        ID_PER = nombre;
     }
 
+    String ID_PER;
+    
+    private String NuevoCodigo()
+    {
+        String codigo  = String.format("%03d", 1);
+	int cod ; 
+        NOB_Asistencia ultObjeto = null;
+				
+	if( P_asist.tamaño()==0 ) // Array vacío
+		codigo = "ASIST-"+codigo;
+	else {
+		// La posición del último objeto se obtiene con tamaño()-1
+		// Obtenemos el último objeto del ArrayList
+		ultObjeto = P_asist.obtener( P_asist.tamaño()-1 );
+		// Obtenemos los caracteres desde la posicion dos hasta el final ("003"); 
+		codigo = ultObjeto.getId_asist().substring(6);
+		//Agregamos una unidad al codigo extraido en el paso anterior
+		cod = Integer.parseInt(codigo)+1;
+		codigo = "ASIST-"+String.format("%03d",cod);
+              }
+	return codigo;
+    }
+    
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -58,7 +87,7 @@ public class JDMarcarAsistencia extends javax.swing.JDialog
         lbltext3 = new javax.swing.JLabel();
         lbltext4 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setResizable(false);
 
         lbllogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/check IN_300.png"))); // NOI18N
@@ -138,10 +167,42 @@ public class JDMarcarAsistencia extends javax.swing.JDialog
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnmarcarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmarcarActionPerformed
+       
+        try 
+        {
+            evn.write(ID_PER, "Ha registrado entrada", "JDMarcarAsistencia", "botón 'Registrar Entrada' Presionado");
+            String ArrayTemp[] = mw.hour_actual().split(":");
+        
+            //HORA DE ENTRADA
+            //he:ee = he=heH:ee=heM
+            int heH = Integer.parseInt(ArrayTemp[0]);
+            int heM = Integer.parseInt(ArrayTemp[1]);
+            
+            //HORA DE ENTRADA ORIGINAL 
+            //heo:ee = heo=heoH:ee=heoM
+            int heoH = 8;
+            int heoM = 30;
+            //int r = (he-heo);
+                       
+            //Formula
+            //R=[(he:ee)-(heo:ee)]
+            //R=(heH-heoH):(heM-heoM)
+            
+            int re = (heH-heoH);
+            int ra = (heM-heoM);
+                        
+            String r = Math.abs(re)+":"+Math.abs(ra);
+            
+            
+            P_asist.RegistrarEntrada(NuevoCodigo(), ID_PER, mw.fecha_actual_clasica());
+            P_asist.UpdateEntrada(ID_PER, mw.fecha_actual_clasica(), r);
 
-        MWCON mw = new MWCON();
-        System.out.println(""+mw.hour_actual());
-        System.out.println(""+mw.fecha_actual());
+            this.dispose();
+            
+        } catch (Exception e) 
+        {
+            lc.write("Ha ocurrido un error al intentar registrar la entrada", "JDMarcarAsistencia", e);
+        }
         
         
     }//GEN-LAST:event_btnmarcarActionPerformed
@@ -178,7 +239,7 @@ public class JDMarcarAsistencia extends javax.swing.JDialog
         java.awt.EventQueue.invokeLater(new Runnable()
         {
             public void run() {
-                JDMarcarAsistencia dialog = new JDMarcarAsistencia(new javax.swing.JFrame(), true);
+                JDMarcarAsistencia dialog = new JDMarcarAsistencia(new javax.swing.JFrame(), true,"");
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

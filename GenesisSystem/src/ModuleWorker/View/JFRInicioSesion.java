@@ -7,6 +7,8 @@ package ModuleWorker.View;
 
 import ModuleWorker.Control;
 import ModuleWorker.IC.MICROCON_InicioSesion;
+import ModuleWorker.IC.MWCON;
+import ModuleWorker.IC.NANOCON_Asistencia;
 import ModuleWorker.IC.ShakingFrame;
 import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSFRMCON;
@@ -54,6 +56,51 @@ public class JFRInicioSesion extends javax.swing.JFrame
             System.exit(0);
         }
     }
+    
+     private void detectar(String NOMC)
+    {
+        try 
+        {
+            //INICIO ANTES QUE NADA
+            NANOCON_Asistencia P_asist = new NANOCON_Asistencia();
+            MWCON mw = new MWCON();
+            
+            JFrame jf=new JFrame();
+            jf.setAlwaysOnTop(true);
+            
+            String ID_PER = P_asist.obtenerIDNomCOn(NOMC);
+            
+            if(P_asist.obtenerEstadoAsistencia(mw.fecha_actual_clasica(),ID_PER).equals("ENTRADA"))
+            {
+                
+            }else
+                {
+                   if(P_asist.obtenerEstadoAsistencia(mw.fecha_actual_clasica(),ID_PER).equals("SALIDA"))
+                   {
+                       
+                   }
+                   else
+                       {
+                         JDMarcarAsistencia jd = new JDMarcarAsistencia(jf, true,ID_PER);
+                         jd.setVisible(true);
+                         this.dispose();
+                       }
+                }
+                        
+                JFRPrincipal principal = new JFRPrincipal();
+                JFRPrincipal.JMSesion.setText(NOMC);
+                JFRPrincipal.detectar(ID_PER);
+                sysfrm.B_JMSesion(JFRPrincipal.JMSesion);
+                principal.setVisible(true);
+                this.dispose();
+            
+        } catch (Exception e) 
+            {
+                lc.write("Algun error ha ocurrido al intentar detectar el estado de la asistencia ", "Clase Inicio Sesion", e);
+            }
+    }
+    
+    
     
     //BUSCAR ACTUALIZACION
     //ACTUALIZACION
@@ -229,11 +276,18 @@ public class JFRInicioSesion extends javax.swing.JFrame
                         sysau.E_INICIAR_SESION();
                         Thread.sleep(220);
                         evn.write(usr, "Ingreso al sistema", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
-                        JFRPrincipal principal = new JFRPrincipal();
-                        JFRPrincipal.JMSesion.setText(Minse.obtenerNombreUSR(usr));
-                        sysfrm.B_JMSesion(JFRPrincipal.JMSesion);
-                        principal.setVisible(true);
-                        this.dispose();
+                        String nombre = Minse.obtenerNombreUSR(usr);
+                        
+                        detectar(nombre);
+                        
+                        
+//                        JFRPrincipal principal = new JFRPrincipal();
+//                        JFRPrincipal.JMSesion.setText(nombre);
+                       
+//                        sysfrm.B_JMSesion(JFRPrincipal.JMSesion);
+//                        principal.setVisible(true);
+//                        this.dispose();
+                        
                         //tipo
                         //estadoEntrada
                         //EstadoSalida

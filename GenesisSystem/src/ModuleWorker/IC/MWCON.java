@@ -75,6 +75,18 @@ public class MWCON
         return compl;
     }
     
+    public String fecha_actual_clasica()
+    {
+        Date date = new Date();
+        
+        DateFormat año_current = new SimpleDateFormat("yy");
+        DateFormat dia_current = new SimpleDateFormat("dd");
+        DateFormat mes_current = new SimpleDateFormat("MM");
+        
+        String compl = ""+dia_current.format(date)+"/"+""+mes_current.format(date)+"/"+""+año_current.format(date);
+        return compl;
+    }
+    
     public String hour_actual()
     {
         Calendar calendario = new GregorianCalendar();
