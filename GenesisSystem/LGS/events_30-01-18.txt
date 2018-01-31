@@ -1430,3 +1430,10 @@ ACCIÓN : Botón 'Cerrar Sesión' Presionado
 TIME : 15:20:42 PM
 ----------------------------------------------------
  
+USUARIO : Aún no definido
+DESCRIPCIÓN : Salio del sistema
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'SALIR' Presionado
+TIME : 17:21:39 PM
+----------------------------------------------------
+ 
