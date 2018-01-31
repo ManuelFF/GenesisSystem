@@ -238,7 +238,9 @@ public class JFRInicioSesion extends javax.swing.JFrame
            sysau.E_CRITICAL_ERROR();
            JOptionPane.showMessageDialog(jf, "Se quedo sin intentos\nEL SISTEMA SE CERRARA!", "Sobrepaso limite de intentos", JOptionPane.ERROR_MESSAGE);
            evn.write("Aún no definido", "Intento entrar al sistema pero ya no tenia intentos", "JFRInicioSesion", "FUE EXPULSADO");
+           new Control().cerrarApp();
            System.exit(0);
+                       
        }
        else
        {//ELSE INTENTOS    
