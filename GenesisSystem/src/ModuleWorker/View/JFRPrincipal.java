@@ -22,6 +22,7 @@ import NMOC.MD_Mantenimientos.View.JIFMantenerPersonal;
 import NMOC.MD_Mantenimientos.View.JIFMantenerProductos;
 import java.awt.Dimension;
 import java.io.File;
+import java.util.concurrent.TimeUnit;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -49,7 +50,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         this.setLocationRelativeTo(null);
         this.setExtendedState(MAXIMIZED_BOTH);
         //TAG VERSIÓN INTERNA DE DESARROLLO
-        this.setTitle(sys.nombre_sistema()+" - "+sys.nombre_compañia()+" - Versión V"+sys.version()+" VERSIÓN PÚBLICA");
+        this.setTitle(sys.nombre_sistema()+" - "+sys.nombre_compañia()+" - Versión V"+sys.version()+" VERSIÓN INTERNA DE DESARROLLO");
     }
     
     public static void detectar(String ID_PER)
@@ -687,6 +688,81 @@ public class JFRPrincipal extends javax.swing.JFrame
 
     }//GEN-LAST:event_JSMConsultarOrdenActionPerformed
 
+    //METODOS ESPECIALES DE REGISTRO DE SALIDA
+    
+    private int CT(int h,int m)
+    {
+        int HH = h*3600;
+        int mm = m*60;
+        int t = HH+mm;
+        return t;
+    }
+    
+    private String comprt(int CT1,int CT2)
+    {
+        if(CT1 == CT2)
+        {
+           return "0";  
+        }else
+            {
+                int result = CT1-CT2;
+                return "Ha trabajado : "+(Math.abs(result)/60)+" Minutos "+"("+FMF(Math.abs(result)/60)+" Horas)";
+                
+            }
+    }
+    
+    private String comprt_salida(int HS,int HSO,int CT1,int CT2)
+    {
+        
+        if(HS == HSO)
+        {
+            return "NO";
+        }else
+            if(HS>HSO)
+            {
+                int result = CT1-CT2;
+                
+                return "Ha trabajado horas extra : "+hora_extra(Math.abs(result)/60);
+            }else
+                if(HS<HSO)
+                {
+                    return "SI";
+                }
+        return "NULL";
+    }
+    
+    private String hora_extra(int m)
+    {
+        int HOT = 9;
+        int HT = m/60;
+        
+        if(HOT == HT)
+        {
+            return "0";
+        }else
+            if(HT>HOT)
+            {
+                return ""+(HT-HOT);
+            }else
+                if(HT<HOT)
+                {
+                    return "0";
+                }
+        System.out.println(HT);
+        return "NULL";
+    }
+    
+    public String FMF(int minutos) 
+    {
+        String formato = "%02d:%02d";
+        long horasReales = TimeUnit.MINUTES.toHours(minutos);
+        long minutosReales = TimeUnit.MINUTES.toMinutes(minutos) - TimeUnit.HOURS.toMinutes(TimeUnit.MINUTES.toHours(minutos));
+        return String.format(formato, horasReales, minutosReales);
+    }
+     
+    
+    //FIN METODOS ESPECIALES DE REGISTRO DE SALIDA
+    
     private void JSMRegistrarSalidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMRegistrarSalidaActionPerformed
 
         try 
@@ -702,29 +778,33 @@ public class JFRPrincipal extends javax.swing.JFrame
             String ArrayTemp[] = P_ASIST.obtenerHE(mw.fecha_actual_clasica(), ID_PER).split(":");
             String ArrayTemp2[] = mw.hour_actual().split(":");
 
-            int hsoH = 17;
-            int hsoM = 30;
             
-            int heH = Integer.parseInt(ArrayTemp[0]);
-            int heM = Integer.parseInt(ArrayTemp[1]);
-            
+            //hs
             int hsH = Integer.parseInt(ArrayTemp2[0]);
             int hsM = Integer.parseInt(ArrayTemp2[1]);
             
-            int HRA = (hsH-heH);
-            int HRE = (hsM-heM);
+            //int hsH = 20;
+            //int hsM = 30;
             
-            String HR = Math.abs(HRA)+":"+Math.abs(HRE);
-            
-            String S_temp = "";
+            //he
+            int heH = Integer.parseInt(ArrayTemp[0]);
+            int heM = Integer.parseInt(ArrayTemp[1]);
 
-            if(hsH != hsoH)
-            {
-                S_temp = "1";
-            }else {S_temp = "0";}
+            //hso
+            int hso = 17;
+
+            //FORMULA = R= comprt(HORA_SALIDA,HORA_ENTRADA);
+            String r = comprt(CT(hsH, hsM), CT(heH, heM));
+            
+            System.out.println(r);
+
+            //Salida temprano
+            //FORMULA = ST = comprt(HORA SALIDA,HORA SALIDA ORIGINAL,HORAS TRABAJADAS);
+            String ST = comprt_salida(hsH,hso,CT(hsH, hsM), CT(heH, heM));
+            System.out.println(ST);
 
             P_ASIST.RegistrarSalida(ID_PER, mw.fecha_actual_clasica());
-            P_ASIST.UpdateSalida(ID_PER, mw.fecha_actual_clasica(),""+HR,S_temp);
+            P_ASIST.UpdateSalida(ID_PER, mw.fecha_actual_clasica(),r,ST);
             JSMRegistrarSalida.setEnabled(false);
             JSMRegistrarSalida.setText("Salida Registrada");
             
@@ -732,7 +812,7 @@ public class JFRPrincipal extends javax.swing.JFrame
             {
                 lc.write("Ha ocurrido algun error al intentar marcar salida", "CLASE PRINCIPAL -> REGISTRAR SALIDA", e);
             }
-
+       
         
     }//GEN-LAST:event_JSMRegistrarSalidaActionPerformed
 
