@@ -8,10 +8,12 @@ package ModuleWorker.View;
 import ModuleWorker.Core.NOB_Asistencia;
 import ModuleWorker.IC.MWCON;
 import ModuleWorker.IC.NANOCON_Asistencia;
+import ModuleWorker.SYSControl;
 import ModuleWorker.SYSFRMCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NCLPM.RESULTS;
+import java.util.concurrent.TimeUnit;
 
 /**
  *
@@ -69,7 +71,50 @@ public class JDMarcarAsistencia extends javax.swing.JDialog
 	return codigo;
     }
     
+    private int CT(int h, int m)
+    {
+       int HH=h*3600;
+       int mm=m*60;
+       int t=HH+mm;
+             
+       return t;
+    }
     
+    private String comprt(int CT1, int CT2)
+    {
+        if(CT1==CT2)
+        {
+           // System.out.println("hora EXACTA");
+            return "NO";
+            
+        }else
+            if(CT2<CT1)
+            {
+               // System.out.println("ENTRADA ANTES DE TIEMPO");
+                return "NO";
+                
+            }else
+                if(CT1<CT2)
+                {
+                    //System.out.println("HORA RETRASADA");
+
+                    int result = CT1-CT2;
+
+                    //System.out.println(Math.abs(result));
+                    //System.out.println("Tiene un retraso de : "+(Math.abs(result)/60)+" Minutos "+"("+convert_D(Math.abs(result))+" Horas)");
+                    return "Retraso de : "+(Math.abs(result)/60)+" Minutos "+"("+FMF(Math.abs(result)/60)+" Horas)";
+                }
+        return "NULL";
+        
+    }
+        
+    public String FMF(int minutos) 
+    {
+        String formato = "%02d:%02d";
+        long horasReales = TimeUnit.MINUTES.toHours(minutos);
+        long minutosReales = TimeUnit.MINUTES.toMinutes(minutos) - TimeUnit.HOURS.toMinutes(TimeUnit.MINUTES.toHours(minutos));
+        return String.format(formato, horasReales, minutosReales);
+    }
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -175,35 +220,25 @@ public class JDMarcarAsistencia extends javax.swing.JDialog
         
             //HORA DE ENTRADA
             //he:ee = he=heH:ee=heM
+            
             int heH = Integer.parseInt(ArrayTemp[0]);
             int heM = Integer.parseInt(ArrayTemp[1]);
             
-            //HORA DE ENTRADA ORIGINAL 
-            //heo:ee = heo=heoH:ee=heoM
-            int heoH = 8;
-            int heoM = 30;
-            //int r = (he-heo);
-                       
-            //Formula
-            //R=[(he:ee)-(heo:ee)]
-            //R=(heH-heoH):(heM-heoM)
+            String r = comprt(CT(8, 30), CT(heH,heM));
             
-            int re = (heH-heoH);
-            int ra = (heM-heoM);
-                        
-            String r = Math.abs(re)+":"+Math.abs(ra);
+            System.out.println(r);
             
-            
-            P_asist.RegistrarEntrada(NuevoCodigo(), ID_PER, mw.fecha_actual_clasica());
-            P_asist.UpdateEntrada(ID_PER, mw.fecha_actual_clasica(), r);
+            //P_asist.RegistrarEntrada(NuevoCodigo(), ID_PER, mw.fecha_actual_clasica());
+            //P_asist.UpdateEntrada(ID_PER, mw.fecha_actual_clasica(), r);
 
-            this.dispose();
+            //this.dispose();
+            SYSControl con = new SYSControl();
+            System.out.println(con.leer());
             
         } catch (Exception e) 
         {
             lc.write("Ha ocurrido un error al intentar registrar la entrada", "JDMarcarAsistencia", e);
         }
-        
         
     }//GEN-LAST:event_btnmarcarActionPerformed
 
@@ -238,11 +273,14 @@ public class JDMarcarAsistencia extends javax.swing.JDialog
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable()
         {
-            public void run() {
+            public void run() 
+            {
                 JDMarcarAsistencia dialog = new JDMarcarAsistencia(new javax.swing.JFrame(), true,"");
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
+                dialog.addWindowListener(new java.awt.event.WindowAdapter() 
+                {
                     @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
+                    public void windowClosing(java.awt.event.WindowEvent e) 
+                    {
                         System.exit(0);
                     }
                 });
