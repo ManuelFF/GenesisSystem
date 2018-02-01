@@ -46,6 +46,7 @@ public class EVENTS
         return fecha;
     }
     
+     
     public void write(String usuario,String descripcion,String formulario,String accion)
     {
         try 

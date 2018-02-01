@@ -46,7 +46,7 @@ public class RESULTS
         String fecha = dia_C+"-"+mes_C+"-"+año_C;
         return fecha;
     }
-    
+        
     public void write(String usuario,String formulario ,String tipo,String descripcion)
     {
         try 

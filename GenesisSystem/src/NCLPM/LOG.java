@@ -5,7 +5,6 @@
  */
 package NCLPM;
 
-import ModuleWorker.IC.MWCON;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -59,7 +58,6 @@ public class LOG
         
         return hora + ":" + minutos + ":" + segundos;
     }
-    
     
     public void write(String descripcion,String clase,Exception error)
     {
