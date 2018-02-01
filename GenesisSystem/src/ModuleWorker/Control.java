@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package ModuleWorker;
+import NCLPM.LOG;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -32,7 +33,7 @@ public class Control
     SYSAUDIOCON sysau = new SYSAUDIOCON();
 
     JFrame jf=new JFrame();
-    
+    LOG lc = new LOG();
     
     
     /** Constructor de clase */
@@ -50,9 +51,10 @@ public class Control
             long res = restarTiempo( tiempo );           
             if( res < segundos )
             {              
-                sysau.E_CRITICAL_ERROR();
-                JOptionPane.showMessageDialog(jf, "El Sistema ya esta en Ejecución", "Sistema en Ejecución", JOptionPane.ERROR_MESSAGE);
-                return false;
+                //sysau.E_CRITICAL_ERROR();
+                //JOptionPane.showMessageDialog(jf, "El Sistema ya esta en Ejecución", "Sistema en Ejecución", JOptionPane.ERROR_MESSAGE);
+                
+                 return false;
             }
             else
             {        
