@@ -14,6 +14,7 @@ import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSFRMCON;
 import NCLPM.LOG;
 import NCLPM.EVENTS;
+import java.io.File;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import org.apache.commons.codec.digest.DigestUtils;
@@ -35,6 +36,10 @@ public class JFRInicioSesion extends javax.swing.JFrame
     ShakingFrame s = new ShakingFrame(this); //SHAKING
     SYSAUDIOCON sysau = new SYSAUDIOCON(); //EFECTOS
 
+    //FICHERO
+    private String appPath = System.getProperties().getProperty("user.home");
+    private File fichero = new File( appPath + "\\GenesysSystem.tmp");
+    
     public JFRInicioSesion() 
     {
         initComponents();
@@ -53,7 +58,36 @@ public class JFRInicioSesion extends javax.swing.JFrame
             
         }else
         {
-            System.exit(0);
+            
+            sysau.E_CRITICAL_ERROR();                
+                 try
+                    {
+                        JFrame jf=new JFrame();
+                        jf.setAlwaysOnTop(true); 
+
+                       // display the showOptionDialog
+                        Object[] options = { "RECUPERAR", "SALIR"};
+                        int choice = JOptionPane.showOptionDialog(jf, 
+                            "El sistema ya esta en ejecución!\nSi el sistema no esta en ejecucion intente 'RECUPERAR' y vuelva a iniciar el sistema", 
+                            "ERROR EN LA CREACIÓN DE LA INSTANCIA", 
+                            JOptionPane.YES_NO_OPTION, 
+                            JOptionPane.ERROR_MESSAGE, 
+                            null, 
+                            options, 
+                            options[0]);
+
+                        // interpret the user's choice
+                        if (choice == 0)
+                        {
+                            fichero.deleteOnExit();
+                            System.exit(0);
+                        }
+
+                        if (choice == 1)
+                        {
+                              System.exit(0);
+                        }
+                    }catch(Exception e){lc.write("Problema al intentar crear una instancia del sistema", "control.java", e);}
         }
     }
     
