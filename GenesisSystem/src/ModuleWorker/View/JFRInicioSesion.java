@@ -5,16 +5,15 @@
  */
 package ModuleWorker.View;
 
-import ModuleWorker.Control;
 import ModuleWorker.IC.MICROCON_InicioSesion;
 import ModuleWorker.IC.MWCON;
 import ModuleWorker.IC.NANOCON_Asistencia;
 import ModuleWorker.IC.ShakingFrame;
 import ModuleWorker.SYSAUDIOCON;
+import ModuleWorker.SYSControl;
 import ModuleWorker.SYSFRMCON;
 import NCLPM.LOG;
 import NCLPM.EVENTS;
-import java.io.File;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import org.apache.commons.codec.digest.DigestUtils;
@@ -35,10 +34,6 @@ public class JFRInicioSesion extends javax.swing.JFrame
     SYSFRMCON sysfrm = new SYSFRMCON();
     ShakingFrame s = new ShakingFrame(this); //SHAKING
     SYSAUDIOCON sysau = new SYSAUDIOCON(); //EFECTOS
-
-    //FICHERO
-    private String appPath = System.getProperties().getProperty("user.home");
-    private File fichero = new File( appPath + "\\GenesysSystem.tmp");
     
     public JFRInicioSesion() 
     {
@@ -52,42 +47,42 @@ public class JFRInicioSesion extends javax.swing.JFrame
 
     private void control_impl()
     {
-        Control c = new Control();
-        if(c.comprobar())
+        SYSControl con = new SYSControl();
+        if(con.comprobar() == 3 )
         {
             
         }else
         {
-            
             sysau.E_CRITICAL_ERROR();                
-                 try
-                    {
-                        JFrame jf=new JFrame();
-                        jf.setAlwaysOnTop(true); 
+             try
+             {
+                JFrame jf=new JFrame();
+                jf.setAlwaysOnTop(true); 
 
-                       // display the showOptionDialog
-                        Object[] options = { "RECUPERAR", "SALIR"};
-                        int choice = JOptionPane.showOptionDialog(jf, 
-                            "El sistema ya esta en ejecución!\nSi el sistema no esta en ejecucion intente 'RECUPERAR' y vuelva a iniciar el sistema", 
-                            "ERROR EN LA CREACIÓN DE LA INSTANCIA", 
-                            JOptionPane.YES_NO_OPTION, 
-                            JOptionPane.ERROR_MESSAGE, 
-                            null, 
-                            options, 
-                            options[0]);
+               // display the showOptionDialog
+                Object[] options = { "RECUPERAR", "SALIR"};
+                int choice = JOptionPane.showOptionDialog(jf, 
+                    "                 El sistema ya esta en ejecución!\n"
+                            + "        Si el sistema no esta en ejecucion intente\nla opción 'RECUPERAR' y vuelva a iniciar el sistema\n", 
+                    "ERROR EN LA CREACIÓN DE LA INSTANCIA", 
+                    JOptionPane.YES_NO_OPTION,
+                    JOptionPane.ERROR_MESSAGE, 
+                    null, 
+                    options, 
+                    options[0]);
 
-                        // interpret the user's choice
-                        if (choice == 0)
-                        {
-                            fichero.deleteOnExit();
-                            System.exit(0);
-                        }
+                // interpret the user's choice
+                if (choice == 0)
+                {
+                    con.write("2");
+                }
 
-                        if (choice == 1)
-                        {
-                              System.exit(0);
-                        }
-                    }catch(Exception e){lc.write("Problema al intentar crear una instancia del sistema", "control.java", e);}
+                if (choice == 1)
+                {
+                      System.exit(0);
+                }
+                
+            }catch(Exception e){lc.write("Problema al intentar crear una instancia del sistema", "control.java", e);}
         }
     }
     
@@ -272,9 +267,7 @@ public class JFRInicioSesion extends javax.swing.JFrame
            sysau.E_CRITICAL_ERROR();
            JOptionPane.showMessageDialog(jf, "Se quedo sin intentos\nEL SISTEMA SE CERRARA!", "Sobrepaso limite de intentos", JOptionPane.ERROR_MESSAGE);
            evn.write("Aún no definido", "Intento entrar al sistema pero ya no tenia intentos", "JFRInicioSesion", "FUE EXPULSADO");
-           new Control().cerrarApp();
-           System.exit(0);
-                       
+           new SYSControl().Close_System();
        }
        else
        {//ELSE INTENTOS    
@@ -345,9 +338,8 @@ public class JFRInicioSesion extends javax.swing.JFrame
      
         try 
         {
-            evn.write("Aún no definido", "Salio del sistema", "JFRInicioSesion", "Botón 'SALIR' Presionado");
-            new Control().cerrarApp();
-            System.exit(0);
+            evn.write("anonimo", "Salio del sistema", "JFRInicioSesion", "Botón 'SALIR' Presionado");
+            new SYSControl().Close_System();
         } catch (Exception e) 
             {
                lc.write("No se pudo salir del sistema", "JFRInicioSesion", e);
