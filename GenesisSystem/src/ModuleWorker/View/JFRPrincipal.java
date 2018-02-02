@@ -5,11 +5,11 @@
  */
 package ModuleWorker.View;
 
-import ModuleWorker.Control;
 import ModuleWorker.IC.MWCON;
 import ModuleWorker.IC.NANOCON_Asistencia;
 import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSCON;
+import ModuleWorker.SYSControl;
 import ModuleWorker.SYSWALLPCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
@@ -413,8 +413,8 @@ public class JFRPrincipal extends javax.swing.JFrame
         try 
         {
           evn.write(JMSesion.getText(), "Ha cerrado sesión y salio del sistema", "JFRPrincipal", "Botón 'Cerrar Sesión' Presionado");
-          new Control().cerrarApp();
-          System.exit(0);
+          new SYSControl().Close_System();
+
             
         } catch (Exception sqle) 
             {
