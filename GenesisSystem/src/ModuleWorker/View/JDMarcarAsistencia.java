@@ -8,7 +8,6 @@ package ModuleWorker.View;
 import ModuleWorker.Core.NOB_Asistencia;
 import ModuleWorker.IC.MWCON;
 import ModuleWorker.IC.NANOCON_Asistencia;
-import ModuleWorker.SYSControl;
 import ModuleWorker.SYSFRMCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
@@ -228,12 +227,11 @@ public class JDMarcarAsistencia extends javax.swing.JDialog
             
             System.out.println(r);
             
-            //P_asist.RegistrarEntrada(NuevoCodigo(), ID_PER, mw.fecha_actual_clasica());
-            //P_asist.UpdateEntrada(ID_PER, mw.fecha_actual_clasica(), r);
+            P_asist.RegistrarEntrada(NuevoCodigo(), ID_PER, mw.fecha_actual_clasica());
+            P_asist.UpdateEntrada(ID_PER, mw.fecha_actual_clasica(), r);
 
-            //this.dispose();
-            SYSControl con = new SYSControl();
-            System.out.println(con.leer());
+            this.dispose();
+        
             
         } catch (Exception e) 
         {
