@@ -51,7 +51,7 @@ public class EVENTS
     {
         try 
         {
-            String archivo = "./LGS/events_"+date()+".txt";
+            String archivo = "./LGS/Events/events_"+date()+"-"+usuario+".txt";
             // Creamos un objeto f, que representa al archivo Usuarios.txt en formato binario
             File f = new File(archivo);
             // Permite abrir el archivo para ESCRITURA (Permite grabar datos)
