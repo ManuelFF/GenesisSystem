@@ -21,8 +21,8 @@ import javax.swing.JFrame;
 public class SYSControl 
 {
     //fichero TMP
-    private String appPath = System.getProperties().getProperty("user.home");
-    private File fichero = new File( appPath + "\\AppData\\Local\\Temp\\GenesisTemporalFile.tmp");
+    private final String appPath = System.getProperties().getProperty("user.home");
+    private final File fichero = new File( appPath + "\\AppData\\Local\\Temp\\GenesisTemporalFile.tmp");
     
     SYSAUDIOCON sysau = new SYSAUDIOCON();
 
@@ -88,7 +88,7 @@ public class SYSControl
     public int read()
     {
         //otra formato
-       String linea = "0";        
+       String linea = "0";
        int codigo = 0;
        BufferedReader bufferedReader;
        try 
