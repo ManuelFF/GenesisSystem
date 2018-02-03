@@ -410,16 +410,17 @@ public class JFRPrincipal extends javax.swing.JFrame
     }//GEN-LAST:event_JSMMantenimientoUsuariosActionPerformed
 
     private void JSMCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMCerrarSesionActionPerformed
-        try 
-        {
-          evn.write(JMSesion.getText(), "Ha cerrado sesión y salio del sistema", "JFRPrincipal", "Botón 'Cerrar Sesión' Presionado");
-          new SYSControl().Close_System();
+        
+    try 
+    {
+      evn.write(JMSesion.getText(), "Ha cerrado sesión y salio del sistema", "JFRPrincipal", "Botón 'Cerrar Sesión' Presionado");
+      new SYSControl().Close_System();
 
-            
-        } catch (Exception sqle) 
-            {
-               lc.write( "Ha ocurrido algun error al intentar cerrar el sistema!","JFPrincipal metodo JSMCerrar Sesión Linea 255", sqle);
-            }
+
+    } catch (Exception sqle) 
+        {
+           lc.write( "Ha ocurrido algun error al intentar cerrar el sistema!","JFPrincipal metodo JSMCerrar Sesión Linea 255", sqle);
+        }
 
     }//GEN-LAST:event_JSMCerrarSesionActionPerformed
 
