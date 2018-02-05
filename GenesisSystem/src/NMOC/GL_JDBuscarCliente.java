@@ -11,6 +11,7 @@ import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NMOC.GLCL.GLVC_JDBuscarCliente;
 import NMOC.MD_Consultar_View.JIFConsultarOrdenesTrabajo;
+import NMOC.MD_Generar.View.JIFGenerarCertificado;
 import NMOC.MD_Generar.View.JIFGenerarOrdenTrabajo;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -324,8 +325,25 @@ public class GL_JDBuscarCliente extends javax.swing.JDialog
                         select = ""+JTbuscarCliente.getValueAt(row, 1);
                      }
                 evn.write(JFRPrincipal.JMSesion.getText(),"Ha seleccionado al Cliente "+select,"GL_JDBuscarCliente", "Tabla de Cliente presionado");
-                
-                
+            }
+            
+            if(formulario.equals("GEN_CERT"))
+            {
+                if(buftip.equals("Juridica"))
+                {
+                    JIFGenerarCertificado.txtidCli.setText(""+JTbuscarCliente.getValueAt(row, 0));
+
+                    select = ""+JTbuscarCliente.getValueAt(row, 1);
+                    
+                }else 
+                     if(buftip.equals("Natural"))
+                     {
+                         
+                        JIFGenerarCertificado.txtidCli.setText(""+JTbuscarCliente.getValueAt(row, 0));
+                  
+                        select = ""+JTbuscarCliente.getValueAt(row, 1);
+                     }
+                evn.write(JFRPrincipal.JMSesion.getText(),"Ha seleccionado al Cliente "+select,"GL_JDBuscarCliente", "Tabla de Cliente presionado");
             }
 
             this.dispose();
