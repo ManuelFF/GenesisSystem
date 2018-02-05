@@ -425,7 +425,7 @@ public class JIFMantenerProductos extends javax.swing.JInternalFrame
             jf.setAlwaysOnTop(true);
             clearCacheDB();
             
-            evn.write(lblusuario.getText(),"Hizo click en el botón 'Nuevo' Producto"  , "JIFMantenerProductos", "Botón 'Producto' presionado");
+            evn.write(lblusuario.getText(),"Hizo click en el botón 'Nuevo' Producto"  , "JIFMantenerProductos", "Botón 'Nuevo' presionado");
             
             if(btnnuevo.getText().equals("Nuevo"))
             {
