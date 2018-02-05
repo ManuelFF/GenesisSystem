@@ -617,7 +617,7 @@ public class SGL_VIEW_AreaTrabajo extends javax.swing.JDialog
     private void txtnumeroambientesKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtnumeroambientesKeyTyped
         
         char car = evt.getKeyChar();
-        if( txtnumeroambientes.getText().length()>=8 ) evt.consume();
+        if( txtnumeroambientes.getText().length()>=100 ) evt.consume();
         if(( car<'0' || car>'9' )) evt.consume();
         
         
