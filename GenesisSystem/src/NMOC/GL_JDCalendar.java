@@ -10,9 +10,8 @@ import ModuleWorker.SYSFRMCON;
 import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
+import NMOC.MD_Generar.View.JIFGenerarCertificado;
 import NMOC.MD_Generar.View.JIFGenerarOrdenTrabajo;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
 
 /**
  *
@@ -226,6 +225,18 @@ public class GL_JDCalendar extends javax.swing.JDialog
             {
                 evn.write(JFRPrincipal.JMSesion.getText(), "Establecio la fecha "+dia+"/"+mes+"/"+año+"\n en el formulario 'JIFGenerarOrdenServicio'", "JDCalendar", "Botón 'Establecer' presionado");
                 JIFGenerarOrdenTrabajo.txtfecha.setText(dia+"/"+mes+"/"+año);
+            }
+            
+            if(formulario.equals("GEN_CERT_SERV"))
+            {
+                evn.write(JFRPrincipal.JMSesion.getText(), "Establecio la fecha "+dia+"/"+mes+"/"+año+"\n en el formulario 'JIFGenerarCertificado'", "JDCalendar", "Botón 'Establecer' presionado");
+                JIFGenerarCertificado.txtfechaServicio.setText(dia+"/"+mes+"/"+año);
+            }
+            
+            if(formulario.equals("GEN_CERT_VEN"))
+            {
+                evn.write(JFRPrincipal.JMSesion.getText(), "Establecio la fecha "+dia+"/"+mes+"/"+año+"\n en el formulario 'JIFGenerarCertificado'", "JDCalendar", "Botón 'Establecer' presionado");
+                JIFGenerarCertificado.txtfechaVencimiento.setText(dia+"/"+mes+"/"+año);
             }
         }
         
