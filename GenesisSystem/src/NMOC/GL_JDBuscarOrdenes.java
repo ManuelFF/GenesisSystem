@@ -10,6 +10,7 @@ import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NMOC.GLCL.GLVC_JDBuscarOrdenes;
+import NMOC.MD_Generar.View.JIFGenerarCertificado;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
@@ -277,6 +278,14 @@ public class GL_JDBuscarOrdenes extends javax.swing.JDialog
             P_BO.iniciar(""+JTOrden.getValueAt(row, 0),buffer);
             
             evn.write(JFRPrincipal.JMSesion.getText(),"Ha seleccionado la orden "+JTOrden.getValueAt(row, 1),"GL_JDBuscarOrdenes", "Tabla de Orden presionada");
+        }
+        
+        if(formulario.equals("GEN_CERT"))
+        {
+            
+            JIFGenerarCertificado.txtnumeroOrden.setText(""+JTOrden.getValueAt(row, 1));
+            
+           evn.write(JFRPrincipal.JMSesion.getText(),"Ha seleccionado la orden "+JTOrden.getValueAt(row, 1),"GL_JDBuscarOrdenes", "Tabla de Orden presionada");
         }
 
         this.dispose();
