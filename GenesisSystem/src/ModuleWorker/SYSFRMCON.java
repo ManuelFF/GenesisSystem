@@ -102,7 +102,8 @@ public class SYSFRMCON
     //MANTENER USUARIO
     public String T_mantenerUsuario()
     {
-        String t = PRE_STABLE()+ " Mantener Usuario";
+        String nivel = "0.5";
+        String t = PRE_STABLE()+ " Mantener Usuario "+nivel;
         return t;
     }
     
@@ -114,7 +115,8 @@ public class SYSFRMCON
     //JDES SELECCIONAR PERSONAL
     public String T_JDESseleccionarPersonal()
     {
-        String t = ALFA()+ " Seleccionar Personal";
+        String nivel = "0.5";
+        String t = ALFA()+ " Seleccionar Personal "+nivel;
         return t;
     }
     
@@ -126,7 +128,8 @@ public class SYSFRMCON
     //PERMISOS
     public String T_Permisos()
     {
-        String t = CANARY()+" Permisos de Usuarios";
+        String nivel = "0.5";
+        String t = CANARY()+" Permisos de Usuarios "+nivel;
         return t;
     }
     
@@ -138,7 +141,8 @@ public class SYSFRMCON
     //CENTRO DE NOTIFICACIONES
     public String T_Centro_Notificaciones()
     {
-        String t = DEV()+" Centro de Notificaciones";
+        String nivel = "0.5";
+        String t = DEV()+" Centro de Notificaciones "+nivel;
         return t;
     }
     
@@ -147,10 +151,11 @@ public class SYSFRMCON
         p.setBackground(Color.GRAY.brighter());
     }
     
-    //CENTRO DE NOTIFICACIONES
+    //REGISTRAR ENTRADA
     public String T_RegistrarAsistencia()
     {
-        String t = DEV()+" Registre su entrada";
+        String nivel = "0.5";
+        String t = DEV()+" Registre su entrada "+nivel;
         return t;
     }
     
@@ -164,7 +169,8 @@ public class SYSFRMCON
     //CALENDAR
     public String T_Date()
     {
-        String t = DEV()+" Selector de Fecha y Hora";
+        String nivel = "0.5";
+        String t = DEV()+" Selector de Fecha y Hora "+nivel;
         return t;
     }
     
@@ -176,7 +182,8 @@ public class SYSFRMCON
     //BUSCAR VENDEDOR
     public String T_BuscarVendedor()
     {
-        String t = DEV()+" Buscar Vendedor";
+        String nivel = "0.5";
+        String t = DEV()+" Buscar Vendedor "+nivel;
         return t;
     }
     
@@ -188,7 +195,8 @@ public class SYSFRMCON
     //BUSCAR CLIENTE
     public String T_BuscarCliente()
     {
-        String t = DEV()+" Buscar Cliente";
+        String nivel = "0.5";
+        String t = DEV()+" Buscar Cliente "+nivel;
         return t;
     }
     
@@ -200,7 +208,8 @@ public class SYSFRMCON
     //BUSCAR ORDENES DE TRABAJO
     public String T_BuscarOrdenes()
     {
-        String t = DEV()+" Buscar Ordenes de Trabajo";
+        String nivel = "0.5";
+        String t = DEV()+" Buscar Ordenes de Trabajo "+nivel;
         return t;
     }
     
@@ -212,7 +221,8 @@ public class SYSFRMCON
     //BUSCAR CERTIFICADOS
     public String T_BuscarCertificados()
     {
-        String t = DEV()+" Buscar Certificados";
+        String nivel = "0.5";
+        String t = DEV()+" Buscar Certificados "+nivel;
         return t;
     }
     
@@ -228,7 +238,8 @@ public class SYSFRMCON
     //AREA TRABAJO
     public String T_GenerarArea()
     {
-        String t = DEV()+" Generar Áreas de Trabajo";
+        String nivel = "0.5";
+        String t = DEV()+" Generar Áreas de Trabajo "+nivel;
         return t;
     }
     
@@ -240,7 +251,8 @@ public class SYSFRMCON
     //SERVICIOS
     public String T_Servicios()
     {
-        String t = DEV()+" Importar Servicio";
+        String nivel = "0.5";
+        String t = DEV()+" Importar Servicio "+nivel;
         return t;
     }
     
@@ -252,7 +264,8 @@ public class SYSFRMCON
     //OPERARIOS
     public String T_Operarios()
     {
-        String t = DEV()+" Importar Operarios";
+        String nivel = "0.5";
+        String t = DEV()+" Importar Operarios "+nivel;
         return t;
     }
     
@@ -264,7 +277,8 @@ public class SYSFRMCON
     //PRODUCTOS
     public String T_Productos()
     {
-        String t = DEV()+" Importar Productos";
+        String nivel = "0.5";
+        String t = DEV()+" Importar Productos "+nivel;
         return t;
     }
     
@@ -276,7 +290,8 @@ public class SYSFRMCON
     //IMPLEMENTOS
     public String T_Implementos()
     {
-        String t = DEV()+" Importar Implementos";
+        String nivel = "0.5";
+        String t = DEV()+" Importar Implementos "+nivel;
         return t;
     }
     
@@ -292,7 +307,8 @@ public class SYSFRMCON
     //MANTENER CLIENTES
     public String T_MantenerClientes()
     {
-        String t = BETA()+" Mantener Clientes";
+        String nivel = "0.5";
+        String t = BETA()+" Mantener Clientes "+nivel;
         return t;
     }
     
@@ -304,7 +320,8 @@ public class SYSFRMCON
     //MANTENER PERSONAL
     public String T_MantenerPersonal()
     {
-        String t = BETA()+" Mantener Personal";
+        String nivel = "0.5";
+        String t = BETA()+" Mantener Personal "+nivel;
         return t;
     }
     
@@ -316,7 +333,8 @@ public class SYSFRMCON
     //MANTENER PRODUCTO
     public String T_MantenerProducto()
     {
-        String t = ALFA()+" Mantener Producto";
+        String nivel = "0.5";
+        String t = ALFA()+" Mantener Producto "+nivel;
         return t;
     }
     
@@ -328,7 +346,8 @@ public class SYSFRMCON
     //MANTENER IMPLEMENTO
     public String T_MantenerImplemento()
     {
-        String t = ALFA()+" Mantener Implemento";
+        String nivel = "0.5";
+        String t = ALFA()+" Mantener Implemento "+nivel;
         return t;
     }
     
@@ -343,7 +362,8 @@ public class SYSFRMCON
     //GENERAR COTIZACIÓN
     public String T_GenerarCotización()
     {
-        String t = DEV()+" Generar Cotización";
+        String nivel = "0.5";
+        String t = DEV()+" Generar Cotización "+nivel;
         return t;
     }
     
@@ -355,7 +375,8 @@ public class SYSFRMCON
     //GENERAR ORDEN SERVICIO
     public String T_GenerarOrden()
     {
-        String t = DEV()+" Generar Orden Servicio";
+        String nivel = "0.5";
+        String t = DEV()+" Generar Orden Servicio "+nivel;
         return t;
     }
     
@@ -367,7 +388,8 @@ public class SYSFRMCON
     //GENERAR CERTIFICADO
     public String T_Certificado()
     {
-        String t = DEV()+" Generar Certificados de Servicios";
+        String nivel = "0.5";
+        String t = DEV()+" Generar Certificados de Servicios "+nivel;
         return t;
     }
     
@@ -382,7 +404,8 @@ public class SYSFRMCON
     //CONSULTAR ORDEN
     public String T_ConsultarORden()
     {
-        String t = DEV()+" Generar Cotización";
+        String nivel = "0.5";
+        String t = DEV()+" Generar Cotización "+nivel;
         return t;
     }
     
