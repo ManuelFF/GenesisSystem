@@ -405,7 +405,7 @@ public class SYSFRMCON
     public String T_ConsultarORden()
     {
         String nivel = "0.5";
-        String t = DEV()+" Generar Cotización "+nivel;
+        String t = DEV()+" Consultar Orden de Servicio "+nivel;
         return t;
     }
     
@@ -414,5 +414,17 @@ public class SYSFRMCON
         p.setBackground(Color.GRAY.brighter());
     }
     
+    //CONSULTAR CERTIFICADO
+    public String T_ConsultarCertificado()
+    {
+        String nivel = "0.5";
+        String t = DEV()+" Consultar Certificado "+nivel;
+        return t;
+    }
+    
+    public void B_ConsultarCertificado(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
     
 }
