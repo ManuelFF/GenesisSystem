@@ -14,6 +14,7 @@ import ModuleWorker.SYSWALLPCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NMOC.MD_Consultar_View.JIFConsultarOrdenesTrabajo;
+import NMOC.MD_Generar.View.JIFGenerarCertificado;
 import NMOC.MD_Generar.View.JIFGenerarCotizacion;
 import NMOC.MD_Generar.View.JIFGenerarOrdenTrabajo;
 import NMOC.MD_Mantenimientos.View.JIFMantenerClientes;
@@ -115,9 +116,9 @@ public class JFRPrincipal extends javax.swing.JFrame
         JMGenerar = new javax.swing.JMenu();
         JSMGenerarCotizacion = new javax.swing.JMenuItem();
         JSMGenerarOrden = new javax.swing.JMenuItem();
+        JSMGenerarCertificado = new javax.swing.JMenuItem();
         JMConsultar = new javax.swing.JMenu();
         JSMConsultarOrden = new javax.swing.JMenuItem();
-        JSMConsultarCert = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
 
@@ -321,6 +322,16 @@ public class JFRPrincipal extends javax.swing.JFrame
         });
         JMGenerar.add(JSMGenerarOrden);
 
+        JSMGenerarCertificado.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        JSMGenerarCertificado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Certificado_24.png"))); // NOI18N
+        JSMGenerarCertificado.setText("Generar Certificado");
+        JSMGenerarCertificado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JSMGenerarCertificadoActionPerformed(evt);
+            }
+        });
+        JMGenerar.add(JSMGenerarCertificado);
+
         JMPrincipal.add(JMGenerar);
 
         JMConsultar.setText("Consultar");
@@ -336,15 +347,6 @@ public class JFRPrincipal extends javax.swing.JFrame
             }
         });
         JMConsultar.add(JSMConsultarOrden);
-
-        JSMConsultarCert.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        JSMConsultarCert.setText("Certificados");
-        JSMConsultarCert.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JSMConsultarCertActionPerformed(evt);
-            }
-        });
-        JMConsultar.add(JSMConsultarCert);
 
         JMPrincipal.add(JMConsultar);
 
@@ -817,12 +819,38 @@ public class JFRPrincipal extends javax.swing.JFrame
         
     }//GEN-LAST:event_JSMRegistrarSalidaActionPerformed
 
-    private void JSMConsultarCertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMConsultarCertActionPerformed
+    private void JSMGenerarCertificadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMGenerarCertificadoActionPerformed
+  
+    try
+    {
+        JIFGenerarCertificado CERT = new JIFGenerarCertificado();
+        JFrame jf=new JFrame();
+        jf.setAlwaysOnTop(true);
 
-        MWCON mw = new MWCON();
-        mw.abrir_archivo("./CERT/Certificados.jar");
-                
-    }//GEN-LAST:event_JSMConsultarCertActionPerformed
+        if(JSMGenerarCertificado.getActionCommand().equals("Abierto"))
+            {
+                SYSAUDIOCON sysau = new SYSAUDIOCON();
+                sysau.E_ERROR();
+                JOptionPane.showMessageDialog(jf,"Ya esta abierto", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+            }
+        else
+        {                
+            JSMGenerarCertificado.setActionCommand("Abierto");
+            JDEscritorio.add(CERT);
+            Dimension desktopSize = JDEscritorio.getSize();
+            Dimension FrameSize = CERT.getSize();
+            CERT.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
+            evn.write(JMSesion.getText(), "Abrio el formulario 'Generar Certificado'", "JFPrincipal", "Menu 'Generar Certificado' Presionado");
+            CERT.show();
+        }
+    }
+    catch (Exception e)
+    {
+
+        lc.write("Error intentando abrir 'Generar Orden Servicio'", "JFRPrincipal", e);
+    }     
+
+    }//GEN-LAST:event_JSMGenerarCertificadoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -870,8 +898,8 @@ public class JFRPrincipal extends javax.swing.JFrame
     private javax.swing.JMenuBar JMPrincipal;
     public static javax.swing.JMenu JMSesion;
     private javax.swing.JMenuItem JSMCerrarSesion;
-    public static javax.swing.JMenuItem JSMConsultarCert;
     public static javax.swing.JMenuItem JSMConsultarOrden;
+    public static javax.swing.JMenuItem JSMGenerarCertificado;
     public static javax.swing.JMenuItem JSMGenerarCotizacion;
     public static javax.swing.JMenuItem JSMGenerarOrden;
     public static javax.swing.JMenuItem JSMMantenerClientes;
