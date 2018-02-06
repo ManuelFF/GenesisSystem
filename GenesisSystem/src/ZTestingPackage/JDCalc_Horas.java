@@ -5,6 +5,7 @@
  */
 package ZTestingPackage;
 
+import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSControl;
 import javax.swing.JOptionPane;
 
@@ -14,6 +15,7 @@ import javax.swing.JOptionPane;
  */
 public class JDCalc_Horas extends javax.swing.JDialog 
 {
+        SYSAUDIOCON sysau = new SYSAUDIOCON();
 
     /**
      * Creates new form JDCalc_Horas
@@ -22,7 +24,6 @@ public class JDCalc_Horas extends javax.swing.JDialog
     {
         super(parent, modal);
         initComponents();
-        control_impl();
     }
 
     private void control_impl()
@@ -167,17 +168,20 @@ public class JDCalc_Horas extends javax.swing.JDialog
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+//
+//        SYSControl con = new SYSControl();
+//        con.Close_System();
 
-        SYSControl con = new SYSControl();
-        con.Close_System();
+        sysau.E_ERROR();
             
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
-        SYSControl con = new SYSControl();
-        con.deleteTMP();
+//        SYSControl con = new SYSControl();
+//        con.deleteTMP();
 
+        sysau.S_STOP();
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
