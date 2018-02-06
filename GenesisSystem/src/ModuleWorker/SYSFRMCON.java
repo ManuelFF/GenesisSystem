@@ -351,6 +351,18 @@ public class SYSFRMCON
         p.setBackground(Color.GRAY.brighter());
     }
     
+    //GENERAR CERTIFICADO
+    public String T_Certificado()
+    {
+        String t = DEV()+" Generar Certificados de Servicios";
+        return t;
+    }
+    
+    public void B_Certificado(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+    
     //#########################################################################
     //FORMULARIOS CONSULTAR
     
