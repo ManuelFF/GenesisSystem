@@ -209,6 +209,19 @@ public class SYSFRMCON
         p.setBackground(Color.GRAY.brighter());
     }
     
+    //BUSCAR CERTIFICADOS
+    public String T_BuscarCertificados()
+    {
+        String t = DEV()+" Buscar Certificados";
+        return t;
+    }
+    
+    public void B_BuscarCertificados(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+    
+    
     //#########################################################################
     //FORMULARIOS DEL PAQUETE NISPM
     
