@@ -45,7 +45,10 @@ public class SYSAUDIOCON
     public void E_ERROR()
     {
         try 
-        {
+        {   
+            if(sonido.isActive()){sonido.close();}
+            if(sonido.isOpen()){sonido.close();}
+            
             sonido.open(AudioSystem.getAudioInputStream(new File("./WA_EF/ERROR.wav")));
             sonido.start();
           
@@ -59,6 +62,9 @@ public class SYSAUDIOCON
     {
         try 
         {
+            if(sonido.isActive()){sonido.close();}
+            if(sonido.isOpen()){sonido.close();}
+            
             sonido.open(AudioSystem.getAudioInputStream(new File("./WA_EF/CRITICAL_ERROR.wav")));
             sonido.start();
             
@@ -73,6 +79,9 @@ public class SYSAUDIOCON
     {
         try 
         {
+            if(sonido.isActive()){sonido.close();}
+            if(sonido.isOpen()){sonido.close();}
+            
             sonido.open(AudioSystem.getAudioInputStream(new File("./WA_EF/CERRAR_SESION.wav")));
             sonido.start();
           
@@ -86,6 +95,9 @@ public class SYSAUDIOCON
     {
         try 
         {
+            if(sonido.isActive()){sonido.close();}
+            if(sonido.isOpen()){sonido.close();}
+            
             sonido.open(AudioSystem.getAudioInputStream(new File("./WA_EF/INICIAR_SESION.wav")));
             sonido.start();
           
@@ -99,6 +111,9 @@ public class SYSAUDIOCON
     {
         try 
         {
+            if(sonido.isActive()){sonido.close();}
+            if(sonido.isOpen()){sonido.close();}
+            
             sonido.open(AudioSystem.getAudioInputStream(new File("./WA_EF/CLICK.wav")));
             sonido.start();
           
@@ -112,6 +127,9 @@ public class SYSAUDIOCON
     {
         try 
         {
+            if(sonido.isActive()){sonido.close();}
+            if(sonido.isOpen()){sonido.close();}
+            
             sonido.open(AudioSystem.getAudioInputStream(new File("./WA_EF/PUSH.wav")));
             sonido.start();
           
@@ -125,6 +143,9 @@ public class SYSAUDIOCON
     {
         try 
         {
+            if(sonido.isActive()){sonido.close();}
+            if(sonido.isOpen()){sonido.close();}
+            
             sonido.open(AudioSystem.getAudioInputStream(new File("./WA_EF/INFORMATION.wav")));
             sonido.start();
           
@@ -138,6 +159,9 @@ public class SYSAUDIOCON
     {
         try 
         {
+            if(sonido.isActive()){sonido.close();}
+            if(sonido.isOpen()){sonido.close();}
+            
             sonido.open(AudioSystem.getAudioInputStream(new File("./WA_EF/NOTIFY.wav")));
             sonido.start();
           
@@ -151,6 +175,9 @@ public class SYSAUDIOCON
     {
         try 
         {
+            if(sonido.isActive()){sonido.close();}
+            if(sonido.isOpen()){sonido.close();}
+            
             sonido.open(AudioSystem.getAudioInputStream(new File("./WA_EF/EXCLAMATION.wav")));
             sonido.start();
           
