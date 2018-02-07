@@ -266,7 +266,7 @@ public class JIFConsultarOrdenesTrabajo extends javax.swing.JInternalFrame
                                 .addComponent(txtnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(26, 26, 26)
                                 .addComponent(jLabel12)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel7)
@@ -473,7 +473,7 @@ public class JIFConsultarOrdenesTrabajo extends javax.swing.JInternalFrame
         try
         {
             evn.write(lblusuario.getText(), "Ha salido del formulario 'JIFConsultarOrdenTrabajo'", "JIFConsultarOrdenTrabajo", "Presiono Botón 'Salir'");
-            JFRPrincipal.JMConsultar.setActionCommand("CERRADO");
+            JFRPrincipal.JSMConsultarOrden.setActionCommand("CERRADO");
             this.dispose();
         } catch (Exception e)
         {
