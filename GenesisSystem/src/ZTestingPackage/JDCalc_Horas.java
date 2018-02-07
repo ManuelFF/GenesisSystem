@@ -5,8 +5,13 @@
  */
 package ZTestingPackage;
 
+import ModuleWorker.IC.MWCON;
+import ModuleWorker.IC.NANOCON_Asistencia;
 import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSControl;
+import ModuleWorker.View.JFRPrincipal;
+import java.util.concurrent.TimeUnit;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
@@ -59,6 +64,84 @@ public class JDCalc_Horas extends javax.swing.JDialog
         }
             
     }
+    
+    
+    //METODOS ESPECIALES DE REGISTRO DE SALIDA
+    
+    private int CT(int h,int m)
+    {
+        int HH = h*3600;
+        int mm = m*60;
+        int t = HH+mm;
+        return t;
+    }
+    
+    private String comprt(int CT1,int CT2)
+    {
+        if(CT1 == CT2)
+        {
+           return "0";  
+        }else
+            {
+                int result = CT1-CT2;
+                return "Ha trabajado : "+(Math.abs(result)/60)+" Minutos "+"("+FMF(Math.abs(result)/60)+" Horas)";
+                
+            }
+    }
+    
+    private String comprt_salida(int HS,int HSO,int CT1,int CT2)
+    {
+        
+        if(HS == HSO)
+        {
+            return "NO";
+        }else
+            if(HS>HSO)
+            {
+                int result = CT1-CT2;
+                
+                return "Ha trabajado horas extra : "+hora_extra(Math.abs(result)/60);
+            }else
+                if(HS<HSO)
+                {
+                    return "SI";
+                }
+        return "NULL";
+    }
+    
+    private String hora_extra(int m)
+    {
+        int HOT = 9;
+        int HT = m/60;
+        
+        if(HOT == HT)
+        {
+            return "0";
+        }else
+            if(HT>HOT)
+            {
+                return ""+(HT-HOT);
+            }else
+                if(HT<HOT)
+                {
+                    return "0";
+                }
+        System.out.println(HT);
+        return "NULL";
+    }
+    
+    public String FMF(int minutos) 
+    {
+        String formato = "%02d:%02d";
+        long horasReales = TimeUnit.MINUTES.toHours(minutos);
+        long minutosReales = TimeUnit.MINUTES.toMinutes(minutos) - TimeUnit.HOURS.toMinutes(TimeUnit.MINUTES.toHours(minutos));
+        return String.format(formato, horasReales, minutosReales);
+    }
+     
+    
+    //FIN METODOS ESPECIALES DE REGISTRO DE SALIDA
+    
+    
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -181,8 +264,51 @@ public class JDCalc_Horas extends javax.swing.JDialog
 //        SYSControl con = new SYSControl();
 //        con.deleteTMP();
 
-        sysau.S_STOP();
+
+    try 
+    {
+        JFrame jf=new JFrame();
+        jf.setAlwaysOnTop(true);
+
+
+        //hs -> HORA SALIDA
+
+        //PRIMERA SITUACION
+        //int hsH = 18;
+        //int hsM = 48;
+
+        //SEGUNDA SITUACION
+        int hsH = 18;
+        int hsM = 46;
+//###################################################        
+        //he -> HORA ENTRADA
         
+        //PRIMER SITUACION
+        //int heH = 9;
+        //int heM = 31;
+        
+        //SEGUNDA SITUACION
+        int heH = 9;
+        int heM = 07;
+        
+        //hso -> Hora Salida ORIGINAL
+        int hso = 17;
+
+        //FORMULA = R= comprt(HORA_SALIDA,HORA_ENTRADA);
+        String r = comprt(CT(hsH, hsM), CT(heH, heM));
+
+        System.out.println(r);
+
+        //Salida temprano
+        //FORMULA = ST = comprt(HORA SALIDA ,HORA SALIDA ORIGINAL,HORAS TRABAJADAS);
+        String ST = comprt_salida(hsH,hso,CT(hsH, hsM), CT(heH, heM));
+        System.out.println(ST);
+
+    } catch (Exception e) 
+        {
+            System.err.println(e);
+        }
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
