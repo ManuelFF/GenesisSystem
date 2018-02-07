@@ -10,6 +10,7 @@ import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NMOC.GLCL.GLVC_JDBuscarCliente;
+import NMOC.MD_Consultar_View.JIFConsultarCertificados;
 import NMOC.MD_Consultar_View.JIFConsultarOrdenesTrabajo;
 import NMOC.MD_Generar.View.JIFGenerarCertificado;
 import NMOC.MD_Generar.View.JIFGenerarOrdenTrabajo;
@@ -345,7 +346,35 @@ public class GL_JDBuscarCliente extends javax.swing.JDialog
                      }
                 evn.write(JFRPrincipal.JMSesion.getText(),"Ha seleccionado al Cliente "+select,"GL_JDBuscarCliente", "Tabla de Cliente presionado");
             }
+            
+            if(formulario.equals("GEN_CERT_CON"))
+            {
+                if(buftip.equals("Juridica"))
+                {
+                    JIFConsultarCertificados.txtid_cli.setText(""+JTbuscarCliente.getValueAt(row, 0));
+                    JIFConsultarCertificados.txtnombre.setText(""+JTbuscarCliente.getValueAt(row, 1));
+                    JIFConsultarCertificados.txtdni_ruc.setText(""+JTbuscarCliente.getValueAt(row, 2));
+                    JIFConsultarCertificados.txttelefono.setText(""+JTbuscarCliente.getValueAt(row, 5));
+                    JIFConsultarCertificados.txtcelular.setText(""+JTbuscarCliente.getValueAt(row, 6));
+                    JIFConsultarCertificados.txtdireccion.setText(""+JTbuscarCliente.getValueAt(row, 7));
 
+                    select = ""+JTbuscarCliente.getValueAt(row, 1);
+
+                }else 
+                     if(buftip.equals("Natural"))
+                     {
+                        JIFConsultarCertificados.txtid_cli.setText(""+JTbuscarCliente.getValueAt(row, 0));
+                        JIFConsultarCertificados.txtnombre.setText(""+JTbuscarCliente.getValueAt(row, 1));
+                        JIFConsultarCertificados.txtdni_ruc.setText(""+JTbuscarCliente.getValueAt(row, 2));
+                        JIFConsultarCertificados.txttelefono.setText(""+JTbuscarCliente.getValueAt(row, 3));
+                        JIFConsultarCertificados.txtcelular.setText(""+JTbuscarCliente.getValueAt(row, 4));
+                        JIFConsultarCertificados.txtdireccion.setText(""+JTbuscarCliente.getValueAt(row, 5));
+
+                        select = ""+JTbuscarCliente.getValueAt(row, 1);
+                     }
+                evn.write(JFRPrincipal.JMSesion.getText(),"Ha seleccionado al Cliente "+select,"GL_JDBuscarCliente", "Tabla de Cliente presionado");
+            }
+            
             this.dispose();
 
         } catch (Exception e)
