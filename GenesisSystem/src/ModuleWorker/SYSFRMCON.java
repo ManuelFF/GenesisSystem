@@ -376,7 +376,7 @@ public class SYSFRMCON
     public String T_GenerarOrden()
     {
         String nivel = "0.5";
-        String t = DEV()+" Generar Orden Servicio "+nivel;
+        String t = DEV()+" Generar Orden de Trabajo "+nivel;
         return t;
     }
     
@@ -405,7 +405,7 @@ public class SYSFRMCON
     public String T_ConsultarORden()
     {
         String nivel = "0.5";
-        String t = DEV()+" Consultar Orden de Servicio "+nivel;
+        String t = DEV()+" Consultar Orden de Trabajo "+nivel;
         return t;
     }
     
