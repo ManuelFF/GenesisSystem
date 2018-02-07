@@ -13,6 +13,7 @@ import ModuleWorker.SYSControl;
 import ModuleWorker.SYSWALLPCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
+import NMOC.MD_Consultar_View.JIFConsultarCertificados;
 import NMOC.MD_Consultar_View.JIFConsultarOrdenesTrabajo;
 import NMOC.MD_Generar.View.JIFGenerarCertificado;
 import NMOC.MD_Generar.View.JIFGenerarCotizacion;
@@ -119,6 +120,8 @@ public class JFRPrincipal extends javax.swing.JFrame
         JSMGenerarCertificado = new javax.swing.JMenuItem();
         JMConsultar = new javax.swing.JMenu();
         JSMConsultarOrden = new javax.swing.JMenuItem();
+        JSMConsultarCertificado = new javax.swing.JMenuItem();
+        JSMConsultarCertificadoVen = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
 
@@ -347,6 +350,26 @@ public class JFRPrincipal extends javax.swing.JFrame
             }
         });
         JMConsultar.add(JSMConsultarOrden);
+
+        JSMConsultarCertificado.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        JSMConsultarCertificado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/ConsultaCert 24.png"))); // NOI18N
+        JSMConsultarCertificado.setText("Consultar Certificado");
+        JSMConsultarCertificado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JSMConsultarCertificadoActionPerformed(evt);
+            }
+        });
+        JMConsultar.add(JSMConsultarCertificado);
+
+        JSMConsultarCertificadoVen.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        JSMConsultarCertificadoVen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/OutOFDate_ConsultaCert24.png"))); // NOI18N
+        JSMConsultarCertificadoVen.setText("Consultar Certificado Vencidos");
+        JSMConsultarCertificadoVen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JSMConsultarCertificadoVenActionPerformed(evt);
+            }
+        });
+        JMConsultar.add(JSMConsultarCertificadoVen);
 
         JMPrincipal.add(JMConsultar);
 
@@ -666,7 +689,7 @@ public class JFRPrincipal extends javax.swing.JFrame
           JFrame jf=new JFrame();
           jf.setAlwaysOnTop(true);
 
-          if(JMConsultar.getActionCommand().equals("Abierto"))
+          if(JSMConsultarOrden.getActionCommand().equals("Abierto"))
               {
                   SYSAUDIOCON sysau = new SYSAUDIOCON();
                   sysau.E_ERROR();
@@ -674,7 +697,7 @@ public class JFRPrincipal extends javax.swing.JFrame
               }
           else
           {                
-              JMConsultar.setActionCommand("Abierto");
+              JSMConsultarOrden.setActionCommand("Abierto");
               JDEscritorio.add(orden);
               Dimension desktopSize = JDEscritorio.getSize();
               Dimension FrameSize = orden.getSize();
@@ -768,53 +791,53 @@ public class JFRPrincipal extends javax.swing.JFrame
     
     private void JSMRegistrarSalidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMRegistrarSalidaActionPerformed
 
-        try 
+    try 
+    {
+        evn.write(JMSesion.getText(), "Ha registrado su salida", "JFRPrincipal", "Menu 'Registrar Salida' Presionado");
+        JFrame jf=new JFrame();
+        jf.setAlwaysOnTop(true);
+        MWCON mw = new MWCON();
+        NANOCON_Asistencia P_ASIST = new NANOCON_Asistencia();
+
+        String ID_PER = P_ASIST.obtenerIDNomCOn(JMSesion.getText());
+
+        String ArrayTemp[] = P_ASIST.obtenerHE(mw.fecha_actual_clasica(), ID_PER).split(":");
+        String ArrayTemp2[] = mw.hour_actual().split(":");
+
+
+        //hs
+        int hsH = Integer.parseInt(ArrayTemp2[0]);
+        int hsM = Integer.parseInt(ArrayTemp2[1]);
+
+        //int hsH = 20;
+        //int hsM = 30;
+
+        //he
+        int heH = Integer.parseInt(ArrayTemp[0]);
+        int heM = Integer.parseInt(ArrayTemp[1]);
+
+        //hso
+        int hso = 17;
+
+        //FORMULA = R= comprt(HORA_SALIDA,HORA_ENTRADA);
+        String r = comprt(CT(hsH, hsM), CT(heH, heM));
+
+        System.out.println(r);
+
+        //Salida temprano
+        //FORMULA = ST = comprt(HORA SALIDA,HORA SALIDA ORIGINAL,HORAS TRABAJADAS);
+        String ST = comprt_salida(hsH,hso,CT(hsH, hsM), CT(heH, heM));
+        System.out.println(ST);
+
+        P_ASIST.RegistrarSalida(ID_PER, mw.fecha_actual_clasica());
+        P_ASIST.UpdateSalida(ID_PER, mw.fecha_actual_clasica(),r,ST);
+        JSMRegistrarSalida.setEnabled(false);
+        JSMRegistrarSalida.setText("Salida Registrada");
+
+    } catch (Exception e) 
         {
-            evn.write(JMSesion.getText(), "Ha registrado su salida", "JFRPrincipal", "Menu 'Registrar Salida' Presionado");
-            JFrame jf=new JFrame();
-            jf.setAlwaysOnTop(true);
-            MWCON mw = new MWCON();
-            NANOCON_Asistencia P_ASIST = new NANOCON_Asistencia();
-
-            String ID_PER = P_ASIST.obtenerIDNomCOn(JMSesion.getText());
-
-            String ArrayTemp[] = P_ASIST.obtenerHE(mw.fecha_actual_clasica(), ID_PER).split(":");
-            String ArrayTemp2[] = mw.hour_actual().split(":");
-
-            
-            //hs
-            int hsH = Integer.parseInt(ArrayTemp2[0]);
-            int hsM = Integer.parseInt(ArrayTemp2[1]);
-            
-            //int hsH = 20;
-            //int hsM = 30;
-            
-            //he
-            int heH = Integer.parseInt(ArrayTemp[0]);
-            int heM = Integer.parseInt(ArrayTemp[1]);
-
-            //hso
-            int hso = 17;
-
-            //FORMULA = R= comprt(HORA_SALIDA,HORA_ENTRADA);
-            String r = comprt(CT(hsH, hsM), CT(heH, heM));
-            
-            System.out.println(r);
-
-            //Salida temprano
-            //FORMULA = ST = comprt(HORA SALIDA,HORA SALIDA ORIGINAL,HORAS TRABAJADAS);
-            String ST = comprt_salida(hsH,hso,CT(hsH, hsM), CT(heH, heM));
-            System.out.println(ST);
-
-            P_ASIST.RegistrarSalida(ID_PER, mw.fecha_actual_clasica());
-            P_ASIST.UpdateSalida(ID_PER, mw.fecha_actual_clasica(),r,ST);
-            JSMRegistrarSalida.setEnabled(false);
-            JSMRegistrarSalida.setText("Salida Registrada");
-            
-        } catch (Exception e) 
-            {
-                lc.write("Ha ocurrido algun error al intentar marcar salida", "CLASE PRINCIPAL -> REGISTRAR SALIDA", e);
-            }
+            lc.write("Ha ocurrido algun error al intentar marcar salida", "CLASE PRINCIPAL -> REGISTRAR SALIDA", e);
+        }
        
         
     }//GEN-LAST:event_JSMRegistrarSalidaActionPerformed
@@ -851,6 +874,45 @@ public class JFRPrincipal extends javax.swing.JFrame
     }     
 
     }//GEN-LAST:event_JSMGenerarCertificadoActionPerformed
+
+    private void JSMConsultarCertificadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMConsultarCertificadoActionPerformed
+
+        
+    try
+      {
+          JIFConsultarCertificados cert = new JIFConsultarCertificados();
+          JFrame jf=new JFrame();
+          jf.setAlwaysOnTop(true);
+
+          if(JSMConsultarCertificado.getActionCommand().equals("Abierto"))
+              {
+                  SYSAUDIOCON sysau = new SYSAUDIOCON();
+                  sysau.E_ERROR();
+                  JOptionPane.showMessageDialog(jf,"Ya esta abierto", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+              }
+          else
+          {                
+              JSMConsultarCertificado.setActionCommand("Abierto");
+              JDEscritorio.add(cert);
+              Dimension desktopSize = JDEscritorio.getSize();
+              Dimension FrameSize = cert.getSize();
+              cert.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
+              evn.write(JMSesion.getText(), "Abrio el formulario 'Consultar Certificado'", "JFPrincipal", "Menu 'Consultar Certificado' Presionado");
+              cert.show();
+          }
+      }
+      catch (Exception e)
+      {
+
+          lc.write("Error intentando abrir 'Consultar Certificado'", "JFRPrincipal", e);
+      }     
+        
+        
+    }//GEN-LAST:event_JSMConsultarCertificadoActionPerformed
+
+    private void JSMConsultarCertificadoVenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMConsultarCertificadoVenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JSMConsultarCertificadoVenActionPerformed
 
     /**
      * @param args the command line arguments
@@ -898,6 +960,8 @@ public class JFRPrincipal extends javax.swing.JFrame
     private javax.swing.JMenuBar JMPrincipal;
     public static javax.swing.JMenu JMSesion;
     private javax.swing.JMenuItem JSMCerrarSesion;
+    public static javax.swing.JMenuItem JSMConsultarCertificado;
+    public static javax.swing.JMenuItem JSMConsultarCertificadoVen;
     public static javax.swing.JMenuItem JSMConsultarOrden;
     public static javax.swing.JMenuItem JSMGenerarCertificado;
     public static javax.swing.JMenuItem JSMGenerarCotizacion;
