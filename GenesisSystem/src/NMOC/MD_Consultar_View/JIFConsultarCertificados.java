@@ -170,7 +170,7 @@ public class JIFConsultarCertificados extends javax.swing.JInternalFrame {
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 0, 102));
-        jLabel4.setText("Consultar Orden de Trabajo");
+        jLabel4.setText("Consultar Certificados ");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel5.setText("Fecha Sistema:");
@@ -178,6 +178,7 @@ public class JIFConsultarCertificados extends javax.swing.JInternalFrame {
         lbldate.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lbldate.setText("18/12/2017");
 
+        JTConsultar.setBackground(new java.awt.Color(204, 204, 204));
         JTConsultar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
