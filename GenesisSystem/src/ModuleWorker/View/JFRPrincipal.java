@@ -14,6 +14,7 @@ import ModuleWorker.SYSWALLPCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NMOC.MD_Consultar_View.JIFConsultarCertificados;
+import NMOC.MD_Consultar_View.JIFConsultarCertificadosVencidos;
 import NMOC.MD_Consultar_View.JIFConsultarOrdenesTrabajo;
 import NMOC.MD_Generar.View.JIFGenerarCertificado;
 import NMOC.MD_Generar.View.JIFGenerarCotizacion;
@@ -165,7 +166,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         btnGenerarOrden.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         JTBHerramientas.add(btnGenerarOrden);
 
-        btnAdministrarCertificado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Certificado32.png"))); // NOI18N
+        btnAdministrarCertificado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/CertificadoV232.png"))); // NOI18N
         btnAdministrarCertificado.setToolTipText("Administrar Certificados");
         btnAdministrarCertificado.setFocusable(false);
         btnAdministrarCertificado.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -326,7 +327,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         JMGenerar.add(JSMGenerarOrden);
 
         JSMGenerarCertificado.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        JSMGenerarCertificado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/Certificado_24.png"))); // NOI18N
+        JSMGenerarCertificado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/CertificadoV224.png"))); // NOI18N
         JSMGenerarCertificado.setText("Generar Certificado");
         JSMGenerarCertificado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -911,7 +912,37 @@ public class JFRPrincipal extends javax.swing.JFrame
     }//GEN-LAST:event_JSMConsultarCertificadoActionPerformed
 
     private void JSMConsultarCertificadoVenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMConsultarCertificadoVenActionPerformed
-        // TODO add your handling code here:
+        
+    try
+      {
+          
+          JIFConsultarCertificadosVencidos cert = new JIFConsultarCertificadosVencidos();
+          JFrame jf=new JFrame();
+          jf.setAlwaysOnTop(true);
+
+          if(JSMConsultarCertificadoVen.getActionCommand().equals("Abierto"))
+              {
+                  SYSAUDIOCON sysau = new SYSAUDIOCON();
+                  sysau.E_ERROR();
+                  JOptionPane.showMessageDialog(jf,"Ya esta abierto", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+              }
+          else
+          {                
+              JSMConsultarCertificadoVen.setActionCommand("Abierto");
+              JDEscritorio.add(cert);
+              Dimension desktopSize = JDEscritorio.getSize();
+              Dimension FrameSize = cert.getSize();
+              cert.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
+              evn.write(JMSesion.getText(), "Abrio el formulario 'Consultar Certificados Vencidos'", "JFPrincipal", "Menu 'Consultar Certificados Vencidos' Presionado");
+              cert.show();
+          }
+      }
+      catch (Exception e)
+      {
+
+          lc.write("Error intentando abrir 'Consultar Certificados Vencidos'", "JFRPrincipal", e);
+      }     
+        
     }//GEN-LAST:event_JSMConsultarCertificadoVenActionPerformed
 
     /**
