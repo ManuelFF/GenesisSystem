@@ -1,0 +1,63 @@
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFGenerarCertificado
+HORA : 11:43:17 AM
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el Certificado con ID  CERT-002
+ RAZÓN: SANTOS GONZALES 
+ CLIENTE ASIGNADO: CLI-00000251
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFGenerarCertificado
+HORA : 11:54:45 AM
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el Certificado con ID  CERT-002
+ RAZÓN: SANTOS GONZALES 
+ CLIENTE ASIGNADO: CLI-00000035
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFGenerarCertificado
+HORA : 11:57:13 AM
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el Certificado con ID  CERT-002
+ RAZÓN: SANTOS GONZALES 
+ CLIENTE ASIGNADO: CLI-00000035
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFGenerarCertificado
+HORA : 12:4:11 PM
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el Certificado con ID  CERT-002
+ RAZÓN: SANTOS GONZALES 
+ CLIENTE ASIGNADO: CLI-00000035
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFGenerarCertificado
+HORA : 12:6:56 PM
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el Certificado con ID  CERT-002
+ RAZÓN: SANTOS GONZALES 
+ CLIENTE ASIGNADO: CLI-00000035
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFGenerarCertificado
+HORA : 12:18:54 PM
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado el Certificado con ID  CERT-002
+ RAZÓN: SANTOS GONZALES 
+ CLIENTE ASIGNADO: CLI-00000035
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFGenerarCertificado
+HORA : 12:25:54 PM
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el Certificado con ID  CERT-003
+ RAZÓN: ASDASDASD 
+ CLIENTE ASIGNADO: CLI-00000044
+----------------------------------------------------
+ 
