@@ -17,6 +17,7 @@ import NMOC.MD_Generar.View.JIFGenerarOrdenTrabajo;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
+import javax.swing.JOptionPane;
 import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
@@ -333,7 +334,20 @@ public class GL_JDBuscarCliente extends javax.swing.JDialog
                 if(buftip.equals("Juridica"))
                 {
                     JIFGenerarCertificado.txtidCli.setText(""+JTbuscarCliente.getValueAt(row, 0));
-
+                    
+                    int op = JOptionPane.showConfirmDialog(this,"¿deseas rellenar con datos del cliente seleccionado?");
+                    
+                    if(op == 0)
+                    {
+                        JIFGenerarCertificado.txtrazonSocial.setText(""+JTbuscarCliente.getValueAt(row, 1));
+                        if(JTbuscarCliente.getValueAt(row, 5).toString().equals("-"))
+                        {
+                            JIFGenerarCertificado.txttelefono.setText(""+JTbuscarCliente.getValueAt(row, 6));
+                        }else{JIFGenerarCertificado.txttelefono.setText(""+JTbuscarCliente.getValueAt(row, 5));}
+                        
+                        JIFGenerarCertificado.JTADIRECCION.setText(""+JTbuscarCliente.getValueAt(row, 7));
+                    }
+                    
                     select = ""+JTbuscarCliente.getValueAt(row, 1);
                     
                 }else 
@@ -342,6 +356,26 @@ public class GL_JDBuscarCliente extends javax.swing.JDialog
                          
                         JIFGenerarCertificado.txtidCli.setText(""+JTbuscarCliente.getValueAt(row, 0));
                   
+                        int op = JOptionPane.showConfirmDialog(this,"¿deseas rellenar con datos del cliente seleccionado?");
+                    
+                        if(op == 0)
+                        {
+                            
+                            if(JTbuscarCliente.getValueAt(row, 3).toString().equals("-"))
+                            {
+                                JIFGenerarCertificado.txttelefono.setText(""+JTbuscarCliente.getValueAt(row, 4));
+                            }else{JIFGenerarCertificado.txttelefono.setText(""+JTbuscarCliente.getValueAt(row, 3));}
+
+                            JIFGenerarCertificado.JTADIRECCION.setText(""+JTbuscarCliente.getValueAt(row, 5));
+                            
+                            String buff =""+JTbuscarCliente.getValueAt(row, 1);
+                            String ArrayTemp[] = buff.split("/");
+                            if(ArrayTemp[2].equals("-")){ArrayTemp[2]="";}
+                            JIFGenerarCertificado.txtrazonSocial.setText(ArrayTemp[0]+" "+ArrayTemp[1]+" "+ArrayTemp[2]);
+                            
+                        }
+                        
+                        
                         select = ""+JTbuscarCliente.getValueAt(row, 1);
                      }
                 evn.write(JFRPrincipal.JMSesion.getText(),"Ha seleccionado al Cliente "+select,"GL_JDBuscarCliente", "Tabla de Cliente presionado");
