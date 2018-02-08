@@ -427,4 +427,17 @@ public class SYSFRMCON
         p.setBackground(Color.GRAY.brighter());
     }
     
+    //CONSULTAR CERTIFICADO
+    public String T_ConsultarCertificadosVen()
+    {
+        String nivel = "0.5";
+        String t = DEV()+" Consultar Certificados Vencidos "+nivel;
+        return t;
+    }
+    
+    public void B_ConsultarCertificadosVen(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+    
 }
