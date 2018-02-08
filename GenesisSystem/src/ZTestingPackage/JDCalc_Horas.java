@@ -273,23 +273,15 @@ public class JDCalc_Horas extends javax.swing.JDialog
 
         //hs -> HORA SALIDA
 
-        //PRIMERA SITUACION
-        //int hsH = 18;
-        //int hsM = 48;
-
         //SEGUNDA SITUACION
         int hsH = 18;
-        int hsM = 46;
+        int hsM = 00;
 //###################################################        
         //he -> HORA ENTRADA
         
-        //PRIMER SITUACION
-        //int heH = 9;
-        //int heM = 31;
-        
         //SEGUNDA SITUACION
         int heH = 9;
-        int heM = 07;
+        int heM = 10;
         
         //hso -> Hora Salida ORIGINAL
         int hso = 17;
