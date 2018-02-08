@@ -7,7 +7,6 @@ package NMOC.MD_Generar.View;
 
 import IACore.JTACON;
 import ModuleWorker.IC.MWCON;
-import ModuleWorker.IC.ShakingComponent;
 import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSCOPY;
 import ModuleWorker.SYSFRMCON;
@@ -23,7 +22,6 @@ import NMOC.MD_Generar.Core.NOB_Certificado;
 import NMOC.MD_Generar.IC.MICROCON_Certificado;
 import java.awt.Color;
 import java.io.File;
-import java.io.FileFilter;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
