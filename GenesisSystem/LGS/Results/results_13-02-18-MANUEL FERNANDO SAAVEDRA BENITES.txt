@@ -1,0 +1,9 @@
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFGenerarCertificado
+HORA : 09:55:23 AM
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el Certificado con ID  CERT-001
+ RAZÓN: POLLERIA EL CAPORAL 
+ CLIENTE ASIGNADO: CLI-00000001
+----------------------------------------------------
+ 

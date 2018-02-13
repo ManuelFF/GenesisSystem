@@ -1,0 +1,6 @@
+DESCRIPCIÓN : Ha ocurrido algun error al intentar adjuntar un certificado
+CLASE : JIFGenerarCertificado
+ERROR : java.lang.NullPointerException
+TIME : 8:31:34
+----------------------------------------------------
+ 

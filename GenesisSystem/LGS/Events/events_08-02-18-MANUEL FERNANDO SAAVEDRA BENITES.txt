@@ -1629,3 +1629,787 @@ ACCIÓN : Botón 'Cerrar Sesión' Presionado
 TIME : 14:50:5 PM
 ----------------------------------------------------
  
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificados Vencidos' Presionado
+TIME : 14:59:37 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JIFConsultarCertificadosVencidos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 14:59:40 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificados Vencidos' Presionado
+TIME : 15:0:58 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JIFConsultarCertificadosVencidos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:0:59 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Certificado' Presionado
+TIME : 15:1:4 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Natural
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:1:10 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Cliente'
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:1:11 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Juridico
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:1:13 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente POLLERIA EL CAPORAL
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 15:1:23 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Juridico
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:1:50 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente POLLERIA EL CAPORAL
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 15:1:53 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Juridico
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:2:32 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Cliente'
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:3:4 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Juridico
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:7:27 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Cliente'
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:8:50 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 15:8:52 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificados Vencidos' Presionado
+TIME : 15:8:59 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JIFConsultarCertificadosVencidos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:9:1 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Certificado' Presionado
+TIME : 15:9:6 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Juridico
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:9:9 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente POLLERIA EL CAPORAL
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 15:9:11 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Juridico
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:9:13 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente POLLERIA EL CAPORAL
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 15:9:15 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Juridico
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:9:19 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente VENTURA CORPORACION OPTICAL SAC
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 15:9:26 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Juridico
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:9:31 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente RENDEZ VOUS S.A.C.
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 15:9:35 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Juridico
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:9:47 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente RENDEZ VOUS S.A.C.
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 15:10:7 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Juridico
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:10:48 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Cliente'
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:11:41 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 15:11:42 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 15:11:50 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Certificado' Presionado
+TIME : 15:11:51 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Juridico
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:12:1 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente CONSTRUMALLA ACEROS S.A.C.
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 15:13:7 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarCertificado'
+FORMULARIO : JIFGenerarCertificado
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:13:11 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarOrdenServicio'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:13:21 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 15:13:23 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificados Vencidos' Presionado
+TIME : 15:13:57 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Certificado' Presionado
+TIME : 15:13:58 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Natural
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:14:2 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Cliente'
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:14:4 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Natural
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:14:14 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Cliente'
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:15:31 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 15:15:32 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Certificado' Presionado
+TIME : 15:15:40 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Natural
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:15:43 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente ERIKA/TRUJILLO/-
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 15:15:48 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 15:16:40 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Certificado' Presionado
+TIME : 15:16:47 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Natural
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:16:52 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente ERIKA/TRUJILLO/-
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 15:16:59 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Juridico
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:17:3 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente POLLERIA EL CAPORAL
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 15:17:4 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Natural
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:17:8 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente ERIKA/TRUJILLO/-
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 15:17:11 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de un Certificado 
+FORMULARIO : JIFGenerarCertificado
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 15:17:17 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarCertificado'
+FORMULARIO : JIFGenerarCertificado
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:17:17 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 15:17:19 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Certificado' Presionado
+TIME : 15:18:27 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Juridico
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:18:31 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Cliente'
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:18:32 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Natural
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:18:33 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente DELIA/GRANDEZ/TIRADO
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 15:18:39 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de un Certificado 
+FORMULARIO : JIFGenerarCertificado
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 15:19:15 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarCertificado'
+FORMULARIO : JIFGenerarCertificado
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:19:18 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificado' Presionado
+TIME : 15:19:20 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarCertificados
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 15:19:21 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 15:19:22 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente POLLERIA EL CAPORAL
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 15:19:23 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarCertificados
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 15:19:25 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 15:19:26 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Cliente'
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:19:30 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarCertificados
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 15:19:30 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarCertificados -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 15:19:31 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente DELIA/GRANDEZ/TIRADO
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 15:19:34 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFConsultarCertificado'
+FORMULARIO : JIFConsultarCertificado
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:19:44 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 15:19:49 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha registrado su salida
+FORMULARIO : JFRPrincipal
+ACCIÓN : Menu 'Registrar Salida' Presionado
+TIME : 15:24:48 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 15:24:50 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 15:24:58 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 15:28:28 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 15:28:29 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 15:28:30 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente P.I.C.S.G. SAN IGNACIO S.A.C.
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 15:28:33 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFConsultarOrdenTrabajo'
+FORMULARIO : JIFConsultarOrdenTrabajo
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:28:49 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificado' Presionado
+TIME : 15:28:56 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFConsultarCertificado'
+FORMULARIO : JIFConsultarCertificado
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:28:59 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificados Vencidos' Presionado
+TIME : 15:29:0 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JIFConsultarCertificadosVencidos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:29:5 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificado' Presionado
+TIME : 15:29:6 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFConsultarCertificado'
+FORMULARIO : JIFConsultarCertificado
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:29:7 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Certificado' Presionado
+TIME : 15:29:11 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarCertificado'
+FORMULARIO : JIFGenerarCertificado
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:29:12 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Certificado' Presionado
+TIME : 15:29:15 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente Juridico
+FORMULARIO : JIFGenerarCertificado -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Asignar Cliente' presionado
+TIME : 15:29:19 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente P.I.C.S.G. SAN IGNACIO S.A.C.
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 15:29:23 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de un Certificado 
+FORMULARIO : JIFGenerarCertificado
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 15:29:28 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarCertificado'
+FORMULARIO : JIFGenerarCertificado
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:29:32 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 15:29:57 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 15:37:34 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Clientes'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:37:38 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 15:37:40 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Certificado' Presionado
+TIME : 15:44:0 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Certificados de servicio
+FORMULARIO : JIFGenerarCertificados
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 15:44:1 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado el Certificado 123
+FORMULARIO : GL_JDBuscarCertificados
+ACCIÓN : Tabla de Certificados presionada
+TIME : 15:44:3 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarCertificado'
+FORMULARIO : JIFGenerarCertificado
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:44:6 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 15:44:10 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificados Vencidos' Presionado
+TIME : 17:19:42 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JIFConsultarCertificadosVencidos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 17:19:45 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cerrado sesión y salio del sistema
+FORMULARIO : JFRPrincipal
+ACCIÓN : Botón 'Cerrar Sesión' Presionado
+TIME : 17:19:46 PM
+----------------------------------------------------
+ 
