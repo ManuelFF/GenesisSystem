@@ -40,7 +40,7 @@ public class DBCON
     //Configuracion de Servidor
     String serverName = LineaTesting; //LINEA QUE USARA LA BASE
     String serverPort ="1521"; //PUERTO QUE USARA LA BASE
-    String userName =UD; // USUARIO QUE USARA LA LINEA QUE USARA LA BASE
+    String userName = UD; // USUARIO QUE USARA LA LINEA QUE USARA LA BASE
     String password ="roedjot"; //CONTRASEÑA QUE USARA EL USUARIO DE LINEA QUE USARA LA BASE
     String sid ="XE"; //SID 
        
