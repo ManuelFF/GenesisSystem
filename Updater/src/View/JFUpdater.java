@@ -11,12 +11,14 @@ import java.awt.Color;
  *
  * @author ANONIMO
  */
-public class JFUpdater extends javax.swing.JFrame {
+public class JFUpdater extends javax.swing.JFrame 
+{
 
     /**
      * Creates new form JFUpdater
      */
-    public JFUpdater() {
+    public JFUpdater() 
+    {
         initComponents();
         this.getContentPane().setBackground(Color.LIGHT_GRAY);
         this.setLocationRelativeTo(null);
