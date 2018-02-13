@@ -20,7 +20,6 @@ import javax.swing.JFrame;
  *
  * @author USUARIO
  */
-
 public class SYSCON 
 {
     //puentes
