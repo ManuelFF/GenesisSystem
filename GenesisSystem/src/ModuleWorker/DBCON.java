@@ -22,7 +22,6 @@ public class DBCON
 {
     //puentes
     LOG lc = new LOG(); //puente apuntando a la clase LOG
-
     
     //variables de conexion
     protected Connection cn;
