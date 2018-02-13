@@ -39,6 +39,8 @@ public class JFUpdater extends javax.swing.JFrame
         lbProgreso = new javax.swing.JLabel();
         blTiempo = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        lbProgreso1 = new javax.swing.JLabel();
+        lbProgreso2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(204, 0, 0));
@@ -49,14 +51,24 @@ public class JFUpdater extends javax.swing.JFrame
         lbTitulo.setText("Title");
 
         lbProgreso.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
-        lbProgreso.setText("Progreso de la Actualización: ");
+        lbProgreso.setForeground(new java.awt.Color(0, 0, 255));
+        lbProgreso.setText("El sistema esta siendo actualizado. No cierre la ventana");
 
-        blTiempo.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        blTiempo.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        blTiempo.setForeground(new java.awt.Color(255, 0, 0));
         blTiempo.setText("100%");
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/logo updater.png"))); // NOI18N
         jLabel1.setMaximumSize(new java.awt.Dimension(70, 70));
         jLabel1.setMinimumSize(new java.awt.Dimension(70, 70));
+
+        lbProgreso1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        lbProgreso1.setForeground(new java.awt.Color(255, 0, 0));
+        lbProgreso1.setText("Quedan Aproximadamente");
+
+        lbProgreso2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        lbProgreso2.setForeground(new java.awt.Color(0, 153, 0));
+        lbProgreso2.setText("Una vez finalizado el proceso de actualización el sistema se abrira automaticamente");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -65,37 +77,45 @@ public class JFUpdater extends javax.swing.JFrame
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(214, 214, 214)
+                        .addGap(54, 54, 54)
+                        .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 467, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(111, 111, 111)
+                        .addComponent(lbProgreso))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(165, 165, 165)
+                        .addComponent(lbProgreso1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(blTiempo))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(281, 281, 281)
                         .addComponent(lbTitulo))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(52, 52, 52)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(51, 51, 51)
-                                .addComponent(lbProgreso)
-                                .addGap(18, 18, 18)
-                                .addComponent(blTiempo)))))
-                .addContainerGap(65, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(185, 185, 185))
+                        .addGap(241, 241, 241)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(76, 76, 76)
+                        .addComponent(lbProgreso2, javax.swing.GroupLayout.PREFERRED_SIZE, 459, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(19, 19, 19)
+                .addGap(31, 31, 31)
                 .addComponent(lbTitulo)
-                .addGap(27, 27, 27)
-                .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+                .addComponent(lbProgreso, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbProgreso)
+                    .addComponent(lbProgreso1)
                     .addComponent(blTiempo))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lbProgreso2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         pack();
@@ -142,6 +162,8 @@ public class JFUpdater extends javax.swing.JFrame
     private javax.swing.JOptionPane jOptionPane1;
     private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JLabel lbProgreso;
+    private javax.swing.JLabel lbProgreso1;
+    private javax.swing.JLabel lbProgreso2;
     private javax.swing.JLabel lbTitulo;
     // End of variables declaration//GEN-END:variables
 }
