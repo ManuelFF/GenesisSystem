@@ -24,11 +24,13 @@ public class UpdaterController
     
     public static void main(String[] args)
     {
+        
     }
     
     public UpdaterController()
     {
         System.out.println(Ver_SIS());
+        System.out.println("HELLO WORLD");
     }
     
     //Obtener VER_SIS
@@ -51,12 +53,14 @@ public class UpdaterController
             
         }catch(SQLException sqlex)
             {
+                System.err.println(sqlex);
                 //lc.write("Problema al Cargar Datos en el metodo 'img'", "MICROCON_ConsultaCertificados", sqlex);
             }
         try 
         {
         } catch (Exception ex)
             {
+                 System.err.println(ex);
                 //lc.write("Error no controlado en el metodo 'img'", "MICROCON_ConsultaCertificados", ex);
             }
         return null;
