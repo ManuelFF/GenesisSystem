@@ -5,6 +5,8 @@
  */
 package View;
 
+import java.awt.Color;
+
 /**
  *
  * @author ANONIMO
@@ -16,6 +18,8 @@ public class JFUpdater extends javax.swing.JFrame {
      */
     public JFUpdater() {
         initComponents();
+        this.getContentPane().setBackground(Color.LIGHT_GRAY);
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -32,8 +36,12 @@ public class JFUpdater extends javax.swing.JFrame {
         jProgressBar1 = new javax.swing.JProgressBar();
         lbProgreso = new javax.swing.JLabel();
         blTiempo = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(204, 0, 0));
+        setFocusTraversalPolicyProvider(true);
+        setForeground(new java.awt.Color(204, 255, 204));
 
         lbTitulo.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
         lbTitulo.setText("Title");
@@ -44,6 +52,10 @@ public class JFUpdater extends javax.swing.JFrame {
         blTiempo.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         blTiempo.setText("100%");
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/logo updater.png"))); // NOI18N
+        jLabel1.setMaximumSize(new java.awt.Dimension(70, 70));
+        jLabel1.setMinimumSize(new java.awt.Dimension(70, 70));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -51,31 +63,37 @@ public class JFUpdater extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(49, 49, 49)
-                        .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(214, 214, 214)
+                        .addComponent(lbTitulo))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(85, 85, 85)
-                        .addComponent(lbProgreso)
-                        .addGap(18, 18, 18)
-                        .addComponent(blTiempo)))
-                .addGap(0, 230, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(214, 214, 214)
-                .addComponent(lbTitulo)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(52, 52, 52)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(51, 51, 51)
+                                .addComponent(lbProgreso)
+                                .addGap(18, 18, 18)
+                                .addComponent(blTiempo)))))
+                .addContainerGap(65, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(185, 185, 185))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(40, 40, 40)
+                .addGap(19, 19, 19)
                 .addComponent(lbTitulo)
-                .addGap(45, 45, 45)
+                .addGap(27, 27, 27)
                 .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbProgreso)
                     .addComponent(blTiempo))
-                .addContainerGap(78, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
         pack();
@@ -118,6 +136,7 @@ public class JFUpdater extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel blTiempo;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JOptionPane jOptionPane1;
     private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JLabel lbProgreso;
