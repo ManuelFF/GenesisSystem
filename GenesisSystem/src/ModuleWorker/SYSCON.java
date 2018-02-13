@@ -35,7 +35,7 @@ public class SYSCON
     //establece version del sistema
     public String version()
     {
-        String ver = "19.7.1";
+        String ver = "19.7.1.1";
         return ver;
     }
     
