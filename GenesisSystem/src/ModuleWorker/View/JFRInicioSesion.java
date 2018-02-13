@@ -10,6 +10,7 @@ import ModuleWorker.IC.MWCON;
 import ModuleWorker.IC.NANOCON_Asistencia;
 import ModuleWorker.IC.ShakingFrame;
 import ModuleWorker.SYSAUDIOCON;
+import ModuleWorker.SYSCON;
 import ModuleWorker.SYSControl;
 import ModuleWorker.SYSFRMCON;
 import NCLPM.LOG;
@@ -42,9 +43,35 @@ public class JFRInicioSesion extends javax.swing.JFrame
         sysfrm.B_login(this.getContentPane());
         this.setAlwaysOnTop(true);
         this.setLocationRelativeTo(null);
-        control_impl();
+
+        comprobar();
     }
 
+    private void comprobar()
+    {
+       SYSCON syscon = new SYSCON();
+       SYSControl con = new SYSControl();
+       MWCON mw = new MWCON();
+       
+       String verSIS = syscon.Ver_SIS();
+       String cargarVER = syscon.cargar_version_texto();
+       
+       if(verSIS.equals(cargarVER) == false)
+       {
+           System.out.println("Versiones distintas");
+           mw.abrir_actualizador();
+           con.Close_System();
+           
+       }else
+          {
+             if(verSIS.equals(cargarVER) == true)
+             {
+                 control_impl();
+                 System.out.println("Versiones Iguales");
+             }
+          }
+    }
+    
     private void control_impl()
     {
         SYSControl con = new SYSControl();
