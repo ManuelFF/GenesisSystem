@@ -53,23 +53,34 @@ public class SYSCON
     }
     
     //Cargar versión del sistema en base
-    public String cargar_version()
+    public String Ver_SIS()         
     {
+        try{
+            DBCON RCN = new DBCON();
+
+            st=RCN.conector().prepareStatement("select VER_SIS from sistema");
+            rs=st.executeQuery();
+            
+            String sistema = null;
+            
+            while (rs.next())
+            {            
+              sistema = rs.getString("VER_SIS");
+            }
+            return sistema;
+            
+        }catch(SQLException sqlex)
+            {
+                System.err.println(sqlex);
+                //lc.write("Problema al Cargar Datos en el metodo 'img'", "MICROCON_ConsultaCertificados", sqlex);
+            }
         try 
         {
-           st=cn.prepareStatement("SELECT VER_SIS FROM sistema");
-           rs=st.executeQuery();
-           
-           while(rs.next())
-           {
-               String ver = rs.getString("VER_SIS");
-               return ver;
-           }
-        } catch (SQLException SQLe) 
-          {
-              String des = "No se ha podido obtener la version del sistema. Error de comunicación con la base";
-              lc.write(des,"SYSCON", SQLe);
-          }
+        } catch (Exception ex)
+            {
+                 System.err.println(ex);
+                //lc.write("Error no controlado en el metodo 'img'", "MICROCON_ConsultaCertificados", ex);
+            }
         return null;
     }
     
