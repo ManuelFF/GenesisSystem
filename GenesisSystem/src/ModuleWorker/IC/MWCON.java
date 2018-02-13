@@ -46,7 +46,14 @@ public class MWCON
     //el cual comprobara versiones para bajar y actualizar el sistema
     public void abrir_actualizador()
     {
-        abrir_archivo("Update.jar");
+        try 
+        {
+            abrir_archivo("Updater.jar");
+        } catch (Exception e) 
+        {
+            lc.write("Ha ocurrido un error al intentar abrir el actualizador", "MWCON", e);
+        }
+        
     }
     
    //Funcion que limpia un Jtable quitando los elemtos.
