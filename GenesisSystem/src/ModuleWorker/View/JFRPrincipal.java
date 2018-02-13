@@ -839,7 +839,6 @@ public class JFRPrincipal extends javax.swing.JFrame
         {
             lc.write("Ha ocurrido algun error al intentar marcar salida", "CLASE PRINCIPAL -> REGISTRAR SALIDA", e);
         }
-       
         
     }//GEN-LAST:event_JSMRegistrarSalidaActionPerformed
 
