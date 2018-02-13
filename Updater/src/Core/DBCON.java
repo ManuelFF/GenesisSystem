@@ -76,14 +76,11 @@ public class DBCON
         return cn;
     }
     
-    
-    
-   
-    
-    
-    
-    
-    
+
+    final public Connection conector()
+    {
+        return DB_ORC_CON();
+    }
     
     
 }
