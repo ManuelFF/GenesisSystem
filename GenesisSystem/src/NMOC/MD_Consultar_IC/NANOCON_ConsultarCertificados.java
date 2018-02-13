@@ -33,7 +33,7 @@ public class NANOCON_ConsultarCertificados
             Statement smt=RCN.conector().createStatement();
             ResultSet rs= smt.executeQuery
                                 (
-                                  "select crtV2.ID_CERT CODIGO, crtV2.NUMERO_CERT CERTIFICADO, crtV2.RAZ_SOCIAL, crtV2.GIRO, TO_CHAR(FECH_SERV, 'DD/MM/YYYY') FECHA_SERV, TO_CHAR(FECH_VEN, 'DD/MM/YYYY') FECH_VEN, crtV2.NUMERO_ORDEN ORDEN from CERTIFICADOV2 crtV2  where crtV2.ID_CLI = "+"'"+ID_CLI+"' order by crtV2.ID_CERT"
+                                  "select crtV2.ID_CERT CODIGO, crtV2.NUMERO_CERT CERTIFICADO, crtV2.RAZ_SOCIAL, crtV2.GIRO, TO_CHAR(FECH_SERV, 'DD/MM/YYYY') FECHA_SERV, TO_CHAR(FECH_VEN, 'DD/MM/YYYY') FECH_VEN,crtV2.costo, crtV2.NUMERO_ORDEN ORDEN from CERTIFICADOV2 crtV2  where crtV2.ID_CLI = "+"'"+ID_CLI+"' order by crtV2.ID_CERT"
                                 );
 
             ResultSetMetaData md=rs.getMetaData();
@@ -70,7 +70,7 @@ public class NANOCON_ConsultarCertificados
                                   "select cvrt2.ID_CERT CÓDIGO, cvrt2.NUMERO_CERT,cvrt2.RAZ_SOCIAL RAZON, cvrt2.GIRO, "
                                           + "cvrt2.AREA_TRATADA||' '||cvrt2.FORMATO AREA, TO_CHAR(cvrt2.FECH_SERV, 'DD/MM/YYYY') FECH_SERV, "
                                           + " TO_CHAR(cvrt2.FECH_VEN, 'DD/MM/YYYY') FECH_VEN ,cvrt2.TELF,cvrt2.COSTO, cvrt2.UBICACION DIRECCION,cvrt2.ESTADO from CERTIFICADOV2 cvrt2 "
-                                          + "where fech_ven between "+"'"+fech_ven1+"' and "+"'"+fech_ven2+"' order by cvrt2.ID_CERT"
+                                          + "where fech_ven between "+"'"+fech_ven1+"' and "+"'"+fech_ven2+"' order by cvrt2.NUMERO_CERT"
                                 );
 
             ResultSetMetaData md=rs.getMetaData();
