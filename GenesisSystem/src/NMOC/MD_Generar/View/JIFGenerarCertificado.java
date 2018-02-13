@@ -853,6 +853,7 @@ public class JIFGenerarCertificado extends javax.swing.JInternalFrame
         enadisa_Gbuttons(true);
         Nuevo();
         btnnuevo.setText("Insertar");
+        txtidCert.setEditable(false);
     }else
         {
           //LOGICA DE VERIFICACION
@@ -1068,6 +1069,7 @@ public class JIFGenerarCertificado extends javax.swing.JInternalFrame
         enadisa_boxes(true);
         enadisa_Gbuttons(true);
         btnmodificar.setText("Actualizar");
+        txtidCert.setEditable(false);
     }else
         {
           //LOGICA DE VERIFICACION
@@ -1272,6 +1274,8 @@ public class JIFGenerarCertificado extends javax.swing.JInternalFrame
         btnnuevo.setText("Nuevo");
         btnmodificar.setText("Modificar");
         clearCacheDB();
+        txtidCert.setEditable(false);
+
 
     } catch (Exception e) 
        {
