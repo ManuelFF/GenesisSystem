@@ -63,6 +63,7 @@ public class DBCON
         } catch (ClassNotFoundException e) 
             {
                 JOptionPane.showMessageDialog(jf, "El driver no retorno conexion! ");
+                
                 //lc.write( "El driver no retorno conexion!","DBCON metodo DB_ORC_CON", e);
                 
             }
