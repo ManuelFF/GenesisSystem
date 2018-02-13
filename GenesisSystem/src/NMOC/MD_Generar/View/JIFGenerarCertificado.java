@@ -101,7 +101,6 @@ public class JIFGenerarCertificado extends javax.swing.JInternalFrame
     
     private void clear_frm()
     {
-        txtidCert.setText("");
         txtnumeroCert.setText("");
         cbestado.setSelectedIndex(0);
         cbformato.setSelectedIndex(0);
