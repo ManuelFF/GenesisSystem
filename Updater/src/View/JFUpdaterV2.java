@@ -89,9 +89,9 @@ public class JFUpdaterV2 extends javax.swing.JFrame
                
                if(jpupdaterbar.getValue()==100)
                {
+                    buscador.stop();
                     P_update.abrir_archivo("GenesisSystem.jar");
                     System.out.println("Sistema Abierto");
-                    buscador.stop();
                     System.exit(0);
                }
             }

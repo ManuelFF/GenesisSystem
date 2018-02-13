@@ -35,10 +35,10 @@ public class DBCON
     String LTU = "roedjotdev";
     String LOU = "roedjot";
     
-    String ServerName = LT;
+    String ServerName = LO;
     String ServerPort = "1521";
     
-    String username = LTU;
+    String username = LOU;
     String password = "roedjot";
     String sid = "XE";
    
