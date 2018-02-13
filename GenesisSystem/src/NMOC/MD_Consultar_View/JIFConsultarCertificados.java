@@ -443,6 +443,8 @@ public class JIFConsultarCertificados extends javax.swing.JInternalFrame {
         //Modulo de busqueda de ordenes de trabajo V0.9
         try
         {
+            lblpic.setIcon(defaultIcon);
+            
             JFrame jf=new JFrame();
             jf.setAlwaysOnTop(true);
             evn.write(lblusuario.getText(), "Ha abierto el formulario de busqueda de Clientes", "JIFConsultarCertificados", "Hizo click en el botón 'Buscar'");
