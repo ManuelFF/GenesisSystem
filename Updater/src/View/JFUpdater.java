@@ -66,7 +66,7 @@ public class JFUpdater extends javax.swing.JFrame
         lbProgreso1.setForeground(new java.awt.Color(255, 0, 0));
         lbProgreso1.setText("Quedan Aproximadamente");
 
-        lbProgreso2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        lbProgreso2.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         lbProgreso2.setForeground(new java.awt.Color(0, 153, 0));
         lbProgreso2.setText("Una vez finalizado el proceso de actualización el sistema se abrira automaticamente");
 
@@ -76,12 +76,6 @@ public class JFUpdater extends javax.swing.JFrame
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(54, 54, 54)
-                        .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 467, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(111, 111, 111)
-                        .addComponent(lbProgreso))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(165, 165, 165)
                         .addComponent(lbProgreso1)
@@ -94,9 +88,15 @@ public class JFUpdater extends javax.swing.JFrame
                         .addGap(241, 241, 241)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(76, 76, 76)
-                        .addComponent(lbProgreso2, javax.swing.GroupLayout.PREFERRED_SIZE, 459, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(44, Short.MAX_VALUE))
+                        .addGap(23, 23, 23)
+                        .addComponent(lbProgreso2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(48, 48, 48)
+                        .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 467, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(104, 104, 104)
+                        .addComponent(lbProgreso)))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
