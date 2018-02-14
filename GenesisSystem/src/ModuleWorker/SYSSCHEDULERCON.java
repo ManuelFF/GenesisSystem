@@ -26,7 +26,15 @@ public class SYSSCHEDULERCON
         las cuales seran usadas en genesis
     */
     
-    public static void Execute_Scheduler(Class JOB,int time) throws SchedulerException
+    Scheduler s;
+    
+    public SYSSCHEDULERCON() throws SchedulerException
+    {
+      s = StdSchedulerFactory.getDefaultScheduler();
+    }
+    
+    
+    public void Execute_Scheduler(Class JOB,int time) throws SchedulerException
     {
        
         JobDetail j = JobBuilder.newJob(JOB).build();
@@ -35,10 +43,17 @@ public class SYSSCHEDULERCON
                 .withSchedule(SimpleScheduleBuilder.simpleSchedule().withIntervalInSeconds(time)
                     .repeatForever()).build();
         
-        Scheduler s = StdSchedulerFactory.getDefaultScheduler();
+        //Scheduler s = StdSchedulerFactory.getDefaultScheduler();
 
         s.start();
         s.scheduleJob(j,t);
     }
+    
+    public void stop() throws SchedulerException
+    {
+        s.standby();
+        s.clear();
+    }
+    
     
 }
