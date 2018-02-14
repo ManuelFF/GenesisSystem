@@ -1,0 +1,7 @@
+USUARIO : Aún no definido
+DESCRIPCIÓN : Intento entrar al sistema con un usuario que no existe
+FORMULARIO : JFRInicioSesion
+ACCIÓN : Botón 'INGRESAR' Presionado
+TIME : 13:21:23 PM
+----------------------------------------------------
+ 
