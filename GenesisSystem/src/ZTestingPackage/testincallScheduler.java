@@ -17,7 +17,7 @@ public class testincallScheduler
 
     public static void main(String[] arg) throws SchedulerException
     {
-        mainSchedulerController.Scheduler(MyObject.class);
+        mainSchedulerController.Scheduler(MyObject.class,1);
     }
     
 }
