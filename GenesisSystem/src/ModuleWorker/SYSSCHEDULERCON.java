@@ -26,10 +26,10 @@ public class SYSSCHEDULERCON
         las cuales seran usadas en genesis
     */
     
-    public static void Scheduler(Class myobjt,int time) throws SchedulerException
+    public static void Execute_Scheduler(Class JOB,int time) throws SchedulerException
     {
        
-        JobDetail j = JobBuilder.newJob(myobjt).build();
+        JobDetail j = JobBuilder.newJob(JOB).build();
         
         Trigger t = TriggerBuilder.newTrigger().withIdentity("CroneTrigger")
                 .withSchedule(SimpleScheduleBuilder.simpleSchedule().withIntervalInSeconds(time)
