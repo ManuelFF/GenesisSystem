@@ -83,7 +83,7 @@ public class JFUpdaterV2 extends javax.swing.JFrame
                lblparrafo1.setText("Actualización terminada!. En instantes se abrira el sistema");
                lblparrafo2.setText("automaticamente");
                
-               var = var+(2*2);
+               var = var+(4*4);
                jpupdaterbar.setValue(var);
                lblcounter.setText(""+jpupdaterbar.getValue()+"%");
                
