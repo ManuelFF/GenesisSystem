@@ -59,6 +59,7 @@ public class JFRInicioSesion extends javax.swing.JFrame
        if(verSIS.equals(cargarVER) == false)
        {
            System.out.println("Versiones distintas");
+           sysau.E_INFORMATION();
            mw.abrir_actualizador();
            con.Close_System();
            
