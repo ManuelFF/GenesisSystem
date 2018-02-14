@@ -47,7 +47,6 @@ public class JFRPrincipal extends javax.swing.JFrame
     SYSCON sys = new SYSCON();
     LOG lc = new LOG();
     EVENTS evn = new EVENTS();
-    SYSSCHEDULERCON SCheduler = new SYSSCHEDULERCON(); //SE ENCARGA DE LAS TAREAS PRE PROGRAMADAs
     public File imagen = new File (System.getProperty ("user.dir")+"\\Fondo.png");
 
     public JFRPrincipal() 
@@ -83,13 +82,12 @@ public class JFRPrincipal extends javax.swing.JFrame
     {
         try 
         {
-            SCheduler.Execute_Scheduler(JOB_Update.class, 2);
-            
+          SYSSCHEDULERCON SCheduler = new SYSSCHEDULERCON(); //SE ENCARGA DE LAS TAREAS PRE PROGRAMADAs
+          SCheduler.Execute_Scheduler(JOB_Update.class, 2);
         } catch (SchedulerException SE) 
           {
-              lc.write("Ha ocurrido un error al intentar encender el comprobador de actualizaciones", "JFRPrincipal", SE);
+            lc.write("Ha ocurrido un error al intentar encender el comprobador de actualizaciones", "JFRPrincipal", SE);
           }
-        
     }
     
     /**
