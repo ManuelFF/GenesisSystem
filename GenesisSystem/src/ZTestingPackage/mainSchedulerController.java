@@ -39,13 +39,13 @@ public class mainSchedulerController
     }
     
     
-    public static void Scheduler(Class myobjt) throws SchedulerException
+    public static void Scheduler(Class myobjt,int time) throws SchedulerException
     {
        
         JobDetail j = JobBuilder.newJob(myobjt).build();
         
         Trigger t = TriggerBuilder.newTrigger().withIdentity("CroneTrigger")
-                .withSchedule(SimpleScheduleBuilder.simpleSchedule().withIntervalInSeconds(010)
+                .withSchedule(SimpleScheduleBuilder.simpleSchedule().withIntervalInSeconds(time)
                     .repeatForever()).build();
         
         Scheduler s = StdSchedulerFactory.getDefaultScheduler();
