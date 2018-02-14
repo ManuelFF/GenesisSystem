@@ -58,8 +58,15 @@ public class JFRInicioSesion extends javax.swing.JFrame
        
        if(verSIS.equals(cargarVER) == false)
        {
-           System.out.println("Versiones distintas");
+           JFrame jf = new JFrame();
+           jf.setAlwaysOnTop(true);
+
            sysau.E_INFORMATION();
+
+           JOptionPane.showMessageDialog(jf, "Existe una nueva versión con muchas más Caracteristicas!", "Nueva Versión de Génesis Disponible!", JOptionPane.INFORMATION_MESSAGE);
+           
+           System.out.println("Versiones distintas");
+           
            mw.abrir_actualizador();
            con.Close_System();
            
