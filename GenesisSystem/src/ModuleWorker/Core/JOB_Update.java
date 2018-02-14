@@ -62,7 +62,7 @@ public class JOB_Update implements Job
               SYSSCHEDULERCON SCheduler = new SYSSCHEDULERCON(); //SE ENCARGA DE LAS TAREAS PRE PROGRAMADAs
               SCheduler.stop();
               sysau.E_INFORMATION();
-              JOptionPane.showMessageDialog(jf, "Se ha encontrado una nueva Versión de Génesis!\n guarde todo el proceso de trabajo\nEL SISTEMA SE APAGARA DENTRO DE 10 SEGUNDOS");
+              JOptionPane.showMessageDialog(jf, "Se ha encontrado una nueva Versión de Génesis!\n guarde todo el proceso de trabajo\nEL SISTEMA SE APAGARA DENTRO DE 100 SEGUNDOS");
               estado= "1";
               notificacion();
               comp.start();
