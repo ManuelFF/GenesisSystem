@@ -5,11 +5,13 @@
  */
 package ModuleWorker.View;
 
+import ModuleWorker.Core.JOB_Update;
 import ModuleWorker.IC.MWCON;
 import ModuleWorker.IC.NANOCON_Asistencia;
 import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSCON;
 import ModuleWorker.SYSControl;
+import ModuleWorker.SYSSCHEDULERCON;
 import ModuleWorker.SYSWALLPCON;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
@@ -28,6 +30,7 @@ import java.io.File;
 import java.util.concurrent.TimeUnit;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import org.quartz.SchedulerException;
 
 /**
  *
@@ -44,9 +47,10 @@ public class JFRPrincipal extends javax.swing.JFrame
     SYSCON sys = new SYSCON();
     LOG lc = new LOG();
     EVENTS evn = new EVENTS();
+    SYSSCHEDULERCON SCheduler = new SYSSCHEDULERCON(); //SE ENCARGA DE LAS TAREAS PRE PROGRAMADAs
     public File imagen = new File (System.getProperty ("user.dir")+"\\Fondo.png");
 
-    public JFRPrincipal()
+    public JFRPrincipal() 
     {
         initComponents();
         image();
@@ -54,6 +58,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         this.setExtendedState(MAXIMIZED_BOTH);
         //TAG VERSIÓN INTERNA DE DESARROLLO
         this.setTitle(sys.nombre_sistema()+" - "+sys.nombre_compañia()+" - Versión V"+sys.version()+" VERSIÓN INTERNA DE DESARROLLO");
+        comprobar_actualizaciones();
     }
     
     public static void detectar(String ID_PER)
@@ -74,12 +79,17 @@ public class JFRPrincipal extends javax.swing.JFrame
         SYSWALLPCON.cargarImagen(JDEscritorio, imagen);
     }
 
-    //ACTUALIZACION
-    @Deprecated
-    public void actualizacion()
+    private void comprobar_actualizaciones()  
     {
-        //ARGUMENTOS DE ACTUALIZACION
-        System.exit(0);
+        try 
+        {
+            SCheduler.Execute_Scheduler(JOB_Update.class, 2);
+            
+        } catch (SchedulerException SE) 
+          {
+              lc.write("Ha ocurrido un error al intentar encender el comprobador de actualizaciones", "JFRPrincipal", SE);
+          }
+        
     }
     
     /**
