@@ -19,8 +19,16 @@ import org.quartz.impl.StdSchedulerFactory;
  *
  * @author USUARIO
  */
-public class mainSchedulerController 
+public class mainSchedulerController  
 {
+    
+    Scheduler s ;
+
+    
+    public mainSchedulerController()throws SchedulerException
+    {
+        s = StdSchedulerFactory.getDefaultScheduler();
+    }
     
     public static void main() throws SchedulerException
     {
@@ -38,8 +46,13 @@ public class mainSchedulerController
         
     }
     
+    private void build()
+    {
+        
+    }
     
-    public static void Scheduler(Class myobjt,int time) throws SchedulerException
+    
+    public void Scheduler(Class myobjt,int time) throws SchedulerException
     {
        
         JobDetail j = JobBuilder.newJob(myobjt).build();
@@ -48,13 +61,20 @@ public class mainSchedulerController
                 .withSchedule(SimpleScheduleBuilder.simpleSchedule().withIntervalInSeconds(time)
                     .repeatForever()).build();
         
-        Scheduler s = StdSchedulerFactory.getDefaultScheduler();
+        //Scheduler s = StdSchedulerFactory.getDefaultScheduler();
 
+        
         s.start();
         s.scheduleJob(j,t);
         
     }
     
+    public void stop () throws SchedulerException
+    {
+        s.standby();
+        s.clear();
+    }
     
+  
     
 }
