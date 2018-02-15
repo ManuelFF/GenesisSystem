@@ -29,7 +29,17 @@ public class JFUpdaterV2 extends javax.swing.JFrame
         this.getContentPane().setBackground(Color.LIGHT_GRAY);
         this.setLocationRelativeTo(null);
         this.setTitle("Génesis Updater");
+        
+        this.setFocusable(true);
+        this.setFocusableWindowState(true);
+        this.requestFocus();
+        this.requestFocusInWindow();
+        this.toFront();
+        this.setResizable(false);
+
         this.setAlwaysOnTop(true);
+        
+        
         lbltitulo.setText("Actualizador de Génesis");
         buscador.start();
         comp.start();
@@ -83,7 +93,7 @@ public class JFUpdaterV2 extends javax.swing.JFrame
                lblparrafo1.setText("Actualización terminada!. En instantes se abrira el sistema");
                lblparrafo2.setText("automaticamente");
                
-               var = var+(2*2);
+               var = var+(4*4);
                jpupdaterbar.setValue(var);
                lblcounter.setText(""+jpupdaterbar.getValue()+"%");
                

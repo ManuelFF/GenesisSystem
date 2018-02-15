@@ -10,10 +10,12 @@ import ModuleWorker.IC.MWCON;
 import ModuleWorker.IC.NANOCON_Asistencia;
 import ModuleWorker.IC.ShakingFrame;
 import ModuleWorker.SYSAUDIOCON;
+import ModuleWorker.SYSCON;
 import ModuleWorker.SYSControl;
 import ModuleWorker.SYSFRMCON;
 import NCLPM.LOG;
 import NCLPM.EVENTS;
+import NCLPM.GEN_STATUS;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import org.apache.commons.codec.digest.DigestUtils;
@@ -30,7 +32,7 @@ public class JFRInicioSesion extends javax.swing.JFrame
      */
     
     LOG lc = new LOG();
-    EVENTS evn = new EVENTS();
+    GEN_STATUS gnst = new GEN_STATUS();
     SYSFRMCON sysfrm = new SYSFRMCON();
     ShakingFrame s = new ShakingFrame(this); //SHAKING
     SYSAUDIOCON sysau = new SYSAUDIOCON(); //EFECTOS
@@ -42,9 +44,43 @@ public class JFRInicioSesion extends javax.swing.JFrame
         sysfrm.B_login(this.getContentPane());
         this.setAlwaysOnTop(true);
         this.setLocationRelativeTo(null);
-        control_impl();
+
+        comprobar();
     }
 
+    private void comprobar()
+    {
+       SYSCON syscon = new SYSCON();
+       SYSControl con = new SYSControl();
+       MWCON mw = new MWCON();
+       
+       String verSIS = syscon.Ver_SIS();
+       String cargarVER = syscon.cargar_version_texto();
+       
+       if(verSIS.equals(cargarVER) == false)
+       {
+           JFrame jf = new JFrame();
+           jf.setAlwaysOnTop(true);
+
+           sysau.E_INFORMATION();
+
+           JOptionPane.showMessageDialog(jf, "Existe una nueva versión con muchas más Caracteristicas!", "Nueva Versión de Génesis Disponible!", JOptionPane.INFORMATION_MESSAGE);
+           
+           System.out.println("Versiones distintas");
+           
+           mw.abrir_actualizador();
+           con.Close_System();
+           
+       }else
+          {
+             if(verSIS.equals(cargarVER) == true)
+             {
+                 control_impl();
+                 System.out.println("Versiones Iguales");
+             }
+          }
+    }
+    
     private void control_impl()
     {
         SYSControl con = new SYSControl();
@@ -115,7 +151,9 @@ public class JFRInicioSesion extends javax.swing.JFrame
                          this.dispose();
                        }
                 }
-                        
+                
+                gnst.write_CON(NOMC, mw.hour_actual(), mw.fecha_actual(), "NORMAL");
+                
                 JFRPrincipal principal = new JFRPrincipal();
                 JFRPrincipal.JMSesion.setText(NOMC);
                 JFRPrincipal.detectar(ID_PER);
@@ -129,10 +167,6 @@ public class JFRInicioSesion extends javax.swing.JFrame
             }
     }
     
-    
-    
-    //BUSCAR ACTUALIZACION
-    //ACTUALIZACION
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -257,7 +291,6 @@ public class JFRInicioSesion extends javax.swing.JFrame
         jf.setAlwaysOnTop(true);
         
         String usr = txtusuario.getText();
-        //char[] psw = pswPassword.getPassword();       
         String psw = DigestUtils.md5Hex(pswPassword.getText());
                 
        if(intentos<=0)
@@ -266,7 +299,7 @@ public class JFRInicioSesion extends javax.swing.JFrame
            SYSAUDIOCON sysau = new SYSAUDIOCON();
            sysau.E_CRITICAL_ERROR();
            JOptionPane.showMessageDialog(jf, "Se quedo sin intentos\nEL SISTEMA SE CERRARA!", "Sobrepaso limite de intentos", JOptionPane.ERROR_MESSAGE);
-           evn.write("Aún no definido", "Intento entrar al sistema pero ya no tenia intentos", "JFRInicioSesion", "FUE EXPULSADO");
+           //evn.write("Aún no definido", "Intento entrar al sistema pero ya no tenia intentos", "JFRInicioSesion", "FUE EXPULSADO");
            new SYSControl().Close_System();
        }
        else
@@ -278,7 +311,6 @@ public class JFRInicioSesion extends javax.swing.JFrame
             SYSAUDIOCON sysau = new SYSAUDIOCON();
             sysau.E_ERROR();
             JOptionPane.showMessageDialog(jf, "Ingrese un usuario valido"+"\nINTENTOS RESTANTES : "+intentos, "Error de usuario", JOptionPane.ERROR_MESSAGE);
-            evn.write("Aún no definido", "Intento entrar al sistema con un usuario inexistente", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
         }else if(pswPassword.getText().trim().isEmpty())
         {
             s.startShake();
@@ -286,7 +318,6 @@ public class JFRInicioSesion extends javax.swing.JFrame
             SYSAUDIOCON sysau = new SYSAUDIOCON();
             sysau.E_ERROR();
             JOptionPane.showMessageDialog(jf, "Ingrese una contraseña valida"+"\nINTENTOS RESTANTES : "+intentos, "Contraseña invalida", JOptionPane.ERROR_MESSAGE);
-            evn.write("Aún no definido", "Intento entrar al sistema con una contraseña no valida", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
         }else
         {//INICIO ELSE GENERAL
             
@@ -297,26 +328,17 @@ public class JFRInicioSesion extends javax.swing.JFrame
               SYSAUDIOCON sysau = new SYSAUDIOCON();
               sysau.E_ERROR();
               JOptionPane.showMessageDialog(jf, "El usuario no existe"+"\nINTENTOS RESTANTES : "+intentos, "Usuario Inexistente", JOptionPane.ERROR_MESSAGE);
-              evn.write("Aún no definido", "Intento entrar al sistema con un usuario que no existe", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
             }else
                 {
                     if(Minse.validarUsuario(usr, psw).equals("1"))
                     {
                         sysau.E_INICIAR_SESION();
                         Thread.sleep(220);
-                        evn.write(usr, "Ingreso al sistema", "JFRInicioSesion", "Botón 'INGRESAR' Presionado");
+
                         String nombre = Minse.obtenerNombreUSR(usr);
                         
                         detectar(nombre);
-                        
-                        
-//                        JFRPrincipal principal = new JFRPrincipal();
-//                        JFRPrincipal.JMSesion.setText(nombre);
-                       
-//                        sysfrm.B_JMSesion(JFRPrincipal.JMSesion);
-//                        principal.setVisible(true);
-//                        this.dispose();
-                        
+
                         //tipo
                         //estadoEntrada
                         //EstadoSalida
@@ -338,7 +360,6 @@ public class JFRInicioSesion extends javax.swing.JFrame
      
         try 
         {
-            evn.write("anonimo", "Salio del sistema", "JFRInicioSesion", "Botón 'SALIR' Presionado");
             new SYSControl().Close_System();
         } catch (Exception e) 
             {
