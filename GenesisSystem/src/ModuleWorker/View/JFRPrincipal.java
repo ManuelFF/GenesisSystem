@@ -14,6 +14,7 @@ import ModuleWorker.SYSControl;
 import ModuleWorker.SYSSCHEDULERCON;
 import ModuleWorker.SYSWALLPCON;
 import NCLPM.EVENTS;
+import NCLPM.GEN_STATUS;
 import NCLPM.LOG;
 import NMOC.MD_Consultar_View.JIFConsultarCertificados;
 import NMOC.MD_Consultar_View.JIFConsultarCertificadosVencidos;
@@ -47,6 +48,7 @@ public class JFRPrincipal extends javax.swing.JFrame
     SYSCON sys = new SYSCON();
     LOG lc = new LOG();
     EVENTS evn = new EVENTS();
+    GEN_STATUS gnst = new GEN_STATUS();
     public File imagen = new File (System.getProperty ("user.dir")+"\\Fondo.png");
 
     public JFRPrincipal() 
@@ -447,10 +449,9 @@ public class JFRPrincipal extends javax.swing.JFrame
         
     try 
     {
-      evn.write(JMSesion.getText(), "Ha cerrado sesión y salio del sistema", "JFRPrincipal", "Botón 'Cerrar Sesión' Presionado");
+      MWCON mw = new MWCON();
+      gnst.write_DIS(JMSesion.getText(), mw.hour_actual() , mw.fecha_actual(), "NORMAL");
       new SYSControl().Close_System();
-
-
     } catch (Exception sqle) 
         {
            lc.write( "Ha ocurrido algun error al intentar cerrar el sistema!","JFPrincipal metodo JSMCerrar Sesión Linea 255", sqle);
