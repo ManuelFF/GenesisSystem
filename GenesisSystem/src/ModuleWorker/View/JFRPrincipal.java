@@ -85,7 +85,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         try 
         {
           SYSSCHEDULERCON SCheduler = new SYSSCHEDULERCON(); //SE ENCARGA DE LAS TAREAS PRE PROGRAMADAs
-          SCheduler.Execute_Scheduler(JOB_Update.class, 200);
+          SCheduler.Execute_Scheduler(JOB_Update.class, 175);
         } catch (SchedulerException SE) 
           {
             lc.write("Ha ocurrido un error al intentar encender el comprobador de actualizaciones", "JFRPrincipal", SE);
