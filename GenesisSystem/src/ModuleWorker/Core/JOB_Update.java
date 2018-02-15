@@ -10,7 +10,8 @@ import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSCON;
 import ModuleWorker.SYSControl;
 import ModuleWorker.SYSSCHEDULERCON;
-import java.awt.Color;
+import static ModuleWorker.View.JFRPrincipal.JMSesion;
+import NCLPM.GEN_STATUS;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Rectangle;
@@ -34,6 +35,7 @@ public class JOB_Update implements Job
     SYSCON syscon = new SYSCON();
     SYSControl con = new SYSControl();
     MWCON mw = new MWCON();
+    GEN_STATUS gnst = new GEN_STATUS();
     SYSAUDIOCON sysau = new SYSAUDIOCON();
     
     JFrame jf = new JFrame();
@@ -46,6 +48,13 @@ public class JOB_Update implements Job
     {
         //AQUI IRA LA LOGICA DE PROGRAMACION PARA DETERMINAR SI HAY UNA     
         //ACTUALIZACION DISPONIBLE 
+       
+       jf.setFocusable(true);
+       jf.setFocusableWindowState(true);
+       jf.requestFocus();
+       jf.requestFocusInWindow();
+       jf.toFront();
+       jf.setResizable(false);
        
        jf.setAlwaysOnTop(true);
        String verSIS = syscon.Ver_SIS();
@@ -72,13 +81,11 @@ public class JOB_Update implements Job
               {
                   
               }
-           //mw.abrir_actualizador();
-           //con.Close_System();
        }else
           {
              if(verSIS.equals(cargarVER) == true)
              {
-                 System.out.println("Versiones Iguales");
+                System.out.println("Versiones Iguales");
              }
           }        
     }
@@ -92,6 +99,7 @@ public class JOB_Update implements Job
             sysau.E_CERRAR_SESION();
             estado = "0";
             comp.stop();
+            gnst.write_DIS(JMSesion.getText(), mw.hour_actual() , mw.fecha_actual(), "ACTUALIZACIÓN");
             mw.abrir_actualizador();
             con.Close_System();
         } 
