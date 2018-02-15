@@ -1,8 +1,0 @@
-USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
-FORMULARIO : SGL_VIEW_AreaTrabajo
-HORA : 08:48:24 AM
-TIPO : GENERACIÓN
-DESCRIPCIÓN : Se ha generado el Área con ID  1
- NOMBRE: ASDQASDASD
-----------------------------------------------------
- 

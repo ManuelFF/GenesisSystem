@@ -1,6 +1,0 @@
-DESCRIPCIÓN : Algun error ha ocurrido al intentar imprimir
-CLASE : JIFConsultarCertificados -> Imprimir
-ERROR : java.lang.NullPointerException
-TIME : 15:6:4
-----------------------------------------------------
- 
