@@ -51,7 +51,21 @@ public class EVENTS
     {
         try 
         {
-            String archivo = "./LGS/Events/events_"+date()+"-"+usuario+".txt";
+            String carpet = "./LGS/Events/"+date();
+            String carpet_name = null;
+
+            File c = new File(carpet);
+
+            if(!c.exists())
+            {
+             if(c.mkdir())
+              {
+                System.out.println("SUCCESS");
+                carpet_name = c.getName();
+              }else{System.err.println("Failed");}
+            }else if(c.exists()){System.out.println("EXIST OVERRIDE");carpet_name = c.getName();}            
+            
+            String archivo = "./LGS/Events/"+carpet_name+"/"+"events_"+date()+"-"+usuario+".txt";
             // Creamos un objeto f, que representa al archivo Usuarios.txt en formato binario
             File f = new File(archivo);
             // Permite abrir el archivo para ESCRITURA (Permite grabar datos)
@@ -73,38 +87,5 @@ public class EVENTS
               System.out.println("ERROR AL ESCRIBIR EN EL EVENTS "+e);
           }
     }
-    
-    public String read(String ruta)
-    {
-        FileReader fr = null;
-        BufferedReader br = null;
-        //Cadena de texto donde se guardara el contenido del archivo
-        String contenido = "";
-        try{
-                //ruta puede ser de tipo String o tipo File
-                fr = new FileReader( ruta );
-                br = new BufferedReader( fr );
-
-                String linea;
-                //Obtenemos el contenido del archivo linea por linea
-                while( ( linea = br.readLine() ) != null ){ 
-                        contenido += linea + "\n";
-                }
-
-        }catch( Exception e ){  }
-        //finally se utiliza para que si todo ocurre correctamente o si ocurre 
-        //algun error se cierre el archivo que anteriormente abrimos
-        finally{
-                try{
-                        br.close();
-                }catch( Exception ex ){}
-        }
-        return contenido;
-    }
-    
-    public void clear()
-    {
         
-    }
-    
 }
