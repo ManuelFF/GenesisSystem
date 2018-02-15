@@ -1,6 +1,0 @@
-DESCRIPCIÓN : Ha ocurrido un error al intentar abrir el actualizador
-CLASE : MWCON
-ERROR : java.lang.IllegalArgumentException: The file: Updater.jar doesn't exist.
-TIME : 11:52:35
-----------------------------------------------------
- 
