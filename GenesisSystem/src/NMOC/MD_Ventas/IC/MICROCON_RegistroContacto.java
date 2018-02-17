@@ -32,13 +32,13 @@ public class MICROCON_RegistroContacto
     }
     
     //INSERTAR REGISTRO
-    public void InsertarRegistro(String ID_REG, String tip_con, String estado, String nombre,String dni,String descripcion,String area,String formato,String telf, String correo,String fech,String hor, String costo)
+    public void InsertarRegistro(String ID_REG, String tip_con, String estado, String nombre,String dni,String descripcion,String area,String formato,String telf, String correo,String fech,String hor, String costo,String ct,String cd,String cvend)
     {
         try{
             DBCON RCN = new DBCON();
 
             // Llamada al procedimiento almacenado
-            CallableStatement cst = RCN.conector().prepareCall("{call usp_insertar_regcont(?,?,?,?,?,?,?,?,?,?,?,?,?)}");
+            CallableStatement cst = RCN.conector().prepareCall("{call usp_insertar_regcont(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}");
             // Parametro del procedimiento almacenado
             cst.setString(1, ID_REG);
             cst.setString(2, tip_con);
@@ -53,6 +53,9 @@ public class MICROCON_RegistroContacto
             cst.setString(11, fech);
             cst.setString(12, hor);
             cst.setString(13, costo);
+            cst.setString(14, ct);
+            cst.setString(15, cd);
+            cst.setString(16, cvend);
             // Ejecuta el procedimiento almacenado
             cst.execute();
             cst.close();
