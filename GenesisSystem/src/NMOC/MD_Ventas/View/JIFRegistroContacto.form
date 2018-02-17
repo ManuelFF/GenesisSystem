@@ -26,7 +26,7 @@
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                           <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="cbestado" min="-2" pref="98" max="-2" attributes="0"/>
+                          <Component id="cbtipContacto" min="-2" pref="98" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
@@ -34,12 +34,12 @@
                               <Group type="102" attributes="0">
                                   <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="txtidorden" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <Component id="txtidreg" min="-2" pref="98" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
                                   <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                                  <Component id="cbestado1" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <Component id="cbestado" min="-2" pref="98" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -58,7 +58,7 @@
                                       <Group type="102" attributes="0">
                                           <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
-                                          <Component id="txtfecha1" min="-2" pref="250" max="-2" attributes="0"/>
+                                          <Component id="txtnombre_razon" min="-2" pref="250" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -74,7 +74,7 @@
                                           <EmptySpace min="-2" pref="124" max="-2" attributes="0"/>
                                           <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="txtfecha2" min="-2" pref="249" max="-2" attributes="0"/>
+                                          <Component id="txtdni_ruc" min="-2" pref="249" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -86,23 +86,14 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Group type="102" attributes="0">
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Group type="102" attributes="0">
-                                                  <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="txtcosto2" min="-2" pref="135" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" attributes="0">
-                                                  <Component id="txtfecha3" min="-2" pref="135" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                                  <Component id="cbestado2" min="-2" pref="66" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="txtcosto1" min="-2" pref="135" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="266" max="-2" attributes="0"/>
+                                          <Component id="txtarea" min="-2" pref="135" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                          <Component id="cbformato" min="-2" pref="66" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="txttelf_celu" min="-2" pref="311" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
                                       </Group>
                                       <Component id="jScrollPane1" max="32767" attributes="0"/>
                                   </Group>
@@ -122,14 +113,18 @@
                                       </Group>
                                   </Group>
                                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="txtfecha" pref="135" max="32767" attributes="0"/>
-                                      <Component id="txthora" max="32767" attributes="0"/>
-                                      <Component id="txtcosto" max="32767" attributes="0"/>
+                                      <Component id="txtfecha" min="-2" pref="135" max="-2" attributes="0"/>
+                                      <Component id="txthora" min="-2" pref="135" max="-2" attributes="0"/>
+                                      <Component id="txtcosto" alignment="0" min="-2" pref="135" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="btnfecha" min="-2" max="-2" attributes="0"/>
                                       <Component id="btnhora" min="-2" pref="89" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="btnfecha" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
@@ -146,26 +141,29 @@
                                   <Component id="btnsalir" min="-2" pref="93" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jcdesratizacion" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jcDesinfeccion" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jcdesinsectacion" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jclimpiezareservorios" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jclimpiezaTanques" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jclimpiezaAmbientes" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jclimpiezaTrampasGrasa" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jcrecargaExtintores" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jcventaExtintores" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel11" min="-2" pref="433" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                              <Component id="txtcorreo" alignment="1" min="-2" pref="311" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jcdesratizacion" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jcDesinfeccion" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jcdesinsectacion" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jclimpiezareservorios" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jclimpiezaTanques" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jclimpiezaAmbientes" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jclimpiezaTrampasGrasa" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jcrecargaExtintores" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jcventaExtintores" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
-                          <Component id="jLabel11" min="-2" pref="433" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -195,7 +193,7 @@
                       <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
                       <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="cbestado" min="-2" max="-2" attributes="0"/>
+                  <Component id="cbtipContacto" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -203,7 +201,7 @@
                       <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
                       <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="cbestado1" min="-2" max="-2" attributes="0"/>
+                  <Component id="cbestado" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -211,13 +209,13 @@
                       <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
                       <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="txtidorden" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtidreg" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtfecha1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtnombre_razon" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtfecha2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtdni_ruc" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -227,11 +225,11 @@
               </Group>
               <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtfecha3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtarea" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cbestado2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cbformato" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtcosto1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txttelf_celu" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -239,7 +237,7 @@
                   <Component id="txtfecha" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtcosto2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtcorreo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -348,7 +346,7 @@
         <Property name="text" type="java.lang.String" value="Tipo de Contacto: "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="cbestado">
+    <Component class="javax.swing.JComboBox" name="cbtipContacto">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -378,7 +376,7 @@
         <Property name="text" type="java.lang.String" value="ID Registro:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtidorden">
+    <Component class="javax.swing.JTextField" name="txtidreg">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -515,7 +513,7 @@
         <Property name="text" type="java.lang.String" value="Estado:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="cbestado1">
+    <Component class="javax.swing.JComboBox" name="cbestado">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -542,7 +540,7 @@
         <Property name="text" type="java.lang.String" value="Nombres/Raz&#xf3;n:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtfecha1">
+    <Component class="javax.swing.JTextField" name="txtnombre_razon">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -560,7 +558,7 @@
         <Property name="text" type="java.lang.String" value="DNI/RUC:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtfecha2">
+    <Component class="javax.swing.JTextField" name="txtdni_ruc">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -577,7 +575,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextArea" name="JTAAnuncio">
+        <Component class="javax.swing.JTextArea" name="JTADescripcion">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -610,7 +608,7 @@
         <Property name="text" type="java.lang.String" value="&#xc1;rea Trabajo:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtfecha3">
+    <Component class="javax.swing.JTextField" name="txtarea">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -620,7 +618,7 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JComboBox" name="cbestado2">
+    <Component class="javax.swing.JComboBox" name="cbformato">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -665,7 +663,7 @@
         <Property name="text" type="java.lang.String" value="Telf/Cel:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtcosto1">
+    <Component class="javax.swing.JTextField" name="txttelf_celu">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -683,7 +681,7 @@
         <Property name="text" type="java.lang.String" value="Correo:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtcosto2">
+    <Component class="javax.swing.JTextField" name="txtcorreo">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>

@@ -5,7 +5,17 @@
  */
 package NMOC.MD_Ventas.View;
 
+import IACore.JTACON;
+import ModuleWorker.IC.MWCON;
 import ModuleWorker.SYSFRMCON;
+import ModuleWorker.View.JFRPrincipal;
+import NCLPM.EVENTS;
+import NCLPM.LOG;
+import NCLPM.RESULTS;
+import NMOC.MD_Ventas.Core.NOB_registroContacto;
+import NMOC.MD_Ventas.IC.MICROCON_RegistroContacto;
+import java.awt.Color;
+import javax.swing.JFrame;
 
 /**
  *
@@ -14,16 +24,118 @@ import ModuleWorker.SYSFRMCON;
 public class JIFRegistroContacto extends javax.swing.JInternalFrame
 {
 
-    
+    LOG lc = new LOG();
+    EVENTS evn = new EVENTS();
+    RESULTS rslt = new RESULTS();
     SYSFRMCON sysfrm = new SYSFRMCON();
-    
+    MWCON mw = new MWCON();
+    JFrame form;
+    JTACON JTC = new JTACON();
+    Color ColorInicial;
+    //PUENTE
+    MICROCON_RegistroContacto P_REGCON = new MICROCON_RegistroContacto();
     
     public JIFRegistroContacto() 
     {
         initComponents();
         this.setTitle(sysfrm.T_RegistroContactos());
         sysfrm.B_RegistroContactos(this.getContentPane());
+        lblusuario.setText(JFRPrincipal.JMSesion.getText());
+        lbldate.setText(mw.fecha_actual());
+        JTADescripcion.setLineWrap(true);
+        ColorInicial = txtnombre_razon.getBackground();
+        Nuevo();
     }
+    
+    private void clearCacheDB()
+    {
+        try
+        {
+            P_REGCON.clear();
+            P_REGCON.llenarDatos();
+            
+        } catch (Exception e) 
+          {
+                lc.write("Error al intentar borrar la cache de la DB", this.getTitle(), e);
+          }
+    }
+    
+    private void Nuevo()
+    {
+        clearCacheDB();
+        String cod = String.format("%03d", 1);
+        int codigo;
+        NOB_registroContacto ultObjeto = null;
+        
+        if(P_REGCON.tamaño() == 0)
+        {
+            cod="REGC-"+cod;
+        }else
+            {
+                ultObjeto = P_REGCON.obtener(P_REGCON.tamaño()-1);
+                
+                cod = ultObjeto.getID_REG_CONT().substring(5);
+                codigo = Integer.parseInt(cod)+1;
+                cod="REGC-"+String.format("%03d", codigo);
+            }txtidreg.setText(cod);
+        
+    }
+    
+    private void clear_frm()
+    {
+        cbtipContacto.setSelectedIndex(0);
+        cbestado.setSelectedIndex(0);
+        txtnombre_razon.setText("");
+        txtdni_ruc.setText("");
+        JTADescripcion.setText("");
+        txtarea.setText("");
+        cbformato.setSelectedIndex(0);
+        txttelf_celu.setText("");
+        txtfecha.setText("");
+        txthora.setText("");
+        txtcorreo.setText("");
+        txtcosto.setText("");
+        //SERVICIOS
+        jcdesinsectacion.setSelected(false);
+        jcDesinfeccion.setSelected(false);
+        jcdesratizacion.setSelected(false);
+        jclimpiezaAmbientes.setSelected(false);
+        jclimpiezaTanques.setSelected(false);
+        jclimpiezareservorios.setSelected(false);
+        jcventaExtintores.setSelected(false);
+        jcrecargaExtintores.setSelected(false);
+        jclimpiezaTrampasGrasa.setSelected(false);
+    }
+    
+    private void enadisa_Pburronts(boolean registrar,boolean modificar,boolean limpiar, boolean buscar,boolean exportar,boolean salir)
+    {
+        btnregistrar.setEnabled(registrar);
+        btnmodificar.setEnabled(modificar);
+        btnlimpiar.setEnabled(limpiar);
+        btnbuscar.setEnabled(buscar);
+        btnexportar.setEnabled(exportar);
+        btnsalir.setEnabled(salir);
+    }
+    
+    private void enadisa_Pfechas(boolean fecha, boolean hora)
+    {
+        btnfecha.setEnabled(fecha);
+        btnhora.setEnabled(hora);
+    }
+    
+    private void reiniciarColores()
+    {
+        txtnombre_razon.setBackground(ColorInicial);
+        txtdni_ruc.setBackground(ColorInicial);
+        JTADescripcion.setBackground(ColorInicial);
+        txtarea.setBackground(ColorInicial);
+        txttelf_celu.setBackground(ColorInicial);
+        txtfecha.setBackground(ColorInicial);
+        txthora.setBackground(ColorInicial);
+        txtcorreo.setBackground(ColorInicial);
+        txtcosto.setBackground(ColorInicial);
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -40,9 +152,9 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
         jLabel5 = new javax.swing.JLabel();
         lbldate = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        cbestado = new javax.swing.JComboBox<>();
+        cbtipContacto = new javax.swing.JComboBox<>();
         jLabel7 = new javax.swing.JLabel();
-        txtidorden = new javax.swing.JTextField();
+        txtidreg = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         txtfecha = new javax.swing.JTextField();
         btnfecha = new javax.swing.JButton();
@@ -55,23 +167,23 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
         btnlimpiar = new javax.swing.JButton();
         btnregistrar = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
-        cbestado1 = new javax.swing.JComboBox<>();
+        cbestado = new javax.swing.JComboBox<>();
         jLabel14 = new javax.swing.JLabel();
-        txtfecha1 = new javax.swing.JTextField();
+        txtnombre_razon = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
-        txtfecha2 = new javax.swing.JTextField();
+        txtdni_ruc = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        JTAAnuncio = new javax.swing.JTextArea();
+        JTADescripcion = new javax.swing.JTextArea();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        txtfecha3 = new javax.swing.JTextField();
-        cbestado2 = new javax.swing.JComboBox<>();
+        txtarea = new javax.swing.JTextField();
+        cbformato = new javax.swing.JComboBox<>();
         jLabel18 = new javax.swing.JLabel();
         txtcosto = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
-        txtcosto1 = new javax.swing.JTextField();
+        txttelf_celu = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
-        txtcosto2 = new javax.swing.JTextField();
+        txtcorreo = new javax.swing.JTextField();
         btnexportar = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         jcdesinsectacion = new javax.swing.JCheckBox();
@@ -103,15 +215,15 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel9.setText("Tipo de Contacto: ");
 
-        cbestado.setBackground(new java.awt.Color(204, 204, 204));
-        cbestado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "CELULAR", "TELEFONO", "CORREO", "CAMPO", "WEB" }));
-        cbestado.setSelectedItem("EN ESPERA");
+        cbtipContacto.setBackground(new java.awt.Color(204, 204, 204));
+        cbtipContacto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "CELULAR", "TELEFONO", "CORREO", "CAMPO", "WEB" }));
+        cbtipContacto.setSelectedItem("EN ESPERA");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel7.setText("ID Registro:");
 
-        txtidorden.setEditable(false);
-        txtidorden.setBackground(new java.awt.Color(204, 255, 204));
+        txtidreg.setEditable(false);
+        txtidreg.setBackground(new java.awt.Color(204, 255, 204));
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel12.setText("Fecha Propuesta:");
@@ -187,26 +299,26 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel10.setText("Estado:");
 
-        cbestado1.setBackground(new java.awt.Color(204, 204, 204));
-        cbestado1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ACTIVO", "INACTIVO" }));
-        cbestado1.setSelectedItem("EN ESPERA");
+        cbestado.setBackground(new java.awt.Color(204, 204, 204));
+        cbestado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ACTIVO", "INACTIVO" }));
+        cbestado.setSelectedItem("EN ESPERA");
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel14.setText("Nombres/Razón:");
 
-        txtfecha1.setBackground(new java.awt.Color(204, 204, 204));
+        txtnombre_razon.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel15.setText("DNI/RUC:");
 
-        txtfecha2.setBackground(new java.awt.Color(204, 204, 204));
+        txtdni_ruc.setBackground(new java.awt.Color(204, 204, 204));
 
-        JTAAnuncio.setBackground(new java.awt.Color(204, 204, 204));
-        JTAAnuncio.setColumns(15);
-        JTAAnuncio.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        JTAAnuncio.setForeground(new java.awt.Color(0, 102, 153));
-        JTAAnuncio.setRows(2);
-        jScrollPane1.setViewportView(JTAAnuncio);
+        JTADescripcion.setBackground(new java.awt.Color(204, 204, 204));
+        JTADescripcion.setColumns(15);
+        JTADescripcion.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        JTADescripcion.setForeground(new java.awt.Color(0, 102, 153));
+        JTADescripcion.setRows(2);
+        jScrollPane1.setViewportView(JTADescripcion);
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel16.setText("Descripción Caso:");
@@ -214,11 +326,11 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
         jLabel17.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel17.setText("Área Trabajo:");
 
-        txtfecha3.setBackground(new java.awt.Color(204, 204, 204));
+        txtarea.setBackground(new java.awt.Color(204, 204, 204));
 
-        cbestado2.setBackground(new java.awt.Color(204, 204, 204));
-        cbestado2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "MT2", "MT3" }));
-        cbestado2.setSelectedItem("EN ESPERA");
+        cbformato.setBackground(new java.awt.Color(204, 204, 204));
+        cbformato.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "MT2", "MT3" }));
+        cbformato.setSelectedItem("EN ESPERA");
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel18.setText("Costo:");
@@ -228,12 +340,12 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
         jLabel19.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel19.setText("Telf/Cel:");
 
-        txtcosto1.setBackground(new java.awt.Color(204, 204, 204));
+        txttelf_celu.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel20.setText("Correo:");
 
-        txtcosto2.setBackground(new java.awt.Color(204, 204, 204));
+        txtcorreo.setBackground(new java.awt.Color(204, 204, 204));
 
         btnexportar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/exchange.png"))); // NOI18N
         btnexportar.setText("Exportar");
@@ -286,18 +398,18 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
                             .addGap(10, 10, 10)
                             .addComponent(jLabel9)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(cbestado, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(cbtipContacto, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                             .addGap(44, 44, 44)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabel7)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(txtidorden, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtidreg, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabel10)
                                     .addGap(10, 10, 10)
-                                    .addComponent(cbestado1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(cbestado, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(20, 20, 20)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -311,7 +423,7 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(jLabel14)
                                             .addGap(3, 3, 3)
-                                            .addComponent(txtfecha1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addComponent(txtnombre_razon, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(layout.createSequentialGroup()
                                             .addGap(6, 6, 6)
@@ -324,7 +436,7 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
                                             .addGap(124, 124, 124)
                                             .addComponent(jLabel15)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(txtfecha2, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                            .addComponent(txtdni_ruc, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addGroup(layout.createSequentialGroup()
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                         .addComponent(jLabel16)
@@ -332,20 +444,14 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addGroup(layout.createSequentialGroup()
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addGroup(layout.createSequentialGroup()
-                                                    .addComponent(jLabel20)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(txtcosto2, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGroup(layout.createSequentialGroup()
-                                                    .addComponent(txtfecha3, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addGap(10, 10, 10)
-                                                    .addComponent(cbestado2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(jLabel19)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(txtcosto1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                            .addGap(266, 266, 266))
+                                            .addComponent(txtarea, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(10, 10, 10)
+                                            .addComponent(cbformato, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(jLabel19)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(txttelf_celu, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(90, 90, 90))
                                         .addComponent(jScrollPane1)))
                                 .addGroup(layout.createSequentialGroup()
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -358,13 +464,16 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
                                                 .addComponent(jLabel13))
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(txtfecha, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
-                                        .addComponent(txthora)
-                                        .addComponent(txtcosto))
+                                        .addComponent(txtfecha, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txthora, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtcosto, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(btnfecha)
-                                        .addComponent(btnhora, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(btnhora, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(btnfecha)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(jLabel20))))
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                     .addComponent(btnregistrar)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -377,22 +486,24 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
                                     .addComponent(btnexportar)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(btnsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jcdesratizacion)
-                                    .addComponent(jcDesinfeccion)
-                                    .addComponent(jcdesinsectacion))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jclimpiezareservorios)
-                                    .addComponent(jclimpiezaTanques)
-                                    .addComponent(jclimpiezaAmbientes))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jclimpiezaTrampasGrasa)
-                                    .addComponent(jcrecargaExtintores)
-                                    .addComponent(jcventaExtintores)))
-                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 433, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 433, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(txtcorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jcdesratizacion)
+                                        .addComponent(jcDesinfeccion)
+                                        .addComponent(jcdesinsectacion))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jclimpiezareservorios)
+                                        .addComponent(jclimpiezaTanques)
+                                        .addComponent(jclimpiezaAmbientes))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jclimpiezaTrampasGrasa)
+                                        .addComponent(jcrecargaExtintores)
+                                        .addComponent(jcventaExtintores)))))))
                 .addGap(20, 20, 20))
         );
         layout.setVerticalGroup(
@@ -413,24 +524,24 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
                     .addGroup(layout.createSequentialGroup()
                         .addGap(2, 2, 2)
                         .addComponent(jLabel9))
-                    .addComponent(cbestado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cbtipContacto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(2, 2, 2)
                         .addComponent(jLabel10))
-                    .addComponent(cbestado1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cbestado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(5, 5, 5)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(1, 1, 1)
                         .addComponent(jLabel7))
-                    .addComponent(txtidorden, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtidreg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtfecha1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtnombre_razon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel14)
-                    .addComponent(txtfecha2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtdni_ruc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel15))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -438,18 +549,18 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(11, 11, 11)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtfecha3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtarea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel17)
-                    .addComponent(cbestado2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbformato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel19)
-                    .addComponent(txtcosto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txttelf_celu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnfecha)
                     .addComponent(txtfecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel12)
                     .addComponent(jLabel20)
-                    .addComponent(txtcosto2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtcorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
@@ -520,7 +631,17 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
     }//GEN-LAST:event_btnmodificarActionPerformed
 
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
-
+                                
+    try 
+    {           
+      evn.write(lblusuario.getText(), "Ha salido del formulario 'JIFRegistroContacto'", this.getTitle(), "Presiono Botón 'Salir'");
+      JFRPrincipal.JSMRegistroContactos.setActionCommand("CERRADO");
+      this.dispose();
+    } catch (Exception e) 
+        {
+            lc.write("No se ha podido cerrar el formulario 'JIFGenerarCertificado' debido a un error inesperado", this.getTitle(), e);
+        }    
+        
     
     }//GEN-LAST:event_btnsalirActionPerformed
 
@@ -539,7 +660,7 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextArea JTAAnuncio;
+    private javax.swing.JTextArea JTADescripcion;
     private javax.swing.JButton btnbuscar;
     private javax.swing.JButton btnexportar;
     private javax.swing.JButton btnfecha;
@@ -549,8 +670,8 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
     private javax.swing.JButton btnregistrar;
     private javax.swing.JButton btnsalir;
     private javax.swing.JComboBox<String> cbestado;
-    private javax.swing.JComboBox<String> cbestado1;
-    private javax.swing.JComboBox<String> cbestado2;
+    private javax.swing.JComboBox<String> cbformato;
+    private javax.swing.JComboBox<String> cbtipContacto;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -579,14 +700,14 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
     public static javax.swing.JCheckBox jcventaExtintores;
     private javax.swing.JLabel lbldate;
     private javax.swing.JLabel lblusuario;
+    public static javax.swing.JTextField txtarea;
+    public static javax.swing.JTextField txtcorreo;
     public static javax.swing.JTextField txtcosto;
-    public static javax.swing.JTextField txtcosto1;
-    public static javax.swing.JTextField txtcosto2;
+    public static javax.swing.JTextField txtdni_ruc;
     public static javax.swing.JTextField txtfecha;
-    public static javax.swing.JTextField txtfecha1;
-    public static javax.swing.JTextField txtfecha2;
-    public static javax.swing.JTextField txtfecha3;
     public static javax.swing.JTextField txthora;
-    public static javax.swing.JTextField txtidorden;
+    public static javax.swing.JTextField txtidreg;
+    public static javax.swing.JTextField txtnombre_razon;
+    public static javax.swing.JTextField txttelf_celu;
     // End of variables declaration//GEN-END:variables
 }
