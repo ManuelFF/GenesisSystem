@@ -8,7 +8,6 @@ package NMOC.MD_Generar.View;
 import IACore.JTACON;
 import ModuleWorker.IC.MWCON;
 import ModuleWorker.SYSAUDIOCON;
-import ModuleWorker.SYSCOPY;
 import ModuleWorker.SYSCOPYV2;
 import ModuleWorker.SYSFRMCON;
 import ModuleWorker.View.JFRPrincipal;
