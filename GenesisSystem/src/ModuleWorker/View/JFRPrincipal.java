@@ -16,9 +16,9 @@ import ModuleWorker.SYSWALLPCON;
 import NCLPM.EVENTS;
 import NCLPM.GEN_STATUS;
 import NCLPM.LOG;
-import NMOC.MD_Consultar_View.JIFConsultarCertificados;
-import NMOC.MD_Consultar_View.JIFConsultarCertificadosVencidos;
-import NMOC.MD_Consultar_View.JIFConsultarOrdenesTrabajo;
+import NMOC.MD_Consultar.View.JIFConsultarCertificados;
+import NMOC.MD_Consultar.View.JIFConsultarCertificadosVencidos;
+import NMOC.MD_Consultar.View.JIFConsultarOrdenesTrabajo;
 import NMOC.MD_Generar.View.JIFGenerarCertificado;
 import NMOC.MD_Generar.View.JIFGenerarCotizacion;
 import NMOC.MD_Generar.View.JIFGenerarOrdenTrabajo;
@@ -26,6 +26,7 @@ import NMOC.MD_Mantenimientos.View.JIFMantenerClientes;
 import NMOC.MD_Mantenimientos.View.JIFMantenerImplementos;
 import NMOC.MD_Mantenimientos.View.JIFMantenerPersonal;
 import NMOC.MD_Mantenimientos.View.JIFMantenerProductos;
+import NMOC.MD_Ventas.View.JIFRegistroContacto;
 import java.awt.Dimension;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
@@ -133,8 +134,9 @@ public class JFRPrincipal extends javax.swing.JFrame
         JSMConsultarOrden = new javax.swing.JMenuItem();
         JSMConsultarCertificado = new javax.swing.JMenuItem();
         JSMConsultarCertificadoVen = new javax.swing.JMenuItem();
+        JMVentas = new javax.swing.JMenu();
+        JSMRegistroContactos = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
-        jMenu5 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
 
@@ -384,13 +386,24 @@ public class JFRPrincipal extends javax.swing.JFrame
 
         JMPrincipal.add(JMConsultar);
 
+        JMVentas.setText("Ventas");
+        JMVentas.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+
+        JSMRegistroContactos.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        JSMRegistroContactos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/CertificadoV224.png"))); // NOI18N
+        JSMRegistroContactos.setText("Registro Contactos");
+        JSMRegistroContactos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JSMRegistroContactosActionPerformed(evt);
+            }
+        });
+        JMVentas.add(JSMRegistroContactos);
+
+        JMPrincipal.add(JMVentas);
+
         jMenu4.setText("Administración");
         jMenu4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         JMPrincipal.add(jMenu4);
-
-        jMenu5.setText("Ventas");
-        jMenu5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        JMPrincipal.add(jMenu5);
 
         setJMenuBar(JMPrincipal);
 
@@ -953,6 +966,39 @@ public class JFRPrincipal extends javax.swing.JFrame
         
     }//GEN-LAST:event_JSMConsultarCertificadoVenActionPerformed
 
+    private void JSMRegistroContactosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSMRegistroContactosActionPerformed
+
+    try
+      {
+          JIFRegistroContacto reg = new JIFRegistroContacto();
+          JFrame jf=new JFrame();
+          jf.setAlwaysOnTop(true);
+
+          if(JSMRegistroContactos.getActionCommand().equals("Abierto"))
+              {
+                  SYSAUDIOCON sysau = new SYSAUDIOCON();
+                  sysau.E_ERROR();
+                  JOptionPane.showMessageDialog(jf,"Ya esta abierto", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+              }
+          else
+          {                
+              JSMRegistroContactos.setActionCommand("Abierto");
+              JDEscritorio.add(reg);
+              Dimension desktopSize = JDEscritorio.getSize();
+              Dimension FrameSize = reg.getSize();
+              reg.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
+              evn.write(JMSesion.getText(), "Abrio el formulario 'Registro Contactos'", "JFPrincipal", "Menu 'Registro Contactos' Presionado");
+              reg.show();
+          }
+      }
+      catch (Exception e)
+      {
+
+          lc.write("Error intentando abrir 'Registro Contactos'", "JFRPrincipal", e);
+      }    
+
+    }//GEN-LAST:event_JSMRegistroContactosActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -998,6 +1044,7 @@ public class JFRPrincipal extends javax.swing.JFrame
     private javax.swing.JMenu JMMantenimientos;
     private javax.swing.JMenuBar JMPrincipal;
     public static javax.swing.JMenu JMSesion;
+    private javax.swing.JMenu JMVentas;
     private javax.swing.JMenuItem JSMCerrarSesion;
     public static javax.swing.JMenuItem JSMConsultarCertificado;
     public static javax.swing.JMenuItem JSMConsultarCertificadoVen;
@@ -1012,6 +1059,7 @@ public class JFRPrincipal extends javax.swing.JFrame
     public static javax.swing.JMenuItem JSMMantenimientoUsuarios;
     public static javax.swing.JMenuItem JSMPermisosUsuarios;
     public static javax.swing.JMenuItem JSMRegistrarSalida;
+    public static javax.swing.JMenuItem JSMRegistroContactos;
     private javax.swing.JToolBar JTBHerramientas;
     private javax.swing.JButton btnAdministrarCertificado;
     private javax.swing.JButton btnAgregarCliente;
@@ -1023,6 +1071,5 @@ public class JFRPrincipal extends javax.swing.JFrame
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
     // End of variables declaration//GEN-END:variables
 }
