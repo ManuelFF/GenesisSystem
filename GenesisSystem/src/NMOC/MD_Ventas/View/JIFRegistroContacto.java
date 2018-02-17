@@ -7,15 +7,18 @@ package NMOC.MD_Ventas.View;
 
 import IACore.JTACON;
 import ModuleWorker.IC.MWCON;
+import ModuleWorker.SYSAUDIOCON;
 import ModuleWorker.SYSFRMCON;
 import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NCLPM.RESULTS;
+import NMOC.GL_JDCalendar;
 import NMOC.MD_Ventas.Core.NOB_registroContacto;
 import NMOC.MD_Ventas.IC.MICROCON_RegistroContacto;
 import java.awt.Color;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -106,6 +109,38 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
         jcrecargaExtintores.setSelected(false);
         jclimpiezaTrampasGrasa.setSelected(false);
     }
+    
+    
+     private void edit_frm(boolean cond)
+    {
+        cbtipContacto.setEnabled(cond);
+        cbestado.setEnabled(cond);
+        
+        txtnombre_razon.setEditable(cond);
+        txtdni_ruc.setEditable(cond);
+        JTADescripcion.setEditable(cond);
+        txtarea.setEditable(cond);
+        
+        cbformato.setEnabled(cond);
+        
+        txttelf_celu.setEditable(cond);
+        txtfecha.setEditable(cond);
+        txthora.setEditable(cond);
+        txtcorreo.setEditable(cond);
+        txtcosto.setEditable(cond);
+        //SERVICIOS
+        jcdesinsectacion.setEnabled(cond);
+        jcDesinfeccion.setEnabled(cond);
+        jcdesratizacion.setEnabled(cond);
+        jclimpiezaAmbientes.setEnabled(cond);
+        jclimpiezaTanques.setEnabled(cond);
+        jclimpiezareservorios.setEnabled(cond);
+        //jcventaExtintores.setEnabled(cond);
+        //jcrecargaExtintores.setEnabled(cond);
+        jclimpiezaTrampasGrasa.setEnabled(cond);
+    }
+    
+    
     
     private void enadisa_Pburronts(boolean registrar,boolean modificar,boolean limpiar, boolean buscar,boolean exportar,boolean salir)
     {
@@ -610,11 +645,35 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
 
     private void btnfechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnfechaActionPerformed
 
+    try 
+    {
+        evn.write(lblusuario.getText(), "Abrio el selector de fechas", "JIFRegistrarContacto -> JDCalendar", "Botón 'Fecha' presionado");
+        GL_JDCalendar ca = new GL_JDCalendar(form, true,"D");
+        ca.formulario="REG_CONT";
+        ca.setVisible(true);
+
+    } catch (Exception e) 
+        {
+            lc.write("No se pudo abrir el selector de fechas debido a un error inesperado", "JIFRegistrarContacto -> boton Fecha", e);
+        }
      
     }//GEN-LAST:event_btnfechaActionPerformed
 
     private void btnhoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnhoraActionPerformed
 
+    try 
+    {
+        evn.write(lblusuario.getText(), "Abrio el selector de horas", "JIFRegistrarContacto -> JDCalendar", "Botón 'Fecha' presionado");
+        GL_JDCalendar ca = new GL_JDCalendar(form, true,"T");
+        ca.formulario="REG_CONT";
+        ca.setVisible(true);
+
+    } catch (Exception e) 
+        {
+            lc.write("No se pudo abrir el selector de fechas debido a un error inesperado", "JIFRegistrarContacto -> boton Fecha", e);
+        }
+        
+        
       
     }//GEN-LAST:event_btnhoraActionPerformed
 
@@ -651,11 +710,86 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
 
     private void btnregistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnregistrarActionPerformed
 
+    try 
+    {
+        JFrame jf = new JFrame();
+        jf.setAlwaysOnTop(true);
+        SYSAUDIOCON sysau = new SYSAUDIOCON();
+        
+        //VALIDACION DE DATOS POR CAMPOS VACIOS
+        //TO DO
+        
+        if(btnregistrar.getText().equals("Registrar"))
+        {
+            enadisa_Pburronts(true, false, true, false, false, false);
+            enadisa_Pfechas(true,true);
+            edit_frm(true);
+            
+            //OBTENCION DE DATOS
+            String tipo_contacto = cbtipContacto.getSelectedItem().toString();
+            String estado = cbestado.getSelectedItem().toString();
+            String id_reg = txtidreg.getText().toUpperCase();
+            String nom = txtnombre_razon.getText().toUpperCase();
+            String dni_ruc = txtdni_ruc.getText().toUpperCase();
+            String Descripcion = JTADescripcion.getText().toUpperCase();
+            String area = txtarea.getText();
+            String formato = cbformato.getSelectedItem().toString();
+            String telf_cel = txttelf_celu.getText();
+            String correo = txtcorreo.getText();
+            String fecha = txtfecha.getText();
+            String hora = txthora.getText();
+            String costo = txtcosto.getText();
+            
+            if(nom.equals(""))
+            {
+                sysau.E_ERROR();
+                JOptionPane.showMessageDialog(jf, "Ingrese al menos un nombre del contacto", "Ingrese Nombre", JOptionPane.ERROR_MESSAGE);
+            }
+            else
+                {
+                    //CUERPO
+                    P_REGCON.InsertarRegistro(id_reg,tipo_contacto,estado,nom,dni_ruc,Descripcion,area,formato,telf_cel,correo,fecha,hora,costo);
+                    //DETALLE
+
+                    if(jcdesinsectacion.isSelected()){P_REGCON.InsertarDETRegistro(id_reg, "SERV-001");} //DESINSECTACION
+                    if(jcDesinfeccion.isSelected()){P_REGCON.InsertarDETRegistro(id_reg, "SERV-003");} //DESINFECCION
+                    if(jcdesratizacion.isSelected()){P_REGCON.InsertarDETRegistro(id_reg, "SERV-002");} //DESRATIZACION
+                    if(jclimpiezaAmbientes.isSelected()){P_REGCON.InsertarDETRegistro(id_reg, "SERV-005");} //LIMPIEZA DE AMBIENTES
+                    if(jclimpiezaTanques.isSelected()){P_REGCON.InsertarDETRegistro(id_reg, "SERV-006");} //LIMPIENZA TANQUES
+                    if(jclimpiezareservorios.isSelected()){P_REGCON.InsertarDETRegistro(id_reg, "SERV-004");} //LIMPIEZA RESERVORIOS
+                    if(jclimpiezaTrampasGrasa.isSelected()){P_REGCON.InsertarDETRegistro(id_reg, "SERV-007");} //LIMPIEZA RESERVORIOS
+
+                    evn.write(lblusuario.getText(), "Registro un nuevo registro de contacto", this.getTitle(), "Botón 'Registrar' Presionado");
+
+                    rslt.write(lblusuario.getText(), this.getTitle(), "REGISTRO", "Se ha registrado el Registro de Contacto con ID  "+id_reg+"\n NOMBRE/RAZÓN: "+nom+"\n");
+
+                    sysau.E_INFORMATION();
+                    JOptionPane.showMessageDialog(jf, "Registro Insertado con exito!", "Registro Insertado", JOptionPane.INFORMATION_MESSAGE);
+
+                    clearCacheDB();
+                    clear_frm();
+                    enadisa_Pburronts(true, false, true, true, false, true);
+                    enadisa_Pfechas(true,true);
+                    Nuevo();
+                }
+            
+        }else
+            {
+                
+            }
+        
+    } catch (Exception e) 
+      {
+          lc.write("ha ocurrido un error al intentar registrar un nuevo registro de contacto", this.getTitle(), e);
+      }
+               
 
     }//GEN-LAST:event_btnregistrarActionPerformed
 
     private void btnexportarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexportarActionPerformed
-        // TODO add your handling code here:
+        
+        
+        
     }//GEN-LAST:event_btnexportarActionPerformed
 
 
