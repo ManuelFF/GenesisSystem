@@ -17,6 +17,7 @@ import NMOC.GL_JDCalendar;
 import NMOC.MD_Ventas.Core.NOB_registroContacto;
 import NMOC.MD_Ventas.IC.MICROCON_RegistroContacto;
 import java.awt.Color;
+import java.awt.HeadlessException;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -124,8 +125,6 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
         cbformato.setEnabled(cond);
         
         txttelf_celu.setEditable(cond);
-        txtfecha.setEditable(cond);
-        txthora.setEditable(cond);
         txtcorreo.setEditable(cond);
         txtcosto.setEditable(cond);
         //SERVICIOS
@@ -672,8 +671,6 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
         {
             lc.write("No se pudo abrir el selector de fechas debido a un error inesperado", "JIFRegistrarContacto -> boton Fecha", e);
         }
-        
-        
       
     }//GEN-LAST:event_btnhoraActionPerformed
 
@@ -706,6 +703,13 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
 
     private void btnlimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlimpiarActionPerformed
 
+        SYSAUDIOCON sysau = new SYSAUDIOCON();
+        sysau.E_PUSH();
+        clearCacheDB();
+        txtidreg.setText("");
+        clear_frm();
+        Nuevo();
+        
     }//GEN-LAST:event_btnlimpiarActionPerformed
 
     private void btnregistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnregistrarActionPerformed
@@ -715,13 +719,10 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
         JFrame jf = new JFrame();
         jf.setAlwaysOnTop(true);
         SYSAUDIOCON sysau = new SYSAUDIOCON();
-        
-        //VALIDACION DE DATOS POR CAMPOS VACIOS
-        //TO DO
-        
+              
         if(btnregistrar.getText().equals("Registrar"))
         {
-            enadisa_Pburronts(true, false, true, false, false, false);
+            enadisa_Pburronts(true, false, true, false, false, true);
             enadisa_Pfechas(true,true);
             edit_frm(true);
             
@@ -748,7 +749,7 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
             else
                 {
                     //CUERPO
-                    P_REGCON.InsertarRegistro(id_reg,tipo_contacto,estado,nom,dni_ruc,Descripcion,area,formato,telf_cel,correo,fecha,hora,costo);
+                    P_REGCON.InsertarRegistro(id_reg,tipo_contacto,estado,nom,dni_ruc,Descripcion,area,formato,telf_cel,correo,fecha,hora,costo,mw.hour_actual(),mw.fecha_actual(),lblusuario.getText());
                     //DETALLE
 
                     if(jcdesinsectacion.isSelected()){P_REGCON.InsertarDETRegistro(id_reg, "SERV-001");} //DESINSECTACION
@@ -772,17 +773,14 @@ public class JIFRegistroContacto extends javax.swing.JInternalFrame
                     enadisa_Pfechas(true,true);
                     Nuevo();
                 }
-            
         }else
             {
-                
+                //NOTHING FOR THE MOMENT
             }
-        
-    } catch (Exception e) 
+    } catch (HeadlessException | SecurityException e) 
       {
           lc.write("ha ocurrido un error al intentar registrar un nuevo registro de contacto", this.getTitle(), e);
       }
-               
 
     }//GEN-LAST:event_btnregistrarActionPerformed
 
