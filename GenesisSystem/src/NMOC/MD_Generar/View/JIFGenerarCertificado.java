@@ -1237,6 +1237,7 @@ public class JIFGenerarCertificado extends javax.swing.JInternalFrame
                                                                                                 clearCacheDB();
                                                                                                 clear_frm();
                                                                                                 btnverimagen.setEnabled(false);
+                                                                                                btnmodificar.setText("Modificar");
                                                                                                 enadisa_Pbuttons(true, false, false, true, true,false);
                                                                                                 enadisa_boxes(false);
                                                                                                 enadisa_Gbuttons(false);
