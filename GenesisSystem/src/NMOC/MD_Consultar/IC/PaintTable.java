@@ -6,6 +6,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 /**
  * @author Mouse
  */
+
 public class PaintTable extends DefaultTableCellRenderer
 {
     private int columna_patron;
