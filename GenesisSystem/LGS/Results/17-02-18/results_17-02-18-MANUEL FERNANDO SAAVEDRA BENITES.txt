@@ -1,0 +1,45 @@
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : [DEV] Registro Contactos 0.05
+HORA : 13:12:54 PM
+TIPO : REGISTRO
+DESCRIPCIÓN : Se ha registrado el Registro de Contacto con ID  REGC-001
+ NOMBRE/RAZÓN: MANUEL FERNANDO SAAVEDRA BENITES
+
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : [DEV] Registro Contactos 0.05
+HORA : 13:43:29 PM
+TIPO : REGISTRO
+DESCRIPCIÓN : Se ha registrado el Registro de Contacto con ID  REGC-001
+ NOMBRE/RAZÓN: MANUEL FERNANDO SAAVEDRA BENITES
+
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : [DEV] Registro Contactos 0.05
+HORA : 14:41:8 PM
+TIPO : REGISTRO
+DESCRIPCIÓN : Se ha registrado el Registro de Contacto con ID  REGC-001
+ NOMBRE/RAZÓN: SARA GONZALES CHUZON
+
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : [DEV] Registro Contactos 0.05
+HORA : 14:47:41 PM
+TIPO : REGISTRO
+DESCRIPCIÓN : Se ha registrado el Registro de Contacto con ID  REGC-002
+ NOMBRE/RAZÓN: AODOASDKO
+
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : [DEV] Registro Contactos 0.05
+HORA : 15:1:45 PM
+TIPO : REGISTRO
+DESCRIPCIÓN : Se ha registrado el Registro de Contacto con ID  REGC-003
+ NOMBRE/RAZÓN: MANUEL FERNANDO SAAVEDRA BENITES 
+
+----------------------------------------------------
+ 

@@ -1,0 +1,7 @@
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 11:58:38 AM
+----------------------------------------------------
+ 

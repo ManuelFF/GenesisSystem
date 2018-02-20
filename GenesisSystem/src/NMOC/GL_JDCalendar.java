@@ -63,7 +63,6 @@ public class GL_JDCalendar extends javax.swing.JDialog
         }
         if(tip.equals("T"))
         {
-            
             //NOMBRES DE LOS LABELS
             lbl1.setText("Hora");
             lbl2.setText("Minutos");
