@@ -61,6 +61,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         //TAG VERSIÓN INTERNA DE DESARROLLO
         this.setTitle(sys.nombre_sistema()+" - "+sys.nombre_compañia()+" - Versión V"+sys.version()+" VERSIÓN INTERNA DE DESARROLLO");
         comprobar_actualizaciones();
+        
     }
     
     public static void detectar(String ID_PER)
@@ -392,6 +393,7 @@ public class JFRPrincipal extends javax.swing.JFrame
         JSMRegistroContactos.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         JSMRegistroContactos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/CertificadoV224.png"))); // NOI18N
         JSMRegistroContactos.setText("Registro Contactos");
+        JSMRegistroContactos.setEnabled(false);
         JSMRegistroContactos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JSMRegistroContactosActionPerformed(evt);

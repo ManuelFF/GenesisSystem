@@ -21,6 +21,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumnModel;
@@ -316,6 +317,7 @@ public class JIFConsultarCertificadosVencidos extends javax.swing.JInternalFrame
         txtfiltro = new javax.swing.JTextField();
         btnMostrarTodos = new javax.swing.JButton();
         btnsalir2 = new javax.swing.JButton();
+        btnverdetalles = new javax.swing.JButton();
 
         JTConsultar.setBackground(new java.awt.Color(204, 204, 204));
         JTConsultar.setModel(new javax.swing.table.DefaultTableModel(
@@ -420,6 +422,15 @@ public class JIFConsultarCertificadosVencidos extends javax.swing.JInternalFrame
             }
         });
 
+        btnverdetalles.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NIMG/OutOFDate_ConsultaCert24.png"))); // NOI18N
+        btnverdetalles.setText("Ver detalles");
+        btnverdetalles.setContentAreaFilled(false);
+        btnverdetalles.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnverdetallesActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -460,9 +471,11 @@ public class JIFConsultarCertificadosVencidos extends javax.swing.JInternalFrame
                                 .addComponent(txtfiltro)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnMostrarTodos)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnverdetalles)
+                        .addGap(10, 10, 10)
                         .addComponent(btnsalir2)
-                        .addGap(223, 223, 223)
+                        .addGap(80, 80, 80)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
@@ -504,7 +517,8 @@ public class JIFConsultarCertificadosVencidos extends javax.swing.JInternalFrame
                             .addComponent(cbfiltro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtfiltro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnMostrarTodos)
-                            .addComponent(btnsalir2)))
+                            .addComponent(btnsalir2)
+                            .addComponent(btnverdetalles)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -513,7 +527,7 @@ public class JIFConsultarCertificadosVencidos extends javax.swing.JInternalFrame
                         .addComponent(jLabel9)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         pack();
@@ -627,6 +641,98 @@ public class JIFConsultarCertificadosVencidos extends javax.swing.JInternalFrame
 
     }//GEN-LAST:event_btnsalir2ActionPerformed
 
+    private void btnverdetallesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnverdetallesActionPerformed
+    
+    try
+    {
+//        if(lblseleccion1.getText().equals("SELECCION")){JOptionPane.showMessageDialog(this, "Seleccione primero un certificado");}
+//      else
+//        {
+//            int filasel = Jtordenes.getSelectedRow();
+//            String ID = ""+modelo.getValueAt(filasel, 0);
+//            String numero_cert = ""+modelo.getValueAt(filasel, 10);
+//            String Razon_Social = ""+modelo.getValueAt(filasel, 1);
+//            String ubicacion = ""+modelo.getValueAt(filasel, 2);
+//            String giro = ""+modelo.getValueAt(filasel, 3);
+//            String Area_tratada = ""+modelo.getValueAt(filasel, 4);
+//            String fecha_serv = ""+modelo.getValueAt(filasel, 5);
+//            String fecha_ven = ""+modelo.getValueAt(filasel, 6);
+//            String telefono = ""+modelo.getValueAt(filasel, 7);
+//            String costo = ""+modelo.getValueAt(filasel, 8);
+//            String periodo = ""+modelo.getValueAt(filasel, 9);
+//            String estado = ""+modelo.getValueAt(filasel, 12);
+//            String detalles = ""+modelo.getValueAt(filasel, 14);
+//            String nota = ""+modelo.getValueAt(filasel, 15);
+//
+//            if(detalles.equals("")|| detalles.toUpperCase().equals("NULL")){detalles = " ";}
+//            if(nota.equals("")|| nota.toUpperCase().equals("NULL")){nota = " ";}
+//
+//
+//
+//            String ServiciosRealizados = ""+modelo.getValueAt(filasel, 13);
+//
+//            String ArrayTemp[] = ServiciosRealizados.split("/");
+//
+//            String op1,op2,op3,op4,op5,op6;
+//
+//            op1 = ArrayTemp[0];
+//            op2 = ArrayTemp[1];
+//            op3 = ArrayTemp[2];
+//            op4 = ArrayTemp[3];
+//            op5 = ArrayTemp[4];
+//            op6 = ArrayTemp[5];
+//
+//            if(op1.equals("-")){op1="";}if(op2.equals("-")){op2="";}if(op3.equals("-")){op3="";}if(op4.equals("-")){op4="";}if(op5.equals("-")){op5="";}if(op6.equals("-")){op6="";}
+//
+//
+//
+//            JDDetalleCertificados grande = new JDDetalleCertificados(form,true);
+//            grande.setTitle("VER DETALLE CERTIFICADO DE SERVICIO N°"+numero_cert+" - "+moduleWorker.nombreSistema()+" V"+moduleWorker.Version());
+//
+//            grande.LOG_FontSize(14);
+//            grande.LOG_borrarTexto();
+//            grande.LOG_mensaje("CRYSTAL MANAGEMENT SYSTEM.");
+//            grande.LOG_mensaje("\nDETALLE DEL CERTIFICADO N° "+numero_cert);
+//            grande.LOG_mensaje("\n\nASISTENTE IA:\n");
+//
+//            grande.LOG_mensaje("\nCertificado N° : "+numero_cert);
+//            grande.LOG_mensaje("\nRazón Social : "+Razon_Social);
+//            grande.LOG_mensaje("\nGiro : "+giro);
+//            grande.LOG_mensaje("\nUbicación : "+ubicacion);
+//            grande.LOG_mensaje("\nTelefono : "+telefono);
+//            grande.LOG_mensaje("\nPeriodo : "+periodo);
+//            grande.LOG_mensaje("\nCosto : "+costo);
+//            grande.LOG_mensaje("\nFecha de Servicio : "+fecha_serv);
+//            grande.LOG_mensaje("\nFecha de Vencimiento : "+fecha_ven);
+//            grande.LOG_mensaje("\nEstado : "+estado);
+//
+//            grande.LOG_mensaje("\n\nÁrea Tratada : "+Area_tratada);
+//            grande.LOG_mensaje("\nServicios Realizados :\n");
+//
+//            //PRE CONDICIONAL
+//            if(op1.equals("")){}
+//            else{grande.LOG_mensaje("\n"+op1.toUpperCase());}
+//            if(op2.equals("")){}
+//            else{grande.LOG_mensaje("\n"+op2.toUpperCase());}
+//            if(op3.equals("")){}
+//            else{grande.LOG_mensaje("\n"+op3.toUpperCase());}
+//            if(op4.equals("")){}
+//            else{grande.LOG_mensaje("\n"+op4.toUpperCase());}
+//            if(op5.equals("")){}
+//            else{grande.LOG_mensaje("\n"+op5.toUpperCase());}
+//            if(op6.equals("")){}
+//            else{grande.LOG_mensaje("\n"+op6.toUpperCase());}
+//
+//            grande.LOG_mensaje("\n\nDetalles : "+detalles+"\n");
+//            grande.LOG_mensaje("\n\nNotas : "+nota+"\n");
+//
+//            grande.setVisible(true);
+
+//        }
+    } catch (Exception e) {JOptionPane.showMessageDialog(this, "Ha ocurrido un Error imprevisto, ¿Selecciono un Certificado?\nCodigo de Error : "+e); }
+        
+    }//GEN-LAST:event_btnverdetallesActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable JTConsultar;
@@ -634,6 +740,7 @@ public class JIFConsultarCertificadosVencidos extends javax.swing.JInternalFrame
     private javax.swing.JButton btnMostrarTodos;
     private javax.swing.JButton btncambiarFecha;
     private javax.swing.JButton btnsalir2;
+    private javax.swing.JButton btnverdetalles;
     private javax.swing.JComboBox<String> cbaño;
     private javax.swing.JComboBox<String> cbdia;
     private javax.swing.JComboBox<String> cbfiltro;

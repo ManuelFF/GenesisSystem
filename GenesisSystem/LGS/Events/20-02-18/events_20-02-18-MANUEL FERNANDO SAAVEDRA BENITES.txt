@@ -1,0 +1,21 @@
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificados Vencidos' Presionado
+TIME : 10:56:59 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JIFConsultarCertificadosVencidos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:57:8 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificados Vencidos' Presionado
+TIME : 11:5:30 AM
+----------------------------------------------------
+ 

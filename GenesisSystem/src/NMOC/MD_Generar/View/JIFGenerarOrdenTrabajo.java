@@ -98,6 +98,7 @@ public class JIFGenerarOrdenTrabajo extends javax.swing.JInternalFrame
         JTAIA.setLineWrap(true);
         JTAdetcliente.setLineWrap(true);
         ColorInicial = txtfecha.getBackground();
+        
 
     }
     
@@ -1415,6 +1416,17 @@ public class JIFGenerarOrdenTrabajo extends javax.swing.JInternalFrame
         }
         else
            {
+               
+             if(modi_lock.equals("lock")) 
+             {
+                 sysau.E_CRITICAL_ERROR();
+                 JOptionPane.showMessageDialog(jf, "Presione el botón 'Área' para proceder con la inserción", "Presione botón 'Área'", JOptionPane.INFORMATION_MESSAGE);
+                 sysau.S_STOP();
+             }
+             else
+             {
+                 
+             
             //LOGICA DE VERIFICACION
             /*
                   esta logica de verificacion sera LS.
@@ -1698,6 +1710,7 @@ public class JIFGenerarOrdenTrabajo extends javax.swing.JInternalFrame
                //BLOQUE 6:
                enadisa_bloque6_botones(false, false, false, false, false, false, false);
                btnnuevo.setText("Nuevo");
+               modi_lock = "";
                RP_ORDEN_SERV b = new RP_ORDEN_SERV();//natural 342 -- juridico 194
                b.speculation(Tipo_orden, ID_ORDEN);
                clearCacheDB();
@@ -1707,6 +1720,7 @@ public class JIFGenerarOrdenTrabajo extends javax.swing.JInternalFrame
                
               }
            }
+         }
        }catch (Exception e) 
            {
               lc.write("Ha ocurrido un error al intentar insertar una nueva orden","JIFGenerarOrdenServicio", e);
@@ -2199,6 +2213,7 @@ public class JIFGenerarOrdenTrabajo extends javax.swing.JInternalFrame
         evn.write(lblusuario.getText(), "Hizo click en el botón 'Copiar' Orden de Trabajo "+modo_orden, "JIFGenerarOrdenServicio -> Copiar", "Botón 'Copiar' presionado");
         //FIN INICIO CABECERAS IMPORTANTES
         Nuevo();
+        modi_lock = "lock";
         btnnuevo.setText("Insertar");
 
     }//GEN-LAST:event_btncopiarActionPerformed

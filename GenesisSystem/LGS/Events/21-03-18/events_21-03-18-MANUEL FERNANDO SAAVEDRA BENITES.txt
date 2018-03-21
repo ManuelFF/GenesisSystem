@@ -1,0 +1,371 @@
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificado' Presionado
+TIME : 09:51:43 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de Clientes
+FORMULARIO : JIFConsultarCertificados
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:52:26 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Cliente
+FORMULARIO : JIFConsultarOrdenServicio -> GL_JDBuscarCliente
+ACCIÓN : Botón 'Consultar Cliente' presionado
+TIME : 09:52:27 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Cliente EMP.DE TRANSPORTES Y MULTISERVICIOS IMPORTADORA Y EXPORTADORA SAN FRANCISCO DE ASIS DE LOS OLIVOS SA
+FORMULARIO : GL_JDBuscarCliente
+ACCIÓN : Tabla de Cliente presionado
+TIME : 09:52:34 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFConsultarCertificado'
+FORMULARIO : JIFConsultarCertificado
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:52:36 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 09:55:55 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:55:56 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 450
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 09:56:1 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Mantener Clientes'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Clientes' Presionado
+TIME : 09:56:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al cliente juridico DAVID SACS
+FORMULARIO : JIFMantenerClientes -> Juridico
+ACCIÓN : Tabla de Clientes Juridicos presionado
+TIME : 09:56:13 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Clientes'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:56:15 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Orden de Servicio Juridica
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 09:56:21 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:56:28 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:56:37 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 450
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 09:56:40 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Modificar' Orden de Servicio Juridica
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 09:56:50 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:56:52 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:56:54 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 450
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 09:56:56 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Copiar' Orden de Trabajo Juridica
+FORMULARIO : JIFGenerarOrdenServicio -> Copiar
+ACCIÓN : Botón 'Copiar' presionado
+TIME : 09:57:45 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:57:57 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 451
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 09:57:58 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha cancelado la inserción o modificación de una orden 
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Cancelar' Presionado
+TIME : 09:58:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:58:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 450
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 09:58:6 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Copiar' Orden de Trabajo Juridica
+FORMULARIO : JIFGenerarOrdenServicio -> Copiar
+ACCIÓN : Botón 'Copiar' presionado
+TIME : 09:58:7 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:58:10 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:58:14 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 452
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 09:58:16 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Copiar' Orden de Trabajo Juridica
+FORMULARIO : JIFGenerarOrdenServicio -> Copiar
+ACCIÓN : Botón 'Copiar' presionado
+TIME : 10:0:7 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 10:2:36 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:2:38 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 452
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 10:2:42 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Copiar' Orden de Trabajo Juridica
+FORMULARIO : JIFGenerarOrdenServicio -> Copiar
+ACCIÓN : Botón 'Copiar' presionado
+TIME : 10:2:44 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 10:3:13 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:3:15 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 452
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 10:3:17 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Copiar' Orden de Trabajo Juridica
+FORMULARIO : JIFGenerarOrdenServicio -> Copiar
+ACCIÓN : Botón 'Copiar' presionado
+TIME : 10:3:50 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido de la vista 'SGL_VIEW_AreaTrabajo'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:4:20 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:4:23 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 453
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 10:4:26 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Orden Trabajo'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Orden Trabajo' Presionado
+TIME : 10:44:55 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFConsultarOrdenTrabajo'
+FORMULARIO : JIFConsultarOrdenTrabajo
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:44:57 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 10:44:58 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:44:59 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 452
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 10:45:1 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:45:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 450
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 10:45:8 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 10:45:12 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado la orden 451
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Tabla de Orden presionada
+TIME : 10:45:14 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Copiar' Orden de Trabajo Juridica
+FORMULARIO : JIFGenerarOrdenServicio -> Copiar
+ACCIÓN : Botón 'Copiar' presionado
+TIME : 10:45:23 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarOrdenServicio'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:45:24 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Permisos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Permisos' Presionado
+TIME : 10:45:26 AM
+----------------------------------------------------
+ 
