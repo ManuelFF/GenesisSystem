@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package NMOC.MD_Consultar_IC;
+package NMOC.MD_Consultar.IC;
 
 import ModuleWorker.DBCON;
 import NCLPM.LOG;

@@ -1,0 +1,588 @@
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificados Vencidos' Presionado
+TIME : 09:42:37 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JIFConsultarCertificadosVencidos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:42:40 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 09:42:43 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 09:45:54 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 09:46:21 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificados Vencidos' Presionado
+TIME : 09:47:38 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JIFConsultarCertificadosVencidos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:47:40 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificado' Presionado
+TIME : 09:47:41 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFConsultarCertificado'
+FORMULARIO : JIFConsultarCertificado
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:47:42 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Certificado' Presionado
+TIME : 09:47:44 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarCertificado'
+FORMULARIO : JIFGenerarCertificado
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:47:45 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 09:47:46 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificados Vencidos' Presionado
+TIME : 09:51:58 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JIFConsultarCertificadosVencidos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:51:59 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 09:52:1 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFRegistroContacto'
+FORMULARIO : null
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:52:4 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 09:52:7 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFRegistroContacto'
+FORMULARIO : null
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:52:8 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificados Vencidos' Presionado
+TIME : 09:53:11 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JIFConsultarCertificadosVencidos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:53:12 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Certificado' Presionado
+TIME : 09:53:15 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarCertificado'
+FORMULARIO : JIFGenerarCertificado
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:53:16 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 09:53:18 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFRegistroContacto'
+FORMULARIO : [DEV] Registro Contactos 0.05
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:53:19 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 10:29:32 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFRegistroContacto'
+FORMULARIO : [DEV] Registro Contactos 0.05
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:29:34 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 10:29:37 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 12:28:7 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFRegistroContacto'
+FORMULARIO : [DEV] Registro Contactos 0.05
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 12:28:28 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 12:30:39 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 13:10:43 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de fechas
+FORMULARIO : JIFRegistrarContacto -> JDCalendar
+ACCIÓN : Botón 'Fecha' presionado
+TIME : 13:10:43 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la fecha 17/02/2018
+ en el formulario 'JIFRegistrarContacto'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 13:10:44 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFRegistroContacto'
+FORMULARIO : [DEV] Registro Contactos 0.05
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 13:10:46 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 13:11:37 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de fechas
+FORMULARIO : JIFRegistrarContacto -> JDCalendar
+ACCIÓN : Botón 'Fecha' presionado
+TIME : 13:11:39 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la fecha 17/02/2018
+ en el formulario 'JIFRegistrarContacto'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 13:11:40 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de horas
+FORMULARIO : JIFRegistrarContacto -> JDCalendar
+ACCIÓN : Botón 'Fecha' presionado
+TIME : 13:11:41 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la hora 01:30 AM
+ en el formulario 'JIFRegistrarContacto'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 13:11:41 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFRegistroContacto'
+FORMULARIO : [DEV] Registro Contactos 0.05
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 13:11:43 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 13:12:20 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de fechas
+FORMULARIO : JIFRegistrarContacto -> JDCalendar
+ACCIÓN : Botón 'Fecha' presionado
+TIME : 13:12:40 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la fecha 17/02/2018
+ en el formulario 'JIFRegistrarContacto'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 13:12:41 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de horas
+FORMULARIO : JIFRegistrarContacto -> JDCalendar
+ACCIÓN : Botón 'Fecha' presionado
+TIME : 13:12:41 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la hora 01:30 AM
+ en el formulario 'JIFRegistrarContacto'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 13:12:41 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Registro un nuevo registro de contacto
+FORMULARIO : [DEV] Registro Contactos 0.05
+ACCIÓN : Botón 'Registrar' Presionado
+TIME : 13:12:54 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 13:40:27 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de fechas
+FORMULARIO : JIFRegistrarContacto -> JDCalendar
+ACCIÓN : Botón 'Fecha' presionado
+TIME : 13:43:11 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la fecha 17/02/2018
+ en el formulario 'JIFRegistrarContacto'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 13:43:11 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de horas
+FORMULARIO : JIFRegistrarContacto -> JDCalendar
+ACCIÓN : Botón 'Fecha' presionado
+TIME : 13:43:13 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la hora 01:30 AM
+ en el formulario 'JIFRegistrarContacto'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 13:43:19 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Registro un nuevo registro de contacto
+FORMULARIO : [DEV] Registro Contactos 0.05
+ACCIÓN : Botón 'Registrar' Presionado
+TIME : 13:43:29 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 13:49:44 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 13:54:50 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificados Vencidos' Presionado
+TIME : 14:24:51 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JIFConsultarCertificadosVencidos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 14:24:52 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 14:24:55 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 14:27:35 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 14:29:3 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 14:40:15 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de fechas
+FORMULARIO : JIFRegistrarContacto -> JDCalendar
+ACCIÓN : Botón 'Fecha' presionado
+TIME : 14:40:58 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la fecha 17/02/2018
+ en el formulario 'JIFRegistrarContacto'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 14:40:58 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de horas
+FORMULARIO : JIFRegistrarContacto -> JDCalendar
+ACCIÓN : Botón 'Fecha' presionado
+TIME : 14:40:59 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la hora 01:30 AM
+ en el formulario 'JIFRegistrarContacto'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 14:40:59 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Registro un nuevo registro de contacto
+FORMULARIO : [DEV] Registro Contactos 0.05
+ACCIÓN : Botón 'Registrar' Presionado
+TIME : 14:41:8 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de fechas
+FORMULARIO : JIFRegistrarContacto -> JDCalendar
+ACCIÓN : Botón 'Fecha' presionado
+TIME : 14:47:36 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la fecha 17/02/2018
+ en el formulario 'JIFRegistrarContacto'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 14:47:36 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de horas
+FORMULARIO : JIFRegistrarContacto -> JDCalendar
+ACCIÓN : Botón 'Fecha' presionado
+TIME : 14:47:37 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la hora 01:30 AM
+ en el formulario 'JIFRegistrarContacto'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 14:47:38 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Registro un nuevo registro de contacto
+FORMULARIO : [DEV] Registro Contactos 0.05
+ACCIÓN : Botón 'Registrar' Presionado
+TIME : 14:47:41 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 14:48:8 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de horas
+FORMULARIO : JIFRegistrarContacto -> JDCalendar
+ACCIÓN : Botón 'Fecha' presionado
+TIME : 14:54:20 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la hora 01:30 AM
+ en el formulario 'JIFRegistrarContacto'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 14:54:22 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 14:55:25 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFRegistroContacto'
+FORMULARIO : [DEV] Registro Contactos 0.05
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 14:55:39 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 14:59:55 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de fechas
+FORMULARIO : JIFRegistrarContacto -> JDCalendar
+ACCIÓN : Botón 'Fecha' presionado
+TIME : 15:1:28 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la fecha 17/02/2018
+ en el formulario 'JIFRegistrarContacto'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 15:1:29 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el selector de horas
+FORMULARIO : JIFRegistrarContacto -> JDCalendar
+ACCIÓN : Botón 'Fecha' presionado
+TIME : 15:1:29 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Establecio la hora 01:30 AM
+ en el formulario 'JIFRegistrarContacto'
+FORMULARIO : JDCalendar
+ACCIÓN : Botón 'Establecer' presionado
+TIME : 15:1:32 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Registro un nuevo registro de contacto
+FORMULARIO : [DEV] Registro Contactos 0.05
+ACCIÓN : Botón 'Registrar' Presionado
+TIME : 15:1:45 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFRegistroContacto'
+FORMULARIO : [DEV] Registro Contactos 0.05
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 15:1:58 PM
+----------------------------------------------------
+ 

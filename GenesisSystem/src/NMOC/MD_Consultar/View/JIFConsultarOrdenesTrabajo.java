@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package NMOC.MD_Consultar_View;
+package NMOC.MD_Consultar.View;
 
 import ModuleWorker.IC.MWCON;
 import ModuleWorker.SYSFRMCON;
@@ -13,7 +13,7 @@ import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NCLPM.RESULTS;
 import NMOC.GL_JDBuscarCliente;
-import NMOC.MD_Consultar_IC.NANOCON_ConsultaOrdenesTrabajo;
+import NMOC.MD_Consultar.IC.NANOCON_ConsultaOrdenesTrabajo;
 import java.awt.Color;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;

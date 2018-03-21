@@ -1,0 +1,40 @@
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFGenerarOrdenServicio
+HORA : 09:56:31 AM
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha actualizado la orden N° 450
+ del Cliente : RENDEZ VOUS S.A.C.
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFGenerarOrdenServicio
+HORA : 09:56:53 AM
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha actualizado la orden N° 450
+ del Cliente : RENDEZ VOUS S.A.C.
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFGenerarOrdenServicio
+HORA : 09:57:55 AM
+TIPO : INSERSIÓN
+DESCRIPCIÓN : Se ha insertado la orden N° 451
+ del Cliente : RENDEZ VOUS S.A.C.
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFGenerarOrdenServicio
+HORA : 09:58:13 AM
+TIPO : INSERSIÓN
+DESCRIPCIÓN : Se ha insertado la orden N° 452
+ del Cliente : RENDEZ VOUS S.A.C.
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+FORMULARIO : JIFGenerarOrdenServicio
+HORA : 10:4:21 AM
+TIPO : INSERSIÓN
+DESCRIPCIÓN : Se ha insertado la orden N° 453
+ del Cliente : RENDEZ VOUS S.A.C.
+----------------------------------------------------
+ 

@@ -15,6 +15,9 @@ import java.io.IOException;
  *
  * @author USUARIO
  */
+
+@Deprecated
+
 public class SYSCOPY 
 {
     LOG lc = new LOG();

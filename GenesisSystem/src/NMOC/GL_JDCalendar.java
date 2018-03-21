@@ -12,6 +12,7 @@ import NCLPM.EVENTS;
 import NCLPM.LOG;
 import NMOC.MD_Generar.View.JIFGenerarCertificado;
 import NMOC.MD_Generar.View.JIFGenerarOrdenTrabajo;
+import NMOC.MD_Ventas.View.JIFRegistroContacto;
 
 /**
  *
@@ -62,7 +63,6 @@ public class GL_JDCalendar extends javax.swing.JDialog
         }
         if(tip.equals("T"))
         {
-            
             //NOMBRES DE LOS LABELS
             lbl1.setText("Hora");
             lbl2.setText("Minutos");
@@ -238,6 +238,13 @@ public class GL_JDCalendar extends javax.swing.JDialog
                 evn.write(JFRPrincipal.JMSesion.getText(), "Establecio la fecha "+dia+"/"+mes+"/"+año+"\n en el formulario 'JIFGenerarCertificado'", "JDCalendar", "Botón 'Establecer' presionado");
                 JIFGenerarCertificado.txtfechaVencimiento.setText(dia+"/"+mes+"/"+año);
             }
+            
+            if(formulario.equals("REG_CONT"))
+            {
+                evn.write(JFRPrincipal.JMSesion.getText(), "Establecio la fecha "+dia+"/"+mes+"/"+año+"\n en el formulario 'JIFRegistrarContacto'", "JDCalendar", "Botón 'Establecer' presionado");
+                JIFRegistroContacto.txtfecha.setText(dia+"/"+mes+"/"+año);
+            }
+            
         }
         
         if(tipo.equals("T"))
@@ -254,6 +261,13 @@ public class GL_JDCalendar extends javax.swing.JDialog
                evn.write(JFRPrincipal.JMSesion.getText(), "Establecio la hora "+hora+":"+minuto+" "+fort+"\n en el formulario 'JIFGenerarOrdenServicio'", "JDCalendar", "Botón 'Establecer' presionado");
                JIFGenerarOrdenTrabajo.txthora.setText(hora+":"+minuto+" "+fort);
             }
+            
+            if(formulario.equals("REG_CONT"))
+            {   
+               evn.write(JFRPrincipal.JMSesion.getText(), "Establecio la hora "+hora+":"+minuto+" "+fort+"\n en el formulario 'JIFRegistrarContacto'", "JDCalendar", "Botón 'Establecer' presionado");
+               JIFRegistroContacto.txthora.setText(hora+":"+minuto+" "+fort);
+            }
+            
         }
         
         this.dispose();

@@ -8,7 +8,7 @@ package NMOC.MD_Generar.View;
 import IACore.JTACON;
 import ModuleWorker.IC.MWCON;
 import ModuleWorker.SYSAUDIOCON;
-import ModuleWorker.SYSCOPY;
+import ModuleWorker.SYSCOPYV2;
 import ModuleWorker.SYSFRMCON;
 import ModuleWorker.View.JFRPrincipal;
 import NCLPM.EVENTS;
@@ -1237,6 +1237,7 @@ public class JIFGenerarCertificado extends javax.swing.JInternalFrame
                                                                                                 clearCacheDB();
                                                                                                 clear_frm();
                                                                                                 btnverimagen.setEnabled(false);
+                                                                                                btnmodificar.setText("Modificar");
                                                                                                 enadisa_Pbuttons(true, false, false, true, true,false);
                                                                                                 enadisa_boxes(false);
                                                                                                 enadisa_Gbuttons(false);
@@ -1459,8 +1460,10 @@ public class JIFGenerarCertificado extends javax.swing.JInternalFrame
             File f = abrirArchivo.getSelectedFile();
             path = f.getAbsolutePath();
         }
+
         sysau.S_STOP();        
-        System.out.println("Proceso de copiar archivo : "+SYSCOPY.getinstance().copy(path, destino));
+        //SYSCOPY.getinstance().copy(path, destino);
+        SYSCOPYV2.copyFile(path, destino);
         
         lblcertificadoAsignado.setText("Adjuntado con exito!");lblcertificadoAsignado.setForeground(Color.GREEN);
         sysau.E_INFORMATION();

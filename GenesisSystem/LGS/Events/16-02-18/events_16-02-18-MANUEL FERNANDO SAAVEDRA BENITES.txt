@@ -1,0 +1,224 @@
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificados Vencidos' Presionado
+TIME : 10:5:29 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JIFConsultarCertificadosVencidos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:5:31 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Certificado' Presionado
+TIME : 10:5:33 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarCertificado'
+FORMULARIO : JIFGenerarCertificado
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:5:36 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 10:14:10 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:14:12 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:14:14 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:14:15 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:14:15 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:14:17 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:14:21 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:14:22 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:14:22 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:14:24 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Deselecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:14:24 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'JIFGenerarOrdenServicio'
+FORMULARIO : JIFMantenerClientes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:14:26 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 10:17:55 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Selecciono el tipo de inserción antiguo
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Radio Button 'Antigua' Presionado
+TIME : 10:17:56 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Orden de Servicio Natural
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 10:17:57 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Vendedor
+FORMULARIO : JIFGenerarOrdenServicio -> GL_JDBuscarVendedor
+ACCIÓN : Botón 'Consultar Vendedor' presionado
+TIME : 10:17:58 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Vendedor'
+FORMULARIO : GL_JDBuscarVendedor
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:18:16 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el Buscador de Vendedor
+FORMULARIO : JIFGenerarOrdenServicio -> GL_JDBuscarVendedor
+ACCIÓN : Botón 'Consultar Vendedor' presionado
+TIME : 10:18:27 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha seleccionado al Vendedor A S
+FORMULARIO : GL_JDBuscarVendedor
+ACCIÓN : Tabla de Vendedor presionado
+TIME : 10:18:31 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Permisos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Permisos' Presionado
+TIME : 10:19:0 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 11:48:53 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 12:9:10 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 12:11:46 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 12:19:36 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 12:26:18 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Consultar Certificados Vencidos' Presionado
+TIME : 12:31:19 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Consultar Certificados Vencidos'
+FORMULARIO : JIFConsultarCertificadosVencidos
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 12:31:22 PM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Registro Contactos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Registro Contactos' Presionado
+TIME : 12:31:27 PM
+----------------------------------------------------
+ 

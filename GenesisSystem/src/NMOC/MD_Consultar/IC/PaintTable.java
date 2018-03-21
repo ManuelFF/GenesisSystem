@@ -1,4 +1,4 @@
-package NMOC.MD_Consultar_IC;
+package NMOC.MD_Consultar.IC;
 import java.awt.Color;
 import java.awt.Component;
 import javax.swing.JTable;
@@ -6,6 +6,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 /**
  * @author Mouse
  */
+
 public class PaintTable extends DefaultTableCellRenderer
 {
     private int columna_patron;

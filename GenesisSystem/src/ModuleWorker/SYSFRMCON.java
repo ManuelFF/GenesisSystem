@@ -440,4 +440,23 @@ public class SYSFRMCON
         p.setBackground(Color.GRAY.brighter());
     }
     
+    //#########################################################################
+    //FORMULARIOS VENTAS
+    
+    //REGISTRO DE CONTACTO
+    public String T_RegistroContactos()
+    {
+        String nivel = "0.05";
+        String t = DEV()+" Registro Contactos "+nivel;
+        return t;
+    }
+    
+    public void B_RegistroContactos(Container p)
+    {
+        p.setBackground(Color.GRAY.brighter());
+    }
+    
+    
+    
+    
 }
