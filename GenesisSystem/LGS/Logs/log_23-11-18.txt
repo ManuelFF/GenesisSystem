@@ -1,0 +1,6 @@
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON metodo DB_ORC_CON
+ERROR : java.sql.SQLRecoverableException: Error de E/S: The Network Adapter could not establish the connection
+TIME : 16:49:11
+----------------------------------------------------
+ 

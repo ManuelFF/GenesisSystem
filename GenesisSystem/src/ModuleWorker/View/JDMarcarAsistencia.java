@@ -49,7 +49,7 @@ public class JDMarcarAsistencia extends javax.swing.JDialog
 
     String ID_PER;
     
-    private String NuevoCodigo()
+    private String NuevoCodigoold()
     {
         String codigo  = String.format("%03d", 1);
 	int cod ; 
@@ -64,9 +64,17 @@ public class JDMarcarAsistencia extends javax.swing.JDialog
 		// Obtenemos los caracteres desde la posicion dos hasta el final ("003"); 
 		codigo = ultObjeto.getId_asist().substring(6);
 		//Agregamos una unidad al codigo extraido en el paso anterior
-		cod = Integer.parseInt(codigo)+1;
+		cod = Integer.parseInt(codigo)+2;
 		codigo = "ASIST-"+String.format("%03d",cod);
+                System.out.println(codigo);
               }
+	return codigo;
+    }
+    
+    private String NuevoCodigoV2()
+    {
+        String codigo = "ASIST-"+Sent_marcarAsistencia.UltimoID();
+        System.out.println(codigo);
 	return codigo;
     }
     
@@ -227,7 +235,7 @@ public class JDMarcarAsistencia extends javax.swing.JDialog
             
             System.out.println(r);
             
-            P_asist.RegistrarEntrada(NuevoCodigo(), ID_PER, mw.fecha_actual_clasica());
+            P_asist.RegistrarEntrada(NuevoCodigoV2(), ID_PER, mw.fecha_actual_clasica());
             P_asist.UpdateEntrada(ID_PER, mw.fecha_actual_clasica(), r);
 
             this.dispose();

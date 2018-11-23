@@ -1,0 +1,11 @@
+USUARIO : ROOT ROOT
+FORMULARIO : JIFMantenerUsuario
+HORA : 08:49:11 AM
+TIPO : MODIFICACIÓN
+DESCRIPCIÓN : Se ha modificado al usuario con ID: USR-003
+ Se listarán los datos.
+ USUARIO: admin
+ ESTADO: ACTIVO
+ TIPO: SISTEMA
+----------------------------------------------------
+ 
