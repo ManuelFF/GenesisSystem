@@ -1,0 +1,42 @@
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Abrio el formulario 'Permisos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Permisos' Presionado
+TIME : 08:48:57 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Abrio el formulario 'Mantener Usuario'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Usuario' Presionado
+TIME : 08:48:59 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Se ha seleccionado un usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : El usuario MANUEL FERNANDO SAAVEDRA BENITES ha sido seleccionado
+TIME : 08:49:1 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : hizo click en el boton modificar
+FORMULARIO : JIFMantenerUsuario linea 432
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 08:49:11 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Modifico un nuevo usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Modificar' presionado
+TIME : 08:49:11 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Usuario'
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 08:49:13 AM
+----------------------------------------------------
+ 

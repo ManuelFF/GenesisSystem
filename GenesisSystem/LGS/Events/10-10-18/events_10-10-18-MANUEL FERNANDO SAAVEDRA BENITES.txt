@@ -1,0 +1,28 @@
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Generar Orden Servicio'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Orden Servicio' Presionado
+TIME : 09:11:1 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha abierto el formulario de busqueda de ordenes de servicio
+FORMULARIO : JIFGenerarOrdenServicio
+ACCIÓN : Hizo click en el botón 'Buscar'
+TIME : 09:11:2 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Ha salido del formulario 'Buscar Ordenes de Trabajo'
+FORMULARIO : GL_JDBuscarOrdenes
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 09:11:10 AM
+----------------------------------------------------
+ 
+USUARIO : MANUEL FERNANDO SAAVEDRA BENITES
+DESCRIPCIÓN : Abrio el formulario 'Permisos'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Permisos' Presionado
+TIME : 09:27:1 AM
+----------------------------------------------------
+ 

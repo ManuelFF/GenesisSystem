@@ -31,7 +31,7 @@ public class CO_GenerarOrdenTrabajo
         L_ORDEN = new ArrayList();
         llenarDatos();
     }
-    
+   
     //inserta la forma basica de la orden de servicio
     public void Insertar_orden(String ID_ORDEN, String numero_orden, String id_cli,String fecha,String hora,String direccion,String giroLugar,String telefono,String celular,String desc_doc,String id_per,String costo,String estado )
     {

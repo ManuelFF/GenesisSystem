@@ -39,6 +39,7 @@ import NMOC.GL_JDBuscarVendedor;
 import NMOC.GL_JDCalendar;
 import NMOC.MD_Generar.Core.O_OrdenTrabajo;
 import NMOC.MD_Generar.IC.CO_GenerarOrdenTrabajo;
+import NMOC.MD_Generar.IC.UltimoID;
 import NMOC.MD_Mantenimientos.View.JIFMantenerClientes;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -112,47 +113,25 @@ public class JIFGenerarOrdenTrabajo extends javax.swing.JInternalFrame
     //RETORNA EL ID DE ORDEN ACTUAL
     private String R_ID_ORDEN()
     {
-     clearCacheDB();
-     String cod = String.format("%03d", 1);
-     int codigo;
-     O_OrdenTrabajo ultObjeto = null;
-
-     if(P_orden.tamaño()==0)
-     {
-        cod="ORDEN-"+cod;
-     }
-       else
-        {
-        ultObjeto=P_orden.obtener(P_orden.tamaño()-1);
-
-        cod = ultObjeto.getId_orden().substring(6);
-        codigo = Integer.parseInt(cod)+1;
-        cod="ORDEN-"+String.format("%03d",codigo);    
-        }return cod;
+      clearCacheDB();
+     
+      String cod = null;
+     
+      cod="ORDEN-"+UltimoID.UltimoID();
+      return cod;
     }
     
     //RETORNA NUMERO DE ORDEN
     private String R_NUMERO_ORDEN()
     {
       clearCacheDB();
-      int cod;
-      O_OrdenTrabajo ultObjeto = null;
-      if(P_orden.tamaño()==0)
-         {
-            cod=1;
-         }
-           else
-            {
-            ultObjeto=P_orden.obtener(P_orden.tamaño()-1); //UltimoObjeto
-            cod=Integer.parseInt(ultObjeto.getNumero_orden())+1;
-            }return ""+cod;
+      return ""+UltimoID.UltimoNU();
     }
     
     private void Nuevo()
     {
         txtidorden.setText(R_ID_ORDEN());
-        txtnumeroorden.setText(R_NUMERO_ORDEN());
-        
+        txtnumeroorden.setText(R_NUMERO_ORDEN());        
     }
     
     private void LegacyClearFRM()
