@@ -1,0 +1,21 @@
+USUARIO : 
+DESCRIPCIÓN : Ha registrado entrada
+FORMULARIO : JDMarcarAsistencia
+ACCIÓN : botón 'Registrar Entrada' Presionado
+TIME : 08:47:46 AM
+----------------------------------------------------
+ 
+USUARIO : 
+DESCRIPCIÓN : Ha registrado entrada
+FORMULARIO : JDMarcarAsistencia
+ACCIÓN : botón 'Registrar Entrada' Presionado
+TIME : 08:48:25 AM
+----------------------------------------------------
+ 
+USUARIO : 
+DESCRIPCIÓN : Ha registrado entrada
+FORMULARIO : JDMarcarAsistencia
+ACCIÓN : botón 'Registrar Entrada' Presionado
+TIME : 08:49:21 AM
+----------------------------------------------------
+ 
