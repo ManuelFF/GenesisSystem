@@ -32,12 +32,13 @@ public class DBCON
     //Lineas de Conexion
     String LineaTesting = "192.168.0.100"; //Linea de testing
     String LineaOriginal = "SERVER"; //DEPRECATED - Linea de uso estandar
-    String LineaNoIp = "roedjot.servehttp.com"; //Linea Internet
+    String LineaNoIp = "190.233.49.215"; //Linea Internet
+    String LineaGlobal = "100.67.136.114";
     //USERS
     String UP = "roedjot";//Usuario Principal
     String UD = "roedjotdev"; //Usuario de Desarrollo
     //Configuracion de Servidor
-    String serverName = LineaOriginal; //LINEA QUE USARA LA BASE
+    String serverName = LineaGlobal; //LINEA QUE USARA LA BASE
     String serverPort ="1521"; //PUERTO QUE USARA LA BASE
     String userName = UP; // USUARIO QUE USARA LA LINEA QUE USARA LA BASE
     String password ="roedjot"; //CONTRASEÑA QUE USARA EL USUARIO DE LINEA QUE USARA LA BASE
