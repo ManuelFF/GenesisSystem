@@ -1,0 +1,14 @@
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Abrio el formulario 'Generar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Certificado' Presionado
+TIME : 12:54:51 PM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Abrio el formulario 'Generar Certificado'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Generar Certificado' Presionado
+TIME : 13:33:58 PM
+----------------------------------------------------
+ 

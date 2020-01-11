@@ -1,0 +1,112 @@
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Abrio el formulario 'Mantener Usuario'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Usuario' Presionado
+TIME : 10:44:51 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Abrio el formulario de selección de personal
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Buscar Personal' Presionado
+TIME : 10:44:52 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Usuario'
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:44:54 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Abrio el formulario 'Mantener Personal'
+FORMULARIO : JFPrincipal
+ACCIÓN : Menu 'Mantener Personal' Presionado
+TIME : 10:44:56 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Personal
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Nuevo' Presionado
+TIME : 10:44:57 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Hizo click en el botón 'Nuevo' Personal
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Nuevo' Presionado
+TIME : 10:45:43 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Inserto un nuevo Personal
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Insertar' Presionado
+TIME : 10:45:43 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Hizo click en el botón 'Registrar' Categoria
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Registrar' Presionado
+TIME : 10:45:47 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Registro una categoria a un personal
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Botón 'Registrar' Presionado
+TIME : 10:45:47 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Personal'
+FORMULARIO : JIFMantenerPersonal
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:45:50 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Abrio el formulario de selección de personal
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Buscar Personal' Presionado
+TIME : 10:45:51 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Ha seleccionado al personal ALEJANDRA STEFANY
+FORMULARIO : JDES_seleccionarPersonal
+ACCIÓN : Tabla de personal presionado
+TIME : 10:45:55 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : hizo click en el boton nuevo
+FORMULARIO : JIFMantenerUsuario linea 327
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 10:45:56 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : hizo click en el boton nuevo
+FORMULARIO : JIFMantenerUsuario linea 327
+ACCIÓN : Botón 'Nuevo' presionado
+TIME : 10:46:10 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Inserto un nuevo usuario
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Botón 'Insertar' presionado
+TIME : 10:46:10 AM
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+DESCRIPCIÓN : Ha salido del formulario 'Mantener Usuario'
+FORMULARIO : JIFMantenerUsuario
+ACCIÓN : Presiono Botón 'Salir'
+TIME : 10:46:12 AM
+----------------------------------------------------
+ 

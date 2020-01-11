@@ -20,6 +20,7 @@ import NMOC.GL_JDBuscarOrdenes;
 import NMOC.GL_JDCalendar;
 import NMOC.MD_Generar.Core.NOB_Certificado;
 import NMOC.MD_Generar.IC.MICROCON_Certificado;
+import NMOC.MD_Generar.IC.UltimoID;
 import java.awt.Color;
 import java.io.File;
 import javax.swing.JFileChooser;
@@ -78,25 +79,27 @@ public class JIFGenerarCertificado extends javax.swing.JInternalFrame
             }
     }
     
+    //RETORNA EL ID DE CERTIFICADO ACTUAL
+    private String R_ID_ORDEN()
+    {
+      clearCacheDB();
+     
+      String cod = null;
+     
+      cod="CERT-"+UltimoID.UltimoID_CERT();
+      return cod;
+    }
+    
+    //RETORNA NUMERO DE CERTIFICADO
+    private String R_NUMERO_ORDEN()
+    {
+      clearCacheDB();
+      return ""+UltimoID.UltimoNU_CERT();
+    }
+    
     private void Nuevo()
     {
-     clearCacheDB();
-     String cod = String.format("%03d", 1);
-     int codigo;
-     NOB_Certificado ultObjeto = null;
-
-     if(P_cert.tamaño()==0)
-     {
-        cod="CERT-"+cod;
-     }
-     else
-        {
-        ultObjeto=P_cert.obtener(P_cert.tamaño()-1);
-
-        cod = ultObjeto.getId_cert().substring(5);
-        codigo = Integer.parseInt(cod)+1;
-        cod="CERT-"+String.format("%03d",codigo);    
-        }txtidCert.setText(cod);
+        txtidCert.setText(R_ID_ORDEN());
     }
     
     private void clear_frm()

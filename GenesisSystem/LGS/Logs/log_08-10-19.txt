@@ -1,0 +1,6 @@
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON metodo DB_ORC_CON
+ERROR : java.sql.SQLRecoverableException: Error de E/S: Socket read timed out
+TIME : 10:43:43
+----------------------------------------------------
+ 
