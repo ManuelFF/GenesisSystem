@@ -388,7 +388,7 @@ public class SYSFRMCON
     //GENERAR CERTIFICADO
     public String T_Certificado()
     {
-        String nivel = "0.5";
+        String nivel = "0.6";
         String t = DEV()+" Generar Certificados de Servicios "+nivel;
         return t;
     }

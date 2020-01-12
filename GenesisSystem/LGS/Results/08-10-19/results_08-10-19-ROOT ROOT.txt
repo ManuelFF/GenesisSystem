@@ -1,0 +1,27 @@
+USUARIO : ROOT ROOT
+FORMULARIO : JIFMantenerPersonal
+HORA : 10:45:43 AM
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el personal con ID  PER-043
+ NOMBRE: ALEJANDRA 
+ APELLIDOS: STEFANY 
+ DNI: 75161124
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+FORMULARIO : JIFMantenerPersonal
+HORA : 10:45:47 AM
+TIPO : INSERCIÓN
+DESCRIPCIÓN :  Inserto la categoria VENDEDOR 
+Al personal con ID PER-043 y nombre Alejandra
+----------------------------------------------------
+ 
+USUARIO : ROOT ROOT
+FORMULARIO : JIFMantenerUsuario
+HORA : 10:46:10 AM
+TIPO : INSERCIÓN
+DESCRIPCIÓN : Se ha insertado el usuario con ID: USR-029
+ CON USUARIO: alejandra.morales
+ CON ESTADO: ACTIVO
+----------------------------------------------------
+ 

@@ -1,0 +1,7 @@
+USUARIO : PER-009
+DESCRIPCIÓN : Ha registrado entrada
+FORMULARIO : JDMarcarAsistencia
+ACCIÓN : botón 'Registrar Entrada' Presionado
+TIME : 12:54:0 PM
+----------------------------------------------------
+ 

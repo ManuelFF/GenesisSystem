@@ -13,6 +13,15 @@ public class testyy
 {
     public static void main(String[] args)
     {
+        System.out.println("ORden de Servicio Anterior - Ultimo IDS");
+        System.out.println(UltimoID.UltimoID());
+        System.out.println("Certificado Anterior - Ultimo IDS");
+        System.out.println(UltimoID.UltimoID_CERT());
+        //***
+        System.out.println("ORden de Servicio Anterior - Ultimo Numero de Orden");
         System.out.println(UltimoID.UltimoNU());
+        System.out.println("Certificado Anterior - Ultimo Ultimo Numero de Certificado");
+        System.out.println(UltimoID.UltimoNU_CERT());
+        
     }
 }
