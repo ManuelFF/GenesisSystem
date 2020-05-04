@@ -1,0 +1,22 @@
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON metodo DB_ORC_CON
+ERROR : java.sql.SQLException: ORA-00604: error occurred at recursive SQL level 1
+ORA-00018: maximum number of sessions exceeded
+
+TIME : 12:35:13
+----------------------------------------------------
+ 
+DESCRIPCIÓN : ha ocurrido algun error no controlado
+CLASE : NANOCON_Asistencia
+ERROR : java.lang.NullPointerException
+TIME : 12:35:13
+----------------------------------------------------
+ 
+DESCRIPCIÓN : La base de datos no retorno conexion!
+CLASE : DBCON metodo DB_ORC_CON
+ERROR : java.sql.SQLException: ORA-00604: error occurred at recursive SQL level 1
+ORA-00018: maximum number of sessions exceeded
+
+TIME : 12:35:20
+----------------------------------------------------
+ 
