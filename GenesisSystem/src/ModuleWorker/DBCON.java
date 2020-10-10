@@ -38,7 +38,7 @@ public class DBCON
     String UP = "roedjot";//Usuario Principal
     String UD = "roedjotdev"; //Usuario de Desarrollo
     //Configuracion de Servidor
-    String serverName = LineaGlobal; //LINEA QUE USARA LA BASE
+    String serverName = LineaOriginal; //LINEA QUE USARA LA BASE
     String serverPort ="1521"; //PUERTO QUE USARA LA BASE
     String userName = UP; // USUARIO QUE USARA LA LINEA QUE USARA LA BASE
     String password ="roedjot"; //CONTRASEÑA QUE USARA EL USUARIO DE LINEA QUE USARA LA BASE
