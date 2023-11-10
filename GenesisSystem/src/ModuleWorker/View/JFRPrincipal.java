@@ -51,17 +51,41 @@ public class JFRPrincipal extends javax.swing.JFrame
     EVENTS evn = new EVENTS();
     GEN_STATUS gnst = new GEN_STATUS();
     public File imagen = new File (System.getProperty ("user.dir")+"\\Fondo.png");
-
+    
     public JFRPrincipal() 
     {
-        initComponents();
+        initComponents();        
         image();
         this.setLocationRelativeTo(null);
         this.setExtendedState(MAXIMIZED_BOTH);
         //TAG VERSIÓN INTERNA DE DESARROLLO
         this.setTitle(sys.nombre_sistema()+" - "+sys.nombre_compañia()+" - Versión V"+sys.version()+" VERSIÓN INTERNA DE DESARROLLO");
         comprobar_actualizaciones();
+        //QUITA FUNCIONES
+        quitaFunciones();
         
+    }
+    
+    //se agrega metodo para quitar las funcionalidades mencionadas en el correo Fin del Ciclo de Vida Génesis
+    private void quitaFunciones()
+    {
+        JSMRegistrarSalida.setVisible(false);
+        String permiso_especial = "ROOT ROOT";
+        System.out.println("PERMISO ESPECIAL " +permiso_especial);
+        if(permiso_especial.equals("ROOT ROOT"))
+        {
+            //NOTHING
+        }else
+        {
+            JSMMantenimientoUsuarios.setVisible(false);
+            JSMPermisosUsuarios.setVisible(false);
+            JSMMantenerPersonal.setVisible(false);
+            JSMMantenerProducto.setVisible(false);
+            JSMMantenerImplementos.setVisible(false);
+            JSMGenerarCotizacion.setVisible(false);
+            JMVentas.setVisible(false);
+            jMenu4.setVisible(false);
+        }
     }
     
     public static void detectar(String ID_PER)

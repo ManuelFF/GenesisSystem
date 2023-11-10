@@ -5,8 +5,10 @@
  */
 package ZTestingPackage;
 
+import ModuleWorker.coreModels.DbConfModel;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import org.quartz.SchedulerException;
 
 /**
@@ -36,6 +38,7 @@ public class TestinProtocol extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        btnTestButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -53,16 +56,28 @@ public class TestinProtocol extends javax.swing.JFrame {
             }
         });
 
+        btnTestButton.setText("Test Button");
+        btnTestButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTestButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(205, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(182, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1))
-                .addGap(138, 138, 138))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton2)
+                            .addComponent(jButton1))
+                        .addGap(138, 138, 138))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnTestButton)
+                        .addGap(126, 126, 126))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -71,7 +86,9 @@ public class TestinProtocol extends javax.swing.JFrame {
                 .addComponent(jButton1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton2)
-                .addContainerGap(161, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(btnTestButton)
+                .addContainerGap(121, Short.MAX_VALUE))
         );
 
         pack();
@@ -104,6 +121,14 @@ public class TestinProtocol extends javax.swing.JFrame {
 
 
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void btnTestButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTestButtonActionPerformed
+        
+        DbConfModel dbConfModel = DbConfModel.getDbConfModel();
+        
+        JOptionPane.showMessageDialog(this, dbConfModel.getDb_serverName());
+        
+    }//GEN-LAST:event_btnTestButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -141,6 +166,7 @@ public class TestinProtocol extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnTestButton;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     // End of variables declaration//GEN-END:variables

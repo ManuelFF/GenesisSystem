@@ -1,0 +1,7 @@
+{
+  "db_serverName": "SERVER",
+  "db_serverPort": "1521",
+  "db_userName": "roedjot",
+  "db_password": "roedjot",
+  "db_sid": "XE"
+}
